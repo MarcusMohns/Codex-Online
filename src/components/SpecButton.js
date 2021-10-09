@@ -1,12 +1,16 @@
 
-const SpecButton = ({text, image, onClick}) => {
+const SpecButton = ({text, image, onClick,color}) => {
 
         
     return (
-        <button onClick={onClick}>    
-        {text}
-        <img src={image}></img>    
+
+        <button className='btn'  onClick={onClick} style={{background:color}}>
+
+        <img src={image} className='btn-image'></img>    
+        {" "+text}
+        
         </button>
+
     )
 }
 
