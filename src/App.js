@@ -9,24 +9,10 @@ import Arenapointcalculator from './pages/arenapointcalculator';
 
 import { Container } from './components/styles/Container.styled';
 import SpecButtons from './components/SpecButtons'
-
+import SpecList from './SpecList';
 
 const App = () => { 
-  const [specs,setSpecs] = useState([
-    {
-      id:1123,
-      text:"Affliction Warlock",
-      image:require('./images/warlock_affliction.png').default,
-      color:'purple',
-    },
-    {    
-      id:2123,
-      text:"Destruction Warlock",
-      image:require('./images/warlock_destruction.png').default,
-      color:'purple',
-    },
-  ]
-)
+  const [specs,setSpecs] = useState(SpecList)
 
   return (
     <Router>

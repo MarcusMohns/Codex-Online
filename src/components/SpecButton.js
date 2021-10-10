@@ -1,15 +1,14 @@
-
+import { StyledSpecButton } from './styles/SpecButton.styled';
 const SpecButton = ({text, image, onClick,color}) => {
 
-        
     return (
 
-        <button className='btn'  onClick={onClick} style={{background:color}}>
-
-        <img src={image} className='btn-image'></img>    
+        <StyledSpecButton backgroundColor={color} onClick={onClick}>
+        
+        <img src={image}></img>    
         {" "+text}
         
-        </button>
+        </StyledSpecButton>
 
     )
 }
