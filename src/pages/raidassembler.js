@@ -1,14 +1,15 @@
+import {useState} from 'react'
+import { Container } from '../components/styles/Container.styled';
+import SpecButtons from '../components/SpecButtons'
+import SpecList from '../SpecList';
+
 const RaidAssembler = () => {
+    const [specs,setSpecs] = useState(SpecList)
+
     return (
-        <div style={{
-            display:"flex",
-            justifyContent:'center',
-            alignItems:'center',
-            height:'90vh'
-            }}>
-            
-            <h1>RaidAssembler</h1>
-        </div>
+        <Container>
+            <SpecButtons specs={specs}></SpecButtons>
+        </Container>
     )
 }
 
