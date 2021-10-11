@@ -1,5 +1,5 @@
 import { Container } from "../components/styles/Container.styled"
-import React, { useState, useReducer } from 'react';
+import React, {useReducer } from 'react';
 
 const formReducer = (state, event) => {
     return {
@@ -7,7 +7,6 @@ const formReducer = (state, event) => {
       [event.name]: event.value
     }
    }
-
 
 function Arenapointcalculator() {
     const [formData, setFormData] = useReducer(formReducer, {});
@@ -26,7 +25,7 @@ function Arenapointcalculator() {
         rating = (1511.26 / ( 1 + 1639.29 
             * Math.pow(2.71828, -0.00412 * (event.target.value))));
     }
-
+    
     setFormData({
       name: event.target.name,
       value: rating,
@@ -34,10 +33,9 @@ function Arenapointcalculator() {
   
 }
     return(
-      <div>
+      <Container>
 
        <div>
-         You are submitting the following:
          <ul>
            {Object.entries(formData).map(([name, value]) => (
              <li key={name}><strong>{name}</strong>:{value.toString()}</li>
@@ -61,7 +59,7 @@ function Arenapointcalculator() {
             </label>
           </fieldset>
         </form>
-      </div>
+      </Container>
     )
   }
 export default Arenapointcalculator
