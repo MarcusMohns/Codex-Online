@@ -9,6 +9,10 @@ const formReducer = (state, event) => {
     }
    }
 
+   const handleFocus = (event) => {
+  event.target.select();
+}
+
 function Arenapointcalculator() {
     const [formData, setFormData] = useReducer(formReducer, {});
 
@@ -50,22 +54,22 @@ function Arenapointcalculator() {
       <Container>
   
         <ArenaContainer>
-          <div>
+          <label>
               <p>2vs2</p>
-              <input type="number" name="twos" onChange={handleChange}/>
+              <input type="number" name="twos" onChange={handleChange} onFocus={handleFocus}/>
               <p id="results" >{formData.twos}</p>
-            </div>
+          </label>
 
-          <div>
+          <label>
               <p>3vs3</p>
-              <input type="number" name="threes" onChange={handleChange}/>
+              <input type="number" name="threes" onChange={handleChange} onFocus={handleFocus}/>
               <p id="results" >{formData.threes}</p>
-          </div>
-          <div>
+          </label>
+          <label>
               <p>5vs5</p>
-              <input type="number" name="fives" onChange={handleChange}/>
+              <input type="number" name="fives" onChange={handleChange} onFocus={handleFocus}/>
               <p id="results" >{formData.fives}</p>
-          </div>
+          </label>
         </ArenaContainer>
         <ArenaContainer>
           Placeholder (calculate what rating you need to get x points)

@@ -23,7 +23,8 @@ export const ArenaContainer = styled.div`
     
     input {
         float:left;
-        position: relative;
+        height:30px;
+        padding:10px;
     }
 
 `
