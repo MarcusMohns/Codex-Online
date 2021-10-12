@@ -10,53 +10,62 @@ const formReducer = (state, event) => {
 
 function Arenapointcalculator() {
     const [formData, setFormData] = useReducer(formReducer, {});
+    console.log(formData)
 
    const handleChange = event => {
     let rating = 0;
-    if (event.target.name === "2vs2") {
+    if (event.target.name === "twos") {
+      if (event.target.value > 1500) {
         rating = 0.76 * (1511.26 / ( 1 + 1639.29 
             * Math.pow(2.71828, -0.00412 * (event.target.value))));
+      }else 
+          rating = 261;
+        
     }
-    else if (event.target.name === "3vs3") {
-        rating = (0.88 * (1511.26 / ( 1 + 1639.29 
+    else if (event.target.name === "threes") {
+      if (event.target.value > 1500) {  
+      rating = (0.88 * (1511.26 / ( 1 + 1639.29 
             * Math.pow(2.71828, -0.00412 * (event.target.value)))));
-    }
-    else if (event.target.name === "5vs5") {
-        rating = (1511.26 / ( 1 + 1639.29 
+    }else
+        rating = 302;
+  }
+  
+    else if (event.target.name === "fives") {
+      if (event.target.value > 1500) {  
+      rating = (1511.26 / ( 1 + 1639.29 
             * Math.pow(2.71828, -0.00412 * (event.target.value))));
-    }
-    
+    }else
+        rating = 344
+  }
+  else {
+    console.log("Error")
+  }
     setFormData({
       name: event.target.name,
-      value: rating,
+      value: Math.floor(rating),
     });
   
 }
     return(
       <Container>
-
-       <div>
-         <ul>
-           {Object.entries(formData).map(([name, value]) => (
-             <li key={name}><strong>{name}</strong>:{value.toString()}</li>
-           ))}
-         </ul>
-       </div>
       
         <form>
           <fieldset>
           <label>
               <p>2vs2</p>
-              <input name="2vs2" onChange={handleChange} />
+              <input type="number" name="twos" onChange={handleChange}/>
             </label>
+            <p> {formData.twos}</p>
             <label>
               <p>3vs3</p>
-              <input name="3vs3" onChange={handleChange}/>
+              <input type="number" name="threes" onChange={handleChange}/>
             </label>
+            <p> {formData.threes}</p>
             <label>
               <p>5vs5</p>
-              <input name="5vs5" onChange={handleChange}/>
+              <input type="number" name="fives" onChange={handleChange}/>
             </label>
+            <p> {formData.fives}</p>
           </fieldset>
         </form>
       </Container>
