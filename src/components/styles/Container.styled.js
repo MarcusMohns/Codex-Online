@@ -7,4 +7,7 @@ export const Container = styled.div`
 	border: 1px solid steelblue;
 	padding: 30px;
 	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 `

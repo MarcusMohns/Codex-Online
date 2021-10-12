@@ -1,5 +1,6 @@
-import { Container } from "../components/styles/Container.styled"
+import { ArenaContainer } from '../components/styles/ArenaContainer.styled';
 import React, {useReducer } from 'react';
+import { Container } from '../components/styles/Container.styled';
 
 const formReducer = (state, event) => {
     return {
@@ -10,7 +11,6 @@ const formReducer = (state, event) => {
 
 function Arenapointcalculator() {
     const [formData, setFormData] = useReducer(formReducer, {});
-    console.log(formData)
 
    const handleChange = event => {
     let rating = 0;
@@ -48,29 +48,30 @@ function Arenapointcalculator() {
 }
     return(
       <Container>
-      
-        <form>
-          <fieldset>
-          <label>
+  
+        <ArenaContainer>
+          <div>
               <p>2vs2</p>
               <input type="number" name="twos" onChange={handleChange}/>
-            </label>
-            <p> {formData.twos}</p>
-            <label>
+              <p id="results" >{formData.twos}</p>
+            </div>
+
+          <div>
               <p>3vs3</p>
               <input type="number" name="threes" onChange={handleChange}/>
-            </label>
-            <p> {formData.threes}</p>
-            <label>
+              <p id="results" >{formData.threes}</p>
+          </div>
+          <div>
               <p>5vs5</p>
               <input type="number" name="fives" onChange={handleChange}/>
-            </label>
-            <p> {formData.fives}</p>
-          </fieldset>
-        </form>
+              <p id="results" >{formData.fives}</p>
+          </div>
+        </ArenaContainer>
+        <ArenaContainer>
+          Placeholder (calculate what rating you need to get x points)
+        </ArenaContainer>
       </Container>
     )
   }
 export default Arenapointcalculator
-
 
