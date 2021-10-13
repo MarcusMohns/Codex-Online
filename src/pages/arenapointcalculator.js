@@ -3,53 +3,83 @@ import React, {useReducer } from 'react';
 import { Container } from '../components/styles/Container.styled';
 
 const formReducer = (state, event) => {
+  console.log(state)
     return {
       ...state, 
       [event.name]: event.value
     }
    }
 
+   // Highlight text
    const handleFocus = (event) => {
   event.target.select();
 }
 
-function Arenapointcalculator() {
-    const [formData, setFormData] = useReducer(formReducer, {});
 
-   const handleChange = event => {
-    let rating = 0;
-    if (event.target.name === "twos") {
-      if (event.target.value > 1500) {
-        rating = 0.76 * (1511.26 / ( 1 + 1639.29 
-            * Math.pow(2.71828, -0.00412 * (event.target.value))));
-      }else 
-          rating = 261;
-        
-    }
-    else if (event.target.name === "threes") {
-      if (event.target.value > 1500) {  
-      rating = (0.88 * (1511.26 / ( 1 + 1639.29 
-            * Math.pow(2.71828, -0.00412 * (event.target.value)))));
-    }else
-        rating = 302;
-  }
-  
-    else if (event.target.name === "fives") {
-      if (event.target.value > 1500) {  
-      rating = (1511.26 / ( 1 + 1639.29 
-            * Math.pow(2.71828, -0.00412 * (event.target.value))));
-    }else
-        rating = 344
-  }
-  else {
-    console.log("Error")
-  }
-    setFormData({
-      name: event.target.name,
-      value: Math.floor(rating),
-    });
-  
+const ratingRequried = (currentRating,percentage) =>{
+  let the_ratingRequired = 0
+  if (currentRating <= 1500) // Fix this
+  the_ratingRequired = Math.ceil(Math.log((1511.26 / (1639.28 * currentRating / percentage)) - ( 1 / 1639.28)) / ( -0.00412 ));
+  else
+    return 0
+  return the_ratingRequired;
 }
+
+const pointsRewarded = (bracketName,rating) => {
+    let points = 0
+    if (bracketName === "twos") {
+      if (rating > 1500) 
+        points = 0.76 * (1511.26 / ( 1 + 1639.29 * Math.pow(2.71828, -0.00412 * (rating))));
+      else 
+        points = 261;
+    }
+    else if (bracketName === "threes") {
+      if (rating > 1500)   
+        points = (0.88 * (1511.26 / ( 1 + 1639.29 * Math.pow(2.71828, -0.00412 * (rating)))));
+      else
+        points = 302;
+  }
+    else if (bracketName === "fives") {
+      if (rating > 1500)  
+      points = (1511.26 / ( 1 + 1639.29 * Math.pow(2.71828, -0.00412 * (rating))));
+      else
+        points = 344
+  }
+    else 
+      console.log("Error")
+      
+  return Math.floor(points)
+}
+
+
+function Arenapointcalculator() {
+    
+  const [formData, setFormData] = useReducer(formReducer, {});
+    const handleChange = event => {
+
+      setFormData({
+        name: event.target.name,
+        value: pointsRewarded(event.target.name,event.target.value),
+    });
+  }
+    const pointChange = event => {
+
+      setFormData({
+        name: "twosRatingRequired",
+        value: ratingRequried(event.target.value,0.76),
+    });
+      setFormData({
+        name: "threesRatingRequired",
+        value: ratingRequried(event.target.value,0.88),
+    });
+      setFormData({
+        name: "fivesRatingRequired",
+        value: ratingRequried(event.target.value,1),
+    });
+
+    
+  }
+
     return(
       <Container>
   
@@ -72,7 +102,10 @@ function Arenapointcalculator() {
           </label>
         </ArenaContainer>
         <ArenaContainer>
-          Placeholder (calculate what rating you need to get x points)
+          <input type="number" name="points" onChange={pointChange} onFocus={handleFocus}/>
+          <p>{formData.twosRatingRequired}</p>
+          <p>{formData.threesRatingRequired}</p>
+          <p>{formData.fivesRatingRequired}</p>
         </ArenaContainer>
       </Container>
     )
