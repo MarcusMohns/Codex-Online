@@ -1,4 +1,5 @@
 import { ArenaContainer } from '../components/styles/ArenaContainer.styled';
+import { PointsContainer } from '../components/styles/PointsContainer.styled';
 import React, {useReducer } from 'react';
 import { Container } from '../components/styles/Container.styled';
 
@@ -93,30 +94,35 @@ function Arenapointcalculator() {
   
         <ArenaContainer>
           <label>
-              <p>2vs2</p>
+              <p class="arena-bracket">2vs2</p>
               <input type="number" name="twos" onChange={handleChange} onFocus={handleFocus}/>
               <p id="results" >{formData.twos}</p>
           </label>
 
           <label>
-              <p>3vs3</p>
+              <p class="arena-bracket">3vs3</p>
               <input type="number" name="threes" onChange={handleChange} onFocus={handleFocus}/>
               <p id="results" >{formData.threes}</p>
           </label>
 
           <label>
-              <p>5vs5</p>
+              <p class="arena-bracket">5vs5</p>
               <input type="number" name="fives" onChange={handleChange} onFocus={handleFocus}/>
-              <p id="results" placeholder="0  " >{formData.fives}</p>
+              <p id="results">{formData.fives}</p>
           </label>
         </ArenaContainer>
 
-        <ArenaContainer>
+          <PointsContainer>
           <input type="number" name="points" onChange={pointChange} onFocus={handleFocus}/>
-          <p>{formData.twosRatingRequired}</p>
-          <p>{formData.threesRatingRequired}</p>
-          <p>{formData.fivesRatingRequired}</p>
-        </ArenaContainer>
+          <div class="pointsresult">
+
+          <p>2v2: {formData.twosRatingRequired}</p>
+
+          <p>3v3: {formData.threesRatingRequired}</p>
+
+          <p>5v5: {formData.fivesRatingRequired}</p>
+          </div>
+          </PointsContainer>
       
       </Container>
     )

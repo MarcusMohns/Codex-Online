@@ -5,13 +5,12 @@ export const ArenaContainer = styled.div`
 	margin: 30px auto;
 	min-height: 300px;
 	padding: 30px;
-	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
     align-items: center;
     
-    p {
+    p.arena-bracket {
         display: flex;
         justify-content: center;
     }
@@ -23,7 +22,7 @@ export const ArenaContainer = styled.div`
 
         
     }
-    
+
     input {
         display: inline-block;
         height:30px;
