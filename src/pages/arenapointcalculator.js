@@ -3,7 +3,6 @@ import React, {useReducer } from 'react';
 import { Container } from '../components/styles/Container.styled';
 
 const formReducer = (state, event) => {
-  console.log(state)
     return {
       ...state, 
       [event.name]: event.value
