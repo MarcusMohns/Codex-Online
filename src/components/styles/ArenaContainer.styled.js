@@ -17,12 +17,15 @@ export const ArenaContainer = styled.div`
     }
 
     #results {
-        position: absolute;
-        padding-left: 10%;
+        display: inline-block;
+        position: fixed;
+        padding-left: 4rem;
+
+        
     }
     
     input {
-        float:left;
+        display: inline-block;
         height:30px;
         padding:10px;
     }
