@@ -18,18 +18,16 @@ const formReducer = (state, event) => {
 
 const ratingRequried = (pointsNeeded,percentage) =>{
   let the_ratingRequired = 0
-  if (pointsNeeded > 1600)
-    return "Not possible"
-  else if (pointsNeeded <= 261 && percentage == 0.76)
-    return the_ratingRequired  
-  else if (pointsNeeded <= 302 && percentage == 0.88)
+
+  if ((pointsNeeded <= 261 && percentage == 0.76) || 
+      (pointsNeeded <= 302 && percentage == 0.88) || 
+      (pointsNeeded <= 344 && percentage == 1))
     return the_ratingRequired
-  else if (pointsNeeded <= 344 && percentage == 1)
-    return the_ratingRequired
+  
   else 
       the_ratingRequired = Math.ceil(Math.log((1511.26 / (1639.28 * pointsNeeded / percentage)) - ( 1 / 1639.28)) / ( -0.00412 ));
   
-  return the_ratingRequired;
+  return (the_ratingRequired ? the_ratingRequired : 'Not possible');
 }
 
 const pointsRewarded = (bracketName,rating) => {
@@ -70,6 +68,7 @@ function Arenapointcalculator() {
         value: pointsRewarded(event.target.name,event.target.value),
     });
   }
+
   // Handles change on arena points to arena rating input
   const pointChange = event => {
 
@@ -90,23 +89,23 @@ function Arenapointcalculator() {
   }
 
     return(
-      <Container>
+      <Container style={{maxWidth:750}}>
   
         <ArenaContainer>
           <label>
-              <p class="arena-bracket">2vs2</p>
+              <p className="arena-bracket">2vs2</p>
               <input type="number" name="twos" onChange={handleChange} onFocus={handleFocus}/>
               <p id="results" >{formData.twos}</p>
           </label>
 
           <label>
-              <p class="arena-bracket">3vs3</p>
+              <p className="arena-bracket">3vs3</p>
               <input type="number" name="threes" onChange={handleChange} onFocus={handleFocus}/>
               <p id="results" >{formData.threes}</p>
           </label>
 
           <label>
-              <p class="arena-bracket">5vs5</p>
+              <p className="arena-bracket">5vs5</p>
               <input type="number" name="fives" onChange={handleChange} onFocus={handleFocus}/>
               <p id="results">{formData.fives}</p>
           </label>
@@ -114,7 +113,7 @@ function Arenapointcalculator() {
 
           <PointsContainer>
           <input type="number" name="points" onChange={pointChange} onFocus={handleFocus}/>
-          <div class="pointsresult">
+          <div className="pointsresult">
 
           <p>2v2: {formData.twosRatingRequired}</p>
 

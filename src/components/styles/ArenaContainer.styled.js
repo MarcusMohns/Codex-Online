@@ -19,6 +19,7 @@ export const ArenaContainer = styled.div`
         display: inline-block;
         position: fixed;
         padding-left: 4rem;
+        margin-top: 0.2%;
 
         
     }
