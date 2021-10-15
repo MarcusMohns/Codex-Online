@@ -2,22 +2,21 @@
 import SpecButton from "./SpecButton"
 
 
-const SpecButtons = ({specs}) => {
+const SpecButtons = ({specs, onClick}) => {
    
-    const onClick = () => {
-        console.log("hey")
-    }
 
     return (
         <>
           {specs.map((spec) => (
+              
               <SpecButton 
               key={spec.id} 
               text={spec.text} 
               image={spec.image} 
-              onClick={onClick}
-              color={spec.color} />
-          ))}  
+              onClick={() => onClick(spec.text)}
+              color={spec.color}/>
+          ))}
+          
         </>
     )
 }
