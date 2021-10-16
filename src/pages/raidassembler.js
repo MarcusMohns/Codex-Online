@@ -10,11 +10,12 @@ function onClick(specText) {
 }
 
 const RaidAssembler = () => {
-    const [specs,setSpecs] = useState(SpecList)
+    const specs = SpecList
 
     return (
         <Container style={{	flexDirection: "row" , maxWidth:"90vw"}}>
             <div style={{width:"75vw"}}>
+           
             </div>
             <RaidAssemblerContainer>
                 <SpecButtons specs={specs} onClick={onClick}></SpecButtons>
