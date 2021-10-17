@@ -13,4 +13,9 @@ const SpecButton = ({text, image, onClick,color}) => {
     )
 }
 
+SpecButton.defaultProps = {
+    image:require('../images/hunter_beastmastery.png').default
+  }
+
+
 export default SpecButton

@@ -1,17 +1,13 @@
-import SpecButton from "./SpecButton"
 
-const Header = ({title}) => {
-    const onClick =  () => {
-        console.log(specs)
-    }
-    
-    
+const Header = ({title}) => {    
     return (
         <header>
             <h1>{title}</h1>
-            <SpecButton text= 'hey' image='whatever' onClick={onClick} /> 
         </header>
     )
 }
 
+Header.defaultProps = {
+    title: 'Header'
+  }
 export default Header
