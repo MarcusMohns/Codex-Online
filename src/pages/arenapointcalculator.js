@@ -2,6 +2,7 @@ import { ArenaContainer } from '../components/styles/ArenaContainer.styled';
 import { PointsContainer } from '../components/styles/PointsContainer.styled';
 import React, {useReducer } from 'react';
 import { Container } from '../components/styles/Container.styled';
+import Header from '../components/Header';
 
 const formReducer = (state, event) => {
     return {
@@ -32,26 +33,26 @@ const ratingRequried = (pointsNeeded,percentage) =>{
 
 const pointsRewarded = (bracketName,rating) => {
     let points = 0
-    if (bracketName === "twos") {
+    if (bracketName === 'twos') {
       if (rating > 1500) 
         points = 0.76 * (1511.26 / ( 1 + 1639.29 * Math.pow(2.71828, -0.00412 * (rating))));
       else 
         points = 261;
     }
-    else if (bracketName === "threes") {
+    else if (bracketName === 'threes') {
       if (rating > 1500)   
         points = (0.88 * (1511.26 / ( 1 + 1639.29 * Math.pow(2.71828, -0.00412 * (rating)))));
       else
         points = 302;
   }
-    else if (bracketName === "fives") {
+    else if (bracketName === 'fives') {
       if (rating > 1500)  
       points = (1511.26 / ( 1 + 1639.29 * Math.pow(2.71828, -0.00412 * (rating))));
       else
         points = 344
   }
     else 
-      console.log("Error")
+      console.log('Error')
       
   return Math.floor(points)
 }
@@ -73,15 +74,15 @@ function Arenapointcalculator() {
   const pointChange = event => {
 
     setFormData({
-      name: "twosRatingRequired",
+      name: 'twosRatingRequired',
       value: ratingRequried(event.target.value,0.76),
   });
     setFormData({
-      name: "threesRatingRequired",
+      name: 'threesRatingRequired',
       value: ratingRequried(event.target.value,0.88),
   });
     setFormData({
-      name: "fivesRatingRequired",
+      name: 'fivesRatingRequired',
       value: ratingRequried(event.target.value,1),
   });
 
@@ -89,31 +90,33 @@ function Arenapointcalculator() {
   }
 
     return(
+      <>
+      <Header title='Arena Point Calculator'/>
       <Container style={{maxWidth:750}}>
-  
         <ArenaContainer>
           <label>
-              <p className="arena-bracket">2vs2</p>
-              <input type="number" name="twos" onChange={handleChange} onFocus={handleFocus}/>
-              <p id="results" >{formData.twos}</p>
+              <p className='arena-bracket'>2vs2</p>
+              <input type='number' name='twos' onChange={handleChange} onFocus={handleFocus}/>
+              <p id='results' >{formData.twos}</p>
           </label>
 
           <label>
-              <p className="arena-bracket">3vs3</p>
-              <input type="number" name="threes" onChange={handleChange} onFocus={handleFocus}/>
-              <p id="results" >{formData.threes}</p>
+              <p className='arena-bracket'>3vs3</p>
+              <input type='number' name='threes' onChange={handleChange} onFocus={handleFocus}/>
+              <p id='results' >{formData.threes}</p>
           </label>
 
           <label>
-              <p className="arena-bracket">5vs5</p>
-              <input type="number" name="fives" onChange={handleChange} onFocus={handleFocus}/>
+              <p className='arena-bracket'>5vs5</p>
+              <input type='number' name='fives' onChange={handleChange} onFocus={handleFocus}/>
               <p id="results">{formData.fives}</p>
           </label>
         </ArenaContainer>
 
           <PointsContainer>
-          <input type="number" name="points" onChange={pointChange} onFocus={handleFocus}/>
-          <div className="pointsresult">
+           
+          <input type='number' name='points' onChange={pointChange} onFocus={handleFocus}/>
+          <div className='pointsresult'>
 
           <p>2v2: {formData.twosRatingRequired}</p>
 
@@ -124,7 +127,11 @@ function Arenapointcalculator() {
           </PointsContainer>
       
       </Container>
+      </>
     )
   }
+
+
+
 export default Arenapointcalculator
 
