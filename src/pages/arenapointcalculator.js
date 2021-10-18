@@ -1,5 +1,4 @@
 import { ArenaContainer } from '../components/styles/ArenaContainer.styled';
-import { PointsContainer } from '../components/styles/PointsContainer.styled';
 import React, {useReducer } from 'react';
 import { Container } from '../components/styles/Container.styled';
 import Header from '../components/Header';
@@ -11,15 +10,13 @@ const formReducer = (state, event) => {
     }
    }
 
-   // Highlight text
-   const handleFocus = (event) => {
+   const handleSelect = (event) => {
   event.target.select();
 }
-
-
+ 
 const ratingRequried = (pointsNeeded,percentage) =>{
   let the_ratingRequired = 0
-
+  // in 3.3.5 you are rewarded a baseline amount of points if you are 1500 or below
   if ((pointsNeeded <= 261 && percentage == 0.76) || 
       (pointsNeeded <= 302 && percentage == 0.88) || 
       (pointsNeeded <= 344 && percentage == 1))
@@ -27,7 +24,7 @@ const ratingRequried = (pointsNeeded,percentage) =>{
   
   else 
       the_ratingRequired = Math.ceil(Math.log((1511.26 / (1639.28 * pointsNeeded / percentage)) - ( 1 / 1639.28)) / ( -0.00412 ));
-  
+
   return (the_ratingRequired ? the_ratingRequired : 'Not possible');
 }
 
@@ -61,7 +58,7 @@ const pointsRewarded = (bracketName,rating) => {
 function Arenapointcalculator() {
     
   const [formData, setFormData] = useReducer(formReducer, {});
-  // Handles change on arena rating to arena points input
+  
   const handleChange = event => {
 
       setFormData({
@@ -70,7 +67,7 @@ function Arenapointcalculator() {
     });
   }
 
-  // Handles change on arena points to arena rating input
+
   const pointChange = event => {
 
     setFormData({
@@ -92,46 +89,71 @@ function Arenapointcalculator() {
     return(
       <>
       <Header title='Arena Point Calculator'/>
-      <Container style={{maxWidth:750}}>
+      <Container style={{maxWidth:'50%'}}>
         <ArenaContainer>
-          <label>
-              <p className='arena-bracket'>2vs2</p>
-              <input type='number' name='twos' onChange={handleChange} onFocus={handleFocus}/>
-              <p id='results' >{formData.twos}</p>
-          </label>
+          
+          <form onChange={handleChange} onSelect={handleSelect} autoComplete="off">
+            <table>
+              <caption>heyheyhehy this is to calculate how many arena points you will get at the end of the week </caption>
+                  <tr/>
+                      <th scope="col">Bracket</th>
+                      <th scope="col">Your Rating</th>
+                      <th scope="col">Arena Points</th>
 
-          <label>
-              <p className='arena-bracket'>3vs3</p>
-              <input type='number' name='threes' onChange={handleChange} onFocus={handleFocus}/>
-              <p id='results' >{formData.threes}</p>
-          </label>
+                  <tr/>
+                      <th scope="row">2v2</th>
+                      <td><input type='number' name='twos'/></td>
+                      <td>{formData.twos}</td>
 
-          <label>
-              <p className='arena-bracket'>5vs5</p>
-              <input type='number' name='fives' onChange={handleChange} onFocus={handleFocus}/>
-              <p id="results">{formData.fives}</p>
-          </label>
+                  <tr/>
+                      <th scope="row">3v3</th>
+                      <td><input type='number' name='threes'/></td>
+                      <td>{formData.threes}</td>
+
+                  <tr/>
+                      <th scope="row">5v5</th>
+                      <td><input type='number' name='fives'/></td>
+                      <td>{formData.fives}</td>
+            </table>  
+          </form>
+
         </ArenaContainer>
 
-          <PointsContainer>
-           
-          <input type='number' name='points' onChange={pointChange} onFocus={handleFocus}/>
-          <div className='pointsresult'>
+        <ArenaContainer>
+        <form onChange={pointChange} onSelect={handleSelect} autoComplete="off">
+          <table>
+                <caption>Hey ehy hey this is to calculate how much rating you need for a specific amount of points</caption>
+                <tr/>
+                    <th scope="col">Points needed</th>
+                    <th scope="col">Bracket</th>
+                    <th scope="col">Arena Rating Required</th>
 
-          <p>2v2: {formData.twosRatingRequired}</p>
+                <tr/>
+                    <th></th>
+                    <th scope="row">2v2</th>
+                    <td>{formData.twosRatingRequired}</td>
 
-          <p>3v3: {formData.threesRatingRequired}</p>
+                
+                <tr/>
+                    <td colSpan="0"><input type='number' name='threes'/></td>  
+                    <th scope="row">3v3</th>
+                    <td>{formData.threesRatingRequired}</td>
+                   
 
-          <p>5v5: {formData.fivesRatingRequired}</p>
-          </div>
-          </PointsContainer>
+                <tr/>
+                  <th></th>
+                  <th scope="row">5v5</th>
+                  <td>{formData.fivesRatingRequired}</td>
+          </table>  
+        </form>
+        </ArenaContainer>
       
       </Container>
       </>
     )
   }
-
-
+       //                 
+// <td>{formData.fivesRatingRequired}</td>
 
 export default Arenapointcalculator
 

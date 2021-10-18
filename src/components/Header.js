@@ -1,9 +1,10 @@
+import { StyledHeader } from './styles/Header.styled';
 
 const Header = ({title}) => {    
     return (
-        <header>
-            <h1>{title}</h1>
-        </header>
+        <StyledHeader>
+            {title}
+        </StyledHeader>
     )
 }
 
