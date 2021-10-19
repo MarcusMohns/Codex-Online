@@ -6,7 +6,7 @@ const Navbar = () => {
         <>
           <Nav>
             <NavLink to="/home">
-            <img style={{background:'black'}}src={logo}/>
+            <img style={{background:'black'}}src={logo} alt="logo"/>
             </NavLink>
             <Bars />
             <NavMenu>

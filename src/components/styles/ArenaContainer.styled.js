@@ -22,7 +22,8 @@ th[scope="row"] {
 }
 
 caption {
-    padding: 10px;
+    padding: 20px;
+    padding-top: 40px;
     caption-side: top;
 }
 

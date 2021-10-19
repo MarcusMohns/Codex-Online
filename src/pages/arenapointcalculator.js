@@ -17,9 +17,9 @@ const formReducer = (state, event) => {
 const ratingRequried = (pointsNeeded,percentage) =>{
   let the_ratingRequired = 0
   // in 3.3.5 you are rewarded a baseline amount of points if you are 1500 or below
-  if ((pointsNeeded <= 261 && percentage == 0.76) || 
-      (pointsNeeded <= 302 && percentage == 0.88) || 
-      (pointsNeeded <= 344 && percentage == 1))
+  if ((pointsNeeded <= 261 && percentage === 0.76) || 
+      (pointsNeeded <= 302 && percentage === 0.88) || 
+      (pointsNeeded <= 344 && percentage === 1))
     return the_ratingRequired
   
   else 
@@ -94,7 +94,7 @@ function Arenapointcalculator() {
           
           <form onChange={handleChange} onSelect={handleSelect} autoComplete="off">
             <table>
-              <caption>heyheyhehy this is to calculate how many arena points you will get at the end of the week </caption>
+              <caption>Input your current rating in the appropriate bracket to calculate how many arena points you will recieve at the end of the week</caption>
                   <tr/>
                       <th scope="col">Bracket</th>
                       <th scope="col">Your Rating</th>
@@ -122,7 +122,7 @@ function Arenapointcalculator() {
         <ArenaContainer>
         <form onChange={pointChange} onSelect={handleSelect} autoComplete="off">
           <table>
-                <caption>Hey ehy hey this is to calculate how much rating you need for a specific amount of points</caption>
+                <caption>Calculate what rating you need acheive in order to get the points you want</caption>
                 <tr/>
                     <th scope="col">Points needed</th>
                     <th scope="col">Bracket</th>

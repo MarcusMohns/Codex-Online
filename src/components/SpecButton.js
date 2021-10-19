@@ -5,7 +5,7 @@ const SpecButton = ({text, image, onClick,color}) => {
 
         <StyledSpecButton backgroundColor={color} onClick={onClick}>
         
-        <img src={image}></img>    
+        <img src={image} alt="SpecButton"></img>    
         {text}
         
         </StyledSpecButton>
