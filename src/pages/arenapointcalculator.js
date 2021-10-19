@@ -94,26 +94,33 @@ function Arenapointcalculator() {
           
           <form onChange={handleChange} onSelect={handleSelect} autoComplete="off">
             <table>
-              <caption>Input your current rating in the appropriate bracket to calculate how many arena points you will recieve at the end of the week</caption>
-                  <tr/>
-                      <th scope="col">Bracket</th>
-                      <th scope="col">Your Rating</th>
-                      <th scope="col">Arena Points</th>
+            <caption>Input your current rating in the appropriate bracket to calculate how many arena points you will recieve at the end of the week</caption>
+              <tbody>
 
-                  <tr/>
-                      <th scope="row">2v2</th>
-                      <td><input type='number' name='twos'/></td>
-                      <td>{formData.twos}</td>
-
-                  <tr/>
-                      <th scope="row">3v3</th>
-                      <td><input type='number' name='threes'/></td>
-                      <td>{formData.threes}</td>
-
-                  <tr/>
-                      <th scope="row">5v5</th>
-                      <td><input type='number' name='fives'/></td>
-                      <td>{formData.fives}</td>
+                  <tr>
+                    <th scope="col">Bracket</th>
+                    <th scope="col">Your Rating</th>
+                    <th scope="col">Arena Points</th>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">2v2</th>
+                    <td><input type='number' name='twos'/></td>
+                    <td>{formData.twos}</td>
+                  </tr>
+                  
+                  <tr>
+                    <th scope="row">3v3</th>
+                    <td><input type='number' name='threes'/></td>
+                    <td>{formData.threes}</td>
+                  </tr>
+                 
+                  <tr>
+                    <th scope="row">5v5</th>
+                    <td><input type='number' name='fives'/></td>
+                    <td>{formData.fives}</td>
+                  </tr>
+              </tbody>
             </table>  
           </form>
 
@@ -122,29 +129,34 @@ function Arenapointcalculator() {
         <ArenaContainer>
         <form onChange={pointChange} onSelect={handleSelect} autoComplete="off">
           <table>
-                <caption>Calculate what rating you need acheive in order to get the points you want</caption>
-                <tr/>
+            <caption>Calculate what rating you need acheive in order to get the points you want</caption>
+            <tbody>
+                <tr>
                     <th scope="col">Points needed</th>
                     <th scope="col">Bracket</th>
                     <th scope="col">Arena Rating Required</th>
+                </tr>
 
-                <tr/>
+                <tr>
                     <th></th>
                     <th scope="row">2v2</th>
                     <td>{formData.twosRatingRequired}</td>
-
+                </tr>
                 
-                <tr/>
+                <tr>
                     <td colSpan="0"><input type='number' name='threes'/></td>  
                     <th scope="row">3v3</th>
                     <td>{formData.threesRatingRequired}</td>
-                   
+                </tr>   
 
-                <tr/>
+                <tr>
                   <th></th>
                   <th scope="row">5v5</th>
                   <td>{formData.fivesRatingRequired}</td>
-          </table>  
+                </tr>
+            </tbody>
+          </table> 
+        
         </form>
         </ArenaContainer>
       

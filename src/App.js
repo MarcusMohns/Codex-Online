@@ -17,7 +17,6 @@ const App = () => {
           <Route path="/about" component={About} />      
           <Route path="/raidassembler" component={RaidAssembler} />        
           <Route path="/arenapointcalculator" component={Arenapointcalculator} />      
-        
         </Switch>  
     </Router>
 
