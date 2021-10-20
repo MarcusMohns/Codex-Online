@@ -1,11 +1,11 @@
 import PlayerInRaid from "./PlayerInRaid"
 
-const PlayersInRaid = ({raid}) => {
+const PlayersInRaid = ({raid, onDelete}) => {
     return (
         <>
           {raid.map((player)=> (
   
-            <PlayerInRaid text={player.text}/>
+            <PlayerInRaid key={player.id} text={player.text} onDelete={onDelete} player={player}/>  
             
           ))}  
         </>

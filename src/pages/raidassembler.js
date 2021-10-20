@@ -15,24 +15,29 @@ const RaidAssembler = () => {
     
 const [raid,setRaid] = useState([
     {
+      id: 1,
       text:'Blood Death Knight',
       color:'red',
       buffs:["Agility and Strength", "Attack Power %"]
     },
     {    
-  
+      id:2,
       text:'Unholy Death Knight',
       color:'red',
       buffs:["Agility and Strength", "Spell Damage %","Disease Damage"]
     }])
 
-    
+
+    const deletePlayer = (id) => {
+        setRaid(raid.filter((player) => player.id !== id))
+    }
+
     return (
         <>
         <Header title='Raid Assembler'/>
         <Container style={{	flexDirection: "row" , maxWidth:"90vw"}}>
             <div style={{width:"75vw"}}>
-            <PlayersInRaid raid={raid}/>
+            <PlayersInRaid raid={raid} onDelete={deletePlayer}/>
             </div>
             <RaidAssemblerContainer>
                 <SpecButtons specs={SpecList} onClick={onClick}></SpecButtons>
