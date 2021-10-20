@@ -6,41 +6,36 @@ import SpecList from '../SpecList';
 import PlayersInRaid from '../components/PlayersInRaid';
 import {useState} from 'react';
 
-function onClick(specText) {
-    console.log(specText.text)
-}
-
-
 const RaidAssembler = () => {
     
-const [raid,setRaid] = useState([
-    {
-      id: 1,
-      text:'Blood Death Knight',
-      color:'red',
-      buffs:["Agility and Strength", "Attack Power %"]
-    },
-    {    
-      id:2,
-      text:'Unholy Death Knight',
-      color:'red',
-      buffs:["Agility and Strength", "Spell Damage %","Disease Damage"]
-    }])
+    const [raid,setRaid] = useState([])
 
 
     const deletePlayer = (id) => {
         setRaid(raid.filter((player) => player.id !== id))
     }
 
+    function addPlayer(player) {
+        const id = Math.floor(Math.random() * 10000 + 1)
+        const newPlayer = {id, ...player}
+        setRaid([...raid,newPlayer])
+        console.log(newPlayer)
+    }
+
+
     return (
         <>
         <Header title='Raid Assembler'/>
         <Container style={{	flexDirection: "row" , maxWidth:"90vw"}}>
             <div style={{width:"75vw"}}>
-            <PlayersInRaid raid={raid} onDelete={deletePlayer}/>
+            { raid.length > 0 ? (
+                <PlayersInRaid raid={raid} onDelete={deletePlayer}/>
+                ) : (
+                    'No Players in Raid'
+                )}
             </div>
             <RaidAssemblerContainer>
-                <SpecButtons specs={SpecList} onClick={onClick}></SpecButtons>
+                <SpecButtons specs={SpecList} onClick={addPlayer}></SpecButtons>
             
             </RaidAssemblerContainer>
  

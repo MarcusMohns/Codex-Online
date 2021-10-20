@@ -1,4 +1,4 @@
-const PlayerInRaid = ({text,player, onDelete}) => {
+const PlayerInRaid = ({text,player,onDelete}) => {
     return (
         <div onClick={()=> onDelete(player.id)}>
         {text}
