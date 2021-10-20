@@ -11,7 +11,7 @@ const SpecButtons = ({specs, onClick}) => {
               key={spec.text} 
               text={spec.text} 
               image={spec.image} 
-              onClick={() => onClick(spec.text)}
+              onClick={() => onClick(spec)}
               color={spec.color}/>
           ))}
           

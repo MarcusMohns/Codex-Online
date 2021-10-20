@@ -1,23 +1,11 @@
-const SpecList = [
-    {
-      text:'Blood Death Knight',
-      color:'red',
-      buffs:["Agility and Strength", "Attack Power %"]
-    },
-    {    
-  
-      text:'Unholy Death Knight',
-      color:'red',
-      buffs:["Agility and Strength", "Spell Damage %","Disease Damage"]
-    }]
+import PlayerInRaid from "./PlayerInRaid"
 
-
-const PlayersInRaid = () => {
+const PlayersInRaid = ({raid}) => {
     return (
         <>
-          {SpecList.map((player)=> (
+          {raid.map((player)=> (
   
-            <h3 key={player.text}>{player.text}</h3>
+            <PlayerInRaid text={player.text}/>
             
           ))}  
         </>

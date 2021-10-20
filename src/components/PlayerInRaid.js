@@ -1,7 +1,8 @@
-const PlayerInRaid = (specText) => {
+const PlayerInRaid = ({text}) => {
     return (
         <div>
-        {specText}
+
+        {text}
         </div>
     )
 }
