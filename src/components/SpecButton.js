@@ -4,12 +4,10 @@ const SpecButton = ({text, image, onClick,color}) => {
     return (
 
         <StyledSpecButton backgroundColor={color} onClick={onClick}>
-        
-        <img src={image} alt="SpecButton"></img>    
-        {text}
-        
-        </StyledSpecButton>
+        <img src={image} alt="spec icon"/>
+        <div>{text}</div>
 
+        </StyledSpecButton>
     )
 }
 
