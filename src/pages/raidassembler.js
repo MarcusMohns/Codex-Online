@@ -5,6 +5,7 @@ import SpecButtons from '../components/SpecButtons'
 import SpecList from '../SpecList';
 import PlayersInRaid from '../components/PlayersInRaid';
 import {useState} from 'react';
+import RaidBuffs from '../components/RaidBuffs';
 
 const RaidAssembler = () => {
     
@@ -13,8 +14,9 @@ const RaidAssembler = () => {
 
     const deletePlayer = (id) => {
         setRaid(raid.filter((player) => player.id !== id))
-        setBuffs(buffs.filter((player) => player.id !== id))
-        console.log(buffs)
+
+        setBuffs(buffs.filter((playerBuffs) => playerBuffs.id !== id))
+
     }
 
     function addPlayer(player) {
@@ -41,7 +43,7 @@ const RaidAssembler = () => {
                 )}
             </div>
             <div>
-                hey
+               <RaidBuffs buffs={buffs}/> 
             </div>
             <RaidAssemblerContainer>
                 <SpecButtons specs={SpecList} onClick={addPlayer}></SpecButtons>
