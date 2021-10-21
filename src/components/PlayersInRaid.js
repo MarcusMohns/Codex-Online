@@ -5,7 +5,10 @@ const PlayersInRaid = ({raid, onDelete}) => {
         <>
           {raid.map((player)=> (
   
-            <PlayerInRaid key={player.id} onDelete={onDelete} player={player}/>  
+            <PlayerInRaid 
+            key={player.id} 
+            onDelete={onDelete} 
+            player={player}/>  
             
           ))}  
         </>

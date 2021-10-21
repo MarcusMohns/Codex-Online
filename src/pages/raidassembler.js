@@ -9,17 +9,23 @@ import {useState} from 'react';
 const RaidAssembler = () => {
     
     const [raid,setRaid] = useState([])
-
+    const [buffs,setBuffs] = useState([])
 
     const deletePlayer = (id) => {
         setRaid(raid.filter((player) => player.id !== id))
+        setBuffs(buffs.filter((player) => player.id !== id))
+        console.log(buffs)
     }
 
     function addPlayer(player) {
         const id = Math.floor(Math.random() * 10000 + 1)
+        
         const newPlayer = {id, ...player}
         setRaid([...raid,newPlayer])
-        console.log(newPlayer)
+        
+        const newBuffs = {id, ...player.buffs}
+        setBuffs([...buffs,newBuffs])
+
     }
 
 
@@ -33,6 +39,9 @@ const RaidAssembler = () => {
                 ) : (
                     'No Players in Raid'
                 )}
+            </div>
+            <div>
+                hey
             </div>
             <RaidAssemblerContainer>
                 <SpecButtons specs={SpecList} onClick={addPlayer}></SpecButtons>
