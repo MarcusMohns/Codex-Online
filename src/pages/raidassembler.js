@@ -6,6 +6,7 @@ import SpecList from '../SpecList';
 import PlayersInRaid from '../components/PlayersInRaid';
 import {useState} from 'react';
 import RaidBuffs from '../components/RaidBuffs';
+import { StyledRaid } from '../components/styles/Raid.styled';
 
 const RaidAssembler = () => {
     
@@ -35,13 +36,14 @@ const RaidAssembler = () => {
         <>
         <Header title='Raid Assembler'/>
         <Container style={{	flexDirection: "row" , maxWidth:"90vw"}}>
-            <div style={{width:"75vw"}}>
+            <StyledRaid>
             { raid.length > 0 ? (
                 <PlayersInRaid raid={raid} onDelete={deletePlayer}/>
                 ) : (
                     'No Players in Raid'
-                )}
-            </div>
+                )
+            }
+            </StyledRaid>
             <div>
                <RaidBuffs buffs={buffs}/> 
             </div>
