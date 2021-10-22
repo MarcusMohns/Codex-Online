@@ -20,24 +20,21 @@ const RaidAssembler = () => {
 
         setCount(count-1);
 
-
-
     }
 
     const addPlayer = (player) => {
-        const id = Math.floor(Math.random() * 10000 + 1)
-        
-        const newPlayer = {id, ...player}
-        setRaid([...raid,newPlayer])
-        
-        const newBuffs = {id, ...player.buffs}
-        setBuffs([...buffs,newBuffs])
-
-        setCount(count+1);
-    }
-    
+        if (count<25) {
+            const id = Math.floor(Math.random() * 10000 + 1)
+            const newPlayer = {id, ...player}
+            setRaid([...raid,newPlayer])
+            const newBuffs = {id, ...player.buffs}
+            setBuffs([...buffs,newBuffs])
+            setCount(count+1);
+        }else {
+        alert("Raid is full")
+        }
   
-
+    }
     return (
         <>
         <Header title='Raid Assembler'/>
