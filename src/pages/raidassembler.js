@@ -12,15 +12,19 @@ const RaidAssembler = () => {
     
     const [raid,setRaid] = useState([])
     const [buffs,setBuffs] = useState([])
+    const [count, setCount] = useState(0);
 
     const deletePlayer = (id) => {
         setRaid(raid.filter((player) => player.id !== id))
-
         setBuffs(buffs.filter((playerBuffs) => playerBuffs.id !== id))
+
+        setCount(count-1);
+
+
 
     }
 
-    function addPlayer(player) {
+    const addPlayer = (player) => {
         const id = Math.floor(Math.random() * 10000 + 1)
         
         const newPlayer = {id, ...player}
@@ -29,30 +33,33 @@ const RaidAssembler = () => {
         const newBuffs = {id, ...player.buffs}
         setBuffs([...buffs,newBuffs])
 
+        setCount(count+1);
     }
-
+    
+  
 
     return (
         <>
         <Header title='Raid Assembler'/>
         <Container style={{	flexDirection: "row" , maxWidth:"90vw"}}>
             <StyledRaid>
-            { raid.length > 0 ? (
-                <PlayersInRaid raid={raid} onDelete={deletePlayer}/>
-                ) : (
-                    'No Players in Raid'
-                )
-            }
+                {count}
+                <div class="grid">
+                    { raid.length > 0 ? (
+                        <PlayersInRaid raid={raid} onDelete={deletePlayer}/>
+                        ) : (
+                            'No Players in Raid'
+                        )
+                    }
+                </div>
             </StyledRaid>
-            <div>
-               <RaidBuffs buffs={buffs}/> 
-            </div>
+
             <RaidAssemblerContainer>
                 <SpecButtons specs={SpecList} onClick={addPlayer}></SpecButtons>
             
             </RaidAssemblerContainer>
- 
-                        
+        
+            <RaidBuffs buffs={buffs}/>                
         </Container>
         </>
 
