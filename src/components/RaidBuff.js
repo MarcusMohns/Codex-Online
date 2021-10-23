@@ -1,7 +1,15 @@
 const RaidBuff = ({text}) => {
-    return (
+    let allBuffs = ""
+    
+    for (const [key, value] of Object.entries(text)) {
+        if (key!=="id") {
+            allBuffs += value + ",";
+        }
+    }
+        return (
+        
         <div>
-            {text}
+            {allBuffs}
         </div>
     )
 }

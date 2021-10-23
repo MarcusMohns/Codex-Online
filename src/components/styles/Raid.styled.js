@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const StyledRaid = styled.div`
 	width:75vw;
 
-
+	.count {
+		font-size:18px;
+		font-weight:bold;
+		margin-bottom:20px;
+	}
 
 	.grid {
 		display: grid;

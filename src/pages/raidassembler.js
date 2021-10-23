@@ -1,6 +1,6 @@
 import { Container } from '../components/styles/Container.styled';
 import Header from '../components/Header';
-import {RaidAssemblerContainer} from '../components/styles/RaidAssemblerContainer.styled'; 
+import {SpecButtonContainer} from '../components/styles/SpecButtonContainer.styled'; 
 import SpecButtons from '../components/SpecButtons'
 import SpecList from '../SpecList';
 import PlayersInRaid from '../components/PlayersInRaid';
@@ -40,7 +40,7 @@ const RaidAssembler = () => {
         <Header title='Raid Assembler'/>
         <Container style={{	flexDirection: "row" , maxWidth:"90vw"}}>
             <StyledRaid>
-                {count}
+                <div className="count"> {count} / 25 </div>
                 <div className="grid">
                     { raid.length > 0 ? (
                         <PlayersInRaid raid={raid} onDelete={deletePlayer}/>
@@ -49,14 +49,15 @@ const RaidAssembler = () => {
                         )
                     }
                 </div>
+                <RaidBuffs buffs={buffs}/>  
             </StyledRaid>
 
-            <RaidAssemblerContainer>
+            <SpecButtonContainer>
                 <SpecButtons specs={SpecList} onClick={addPlayer}></SpecButtons>
             
-            </RaidAssemblerContainer>
+            </SpecButtonContainer>
         
-            <RaidBuffs buffs={buffs}/>                
+                      
         </Container>
         </>
 

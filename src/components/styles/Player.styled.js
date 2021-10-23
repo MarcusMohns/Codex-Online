@@ -12,7 +12,7 @@ export const StyledPlayer = styled.div`
     cursor:pointer;
     color:#666666;
     font-size:15px;
-    font-weight:bold;
+
     padding:5px;
     text-shadow:0px 1px 0px #ffffff;
 
@@ -20,8 +20,12 @@ export const StyledPlayer = styled.div`
 img {
     width:20px;
     height:20px;
+    border-radius:80%;
 
- 
+}
+    &:hover {
+    font-weight:bold;
+
 
 }
 

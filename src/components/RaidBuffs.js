@@ -5,8 +5,8 @@ const RaidBuffs = ({buffs}) => {
         <div>
             {buffs.map((buff,id) => (             
               <RaidBuff 
-              key={id} 
-              text={"buff"} />
+              key={id}
+              text={buff} />
           ))}
         </div>
     )
