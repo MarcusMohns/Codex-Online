@@ -41,7 +41,7 @@ const RaidAssembler = () => {
         <Container style={{	flexDirection: "row" , maxWidth:"90vw"}}>
             <StyledRaid>
                 {count}
-                <div class="grid">
+                <div className="grid">
                     { raid.length > 0 ? (
                         <PlayersInRaid raid={raid} onDelete={deletePlayer}/>
                         ) : (
