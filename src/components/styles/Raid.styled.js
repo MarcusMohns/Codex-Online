@@ -11,7 +11,6 @@ export const StyledRaid = styled.div`
 		grid-template-rows: repeat(5, 1fr);
 		grid-auto-columns: 1fr;
 		grid-auto-flow: column;
-		column-rule-style: inset;
 	}
 	`
 
