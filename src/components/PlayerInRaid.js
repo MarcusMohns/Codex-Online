@@ -1,6 +1,6 @@
 import {StyledPlayer} from "./styles/Player.styled"
-
 const PlayerInRaid = ({player,onDelete}) => {
+
     return (
         <StyledPlayer onClick={()=> onDelete(player.id)}>
         {player.text}

@@ -17,11 +17,15 @@ const Navbar = () => {
               Raid Assembler
               </NavLink>  
               <NavLink to="/arenapointcalculator">
-              Arena Calculator
+              Arena Point Calculator
+              </NavLink>  
+              <NavLink to="/gemfinder">
+              Gem Finder
               </NavLink>  
               <NavLink to="/about">
               About
               </NavLink>  
+
             </NavMenu>
             <NavBtn>
               <NavBtnLink to="/sign in"> Sign in</NavBtnLink>

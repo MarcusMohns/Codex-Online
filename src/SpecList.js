@@ -1,6 +1,5 @@
 const SpecList = [
     {
-  
       text:'Blood Death Knight',
       image:require('./images/dk_blood.png').default,
       color:'red',

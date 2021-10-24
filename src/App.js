@@ -4,6 +4,7 @@ import Home from './pages/';
 import About from './pages/about';
 import RaidAssembler from './pages/raidassembler';
 import Arenapointcalculator from './pages/arenapointcalculator';
+import gemfinder from './pages/gemfinder';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/about" component={About} />      
           <Route path="/raidassembler" component={RaidAssembler} />        
           <Route path="/arenapointcalculator" component={Arenapointcalculator} />      
+          <Route path="/gemfinder" component={gemfinder} />      
         </Switch>  
     </Router>
 
