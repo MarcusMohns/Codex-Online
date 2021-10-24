@@ -1,0 +1,2074 @@
+[
+	{
+		"name": "Accurate Ametrine ",
+		"stats": "+10 Expertise Rating and +10 Hit Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Accurate Huge Citrine ",
+		"stats": "+6 Expertise Rating and +6 Hit Rating ",
+		"source": "Trainer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Accurate Monarch Topaz ",
+		"stats": "+8 Expertise Rating and +8 Hit Rating ",
+		"source": "Storm Peaks mammoths ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Balanced Dreadstone ",
+		"stats": "+20 Attack Power and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Balanced Shadow Crystal ",
+		"stats": "+12 Attack Power and +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Balanced Twilight Opal ",
+		"stats": "+16 Attack Power and +12 Stamina ",
+		"source": "Trainer ",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Bold Bloodstone ",
+		"stats": "+12 Strength ",
+		"source": "Trainer ",
+		"color": "Red",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Bold Cardinal Ruby ",
+		"stats": "+20 Strength ",
+		"source": "Timothy Jones ",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Bold Scarlet Ruby ",
+		"stats": "+16 Strength ",
+		"source": "Tiffany Cartier ",
+		"color": "Red",
+		"quality": "Rare"
+	},
+	{
+		"name": "Bold Stormjewel ",
+		"stats": "+20 Strength ",
+		"source": "Bag of Fishing Treasures ",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Bright Bloodstone ",
+		"stats": "+24 Attack Power ",
+		"source": "Trainer ",
+		"color": "Red",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Bright Cardinal Ruby ",
+		"stats": "+40 Attack Power ",
+		"source": "Timothy Jones ",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Bright Scarlet Ruby ",
+		"stats": "+32 Attack Power ",
+		"source": "Trainer ",
+		"color": "Red",
+		"quality": "Rare"
+	},
+	{
+		"name": "Brilliant Autumn's Glow ",
+		"stats": "+16 Intellect ",
+		"source": "Trainer ",
+		"color": "Yellow",
+		"quality": "Rare"
+	},
+	{
+		"name": "Brilliant King's Amber ",
+		"stats": "+20 Intellect ",
+		"source": "Timothy Jones ",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Brilliant Stormjewel ",
+		"stats": "+20 Intellect ",
+		"source": "Bag of Fishing Treasures ",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Brilliant Sun Crystal ",
+		"stats": "+12 Intellect ",
+		"source": "Trainer ",
+		"color": "Yellow",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Champion's Ametrine ",
+		"stats": "+10 Strength and +10 Defense Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Champion's Huge Citrine ",
+		"stats": "+6 Strength and +6 Defense Rating ",
+		"source": "Trainer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Champion's Monarch Topaz ",
+		"stats": "+8 Strength and +8 Defense Rating ",
+		"source": "World Drop ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Dazzling Dark Jade ",
+		"stats": "+6 Intellect and +3 Mp5 ",
+		"source": "Trainer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Dazzling Eye of Zul ",
+		"stats": "+10 Intellect and +5 Mp5 ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Dazzling Forest Emerald ",
+		"stats": "+8 Intellect and +4 Mp5 ",
+		"source": "Trainer",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Deadly Ametrine ",
+		"stats": "+10 Agility and +10 Critical Strike Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Deadly Huge Citrine ",
+		"stats": "+6 Agility and +6 Critical Strike Rating ",
+		"source": "Knights of the Ebon Blade",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Deadly Monarch Topaz ",
+		"stats": "+8 Agility and +8 Critical Strike Rating ",
+		"source": "Keristrasza",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Defender's Dreadstone ",
+		"stats": "+10 Parry Rating and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Defender's Shadow Crystal ",
+		"stats": "+6 Parry Rating and +9 Stamina ",
+		"source": "Kalu'ak ",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Defender's Twilight Opal ",
+		"stats": "+8 Parry Rating and +12 Stamina ",
+		"source": "Storm Peaks iron dwarves ",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Deft Ametrine ",
+		"stats": "+10 Agility and +10 Haste Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Deft Huge Citrine ",
+		"stats": "+6 Agility and +6 Haste Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Deft Monarch Topaz ",
+		"stats": "+8 Agility and +8 Haste Rating ",
+		"source": "Sjonnir the Ironshaper",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Delicate Bloodstone ",
+		"stats": "+12 Agility ",
+		"source": "Trainer ",
+		"color": "Red",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Delicate Cardinal Ruby ",
+		"stats": "+20 Agility ",
+		"source": "Timothy Jones ",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Delicate Scarlet Ruby ",
+		"stats": "+16 Agility ",
+		"source": "Tiffany Cartier ",
+		"color": "Red",
+		"quality": "Rare"
+	},
+	{
+		"name": "Delicate Stormjewel ",
+		"stats": "+20 Agility ",
+		"source": "Bag of Fishing Treasures ",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Durable Ametrine ",
+		"stats": "+12 Spell Power and +10 Resilience Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Durable Huge Citrine ",
+		"stats": "+7 Spell Power and +6 Resilience Rating ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Durable Monarch Topaz ",
+		"stats": "+9 Spell Power and +8 Resilience Rating ",
+		"source": "Wintergrasp ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Empowered Ametrine ",
+		"stats": "+20 Attack Power and +10 Resilience Rating",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Empowered Huge Citrine ",
+		"stats": "+12 Attack Power and +6 Resilience Rating ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Empowered Monarch Topaz ",
+		"stats": "+16 Attack Power and +8 Resilience Rating",
+		"source": "Wintergrasp",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Enduring Dark Jade ",
+		"stats": "+6 Defense Rating and +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Enduring Eye of Zul ",
+		"stats": "+10 Defense Rating and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Enduring Forest Emerald ",
+		"stats": "+8 Defense Rating and +12 Stamina ",
+		"source": "Tiffany Cartier ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Energized Dark Jade ",
+		"stats": "+6 Haste Rating and +3 Mp5 ",
+		"source": "Trainer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Energized Eye of Zul ",
+		"stats": "+10 Haste Rating and +5 Mp5 ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Energized Forest Emerald ",
+		"stats": "+8 Haste Rating and +4 Mp5 ",
+		"source": "Tiffany Cartier",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Etched Ametrine ",
+		"stats": "+10 Strength and +10 Hit Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Etched Huge Citrine ",
+		"stats": "+6 Strength and +6 Hit Rating ",
+		"source": "Trainer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Etched Monarch Topaz ",
+		"stats": "+8 Strength and +8 Hit Rating ",
+		"source": "World Drop ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Fierce Ametrine ",
+		"stats": "+10 Strength and +10 Haste Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Fierce Huge Citrine ",
+		"stats": "+6 Strength and +6 Haste Rating ",
+		"source": "Trainer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Fierce Monarch Topaz ",
+		"stats": "+8 Strength and +8 Haste Rating ",
+		"source": "Ingvar the Plunderer ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Flashing Bloodstone ",
+		"stats": "+12 Parry Rating",
+		"source": "Trainer",
+		"color": "Red",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Flashing Cardinal Ruby ",
+		"stats": "+20 Parry Rating ",
+		"source": "Timothy Jones",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Flashing Scarlet Ruby ",
+		"stats": "+16 Parry Rating ",
+		"source": "Tiffany Cartier",
+		"color": "Red",
+		"quality": "Rare"
+	},
+	{
+		"name": "Forceful Dark Jade ",
+		"stats": "+ 6 Haste Ratingand +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Forceful Eye of Zul ",
+		"stats": "+10 Haste Rating and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Forceful Forest Emerald ",
+		"stats": "+8 Haste Rating and +12 Stamina ",
+		"source": "Tiffany Cartier ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Fractured Bloodstone ",
+		"stats": "+12 Armor Penetration Rating",
+		"source": "Trainer",
+		"color": "Red",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Fractured Cardinal Ruby ",
+		"stats": "+20 Armor Penetration Rating ",
+		"source": "Timothy Jones",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Fractured Scarlet Ruby ",
+		"stats": "+16 Armor Penetration Rating ",
+		"source": "Nascent Val'kyr",
+		"color": "Red",
+		"quality": "Rare"
+	},
+	{
+		"name": "Glimmering Ametrine ",
+		"stats": "+10 Parry and +10 Defense Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Glimmering Huge Citrine ",
+		"stats": "+6 Parry and +6 Defense Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Glimmering Monarch Topaz ",
+		"stats": "+8 Parry and +8 Defense Rating ",
+		"source": "Wyrmrest Accord",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Glinting Ametrine ",
+		"stats": "+10 Agility and +10 Hit Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Glinting Huge Citrine ",
+		"stats": "+6 Agility and +6 Hit Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Glinting Monarch Topaz ",
+		"stats": "+8 Agility and +8 Hit Rating ",
+		"source": "Tiffany Cartier",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Glowing Dreadstone ",
+		"stats": "+12 Spell Power and +15 Stamina ",
+		"source": "Timothy Jones",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Glowing Shadow Crystal ",
+		"stats": "+7 Spell Power and +9 Stamina ",
+		"source": "Trainer",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Glowing Twilight Opal ",
+		"stats": "+9 Spell Power and +12 Stamina ",
+		"source": "Knights of the Ebon Blade",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Guardian's Dreadstone ",
+		"stats": "+10 Expertise Ratingand +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Guardian's Shadow Crystal ",
+		"stats": "+6 Expertise Ratingand +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Guardian's Twilight Opal ",
+		"stats": "+8 Expertise Ratingand +12 Stamina ",
+		"source": "Argent Crusade ",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Infused Dreadstone ",
+		"stats": "+20 Attack Power and +5 Mp5 ",
+		"source": "Timothy Jones",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Infused Shadow Crystal ",
+		"stats": "+12 Attack Power and +3 Mp5 ",
+		"source": "Trainer",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Infused Twilight Opal ",
+		"stats": "+16 Attack Power and +4 Mp5 ",
+		"source": "Anub'arak",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Inscribed Ametrine ",
+		"stats": "+10 Strength and +10 Critical Strike Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Inscribed Huge Citrine ",
+		"stats": "+6 Strength and +6 Critical Strike Rating ",
+		"source": "Trainer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Inscribed Monarch Topaz ",
+		"stats": "+8 Strength and +8 Critical Strike Rating ",
+		"source": "World Drop ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Intricate Dark Jade ",
+		"stats": "+6 Haste Rating and +6 Spirit ",
+		"source": "Trainer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Intricate Eye of Zul ",
+		"stats": "+10 Haste Rating and +10 Spirit ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Intricate Forest Emerald ",
+		"stats": "+8 Haste Rating and +8 Spirit ",
+		"source": "Tiffany Cartier",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Jagged Dark Jade ",
+		"stats": "+6 Critical Strike Rating and +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Jagged Eye of Zul ",
+		"stats": "+10 Critical Strike Rating and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Jagged Forest Emerald ",
+		"stats": "+8 Critical Strike Rating and +12 Stamina ",
+		"source": "Frenzyheart ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Kharmaa's Grace ",
+		"stats": "+20 Resilience Rating",
+		"source": "Wintergrasp ",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Lambent Dark Jade ",
+		"stats": "+6 Hit Rating and +3 Mp5 ",
+		"source": "Trainer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Lambent Eye of Zul ",
+		"stats": "+10 Hit Rating and +5 Mp5 ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Lambent Forest Emerald ",
+		"stats": "+8 Hit Rating and +4 Mp5 ",
+		"source": "Tiffany Cartier",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Lucent Ametrine ",
+		"stats": "+10 Agility and +10 Resilience Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Lucent Huge Citrine ",
+		"stats": "+6 Agility and +6 Resilience Rating ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Lucent Monarch Topaz ",
+		"stats": "+8 Agility and +8 Resilience Rating ",
+		"source": "Wintergrasp",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Luminous Ametrine ",
+		"stats": "+12 Spell Power and +10 Intellect ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Luminous Huge Citrine ",
+		"stats": "+7 Spell Power and +6 Intellect ",
+		"source": "Trainer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Luminous Monarch Topaz ",
+		"stats": "+9 Spell Power and +8 Intellect ",
+		"source": "Tiffany Cartier ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Lustrous Chalcedony ",
+		"stats": "+6 Mp5  ",
+		"source": "Trainer ",
+		"color": "Blue",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Lustrous Majestic Zircon ",
+		"stats": "+10 Mp5  ",
+		"source": "Timothy Jones ",
+		"color": "Blue",
+		"quality": "Epic"
+	},
+	{
+		"name": "Lustrous Sky Sapphire ",
+		"stats": "+8 Mp5  ",
+		"source": "Tiffany Cartier ",
+		"color": "Blue",
+		"quality": "Rare"
+	},
+	{
+		"name": "Misty Dark Jade ",
+		"stats": "+6 Critical Strike Rating and +6 Spirit ",
+		"source": "Trainer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Misty Eye of Zul ",
+		"stats": "+10 Critical Strike Rating and +10 Spirit ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Misty Forest Emerald ",
+		"stats": "+8 Critical Strike Rating and +8 Spirit ",
+		"source": "World Drop",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Mysterious Dreadstone ",
+		"stats": "+12 Spell Power and +13 Spell Penetration ",
+		"source": "Timothy Jones",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Mysterious Shadow Crystal ",
+		"stats": "+7 Spell Power and +8 Spell Penetration ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Mysterious Twilight Opal ",
+		"stats": "+9 Spell Power and +10 Spell Penetration ",
+		"source": "Wintergrasp",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Mystic Autumn's Glow ",
+		"stats": "+16 Resilience Rating",
+		"source": "Wintergrasp ",
+		"color": "Yellow",
+		"quality": "Rare"
+	},
+	{
+		"name": "Mystic King's Amber ",
+		"stats": "+20 Resilience Rating",
+		"source": "Timothy Jones ",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Mystic Sun Crystal ",
+		"stats": "+12 Resilience Rating",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer ",
+		"color": "Yellow",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Opaque Dark Jade ",
+		"stats": "+6 Resilience Ratingand +3 Mp5 ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Opaque Eye of Zul ",
+		"stats": "+10 Resilience Ratingand +5 Mp5 ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Opaque Forest Emerald ",
+		"stats": "+8 Resilience Ratingand +4 Mp5 ",
+		"source": "Wintergrasp",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Perfect Accurate Huge Citrine ",
+		"stats": "+7 Expertise Rating and +7 Hit Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Balanced Shadow Crystal ",
+		"stats": "+14 Attack Power and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Bold Bloodstone ",
+		"stats": "+14 Strength ",
+		"source": "Gem Perfection ",
+		"color": "Red",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Bright Bloodstone ",
+		"stats": "+26 Attack Power ",
+		"source": "Gem Perfection ",
+		"color": "Red",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Brilliant Sun Crystal ",
+		"stats": "+14 Intellect ",
+		"source": "Gem Perfection ",
+		"color": "Yellow",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Champion's Huge Citrine ",
+		"stats": "+7 Strength and +7 Defense Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Dazzling Dark Jade ",
+		"stats": "+7 Intellect and +4 Mp5 ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Deadly Huge Citrine ",
+		"stats": "+7 Agility and +7 Critical Strike Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Defender's Shadow Crystal ",
+		"stats": "+7 Parry Rating and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Deft Huge Citrine ",
+		"stats": "+7 Agility and +7 HasteRating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Delicate Bloodstone ",
+		"stats": "+14 Agility ",
+		"source": "Gem Perfection ",
+		"color": "Red",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Durable Huge Citrine ",
+		"stats": "+8 Spell Power and +7 Resilience Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Empowered Huge Citrine ",
+		"stats": "+14 Attack Power and +7 Resilience Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Enduring Dark Jade ",
+		"stats": "+7 Defense Rating and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Energized Dark Jade ",
+		"stats": "+7 Haste Rating and +4 Mp5 ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Etched Huge Citrine ",
+		"stats": "+7 Strength and +7 Hit Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Fierce Huge Citrine ",
+		"stats": "+7 Strength and +7 Haste Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Flashing Bloodstone ",
+		"stats": "+14 Parry Rating",
+		"source": "Gem Perfection",
+		"color": "Red",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Forceful Dark Jade ",
+		"stats": "+7 Haste Rating and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Fractured Bloodstone ",
+		"stats": "+14 Armor Penetration Rating",
+		"source": "Gem Perfection",
+		"color": "Red",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Glimmering Huge Citrine ",
+		"stats": "+7 Parry and +7 Defense Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Glinting Huge Citrine ",
+		"stats": "+7 Agility and +7 Hit Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Glowing Shadow Crystal ",
+		"stats": "+8 Spell Power and +11 Stamina ",
+		"source": "Gem Perfection",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Guardian's Shadow Crystal ",
+		"stats": "+7 Expertise Ratingand +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Infused Shadow Crystal ",
+		"stats": "+14 Attack Power and +4 Mp5 ",
+		"source": "Gem Perfection",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Inscribed Huge Citrine ",
+		"stats": "+7 Strength and +7 Critical Strike Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Intricate Dark Jade ",
+		"stats": "+7 Haste Rating and +6 Spirit ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Jagged Dark Jade ",
+		"stats": "+7 Critical Strike Rating and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Lambent Dark Jade ",
+		"stats": "+7 Hit Rating and +4 Mp5 ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Lucent Huge Citrine ",
+		"stats": "+7 Agility and +7 Resilience Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Luminous Huge Citrine ",
+		"stats": "+8 Spell Power and +7 Intellect ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Lustrous Chalcedony ",
+		"stats": "+7 Mp5  ",
+		"source": "Gem Perfection ",
+		"color": "Blue",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Misty Dark Jade ",
+		"stats": "+7 Critical Strike Rating and +7 Spirit ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Mysterious Shadow Crystal ",
+		"stats": "+8 Spell Power and +9 Spell Penetration ",
+		"source": "Gem Perfection",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Mystic Sun Crystal ",
+		"stats": "+14 Resilience Rating",
+		"source": "Gem Perfection ",
+		"color": "Yellow",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Opaque Dark Jade ",
+		"stats": "+7 Resilience Ratingand +4 Mp5 ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Potent Huge Citrine ",
+		"stats": "+7 Spell Power and +6 Critical Strike Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Precise Bloodstone ",
+		"stats": "+14 Expertise Rating ",
+		"source": "Gem Perfection",
+		"color": "Red",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Pristine Huge Citrine ",
+		"stats": "+14 Attack Power and +7 Hit Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Puissant Shadow Crystal ",
+		"stats": "+7 Armor Penetration and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Purified Shadow Crystal ",
+		"stats": "+8 Spell Power and +7 Spirit ",
+		"source": "Gem Perfection",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Quick Sun Crystal ",
+		"stats": "+14 Haste Rating ",
+		"source": "Gem Perfection ",
+		"color": "Yellow",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Radiant Dark Jade ",
+		"stats": "+7 Critical Strike Rating and +9 Spell Penetration ",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Reckless Huge Citrine ",
+		"stats": "+8 Spell Power and +7 Haste Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Regal Shadow Crystal ",
+		"stats": "+7 Dodge Rating and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Resolute Huge Citrine ",
+		"stats": "+7 Expertise Ratingand +7 Defense Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Resplendent Huge Citrine ",
+		"stats": "+7 Strength and +7 Resilience Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Rigid Sun Crystal ",
+		"stats": "+14 Hit Rating ",
+		"source": "Gem Perfection",
+		"color": "Yellow",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Royal Shadow Crystal ",
+		"stats": "+8 Spell Power and +4 Mp5 ",
+		"source": "Gem Perfection",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Runed Bloodstone ",
+		"stats": "+16 Spell Power ",
+		"source": "Gem Perfection",
+		"color": "Red",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Seer's Dark Jade ",
+		"stats": "+7 Intellect and +7 Spirit ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Shattered Dark Jade ",
+		"stats": "+7 Haste Rating and +9 Spell Penetration",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Shifting Shadow Crystal ",
+		"stats": "+7 Agility and +11 Stamina ",
+		"source": "Gem Perfection",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Shining Dark Jade ",
+		"stats": "+7 Hit Rating and +7 Spirit ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Smooth Sun Crystal ",
+		"stats": "+14 Critical Strike Rating ",
+		"source": "Gem Perfection",
+		"color": "Yellow",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Solid Chalcedony ",
+		"stats": "+21 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Blue",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Sovereign Shadow Crystal ",
+		"stats": "+7 Strength and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Sparkling Chalcedony ",
+		"stats": "+14 Spirit ",
+		"source": "Gem Perfection",
+		"color": "Blue",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Stalwart Huge Citrine ",
+		"stats": "+7 Dodge and +7 Defense Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Stark Huge Citrine ",
+		"stats": "+14 Attack Power and +7 Haste Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Steady Dark Jade ",
+		"stats": "+7 Resilience Ratingand +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Stormy Chalcedony ",
+		"stats": "+18 Spell Penetration  ",
+		"source": "Gem Perfection",
+		"color": "Blue",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Subtle Bloodstone ",
+		"stats": "+14 dodge Rating ",
+		"source": "Gem Perfection ",
+		"color": "Red",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Sundered Dark Jade ",
+		"stats": "+7 Critical Strike Rating and +4 Mp5 ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Tense Dark Jade ",
+		"stats": "+6 Hit Rating and +9 Spell Penetration ",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Tenuous Shadow Crystal ",
+		"stats": "+7 Agility and +4 Mp5 ",
+		"source": "Gem Perfection",
+		"color": "Purple",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Thick Sun Crystal ",
+		"stats": "+14 Defense Rating ",
+		"source": "Gem Perfection",
+		"color": "Yellow",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Timeless Dark Jade ",
+		"stats": "+7 Intellect and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Turbid Dark Jade ",
+		"stats": "+7 Resilience Ratingand +7 Spirit ",
+		"source": "Gem Perfection",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Veiled Huge Citrine ",
+		"stats": "+9 Spell Power and +7 Hit Rating ",
+		"source": "Gem Perfection ",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Vivid Dark Jade ",
+		"stats": "+7 Hit Rating and +11 Stamina ",
+		"source": "Gem Perfection ",
+		"color": "Green",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Perfect Wicked Huge Citrine ",
+		"stats": "+14 Attack Power and +7 Critical Strike Rating ",
+		"source": "Gem Perfection",
+		"color": "Orange",
+		"quality": "Perfect"
+	},
+	{
+		"name": "Potent Ametrine ",
+		"stats": "+12 Spell Power and +10 Critical Strike Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Potent Huge Citrine ",
+		"stats": "+8 Spell Power and +7 Critical Strike Rating ",
+		"source": "Trainer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Potent Monarch Topaz ",
+		"stats": "+9 Spell Power and +8 Critical Strike Rating ",
+		"source": "Tiffany Cartier ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Precise Bloodstone ",
+		"stats": "+12 Expertise Rating ",
+		"source": "Trainer",
+		"color": "Red",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Precise Cardinal Ruby ",
+		"stats": "+20 Expertise Rating ",
+		"source": "Timothy Jones",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Precise Scarlet Ruby ",
+		"stats": "+16 Expertise Rating ",
+		"source": "Herald Volazj",
+		"color": "Red",
+		"quality": "Rare"
+	},
+	{
+		"name": "Pristine Ametrine ",
+		"stats": "+20 Attack Power and +10 Hit Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Pristine Huge Citrine ",
+		"stats": "+12 Attack Power and +6 Hit Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Pristine Monarch Topaz ",
+		"stats": "+16 Attack Power and +8 Hit Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Puissant Dreadstone ",
+		"stats": "+10 Armor Penetration and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Puissant Shadow Crystal ",
+		"stats": "+6 Armor Penetration and +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Puissant Twilight Opal ",
+		"stats": "+8 Armor Penetration and +12 Stamina ",
+		"source": "Tiffany Cartier ",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Purified Dreadstone ",
+		"stats": "+12 Spell Power and +10 Spirit ",
+		"source": "Timothy Jones",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Purified Shadow Crystal ",
+		"stats": "+7 Spell Power and +6 Spirit ",
+		"source": "Trainer",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Purified Twilight Opal ",
+		"stats": "+9 Spell Power and +8 Spirit ",
+		"source": "World Drop",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Quick Autumn's Glow ",
+		"stats": "+16 Haste Rating ",
+		"source": "Tiffany Cartier ",
+		"color": "Yellow",
+		"quality": "Rare"
+	},
+	{
+		"name": "Quick King's Amber ",
+		"stats": "+20 Haste Rating ",
+		"source": "Timothy Jones ",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Quick Sun Crystal ",
+		"stats": "+12 Haste Rating ",
+		"source": "Trainer ",
+		"color": "Yellow",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Radiant Dark Jade ",
+		"stats": "+6 Critical Strike Rating and +8 Spell Penetration ",
+		"source": "Trainer ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Radiant Eye of Zul ",
+		"stats": "+10 Critical Strike Rating and +13 Spell Penetration ",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Radiant Forest Emerald ",
+		"stats": "+8 Critical Strike Rating and +10 Spell Penetration ",
+		"source": "Storm Peaks harpies ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Reckless Ametrine ",
+		"stats": "+12 Spell Power and +10 Haste Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Reckless Huge Citrine ",
+		"stats": "+7 Spell Power and +6 Haste Rating ",
+		"source": "Frenzyheart ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Reckless Monarch Topaz ",
+		"stats": "+9 Spell Power and +8 Haste Rating ",
+		"source": "Tiffany Cartier ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Regal Dreadstone ",
+		"stats": "+10 Dodge Rating and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Regal Shadow Crystal ",
+		"stats": "+6 Dodge Rating and +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Regal Twilight Opal ",
+		"stats": "+8 Dodge Rating and +12 Stamina ",
+		"source": "Trainer ",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Resolute Ametrine ",
+		"stats": "+10 Expertise Ratingand +10 Defense Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Resolute Huge Citrine ",
+		"stats": "+6 Expertise Ratingand +6 Defense Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Resolute Monarch Topaz ",
+		"stats": "+8 Expertise Ratingand +8 Defense Rating ",
+		"source": "World Drop",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Resplendent Ametrine ",
+		"stats": "+10 Strength and +10 Resilience Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Resplendent Huge Citrine ",
+		"stats": "+6 Strength and +6 Resilience Rating ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Resplendent Monarch Topaz ",
+		"stats": "+8 Strength and +8 Resilience Rating ",
+		"source": "Wintergrasp ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Rigid Autumn's Glow ",
+		"stats": "+16 Hit Rating ",
+		"source": "Tiffany Cartier",
+		"color": "Yellow",
+		"quality": "Rare"
+	},
+	{
+		"name": "Rigid King's Amber ",
+		"stats": "+20 Hit Rating ",
+		"source": "Timothy Jones",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Rigid Stormjewel ",
+		"stats": "+20 Hit Rating ",
+		"source": "Bag of Fishing Treasures",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Rigid Sun Crystal ",
+		"stats": "+12 Hit Rating ",
+		"source": "Trainer",
+		"color": "Yellow",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Royal Dreadstone ",
+		"stats": "+12 Spell Power and +5 Mp5 ",
+		"source": "Timothy Jones",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Royal Shadow Crystal ",
+		"stats": "+7 Spell Power and +3 Mp5 ",
+		"source": "Trainer",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Royal Twilight Opal ",
+		"stats": "+9 Spell Power and +4 Mp5 ",
+		"source": "Tiffany Cartier",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Runed Bloodstone ",
+		"stats": "+14 Spell Power ",
+		"source": "Trainer",
+		"color": "Red",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Runed Cardinal Ruby ",
+		"stats": "+23 Spell Power ",
+		"source": "Timothy Jones",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Runed Scarlet Ruby ",
+		"stats": "+19 Spell Power ",
+		"source": "Kirin Tor",
+		"color": "Red",
+		"quality": "Rare"
+	},
+	{
+		"name": "Runed Stormjewel ",
+		"stats": "+23 Spell Power ",
+		"source": "Bag of Fishing Treasures",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Seer's Dark Jade ",
+		"stats": "+6 Intellect and +6 Spirit ",
+		"source": "Kalu'ak",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Seer's Eye of Zul ",
+		"stats": "+10 Intellect and +10 Spirit ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Seer's Forest Emerald ",
+		"stats": "+8 Intellect and +8 Spirit ",
+		"source": "Tiffany Cartier",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Shattered Dark Jade ",
+		"stats": "+6 Haste Rating and +8 Spell Penetration ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Shattered Eye of Zul ",
+		"stats": "+10 Haste Rating and +13 Spell Penetration",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Shattered Forest Emerald ",
+		"stats": "+8 Haste Rating and +10 Spell Penetration",
+		"source": "Wintergrasp ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Shifting Dreadstone ",
+		"stats": "+10 Agility and +15 Stamina ",
+		"source": "Timothy Jones",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Shifting Shadow Crystal ",
+		"stats": "+6 Agility and +9 Stamina ",
+		"source": "Trainer",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Shifting Twilight Opal ",
+		"stats": "+8 Agility and +12 Stamina ",
+		"source": "Tiffany Cartier",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Shining Dark Jade ",
+		"stats": "+6 Hit Rating and +6 Spirit ",
+		"source": "Trainer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Shining Eye of Zul ",
+		"stats": "+10 Hit Rating and +10 Spirit ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Shining Forest Emerald ",
+		"stats": "+8 Hit Rating and +8 Spirit ",
+		"source": "World Drop",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Smooth Autumn's Glow ",
+		"stats": "+16 Critical Strike Rating ",
+		"source": "Sons of Hodir",
+		"color": "Yellow",
+		"quality": "Rare"
+	},
+	{
+		"name": "Smooth King's Amber ",
+		"stats": "+20 Critical Strike Rating ",
+		"source": "Timothy Jones",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Smooth Sun Crystal ",
+		"stats": "+12 Critical Strike Rating ",
+		"source": "Trainer",
+		"color": "Yellow",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Solid Chalcedony ",
+		"stats": "+18 Stamina ",
+		"source": "Trainer ",
+		"color": "Blue",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Solid Majestic Zircon ",
+		"stats": "+30 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Blue",
+		"quality": "Epic"
+	},
+	{
+		"name": "Solid Sky Sapphire ",
+		"stats": "+24 Stamina ",
+		"source": "Tiffany Cartier ",
+		"color": "Blue",
+		"quality": "Rare"
+	},
+	{
+		"name": "Solid Stormjewel ",
+		"stats": "+30 Stamina ",
+		"source": "Bag of Fishing Treasures ",
+		"color": "Blue",
+		"quality": "Epic"
+	},
+	{
+		"name": "Sovereign Dreadstone ",
+		"stats": "+10 Strength and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Sovereign Shadow Crystal ",
+		"stats": "+6 Strength and +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Sovereign Twilight Opal ",
+		"stats": "+8 Strength and +12 Stamina ",
+		"source": "World Drop ",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Sparkling Chalcedony ",
+		"stats": "+12 Spirit ",
+		"source": "Trainer",
+		"color": "Blue",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Sparkling Majestic Zircon ",
+		"stats": "+20 Spirit ",
+		"source": "Timothy Jones",
+		"color": "Blue",
+		"quality": "Epic"
+	},
+	{
+		"name": "Sparkling Sky Sapphire ",
+		"stats": "+16 Spirit ",
+		"source": "Trainer",
+		"color": "Blue",
+		"quality": "Rare"
+	},
+	{
+		"name": "Sparkling Stormjewel ",
+		"stats": "+20 Spirit ",
+		"source": "Bag of Fishing Treasures",
+		"color": "Blue",
+		"quality": "Epic"
+	},
+	{
+		"name": "Stalwart Ametrine ",
+		"stats": "+10 Dodge and +10 Defense Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Stalwart Huge Citrine ",
+		"stats": "+6 Dodge and +6 Defense Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Stalwart Monarch Topaz ",
+		"stats": "+8 Dodge and +8 Defense Rating ",
+		"source": "World Drop",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Stark Ametrine ",
+		"stats": "+20 Attack Power and +10 Haste Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Stark Huge Citrine ",
+		"stats": "+12 Attack Power and +6 Haste Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Stark Monarch Topaz ",
+		"stats": "+16 Attack Power and +8 Haste Rating ",
+		"source": "Tiffany Cartier",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Steady Dark Jade ",
+		"stats": "+6 Resilience Ratingand +9 Stamina ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Steady Eye of Zul ",
+		"stats": "+10 Resilience Ratingand +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Steady Forest Emerald ",
+		"stats": "+8 Resilience Ratingand +12 Stamina ",
+		"source": "Wintergrasp ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Stormy Chalcedony ",
+		"stats": "+15 Spell Penetration  ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer",
+		"color": "Blue",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Stormy Majestic Zircon ",
+		"stats": "+25 Spell Penetration  ",
+		"source": "Timothy Jones",
+		"color": "Blue",
+		"quality": "Epic"
+	},
+	{
+		"name": "Stormy Sky Sapphire ",
+		"stats": "+20 Spell Penetration  ",
+		"source": "Wintergrasp",
+		"color": "Blue",
+		"quality": "Rare"
+	},
+	{
+		"name": "Subtle Bloodstone ",
+		"stats": "+12 Dodge Rating ",
+		"source": "Trainer ",
+		"color": "Red",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Subtle Cardinal Ruby ",
+		"stats": "+20 dodge Rating ",
+		"source": "Timothy Jones ",
+		"color": "Red",
+		"quality": "Epic"
+	},
+	{
+		"name": "Subtle Scarlet Ruby ",
+		"stats": "+16 dodge Rating ",
+		"source": "Tiffany Cartier ",
+		"color": "Red",
+		"quality": "Rare"
+	},
+	{
+		"name": "Sundered Dark Jade ",
+		"stats": "+6 Critical Strike Rating and +3 Mp5 ",
+		"source": "Trainer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Sundered Eye of Zul ",
+		"stats": "+10 Critical Strike Rating and +5 Mp5 ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Sundered Forest Emerald ",
+		"stats": "+8 Critical Strike Rating and +4 Mp5 ",
+		"source": "Oracles",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Tense Dark Jade ",
+		"stats": "+6 Hit Rating and +8 Spell Penetration ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Tense Eye of Zul ",
+		"stats": "+10 Hit Rating and +13 Spell Penetration ",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Tense Forest Emerald ",
+		"stats": "+6 Hit Rating and +10 Spell Penetration ",
+		"source": "Wintergrasp ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Tenuous Dreadstone ",
+		"stats": "+10 Agility and +5 Mp5 ",
+		"source": "Timothy Jones",
+		"color": "Purple",
+		"quality": "Epic"
+	},
+	{
+		"name": "Tenuous Shadow Crystal ",
+		"stats": "+6 Agility and +3 Mp5 ",
+		"source": "Trainer",
+		"color": "Purple",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Tenuous Twilight Opal ",
+		"stats": "+8 Agility and +4 Mp5 ",
+		"source": "World Drop",
+		"color": "Purple",
+		"quality": "Rare"
+	},
+	{
+		"name": "Thick Autumn's Glow ",
+		"stats": "+16 Defense Rating ",
+		"source": "Cyanigosa",
+		"color": "Yellow",
+		"quality": "Rare"
+	},
+	{
+		"name": "Thick King's Amber ",
+		"stats": "+20 Defense Rating ",
+		"source": "Timothy Jones",
+		"color": "Yellow",
+		"quality": "Epic"
+	},
+	{
+		"name": "Thick Sun Crystal ",
+		"stats": "+12 Defense Rating ",
+		"source": "Trainer",
+		"color": "Yellow",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Timeless Dark Jade ",
+		"stats": "+6 Intellect and +9 Stamina ",
+		"source": "Trainer ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Timeless Eye of Zul ",
+		"stats": "+10 Intellect and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Timeless Forest Emerald ",
+		"stats": "+8 Intellect and +12 Stamina ",
+		"source": "The Prophet Tharon'ja ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Turbid Dark Jade ",
+		"stats": "+6 Resilience Ratingand +6 Spirit ",
+		"source": "(A)Captain O'Neal (H)Lady Palanseer",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Turbid Eye of Zul ",
+		"stats": "+10 Resilience Ratingand +10 Spirit ",
+		"source": "Timothy Jones",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Turbid Forest Emerald ",
+		"stats": "+8 Resilience Ratingand +8 Spirit ",
+		"source": "Wintergrasp",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Veiled Ametrine ",
+		"stats": "+12 Spell Power and +10 Hit Rating ",
+		"source": "Timothy Jones ",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Veiled Huge Citrine ",
+		"stats": "+7 Spell Power and +6 Hit Rating ",
+		"source": "Trainer ",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Veiled Monarch Topaz ",
+		"stats": "+9 Spell Power and +8 Hit Rating ",
+		"source": "Tiffany Cartier ",
+		"color": "Orange",
+		"quality": "Rare"
+	},
+	{
+		"name": "Vivid Dark Jade ",
+		"stats": "+6 Hit Rating and +9 Stamina ",
+		"source": "Oracles ",
+		"color": "Green",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Vivid Eye of Zul ",
+		"stats": "+10 Hit Rating and +15 Stamina ",
+		"source": "Timothy Jones ",
+		"color": "Green",
+		"quality": "Epic"
+	},
+	{
+		"name": "Vivid Forest Emerald ",
+		"stats": "+8 Hit Rating and +12 Stamina ",
+		"source": "Tiffany Cartier ",
+		"color": "Green",
+		"quality": "Rare"
+	},
+	{
+		"name": "Wicked Ametrine ",
+		"stats": "+20 Attack Power and +10 Critical Strike Rating ",
+		"source": "Timothy Jones",
+		"color": "Orange",
+		"quality": "Epic"
+	},
+	{
+		"name": "Wicked Huge Citrine ",
+		"stats": "+12 Attack Power and +6 Critical Strike Rating ",
+		"source": "Trainer",
+		"color": "Orange",
+		"quality": "Uncommon"
+	},
+	{
+		"name": "Wicked Monarch Topaz ",
+		"stats": "+16 Attack Power and +8 Critical Strike Rating ",
+		"source": "Knights of the Ebon Blade",
+		"color": "Orange",
+		"quality": "Rare"
+	}
+]
