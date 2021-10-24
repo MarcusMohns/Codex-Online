@@ -7,7 +7,6 @@ const RaidBuff = ({text}) => {
         }
     }
         return (
-        
         <div>
             {allBuffs}
         </div>
