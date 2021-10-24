@@ -1,51 +1,32 @@
 import { Container } from "../components/styles/Container.styled"
 import { useState } from "react"
+import Gems from "../components/Gems"
 
 
 const gemfinder = () => {
 
     const [gems,setGems] = useState([
         {name: "Bold Cardinal Ruby",
-        color: "red",
-        quality: "epic",
-        stats: "strength",
+        color: "Red",
+        quality: "Epic",
+        stats: "20 Strength",
         },
         {name: "Quick King's Amber",
-        color: "yellow",
-        quality: "epic",
-        stats: "haste",
+        color: "Yellow",
+        quality: "Epic",
+        stats: "20 Haste",
         },
         {name: "Solid Stormjewel",
-        color: "blue",
-        quality: "epic",
-        stats: "stamina",
+        color: "Blue",
+        quality: "Epic",
+        stats: "20 Stamina",
         },
         
     ])
 
     return (
-    <Container>
-        <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Color</th>
-                <th>Quality</th>
-                <th>Stat</th>
-            </tr>
-        </thead>
-        <tbody>
-            {gems.map((gem) => (
-            <tr>
-                <td>{gem.name}</td>
-                <td>{gem.color}</td>
-                <td>{gem.quality}</td>
-                <td>{gem.stats}</td>
-            </tr>
-            ))}
-        </tbody>
-        </table>
-            
+    <Container style={{flexDirection:"row"}}>
+        <Gems gems={gems}/>
     </Container> 
     )
 }

@@ -2,35 +2,30 @@ import styled from "styled-components";
 
 export const GemFinder = styled.div`
 
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-    align-items: center;
+display: flex;
+flex-direction: row;
 
-	td,
+table {
+  width: 100%;
+  font-size:15px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 10px;
+}
+
 th {
+  background-color: #000;
+  color:#fff;
 
-    padding: 10px;
 }
 
 td {
-    text-align: center;
+  background-color: lightblue;
+  color:white;
 }
-
-th[scope="row"] {
-    background-color: lightblue;
-}
-
-
-
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-family: sans-serif;
-    font-size: .8rem;
-}
-
 
 
 
