@@ -14,7 +14,8 @@ const Gems = ({gems}) => {
         </thead>
         <tbody>
             {gems.map((gem) => (
-            <tr>
+            
+            <tr key={gem.name}>
                 <td>{gem.name}</td>
                 <td>{gem.color}</td>
                 <td>{gem.quality}</td>

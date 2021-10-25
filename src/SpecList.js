@@ -175,7 +175,7 @@ const SpecList = [
       buffs:["Attack Power","Health","Armor Reduction(Major)","Phys Vulnerability"],
     },
     {
-  
+
       text:'Fury Warrior',
       image:require('./images/warrior_fury.png').default,
       color:'brown',
