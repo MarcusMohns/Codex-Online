@@ -3,7 +3,9 @@ import { useState } from "react"
 import Gems from "../components/Gems"
 import gemArray from "../Gems.json"
 import Checkboxes from "../components/Checkboxes"
-import Filters from "../Filters.json"
+import Filters from "../Filters"
+
+
 
 const gemfinder = () => {
     const [gems,setGems] = useState(gemArray)

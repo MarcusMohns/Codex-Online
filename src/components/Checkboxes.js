@@ -2,15 +2,24 @@ import Checkbox from "./Checkbox"
 
 const Checkboxes = ({filters}) => {
     return (
-        <ul>
-            <li>
-            {filters.map((filter) => (
-                <Checkbox 
-                text={filter} />
-            ))}
-            </li>
-        </ul>
-    )
-}
+        <div>
+        {filters.map((item) => {
+               return (
+                <ul key={item.name}>
+                {item.name}    
+                {item.content.map((c,i) =>   
+                    <Checkbox key={i} text={c}/>
+                    )}
+                </ul>
+ 
+            )
+        })}
+        </div>
+    
+    
+    
+    
+)}
 
 export default Checkboxes
+               
