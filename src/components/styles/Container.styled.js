@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
@@ -9,6 +9,4 @@ export const Container = styled.div`
 	border: 1px solid steelblue;
 	padding: 30px;
 	border-radius: 5px;
-
-
-`
+`;

@@ -1,12 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SpecButtonContainer = styled.div`
-
-	border-radius: 8px;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: repeat(10, 1fr);
 	max-width: 35vw;
-	justify-content: center;
-
-	
-`
+`;

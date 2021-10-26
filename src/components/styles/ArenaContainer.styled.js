@@ -1,46 +1,40 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ArenaContainer = styled.div`
-
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
 
 	td,
-th {
+	th {
+		padding: 10px;
+	}
 
-    padding: 10px;
-}
+	td {
+		text-align: center;
+	}
 
-td {
-    text-align: center;
-}
+	th[scope="row"] {
+		background-color: lightblue;
+	}
 
-th[scope="row"] {
-    background-color: lightblue;
-}
+	caption {
+		padding: 20px;
+		padding-top: 40px;
+		caption-side: top;
+	}
 
-caption {
-    padding: 20px;
-    padding-top: 40px;
-    caption-side: top;
-}
+	table {
+		border-collapse: collapse;
+		border: 2px solid rgb(200, 200, 200);
+		letter-spacing: 1px;
+		font-family: sans-serif;
+		font-size: .8rem;
+	}
 
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-family: sans-serif;
-    font-size: .8rem;
-}
-
-input {
-    height:30px;
-    padding:10px;
-
-
-}
-
-
-`
+	input {
+		height: 30px;
+		padding: 10px;
+	}
+`;
