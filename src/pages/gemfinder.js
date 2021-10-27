@@ -3,14 +3,32 @@ import { useState } from 'react';
 import Gems from '../components/Gems';
 import gemArray from '../Gems.json';
 import Checkboxes from '../components/Checkboxes';
-import Filters from '../Filters';
+import filterNames from '../FilterNames';
 
 const gemfinder = () => {
 	const [ gems, setGems ] = useState(gemArray);
+	const [ currentFilters, setCurrentFillters ] = useState([]);
+
+	// Add/Remove filters to currentFilters
+	const handleChange = (e) => {
+		if (e.target.checked) {
+			setCurrentFillters([ ...currentFilters, e.target.value ]);
+		} else if (!e.target.checked) {
+			setCurrentFillters(currentFilters.filter((aFilter) => aFilter !== e.target.value));
+		} else {
+			return alert('error');
+		}
+		gemFilterer();
+	};
+
+	// Filter our state with (gems)
+	const gemFilterer = () => {
+		setGems();
+	};
 
 	return (
 		<Container style={{ flexDirection: 'row' }}>
-			<Checkboxes filters={Filters} />
+			<Checkboxes filters={filterNames} onChange={handleChange} />
 			<Gems gems={gems} />
 		</Container>
 	);
