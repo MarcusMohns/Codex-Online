@@ -1,29 +1,44 @@
 import { Container } from '../components/styles/Container.styled';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Gems from '../components/Gems';
 import gemArray from '../Gems.json';
 import Checkboxes from '../components/Checkboxes';
 import filterNames from '../FilterNames';
 
+let currentFilters = [];
+let newArray = [];
+
 const gemfinder = () => {
 	const [ gems, setGems ] = useState(gemArray);
-	const [ currentFilters, setCurrentFillters ] = useState([]);
 
 	// Add/Remove filters to currentFilters
 	const handleChange = (e) => {
 		if (e.target.checked) {
-			setCurrentFillters([ ...currentFilters, e.target.value ]);
+			currentFilters = [ ...currentFilters, e.target.value ];
 		} else if (!e.target.checked) {
-			setCurrentFillters(currentFilters.filter((aFilter) => aFilter !== e.target.value));
+			currentFilters = currentFilters.filter((aFilter) => aFilter !== e.target.value);
 		} else {
 			return alert('error');
 		}
+		gemFilterer();
 	};
 
-	// Filter our state with (gems)
-	useEffect(() => {
-		console.log(currentFilters);
-	});
+	const gemFilterer = () => {
+		newArray = gemArray;
+		currentFilters.forEach((aFilter) => {
+			if (filterNames[2].content.includes(aFilter))
+				newArray = newArray.filter((gem) => currentFilters.includes(gem.color));
+			else if (filterNames[3].content.includes(aFilter))
+				newArray = newArray.filter((gem) => currentFilters.includes(gem.quality));
+			else if (filterNames[0].content.includes(aFilter) || filterNames[1].content.includes(aFilter))
+				newArray = newArray.filter((gem) => gem.stats.includes(aFilter));
+			else {
+				alert('eeerrorrrr');
+			}
+		});
+
+		setGems(newArray);
+	};
 
 	return (
 		<Container style={{ flexDirection: 'row' }}>

@@ -400,7 +400,7 @@
 	},
 	{
 		"name": "Forceful Dark Jade ",
-		"stats": "+ 6 Haste Ratingand +9 Stamina ",
+		"stats": "+ 6 Haste Rating and +9 Stamina ",
 		"source": "Trainer ",
 		"color": "Green",
 		"quality": "Uncommon"
@@ -505,21 +505,21 @@
 	},
 	{
 		"name": "Guardian's Dreadstone ",
-		"stats": "+10 Expertise Ratingand +15 Stamina ",
+		"stats": "+10 Expertise   +15 Stamina ",
 		"source": "Timothy Jones ",
 		"color": "Purple",
 		"quality": "Epic"
 	},
 	{
 		"name": "Guardian's Shadow Crystal ",
-		"stats": "+6 Expertise Ratingand +9 Stamina ",
+		"stats": "+6 Expertise   +9 Stamina ",
 		"source": "Trainer ",
 		"color": "Purple",
 		"quality": "Uncommon"
 	},
 	{
 		"name": "Guardian's Twilight Opal ",
-		"stats": "+8 Expertise Ratingand +12 Stamina ",
+		"stats": "+8 Expertise   +12 Stamina ",
 		"source": "Argent Crusade ",
 		"color": "Purple",
 		"quality": "Rare"
@@ -764,21 +764,21 @@
 	},
 	{
 		"name": "Opaque Dark Jade ",
-		"stats": "+6 Resilience Ratingand +3 Mp5 ",
+		"stats": "+6 Resilience   +3 Mp5 ",
 		"source": "(A)Captain O'Neal (H)Lady Palanseer",
 		"color": "Green",
 		"quality": "Uncommon"
 	},
 	{
 		"name": "Opaque Eye of Zul ",
-		"stats": "+10 Resilience Ratingand +5 Mp5 ",
+		"stats": "+10 Resilience   +5 Mp5 ",
 		"source": "Timothy Jones",
 		"color": "Green",
 		"quality": "Epic"
 	},
 	{
 		"name": "Opaque Forest Emerald ",
-		"stats": "+8 Resilience Ratingand +4 Mp5 ",
+		"stats": "+8 Resilience   +4 Mp5 ",
 		"source": "Wintergrasp",
 		"color": "Green",
 		"quality": "Rare"
@@ -946,7 +946,7 @@
 	},
 	{
 		"name": "Perfect Guardian's Shadow Crystal ",
-		"stats": "+7 Expertise Ratingand +11 Stamina ",
+		"stats": "+7 Expertise   +11 Stamina ",
 		"source": "Gem Perfection ",
 		"color": "Purple",
 		"quality": "Perfect"
@@ -1030,7 +1030,7 @@
 	},
 	{
 		"name": "Perfect Opaque Dark Jade ",
-		"stats": "+7 Resilience Ratingand +4 Mp5 ",
+		"stats": "+7 Resilience   +4 Mp5 ",
 		"source": "Gem Perfection",
 		"color": "Green",
 		"quality": "Perfect"
@@ -1100,7 +1100,7 @@
 	},
 	{
 		"name": "Perfect Resolute Huge Citrine ",
-		"stats": "+7 Expertise Ratingand +7 Defense Rating ",
+		"stats": "+7 Expertise   +7 Defense Rating ",
 		"source": "Gem Perfection",
 		"color": "Orange",
 		"quality": "Perfect"
@@ -1205,7 +1205,7 @@
 	},
 	{
 		"name": "Perfect Steady Dark Jade ",
-		"stats": "+7 Resilience Ratingand +11 Stamina ",
+		"stats": "+7 Resilience   +11 Stamina ",
 		"source": "Gem Perfection ",
 		"color": "Green",
 		"quality": "Perfect"
@@ -1261,7 +1261,7 @@
 	},
 	{
 		"name": "Perfect Turbid Dark Jade ",
-		"stats": "+7 Resilience Ratingand +7 Spirit ",
+		"stats": "+7 Resilience   +7 Spirit ",
 		"source": "Gem Perfection",
 		"color": "Green",
 		"quality": "Perfect"
@@ -1478,21 +1478,21 @@
 	},
 	{
 		"name": "Resolute Ametrine ",
-		"stats": "+10 Expertise Ratingand +10 Defense Rating ",
+		"stats": "+10 Expertise   +10 Defense Rating ",
 		"source": "Timothy Jones",
 		"color": "Orange",
 		"quality": "Epic"
 	},
 	{
 		"name": "Resolute Huge Citrine ",
-		"stats": "+6 Expertise Ratingand +6 Defense Rating ",
+		"stats": "+6 Expertise   +6 Defense Rating ",
 		"source": "Trainer",
 		"color": "Orange",
 		"quality": "Uncommon"
 	},
 	{
 		"name": "Resolute Monarch Topaz ",
-		"stats": "+8 Expertise Ratingand +8 Defense Rating ",
+		"stats": "+8 Expertise   +8 Defense Rating ",
 		"source": "World Drop",
 		"color": "Orange",
 		"quality": "Rare"
@@ -1821,21 +1821,21 @@
 	},
 	{
 		"name": "Steady Dark Jade ",
-		"stats": "+6 Resilience Ratingand +9 Stamina ",
+		"stats": "+6 Resilience   +9 Stamina ",
 		"source": "(A)Captain O'Neal (H)Lady Palanseer ",
 		"color": "Green",
 		"quality": "Uncommon"
 	},
 	{
 		"name": "Steady Eye of Zul ",
-		"stats": "+10 Resilience Ratingand +15 Stamina ",
+		"stats": "+10 Resilience   +15 Stamina ",
 		"source": "Timothy Jones ",
 		"color": "Green",
 		"quality": "Epic"
 	},
 	{
 		"name": "Steady Forest Emerald ",
-		"stats": "+8 Resilience Ratingand +12 Stamina ",
+		"stats": "+8 Resilience   +12 Stamina ",
 		"source": "Wintergrasp ",
 		"color": "Green",
 		"quality": "Rare"
@@ -1989,21 +1989,21 @@
 	},
 	{
 		"name": "Turbid Dark Jade ",
-		"stats": "+6 Resilience Ratingand +6 Spirit ",
+		"stats": "+6 Resilience   +6 Spirit ",
 		"source": "(A)Captain O'Neal (H)Lady Palanseer",
 		"color": "Green",
 		"quality": "Uncommon"
 	},
 	{
 		"name": "Turbid Eye of Zul ",
-		"stats": "+10 Resilience Ratingand +10 Spirit ",
+		"stats": "+10 Resilience   +10 Spirit ",
 		"source": "Timothy Jones",
 		"color": "Green",
 		"quality": "Epic"
 	},
 	{
 		"name": "Turbid Forest Emerald ",
-		"stats": "+8 Resilience Ratingand +8 Spirit ",
+		"stats": "+8 Resilience   +8 Spirit ",
 		"source": "Wintergrasp",
 		"color": "Green",
 		"quality": "Rare"

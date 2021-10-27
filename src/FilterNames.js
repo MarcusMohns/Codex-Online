@@ -30,7 +30,7 @@ const FilterNames = [
 
 	{
 		name: 'Quality',
-		content: [ 'Uncommon', 'Perfect Uncommon', 'Rare', 'Epic' ]
+		content: [ 'Uncommon', 'Perfect', 'Rare', 'Epic' ]
 	}
 ];
 
