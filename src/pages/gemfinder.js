@@ -1,5 +1,5 @@
 import { Container } from '../components/styles/Container.styled';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Gems from '../components/Gems';
 import gemArray from '../Gems.json';
 import Checkboxes from '../components/Checkboxes';
@@ -18,13 +18,12 @@ const gemfinder = () => {
 		} else {
 			return alert('error');
 		}
-		gemFilterer();
 	};
 
 	// Filter our state with (gems)
-	const gemFilterer = () => {};
-
-	console.log(currentFilters);
+	useEffect(() => {
+		console.log(currentFilters);
+	});
 
 	return (
 		<Container style={{ flexDirection: 'row' }}>
