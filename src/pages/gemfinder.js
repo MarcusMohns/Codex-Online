@@ -6,7 +6,6 @@ import Checkboxes from '../components/Checkboxes';
 import filterNames from '../FilterNames';
 
 let currentFilters = [];
-let newArray = [];
 
 const gemfinder = () => {
 	const [ gems, setGems ] = useState(gemArray);
@@ -24,7 +23,7 @@ const gemfinder = () => {
 	};
 
 	const gemFilterer = () => {
-		newArray = gemArray;
+		let newArray = gemArray;
 		currentFilters.forEach((aFilter) => {
 			if (filterNames[2].content.includes(aFilter))
 				newArray = newArray.filter((gem) => currentFilters.includes(gem.color));
@@ -39,6 +38,7 @@ const gemfinder = () => {
 
 		setGems(newArray);
 	};
+	console.log(currentFilters);
 
 	return (
 		<Container style={{ flexDirection: 'row' }}>
