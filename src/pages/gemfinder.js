@@ -1,5 +1,5 @@
 import { Container } from '../components/styles/Container.styled';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Gems from '../components/Gems';
 import gemArray from '../Gems.json';
 import Checkboxes from '../components/Checkboxes';
@@ -21,7 +21,7 @@ const gemfinder = () => {
 		}
 		gemFilterer();
 	};
-
+	// Sets our state depending on which checkboxes are ticked.
 	const gemFilterer = () => {
 		let newArray = gemArray;
 		currentFilters.forEach((aFilter) => {
@@ -38,7 +38,11 @@ const gemfinder = () => {
 
 		setGems(newArray);
 	};
-	console.log(currentFilters);
+
+	// resets currentFilters when the page is rendered
+	useEffect(() => {
+		currentFilters = [];
+	}, []);
 
 	return (
 		<Container style={{ flexDirection: 'row' }}>
