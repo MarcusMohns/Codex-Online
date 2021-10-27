@@ -16,7 +16,6 @@ const RaidAssembler = () => {
 	const deletePlayer = (id) => {
 		setRaid(raid.filter((player) => player.id !== id));
 		setBuffs(buffs.filter((playerBuffs) => playerBuffs.id !== id));
-
 		setCount(count - 1);
 	};
 
