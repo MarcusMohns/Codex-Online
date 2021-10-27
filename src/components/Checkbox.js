@@ -1,7 +1,7 @@
-const Checkbox = ({ text }) => {
+const Checkbox = ({ text, onChange }) => {
 	return (
 		<div>
-			<input type="checkbox" />
+			<input type="checkbox" value={text} onChange={onChange} />
 			{text}
 		</div>
 	);

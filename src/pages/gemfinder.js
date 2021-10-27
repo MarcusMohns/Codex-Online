@@ -22,9 +22,9 @@ const gemfinder = () => {
 	};
 
 	// Filter our state with (gems)
-	const gemFilterer = () => {
-		setGems();
-	};
+	const gemFilterer = () => {};
+
+	console.log(currentFilters);
 
 	return (
 		<Container style={{ flexDirection: 'row' }}>

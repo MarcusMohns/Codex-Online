@@ -1,4 +1,4 @@
-const Filters = [
+const FilterNames = [
 	{
 		name: 'Main Attributes',
 		content: [ 'Agility', 'Intellect', 'Spirit', 'Stamina', 'Strength' ]
@@ -34,4 +34,4 @@ const Filters = [
 	}
 ];
 
-export default Filters;
+export default FilterNames;
