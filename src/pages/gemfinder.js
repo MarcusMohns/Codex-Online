@@ -26,13 +26,16 @@ const gemfinder = () => {
 		let newArray = gemArray;
 		currentFilters.forEach((aFilter) => {
 			if (filterNames[2].content.includes(aFilter))
+				// Gem color
 				newArray = newArray.filter((gem) => currentFilters.includes(gem.color));
 			else if (filterNames[3].content.includes(aFilter))
+				//Gem quality
 				newArray = newArray.filter((gem) => currentFilters.includes(gem.quality));
 			else if (filterNames[0].content.includes(aFilter) || filterNames[1].content.includes(aFilter))
+				// Main Attributes, Secondary Attributes
 				newArray = newArray.filter((gem) => gem.stats.includes(aFilter));
 			else {
-				alert('eeerrorrrr');
+				return alert('Error');
 			}
 		});
 
@@ -47,7 +50,7 @@ const gemfinder = () => {
 	return (
 		<Container style={{ flexDirection: 'row' }}>
 			<Checkboxes filters={filterNames} onChange={handleChange} />
-			<Gems gems={gems} />
+			{gems.length > 0 ? <Gems gems={gems} /> : 'No gems found :('}
 		</Container>
 	);
 };

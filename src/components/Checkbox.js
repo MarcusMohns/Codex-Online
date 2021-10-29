@@ -1,9 +1,9 @@
 const Checkbox = ({ text, onChange }) => {
 	return (
-		<div>
-			<input type="checkbox" value={text} onChange={onChange} />
-			{text}
-		</div>
+		<p>
+			<input type="checkbox" value={text} onChange={onChange} id={text} />
+			<label for={text}>{text}</label>
+		</p>
 	);
 };
 

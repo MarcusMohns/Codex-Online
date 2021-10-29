@@ -6,7 +6,7 @@ const Checkboxes = ({ filters, onChange }) => {
 			{filters.map((item) => {
 				return (
 					<ul key={item.name}>
-						{item.name}
+						<p id="category">{item.name}</p>
 						{item.content.map((content, index) => (
 							<Checkbox key={index} text={content} onChange={onChange} />
 						))}
