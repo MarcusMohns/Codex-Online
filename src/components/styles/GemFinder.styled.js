@@ -1,27 +1,32 @@
 import styled from 'styled-components';
 
 export const GemFinder = styled.div`
-	display: flex;
-	flex-direction: column;
-
 	table {
-		width: 100%;
-		font-size: 15px;
+		border-collapse: collapse;
+		text-align: center;
+		width: 50vw;
 	}
 
 	th,
 	td {
-		text-align: center;
-		padding: 10px;
-	}
-
-	th {
-		background-color: #000;
 		color: #fff;
+		padding: 30px;
 	}
 
-	td {
-		background-color: lightblue;
-		color: white;
+	#headerItems th {
+		position: sticky;
+		top: 0;
+		background: #000;
+	}
+
+	tbody tr {
+		background-color: #124559;
+		transition: background-color 150ms ease-out;
+		&:nth-child(2n) {
+			background-color: #598392;
+		}
+		&:hover {
+			background-color: #000;
+		}
 	}
 `;

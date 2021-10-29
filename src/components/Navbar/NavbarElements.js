@@ -3,15 +3,11 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: #000;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
-  z-index: 10;
-  border-radius: 5px;
-  border-bottom: 1px solid steelblue;
-
+	background: #000;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem calc((100vw - 1000px) / 2);
 `;
 
 export const NavLink = styled(Link)`
@@ -26,6 +22,11 @@ export const NavLink = styled(Link)`
   &.active {
     color: #15cdfc;
   }
+  &:hover {
+    color: #15cdfc;
+    
+  }
+  
 `;
 
 export const Bars = styled(FaBars)`
@@ -43,23 +44,23 @@ export const Bars = styled(FaBars)`
 `;
 
 export const NavMenu = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: -24px;
+	display: flex;
+	align-items: center;
+	margin-right: -24px;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `;
 
 export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
-  background:black;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+	display: flex;
+	align-items: center;
+	margin-right: 24px;
+	background: black;
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
 `;
 
 export const NavBtnLink = styled(Link)`

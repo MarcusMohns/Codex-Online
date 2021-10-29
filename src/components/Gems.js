@@ -4,17 +4,17 @@ const Gems = ({ gems }) => {
 	return (
 		<GemFinder>
 			<table>
-				<thead>
-					<tr>
+				<thead id="header">
+					<tr id="headerItems">
 						<th>Name</th>
 						<th>Color</th>
 						<th>Quality</th>
-						<th>Stat</th>
+						<th>Stats</th>
 					</tr>
 				</thead>
 				<tbody>
 					{gems.map((gem) => (
-						<tr key={gem.name}>
+						<tr key={gem.name} id="body">
 							<td>{gem.name}</td>
 							<td>{gem.color}</td>
 							<td>{gem.quality}</td>
@@ -26,5 +26,4 @@ const Gems = ({ gems }) => {
 		</GemFinder>
 	);
 };
-
 export default Gems;

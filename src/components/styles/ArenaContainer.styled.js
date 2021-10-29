@@ -21,8 +21,8 @@ export const ArenaContainer = styled.div`
 
 	caption {
 		padding: 20px;
-		padding-top: 40px;
 		caption-side: top;
+		font-size: 15px;
 	}
 
 	table {
@@ -34,7 +34,7 @@ export const ArenaContainer = styled.div`
 	}
 
 	input {
-		height: 30px;
+		height: 10px;
 		padding: 10px;
 	}
 `;

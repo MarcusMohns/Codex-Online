@@ -75,7 +75,7 @@ function Arenapointcalculator() {
 	return (
 		<main>
 			<Header title="Arena Point Calculator" />
-			<Container style={{ maxWidth: '50%' }}>
+			<Container>
 				<ArenaContainer>
 					<form onChange={handleChange} onSelect={handleSelect} autoComplete="off">
 						<table>
