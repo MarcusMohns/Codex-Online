@@ -7,6 +7,9 @@ import { Main, GemFinder } from '../components/styles/GemFinder.styled';
 
 let currentFilters = [];
 
+const handleClick = (event) => {
+	console.log(event);
+};
 const gemfinder = () => {
 	const [ gems, setGems ] = useState(gemArray);
 
@@ -52,7 +55,7 @@ const gemfinder = () => {
 			<Checkboxes filters={filterNames} onChange={handleChange} />
 			{gems.length > 0 ? (
 				<GemFinder>
-					<GemTable gems={gems} />
+					<GemTable gems={gems} onClick={handleClick} />
 				</GemFinder>
 			) : (
 				'No gems found :('

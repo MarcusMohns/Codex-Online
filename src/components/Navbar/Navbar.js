@@ -1,11 +1,11 @@
 import React from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
-import logo from '../../images/WOTLK.png';
+import logo from '../../images/icon.png';
 const Navbar = () => {
 	return (
 		<Nav>
 			<NavLink to="/home">
-				<img style={{ background: 'black' }} src={logo} alt="logo" />
+				<img style={{ background: 'black', width: '50px' }} src={logo} alt="logo" />
 			</NavLink>
 			<Bars />
 			<NavMenu>

@@ -1,6 +1,6 @@
 const Checkbox = ({ text, onChange }) => {
 	return (
-		<p>
+		<p className="aCheckbox">
 			<input type="checkbox" value={text} onChange={onChange} id={text} />
 			<label htmlFor={text}>{text}</label>
 		</p>

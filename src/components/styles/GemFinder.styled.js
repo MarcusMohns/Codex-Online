@@ -8,9 +8,16 @@ export const Main = styled.main`
 	margin: auto;
 	min-height: 300px;
 	padding: 30px;
+
+	.category {
+		font-size: 18px;
+	}
+	.aCheckbox {
+		font-size: 15px;
+	}
 `;
 
-export const GemFinder = styled.table`
+export const GemFinder = styled.div`
 	table {
 		border-collapse: collapse;
 		text-align: center;
@@ -23,11 +30,18 @@ export const GemFinder = styled.table`
 		padding: 20px;
 	}
 
-	.headerItems th {
+	.headerItems {
 		position: sticky;
 		top: 0;
 		background-color: #000;
 		padding: 30px;
+	}
+
+	.gemName {
+		border-right-style: ridge;
+	}
+	.gemQuality {
+		color: gold;
 	}
 
 	tbody tr {

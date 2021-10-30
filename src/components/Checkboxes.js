@@ -5,12 +5,12 @@ const Checkboxes = ({ filters, onChange }) => {
 		<div>
 			{filters.map((item) => {
 				return (
-					<ul key={item.name}>
-						<p id="category">{item.name}</p>
+					<div key={item.name}>
+						<p className="category">{item.name}</p>
 						{item.content.map((content, index) => (
 							<Checkbox key={index} text={content} onChange={onChange} />
 						))}
-					</ul>
+					</div>
 				);
 			})}
 		</div>
