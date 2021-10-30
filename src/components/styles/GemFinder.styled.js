@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 
-export const GemFinder = styled.div`
+export const Main = styled.main`
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 75vw;
+	margin: auto;
+	min-height: 300px;
+	padding: 30px;
+`;
+
+export const GemFinder = styled.table`
 	table {
 		border-collapse: collapse;
 		text-align: center;
@@ -10,13 +20,14 @@ export const GemFinder = styled.div`
 	th,
 	td {
 		color: #fff;
-		padding: 30px;
+		padding: 20px;
 	}
 
-	#headerItems th {
+	.headerItems th {
 		position: sticky;
 		top: 0;
-		background: #000;
+		background-color: #000;
+		padding: 30px;
 	}
 
 	tbody tr {

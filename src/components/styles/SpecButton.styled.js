@@ -8,7 +8,7 @@ export const StyledSpecButton = styled.button`
 	border: none;
 	border-radius: 5%;
 	cursor: pointer;
-	font-size: 13px;
+	font-size: 15px;
 	text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
 		#000 0px 0px 3px;
 

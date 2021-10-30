@@ -12,6 +12,7 @@ export const StyledPlayer = styled.div`
 	cursor: pointer;
 	color: #666666;
 	font-size: 15px;
+	width: 200px;
 	padding: 5px;
 	text-shadow: 0px 1px 0px #ffffff;
 

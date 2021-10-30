@@ -1,11 +1,11 @@
 import { Container } from '../components/styles/Container.styled';
 
-const About = () => {
+const Home = () => {
 	return (
 		<Container>
-			<h1>About</h1>
+			<h1>Home</h1>
 		</Container>
 	);
 };
 
-export default About;
+export default Home;

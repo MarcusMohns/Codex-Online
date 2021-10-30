@@ -1,9 +1,9 @@
-import { Container } from '../components/styles/Container.styled';
 import { useState, useEffect } from 'react';
-import Gems from '../components/Gems';
+import GemTable from '../components/GemTable';
 import gemArray from '../Gems.json';
 import Checkboxes from '../components/Checkboxes';
 import filterNames from '../FilterNames';
+import { Main, GemFinder } from '../components/styles/GemFinder.styled';
 
 let currentFilters = [];
 
@@ -48,10 +48,16 @@ const gemfinder = () => {
 	}, []);
 
 	return (
-		<Container style={{ flexDirection: 'row' }}>
+		<Main>
 			<Checkboxes filters={filterNames} onChange={handleChange} />
-			{gems.length > 0 ? <Gems gems={gems} /> : 'No gems found :('}
-		</Container>
+			{gems.length > 0 ? (
+				<GemFinder>
+					<GemTable gems={gems} />
+				</GemFinder>
+			) : (
+				'No gems found :('
+			)}
+		</Main>
 	);
 };
 
