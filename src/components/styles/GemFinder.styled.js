@@ -4,20 +4,31 @@ export const Main = styled.main`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	max-width: 75vw;
+	max-width: 90vw;
 	margin: auto;
 	min-height: 300px;
 	padding: 30px;
+`;
 
-	.category {
+export const CheckBoxContainer = styled.div`
+	.checkBoxContainer {
+		display: flex;
+		flex-direction: row;
+		padding: 20px;
+	}
+	.categoryContainer {
+		padding: 10px;
+	}
+	.categoryName {
 		font-size: 18px;
+		flex-direction: column;
 	}
 	.aCheckbox {
 		font-size: 15px;
 	}
 `;
 
-export const GemFinder = styled.div`
+export const GemTableContainer = styled.div`
 	table {
 		border-collapse: collapse;
 		text-align: center;
@@ -37,13 +48,6 @@ export const GemFinder = styled.div`
 		padding: 30px;
 	}
 
-	.gemName {
-		border-right-style: ridge;
-	}
-	.gemQuality {
-		color: gold;
-	}
-
 	tbody tr {
 		background-color: #124559;
 		transition: background-color 150ms ease-out;
@@ -53,5 +57,12 @@ export const GemFinder = styled.div`
 		&:hover {
 			background-color: #000;
 		}
+	}
+
+	.gemName {
+		border-right-style: ridge;
+	}
+	.gemQuality {
+		color: gold;
 	}
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-const Gems = ({ gems, onClick }) => {
+const Gems = ({ gems }) => {
 	return (
 		<table>
 			<thead>
@@ -13,9 +13,7 @@ const Gems = ({ gems, onClick }) => {
 			<tbody>
 				{gems.map((gem) => (
 					<tr key={gem.name}>
-						<td className="gemName" onClick={onClick}>
-							{gem.name}
-						</td>
+						<td className="gemName">{gem.name}</td>
 						<td>{gem.color}</td>
 						<td className="gemQuality">{gem.quality}</td>
 						<td>{gem.stats}</td>

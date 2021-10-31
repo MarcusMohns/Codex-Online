@@ -2,11 +2,11 @@ import Checkbox from './Checkbox';
 
 const Checkboxes = ({ filters, onChange }) => {
 	return (
-		<div>
+		<div className="checkBoxContainer">
 			{filters.map((item) => {
 				return (
-					<div key={item.name}>
-						<p className="category">{item.name}</p>
+					<div key={item.name} className="categoryContainer">
+						<p className="categoryName">{item.name}</p>
 						{item.content.map((content, index) => (
 							<Checkbox key={index} text={content} onChange={onChange} />
 						))}

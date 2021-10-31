@@ -3,13 +3,10 @@ import GemTable from '../components/GemTable';
 import gemArray from '../Gems.json';
 import Checkboxes from '../components/Checkboxes';
 import filterNames from '../FilterNames';
-import { Main, GemFinder } from '../components/styles/GemFinder.styled';
+import { Main, GemTableContainer, CheckBoxContainer } from '../components/styles/GemFinder.styled';
 
 let currentFilters = [];
 
-const handleClick = (event) => {
-	console.log(event);
-};
 const gemfinder = () => {
 	const [ gems, setGems ] = useState(gemArray);
 
@@ -52,14 +49,10 @@ const gemfinder = () => {
 
 	return (
 		<Main>
-			<Checkboxes filters={filterNames} onChange={handleChange} />
-			{gems.length > 0 ? (
-				<GemFinder>
-					<GemTable gems={gems} onClick={handleClick} />
-				</GemFinder>
-			) : (
-				'No gems found :('
-			)}
+			<CheckBoxContainer>
+				<Checkboxes filters={filterNames} onChange={handleChange} />
+			</CheckBoxContainer>
+			<GemTableContainer>{gems.length > 0 ? <GemTable gems={gems} /> : 'No gems found :('}</GemTableContainer>
 		</Main>
 	);
 };
