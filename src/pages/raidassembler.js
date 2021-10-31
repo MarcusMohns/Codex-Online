@@ -4,12 +4,7 @@ import SpecList from '../SpecList';
 import PlayersInRaid from '../components/PlayersInRaid';
 import { useState } from 'react';
 import RaidBuffs from '../components/RaidBuffs';
-import {
-	Main,
-	SpecButtonContainer,
-	RaidGroupContainer,
-	RaidBuffContainer
-} from '../components/styles/RaidAssembler.styled';
+import { Main, SpecContainer, RaidContainer, BuffContainer } from '../components/styles/RaidAssembler.styled';
 
 const RaidAssembler = () => {
 	const [ raid, setRaid ] = useState([]);
@@ -36,19 +31,16 @@ const RaidAssembler = () => {
 	};
 	return (
 		<Main>
-			<Header title="Raid Assembler" />
-			<RaidGroupContainer>
+			<RaidContainer>
 				<div className="count"> {count} / 25 </div>
 				<div className="grid">
 					{raid.length > 0 ? <PlayersInRaid raid={raid} onDelete={deletePlayer} /> : 'No Players in Raid'}
 				</div>
-			</RaidGroupContainer>
-			<RaidBuffContainer>
-				<RaidBuffs buffs={buffs} />
-			</RaidBuffContainer>
-			<SpecButtonContainer>
+			</RaidContainer>
+			<BuffContainer>{buffs.length > 0 ? <RaidBuffs buffs={buffs} /> : 'No Buffs in Raid'}</BuffContainer>
+			<SpecContainer>
 				<SpecButtons specs={SpecList} onClick={addPlayer} />
-			</SpecButtonContainer>
+			</SpecContainer>
 		</Main>
 	);
 };

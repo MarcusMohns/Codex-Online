@@ -1,24 +1,30 @@
 import styled from 'styled-components';
 
 export const StyledSpecButton = styled.button`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
 	background: ${(props) => props.color};
 	color: #fff;
-	padding: 5px;
-	margin: 3px;
-	border: none;
-	border-radius: 5%;
+	border: ridge;
+	border-color: transparent;
+	margin: 1px;
 	cursor: pointer;
 	font-size: 15px;
 	text-shadow: #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px, #000 0px 0px 3px,
 		#000 0px 0px 3px;
 
 	&:hover {
-		-webkit-box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.2);
-		box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.5);
+		transform: scale(1.05);
 	}
 
 	&:active {
 		transform: translateY(1px);
-		filter: saturate(150%);
+		filter: saturate(120%);
+	}
+	img {
+		width: 20px;
+		height: 20px;
 	}
 `;
