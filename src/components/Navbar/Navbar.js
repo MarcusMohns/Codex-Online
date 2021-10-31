@@ -5,7 +5,7 @@ const Navbar = () => {
 	return (
 		<Nav>
 			<NavLink to="/home">
-				<img style={{ background: 'black', width: '50px' }} src={logo} alt="logo" />
+				<img src={logo} alt="logo" className="logo" />
 			</NavLink>
 			<Bars />
 			<NavMenu>

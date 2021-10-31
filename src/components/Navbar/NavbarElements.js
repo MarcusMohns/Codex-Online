@@ -26,6 +26,10 @@ export const NavLink = styled(Link)`
     color: #15cdfc;
     
   }
+
+  .logo {
+    width:50px;
+  }
   
 `;
 
