@@ -1,7 +1,7 @@
 import React from 'react';
 const Gems = ({ gems }) => {
 	return (
-		<table>
+		<table className="gemTable">
 			<thead>
 				<tr className="headerItems">
 					<th>Name</th>

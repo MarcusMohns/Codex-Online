@@ -11,7 +11,7 @@ export const Main = styled.main`
 	padding: 20px;
 `;
 
-export const RaidContainer = styled.div`
+export const RaidContainer = styled.section`
 	.count {
 		font-size: 1em;
 		font-weight: bold;
@@ -24,7 +24,7 @@ export const RaidContainer = styled.div`
 		grid-auto-flow: column;
 	}
 `;
-export const BuffContainer = styled.div`
+export const BuffContainer = styled.section`
 	display: flex;
 	flex-direction: row;
 	max-width: 90vw;
@@ -33,7 +33,7 @@ export const BuffContainer = styled.div`
 	padding: 1rem;
 `;
 
-export const SpecContainer = styled.div`
+export const SpecContainer = styled.section`
 	margin-top: .5rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

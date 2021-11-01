@@ -9,7 +9,7 @@ export const Main = styled.main`
 	padding: 2rem;
 `;
 
-export const ArenaContainer = styled.div`
+export const ArenaContainer = styled.section`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;

@@ -23,7 +23,7 @@ export const StyledSpecButton = styled.button`
 		filter: saturate(120%);
 	}
 	img {
-		width: 20px;
-		height: 20px;
+		width: 1.3rem;
+		height: 1.3rem;
 	}
 `;

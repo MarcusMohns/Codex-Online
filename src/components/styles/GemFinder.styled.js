@@ -50,7 +50,7 @@ export const GemTableContainer = styled.section`
 
 	tbody tr {
 		background-color: #124559;
-		transition: background-color 150ms ease-out;
+
 		&:nth-child(2n) {
 			background-color: #598392;
 		}
