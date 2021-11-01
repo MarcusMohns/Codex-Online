@@ -6,7 +6,7 @@ export const Main = styled.main`
 	max-width: 75vw;
 	margin: auto;
 	min-height: 300px;
-	padding: 20px;
+	padding: 2rem;
 `;
 
 export const ArenaContainer = styled.div`
@@ -17,7 +17,7 @@ export const ArenaContainer = styled.div`
 
 	td,
 	th {
-		padding: 10px;
+		padding: .5rem;
 	}
 
 	td {
@@ -29,9 +29,9 @@ export const ArenaContainer = styled.div`
 	}
 
 	caption {
-		padding: 20px;
+		padding: 1rem;
 		caption-side: top;
-		font-size: 15px;
+		font-size: 1rem;
 	}
 
 	table {
@@ -43,7 +43,7 @@ export const ArenaContainer = styled.div`
 	}
 
 	input {
-		height: 10px;
-		padding: 10px;
+		height: .8rem;
+		padding: .5rem;
 	}
 `;

@@ -13,9 +13,9 @@ export const Main = styled.main`
 
 export const RaidContainer = styled.div`
 	.count {
-		font-size: 18px;
+		font-size: 1em;
 		font-weight: bold;
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
 	}
 	.grid {
 		display: grid;
@@ -30,15 +30,15 @@ export const BuffContainer = styled.div`
 	max-width: 90vw;
 	margin: auto;
 	min-height: 300px;
-	padding: 20px;
+	padding: 1rem;
 `;
 
 export const SpecContainer = styled.div`
-	margin-top: 40px;
+	margin-top: .5rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: repeat(10, 1fr);
 	max-width: 35vw;
-	padding: 10px;
-	border: ridge;
+	padding: 0.5rem;
+	border: 1px ridge black;
 `;
