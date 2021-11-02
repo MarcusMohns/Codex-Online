@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Main = styled.main`
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	max-width: 90vw;
 	margin: auto;
 	min-height: 300px;
@@ -35,7 +34,6 @@ export const GemTableContainer = styled.section`
 	table {
 		border-collapse: collapse;
 		text-align: center;
-		width: 50vw;
 	}
 
 	th,
@@ -52,18 +50,18 @@ export const GemTableContainer = styled.section`
 	}
 
 	tbody tr {
-		background-color: #124559;
+		background-color: #787878;
 
 		&:nth-child(2n) {
-			background-color: #598392;
+			background-color: #686868;
 		}
 		&:hover {
-			background-color: #000;
+			background-color: #505050;
 		}
 	}
 
 	.gemName {
-		border-right-style: ridge;
+		border-right-style: solid;
 	}
 	.gemQuality {
 		color: gold;

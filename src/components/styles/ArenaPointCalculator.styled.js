@@ -25,7 +25,7 @@ export const ArenaContainer = styled.section`
 	}
 
 	th[scope="row"] {
-		background-color: lightblue;
+		background-color: #256ce1;
 	}
 
 	caption {
