@@ -15,14 +15,14 @@ export const StyledPlayer = styled.div`
 	width: 12rem;
 	padding: 0.33rem;
 	text-shadow: 0px 1px 0px #ffffff;
+	transition: transform 0.2;
 
 	img {
 		width: 1.2rem;
 		height: 1.2rem;
-
 		border-radius: 50%;
 	}
 	&:hover {
-		font-weight: bold;
+		transform: translateY(-0.10em);
 	}
 `;

@@ -4,10 +4,40 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
 	background: #000;
-	height: 50px;
+	height: 3rem;
 	display: flex;
 	justify-content: space-between;
 	padding: 0.5rem calc((100vw - 1000px) / 2);
+
+	@media screen and (max-width: 768px) {
+		height: 10%;
+	}
+
+	.showBarsMenu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.9);
+	}
+
+	.hideBarsMenu {
+		display: none;
+	}
+`;
+
+export const BarsNavLink = styled(Link)`
+  padding: .6rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #818181;
+
+
 `;
 
 export const NavLink = styled(Link)`

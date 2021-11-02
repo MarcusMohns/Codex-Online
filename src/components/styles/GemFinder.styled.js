@@ -14,17 +14,20 @@ export const CheckBoxContainer = styled.section`
 	.checkBoxContainer {
 		display: flex;
 		flex-direction: row;
-		padding: 2rem;
+		padding: 1rem;
 	}
 	.categoryContainer {
-		padding: 1rem;
+		padding: .8rem;
 	}
 	.categoryName {
 		font-size: 1.5rem;
 		flex-direction: column;
 	}
-	.aCheckbox {
-		font-size: 1.1rem;
+	.aCheckbox label,
+	input {
+		padding: .1rem;
+		font-size: 1rem;
+		cursor: pointer;
 	}
 `;
 
