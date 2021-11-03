@@ -5,16 +5,24 @@ export const Main = styled.main`
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-flow: column;
-	max-width: 90vw;
+	max-width: 75vw;
+	min-height: 75vw;
 	margin: auto;
-	min-height: 300px;
+	min-height: 500px;
 	padding: 20px;
+	margin-top: 10%;
+	background-color: #264874;
+	opacity: 90%;
+	border-radius: 5px;
+	box-shadow: 5px 5px;
 `;
 
 export const RaidContainer = styled.section`
 	.count {
+		color: #fff;
 		font-size: 1em;
-		font-weight: bold;
+		letter-spacing: 1px;
+		font-weight: 400;
 		margin-bottom: 1rem;
 	}
 	.grid {
@@ -39,6 +47,9 @@ export const SpecContainer = styled.section`
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: repeat(10, 1fr);
 	max-width: 35vw;
-	padding: 0.5rem;
-	border: 1px ridge black;
+	padding: .1rem;
+	border: none;
+	border-radius: 5px;
+	background-color: black;
+	box-shadow: 1px 2px;
 `;

@@ -73,14 +73,9 @@ function Arenapointcalculator() {
 
 	return (
 		<Main>
-			<Header title="Arena Point Calculator" />
 			<ArenaContainer>
 				<form onChange={handleChange} onSelect={handleSelect} autoComplete="off">
 					<table>
-						<caption>
-							Input your current rating in the appropriate bracket to calculate how many arena points you
-							will recieve at the end of the week
-						</caption>
 						<thead>
 							<tr>
 								<th scope="col">Bracket</th>
@@ -120,7 +115,6 @@ function Arenapointcalculator() {
 			<ArenaContainer>
 				<form onChange={pointChange} onSelect={handleSelect} autoComplete="off">
 					<table>
-						<caption>Calculate what rating you need acheive in order to get the points you want</caption>
 						<thead>
 							<tr>
 								<th scope="col">Points needed</th>

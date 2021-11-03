@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Nav, NavLink, Bars, BarsNavLink, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
+import { Nav, NavLink, Bars, BarsNavLink, NavMenu } from './NavbarElements';
 import logo from '../../images/icon.png';
 
 const Navbar = () => {
@@ -31,9 +31,6 @@ const Navbar = () => {
 				<NavLink to="/gemfinder">Gem Finder</NavLink>
 				<NavLink to="/about">About</NavLink>
 			</NavMenu>
-			<NavBtn>
-				<NavBtnLink to="/sign in"> Sign in</NavBtnLink>
-			</NavBtn>
 		</Nav>
 	);
 };

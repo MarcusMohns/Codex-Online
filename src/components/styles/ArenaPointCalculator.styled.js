@@ -1,20 +1,29 @@
 import styled from 'styled-components';
 
 export const Main = styled.main`
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-auto-flow: column;
 	max-width: 75vw;
+	min-height: 75vw;
 	margin: auto;
-	min-height: 300px;
-	padding: 2rem;
+	min-height: 500px;
+	padding: 20px;
+	margin-top: 10%;
+	background-color: #264874;
+	opacity: 90%;
+	border-radius: 5px;
+	box-shadow: 3px 3px;
 `;
 
 export const ArenaContainer = styled.section`
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 
+	:nth-of-type(1) {
+		border-bottom: 1px solid black;
+	}
 	td,
 	th {
 		padding: .5rem;
@@ -25,20 +34,17 @@ export const ArenaContainer = styled.section`
 	}
 
 	th[scope="row"] {
-		background-color: #256ce1;
-	}
-
-	caption {
+		background-color: lightblue;
 		padding: 1rem;
-		caption-side: top;
-		font-size: 1rem;
 	}
 
 	table {
+		border-radius: 5px;
+		background-color: white;
 		border-collapse: collapse;
-		border: 2px solid rgb(200, 200, 200);
 		letter-spacing: 1px;
 		font-size: .8rem;
+		box-shadow: 5px 5px;
 	}
 
 	input {
