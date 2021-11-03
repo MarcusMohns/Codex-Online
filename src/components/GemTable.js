@@ -13,10 +13,13 @@ const Gems = ({ gems }) => {
 			<tbody>
 				{gems.map((gem) => (
 					<tr key={gem.name}>
-						<td className="gemName">{gem.name}</td>
-						<td>{gem.color}</td>
+						<td className="gemName">
+							{gem.name}
+							<img src={gem.image} />
+						</td>
+						<td className="gemColor">{gem.color}</td>
 						<td className="gemQuality">{gem.quality}</td>
-						<td>{gem.stats}</td>
+						<td className="gemStats">{gem.stats}</td>
 					</tr>
 				))}
 			</tbody>

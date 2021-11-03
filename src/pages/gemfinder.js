@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import GemTable from '../components/GemTable';
-import gemArray from '../Gems.json';
+import gemArray from '../Gems';
 import Checkboxes from '../components/Checkboxes';
 import filterNames from '../FilterNames';
 import { Main, GemTableContainer, CheckBoxContainer } from '../components/styles/GemFinder.styled';
@@ -52,7 +52,9 @@ const gemfinder = () => {
 			<CheckBoxContainer>
 				<Checkboxes filters={filterNames} onChange={handleChange} />
 			</CheckBoxContainer>
-			<GemTableContainer>{gems.length > 0 ? <GemTable gems={gems} /> : 'No gems found :('}</GemTableContainer>
+			<GemTableContainer>
+				{gems.length > 0 ? <GemTable gems={gems} /> : <p>No gems found :(</p>}
+			</GemTableContainer>
 		</Main>
 	);
 };
