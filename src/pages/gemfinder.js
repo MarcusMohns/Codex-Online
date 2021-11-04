@@ -42,6 +42,8 @@ const gemfinder = () => {
 		setGems(newArray);
 	};
 
+	const gemSorter = () => {};
+
 	// resets currentFilters when the page is rendered
 	useEffect(() => {
 		currentFilters = [];
