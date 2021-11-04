@@ -14,7 +14,7 @@ export const Main = styled.main`
 	border-radius: 5px;
 	box-shadow: 2px 2px;
 
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 1300px) {
 		flex-direction: column;
 		justify-content: center;
 		box-shadow: none;
@@ -28,15 +28,15 @@ export const CheckBoxContainer = styled.section`
 	.checkBoxContainer {
 		margin: auto;
 		display: grid;
-		grid-template-columns: repeat(2, 2fr);
-		grid-template-rows: repeat(2, 2fr);
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr 0fr;
 		max-height: fit-content;
 		background-color: white;
 	}
 	.categoryContainer {
 		display: flex;
 		flex-direction: column;
-		padding: .8rem;
+		padding: .5rem;
 		background-color: white;
 		box-shadow: 2px 2px;
 	}
@@ -74,7 +74,8 @@ export const CheckBoxContainer = styled.section`
 
 export const GemTableContainer = styled.section`
 	table {
-		overflow-y: auto;
+		max-width: 100%;
+		overflow-x: auto;
 		min-width: 60rem;
 		border-collapse: collapse;
 		text-align: center;
@@ -84,7 +85,7 @@ export const GemTableContainer = styled.section`
 	th,
 	td {
 		color: #fff;
-		padding: 1rem;
+		padding: .8rem;
 	}
 
 	.headerItems {
@@ -136,7 +137,7 @@ export const GemTableContainer = styled.section`
 		}
 		table {
 			margin: auto;
-			min-width: 0;
+			min-width: 380px;
 		}
 		.gemName {
 			display: flex;

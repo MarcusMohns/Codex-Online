@@ -901,7 +901,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Balanced Shadow Crystal ',
@@ -909,7 +909,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Bold Bloodstone ',
@@ -917,7 +917,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Red',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Perfect_Bloodstone.png').default
 	},
 	{
 		name: 'Perfect Bright Bloodstone ',
@@ -925,7 +925,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Red',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Perfect_Bloodstone.png').default
 	},
 	{
 		name: 'Perfect Brilliant Sun Crystal ',
@@ -933,7 +933,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Sun_Crystal.png').default
+		image: require('./images/Perfect_Sun_Crystal.png').default
 	},
 	{
 		name: "Perfect Champion's Huge Citrine ",
@@ -941,7 +941,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Dazzling Dark Jade ',
@@ -949,7 +949,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Deadly Huge Citrine ',
@@ -957,7 +957,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: "Perfect Defender's Shadow Crystal ",
@@ -965,7 +965,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Deft Huge Citrine ',
@@ -973,7 +973,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Delicate Bloodstone ',
@@ -981,7 +981,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Red',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Perfect_Bloodstone.png').default
 	},
 	{
 		name: 'Perfect Durable Huge Citrine ',
@@ -989,7 +989,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Empowered Huge Citrine ',
@@ -997,7 +997,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Enduring Dark Jade ',
@@ -1005,7 +1005,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Energized Dark Jade ',
@@ -1013,7 +1013,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Etched Huge Citrine ',
@@ -1021,7 +1021,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Fierce Huge Citrine ',
@@ -1029,7 +1029,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Flashing Bloodstone ',
@@ -1037,7 +1037,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Red',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Perfect_Bloodstone.png').default
 	},
 	{
 		name: 'Perfect Forceful Dark Jade ',
@@ -1045,7 +1045,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Fractured Bloodstone ',
@@ -1053,7 +1053,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Red',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Perfect_Bloodstone.png').default
 	},
 	{
 		name: 'Perfect Glimmering Huge Citrine ',
@@ -1061,7 +1061,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Glinting Huge Citrine ',
@@ -1069,7 +1069,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Glowing Shadow Crystal ',
@@ -1077,7 +1077,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: "Perfect Guardian's Shadow Crystal ",
@@ -1085,7 +1085,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Infused Shadow Crystal ',
@@ -1093,7 +1093,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Inscribed Huge Citrine ',
@@ -1101,7 +1101,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Intricate Dark Jade ',
@@ -1109,7 +1109,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Jagged Dark Jade ',
@@ -1117,7 +1117,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Lambent Dark Jade ',
@@ -1125,7 +1125,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Lucent Huge Citrine ',
@@ -1133,7 +1133,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Luminous Huge Citrine ',
@@ -1141,7 +1141,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Lustrous Chalcedony ',
@@ -1149,7 +1149,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Blue',
 		quality: 'Perfect',
-		image: require('./images/Chalcedony.png').default
+		image: require('./images/Perfect_Chalcedony.png').default
 	},
 	{
 		name: 'Perfect Misty Dark Jade ',
@@ -1157,7 +1157,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Mysterious Shadow Crystal ',
@@ -1165,7 +1165,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Mystic Sun Crystal ',
@@ -1173,7 +1173,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Sun_Crystal.png').default
+		image: require('./images/Perfect_Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Opaque Dark Jade ',
@@ -1181,7 +1181,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Potent Huge Citrine ',
@@ -1189,7 +1189,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Precise Bloodstone ',
@@ -1197,7 +1197,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Red',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Perfect_Bloodstone.png').default
 	},
 	{
 		name: 'Perfect Pristine Huge Citrine ',
@@ -1205,7 +1205,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Puissant Shadow Crystal ',
@@ -1213,7 +1213,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Purified Shadow Crystal ',
@@ -1221,7 +1221,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Quick Sun Crystal ',
@@ -1229,7 +1229,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Sun_Crystal.png').default
+		image: require('./images/Perfect_Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Radiant Dark Jade ',
@@ -1237,7 +1237,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Reckless Huge Citrine ',
@@ -1245,7 +1245,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Regal Shadow Crystal ',
@@ -1253,7 +1253,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Resolute Huge Citrine ',
@@ -1261,7 +1261,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Resplendent Huge Citrine ',
@@ -1269,7 +1269,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Rigid Sun Crystal ',
@@ -1277,7 +1277,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Sun_Crystal.png').default
+		image: require('./images/Perfect_Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Royal Shadow Crystal ',
@@ -1285,7 +1285,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Runed Bloodstone ',
@@ -1293,7 +1293,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Red',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Perfect_Bloodstone.png').default
 	},
 	{
 		name: "Perfect Seer's Dark Jade ",
@@ -1301,7 +1301,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Shattered Dark Jade ',
@@ -1309,7 +1309,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Shifting Shadow Crystal ',
@@ -1317,7 +1317,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Shining Dark Jade ',
@@ -1325,7 +1325,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Smooth Sun Crystal ',
@@ -1333,7 +1333,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Sun_Crystal.png').default
+		image: require('./images/Perfect_Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Solid Chalcedony ',
@@ -1341,7 +1341,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Blue',
 		quality: 'Perfect',
-		image: require('./images/Chalcedony.png').default
+		image: require('./images/Perfect_Chalcedony.png').default
 	},
 	{
 		name: 'Perfect Sovereign Shadow Crystal ',
@@ -1349,7 +1349,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Sparkling Chalcedony ',
@@ -1357,7 +1357,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Blue',
 		quality: 'Perfect',
-		image: require('./images/Chalcedony.png').default
+		image: require('./images/Perfect_Chalcedony.png').default
 	},
 	{
 		name: 'Perfect Stalwart Huge Citrine ',
@@ -1365,7 +1365,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Stark Huge Citrine ',
@@ -1373,7 +1373,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Steady Dark Jade ',
@@ -1381,7 +1381,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Stormy Chalcedony ',
@@ -1389,7 +1389,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Blue',
 		quality: 'Perfect',
-		image: require('./images/Chalcedony.png').default
+		image: require('./images/Perfect_Chalcedony.png').default
 	},
 	{
 		name: 'Perfect Subtle Bloodstone ',
@@ -1397,7 +1397,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Red',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Perfect_Bloodstone.png').default
 	},
 	{
 		name: 'Perfect Sundered Dark Jade ',
@@ -1405,7 +1405,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Tense Dark Jade ',
@@ -1413,7 +1413,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Tenuous Shadow Crystal ',
@@ -1421,7 +1421,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Shadow_Crystal.png').default
+		image: require('./images/Perfect_Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Thick Sun Crystal ',
@@ -1429,7 +1429,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Sun_Crystal.png').default
+		image: require('./images/Perfect_Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Timeless Dark Jade ',
@@ -1437,7 +1437,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Turbid Dark Jade ',
@@ -1445,7 +1445,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Veiled Huge Citrine ',
@@ -1453,7 +1453,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Vivid Dark Jade ',
@@ -1461,7 +1461,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Dark_Jade.png').default
+		image: require('./images/Perfect_Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Wicked Huge Citrine ',
@@ -1469,7 +1469,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Huge_Citrine.png').default
+		image: require('./images/Perfect_Huge_Citrine.png').default
 	},
 	{
 		name: 'Potent Ametrine ',
@@ -2029,7 +2029,7 @@ const gemArray = [
 		source: 'Bag of Fishing Treasures',
 		color: 'Blue',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Majestic_Zircon.png').default
 	},
 	{
 		name: 'Stalwart Ametrine ',
