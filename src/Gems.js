@@ -457,7 +457,7 @@ const gemArray = [
 	},
 	{
 		name: 'Forceful Dark Jade ',
-		stats: '+ 6 Haste Rating +9 Stamina ',
+		stats: '+6 Haste Rating +9 Stamina ',
 		source: 'Trainer ',
 		color: 'Green',
 		quality: 'Uncommon',

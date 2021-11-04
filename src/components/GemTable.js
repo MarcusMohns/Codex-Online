@@ -1,19 +1,27 @@
 import React from 'react';
-const Gems = ({ gems }) => {
+const GemTable = ({ gems, onClick }) => {
 	return (
 		<table className="gemTable">
 			<thead>
 				<tr className="headerItems">
-					<th>Name</th>
-					<th className="gemColor">Color</th>
-					<th className="gemQuality">Quality</th>
-					<th className="gemStats">Stats</th>
+					<th className="gemName" onClick={onClick}>
+						Name
+					</th>
+					<th className="gemColor" onClick={onClick}>
+						Color
+					</th>
+					<th className="gemQuality" onClick={onClick}>
+						Quality
+					</th>
+					<th className="gemStats" onClick={onClick}>
+						Stats
+					</th>
 				</tr>
 			</thead>
 			<tbody>
 				{gems.map((gem) => (
 					<tr key={gem.name}>
-						<td className="gemName">
+						<td className="gemNameAndImage">
 							{gem.name}
 							<img src={gem.image} />
 						</td>
@@ -26,4 +34,4 @@ const Gems = ({ gems }) => {
 		</table>
 	);
 };
-export default Gems;
+export default GemTable;

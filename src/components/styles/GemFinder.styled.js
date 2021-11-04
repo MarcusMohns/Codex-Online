@@ -106,7 +106,7 @@ export const GemTableContainer = styled.section`
 		}
 	}
 
-	.gemName {
+	.gemNameAndImage {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

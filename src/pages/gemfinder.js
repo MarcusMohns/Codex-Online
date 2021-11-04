@@ -21,9 +21,15 @@ const gemfinder = () => {
 		}
 		gemFilterer();
 	};
+
+	const handleClick = (e) => {
+		let sortedGems = [].concat(gems);
+		gemSorter(sortedGems, e.target.className);
+	};
+
 	// Sets our state depending on which checkboxes are ticked.
 	const gemFilterer = () => {
-		let newArray = gemArray;
+		let newArray = [].concat(gemArray);
 		currentFilters.forEach((aFilter) => {
 			if (filterNames[2].content.includes(aFilter))
 				// Gem color
@@ -42,7 +48,59 @@ const gemfinder = () => {
 		setGems(newArray);
 	};
 
-	const gemSorter = () => {};
+	const gemSorter = (sortedGems, sortBy) => {
+		if (sortBy === 'gemQuality' || sortBy === 'gemStats') {
+			sortedGems.sort(function(a, b) {
+				if (
+					(a.quality === 'Perfect' && b.quality === 'Rare') ||
+					(b.quality === 'Perfect' && a.quality === 'Rare')
+				) {
+					if (a.quality < b.quality) {
+						return 1;
+					}
+					if (a.quality > b.quality) {
+						return -1;
+					}
+				}
+
+				if (a.quality < b.quality) {
+					return -1;
+				}
+				if (a.quality > b.quality) {
+					return 1;
+				}
+
+				return 0;
+			});
+		}
+		if (sortBy === 'gemColor') {
+			sortedGems.sort(function(a, b) {
+				if (a.color < b.color) {
+					return -1;
+				}
+				if (a.color > b.color) {
+					return 1;
+				}
+
+				return 0;
+			});
+		}
+
+		if (sortBy === 'gemName') {
+			sortedGems.sort(function(a, b) {
+				if (a.name < b.name) {
+					return -1;
+				}
+				if (a.name > b.name) {
+					return 1;
+				}
+
+				return 0;
+			});
+		}
+
+		setGems(sortedGems);
+	};
 
 	// resets currentFilters when the page is rendered
 	useEffect(() => {
@@ -55,7 +113,7 @@ const gemfinder = () => {
 				<Checkboxes filters={filterNames} onChange={handleChange} />
 			</CheckBoxContainer>
 			<GemTableContainer>
-				{gems.length > 0 ? <GemTable gems={gems} /> : <p>No gems found :(</p>}
+				{gems.length > 0 ? <GemTable gems={gems} onClick={handleClick} /> : <p>No gems found :(</p>}
 			</GemTableContainer>
 		</Main>
 	);
