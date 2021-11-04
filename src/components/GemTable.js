@@ -5,9 +5,9 @@ const Gems = ({ gems }) => {
 			<thead>
 				<tr className="headerItems">
 					<th>Name</th>
-					<th>Color</th>
-					<th>Quality</th>
-					<th>Stats</th>
+					<th className="gemColor">Color</th>
+					<th className="gemQuality">Quality</th>
+					<th className="gemStats">Stats</th>
 				</tr>
 			</thead>
 			<tbody>

@@ -5,7 +5,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Accurate Huge Citrine ',
@@ -13,7 +13,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Accurate Monarch Topaz ',
@@ -21,7 +21,7 @@ const gemArray = [
 		source: 'Storm Peaks mammoths ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Balanced Dreadstone ',
@@ -29,7 +29,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Balanced Shadow Crystal ',
@@ -37,7 +37,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Balanced Twilight Opal ',
@@ -45,7 +45,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Bold Bloodstone ',
@@ -61,7 +61,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Bold Scarlet Ruby ',
@@ -69,7 +69,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Red',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Scarlet_Ruby.png').default
 	},
 	{
 		name: 'Bold Stormjewel ',
@@ -77,7 +77,7 @@ const gemArray = [
 		source: 'Bag of Fishing Treasures ',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Bright Bloodstone ',
@@ -93,7 +93,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Bright Scarlet Ruby ',
@@ -101,7 +101,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Red',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Scarlet_Ruby.png').default
 	},
 	{
 		name: "Brilliant Autumn's Glow ",
@@ -109,7 +109,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Yellow',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Autumns_Glow.png').default
 	},
 	{
 		name: "Brilliant King's Amber ",
@@ -117,7 +117,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Yellow',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Kings_Amber.png').default
 	},
 	{
 		name: 'Brilliant Stormjewel ',
@@ -125,7 +125,7 @@ const gemArray = [
 		source: 'Bag of Fishing Treasures ',
 		color: 'Yellow',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Kings_Amber.png').default
 	},
 	{
 		name: 'Brilliant Sun Crystal ',
@@ -133,7 +133,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Yellow',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: "Champion's Ametrine ",
@@ -141,7 +141,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: "Champion's Huge Citrine ",
@@ -149,7 +149,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: "Champion's Monarch Topaz ",
@@ -157,7 +157,7 @@ const gemArray = [
 		source: 'World Drop ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Dazzling Dark Jade ',
@@ -165,7 +165,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Dazzling Eye of Zul ',
@@ -173,7 +173,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Dazzling Forest Emerald ',
@@ -181,7 +181,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Deadly Ametrine ',
@@ -189,7 +189,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Deadly Huge Citrine ',
@@ -197,7 +197,7 @@ const gemArray = [
 		source: 'Knights of the Ebon Blade',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Deadly Monarch Topaz ',
@@ -205,7 +205,7 @@ const gemArray = [
 		source: 'Keristrasza',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: "Defender's Dreadstone ",
@@ -213,7 +213,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: "Defender's Shadow Crystal ",
@@ -221,7 +221,7 @@ const gemArray = [
 		source: "Kalu'ak ",
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: "Defender's Twilight Opal ",
@@ -229,7 +229,7 @@ const gemArray = [
 		source: 'Storm Peaks iron dwarves ',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Deft Ametrine ',
@@ -237,7 +237,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Deft Huge Citrine ',
@@ -245,7 +245,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Deft Monarch Topaz ',
@@ -253,7 +253,7 @@ const gemArray = [
 		source: 'Sjonnir the Ironshaper',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Delicate Bloodstone ',
@@ -269,7 +269,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Delicate Scarlet Ruby ',
@@ -277,7 +277,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Red',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Scarlet_Ruby.png').default
 	},
 	{
 		name: 'Delicate Stormjewel ',
@@ -285,7 +285,7 @@ const gemArray = [
 		source: 'Bag of Fishing Treasures ',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Durable Ametrine ',
@@ -293,7 +293,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Durable Huge Citrine ',
@@ -301,7 +301,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer ",
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Durable Monarch Topaz ',
@@ -309,7 +309,7 @@ const gemArray = [
 		source: 'Wintergrasp ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Empowered Ametrine ',
@@ -317,7 +317,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Empowered Huge Citrine ',
@@ -325,7 +325,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer",
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Empowered Monarch Topaz ',
@@ -333,7 +333,7 @@ const gemArray = [
 		source: 'Wintergrasp',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Enduring Dark Jade ',
@@ -341,7 +341,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Enduring Eye of Zul ',
@@ -349,7 +349,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Enduring Forest Emerald ',
@@ -357,7 +357,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Energized Dark Jade ',
@@ -365,7 +365,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Energized Eye of Zul ',
@@ -373,7 +373,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Energized Forest Emerald ',
@@ -381,7 +381,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Etched Ametrine ',
@@ -389,7 +389,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Etched Huge Citrine ',
@@ -397,7 +397,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Etched Monarch Topaz ',
@@ -405,7 +405,7 @@ const gemArray = [
 		source: 'World Drop ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Fierce Ametrine ',
@@ -413,7 +413,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Fierce Huge Citrine ',
@@ -421,7 +421,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Fierce Monarch Topaz ',
@@ -429,7 +429,7 @@ const gemArray = [
 		source: 'Ingvar the Plunderer ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Flashing Bloodstone ',
@@ -445,7 +445,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Flashing Scarlet Ruby ',
@@ -453,7 +453,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Red',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Scarlet_Ruby.png').default
 	},
 	{
 		name: 'Forceful Dark Jade ',
@@ -461,7 +461,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Forceful Eye of Zul ',
@@ -469,7 +469,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Forceful Forest Emerald ',
@@ -477,7 +477,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Fractured Bloodstone ',
@@ -493,7 +493,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Fractured Scarlet Ruby ',
@@ -501,7 +501,7 @@ const gemArray = [
 		source: "Nascent Val'kyr",
 		color: 'Red',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Scarlet_Ruby.png').default
 	},
 	{
 		name: 'Glimmering Ametrine ',
@@ -509,7 +509,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Glimmering Huge Citrine ',
@@ -517,7 +517,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Glimmering Monarch Topaz ',
@@ -525,7 +525,7 @@ const gemArray = [
 		source: 'Wyrmrest Accord',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Glinting Ametrine ',
@@ -533,7 +533,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Glinting Huge Citrine ',
@@ -541,7 +541,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Glinting Monarch Topaz ',
@@ -549,7 +549,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Glowing Dreadstone ',
@@ -557,7 +557,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Glowing Shadow Crystal ',
@@ -565,7 +565,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Glowing Twilight Opal ',
@@ -573,7 +573,7 @@ const gemArray = [
 		source: 'Knights of the Ebon Blade',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: "Guardian's Dreadstone ",
@@ -581,7 +581,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: "Guardian's Shadow Crystal ",
@@ -589,7 +589,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: "Guardian's Twilight Opal ",
@@ -597,7 +597,7 @@ const gemArray = [
 		source: 'Argent Crusade ',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Infused Dreadstone ',
@@ -605,7 +605,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Infused Shadow Crystal ',
@@ -613,7 +613,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Infused Twilight Opal ',
@@ -621,7 +621,7 @@ const gemArray = [
 		source: "Anub'arak",
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Inscribed Ametrine ',
@@ -629,7 +629,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Inscribed Huge Citrine ',
@@ -637,7 +637,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Inscribed Monarch Topaz ',
@@ -645,7 +645,7 @@ const gemArray = [
 		source: 'World Drop ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Intricate Dark Jade ',
@@ -653,7 +653,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Intricate Eye of Zul ',
@@ -661,7 +661,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Intricate Forest Emerald ',
@@ -669,7 +669,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Jagged Dark Jade ',
@@ -677,7 +677,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Jagged Eye of Zul ',
@@ -685,7 +685,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Jagged Forest Emerald ',
@@ -693,7 +693,7 @@ const gemArray = [
 		source: 'Frenzyheart ',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: "Kharmaa's Grace ",
@@ -709,7 +709,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Lambent Eye of Zul ',
@@ -717,7 +717,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Lambent Forest Emerald ',
@@ -725,7 +725,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Lucent Ametrine ',
@@ -733,7 +733,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Lucent Huge Citrine ',
@@ -741,7 +741,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer",
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Lucent Monarch Topaz ',
@@ -749,7 +749,7 @@ const gemArray = [
 		source: 'Wintergrasp',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Luminous Ametrine ',
@@ -757,7 +757,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Luminous Huge Citrine ',
@@ -765,7 +765,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Luminous Monarch Topaz ',
@@ -773,7 +773,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Lustrous Chalcedony ',
@@ -781,7 +781,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Blue',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Chalcedony.png').default
 	},
 	{
 		name: 'Lustrous Majestic Zircon ',
@@ -789,7 +789,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Blue',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Majestic_Zircon.png').default
 	},
 	{
 		name: 'Lustrous Sky Sapphire ',
@@ -797,7 +797,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Blue',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sky_Sapphire.png').default
 	},
 	{
 		name: 'Misty Dark Jade ',
@@ -805,7 +805,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Misty Eye of Zul ',
@@ -813,7 +813,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Misty Forest Emerald ',
@@ -821,7 +821,7 @@ const gemArray = [
 		source: 'World Drop',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Mysterious Dreadstone ',
@@ -829,7 +829,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Mysterious Shadow Crystal ',
@@ -837,7 +837,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer",
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Mysterious Twilight Opal ',
@@ -845,7 +845,7 @@ const gemArray = [
 		source: 'Wintergrasp',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: "Mystic Autumn's Glow ",
@@ -853,7 +853,7 @@ const gemArray = [
 		source: 'Wintergrasp ',
 		color: 'Yellow',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Autumns_Glow.png').default
 	},
 	{
 		name: "Mystic King's Amber ",
@@ -861,7 +861,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Yellow',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Kings_Amber.png').default
 	},
 	{
 		name: 'Mystic Sun Crystal ',
@@ -869,7 +869,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer ",
 		color: 'Yellow',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Opaque Dark Jade ',
@@ -877,7 +877,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer",
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Opaque Eye of Zul ',
@@ -885,7 +885,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Opaque Forest Emerald ',
@@ -893,7 +893,7 @@ const gemArray = [
 		source: 'Wintergrasp',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Perfect Accurate Huge Citrine ',
@@ -901,7 +901,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Balanced Shadow Crystal ',
@@ -909,7 +909,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Bold Bloodstone ',
@@ -933,7 +933,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: "Perfect Champion's Huge Citrine ",
@@ -941,7 +941,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Dazzling Dark Jade ',
@@ -949,7 +949,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Deadly Huge Citrine ',
@@ -957,7 +957,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: "Perfect Defender's Shadow Crystal ",
@@ -965,7 +965,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Deft Huge Citrine ',
@@ -973,7 +973,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Delicate Bloodstone ',
@@ -989,7 +989,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Empowered Huge Citrine ',
@@ -997,7 +997,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Enduring Dark Jade ',
@@ -1005,7 +1005,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Energized Dark Jade ',
@@ -1013,7 +1013,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Etched Huge Citrine ',
@@ -1021,7 +1021,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Fierce Huge Citrine ',
@@ -1029,7 +1029,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Flashing Bloodstone ',
@@ -1045,7 +1045,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Fractured Bloodstone ',
@@ -1061,7 +1061,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Glinting Huge Citrine ',
@@ -1069,7 +1069,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Glowing Shadow Crystal ',
@@ -1077,7 +1077,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: "Perfect Guardian's Shadow Crystal ",
@@ -1085,7 +1085,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Infused Shadow Crystal ',
@@ -1093,7 +1093,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Inscribed Huge Citrine ',
@@ -1101,7 +1101,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Intricate Dark Jade ',
@@ -1109,7 +1109,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Jagged Dark Jade ',
@@ -1117,7 +1117,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Lambent Dark Jade ',
@@ -1125,7 +1125,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Lucent Huge Citrine ',
@@ -1133,7 +1133,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Luminous Huge Citrine ',
@@ -1141,7 +1141,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Lustrous Chalcedony ',
@@ -1149,7 +1149,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Blue',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Chalcedony.png').default
 	},
 	{
 		name: 'Perfect Misty Dark Jade ',
@@ -1157,7 +1157,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Mysterious Shadow Crystal ',
@@ -1165,7 +1165,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Mystic Sun Crystal ',
@@ -1173,7 +1173,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Opaque Dark Jade ',
@@ -1181,7 +1181,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Potent Huge Citrine ',
@@ -1189,7 +1189,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Precise Bloodstone ',
@@ -1205,7 +1205,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Puissant Shadow Crystal ',
@@ -1213,7 +1213,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Purified Shadow Crystal ',
@@ -1221,7 +1221,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Quick Sun Crystal ',
@@ -1229,7 +1229,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Radiant Dark Jade ',
@@ -1237,7 +1237,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Reckless Huge Citrine ',
@@ -1245,7 +1245,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Regal Shadow Crystal ',
@@ -1253,7 +1253,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Resolute Huge Citrine ',
@@ -1261,7 +1261,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Resplendent Huge Citrine ',
@@ -1269,7 +1269,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Rigid Sun Crystal ',
@@ -1277,7 +1277,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Royal Shadow Crystal ',
@@ -1285,7 +1285,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Runed Bloodstone ',
@@ -1301,7 +1301,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Shattered Dark Jade ',
@@ -1309,7 +1309,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Shifting Shadow Crystal ',
@@ -1317,7 +1317,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Shining Dark Jade ',
@@ -1325,7 +1325,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Smooth Sun Crystal ',
@@ -1333,7 +1333,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Solid Chalcedony ',
@@ -1341,7 +1341,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Blue',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Chalcedony.png').default
 	},
 	{
 		name: 'Perfect Sovereign Shadow Crystal ',
@@ -1349,7 +1349,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Sparkling Chalcedony ',
@@ -1357,7 +1357,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Blue',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Chalcedony.png').default
 	},
 	{
 		name: 'Perfect Stalwart Huge Citrine ',
@@ -1365,7 +1365,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Stark Huge Citrine ',
@@ -1373,7 +1373,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Steady Dark Jade ',
@@ -1381,7 +1381,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Stormy Chalcedony ',
@@ -1389,7 +1389,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Blue',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Chalcedony.png').default
 	},
 	{
 		name: 'Perfect Subtle Bloodstone ',
@@ -1405,7 +1405,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Tense Dark Jade ',
@@ -1413,7 +1413,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Tenuous Shadow Crystal ',
@@ -1421,7 +1421,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Purple',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Perfect Thick Sun Crystal ',
@@ -1429,7 +1429,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Yellow',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Perfect Timeless Dark Jade ',
@@ -1437,7 +1437,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Turbid Dark Jade ',
@@ -1445,7 +1445,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Veiled Huge Citrine ',
@@ -1453,7 +1453,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Perfect Vivid Dark Jade ',
@@ -1461,7 +1461,7 @@ const gemArray = [
 		source: 'Gem Perfection ',
 		color: 'Green',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Perfect Wicked Huge Citrine ',
@@ -1469,7 +1469,7 @@ const gemArray = [
 		source: 'Gem Perfection',
 		color: 'Orange',
 		quality: 'Perfect',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Potent Ametrine ',
@@ -1477,7 +1477,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Potent Huge Citrine ',
@@ -1485,7 +1485,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Potent Monarch Topaz ',
@@ -1493,7 +1493,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Precise Bloodstone ',
@@ -1509,7 +1509,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Precise Scarlet Ruby ',
@@ -1517,7 +1517,7 @@ const gemArray = [
 		source: 'Herald Volazj',
 		color: 'Red',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Scarlet_Ruby.png').default
 	},
 	{
 		name: 'Pristine Ametrine ',
@@ -1525,7 +1525,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Pristine Huge Citrine ',
@@ -1533,7 +1533,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Pristine Monarch Topaz ',
@@ -1541,7 +1541,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Puissant Dreadstone ',
@@ -1549,7 +1549,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Puissant Shadow Crystal ',
@@ -1557,7 +1557,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Puissant Twilight Opal ',
@@ -1565,7 +1565,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Purified Dreadstone ',
@@ -1573,7 +1573,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Purified Shadow Crystal ',
@@ -1581,7 +1581,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Purified Twilight Opal ',
@@ -1589,7 +1589,7 @@ const gemArray = [
 		source: 'World Drop',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: "Quick Autumn's Glow ",
@@ -1597,7 +1597,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Yellow',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Autumns_Glow.png').default
 	},
 	{
 		name: "Quick King's Amber ",
@@ -1605,7 +1605,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Yellow',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Kings_Amber.png').default
 	},
 	{
 		name: 'Quick Sun Crystal ',
@@ -1613,7 +1613,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Yellow',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Radiant Dark Jade ',
@@ -1621,7 +1621,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Radiant Eye of Zul ',
@@ -1629,7 +1629,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Radiant Forest Emerald ',
@@ -1637,7 +1637,7 @@ const gemArray = [
 		source: 'Storm Peaks harpies ',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Reckless Ametrine ',
@@ -1645,7 +1645,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Reckless Huge Citrine ',
@@ -1653,7 +1653,7 @@ const gemArray = [
 		source: 'Frenzyheart ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Reckless Monarch Topaz ',
@@ -1661,7 +1661,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Regal Dreadstone ',
@@ -1669,7 +1669,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Regal Shadow Crystal ',
@@ -1677,7 +1677,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Regal Twilight Opal ',
@@ -1685,7 +1685,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Resolute Ametrine ',
@@ -1693,7 +1693,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Resolute Huge Citrine ',
@@ -1701,7 +1701,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Resolute Monarch Topaz ',
@@ -1709,7 +1709,7 @@ const gemArray = [
 		source: 'World Drop',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Resplendent Ametrine ',
@@ -1717,7 +1717,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Resplendent Huge Citrine ',
@@ -1725,7 +1725,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer ",
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Resplendent Monarch Topaz ',
@@ -1733,7 +1733,7 @@ const gemArray = [
 		source: 'Wintergrasp ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: "Rigid Autumn's Glow ",
@@ -1741,7 +1741,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Yellow',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Autumns_Glow.png').default
 	},
 	{
 		name: "Rigid King's Amber ",
@@ -1749,7 +1749,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Yellow',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Kings_Amber.png').default
 	},
 	{
 		name: 'Rigid Stormjewel ',
@@ -1757,7 +1757,7 @@ const gemArray = [
 		source: 'Bag of Fishing Treasures',
 		color: 'Yellow',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Kings_Amber.png').default
 	},
 	{
 		name: 'Rigid Sun Crystal ',
@@ -1765,7 +1765,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Yellow',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Royal Dreadstone ',
@@ -1773,7 +1773,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Royal Shadow Crystal ',
@@ -1781,7 +1781,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Royal Twilight Opal ',
@@ -1789,7 +1789,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Runed Bloodstone ',
@@ -1805,7 +1805,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Runed Scarlet Ruby ',
@@ -1813,7 +1813,7 @@ const gemArray = [
 		source: 'Kirin Tor',
 		color: 'Red',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Scarlet_Ruby.png').default
 	},
 	{
 		name: 'Runed Stormjewel ',
@@ -1821,7 +1821,7 @@ const gemArray = [
 		source: 'Bag of Fishing Treasures',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: "Seer's Dark Jade ",
@@ -1829,7 +1829,7 @@ const gemArray = [
 		source: "Kalu'ak",
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: "Seer's Eye of Zul ",
@@ -1837,7 +1837,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: "Seer's Forest Emerald ",
@@ -1845,7 +1845,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Shattered Dark Jade ',
@@ -1853,7 +1853,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer ",
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Shattered Eye of Zul ',
@@ -1861,7 +1861,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Shattered Forest Emerald ',
@@ -1869,7 +1869,7 @@ const gemArray = [
 		source: 'Wintergrasp ',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Shifting Dreadstone ',
@@ -1877,7 +1877,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Shifting Shadow Crystal ',
@@ -1885,7 +1885,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Shifting Twilight Opal ',
@@ -1893,7 +1893,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Shining Dark Jade ',
@@ -1901,7 +1901,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Shining Eye of Zul ',
@@ -1909,7 +1909,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Shining Forest Emerald ',
@@ -1917,7 +1917,7 @@ const gemArray = [
 		source: 'World Drop',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: "Smooth Autumn's Glow ",
@@ -1925,7 +1925,7 @@ const gemArray = [
 		source: 'Sons of Hodir',
 		color: 'Yellow',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Autumns_Glow.png').default
 	},
 	{
 		name: "Smooth King's Amber ",
@@ -1933,7 +1933,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Yellow',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Kings_Amber.png').default
 	},
 	{
 		name: 'Smooth Sun Crystal ',
@@ -1941,7 +1941,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Yellow',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Solid Chalcedony ',
@@ -1949,7 +1949,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Blue',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Chalcedony.png').default
 	},
 	{
 		name: 'Solid Majestic Zircon ',
@@ -1957,7 +1957,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Blue',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Majestic_Zircon.png').default
 	},
 	{
 		name: 'Solid Sky Sapphire ',
@@ -1965,7 +1965,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Blue',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sky_Sapphire.png').default
 	},
 	{
 		name: 'Solid Stormjewel ',
@@ -1973,7 +1973,7 @@ const gemArray = [
 		source: 'Bag of Fishing Treasures ',
 		color: 'Blue',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Majestic_Zircon.png').default
 	},
 	{
 		name: 'Sovereign Dreadstone ',
@@ -1981,7 +1981,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Sovereign Shadow Crystal ',
@@ -1989,7 +1989,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Sovereign Twilight Opal ',
@@ -1997,7 +1997,7 @@ const gemArray = [
 		source: 'World Drop ',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: 'Sparkling Chalcedony ',
@@ -2005,7 +2005,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Blue',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Chalcedony.png').default
 	},
 	{
 		name: 'Sparkling Majestic Zircon ',
@@ -2013,7 +2013,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Blue',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Majestic_Zircon.png').default
 	},
 	{
 		name: 'Sparkling Sky Sapphire ',
@@ -2021,7 +2021,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Blue',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sky_Sapphire.png').default
 	},
 	{
 		name: 'Sparkling Stormjewel ',
@@ -2037,7 +2037,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Stalwart Huge Citrine ',
@@ -2045,7 +2045,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Stalwart Monarch Topaz ',
@@ -2053,7 +2053,7 @@ const gemArray = [
 		source: 'World Drop',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Stark Ametrine ',
@@ -2061,7 +2061,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Stark Huge Citrine ',
@@ -2069,7 +2069,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Stark Monarch Topaz ',
@@ -2077,7 +2077,7 @@ const gemArray = [
 		source: 'Tiffany Cartier',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Steady Dark Jade ',
@@ -2085,7 +2085,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer ",
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Steady Eye of Zul ',
@@ -2093,7 +2093,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Steady Forest Emerald ',
@@ -2101,7 +2101,7 @@ const gemArray = [
 		source: 'Wintergrasp ',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Stormy Chalcedony ',
@@ -2109,7 +2109,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer",
 		color: 'Blue',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Chalcedony.png').default
 	},
 	{
 		name: 'Stormy Majestic Zircon ',
@@ -2117,7 +2117,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Blue',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Majestic_Zircon.png').default
 	},
 	{
 		name: 'Stormy Sky Sapphire ',
@@ -2125,7 +2125,7 @@ const gemArray = [
 		source: 'Wintergrasp',
 		color: 'Blue',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sky_Sapphire.png').default
 	},
 	{
 		name: 'Subtle Bloodstone ',
@@ -2141,7 +2141,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Red',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Cardinal_Ruby.png').default
 	},
 	{
 		name: 'Subtle Scarlet Ruby ',
@@ -2149,7 +2149,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Red',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Scarlet_Ruby.png').default
 	},
 	{
 		name: 'Sundered Dark Jade ',
@@ -2157,7 +2157,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Sundered Eye of Zul ',
@@ -2165,7 +2165,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Sundered Forest Emerald ',
@@ -2173,7 +2173,7 @@ const gemArray = [
 		source: 'Oracles',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Tense Dark Jade ',
@@ -2181,7 +2181,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer ",
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Tense Eye of Zul ',
@@ -2189,7 +2189,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Tense Forest Emerald ',
@@ -2197,7 +2197,7 @@ const gemArray = [
 		source: 'Wintergrasp ',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Tenuous Dreadstone ',
@@ -2205,7 +2205,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Purple',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dreadstone.png').default
 	},
 	{
 		name: 'Tenuous Shadow Crystal ',
@@ -2213,7 +2213,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Purple',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Shadow_Crystal.png').default
 	},
 	{
 		name: 'Tenuous Twilight Opal ',
@@ -2221,7 +2221,7 @@ const gemArray = [
 		source: 'World Drop',
 		color: 'Purple',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Twilight_Opal.png').default
 	},
 	{
 		name: "Thick Autumn's Glow ",
@@ -2229,7 +2229,7 @@ const gemArray = [
 		source: 'Cyanigosa',
 		color: 'Yellow',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Autumns_Glow.png').default
 	},
 	{
 		name: "Thick King's Amber ",
@@ -2237,7 +2237,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Yellow',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Kings_Amber.png').default
 	},
 	{
 		name: 'Thick Sun Crystal ',
@@ -2245,7 +2245,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Yellow',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Sun_Crystal.png').default
 	},
 	{
 		name: 'Timeless Dark Jade ',
@@ -2253,7 +2253,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Timeless Eye of Zul ',
@@ -2261,7 +2261,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Timeless Forest Emerald ',
@@ -2269,7 +2269,7 @@ const gemArray = [
 		source: "The Prophet Tharon'ja ",
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Turbid Dark Jade ',
@@ -2277,7 +2277,7 @@ const gemArray = [
 		source: "(A)Captain O'Neal (H)Lady Palanseer",
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Turbid Eye of Zul ',
@@ -2285,7 +2285,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Turbid Forest Emerald ',
@@ -2293,7 +2293,7 @@ const gemArray = [
 		source: 'Wintergrasp',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Veiled Ametrine ',
@@ -2301,7 +2301,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Veiled Huge Citrine ',
@@ -2309,7 +2309,7 @@ const gemArray = [
 		source: 'Trainer ',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Veiled Monarch Topaz ',
@@ -2317,7 +2317,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	},
 	{
 		name: 'Vivid Dark Jade ',
@@ -2325,7 +2325,7 @@ const gemArray = [
 		source: 'Oracles ',
 		color: 'Green',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Dark_Jade.png').default
 	},
 	{
 		name: 'Vivid Eye of Zul ',
@@ -2333,7 +2333,7 @@ const gemArray = [
 		source: 'Timothy Jones ',
 		color: 'Green',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Eye_of_Zul.png').default
 	},
 	{
 		name: 'Vivid Forest Emerald ',
@@ -2341,7 +2341,7 @@ const gemArray = [
 		source: 'Tiffany Cartier ',
 		color: 'Green',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Forest_Emerald.png').default
 	},
 	{
 		name: 'Wicked Ametrine ',
@@ -2349,7 +2349,7 @@ const gemArray = [
 		source: 'Timothy Jones',
 		color: 'Orange',
 		quality: 'Epic',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Ametrine.png').default
 	},
 	{
 		name: 'Wicked Huge Citrine ',
@@ -2357,7 +2357,7 @@ const gemArray = [
 		source: 'Trainer',
 		color: 'Orange',
 		quality: 'Uncommon',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Huge_Citrine.png').default
 	},
 	{
 		name: 'Wicked Monarch Topaz ',
@@ -2365,7 +2365,7 @@ const gemArray = [
 		source: 'Knights of the Ebon Blade',
 		color: 'Orange',
 		quality: 'Rare',
-		image: require('./images/Bloodstone.png').default
+		image: require('./images/Monarch_Topaz.png').default
 	}
 ];
 

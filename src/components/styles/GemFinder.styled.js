@@ -73,11 +73,8 @@ export const CheckBoxContainer = styled.section`
 `;
 
 export const GemTableContainer = styled.section`
-	display: flex;
-	flex-direction: column;
-	font-size: .9rem;
-
 	table {
+		overflow-y: auto;
 		min-width: 60rem;
 		border-collapse: collapse;
 		text-align: center;
@@ -94,7 +91,6 @@ export const GemTableContainer = styled.section`
 		position: sticky;
 		top: 0;
 		background-color: #000;
-		padding: 2rem;
 	}
 	tbody td {
 		color: black;
@@ -134,5 +130,30 @@ export const GemTableContainer = styled.section`
 	}
 
 	@media screen and (max-width: 992px) {
+		th,
+		td {
+			padding: 3px;
+		}
+		table {
+			margin: auto;
+			min-width: 0;
+		}
+		.gemName {
+			display: flex;
+			border: none;
+			align-items: center;
+			justify-content: space-between;
+			img {
+				width: 2rem;
+			}
+		}
+		.gemColor,
+		.gemQuality,
+		.gemStats {
+			display: none;
+		}
+		.headerItems {
+			font-size: 1.2rem;
+		}
 	}
 `;
