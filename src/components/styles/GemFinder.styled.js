@@ -85,13 +85,19 @@ export const GemTableContainer = styled.section`
 	th,
 	td {
 		color: #fff;
-		padding: .8rem;
+		padding: .5rem;
+	}
+
+	th {
+		padding: 1rem;
 	}
 
 	.headerItems {
+		padding: 1rem;
 		position: sticky;
 		top: 0;
 		background-color: #000;
+		cursor: pointer;
 	}
 	tbody td {
 		color: black;
@@ -106,7 +112,7 @@ export const GemTableContainer = styled.section`
 		}
 	}
 
-	.gemNameAndImage {
+	.gemNameCell {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -115,6 +121,9 @@ export const GemTableContainer = styled.section`
 		img {
 			width: 2rem;
 		}
+	}
+
+	.gemNameHeader {
 	}
 
 	p {

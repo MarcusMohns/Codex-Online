@@ -1,33 +1,33 @@
-import React from 'react';
+import { FaSort } from 'react-icons/fa';
 const GemTable = ({ gems, onClick }) => {
 	return (
 		<table className="gemTable">
 			<thead>
 				<tr className="headerItems">
 					<th className="gemName" onClick={onClick}>
-						Name
+						Name <FaSort />
 					</th>
 					<th className="gemColor" onClick={onClick}>
-						Color
+						Color <FaSort />
 					</th>
 					<th className="gemQuality" onClick={onClick}>
-						Quality
+						Quality <FaSort />
 					</th>
 					<th className="gemStats" onClick={onClick}>
-						Stats
+						Stats <FaSort />
 					</th>
 				</tr>
 			</thead>
 			<tbody>
 				{gems.map((gem) => (
 					<tr key={gem.name}>
-						<td className="gemNameAndImage">
+						<td className="gemNameCell">
 							{gem.name}
 							<img src={gem.image} />
 						</td>
-						<td className="gemColor">{gem.color}</td>
-						<td className="gemQuality">{gem.quality}</td>
-						<td className="gemStats">{gem.stats}</td>
+						<td className="gemColorCell">{gem.color}</td>
+						<td className="gemQualityCell">{gem.quality}</td>
+						<td className="gemStatsCell">{gem.stats}</td>
 					</tr>
 				))}
 			</tbody>

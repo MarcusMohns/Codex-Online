@@ -61,6 +61,7 @@ const gemfinder = () => {
 					if (a.quality > b.quality) {
 						return -1;
 					}
+					return 0;
 				}
 
 				if (a.quality < b.quality) {
