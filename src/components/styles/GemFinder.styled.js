@@ -130,10 +130,13 @@ export const GemTableContainer = styled.section`
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		border-right: 3px solid black;
+		user-select: all;
 
 		img {
 			width: 2rem;
+			user-select: none;
+			padding-left: 3px;
+			border-radius: 10px;
 		}
 	}
 
@@ -145,12 +148,17 @@ export const GemTableContainer = styled.section`
 		}
 	}
 
+	.gemColorCell {
+		border-left: 3px solid black;
+	}
+
 	.gemQuality,
 	.gemColor,
 	.gemName {
 		display: flex;
 		justify-content: center;
 		cursor: pointer;
+		user-select: none;
 		.sortImage {
 			transition: transform 450ms;
 		}

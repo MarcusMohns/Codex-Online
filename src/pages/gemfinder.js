@@ -55,6 +55,7 @@ const gemfinder = () => {
 	};
 
 	const gemSorter = (sortedGems, sortBy) => {
+		console.log(sortBy);
 		if (sortBy === 'gemQuality') {
 			sortedGems.sort(function(a, b) {
 				if (
