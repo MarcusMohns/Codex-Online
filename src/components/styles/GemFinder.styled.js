@@ -3,16 +3,17 @@ import styled from 'styled-components';
 export const Main = styled.main`
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	align-items: start;
+	justify-content: space-evenly;
 	max-width: 75vw;
 	min-height: 75vw;
 	margin: auto;
-	padding: 20px;
+	padding: 3rem;
 	margin-top: 10%;
 	background-color: #264874;
 	opacity: 90%;
 	border-radius: 5px;
-	box-shadow: 2px 2px;
+	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
 
 	@media screen and (max-width: 1300px) {
 		flex-direction: column;
@@ -25,20 +26,28 @@ export const Main = styled.main`
 `;
 
 export const CheckBoxContainer = styled.section`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+
 	.checkBoxContainer {
-		margin: auto;
+		padding: 1rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 2fr 0fr;
 		max-height: fit-content;
+		max-width: fit-content;
 		background-color: white;
+		border-radius: 5px;
+		box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
 	}
 	.categoryContainer {
 		display: flex;
 		flex-direction: column;
 		padding: .5rem;
 		background-color: white;
-		box-shadow: 2px 2px;
 	}
 
 	.categoryName {
@@ -73,10 +82,16 @@ export const CheckBoxContainer = styled.section`
 `;
 
 export const GemTableContainer = styled.section`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	max-width: 100%;
+	min-width: 60%;
+
 	table {
 		max-width: 100%;
 		overflow-x: auto;
-		min-width: 60rem;
 		border-collapse: collapse;
 		text-align: center;
 		background-color: white;
@@ -97,7 +112,6 @@ export const GemTableContainer = styled.section`
 		position: sticky;
 		top: 0;
 		background-color: #000;
-		cursor: pointer;
 	}
 	tbody td {
 		color: black;
@@ -123,47 +137,83 @@ export const GemTableContainer = styled.section`
 		}
 	}
 
-	.gemNameHeader {
+	.gemQualityCell {
+		&:hover {
+			color: purple;
+			font-weight: bold;
+			transform: scale(1.2);
+		}
 	}
 
-	p {
-		color: white;
+	.gemQuality,
+	.gemColor,
+	.gemName {
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		.sortImage {
+			transition: transform 450ms;
+		}
+		&:hover {
+			color: #256ce1;
+			.sortImage {
+				color: white;
+			}
+		}
+		&:hover {
+			.sortImage {
+				transition: transform 325ms;
+				transform: rotate(180deg);
+			}
+		}
 	}
-
-	/* .gemQuality {
-	}
-	.gemColor {
-	} */
 
 	.gemStats {
+		display: flex;
+		justify-content: center;
+	}
+	.gemStatsCell {
 		font-weight: 700;
 	}
 
+	p {
+		font-size: 23px;
+		text-align: center;
+		color: white;
+		margin: 30%;
+		margin-right: 50%;
+	}
+
 	@media screen and (max-width: 992px) {
-		th,
 		td {
 			padding: 3px;
+		}
+		th {
+			padding: 0px;
 		}
 		table {
 			margin: auto;
 			min-width: 380px;
 		}
-		.gemName {
+		.gemNameCell {
 			display: flex;
 			border: none;
 			align-items: center;
-			justify-content: space-between;
 			img {
 				width: 2rem;
 			}
 		}
 		.gemColor,
 		.gemQuality,
-		.gemStats {
+		.gemStats,
+		.gemColorCell,
+		.gemQualityCell,
+		.gemStatsCell {
 			display: none;
 		}
-		.headerItems {
-			font-size: 1.2rem;
+
+		thead {
+			font-size: 1.5rem;
 		}
 	}
 `;
