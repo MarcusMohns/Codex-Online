@@ -13,7 +13,7 @@ export const Main = styled.main`
 	background-color: #264874;
 	opacity: 90%;
 	border-radius: 5px;
-	box-shadow: 3px 3px;
+	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
 `;
 
 export const ArenaContainer = styled.section`
@@ -44,7 +44,6 @@ export const ArenaContainer = styled.section`
 		border-collapse: collapse;
 		letter-spacing: 1px;
 		font-size: .8rem;
-		box-shadow: 5px 5px;
 	}
 
 	input {

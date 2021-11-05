@@ -4,17 +4,23 @@ const GemTable = ({ gems, onClick }) => {
 		<table className="gemTable">
 			<thead>
 				<tr className="headerItems">
-					<th className="gemName" onClick={onClick}>
-						Name <FaSort />
+					<th onClick={onClick}>
+						<div className="gemName">
+							Name <FaSort className="sortImage" />
+						</div>
 					</th>
-					<th className="gemColor" onClick={onClick}>
-						Color <FaSort />
+					<th onClick={onClick}>
+						<div className="gemColor">
+							Color <FaSort className="sortImage" />
+						</div>
 					</th>
-					<th className="gemQuality" onClick={onClick}>
-						Quality <FaSort />
+					<th onClick={onClick}>
+						<div className="gemQuality">
+							Quality <FaSort className="sortImage" />
+						</div>
 					</th>
-					<th className="gemStats" onClick={onClick}>
-						Stats
+					<th onClick={onClick}>
+						<div className="gemStats">Stats</div>
 					</th>
 				</tr>
 			</thead>

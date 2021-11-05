@@ -49,13 +49,16 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: all .2s ease-out;
   &.active {
     color: #256ce1;
   }
-  &:hover {
-    color: #256ce1;
+  &:hover ,&:focus {
+  color: #256ce1;
+}
+   
     
-  }
+  
 
   .logo {
     width:50px;
