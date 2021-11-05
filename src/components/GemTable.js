@@ -14,7 +14,7 @@ const GemTable = ({ gems, onClick }) => {
 						Quality <FaSort />
 					</th>
 					<th className="gemStats" onClick={onClick}>
-						Stats <FaSort />
+						Stats
 					</th>
 				</tr>
 			</thead>

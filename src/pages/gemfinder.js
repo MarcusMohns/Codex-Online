@@ -9,6 +9,12 @@ let currentFilters = [];
 
 const gemfinder = () => {
 	const [ gems, setGems ] = useState(gemArray);
+	const [ sort, setSort ] = useState(
+		{ gemStats: false },
+		{ gemQuality: false },
+		{ gemColor: false },
+		{ gemName: false }
+	);
 
 	// Add/Remove filters to currentFilters
 	const handleChange = (e) => {
@@ -49,55 +55,71 @@ const gemfinder = () => {
 	};
 
 	const gemSorter = (sortedGems, sortBy) => {
-		if (sortBy === 'gemQuality' || sortBy === 'gemStats') {
+		if (sortBy === 'gemQuality') {
 			sortedGems.sort(function(a, b) {
 				if (
 					(a.quality === 'Perfect' && b.quality === 'Rare') ||
 					(b.quality === 'Perfect' && a.quality === 'Rare')
 				) {
 					if (a.quality < b.quality) {
-						return 1;
+						return sort.gemQuality ? -1 : 1;
 					}
 					if (a.quality > b.quality) {
-						return -1;
+						return sort.gemQuality ? 1 : -1;
 					}
 					return 0;
 				}
 
 				if (a.quality < b.quality) {
-					return -1;
+					return sort.gemQuality ? 1 : -1;
 				}
 				if (a.quality > b.quality) {
-					return 1;
+					return sort.gemQuality ? -1 : 1;
 				}
 
 				return 0;
 			});
+			setSort((sort) => ({
+				gemQuality: !sort.gemQuality
+			}));
 		}
+
+		if (sortBy === 'gemStats') {
+			setSort((sort) => ({
+				gemStats: !sort.gemStats
+			}));
+		}
+
 		if (sortBy === 'gemColor') {
 			sortedGems.sort(function(a, b) {
 				if (a.color < b.color) {
-					return -1;
+					return sort.gemColor ? 1 : -1;
 				}
 				if (a.color > b.color) {
-					return 1;
+					return sort.gemColor ? -1 : 1;
 				}
 
 				return 0;
 			});
+			setSort((sort) => ({
+				gemColor: !sort.gemColor
+			}));
 		}
 
 		if (sortBy === 'gemName') {
 			sortedGems.sort(function(a, b) {
 				if (a.name < b.name) {
-					return -1;
+					return sort.gemName ? 1 : -1;
 				}
 				if (a.name > b.name) {
-					return 1;
+					return sort.gemName ? -1 : 1;
 				}
 
 				return 0;
 			});
+			setSort((sort) => ({
+				gemName: !sort.gemName
+			}));
 		}
 
 		setGems(sortedGems);
