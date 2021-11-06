@@ -17,11 +17,14 @@ export const Main = styled.main`
 
 	@media screen and (max-width: 1300px) {
 		flex-direction: column;
-		justify-content: center;
+		align-items: center;
 		box-shadow: none;
 		padding: 5px;
-		min-height: none;
 		font-size: .9rem;
+		max-width: 90vw;
+	}
+
+	@media screen and (max-width: 992px) {
 		max-width: 90vw;
 	}
 `;
@@ -43,6 +46,7 @@ export const CheckBoxContainer = styled.section`
 		background-color: white;
 		border-radius: 5px;
 		box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
+		border-right: 1px solid black;
 	}
 	.categoryContainer {
 		display: flex;
@@ -55,7 +59,7 @@ export const CheckBoxContainer = styled.section`
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 5px;
+		padding: .4rem;
 		height: 2rem;
 		text-align: center;
 		background-color: #264874;
@@ -65,7 +69,7 @@ export const CheckBoxContainer = styled.section`
 
 	.aCheckbox label,
 	input {
-		margin: 5px;
+		margin: .4rem;
 		cursor: pointer;
 		transform: scale(1.2);
 	}
@@ -83,15 +87,11 @@ export const CheckBoxContainer = styled.section`
 `;
 
 export const GemTableContainer = styled.section`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: start;
 	max-width: 100%;
 	min-width: 70%;
 
 	table {
-		max-width: 100%;
+		width: 100%;
 		overflow-x: auto;
 		border-collapse: collapse;
 		text-align: center;
@@ -165,15 +165,6 @@ export const GemTableContainer = styled.section`
 		}
 	}
 
-	.gemStats {
-		display: flex;
-
-		justify-content: center;
-	}
-	.gemStatsCell {
-		font-weight: 700;
-	}
-
 	p.gemsNotFound {
 		font-size: 23px;
 		text-align: center;
@@ -199,22 +190,29 @@ export const GemTableContainer = styled.section`
 		}
 		.gemNameCell {
 			display: flex;
+			font-weight: 800;
 			justify-content: center;
 			align-items: center;
+			padding-bottom: 0px;
 			img {
 				width: 2rem;
 			}
 		}
-		.gemStatsCell {
+		.gemStatsCell,
+		.gemQualityCell,
+		.gemColorCell {
 			font-weight: 300;
-			border-bottom: 1px solid grey;
+			border: none;
+			position: sticky;
 		}
 		.gemColor,
-		.gemQuality,
-		.gemStats,
-		.gemColorCell,
-		.gemQualityCell {
+		.gemName,
+		.gemStats {
 			display: none;
+		}
+		.gemStatsCell {
+			border-bottom: 1px solid grey;
+			font-weight: 500;
 		}
 
 		thead {
