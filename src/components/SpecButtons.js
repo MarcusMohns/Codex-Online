@@ -1,4 +1,3 @@
-// rafce
 import SpecButton from './SpecButton';
 
 const SpecButtons = ({ specs, onClick }) => {

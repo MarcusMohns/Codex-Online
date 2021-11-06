@@ -6,17 +6,17 @@ const GemTable = ({ gems, onClick }) => {
 				<tr className="headerItems">
 					<th onClick={onClick}>
 						<div className="gemName">
-							Name <FaSort className="sortImage" />
+							Name <FaSort className="sortImage" alt="sort icon" />
 						</div>
 					</th>
 					<th onClick={onClick}>
 						<div className="gemColor">
-							Color <FaSort className="sortImage" />
+							Color <FaSort className="sortImage" alt="sort icon" />
 						</div>
 					</th>
 					<th onClick={onClick}>
 						<div className="gemQuality">
-							Quality <FaSort className="sortImage" />
+							Quality <FaSort className="sortImage" alt="sort icon" />
 						</div>
 					</th>
 					<th onClick={onClick}>
@@ -28,8 +28,8 @@ const GemTable = ({ gems, onClick }) => {
 				{gems.map((gem) => (
 					<tr key={gem.name}>
 						<td className="gemNameCell">
-							{gem.name}
-							<img src={gem.image} />
+							<p className="gemNameText">{gem.name}</p>
+							<img src={gem.image} alt="image of gem" />
 						</td>
 						<td className="gemColorCell">{gem.color}</td>
 						<td className="gemQualityCell">{gem.quality}</td>

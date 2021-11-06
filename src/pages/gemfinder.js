@@ -137,7 +137,11 @@ const gemfinder = () => {
 				<Checkboxes filters={filterNames} onChange={handleChange} />
 			</CheckBoxContainer>
 			<GemTableContainer>
-				{gems.length > 0 ? <GemTable gems={gems} onClick={handleClick} /> : <p>No gems found :(</p>}
+				{gems.length > 0 ? (
+					<GemTable gems={gems} onClick={handleClick} />
+				) : (
+					<p className="gemsNotFound">No gems found :(</p>
+				)}
 			</GemTableContainer>
 		</Main>
 	);

@@ -22,6 +22,7 @@ export const Main = styled.main`
 		padding: 5px;
 		min-height: none;
 		font-size: .9rem;
+		max-width: 90vw;
 	}
 `;
 
@@ -94,7 +95,6 @@ export const GemTableContainer = styled.section`
 		overflow-x: auto;
 		border-collapse: collapse;
 		text-align: center;
-		background-color: white;
 	}
 
 	th,
@@ -112,6 +112,7 @@ export const GemTableContainer = styled.section`
 		position: sticky;
 		top: 0;
 		background-color: #000;
+		user-select: none;
 	}
 	tbody td {
 		color: black;
@@ -140,14 +141,6 @@ export const GemTableContainer = styled.section`
 		}
 	}
 
-	.gemQualityCell {
-		&:hover {
-			color: purple;
-			font-weight: bold;
-			transform: scale(1.2);
-		}
-	}
-
 	.gemColorCell {
 		border-left: 3px solid black;
 	}
@@ -158,18 +151,14 @@ export const GemTableContainer = styled.section`
 		display: flex;
 		justify-content: center;
 		cursor: pointer;
-		user-select: none;
 		.sortImage {
+			z-index: -1;
 			transition: transform 450ms;
 		}
 		&:hover {
 			color: #256ce1;
 			.sortImage {
 				color: white;
-			}
-		}
-		&:hover {
-			.sortImage {
 				transition: transform 325ms;
 				transform: rotate(180deg);
 			}
@@ -178,13 +167,14 @@ export const GemTableContainer = styled.section`
 
 	.gemStats {
 		display: flex;
+
 		justify-content: center;
 	}
 	.gemStatsCell {
 		font-weight: 700;
 	}
 
-	p {
+	p.gemsNotFound {
 		font-size: 23px;
 		text-align: center;
 		color: white;
@@ -196,27 +186,34 @@ export const GemTableContainer = styled.section`
 		td {
 			padding: 3px;
 		}
+		tr {
+			display: flex;
+			flex-direction: column;
+		}
+
 		th {
 			padding: 0px;
 		}
 		table {
-			margin: auto;
-			min-width: 380px;
+			width: 90vw;
 		}
 		.gemNameCell {
 			display: flex;
-			border: none;
+			justify-content: center;
 			align-items: center;
 			img {
 				width: 2rem;
 			}
 		}
+		.gemStatsCell {
+			font-weight: 300;
+			border-bottom: 1px solid grey;
+		}
 		.gemColor,
 		.gemQuality,
 		.gemStats,
 		.gemColorCell,
-		.gemQualityCell,
-		.gemStatsCell {
+		.gemQualityCell {
 			display: none;
 		}
 
