@@ -56,7 +56,7 @@ const gemfinder = () => {
 
 	const gemSorter = (sortedGems, sortBy) => {
 		console.log(sortBy);
-		if (sortBy === 'gemQuality') {
+		if (sortBy === 'gemQuality' || sortBy === 'gemStats') {
 			sortedGems.sort(function(a, b) {
 				if (
 					(a.quality === 'Perfect' && b.quality === 'Rare') ||
@@ -82,12 +82,6 @@ const gemfinder = () => {
 			});
 			setSort((sort) => ({
 				gemQuality: !sort.gemQuality
-			}));
-		}
-
-		if (sortBy === 'gemStats') {
-			setSort((sort) => ({
-				gemStats: !sort.gemStats
 			}));
 		}
 

@@ -20,7 +20,9 @@ const GemTable = ({ gems, onClick }) => {
 						</div>
 					</th>
 					<th onClick={onClick}>
-						<div className="gemStats">Stats</div>
+						<div className="gemStats">
+							Stats <FaSort className="sortImage" alt="sort icon" />
+						</div>
 					</th>
 				</tr>
 			</thead>

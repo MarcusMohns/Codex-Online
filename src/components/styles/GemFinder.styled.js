@@ -88,7 +88,7 @@ export const GemTableContainer = styled.section`
 	align-items: center;
 	justify-content: start;
 	max-width: 100%;
-	min-width: 60%;
+	min-width: 70%;
 
 	table {
 		max-width: 100%;
@@ -144,7 +144,7 @@ export const GemTableContainer = styled.section`
 	.gemColorCell {
 		border-left: 3px solid black;
 	}
-
+	.gemStats,
 	.gemQuality,
 	.gemColor,
 	.gemName {
