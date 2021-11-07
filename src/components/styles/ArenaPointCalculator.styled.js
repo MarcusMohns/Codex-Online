@@ -10,7 +10,7 @@ export const Main = styled.main`
 	min-height: 500px;
 	padding: 20px;
 	margin-top: 10%;
-	background-color: #264874;
+	background-color: #7575ff;
 	opacity: 90%;
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
@@ -40,7 +40,7 @@ export const ArenaContainer = styled.section`
 
 	table {
 		border-radius: 5px;
-		background-color: white;
+		background-color: #f8f8ff;
 		border-collapse: collapse;
 		letter-spacing: 1px;
 		font-size: .8rem;

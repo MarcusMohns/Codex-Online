@@ -10,11 +10,11 @@ export const Main = styled.main`
 	margin: auto;
 	padding: 3rem;
 	margin-top: 10%;
-	background-color: #264874;
+	background-color: #7575ff;
 	opacity: 90%;
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-
+	font-size: 1rem;
 	@media screen and (max-width: 1300px) {
 		flex-direction: column;
 		align-items: center;
@@ -43,7 +43,7 @@ export const CheckBoxContainer = styled.section`
 		grid-template-rows: 2fr 0fr;
 		max-height: fit-content;
 		max-width: fit-content;
-		background-color: white;
+		background-color: #f8f8ff;
 		border-radius: 5px;
 		box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
 		border-right: 1px solid black;
@@ -52,7 +52,7 @@ export const CheckBoxContainer = styled.section`
 		display: flex;
 		flex-direction: column;
 		padding: .5rem;
-		background-color: white;
+		background-color: #f8f8ff;
 	}
 
 	.categoryName {
@@ -63,7 +63,7 @@ export const CheckBoxContainer = styled.section`
 		height: 2rem;
 		text-align: center;
 		background-color: #264874;
-		color: white;
+		color: #f8f8ff;
 		margin-bottom: 1rem;
 	}
 
@@ -89,6 +89,7 @@ export const CheckBoxContainer = styled.section`
 export const GemTableContainer = styled.section`
 	max-width: 100%;
 	min-width: 70%;
+	font-size: .95rem;
 
 	table {
 		width: 100%;
@@ -97,31 +98,23 @@ export const GemTableContainer = styled.section`
 		text-align: center;
 	}
 
-	th,
 	td {
-		color: #fff;
 		padding: .5rem;
 	}
 
 	th {
 		padding: 1rem;
-	}
-
-	.headerItems {
+		color: #fff;
 		padding: 1rem;
 		position: sticky;
 		top: 0;
-		background-color: #000;
+		background-color: #264874;
 		user-select: none;
-	}
-	tbody td {
-		color: black;
-		letter-spacing: 1px;
 	}
 
 	tbody tr {
-		background-color: white;
-
+		background-color: #f8f8ff;
+		color: black;
 		&:hover {
 			background-color: lightblue;
 		}
@@ -134,20 +127,63 @@ export const GemTableContainer = styled.section`
 		user-select: all;
 
 		img {
-			width: 2rem;
+			width: 2.2rem;
 			user-select: none;
-			padding-left: 3px;
+			padding-left: 1px;
 			border-radius: 10px;
 		}
 	}
 
 	.gemColorCell {
-		border-left: 3px solid black;
+		border-left: 1px solid black;
 	}
-	.gemStats,
-	.gemQuality,
-	.gemColor,
-	.gemName {
+
+	.gemQualityCell {
+		letter-spacing: .5px;
+	}
+
+	#epicCells {
+		color: #a335ee;
+		font-weight: 700;
+	}
+
+	#rareCells {
+		color: #0070ff;
+		font-weight: 700;
+	}
+
+	#uncommonCells {
+		color: #29c714;
+	}
+
+	#perfectCells {
+		color: #29c714;
+	}
+
+	#blueCells {
+		color: blue;
+	}
+	#redCells {
+		color: red;
+	}
+	#yellowCells {
+		color: #cccc00;
+	}
+	#orangeCells {
+		color: orange;
+	}
+	#greenCells {
+		color: green;
+	}
+	#purpleCells {
+		color: purple;
+	}
+
+	.gemStatsHeader,
+	.gemQualityHeader,
+	.gemColorHeader,
+	.gemNameHeader {
+		// Headers
 		display: flex;
 		justify-content: center;
 		cursor: pointer;
@@ -158,7 +194,7 @@ export const GemTableContainer = styled.section`
 		&:hover {
 			color: #256ce1;
 			.sortImage {
-				color: white;
+				color: #f8f8ff;
 				transition: transform 325ms;
 				transform: rotate(180deg);
 			}
@@ -168,12 +204,13 @@ export const GemTableContainer = styled.section`
 	p.gemsNotFound {
 		font-size: 23px;
 		text-align: center;
-		color: white;
+		color: #f8f8ff;
 		margin: 30%;
 		margin-right: 50%;
 	}
 
 	@media screen and (max-width: 992px) {
+		// Mobile
 		td {
 			padding: 3px;
 		}
@@ -181,12 +218,25 @@ export const GemTableContainer = styled.section`
 			display: flex;
 			flex-direction: column;
 		}
-
 		th {
 			padding: 0px;
+			font-size: 1.5rem;
 		}
 		table {
 			width: 90vw;
+		}
+
+		.gemStatsCell,
+		.gemQualityCell,
+		.gemColorCell {
+			font-weight: 300;
+			border: none;
+			position: sticky;
+		}
+
+		.gemStatsCell {
+			border-bottom: 1px solid grey;
+			font-weight: 500;
 		}
 		.gemNameCell {
 			display: flex;
@@ -198,25 +248,10 @@ export const GemTableContainer = styled.section`
 				width: 2rem;
 			}
 		}
-		.gemStatsCell,
-		.gemQualityCell,
-		.gemColorCell {
-			font-weight: 300;
-			border: none;
-			position: sticky;
-		}
-		.gemColor,
-		.gemName,
-		.gemStats {
+		.gemColorHeader,
+		.gemNameHeader,
+		.gemStatsHeader {
 			display: none;
-		}
-		.gemStatsCell {
-			border-bottom: 1px solid grey;
-			font-weight: 500;
-		}
-
-		thead {
-			font-size: 1.5rem;
 		}
 	}
 `;

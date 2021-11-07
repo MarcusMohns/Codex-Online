@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+//#7575FF
 export const Main = styled.main`
 	display: grid;
 	grid-template-rows: repeat(2, 1fr);
