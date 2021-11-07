@@ -11,7 +11,7 @@ export const Main = styled.main`
 	min-height: 500px;
 	padding: 20px;
 	margin-top: 10%;
-	background-color: #264874;
+	background-color: #667292;
 	opacity: 90%;
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);

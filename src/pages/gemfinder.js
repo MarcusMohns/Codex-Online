@@ -29,8 +29,21 @@ const gemfinder = () => {
 	};
 
 	const handleClick = (e) => {
+		console.log(e.target.className);
+		let sortBy = null;
 		let sortedGems = [].concat(gems);
-		gemSorter(sortedGems, e.target.className);
+		if (e.target.className == 'gemNameHeader') {
+			sortBy = 'name';
+		} else if (e.target.className == 'gemColorHeader') {
+			sortBy = 'color';
+		} else if (e.target.className == 'gemQualityHeader') {
+			sortBy = 'quality';
+		} else if (e.target.className == 'gemStatsHeader') {
+			sortBy = 'stats';
+		} else {
+			alert('error');
+		}
+		gemSorter(sortedGems, sortBy);
 	};
 
 	// Sets our state depending on which checkboxes are ticked.
@@ -55,8 +68,7 @@ const gemfinder = () => {
 	};
 
 	const gemSorter = (sortedGems, sortBy) => {
-		console.log(sortBy);
-		if (sortBy === 'gemQuality' || sortBy === 'gemStats') {
+		if (sortBy === 'quality' || sortBy === 'stats') {
 			sortedGems.sort(function(a, b) {
 				if (
 					(a.quality === 'Perfect' && b.quality === 'Rare') ||
@@ -85,7 +97,7 @@ const gemfinder = () => {
 			}));
 		}
 
-		if (sortBy === 'gemColor') {
+		if (sortBy === 'color') {
 			sortedGems.sort(function(a, b) {
 				if (a.color < b.color) {
 					return sort.gemColor ? 1 : -1;
@@ -101,7 +113,7 @@ const gemfinder = () => {
 			}));
 		}
 
-		if (sortBy === 'gemName') {
+		if (sortBy === 'name') {
 			sortedGems.sort(function(a, b) {
 				if (a.name < b.name) {
 					return sort.gemName ? 1 : -1;

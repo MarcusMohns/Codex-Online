@@ -10,7 +10,7 @@ export const Main = styled.main`
 	margin: auto;
 	padding: 3rem;
 	margin-top: 10%;
-	background-color: #7575ff;
+	background-color: #667292;
 	opacity: 90%;
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
@@ -45,7 +45,7 @@ export const CheckBoxContainer = styled.section`
 		max-width: fit-content;
 		background-color: #f8f8ff;
 		border-radius: 5px;
-		box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
+		box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 		border-right: 1px solid black;
 	}
 	.categoryContainer {
@@ -96,6 +96,7 @@ export const GemTableContainer = styled.section`
 		overflow-x: auto;
 		border-collapse: collapse;
 		text-align: center;
+		box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 	}
 
 	td {
@@ -170,7 +171,7 @@ export const GemTableContainer = styled.section`
 		color: #cccc00;
 	}
 	#orangeCells {
-		color: orange;
+		color: #cc7a00;
 	}
 	#greenCells {
 		color: green;
