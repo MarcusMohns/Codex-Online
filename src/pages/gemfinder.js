@@ -23,7 +23,7 @@ const gemfinder = () => {
 		} else if (!e.target.checked) {
 			currentFilters = currentFilters.filter((aFilter) => aFilter !== e.target.value);
 		} else {
-			return alert('error');
+			return console.error('Unexpected checkbox value');
 		}
 		gemFilterer();
 	};
@@ -32,16 +32,16 @@ const gemfinder = () => {
 		console.log(e.target.className);
 		let sortBy = null;
 		let sortedGems = [].concat(gems);
-		if (e.target.className == 'gemNameHeader') {
+		if (e.target.className === 'gemNameHeader') {
 			sortBy = 'name';
-		} else if (e.target.className == 'gemColorHeader') {
+		} else if (e.target.className === 'gemColorHeader') {
 			sortBy = 'color';
-		} else if (e.target.className == 'gemQualityHeader') {
+		} else if (e.target.className === 'gemQualityHeader') {
 			sortBy = 'quality';
-		} else if (e.target.className == 'gemStatsHeader') {
+		} else if (e.target.className === 'gemStatsHeader') {
 			sortBy = 'stats';
 		} else {
-			alert('error');
+			console.error('handleClick recieved unexpected value from onClick');
 		}
 		gemSorter(sortedGems, sortBy);
 	};
@@ -60,7 +60,7 @@ const gemfinder = () => {
 				// Main Attributes, Secondary Attributes
 				newArray = newArray.filter((gem) => gem.stats.includes(aFilter));
 			else {
-				return alert('Error');
+				return console.error('gemFilterer Error');
 			}
 		});
 

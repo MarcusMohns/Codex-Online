@@ -93,8 +93,7 @@ export const GemTableContainer = styled.section`
 
 	table {
 		width: 100%;
-		overflow-x: auto;
-		border-collapse: collapse;
+		border-collapse: separate;
 		text-align: center;
 		box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 	}
@@ -104,7 +103,6 @@ export const GemTableContainer = styled.section`
 	}
 
 	th {
-		padding: 1rem;
 		color: #fff;
 		padding: 1rem;
 		position: sticky;
@@ -112,7 +110,9 @@ export const GemTableContainer = styled.section`
 		background-color: #264874;
 		user-select: none;
 	}
-
+	tr {
+		background-color: green;
+	}
 	tbody tr {
 		background-color: #f8f8ff;
 		color: black;
