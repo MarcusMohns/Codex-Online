@@ -77,34 +77,34 @@ function Arenapointcalculator() {
 					<table>
 						<thead>
 							<tr>
-								<th scope="col">Bracket</th>
-								<th scope="col">Your Rating</th>
-								<th scope="col">Arena Points</th>
+								<th>Bracket</th>
+								<th>Your Rating</th>
+								<th>Arena Points</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<th scope="row">2v2</th>
+								<th className="bracket-col">2v2</th>
 								<td>
 									<input type="number" name="twos" />
 								</td>
-								<td name="twosResults">{formData.twos}</td>
+								<td className="twosResults">{formData.twos}</td>
 							</tr>
 
 							<tr>
-								<th scope="row">3v3</th>
+								<th className="bracket-col">3v3</th>
 								<td>
 									<input type="number" name="threes" />
 								</td>
-								<td name="threesResults">{formData.threes}</td>
+								<td className="threesResults">{formData.threes}</td>
 							</tr>
 
 							<tr>
-								<th scope="row">5v5</th>
+								<th className="bracket-col">5v5</th>
 								<td>
 									<input type="number" name="fives" />
 								</td>
-								<td name="fivesResults">{formData.fives}</td>
+								<td className="fivesResults">{formData.fives}</td>
 							</tr>
 						</tbody>
 					</table>
@@ -116,16 +116,16 @@ function Arenapointcalculator() {
 					<table>
 						<thead>
 							<tr>
-								<th scope="col">Points needed</th>
-								<th scope="col">Bracket</th>
-								<th scope="col">Arena Rating Required</th>
+								<th>Points needed</th>
+								<th>Bracket</th>
+								<th>Arena Rating Required</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td />
-								<th scope="row">2v2</th>
-								<td name="twosRatingRequired">
+								<th className="bracket-col">2v2</th>
+								<td className="twosRatingRequired">
 									{formData.twosRatingRequired}
 								</td>
 							</tr>
@@ -134,16 +134,16 @@ function Arenapointcalculator() {
 								<td>
 									<input type="number" name="threes" />
 								</td>
-								<th scope="row">3v3</th>
-								<td name="threesRatingRequired">
+								<th className="bracket-col">3v3</th>
+								<td className="threesRatingRequired">
 									{formData.threesRatingRequired}
 								</td>
 							</tr>
 
 							<tr>
 								<td />
-								<th scope="row">5v5</th>
-								<td name="fivesRatingRequired">
+								<th className="bracket-col">5v5</th>
+								<td className="fivesRatingRequired">
 									{formData.fivesRatingRequired}
 								</td>
 							</tr>
