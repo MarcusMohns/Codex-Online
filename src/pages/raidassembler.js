@@ -1,4 +1,3 @@
-import Header from '../components/Header';
 import SpecButtons from '../components/SpecButtons';
 import SpecList from '../SpecList';
 import PlayersInRaid from '../components/PlayersInRaid';

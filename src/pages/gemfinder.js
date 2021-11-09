@@ -7,7 +7,7 @@ import { Main, GemTableContainer, CheckBoxContainer } from '../components/styles
 
 let currentFilters = [];
 
-const gemfinder = () => {
+const Gemfinder = () => {
 	const [ gems, setGems ] = useState(gemArray);
 	const [ sort, setSort ] = useState(
 		{ gemStats: false },
@@ -153,4 +153,4 @@ const gemfinder = () => {
 	);
 };
 
-export default gemfinder;
+export default Gemfinder;

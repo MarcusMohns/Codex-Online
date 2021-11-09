@@ -31,7 +31,7 @@ const GemTable = ({ gems, onClick }) => {
 					<tr key={gem.name}>
 						<td className="gemNameCell">
 							<p>{gem.name}</p>
-							<img src={gem.image} alt="image of gem" />
+							<img src={gem.image} alt="gem" />
 						</td>
 						<td className="gemColorCell" id={`${gem.color.toLowerCase()}Cells`}>
 							{gem.color}

@@ -1,6 +1,5 @@
 import { ArenaContainer, Main } from '../components/styles/ArenaPointCalculator.styled';
 import React, { useReducer } from 'react';
-import Header from '../components/Header';
 
 const formReducer = (state, event) => {
 	return {
@@ -86,7 +85,7 @@ function Arenapointcalculator() {
 						<tbody>
 							<tr>
 								<th scope="row">2v2</th>
-								<td scope="row">
+								<td>
 									<input type="number" name="twos" />
 								</td>
 								<td name="twosResults">{formData.twos}</td>
@@ -94,7 +93,7 @@ function Arenapointcalculator() {
 
 							<tr>
 								<th scope="row">3v3</th>
-								<td scope="row">
+								<td>
 									<input type="number" name="threes" />
 								</td>
 								<td name="threesResults">{formData.threes}</td>
@@ -102,7 +101,7 @@ function Arenapointcalculator() {
 
 							<tr>
 								<th scope="row">5v5</th>
-								<td scope="row">
+								<td>
 									<input type="number" name="fives" />
 								</td>
 								<td name="fivesResults">{formData.fives}</td>
@@ -126,7 +125,7 @@ function Arenapointcalculator() {
 							<tr>
 								<td />
 								<th scope="row">2v2</th>
-								<td scope="row" name="twosRatingRequired">
+								<td name="twosRatingRequired">
 									{formData.twosRatingRequired}
 								</td>
 							</tr>
@@ -136,7 +135,7 @@ function Arenapointcalculator() {
 									<input type="number" name="threes" />
 								</td>
 								<th scope="row">3v3</th>
-								<td scope="row" name="threesRatingRequired">
+								<td name="threesRatingRequired">
 									{formData.threesRatingRequired}
 								</td>
 							</tr>
@@ -144,7 +143,7 @@ function Arenapointcalculator() {
 							<tr>
 								<td />
 								<th scope="row">5v5</th>
-								<td scope="row" name="fivesRatingRequired">
+								<td name="fivesRatingRequired">
 									{formData.fivesRatingRequired}
 								</td>
 							</tr>
