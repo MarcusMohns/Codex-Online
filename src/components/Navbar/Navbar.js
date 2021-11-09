@@ -6,7 +6,6 @@ const Navbar = () => {
 	const [ barsMenuOpen, setBarsMenuOpen ] = useState(false);
 	const handleToggle = () => {
 		setBarsMenuOpen(!barsMenuOpen);
-		console.log(barsMenuOpen);
 	};
 
 	return (
@@ -18,7 +17,7 @@ const Navbar = () => {
 			<div className={`barsMenu ${barsMenuOpen ? ' showBarsMenu' : 'hideBarsMenu'}`} onClick={handleToggle}>
 				<BarsNavLink to="/home">Home</BarsNavLink>
 				<BarsNavLink to="/raidassembler">Raid Assembler</BarsNavLink>
-				<BarsNavLink to="/arenapointcalculator" onClick={handleToggle}>
+				<BarsNavLink to="/arenapointcalculator">
 					Arena Point Calculator
 				</BarsNavLink>
 				<BarsNavLink to="/gemfinder">Gem Finder</BarsNavLink>
