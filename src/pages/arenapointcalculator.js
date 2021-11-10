@@ -48,7 +48,7 @@ const pointsRewarded = (bracketName, rating) => {
 function Arenapointcalculator() {
 	const [ formData, setFormData ] = useReducer(formReducer, {});
 
-	const handleChange = (event) => {
+	const ratingChange = (event) => {
 		setFormData({
 			name: event.target.name,
 			value: pointsRewarded(event.target.name, event.target.value)
@@ -72,8 +72,13 @@ function Arenapointcalculator() {
 
 	return (
 		<Main>
+	
 			<ArenaContainer>
-				<form onChange={handleChange} onSelect={handleSelect} autoComplete="off">
+			<div className="textArea">
+				<h2>Arena Points rewarded</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+			</div>
+				<form onChange={ratingChange} onSelect={handleSelect} autoComplete="off">
 					<table>
 						<thead>
 							<tr>
@@ -109,16 +114,20 @@ function Arenapointcalculator() {
 						</tbody>
 					</table>
 				</form>
-			</ArenaContainer>
-
+ 			</ArenaContainer>
+	
 			<ArenaContainer>
+			<div className="textArea">
+			<h2>Arena Rating Required</h2>
+				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+			</div>
 				<form onChange={pointChange} onSelect={handleSelect} autoComplete="off">
 					<table>
 						<thead>
 							<tr>
 								<th>Points needed</th>
 								<th>Bracket</th>
-								<th>Arena Rating Required</th>
+								<th>Arena Rating</th>
 							</tr>
 						</thead>
 						<tbody>

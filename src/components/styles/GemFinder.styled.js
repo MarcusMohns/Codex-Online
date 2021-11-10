@@ -14,6 +14,7 @@ export const Main = styled.main`
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
 	font-size: 1rem;
+
 	@media screen and (max-width: 1200px) {
 		flex-direction: column;
 		align-items: center;

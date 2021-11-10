@@ -10,16 +10,16 @@ let currentFilters = [];
 const Gemfinder = () => {
 	const [ gems, setGems ] = useState(gemArray);
 	const [ sort, setSort ] = useState(
-		{ gemStats: false },
-		{ gemQuality: false },
-		{ gemColor: false },
-		{ gemName: false }
+		{gemStats: false,
+		 gemQuality: false ,
+		 gemColor: false ,
+		 gemName: false}
 	);
 
 	// Add/Remove filters to currentFilters
 	const handleChange = (e) => {
 		if (e.target.checked) {
-			currentFilters = [ ...currentFilters, e.target.value ];
+			currentFilters.push(e.target.value);
 		} else if (!e.target.checked) {
 			currentFilters = currentFilters.filter((aFilter) => aFilter !== e.target.value);
 		} else {
@@ -29,7 +29,7 @@ const Gemfinder = () => {
 	};
 
 	const handleClick = (e) => {
-		console.log(e.target.className);
+		
 		let sortBy = null;
 		let sortedGems = [].concat(gems);
 		if (e.target.className === 'gemNameHeader') {

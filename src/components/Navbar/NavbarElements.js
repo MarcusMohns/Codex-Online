@@ -36,6 +36,7 @@ export const BarsNavLink = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
   color: #818181;
+  
 
 
 `;
