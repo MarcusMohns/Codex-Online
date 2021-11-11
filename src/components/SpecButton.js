@@ -1,4 +1,4 @@
-import { StyledSpecButton } from './styles/SpecButton.styled';
+import { StyledSpecButton } from './styles/RaidAssembler.styled';
 const SpecButton = ({ text, image, onClick, color }) => {
 	return (
 		<StyledSpecButton color={color} onClick={onClick}>

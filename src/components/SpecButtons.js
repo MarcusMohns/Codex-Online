@@ -1,8 +1,8 @@
 import SpecButton from './SpecButton';
 
-const SpecButtons = ({ specs, onClick }) => {
+const SpecButtons = ({ specs, onClick}) => {
 	return (
-		<>
+		<div className={'spec-buttons'}>
 			{specs.map((spec) => (
 				<SpecButton
 					key={spec.text}
@@ -12,7 +12,7 @@ const SpecButtons = ({ specs, onClick }) => {
 					color={spec.color}
 				/>
 			))}
-		</>
+		</div>
 	);
 };
 

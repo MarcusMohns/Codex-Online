@@ -14,7 +14,6 @@ export const Main = styled.main`
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
 	font-size: 1rem;
-
 	@media screen and (max-width: 1200px) {
 		flex-direction: column;
 		align-items: center;
@@ -23,7 +22,6 @@ export const Main = styled.main`
 		font-size: .9rem;
 		max-width: 90vw;
 	}
-
 	@media screen and (max-width: 992px) {
 		max-width: 90vw;
 	}
@@ -35,7 +33,6 @@ export const CheckBoxContainer = styled.section`
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-
 	.checkBoxContainer {
 		padding: 1rem;
 		display: grid;
@@ -54,7 +51,6 @@ export const CheckBoxContainer = styled.section`
 		padding: .5rem;
 		background-color: #f8f8ff;
 	}
-
 	.categoryName {
 		display: flex;
 		align-items: center;
@@ -66,7 +62,6 @@ export const CheckBoxContainer = styled.section`
 		color: #f8f8ff;
 		margin-bottom: 1rem;
 	}
-
 	.aCheckbox label,
 	input {
 		margin: .4rem;
@@ -78,7 +73,6 @@ export const CheckBoxContainer = styled.section`
 			transform: scale(1.5);
 		}
 	}
-
 	@media screen and (max-width: 992px) {
 		.checkBoxContainer {
 			margin-bottom: 50px;
@@ -90,18 +84,15 @@ export const GemTableContainer = styled.section`
 	max-width: 100%;
 	min-width: 70%;
 	font-size: .95rem;
-
 	table {
 		width: 100%;
 		border-collapse: separate;
 		text-align: center;
 		box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 	}
-
 	td {
 		padding: .5rem;
 	}
-
 	th {
 		color: #fff;
 		padding: 1rem;
@@ -120,13 +111,11 @@ export const GemTableContainer = styled.section`
 			background-color: lightblue;
 		}
 	}
-
 	.gemNameCell {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		user-select: all;
-
 		img {
 			width: 2.2rem;
 			user-select: none;
@@ -134,33 +123,26 @@ export const GemTableContainer = styled.section`
 			border-radius: 10px;
 		}
 	}
-
 	.gemColorCell {
 		border-left: 1px solid black;
 	}
-
 	.gemQualityCell {
 		letter-spacing: .5px;
 	}
-
 	#epicCells {
 		color: #a335ee;
 		font-weight: 700;
 	}
-
 	#rareCells {
 		color: #0070ff;
 		font-weight: 700;
 	}
-
 	#uncommonCells {
 		color: #29c714;
 	}
-
 	#perfectCells {
 		color: #29c714;
 	}
-
 	#blueCells {
 		color: blue;
 	}
@@ -179,7 +161,6 @@ export const GemTableContainer = styled.section`
 	#purpleCells {
 		color: purple;
 	}
-
 	.gemStatsHeader,
 	.gemQualityHeader,
 	.gemColorHeader,
@@ -201,7 +182,6 @@ export const GemTableContainer = styled.section`
 			}
 		}
 	}
-
 	p.gemsNotFound {
 		font-size: 23px;
 		text-align: center;
@@ -209,7 +189,6 @@ export const GemTableContainer = styled.section`
 		margin: 30%;
 		margin-right: 50%;
 	}
-
 	@media screen and (max-width: 992px) {
 		// Mobile
 		td {
@@ -226,7 +205,6 @@ export const GemTableContainer = styled.section`
 		table {
 			width: 90vw;
 		}
-
 		.gemStatsCell,
 		.gemQualityCell,
 		.gemColorCell {
@@ -234,11 +212,9 @@ export const GemTableContainer = styled.section`
 			border: none;
 			position: sticky;
 		}
-
 		.gemStatsCell {
 			box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
 			
-
 			font-weight: 500;
 		}
 		.gemNameCell {

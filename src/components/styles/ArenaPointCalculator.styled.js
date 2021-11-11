@@ -25,11 +25,10 @@ export const Main = styled.main`
 	justify-content: top;
 	max-width: 75vw;
 	min-width:75vw;
-
-
-
-	
 	 }
+
+@media screen and (min-width: 992px) {
+	}
 
 `;
 
@@ -65,8 +64,8 @@ export const ArenaContainer = styled.section`
 		}
 		h3 {
 			padding:2rem;
-			font-weight:300;
-			font-size:1.1rem;
+			opacity:70%;
+			font-size:1rem;
 
 		}
 	}
@@ -87,8 +86,6 @@ table {
 		font-weight:800;
 	}
 
-
-
 	.bracket-col {
 		background-color: lightblue;
 		padding: 1rem;
@@ -102,13 +99,10 @@ table {
 
 @media (min-width: 1200px) { 
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: top;
 	border-radius: 1rem;
 	max-width:90%;
-	
+
 
 table {
 	border-collapse: separate;
@@ -116,13 +110,7 @@ table {
 	box-shadow: 3px 5px 5px -2px rgba(0, 0, 0, 0.2);
 	
 	
-
-	
 }
-
-
-
-
 	input {
 		height: .5rem;
 		width:8rem;
