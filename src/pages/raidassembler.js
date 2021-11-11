@@ -46,8 +46,8 @@ const RaidAssembler = () => {
 					{raid.length > 0 ? <PlayersInRaid raid={raid} onDelete={deletePlayer} /> : 'No Players in Raid'}
 				</div>
 			</RaidContainer>
-			<SpecContainer className={`${specContainerOpen ? 'class-container' : 'hideSpecContainer'}`}>
-			<div onClick={handleToggle} className='toggle-button-container' > <FaBars className="toggle-show-button" /> </div>
+			<SpecContainer className={`${specContainerOpen ? 'spec-container' : 'hide-spec-container'}`}>
+			<div onClick={handleToggle} className='toggle-spec-container' > Add a spec<FaBars className="toggle-spec-button" /> </div>
 				<SpecButtons className='spec-buttons' specs={SpecList} onClick={addPlayer}/>
 			</SpecContainer>
 			<BuffContainer className="buff-container">{buffs.length > 0 ? <RaidBuffs buffs={buffs} /> : 'No Buffs in Raid'}</BuffContainer>

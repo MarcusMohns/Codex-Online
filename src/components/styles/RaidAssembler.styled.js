@@ -6,8 +6,8 @@ export const Main = styled.main`
   grid-template-rows: 0.3fr 1.4fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "raid-container class-container"
-    "buff-container class-container"; 
+    "raid-container spec-container"
+    "buff-container spec-container"; 
 	max-width: 100vw;
 	min-height: 100vw;
 	margin: auto;
@@ -17,7 +17,7 @@ export const Main = styled.main`
 	background-color: #667292;
 	opacity: 90%;
 
-	.hideSpecContainer {
+	.hide-spec-container {
 	 		.spec-buttons {
 				display:none;
 		}
@@ -28,8 +28,10 @@ export const Main = styled.main`
 		min-height: 75vw;
 		border-radius: 5px;
 		box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-		.toggle-button-container {
+		
+		.toggle-spec-container {
 		display:none;
+		color:white;
 	}
 
 	 }
@@ -38,18 +40,25 @@ export const Main = styled.main`
 
 export const SpecContainer = styled.section`
 
-		grid-area: class-container;
-		display: grid;
-		flex-direction: row;
+		grid-area: spec-container;
+		position: absolute;
+		top: 10%;
+	 	right:0;
 		border: none;
-		width:100%;
-
-		.toggle-show-button {
+		max-width:40%;
+		color:white;
+	 	.toggle-spec-container {
+			display:flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			
+		 }
+		.toggle-spec-button {
 			width:2rem;
 			height:2rem;
 			display: flex;
-			justify-content: end;
-			align-items: end;
+			background-color: white;
 		}
 		.spec-buttons {
 			width:100%;
@@ -58,6 +67,8 @@ export const SpecContainer = styled.section`
 	@media (min-width: 1200px) { 
 	display: flex;
 	flex-direction: row;
+	position: static;
+	max-width:100%;
 
 	 }
 	
@@ -99,7 +110,8 @@ export const StyledSpecButton = styled.button`
 
 export const RaidContainer = styled.section`
 	grid-area: raid-container;
-	padding:5px;
+	padding:1rem;
+	border-radius: .5rem;
 	background-color:white;
 	width:100%;
 	height:fit-content;
@@ -151,8 +163,9 @@ export const StyledPlayer = styled.div`
 
 	
 	@media (min-width: 1200px) { 
+		margin:5px;
 		font-size: 0.8rem;
-		padding: 0.33rem;
+		padding: 1rem;
 
 		img {
 			display:normal;
@@ -163,9 +176,13 @@ export const StyledPlayer = styled.div`
 
 export const BuffContainer = styled.section`
 	grid-area: buff-container;
+	background-color: white;
 	display: flex;
 	flex-direction: row;
 	align-items: top;
 	justify-content: top;
+	height:fit-content;
+	border-radius:.5rem;
+	padding:1rem;
 `;
 
