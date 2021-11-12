@@ -1,15 +1,23 @@
 import styled from 'styled-components';
+import { FaBars } from 'react-icons/fa';
+
+export const Bars = styled(FaBars)`
+  color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+	float:right;
+`;
 
 export const Main = styled.main`
 	display: flex;
 	flex-direction: row;
 	align-items: start;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	max-width: 75vw;
 	min-height: 75vw;
 	margin: auto;
 	padding: 3rem;
-	margin-top: 10%;
+	margin-top: 5%;
 	opacity: 90%;
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
@@ -25,15 +33,27 @@ export const Main = styled.main`
 	@media screen and (max-width: 992px) {
 		max-width: 90vw;
 	}
+
+
+	.checkbox-container {
+		display:flex;
+		transition: all ease-out 500ms;
+
+	}
+
+	.hide-checkbox-container {
+		display:flex;
+		position: absolute;
+		transition: all ease-out 500ms;
+	}
+	
 `;
 
 export const CheckBoxContainer = styled.section`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
-	.checkBoxContainer {
+
+	.categories-and-checkboxes {
+		
 		padding: 1rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -44,14 +64,15 @@ export const CheckBoxContainer = styled.section`
 		border-radius: 5px;
 		box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 		border-right: 1px solid black;
+	
 	}
-	.categoryContainer {
+	.category-container {
 		display: flex;
 		flex-direction: column;
 		padding: .5rem;
 		background-color: #f8f8ff;
 	}
-	.categoryName {
+	.category-name {
 		display: flex;
 		align-items: center;
 		justify-content: center;

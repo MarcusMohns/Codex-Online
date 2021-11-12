@@ -2,17 +2,18 @@ import Checkbox from './Checkbox';
 
 const Checkboxes = ({ filters, onChange }) => {
 	return (
-		<div className="checkBoxContainer">
+		<div className="categories-and-checkboxes">
 			{filters.map((item) => {
 				return (
-					<div key={item.name} className="categoryContainer">
-						<p className="categoryName">{item.name}</p>
+					<div key={item.name} className="category-container">
+						<p className="category-name">{item.name}</p>
 						{item.content.map((content, index) => (
 							<Checkbox key={index} text={content} onChange={onChange} />
 						))}
 					</div>
 				);
 			})}
+
 		</div>
 	);
 };
