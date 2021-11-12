@@ -3,7 +3,7 @@ import GemTable from '../components/GemTable';
 import gemArray from '../Gems';
 import Checkboxes from '../components/Checkboxes';
 import filterNames from '../FilterNames';
-import { Main, GemTableContainer, CheckBoxContainer } from '../components/styles/GemFinder.styled';
+import { Main, GemTableContainer, CheckBoxContainer, Bars } from '../components/styles/GemFinder.styled';
 
 let currentFilters = [];
 
@@ -15,7 +15,12 @@ const Gemfinder = () => {
 		 gemColor: false ,
 		 gemName: false}
 	);
+	const [ checkBoxWindowOpen, setcheckBoxWindowOpen ] = useState(true);
 
+	const handleToggle = () => {
+		setcheckBoxWindowOpen(!checkBoxWindowOpen);
+		console.log(checkBoxWindowOpen)
+	};
 	// Add/Remove filters to currentFilters
 	const handleChange = (e) => {
 		if (e.target.checked) {
@@ -139,8 +144,10 @@ const Gemfinder = () => {
 
 	return (
 		<Main>
-			<CheckBoxContainer>
-				<Checkboxes filters={filterNames} onChange={handleChange} />
+			<CheckBoxContainer className={`${checkBoxWindowOpen ? 'checkbox-container' : 'hide-checkbox-container'}`}>
+			<Checkboxes filters={filterNames} onChange={handleChange}/>
+			<div onClick={handleToggle} className="checkbox-clicker"><Bars/> </div>	
+
 			</CheckBoxContainer>
 			<GemTableContainer>
 				{gems.length > 0 ? (
