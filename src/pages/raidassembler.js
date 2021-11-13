@@ -3,8 +3,7 @@ import SpecList from '../SpecList';
 import PlayersInRaid from '../components/PlayersInRaid';
 import { useState } from 'react';
 import RaidBuffs from '../components/RaidBuffs';
-import { Main, SpecContainer, RaidContainer, BuffContainer} from '../components/styles/RaidAssembler.styled';
-import { FaBars } from "react-icons/fa";
+import { Main, SpecContainer, RaidContainer, BuffContainer, DoubleArrowRight} from '../components/styles/RaidAssembler.styled';
 
 
 const RaidAssembler = () => {
@@ -40,14 +39,19 @@ const RaidAssembler = () => {
 	};
 	return (
 		<Main>
+			<div className={`${specContainerOpen ? 'ra-left-menu' : 'hide-ra-left-menu'}`}>
+			<div onClick={handleToggle} className='ra-left-menu-button' ><DoubleArrowRight className="toggle-spec-button"/> </div>
+			<SpecButtons className='spec-buttons' specs={SpecList} onClick={addPlayer}/>
+			</div>
+		
+			
 			<RaidContainer className="raid-container">
 				<div className="count"> {count} / 25 </div>
 				<div className="grid">
 					{raid.length > 0 ? <PlayersInRaid raid={raid} onDelete={deletePlayer} /> : 'No Players in Raid'}
 				</div>
 			</RaidContainer>
-			<SpecContainer className={`${specContainerOpen ? 'spec-container' : 'hide-spec-container'}`}>
-			<div onClick={handleToggle} className='toggle-spec-container' > Add a spec<FaBars className="toggle-spec-button" /> </div>
+			<SpecContainer>
 				<SpecButtons className='spec-buttons' specs={SpecList} onClick={addPlayer}/>
 			</SpecContainer>
 			<BuffContainer className="buff-container">{buffs.length > 0 ? <RaidBuffs buffs={buffs} /> : 'No Buffs in Raid'}</BuffContainer>
