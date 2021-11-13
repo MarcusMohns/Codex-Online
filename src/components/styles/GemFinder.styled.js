@@ -1,23 +1,16 @@
 import styled from 'styled-components';
-import { FaBars } from 'react-icons/fa';
-
-export const Bars = styled(FaBars)`
-  color: #fff;
-    font-size: 1.8rem;
-    cursor: pointer;
-	float:right;
-`;
 
 export const Main = styled.main`
 	display: flex;
 	flex-direction: row;
 	align-items: start;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	background-color: #667292;
 	max-width: 75vw;
 	min-height: 75vw;
 	margin: auto;
 	padding: 3rem;
-	margin-top: 5%;
+	margin-top: 10%;
 	opacity: 90%;
 	border-radius: 5px;
 	box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
@@ -33,25 +26,14 @@ export const Main = styled.main`
 	@media screen and (max-width: 992px) {
 		max-width: 90vw;
 	}
-
-
-	.checkbox-container {
-		display:flex;
-		transition: all ease-out 500ms;
-
-	}
-
-	.hide-checkbox-container {
-		display:flex;
-		position: absolute;
-		transition: all ease-out 500ms;
-	}
-	
 `;
 
 export const CheckBoxContainer = styled.section`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
-
 	.categories-and-checkboxes {
 		
 		padding: 1rem;
@@ -64,13 +46,14 @@ export const CheckBoxContainer = styled.section`
 		border-radius: 5px;
 		box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 		border-right: 1px solid black;
-	
 	}
 	.category-container {
 		display: flex;
 		flex-direction: column;
 		padding: .5rem;
 		background-color: #f8f8ff;
+		border-radius: 5px;
+
 	}
 	.category-name {
 		display: flex;
@@ -82,6 +65,7 @@ export const CheckBoxContainer = styled.section`
 		background-color: #264874;
 		color: #f8f8ff;
 		margin-bottom: 1rem;
+		
 	}
 	.aCheckbox label,
 	input {
@@ -94,11 +78,29 @@ export const CheckBoxContainer = styled.section`
 			transform: scale(1.5);
 		}
 	}
-	@media screen and (max-width: 992px) {
-		.checkBoxContainer {
-			margin-bottom: 50px;
-		}
+	
+	@media screen and (max-width: 1200px) {
+
+	.categories-and-checkboxes {		
+		margin:auto;
+		background-color: #f8f8ff;
+		margin-bottom: 50px;
+	
 	}
+	.aCheckbox label {
+		margin: 0rem;
+		cursor: pointer;
+		transform: scale(1.2);
+		
+		
+	}
+	.category-container {
+		padding: 0rem;
+	}
+
+	
+}
+
 `;
 
 export const GemTableContainer = styled.section`

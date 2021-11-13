@@ -16,12 +16,22 @@ export const Main = styled.main`
 	margin-top: 10%;
 	background-color: #667292;
 	opacity: 90%;
-
+	
+	
+	.spec-container {
+		transition: all 300ms;
+	}	
 	.hide-spec-container {
-	 		.spec-buttons {
-				display:none;
-		}
-}
+		transition: all 300ms;
+		transform:translate(50%);
+		opacity:10%;
+	
+	.toggle-spec-container {
+		opacity:100%;
+		color:red;
+	}
+	}
+
 
 	@media (min-width: 1200px) { 
 		max-width: 75vw;
