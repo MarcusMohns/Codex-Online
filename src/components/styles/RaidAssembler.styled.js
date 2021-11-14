@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { CgChevronDoubleRightR } from "react-icons/cg";
 
 export const Main = styled.main`
 	display:flex;
@@ -16,17 +15,6 @@ export const Main = styled.main`
 	opacity: 90%;
 
 
-	.ra-left-menu {
-		transition: all 300ms;
-		.toggle-spec-button {
-		transition: all 200ms;
-	}
-}
-	.hide-ra-left-menu {
-			transition: transform 300ms;
-			transform:translate(75%);
-
-	}
 	
 	@media (min-width: 1200px) { 
 	display: grid; 
@@ -177,8 +165,3 @@ export const BuffContainer = styled.section`
 	border-radius:.5rem;
 	padding:1rem;
 `;
-
-export const DoubleArrowRight = styled(CgChevronDoubleRightR)`
-		font-size:3rem;
-		color:white;
-	`

@@ -3,20 +3,13 @@ import SpecList from '../SpecList';
 import PlayersInRaid from '../components/PlayersInRaid';
 import { useState } from 'react';
 import RaidBuffs from '../components/RaidBuffs';
-import { Main, SpecContainer, RaidContainer, BuffContainer, DoubleArrowRight} from '../components/styles/RaidAssembler.styled';
+import { Main, SpecContainer, RaidContainer, BuffContainer} from '../components/styles/RaidAssembler.styled';
 
 
 const RaidAssembler = () => {
 	const [ raid, setRaid ] = useState([]);
 	const [ buffs, setBuffs ] = useState([]);
 	const [ count, setCount ] = useState(0);
-	const [ specContainerOpen, setspecContainerOpen ] = useState(true);
-
-
-	const handleToggle = () => {
-		setspecContainerOpen(!specContainerOpen);
-		console.log(specContainerOpen)
-	};
 
 	
 	const deletePlayer = (id) => {
@@ -39,11 +32,8 @@ const RaidAssembler = () => {
 	};
 	return (
 		<Main>
-			<div className={`${specContainerOpen ? 'ra-left-menu' : 'hide-ra-left-menu'}`}>
-			<div onClick={handleToggle} className='ra-left-menu-button' ><DoubleArrowRight className="toggle-spec-button"/> </div>
-			<SpecButtons className='spec-buttons' specs={SpecList} onClick={addPlayer}/>
-			</div>
 		
+	
 			
 			<RaidContainer className="raid-container">
 				<div className="count"> {count} / 25 </div>

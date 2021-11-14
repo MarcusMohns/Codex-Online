@@ -1,20 +1,30 @@
 import React, { useState } from 'react';
-import { Nav, NavLink, Bars, BarsNavLink, NavMenu } from './NavbarElements';
+import { Nav, NavLink, Bars, BarsNavLink, NavMenu, DoubleArrowRight } from './NavbarElements';
 import logo from '../../images/icon.png';
 
 const Navbar = () => {
 	const [ barsMenuOpen, setBarsMenuOpen ] = useState(false);
-	const handleToggle = () => {
+	const handleNavBarToggle = () => {
 		setBarsMenuOpen(!barsMenuOpen);
 	};
+	const [leftMenuOpen, setLeftMenuOpen] = useState(false);
+	const handleLeftMenuToggle = () => {
+		setLeftMenuOpen(!leftMenuOpen);
+	};
+
 
 	return (
 		<Nav>
 			<NavLink to="/home">
 				<img src={logo} alt="logo" className="logo" />
 			</NavLink>
-			<Bars onClick={handleToggle} />
-			<div className={`barsMenu ${barsMenuOpen ? ' showBarsMenu' : 'hideBarsMenu'}`} onClick={handleToggle}>
+			
+			<div className={`${leftMenuOpen ? 'left-menu' : 'hide-left-menu'}`}>
+			<DoubleArrowRight className="DoubleArrowRight" onClick={handleLeftMenuToggle} />
+
+			</div>
+			<Bars onClick={handleNavBarToggle} />
+			<div className={`barsMenu ${barsMenuOpen ? ' showBarsMenu' : 'hideBarsMenu'}`} onClick={handleNavBarToggle}>
 				<BarsNavLink to="/home">Home</BarsNavLink>
 				<BarsNavLink to="/raidassembler">Raid Assembler</BarsNavLink>
 				<BarsNavLink to="/arenapointcalculator">

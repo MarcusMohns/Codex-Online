@@ -1,13 +1,60 @@
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
+import { CgChevronDoubleRightR } from "react-icons/cg";
 import styled from 'styled-components';
-
 export const Nav = styled.nav`
 	background: #264874;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	height: 8%;
+
+  .left-menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color:#264874;
+    color:white;
+    position: absolute;
+    width:50%;
+    height:80%;
+    top: 10%;
+    left: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1;
+    border-radius:.3rem;
+		transition: all 300ms;
+	
+}
+	.hide-left-menu {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color:#264874;
+    color:white;
+    position: absolute;
+    width:50%;
+    height:80%;
+    top: 10%;
+    left: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1;
+    border-radius:.3rem;
+		transition: all 300ms;
+    transform:translate(-90%);
+
+    
+    .DoubleArrowRight {
+      transition: all 300ms;
+      transform:rotate(180deg);
+    }
+	}
+
+
+
+
 
 	@media screen and (max-width: 768px) {
 		height: 10%;
@@ -79,6 +126,16 @@ export const Bars = styled(FaBars)`
     cursor: pointer;
   }
 `;
+
+export const DoubleArrowRight = styled(CgChevronDoubleRightR)`
+    font-size:3rem;
+		color:white;
+    font-size:2rem;
+    cursor: pointer;
+    opacity:50%;
+    z-index: 2;
+	`
+
 
 export const NavMenu = styled.div`
 	display: flex;
