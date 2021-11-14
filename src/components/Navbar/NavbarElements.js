@@ -25,6 +25,11 @@ export const Nav = styled.nav`
     z-index: 1;
     border-radius:.3rem;
 		transition: all 300ms;
+
+    .double-arrow-right {
+      transition: all 300ms;
+      transform:translate(100%)
+    }
 	
 }
 	.hide-left-menu {
@@ -43,12 +48,13 @@ export const Nav = styled.nav`
     z-index: 1;
     border-radius:.3rem;
 		transition: all 300ms;
-    transform:translate(-90%);
+    transform:translate(-100%);
 
     
-    .DoubleArrowRight {
+    .double-arrow-right {
       transition: all 300ms;
-      transform:rotate(180deg);
+      transform:rotate(180deg) translate(-100%);
+
     }
 	}
 
@@ -128,12 +134,13 @@ export const Bars = styled(FaBars)`
 `;
 
 export const DoubleArrowRight = styled(CgChevronDoubleRightR)`
-    font-size:3rem;
 		color:white;
     font-size:2rem;
     cursor: pointer;
     opacity:50%;
     z-index: 2;
+
+
 	`
 
 

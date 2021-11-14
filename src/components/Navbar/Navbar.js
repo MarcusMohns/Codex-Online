@@ -20,7 +20,7 @@ const Navbar = () => {
 			</NavLink>
 			
 			<div className={`${leftMenuOpen ? 'left-menu' : 'hide-left-menu'}`}>
-			<DoubleArrowRight className="DoubleArrowRight" onClick={handleLeftMenuToggle} />
+			<DoubleArrowRight className="double-arrow-right" onClick={handleLeftMenuToggle} />
 
 			</div>
 			<Bars onClick={handleNavBarToggle} />
