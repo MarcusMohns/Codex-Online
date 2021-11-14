@@ -1,13 +1,17 @@
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
-import { CgChevronDoubleRightR } from "react-icons/cg";
+import { CgChevronDoubleLeftR } from "react-icons/cg";
 import styled from 'styled-components';
 export const Nav = styled.nav`
 	background: #264874;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	height: 8%;
+	height: 10%;
+
+	@media screen and (min-width: 768px) {
+		height: 10%;
+	}
 
   .left-menu {
     display:flex;
@@ -15,20 +19,29 @@ export const Nav = styled.nav`
     justify-content: flex-end;
     background-color:#264874;
     color:white;
-    position: absolute;
+    position: fixed;
     width:50%;
     height:80%;
-    top: 10%;
+    top: 15%;
     left: 0;
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 1;
     border-radius:.3rem;
 		transition: all 300ms;
+    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+
+    @media screen and (min-width: 1200px) {
+      width:25%;
+	}
+
 
     .double-arrow-right {
       transition: all 300ms;
-      transform:translate(100%)
+      transform:translate(100%);
+      align-self:center;
+      color:black;
+      opacity:100%;
     }
 	
 }
@@ -38,10 +51,10 @@ export const Nav = styled.nav`
     justify-content: flex-end;
     background-color:#264874;
     color:white;
-    position: absolute;
+    position: fixed;
     width:50%;
     height:80%;
-    top: 10%;
+    top: 15%;
     left: 0;
     font-size: 1.8rem;
     cursor: pointer;
@@ -49,22 +62,19 @@ export const Nav = styled.nav`
     border-radius:.3rem;
 		transition: all 300ms;
     transform:translate(-100%);
+    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 
     
     .double-arrow-right {
       transition: all 300ms;
       transform:rotate(180deg) translate(-100%);
+      align-self:center;
 
     }
 	}
 
 
 
-
-
-	@media screen and (max-width: 768px) {
-		height: 10%;
-	}
 
 	.showBarsMenu {
 		display: flex;
@@ -120,20 +130,21 @@ export const NavLink = styled(Link)`
   
 `;
 export const Bars = styled(FaBars)`
-  display: none;
-  color: #fff;
-  @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
+    color:white;
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display:none;
+  
   }
 `;
 
-export const DoubleArrowRight = styled(CgChevronDoubleRightR)`
+export const DoubleArrowLeft = styled(CgChevronDoubleLeftR)`
 		color:white;
     font-size:2rem;
     cursor: pointer;
@@ -145,11 +156,12 @@ export const DoubleArrowRight = styled(CgChevronDoubleRightR)`
 
 
 export const NavMenu = styled.div`
-	display: flex;
-	align-items: center;
-	margin-right: -24px;
-
-	@media screen and (max-width: 768px) {
-		display: none;
+	display: none;
+ 
+	@media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+	  margin-right: -24px;
+		
 	}
 `;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Nav, NavLink, Bars, BarsNavLink, NavMenu, DoubleArrowRight } from './NavbarElements';
+import { Nav, NavLink, Bars, BarsNavLink, NavMenu, DoubleArrowLeft } from './NavbarElements';
 import logo from '../../images/icon.png';
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
 			</NavLink>
 			
 			<div className={`${leftMenuOpen ? 'left-menu' : 'hide-left-menu'}`}>
-			<DoubleArrowRight className="double-arrow-right" onClick={handleLeftMenuToggle} />
+			<DoubleArrowLeft className="double-arrow-right" onClick={handleLeftMenuToggle} />
 
 			</div>
 			<Bars onClick={handleNavBarToggle} />
