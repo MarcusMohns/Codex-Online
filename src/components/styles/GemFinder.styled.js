@@ -5,7 +5,7 @@ export const Main = styled.main`
 	flex-direction: row;
 	align-items: start;
 	justify-content: space-evenly;
-	background-color: #667292;
+	background-color: #85A1F2;
 	max-width: 75vw;
 	min-height: 75vw;
 	margin: auto;

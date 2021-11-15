@@ -8,7 +8,7 @@ export const Main = styled.main`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #667292;
+	background-color: #85A1F2;
 
 	max-width: 100vw;
 	max-height:100vw;

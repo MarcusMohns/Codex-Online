@@ -11,7 +11,7 @@ export const Main = styled.main`
 	min-height: 100%;
 	padding: 20px;
 	margin-top: 10%;
-	background-color: #667292;
+	background-color: #85A1F2;
 	opacity: 90%;
 
 
@@ -37,36 +37,49 @@ export const SpecContainer = styled.section`
 	display:flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 
-	 
+	 .spec-buttons {
+		 display:grid;
+		 grid-template-columns:repeat(9,1fr);
+		 grid-template-columns:repeat(3,1fr);
+		 gap:.5rem;
+	 }
 	@media (min-width: 1200px) {
 	grid-area: spec-container; 
 	display: flex;
 	flex-direction: row;
-	position: static;
 	max-width:100%;
 
+	.spec-buttons {
+		 display:flex;
+		 flex-direction: column;
+		 align-items: center;
+		 justify-content: center;
+
 	 }
-	
+}
 `;
 export const StyledSpecButton = styled.button`
 
 	display: flex;
 	flex-direction: row;
 	width:100%;
-	align-items: center;
+	height:2.8rem;
+	text-align:center;
 	justify-content: space-between;
+	align-items: center;
 	background: ${(props) => props.color};
 	color: #fff;
 	border: ridge transparent;
-	font-size:.8rem;
+	font-size:1rem;
+	text-align: center;
 	font-weight: 300;
 	cursor: pointer;
 	text-shadow: #000 0rem 0rem .1rem, #000 0rem 0rem .2rem, #000 0rem 0rem .2rem, #000 0rem 0rem .2rem,
 		#000 0rem 0rem .2rem;
 
 	&:hover {
-		transform: scale(1.02);
 	}
 
 	&:active {
@@ -74,8 +87,8 @@ export const StyledSpecButton = styled.button`
 		filter: saturate(120%);
 	}
 	img {
-		width: 0.8rem;
-		height: 0.8rem;
+		width: 1rem;
+		height: 1rem;
 		border-radius: 50%;
 	}
 
@@ -88,8 +101,8 @@ export const StyledSpecButton = styled.button`
 
 export const RaidContainer = styled.section`
 	display: flex;
+	flex-direction: column;
 	grid-area: raid-container;
-	padding:1rem;
 	border-radius: .5rem;
 	background-color:white;
 	width:100%;
@@ -97,9 +110,8 @@ export const RaidContainer = styled.section`
 	margin-bottom: 1rem;
 
 	.count {
-		font-size: 1em;
+		font-size: 1rem;
 		letter-spacing: 1px;
-		font-weight: 400;
 		margin-bottom: 1rem;
 	
 	}
@@ -124,12 +136,13 @@ export const StyledPlayer = styled.div`
 	border: 1px solid #dcdcdc;
 	cursor: pointer;
 	color: #666666;
-	font-size: .5rem;
-	padding: .3rem;
+	font-size: .7rem;
+	padding: .5rem;
 	text-shadow: 0px 1px 0px #ffffff;
 	transition: transform 0.2;
 
 	img {
+		position: relative;
 		width: 1.2rem;
 		height: 1.2rem;
 		border-radius: 50%;
