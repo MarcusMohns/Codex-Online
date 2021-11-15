@@ -13,20 +13,20 @@ const handleSelect = (event) => {
 };
 
 const ratingRequried = (pointsNeeded, percentage) => {
-	let the_ratingRequired = 0;
+	let theRatingRequired = 0;
 	if (
 		(pointsNeeded <= 261 && percentage === 0.76) ||
 		(pointsNeeded <= 302 && percentage === 0.88) ||
 		(pointsNeeded <= 344 && percentage === 1)
 		// in 3.3.5 you are rewarded a baseline amount of points if you are 1500 or below
 	)
-		return the_ratingRequired;
+		return theRatingRequired;
 	else
-		the_ratingRequired = Math.ceil(
+		theRatingRequired = Math.ceil(
 			Math.log(1511.26 / (1639.28 * pointsNeeded / percentage) - 1 / 1639.28) / -0.00412
 		);
 
-	return the_ratingRequired ? the_ratingRequired : 'Not possible';
+	return theRatingRequired ? theRatingRequired : 'Not possible';
 };
 
 const pointsRewarded = (bracketName, rating) => {
@@ -40,7 +40,7 @@ const pointsRewarded = (bracketName, rating) => {
 	} else if (bracketName === 'fives') {
 		if (rating > 1500) points = 1511.26 / (1 + 1639.29 * Math.pow(2.71828, -0.00412 * rating));
 		else points = 344;
-	} else console.log('Error');
+	} else console.error('Unexpected bracket name');
 
 	return Math.floor(points);
 };
@@ -49,6 +49,7 @@ function Arenapointcalculator() {
 	const [ formData, setFormData ] = useReducer(formReducer, {});
 
 	const ratingChange = (event) => {
+		// set state to target inputs name and set value to the result of pointsRewarded.
 		setFormData({
 			name: event.target.name,
 			value: pointsRewarded(event.target.name, event.target.value)
@@ -56,17 +57,22 @@ function Arenapointcalculator() {
 	};
 
 	const pointChange = (event) => {
+		// set state to all rating requireds input names and set value to the result of ratingRequired.
+		
 		setFormData({
 			name: 'twosRatingRequired',
 			value: ratingRequried(event.target.value, 0.76)
+			// ratingRequired is multiplied by 0.76 in 2v2.  
 		});
 		setFormData({
 			name: 'threesRatingRequired',
 			value: ratingRequried(event.target.value, 0.88)
+			// ratingRequired is multiplied by 0.76 in 3v3. 
 		});
 		setFormData({
 			name: 'fivesRatingRequired',
 			value: ratingRequried(event.target.value, 1)
+			// ratingRequired is multiplied by 1 in 5v5. 
 		});
 	};
 

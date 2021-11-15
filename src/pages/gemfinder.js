@@ -16,11 +16,13 @@ const Gemfinder = () => {
 		 gemName: false}
 	);
 
-	// Add/Remove filters to currentFilters
 	const handleChange = (e) => {
 		if (e.target.checked) {
+			// Add a filter
 			currentFilters.push(e.target.value);
+		
 		} else if (!e.target.checked) {
+			// Remove a filter
 			currentFilters = currentFilters.filter((aFilter) => aFilter !== e.target.value);
 		} else {
 			return console.error('Unexpected checkbox value');
@@ -29,9 +31,10 @@ const Gemfinder = () => {
 	};
 
 	const handleClick = (e) => {
-		
+		// Sort arrow is clicked
 		let sortBy = null;
-		let sortedGems = [].concat(gems);
+		let gemsToSort = [].concat(gems);
+		// Check which sort arrow was clicked
 		if (e.target.className === 'gemNameHeader') {
 			sortBy = 'name';
 		} else if (e.target.className === 'gemColorHeader') {
@@ -43,7 +46,8 @@ const Gemfinder = () => {
 		} else {
 			console.error('handleClick recieved unexpected value from onClick');
 		}
-		gemSorter(sortedGems, sortBy);
+		// send new array to filter through, sort by SortBy
+		gemSorter(gemsToSort, sortBy);
 	};
 
 	// Sets our state depending on which checkboxes are ticked.
@@ -67,12 +71,16 @@ const Gemfinder = () => {
 		setGems(newArray);
 	};
 
-	const gemSorter = (sortedGems, sortBy) => {
+	const gemSorter = (gemsToSort, sortBy) => {
 		if (sortBy === 'quality' || sortBy === 'stats') {
-			sortedGems.sort(function(a, b) {
+			//  Sort by quality and stats in the same way we would just quality. We are usually not interested in amount of stats just 
+			//  the quality of the stats e.g Rare 32 AP gems are not superior to Epic 20 STR gems in-game so we sort by quality instead.
+			gemsToSort.sort(function(a, b) {
 				if (
+					
 					(a.quality === 'Perfect' && b.quality === 'Rare') ||
 					(b.quality === 'Perfect' && a.quality === 'Rare')
+			// Sort sorts the gems in order Epic -> Perfect -> Rare -> Uncommon so reverse Perfect and Rare to sort accurately (Epic -> Rare -> Perfect -> Uncommon)
 				) {
 					if (a.quality < b.quality) {
 						return sort.gemQuality ? -1 : 1;
@@ -82,7 +90,7 @@ const Gemfinder = () => {
 					}
 					return 0;
 				}
-
+			// Otherwise sort normally
 				if (a.quality < b.quality) {
 					return sort.gemQuality ? 1 : -1;
 				}
@@ -98,7 +106,7 @@ const Gemfinder = () => {
 		}
 
 		if (sortBy === 'color') {
-			sortedGems.sort(function(a, b) {
+			gemsToSort.sort(function(a, b) {
 				if (a.color < b.color) {
 					return sort.gemColor ? 1 : -1;
 				}
@@ -114,7 +122,7 @@ const Gemfinder = () => {
 		}
 
 		if (sortBy === 'name') {
-			sortedGems.sort(function(a, b) {
+			gemsToSort.sort(function(a, b) {
 				if (a.name < b.name) {
 					return sort.gemName ? 1 : -1;
 				}
@@ -129,11 +137,11 @@ const Gemfinder = () => {
 			}));
 		}
 
-		setGems(sortedGems);
+		setGems(gemsToSort);
 	};
 
-	// resets currentFilters when the page is rendered
 	useEffect(() => {
+		// Reset currentFilters when the page is rendered
 		currentFilters = [];
 	}, []);
 
