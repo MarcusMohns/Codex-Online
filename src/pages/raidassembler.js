@@ -1,9 +1,11 @@
-import SpecButtons from '../components/SpecButtons';
-import SpecList from '../SpecList';
-import PlayersInRaid from '../components/PlayersInRaid';
 import { useState } from 'react';
-import RaidBuffs from '../components/RaidBuffs';
-import { Main, SpecContainer, RaidContainer, BuffContainer} from '../components/styles/RaidAssembler.styled';
+import SpecList from '../SpecList';
+import AllBuffs from '../AllBuffs';
+import PlayersInRaid from '../components/PlayersInRaid';
+import SpecButtons from '../components/SpecButtons';
+import BuffCategories from '../components/BuffCategories';
+// import RaidBuffs from '../components/RaidBuffs';
+import { Main, SpecContainer, RaidContainer,BuffContainer} from '../components/styles/RaidAssembler.styled';
 
 
 const RaidAssembler = () => {
@@ -37,14 +39,17 @@ const RaidAssembler = () => {
 			
 			<RaidContainer className="raid-container">
 				<div className="count"> {count} / 25 </div>
-				<div className="grid">
-					{raid.length > 0 ? <PlayersInRaid raid={raid} onDelete={deletePlayer} /> : 'No Players in Raid'}
-				</div>
+				{raid.length > 0 ? <PlayersInRaid raid={raid} onDelete={deletePlayer} /> : 'No Players in Raid'}
 			</RaidContainer>
 			<SpecContainer>
 				<SpecButtons className='spec-buttons' specs={SpecList} onClick={addPlayer}/>
 			</SpecContainer>
-			<BuffContainer className="buff-container">{buffs.length > 0 ? <RaidBuffs buffs={buffs} /> : 'No Buffs in Raid'}</BuffContainer>
+
+			<BuffContainer>
+				<BuffCategories AllBuffs={AllBuffs}></BuffCategories>
+			</BuffContainer>
+
+			{/* <BuffContainer className="buff-container">{buffs.length > 0 ? <RaidBuffs buffs={buffs} /> : 'No Buffs in Raid'}</BuffContainer> */}
 
 		</Main>
 	);

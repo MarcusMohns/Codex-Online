@@ -2,7 +2,7 @@ import PlayerInRaid from "./PlayerInRaid"
 
 const PlayersInRaid = ({raid, onDelete}) => {
     return (
-        <>
+        <div className="grid">
           {raid.map((player)=> (
   
             <PlayerInRaid 
@@ -11,7 +11,7 @@ const PlayersInRaid = ({raid, onDelete}) => {
             player={player}/>  
             
           ))}  
-        </>
+        </div>
     
     )
 }
