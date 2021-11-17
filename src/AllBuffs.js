@@ -14,11 +14,7 @@ const AllBuffs = [
     image: require('./images/dk_blood.png').default,
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
-{
-    name:'Armor Reduction(Minor)', 
-    image: require('./images/dk_blood.png').default,
-    buffs:['Horn of Winter', 'Strength of Earth Totem']
-},
+
 {
     name:'Armor Reduction(Minor)', 
     image: require('./images/dk_blood.png').default,
@@ -27,6 +23,11 @@ const AllBuffs = [
  
 {
     name:'Attack Power %', 
+    image: require('./images/dk_blood.png').default,
+    buffs:['Horn of Winter', 'Strength of Earth Totem']
+},
+{
+    name:'Attack Power', 
     image: require('./images/dk_blood.png').default,
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },

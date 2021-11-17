@@ -1,7 +1,8 @@
 
 const BuffCategory = ({text, image}) => {
     return (
-        <div>{text} <img src={image} alt="gem" /> </div>
+        <div id={text}>{text} <img src={image} alt="buff category" /> 
+        </div>
     )
 }
 

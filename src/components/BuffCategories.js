@@ -8,7 +8,7 @@ const BuffCategories = ({AllBuffs}) => {
         key={buff.name} 
         text={buff.name} 
         image={buff.image}
-        buff={buff}/>  
+       />  
 ))} 
 </div>
     )

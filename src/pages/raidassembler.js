@@ -4,7 +4,7 @@ import AllBuffs from '../AllBuffs';
 import PlayersInRaid from '../components/PlayersInRaid';
 import SpecButtons from '../components/SpecButtons';
 import BuffCategories from '../components/BuffCategories';
-// import RaidBuffs from '../components/RaidBuffs';
+//import RaidBuffs from '../components/RaidBuffs';
 import { Main, SpecContainer, RaidContainer,BuffContainer} from '../components/styles/RaidAssembler.styled';
 
 
@@ -25,13 +25,32 @@ const RaidAssembler = () => {
 			const id = Math.floor(Math.random() * 10000 + 1);
 			const newPlayer = { id, ...player };
 			setRaid([ ...raid, newPlayer ]);
-			const newBuffs = { id, ...player.buffs };
-			setBuffs([ ...buffs, newBuffs ]);
+			addBuff(id, player)
 			setCount(count + 1);
 		} else {
 			alert('Raid is full');
 		}
 	};
+
+	const addBuff = (id, player) => {
+			const newBuffs = { id, ...player.buffs };
+			setBuffs([ ...buffs, newBuffs ]);
+		
+			for(let buffs in player.buffs) {
+				console.log(player.buffs[buffs]);
+				let div = document.getElementById(player.buffs[buffs]);
+				var buffNode = document.createElement("div");
+				buffNode.innerHTML += player.buffs[buffs]
+				div.appendChild(buffNode);
+
+
+				// Update SpecList to have the buff category and buff image, e.g
+				// Agility and Strength: {Howl of Winter} : {HowlofWinter.img} 
+		}
+
+	}
+
+
 	return (
 		<Main>
 		
@@ -46,10 +65,10 @@ const RaidAssembler = () => {
 			</SpecContainer>
 
 			<BuffContainer>
-				<BuffCategories AllBuffs={AllBuffs}></BuffCategories>
+				{/* Pass in State */}
+				<BuffCategories AllBuffs={AllBuffs} currentBuffs={buffs}></BuffCategories> 
 			</BuffContainer>
 
-			{/* <BuffContainer className="buff-container">{buffs.length > 0 ? <RaidBuffs buffs={buffs} /> : 'No Buffs in Raid'}</BuffContainer> */}
 
 		</Main>
 	);
