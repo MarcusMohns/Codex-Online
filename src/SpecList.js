@@ -3,205 +3,846 @@ const SpecList = [
 		text: 'Blood Death Knight',
 		image: require('./images/dk_blood.png').default,
 		color: 'red',
-		buffs: [ 'Agility and Strength', 'Attack Power %' ]
-	},
+		buffs: [
+			{
+			category:'Agility and Strength',
+			name:'Horn of Winter',
+			image: require('./images/dk_unholy.png').default,
+			text: 'The Death Knight blows the Horn of Winter, which generates 10 runic power and increases total Strength and Agility of all party or raid members within 30 yards by 155. Lasts 2 min.',
+			},
+			{
+			category:'Attack Power %',
+			name:"'Abomination's Might'",
+			image: require('./images/dk_unholy.png').default,
+			text:'Increases the attack power by 10% of party and raid members whitin 100 yards. Also Increases your total Strength by 2%'	
+			}
+
+]},
 	{
 		text: 'Unholy Death Knight',
 		image: require('./images/dk_unholy.png').default,
 		color: 'red',
-		buffs: [ 'Agility and Strength', 'Spell Damage %', 'Disease Damage' ]
-	},
-	{
+		buffs: [ 
+		{
+			category:'Agility and Strength',
+			name:'Horn of Winter',
+			image: require('./images/dk_unholy.png').default,
+			text: 'The Death Knight blows the Horn of Winter, which generates 10 runic power and increases total Strength and Agility of all party or raid members within 30 yards by 155. Lasts 2 min.',
+		},
+		{
+			category:'Spell Damage %',
+			name:'Ebon Plaguebringer',
+			image: require('./images/Ebon_Plaguebringer.png').default,
+			text:'Your Crypt Fever morphs into Ebon Plague, which increases magic damage taken by 13% in addition to increasing disease damage taken. Improves your critical strike chance with weapons and spells by 3% at all times.'
+		},
+		{
+			category:'Disease Damage' ,
+			name:'Crypt Fever',
+			image: require('./images/dk_unholy.png').default,
+			text:'Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 30%.'
+		},
+		
+]},
+		{
 		text: 'Frost Death Knight',
 		image: require('./images/dk_frost.png').default,
 		color: 'red',
-		buffs: [ 'Agility and Strength', 'Melee Haste' ]
-	},
-	{
+		buffs: [ 
+		{
+			category:'Agility and Strength',
+			name:'Horn of Winter',
+			image: require('./images/dk_unholy.png').default,
+			text: 'The Death Knight blows the Horn of Winter, which generates 10 runic power and increases total Strength and Agility of all party or raid members within 30 yards by 155. Lasts 2 min.',
+		},
+		{
+			category:'Melee Haste',
+			name:'Improved Icy Talons',
+			image: require('./images/Ebon_Plaguebringer.png').default,
+			text:'Increases the melee haste of all party and raid members within 100 yds by 20% and your haste by an additional 5%.'
+		}
+		
+]},
+		{
 		text: 'Balance Druid',
 		image: require('./images/druid_balance.png').default,
 		color: 'orange',
-		buffs: [ 'Haste %', 'Spell Crit', 'Motw', 'Spell Damage %', 'Spell Hit' ]
-	},
+		buffs : [
+		{
+			category:'Haste %',
+			name:'Improved Moonkin Form',
+			image: require('./images/dk_unholy.png').default,
+			text:'Your Moonkin Aura also causes affected targets to gain 3% haste and you to gain 30% of your spirit as additional spell damage.'
+			
+		},
+		{
+			category:'Spell Crit',
+			name:'Moonkin Form',
+			image: require('./images/Ebon_Plaguebringer.png').default,
+			text:'Shapeshift into Moonkin Form. While in this form the armor contribution from items is increased by 370%, damage taken while stunned is reduced by 15%, and all party and raid members within 100 yards have their spell critical chance increased by 5%. Single target spell critical strikes in this form have a chance to instantly regenerate 2% of your total mana. The Moonkin can not cast healing or resurrection spells while shapeshifted.'
+		},
+		{
+			category:'Mark of the Wild',
+			name:'Mark of the Wild',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+
+		},			
+		{
+			category:'Spell Damage %',
+			name:'Earth and Moon',
+			image: require('./images/Ebon_Plaguebringer.png').default,
+			text:'Your Wrath and Starfire spells have a 100% chance to apply the Earth and Moon effect, which increases spell damage taken by 13% for 12 sec. Also increases your spell damage by 6%.'
+		},
+		{
+			category:'Spell Hit',
+			name:'Improved Faerie Fire',
+			image: require('./images/Ebon_Plaguebringer.png').default,
+			text:'Your Faerie Fire spell also increases the chance the target will be hit by spell attacks by 3%, and increases the critical strike chance of your damage spells by 3% on targets afflicted by Faerie Fire.'
+		}
+
+]},
 	{
 		text: 'Feral Druid',
 		image: require('./images/druid_feral.png').default,
 		color: 'orange',
-		buffs: [ 'Melee Crit', 'Motw', 'Armor Reduction(Minor)' ]
+		buffs : [
+			{category:'Melee Crit',
+			name:'Leader of the Pack',
+			image: require('./images/dk_unholy.png').default,
+			text:'Your Moonkin Aura also causes affected targets to gain 3% haste and you to gain 30% of your spirit as additional spell damage.'
 	},
+			{category:'Armor Reduction(Minor)',
+			name:'Faerie Fire',
+			image: require('./images/Ebon_Plaguebringer.png').default,
+			text:'Shapeshift into Moonkin Form. While in this form the armor contribution from items is increased by 370%, damage taken while stunned is reduced by 15%, and all party and raid members within 100 yards have their spell critical chance increased by 5%. Single target spell critical strikes in this form have a chance to instantly regenerate 2% of your total mana. The Moonkin can not cast healing or resurrection spells while shapeshifted.'
+	},
+			{category:'Mark of the Wild',
+			name:'Mark of the Wild',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+
+	},
+			{category:'Bleed Damage',
+			name:'Mangle - Feral Druid',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+
+	}
+]},
 	{
 		text: 'Restoration Druid',
 		image: require('./images/druid_restoration.png').default,
 		color: 'orange',
-		buffs: [ 'Healing Received %', 'Motw' ]
+		buffs : [
+	{
+			category:'Mark of the Wild',
+			name:'Mark of the Wild',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
 	},
+	{
+			category:'Healing Recieved',
+			name:'Tree of Life',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	}	
+]},
 	{
 		text: 'Beast Mastery Hunter',
 		image: require('./images/hunter_beastmastery.png').default,
 		color: 'green',
-		buffs: [ 'Damage %', 'Armor Reduction(Minor)' ]
+		buffs :[	{
+			category:'Damage %',
+			name:'Ferocious Inspiration',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	}
+]
 	},
 	{
 		text: 'Marksman Hunter',
 		image: require('./images/hunter_marksman.png').default,
 		color: 'green',
-		buffs: [ 'Attack Power %', 'Armor Reduction(Minor)' ]
+		buffs: [ {
+			category:'Attack Power %',
+			name:'Trueshot Aura',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	}]
 	},
 	{
 		text: 'Survival Hunter',
 		image: require('./images/hunter_survival.png').default,
 		color: 'green',
-		buffs: [ 'Replenishment', 'Armor Reduction(Minor)' ]
+		buffs: [ {
+			category:'Replenishment',
+			name:'Hunting Party',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	}]
 	},
 	{
 		text: 'Arcane Mage',
 		image: require('./images/mage_arcane.png').default,
 		color: 'teal',
-		buffs: [ 'Damage %', 'Intellect' ]
+		buffs: [ 
+			{
+			category:'Damage %',
+			name:'Arcane Empowerment',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Intellect',
+			name:'Arcane Intellect',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	}
+]
 	},
 	{
 		text: 'Fire Mage',
 		image: require('./images/mage_fire.png').default,
 		color: 'teal',
-		buffs: [ 'Intellect', 'Spell Crit' ]
+		buffs: [ 			
+			{
+			category:'Spell Crit',
+			name:'Improved Scorch',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Intellect',
+			name:'Arcane Intellect',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+ ]
 	},
 	{
 		text: 'Frost Mage',
 		image: require('./images/mage_frost.png').default,
 		color: 'teal',
-		buffs: [ 'Intellect', 'Replenishment', 'Spell Crit' ]
+		buffs: [ 			
+			{
+			category:'Spell Crit',
+			name:'Improved Scorch',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
 	},
+			{
+			category:'Replenishment',
+			name:'Enduring Winter',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Intellect',
+			name:'Arcane Intellect',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+ ]
+	},
+	
+	
 	{
 		text: 'Holy Paladin',
 		image: require('./images/paladin_holy.png').default,
 		color: 'pink',
-		buffs: [ 'Attack Power', 'Mana per 5', 'Stats 10%' ]
+		buffs: [	
+			{
+			category:'Attack Power',
+			name:'Blessing of Might',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Mana per 5',
+			name:'Blessing of Wisdom',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Stats 10%',
+			name:'Blessing of Kings',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+
+]
 	},
 	{
 		text: 'Protection Paladin',
 		image: require('./images/paladin_protection.png').default,
 		color: 'pink',
-		buffs: [
-			'Attack Power',
-			'Damage Reduction %',
-			'Healing Received %',
-			'Mana per 5',
-			'Stats 10%',
-			'Crit Strike %'
-		]
+		buffs: [	
+			{
+			category:'Attack Power',
+			name:'Blessing of Might',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Mana per 5',
+			name:'Blessing of Wisdom',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Stats 10%',
+			name:'Blessing of Kings',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Crit Strike %',
+			name:'Heart of the Crusader',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Damage Reduction %',
+			name:'Blessing of Sanctuary',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Healing Received %',
+			name:'Improved Devotion Aura',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+
+]
 	},
 	{
 		text: 'Retribution Paladin',
 		image: require('./images/paladin_retribution.png').default,
 		color: 'pink',
-		buffs: [ 'Attack Power', 'Damage %', 'Haste %', 'Mana per 5', 'Replenishment', 'Stats 10%', 'Crit Strike %' ]
+		buffs: [	
+			{
+			category:'Attack Power',
+			name:'Blessing of Might',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Mana per 5',
+			name:'Blessing of Wisdom',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Stats 10%',
+			name:'Blessing of Kings',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Crit Strike %',
+			name:'Heart of the Crusader',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Damage %',
+			name:'Sanctified Retribution',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Replenishment',
+			name:'Judgements of the Wise',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Haste %',
+			name:'Swift Retribution',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+
+]
 	},
 	{
 		text: 'Discipline Priest',
 		image: require('./images/priest_discipline.png').default,
 		color: 'white',
-		buffs: [ 'Armor %', 'Damage Reduction %', 'Spirit', 'Stamina' ]
+		buffs: [			{
+			category:'Armor %',
+			name:'Inspiration',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Renewed Hope',
+			name:'Damage Reduction %',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spirit',
+			name:'Divine Spirit ',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Stamina',
+			name:'Power Word: Fortitude',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+]
 	},
 	{
 		text: 'Holy Priest',
 		image: require('./images/priest_holy.png').default,
 		color: 'white',
-		buffs: [ 'Spirit', 'Stamina', 'Armor %' ]
+		buffs: [			{
+			category:'Armor %',
+			name:'Inspiration',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spirit',
+			name:'Divine Spirit ',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Stamina',
+			name:'Power Word: Fortitude',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+]
 	},
 	{
 		text: 'Shadow Priest',
 		image: require('./images/priest_shadow.png').default,
 		color: 'white',
-		buffs: [ 'Replenishment', 'Spirit', 'Stamina', 'Spell Hit' ]
+		buffs: [			{
+			category:'Spell Hit',
+			name:'Misery ',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Stamina',
+			name:'Power Word: Fortitude',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Replenishment',
+			name:'Vampiric Touch',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Stamina',
+			name:'Power Word: Fortitude',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+
+]
 	},
 	{
 		text: 'Assassination Rogue',
 		image: require('./images/rogue_assassination.png').default,
 		color: 'yellow',
-		buffs: [ 'Armor Reduction(Major)', 'Crit Strike %' ]
+		buffs: [			
+			{
+			category:'Armor Reduction(Major)',
+			name:'Expose Armor',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Crit Strike %',
+			name:'Master Poisoner',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+
+]
 	},
 	{
 		text: 'Combat Rogue',
 		image: require('./images/rogue_combat.png').default,
 		color: 'yellow',
-		buffs: [ 'Armor Reduction(Major)', 'Phys Vulnerability' ]
+		buffs: [			
+			{
+			category:'Armor Reduction(Major)',
+			name:'Expose Armor',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Phys Vulnerability',
+			name:'Savage Combat',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+
+]
 	},
 	{
 		text: 'Subtlety Rogue',
 		image: require('./images/rogue_subtlety.png').default,
 		color: 'yellow',
-		buffs: [ 'Armor Reduction(Major)' ]
+		buffs: [			
+			{
+			category:'Phys Vulnerability',
+			name:'Savage Combat',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+
+]
 	},
 
 	{
 		text: 'Elemental Shaman',
 		image: require('./images/shaman_elemental.png').default,
 		color: 'blue',
-		buffs: [
-			'Agility and Strength',
-			'Bloodlust',
-			'Mana per 5',
-			'Spell Crit',
-			'Spell Haste',
-			'Spellpower(Major)',
-			'Crit Strike %',
-			'Spellpower(Minor)'
-		]
+		buffs: [			
+			{
+			category:'Agility and Strength',
+			name:'Strength of Earth Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Bloodlust/Heroism',
+			name:'Bloodlust/Heroism',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Mana per 5',
+			name:'Mana Spring Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spell Crit',
+			name:'Elemental Oath',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spell Haste',
+			name:'Wrath of Air Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spellpower(Major)',
+			name:'Totem of Wrath',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Crit Strike %',
+			name:'Totem of Wrath',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spellpower(Minor)',
+			name:'Flametongue Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+]
 	},
 	{
 		text: 'Enhancement Shaman',
 		image: require('./images/shaman_enhancement.png').default,
 		color: 'blue',
-		buffs: [
-			'Agility and Strength',
-			'Attack Power %',
-			'Bloodlust',
-			'Mana per 5',
-			'Melee Haste',
-			'Spellpower(Minor)'
-		]
+		buffs: [	
+			{
+			category:'Agility and Strength',
+			name:'Strength of Earth Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Bloodlust/Heroism',
+			name:'Bloodlust/Heroism',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Mana per 5',
+			name:'Mana Spring Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Attack Power %',
+			name:'Unleashed Rage',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spell Haste',
+			name:'Wrath of Air Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spellpower(Minor)',
+			name:'Flametongue Weapon',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Melee Haste',
+			name:'Improved Windfury Totem ',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+
+]
 	},
 	{
 		text: 'Restoration Shaman',
 		image: require('./images/shaman_restoration.png').default,
 		color: 'blue',
-		buffs: [ 'Agility and Strength', 'Armor %', 'Bloodlust', 'Mana per 5', 'Spellpower(Minor)' ]
+		buffs: [{
+			category:'Agility and Strength',
+			name:'Strength of Earth Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Bloodlust/Heroism',
+			name:'Bloodlust/Heroism',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Mana per 5',
+			name:'Mana Spring Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spellpower(Minor)',
+			name:'Flametongue Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Spell Haste',
+			name:'Wrath of Air Totem',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+			{
+			category:'Armor %',
+			name:'Ancestral Healing',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+]
 	},
 	{
 		text: 'Arms Warrior',
 		image: require('./images/warrior_arms.png').default,
 		color: 'brown',
-		buffs: [ 'Attack Power', 'Health', 'Armor Reduction(Major)', 'Phys Vulnerability' ]
+		buffs: [			{
+			category:'Attack Power',
+			name:'Battle Shout',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},			{
+			category:'Health',
+			name:'Commanding Shout',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},			{
+			category:'Armor Reduction(Major)',
+			name:'Sunder Armor',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+		},			{
+			category:'Phys Vulnerability',
+			name:'Blood Frenzy',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+		},			{
+			category:'Bleed Damage',
+			name:'Trauma',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+		},
+	]
 	},
 	{
 		text: 'Fury Warrior',
 		image: require('./images/warrior_fury.png').default,
 		color: 'brown',
-		buffs: [ 'Attack Power', 'Health', 'Melee Crit', 'Armor Reduction(Major)' ]
+		buffs: [
+	{
+			category:'Attack Power',
+			name:'Battle Shout',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},	
+	{
+			category:'Health',
+			name:'Commanding Shout',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
 	},
+	{
+			category:'Armor Reduction(Major)',
+			name:'Sunder Armor',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+		},	
+		{
+			category:'Melee Crit',
+			name:'Rampage',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+		},
+]
+	},
+
 	{
 		text: 'Protection Warrior',
 		image: require('./images/warrior_protection.png').default,
 		color: 'brown',
-		buffs: [ 'Attack Power', 'Armor Reduction(Major)', 'Health' ]
+		buffs: [
+			{
+					category:'Attack Power',
+					name:'Battle Shout',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},	
+			{
+					category:'Health',
+					name:'Commanding Shout',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+			{
+					category:'Armor Reduction(Major)',
+					name:'Sunder Armor',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+				},	
+	 ]
 	},
 	{
 		text: 'Affliction Warlock',
 		image: require('./images/warlock_affliction.png').default,
 		color: 'purple',
-		buffs: [ 'Intellect', 'Spirit', 'Armor Reduction(Minor)', 'Spell Crit', 'Spell Damage %' ]
+		buffs : [			
+	{
+			category:'Intellect',
+			name:'Fel Intelligence',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+	{
+			category:'Spirit',
+			name:'Fel Intelligence',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+	{
+			category:'Armor Reduction(Minor)',
+			name:'Curse of Weakness',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+	{
+			category:'Spell Crit',
+			name:'Improved Shadow Bolt',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+	},
+	{
+			category:'Spell Damage %',
+			name:'Curse of the Elements',
+			image: require('./images/dk_unholy.png').default,
+			text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+		},	
+	
+	]
 	},
 	{
 		text: 'Demonology Warlock',
 		image: require('./images/warlock_demonology.png').default,
 		color: 'purple',
-		buffs: [ 'Spellpower', 'Armor Reduction(Minor)', 'Spell Crit', 'Spell Damage %' ]
+		buffs : [			
+			{
+					category:'Spellpower',
+					name:'Demonic Pact',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+			{
+					category:'Spell Damage %',
+					name:'Curse of the Elements',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+			{
+					category:'Armor Reduction(Minor)',
+					name:'Curse of Weakness',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+			{
+					category:'Spell Crit',
+					name:'Improved Shadow Bolt',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+		
+		]
 	},
 	{
 		text: 'Destruction Warlock',
 		image: require('./images/warlock_destruction.png').default,
 		color: 'purple',
-		buffs: [ 'Health', 'Replenishment', 'Armor Reduction(Minor)', 'Spell Damage %' ]
+		buffs : [			
+			{
+					category:'Health',
+					name:'Improved Imp',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+			{
+					category:'Spell Damage %',
+					name:'Curse of the Elements',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+			{
+					category:'Armor Reduction(Minor)',
+					name:'Curse of Weakness',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+			{
+					category:'Replenishment',
+					name:'Improved Soul Leech',
+					image: require('./images/dk_unholy.png').default,
+					text:"'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'"
+			},
+		
+		]
 	}
 ];
 

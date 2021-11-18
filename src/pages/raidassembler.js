@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useReducer,useState } from 'react';
 import SpecList from '../SpecList';
 import AllBuffs from '../AllBuffs';
 import PlayersInRaid from '../components/PlayersInRaid';
@@ -7,10 +7,16 @@ import BuffCategories from '../components/BuffCategories';
 //import RaidBuffs from '../components/RaidBuffs';
 import { Main, SpecContainer, RaidContainer,BuffContainer} from '../components/styles/RaidAssembler.styled';
 
+const formReducer = (state, action) => {
+	return {
+		...state,
+		[action.name]: action.value
+	};
+};
 
 const RaidAssembler = () => {
 	const [ raid, setRaid ] = useState([]);
-	const [ buffs, setBuffs ] = useState([]);
+	const [ buffs, setBuffs ] = useReducer(formReducer, {AllBuffs});
 	const [ count, setCount ] = useState(0);
 
 	
@@ -33,20 +39,19 @@ const RaidAssembler = () => {
 	};
 
 	const addBuff = (id, player) => {
-			const newBuffs = { id, ...player.buffs };
-			setBuffs([ ...buffs, newBuffs ]);
+			console.log("hey")	
+			// for (let buff of player.buffs ) {
+			// 	let newBuffs = {
+			// 		buffs: buff.name,
+			// 		buffImg: buff.image
+			// 	}
+			// 	setBuffs({
+			// 		category: buff.category,
+			// 		currentBuffs: [...currentBuffs,newBuffs],
+			// 	});
+			// }
+	
 		
-			for(let buffs in player.buffs) {
-				console.log(player.buffs[buffs]);
-				let div = document.getElementById(player.buffs[buffs]);
-				var buffNode = document.createElement("div");
-				buffNode.innerHTML += player.buffs[buffs]
-				div.appendChild(buffNode);
-
-
-				// Update SpecList to have the buff category and buff image, e.g
-				// Agility and Strength: {Howl of Winter} : {HowlofWinter.img} 
-		}
 
 	}
 

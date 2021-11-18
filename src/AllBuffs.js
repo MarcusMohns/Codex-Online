@@ -1,163 +1,163 @@
 const AllBuffs = [
 {
-    name:'Agility and Strength',
-    image: require('./images/dk_blood.png').default,
+    category:'Agility and Strength',
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Armor %',
-    image: require('./images/dk_blood.png').default,
+    category:'Armor %',
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Armor Reduction(Major)', 
-    image: require('./images/dk_blood.png').default,
+    category:'Armor Reduction(Major)', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 
 {
-    name:'Armor Reduction(Minor)', 
-    image: require('./images/dk_blood.png').default,
+    category:'Armor Reduction(Minor)', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
  
 {
-    name:'Attack Power %', 
-    image: require('./images/dk_blood.png').default,
+    category:'Attack Power %', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Attack Power', 
-    image: require('./images/dk_blood.png').default,
+    category:'Attack Power', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Bloodlust', 
-    image: require('./images/dk_blood.png').default,
+    category:'Bloodlust', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Crit Strike %', 
-    image: require('./images/dk_blood.png').default,
+    category:'Crit Strike %', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Damage %', 
-    image: require('./images/dk_blood.png').default,
+    category:'Damage %', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Damage Reduction %', 
-    image: require('./images/dk_blood.png').default,
+    category:'Damage Reduction %', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Disease Damage', 
-    image: require('./images/dk_blood.png').default,
+    category:'Disease Damage', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Haste %', 
-    image: require('./images/dk_blood.png').default,
+    category:'Haste %', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Healing Received %', 
-    image: require('./images/dk_blood.png').default,
+    category:'Healing Received %', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Health', 
-image: require('./images/dk_blood.png').default,
+    category:'Health',
 
+currentBuffs: [],   
+buffs:['Horn of Winter', 'Strength of Earth Totem']
+},
+{
+    category:'Intellect', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Intellect', 
-    image: require('./images/dk_blood.png').default,
+    category:'Mana per 5', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Mana per 5', 
-    image: require('./images/dk_blood.png').default,
+    category:'Melee Crit', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Melee Crit', 
-    image: require('./images/dk_blood.png').default,
+    category:'Melee Haste', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Melee Haste', 
-    image: require('./images/dk_blood.png').default,
+    category:'Motw', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Motw', 
-    image: require('./images/dk_blood.png').default,
+    category:'Phys Vulnerability', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Phys Vulnerability', 
-    image: require('./images/dk_blood.png').default,
+    category:'Replenishment', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Replenishment', 
-    image: require('./images/dk_blood.png').default,
+    category:'Spell Crit', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Spell Crit', 
-    image: require('./images/dk_blood.png').default,
+    category:'Spell Damage %', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Spell Damage %', 
-    image: require('./images/dk_blood.png').default,
+    category:'Spell Haste', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Spell Haste', 
-    image: require('./images/dk_blood.png').default,
+    category:'Spell Hit', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Spell Hit', 
-    image: require('./images/dk_blood.png').default,
+    category:'Spellpower', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Spellpower', 
-    image: require('./images/dk_blood.png').default,
+    category:'Spellpower(Major)', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    name:'Spellpower(Major)', 
-    image: require('./images/dk_blood.png').default,
-    buffs:['Horn of Winter', 'Strength of Earth Totem']
-},
-{
-    name:'Spellpower(Minor)', 
-    image: require('./images/dk_blood.png').default,
-    buffs:['Horn of Winter', 'Strength of Earth Totem']
-},
- 
-{
-    name:'Spirit', 
-    image: require('./images/dk_blood.png').default,
+    category:'Spellpower(Minor)', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
  
 {
-    name:'Stamina', 
-    image: require('./images/dk_blood.png').default,
+    category:'Spirit', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
  
 {
-    name:'Stats 10%', 
-    image: require('./images/dk_blood.png').default,
+    category:'Stamina', 
+    currentBuffs: [],
+    buffs:['Horn of Winter', 'Strength of Earth Totem']
+},
+ 
+{
+    category:'Stats 10%', 
+    currentBuffs: [],
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 }
  
