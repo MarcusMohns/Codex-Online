@@ -5,11 +5,13 @@ const BuffCategories = ({AllBuffs, currentBuffs}) => {
         <div>
         {AllBuffs.map((buff)=> (
         <BuffCategory 
-        key={buff.name} 
-        text={buff.name} 
-        image={buff.image}/>
+        key={buff.category}
+        id={buff.category} 
+        text={buff.category} 
+        image={buff.image}
+        currentBuffs = {currentBuffs}/>
 ))} 
-</div>
+        </div>
     )
 }
 

@@ -57,6 +57,7 @@ function Arenapointcalculator() {
 	};
 
 	const pointChange = (event) => {
+		console.log(formData);
 		// set state to all rating requireds input names and set value to the result of ratingRequired.
 		
 		setFormData({

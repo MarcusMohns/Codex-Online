@@ -8,7 +8,6 @@ import BuffCategories from '../components/BuffCategories';
 import { Main, SpecContainer, RaidContainer,BuffContainer} from '../components/styles/RaidAssembler.styled';
 
 const formReducer = (state, action) => {
-	console.log(state);
 		if (action.name in state) {
 		let newEntry = state[action.name].slice(-state[action.name].length)
 		newEntry.push(action.value)
@@ -18,7 +17,6 @@ const formReducer = (state, action) => {
 }
 		}
 		else {
-			console.log("Buff is not in")
 			return {
 				
 				...state,
@@ -58,12 +56,12 @@ const RaidAssembler = () => {
 			for (let buff of player.buffs ) {
 				let newBuff = 
 				{
-					buffId:id,
+					buffCategory:buff.category,
 					buffName: buff.name,
 					buffImg: buff.image,
 				}
 				setBuffs({
-					name: buff.category,
+					name:id,
 					value: newBuff,
 				});
 			}
@@ -85,7 +83,6 @@ const RaidAssembler = () => {
 			</SpecContainer>
 
 			<BuffContainer>
-				{/* Pass in State */}
 				<BuffCategories AllBuffs={AllBuffs} currentBuffs={buffs}></BuffCategories> 
 			</BuffContainer>
 
