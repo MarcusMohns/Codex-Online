@@ -68,9 +68,8 @@ const AllBuffs = [
 },
 {
     category:'Health',
-
-currentBuffs: [],   
-buffs:['Horn of Winter', 'Strength of Earth Totem']
+    currentBuffs: [],   
+    buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
     category:'Intellect', 

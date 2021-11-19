@@ -8,21 +8,37 @@ import BuffCategories from '../components/BuffCategories';
 import { Main, SpecContainer, RaidContainer,BuffContainer} from '../components/styles/RaidAssembler.styled';
 
 const formReducer = (state, action) => {
-	return {
-		...state,
-		[action.name]: action.value
-	};
+	console.log(state);
+		if (action.name in state) {
+		let newEntry = state[action.name].slice(-state[action.name].length)
+		newEntry.push(action.value)
+			return {
+			...state,
+			[action.name]:newEntry	
+}
+		}
+		else {
+			console.log("Buff is not in")
+			return {
+				
+				...state,
+				[action.name]:[action.value]
+				
+			};
 };
+
+};
+
 
 const RaidAssembler = () => {
 	const [ raid, setRaid ] = useState([]);
-	const [ buffs, setBuffs ] = useReducer(formReducer, {AllBuffs});
+	const [ buffs, setBuffs ] = useReducer(formReducer,[]);
 	const [ count, setCount ] = useState(0);
 
 	
 	const deletePlayer = (id) => {
 		setRaid(raid.filter((player) => player.id !== id));
-		setBuffs(buffs.filter((playerBuffs) => playerBuffs.id !== id));
+		setBuffs(buffs.filter((buffs) => buffs !== id));
 		setCount(count - 1);
 	};
 
@@ -39,19 +55,18 @@ const RaidAssembler = () => {
 	};
 
 	const addBuff = (id, player) => {
-			console.log("hey")	
-			// for (let buff of player.buffs ) {
-			// 	let newBuffs = {
-			// 		buffs: buff.name,
-			// 		buffImg: buff.image
-			// 	}
-			// 	setBuffs({
-			// 		category: buff.category,
-			// 		currentBuffs: [...currentBuffs,newBuffs],
-			// 	});
-			// }
-	
-		
+			for (let buff of player.buffs ) {
+				let newBuff = 
+				{
+					buffId:id,
+					buffName: buff.name,
+					buffImg: buff.image,
+				}
+				setBuffs({
+					name: buff.category,
+					value: newBuff,
+				});
+			}
 
 	}
 
