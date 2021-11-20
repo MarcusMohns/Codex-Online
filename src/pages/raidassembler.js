@@ -1,6 +1,5 @@
 import { useReducer,useState } from 'react';
 import SpecList from '../SpecList';
-import AllBuffs from '../AllBuffs';
 import PlayersInRaid from '../components/PlayersInRaid';
 import SpecButtons from '../components/SpecButtons';
 import BuffCategories from '../components/BuffCategories';
@@ -30,17 +29,19 @@ const formReducer = (state, action) => {
 
 const RaidAssembler = () => {
 	const [ raid, setRaid ] = useState([]);
-	const [ buffs, setBuffs ] = useReducer(formReducer,[]);
+	const [ buffs, setBuffs ] = useReducer(formReducer,{});
 	const [ count, setCount ] = useState(0);
 
-	
+
 	const deletePlayer = (id) => {
 		setRaid(raid.filter((player) => player.id !== id));
-		setBuffs(buffs.filter((buffs) => buffs !== id));
 		setCount(count - 1);
+		delete buffs[id];
+	
 	};
 
 	const addPlayer = (player) => {
+		
 		if (count < 25) {
 			const id = Math.floor(Math.random() * 10000 + 1);
 			const newPlayer = { id, ...player };
@@ -53,18 +54,19 @@ const RaidAssembler = () => {
 	};
 
 	const addBuff = (id, player) => {
-			for (let buff of player.buffs ) {
-				let newBuff = 
-				{
-					buffCategory:buff.category,
-					buffName: buff.name,
-					buffImg: buff.image,
-				}
-				setBuffs({
-					name:id,
-					value: newBuff,
-				});
+
+		for (let buff of player.buffs ) {
+			let newBuff = 
+			{
+				buffCategory:buff.category,
+				buffName: buff.name,
+				buffImg: buff.image,
 			}
+			setBuffs({
+				name:id,
+				value: newBuff,
+			});
+		}
 
 	}
 
@@ -83,7 +85,7 @@ const RaidAssembler = () => {
 			</SpecContainer>
 
 			<BuffContainer>
-				<BuffCategories AllBuffs={AllBuffs} currentBuffs={buffs}></BuffCategories> 
+				<BuffCategories currentBuffs={buffs}></BuffCategories> 
 			</BuffContainer>
 
 

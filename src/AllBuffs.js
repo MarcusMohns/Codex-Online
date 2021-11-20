@@ -50,7 +50,7 @@ const AllBuffs = [
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {
-    category:'Healing Received %', 
+    category:'Healing Received', 
     buffs:['Horn of Winter', 'Strength of Earth Totem']
 },
 {

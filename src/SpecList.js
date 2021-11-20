@@ -12,7 +12,7 @@ const SpecList = [
 			},
 			{
 			category:'Attack Power %',
-			name:"'Abomination's Might'",
+			name:"Abomination's Might",
 			image: require('./images/dk_unholy.png').default,
 			text:'Increases the attack power by 10% of party and raid members whitin 100 yards. Also Increases your total Strength by 2%'	
 			}
