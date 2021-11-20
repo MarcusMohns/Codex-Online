@@ -134,7 +134,8 @@ const SpecList = [
 		image: require('./images/druid_restoration.png').default,
 		color: 'orange',
 		buffs : [
-	{
+	
+		{
 			category:'Mark of the Wild',
 			name:'Mark of the Wild',
 			image: require('./images/dk_unholy.png').default,
