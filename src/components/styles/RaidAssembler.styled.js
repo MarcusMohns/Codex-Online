@@ -158,10 +158,41 @@ export const BuffContainer = styled.section`
   grid-area: buff-container;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: top;
   justify-content: top;
+  width: 100%;
   height: fit-content;
   border-radius: 0.5rem;
   padding: 1rem;
+`;
+
+export const StyledBuffCategories = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const CategoryContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 25%;
+  text-align: center;
+`;
+
+export const StyledBuff = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 30px;
+  margin-left: 20px;
+  font-size: 15px;
+  border: 1px solid black;
+`;
+
+export const StyledCategory = styled.div`
+  display: flex;
+  flex-direction: row;
+  color: ${(props) => props.color};
 `;

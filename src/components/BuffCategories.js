@@ -1,5 +1,6 @@
-import BuffCategory from "./BuffCategory";
-const allBuffCategories = [
+import { StyledBuffCategories } from "./styles/RaidAssembler.styled";
+import BuffsAndCategory from "./BuffsAndCategory";
+const Categories = [
   "Agility and Strength",
   "Armor %",
   "Armor Reduction(Major)",
@@ -34,16 +35,16 @@ const allBuffCategories = [
 ];
 const BuffCategories = ({ currentBuffs }) => {
   return (
-    <div>
-      {allBuffCategories.map((buffCategory) => (
-        <BuffCategory
-          key={buffCategory}
-          id={buffCategory}
-          text={buffCategory}
+    <StyledBuffCategories>
+      {Categories.map((category) => (
+        <BuffsAndCategory
+          key={category}
+          id={category}
+          category={category}
           currentBuffs={currentBuffs}
         />
       ))}
-    </div>
+    </StyledBuffCategories>
   );
 };
 
