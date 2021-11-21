@@ -1,12 +1,12 @@
 const RaidBuff = ({ text }) => {
-	let allBuffs = '';
+  let allBuffs = "";
 
-	for (const [ key, value ] of Object.entries(text)) {
-		if (key !== 'id') {
-			allBuffs += value + ',';
-		}
-	}
-	return <div>{allBuffs}</div>;
+  for (const [key, value] of Object.entries(text)) {
+    if (key !== "id") {
+      allBuffs += value + ",";
+    }
+  }
+  return <div>{allBuffs}</div>;
 };
 
 export default RaidBuff;
