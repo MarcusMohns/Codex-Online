@@ -171,14 +171,25 @@ export const BuffContainer = styled.section`
 export const StyledBuffCategories = styled.div`
   display: flex;
   flex-direction: column;
+  background-color: #85a1f2;
+
+  @media (min-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 export const CategoryContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  min-width: 25%;
   text-align: center;
+  background-color: #ffffff;
+  opacity: 75%;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
 `;
 
 export const StyledBuff = styled.div`
@@ -186,23 +197,36 @@ export const StyledBuff = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  min-width: 30px;
-  margin-left: 20px;
-  font-size: 15px;
-  border: 1px solid black;
+  border-radius: 0.33rem;
+  color: #666666;
+  font-size: 0.7rem;
+  padding: 0.5rem;
 `;
 
 export const StyledCategory = styled.div`
   display: flex;
   flex-direction: row;
-  color: ${(props) => props.color};
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: ${(props) => props.color};
+  color: black;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    width: 20%;
+  }
 `;
 
 export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 `;
 export const CheckCircle = styled(FaRegCheckCircle)`
   color: green;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 `;

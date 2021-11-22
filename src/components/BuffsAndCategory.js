@@ -9,14 +9,14 @@ import {
 const BuffsAndCategory = ({ category, currentBuffs }) => {
   let newBuff = [];
   let count = 0;
-  let categoryColor = "red";
+  let categoryColor = "pink";
   let AllBuffsInRaid = Object.values(currentBuffs);
 
   for (let aPlayersBuffs of AllBuffsInRaid) {
     // iterate over state
     for (let buff of aPlayersBuffs) {
       if (buff.buffCategory === category) {
-        categoryColor = "green";
+        categoryColor = "#72e263";
 
         // if the buff and the category thats being created match
         newBuff.push(
@@ -31,8 +31,11 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
   }
   return (
     <CategoryContainer>
-      <StyledCategory color={categoryColor}>{category}</StyledCategory>
-      {categoryColor === "green" ? <CheckCircle /> : <CrossIcon />}
+      <StyledCategory color={categoryColor}>
+        {category}
+        {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}
+      </StyledCategory>
+
       {newBuff}
     </CategoryContainer>
   );

@@ -111,7 +111,7 @@ const SpecList = [
         text: "Your Moonkin Aura also causes affected targets to gain 3% haste and you to gain 30% of your spirit as additional spell damage.",
       },
       {
-        category: "Armor Reduction(Minor)",
+        category: "Armor Reduction (Minor)",
         name: "Faerie Fire",
         image: require("./images/Ebon_Plaguebringer.png").default,
         text: "Shapeshift into Moonkin Form. While in this form the armor contribution from items is increased by 370%, damage taken while stunned is reduced by 15%, and all party and raid members within 100 yards have their spell critical chance increased by 5%. Single target spell critical strikes in this form have a chance to instantly regenerate 2% of your total mana. The Moonkin can not cast healing or resurrection spells while shapeshifted.",
@@ -462,7 +462,7 @@ const SpecList = [
     color: "yellow",
     buffs: [
       {
-        category: "Armor Reduction(Major)",
+        category: "Armor Reduction (Major)",
         name: "Expose Armor",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -481,7 +481,7 @@ const SpecList = [
     color: "yellow",
     buffs: [
       {
-        category: "Armor Reduction(Major)",
+        category: "Armor Reduction (Major)",
         name: "Expose Armor",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -544,7 +544,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Spellpower(Major)",
+        category: "Spellpower (Major)",
         name: "Totem of Wrath",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -556,7 +556,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Spellpower(Minor)",
+        category: "Spellpower (Minor)",
         name: "Flametongue Totem",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -599,7 +599,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Spellpower(Minor)",
+        category: "Spellpower (Minor)",
         name: "Flametongue Weapon",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -636,7 +636,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Spellpower(Minor)",
+        category: "Spellpower (Minor)",
         name: "Flametongue Totem",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -673,7 +673,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Armor Reduction(Major)",
+        category: "Armor Reduction (Major)",
         name: "Sunder Armor",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -710,7 +710,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Armor Reduction(Major)",
+        category: "Armor Reduction (Major)",
         name: "Sunder Armor",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -742,7 +742,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Armor Reduction(Major)",
+        category: "Armor Reduction (Major)",
         name: "Sunder Armor",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -767,7 +767,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Armor Reduction(Minor)",
+        category: "Armor Reduction (Minor)",
         name: "Curse of Weakness",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -804,7 +804,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Armor Reduction(Minor)",
+        category: "Armor Reduction (Minor)",
         name: "Curse of Weakness",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -835,7 +835,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Armor Reduction(Minor)",
+        category: "Armor Reduction (Minor)",
         name: "Curse of Weakness",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
