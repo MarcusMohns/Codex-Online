@@ -2,6 +2,8 @@ import {
   CategoryContainer,
   StyledBuff,
   StyledCategory,
+  CrossIcon,
+  CheckCircle,
 } from "./styles/RaidAssembler.styled";
 
 const BuffsAndCategory = ({ category, currentBuffs }) => {
@@ -15,6 +17,7 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
     for (let buff of aPlayersBuffs) {
       if (buff.buffCategory === category) {
         categoryColor = "green";
+
         // if the buff and the category thats being created match
         newBuff.push(
           <StyledBuff key={count++}>
@@ -29,6 +32,7 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
   return (
     <CategoryContainer>
       <StyledCategory color={categoryColor}>{category}</StyledCategory>
+      {categoryColor === "green" ? <CheckCircle /> : <CrossIcon />}
       {newBuff}
     </CategoryContainer>
   );
