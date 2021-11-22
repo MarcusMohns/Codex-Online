@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 
 export const Main = styled.main`
   display: flex;
@@ -195,4 +196,13 @@ export const StyledCategory = styled.div`
   display: flex;
   flex-direction: row;
   color: ${(props) => props.color};
+`;
+
+export const CrossIcon = styled(FaRegTimesCircle)`
+  color: red;
+  font-size: 1.2rem;
+`;
+export const CheckCircle = styled(FaRegCheckCircle)`
+  color: green;
+  font-size: 1.2rem;
 `;

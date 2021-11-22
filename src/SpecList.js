@@ -142,7 +142,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Healing Recieved",
+        category: "Healing Recieved %",
         name: "Tree of Life",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
@@ -313,7 +313,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Healing Received %",
+        category: "Healing Recieved %",
         name: "Improved Devotion Aura",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
