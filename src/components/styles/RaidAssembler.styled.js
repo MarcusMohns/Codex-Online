@@ -4,6 +4,7 @@ import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   align-items: center;
   justify-content: start;
   max-width: 100vw;
@@ -31,22 +32,25 @@ export const Main = styled.main`
 `;
 
 export const SpecContainer = styled.section`
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 1rem;
 
   .spec-buttons {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
   }
   @media (min-width: 1200px) {
     grid-area: spec-container;
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    align-items: flex-start;
 
     .spec-buttons {
       display: flex;
@@ -57,20 +61,19 @@ export const SpecContainer = styled.section`
   }
 `;
 export const StyledSpecButton = styled.button`
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 2.8rem;
-  text-align: center;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.8rem;
   background: ${(props) => props.color};
   color: #fff;
   border: ridge transparent;
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 300;
   cursor: pointer;
+
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
 
@@ -84,7 +87,11 @@ export const StyledSpecButton = styled.button`
   img {
     width: 1rem;
     height: 1rem;
-    border-radius: 50%;
+    border-radius: 20%;
+  }
+
+  p {
+    margin: auto;
   }
 
   @media (min-width: 1200px) {
@@ -92,14 +99,16 @@ export const StyledSpecButton = styled.button`
 `;
 
 export const RaidContainer = styled.section`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   grid-area: raid-container;
   border-radius: 0.5rem;
   background-color: white;
-  width: 100%;
-  height: fit-content;
   margin-bottom: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 100%;
 
   .count {
     font-size: 1rem;
@@ -111,6 +120,9 @@ export const RaidContainer = styled.section`
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: column;
+  }
+  @media (min-width: 1200px) {
+    min-height: 420px;
   }
 `;
 
@@ -156,6 +168,7 @@ export const StyledPlayer = styled.div`
 `;
 
 export const BuffContainer = styled.section`
+  box-sizing: border-box;
   grid-area: buff-container;
   background-color: white;
   display: flex;
@@ -163,6 +176,7 @@ export const BuffContainer = styled.section`
   align-items: top;
   justify-content: top;
   width: 100%;
+  max-width: 100%;
   height: fit-content;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -171,7 +185,6 @@ export const BuffContainer = styled.section`
 export const StyledBuffCategories = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #85a1f2;
 
   @media (min-width: 1200px) {
   }
@@ -182,12 +195,11 @@ export const CategoryContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
   opacity: 75%;
   width: 100%;
-
   @media (min-width: 1200px) {
     flex-direction: row;
+    border-bottom: 1px solid grey;
   }
 `;
 
@@ -196,38 +208,38 @@ export const StyledBuff = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: #666666;
   font-size: 0.8rem;
   padding: 0.5rem;
 
   img {
     border-radius: 20%;
     margin-left: 0.5rem;
-    animation-name: BuffUnderline;
-    animation-duration: 0.2s;
+    opacity: 0%;
+    animation-name: FadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
   }
 
   p {
-    animation-name: BuffUnderline;
-    animation-duration: 0.2s;
-    box-shadow: 0px 2px 0px 0px #888888;
+    opacity: 0%;
+    animation-name: FadeIn;
+    animation-duration: 0.5s;
+    color: #666666;
+    animation-fill-mode: forwards;
   }
 
-  @keyframes BuffUnderline {
+  @keyframes FadeIn {
     0% {
       opacity: 0%;
     }
-    25% {
-      opacity: 25%;
-      box-shadow: 0px 0px 0px 0px #888888;
-    }
-    80% {
+    50% {
       opacity: 50%;
-      box-shadow: 0px 1px 0px 0px #888888;
+    }
+    75% {
+      opacity: 75%;
     }
     100% {
       opacity: 100%;
-      box-shadow: 0px 2px 0px 0px #888888;
     }
   }
 `;

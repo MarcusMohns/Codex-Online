@@ -2,7 +2,7 @@ import { StyledSpecButton } from "./styles/RaidAssembler.styled";
 const SpecButton = ({ text, image, onClick, color }) => {
   return (
     <StyledSpecButton color={color} onClick={onClick}>
-      {text}
+      <p>{text}</p>
       <img src={image} alt="spec icon" />
     </StyledSpecButton>
   );

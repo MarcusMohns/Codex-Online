@@ -76,10 +76,10 @@ const RaidAssembler = () => {
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
         ) : (
-          "No Players in Raid"
+          "No players in raid!"
         )}
       </RaidContainer>
-      <SpecContainer>
+      <SpecContainer className="spec-container">
         <SpecButtons
           className="spec-buttons"
           specs={SpecList}
@@ -87,7 +87,7 @@ const RaidAssembler = () => {
         />
       </SpecContainer>
 
-      <BuffContainer>
+      <BuffContainer className="buff-container">
         <BuffCategories currentBuffs={buffs}></BuffCategories>
       </BuffContainer>
     </Main>
