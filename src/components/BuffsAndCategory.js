@@ -16,12 +16,12 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
     // iterate over state
     for (let buff of aPlayersBuffs) {
       if (buff.buffCategory === category) {
-        categoryColor = "#72e263";
-
         // if the buff and the category thats being created match
+        categoryColor = "#72e263";
+        console.log(AllBuffsInRaid);
         newBuff.push(
           <StyledBuff key={count++}>
-            {buff.buffName}
+            <p>{buff.buffName}</p>
             <img src={buff.buffImg} alt="buff icon" />
           </StyledBuff>
         );
@@ -35,7 +35,6 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
         {category}
         {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}
       </StyledCategory>
-
       {newBuff}
     </CategoryContainer>
   );

@@ -174,7 +174,6 @@ export const StyledBuffCategories = styled.div`
   background-color: #85a1f2;
 
   @media (min-width: 1200px) {
-    flex-direction: column;
   }
 `;
 
@@ -197,10 +196,40 @@ export const StyledBuff = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-radius: 0.33rem;
   color: #666666;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   padding: 0.5rem;
+
+  img {
+    border-radius: 20%;
+    margin-left: 0.5rem;
+    animation-name: BuffUnderline;
+    animation-duration: 0.2s;
+  }
+
+  p {
+    animation-name: BuffUnderline;
+    animation-duration: 0.2s;
+    box-shadow: 0px 2px 0px 0px #888888;
+  }
+
+  @keyframes BuffUnderline {
+    0% {
+      opacity: 0%;
+    }
+    25% {
+      opacity: 25%;
+      box-shadow: 0px 0px 0px 0px #888888;
+    }
+    80% {
+      opacity: 50%;
+      box-shadow: 0px 1px 0px 0px #888888;
+    }
+    100% {
+      opacity: 100%;
+      box-shadow: 0px 2px 0px 0px #888888;
+    }
+  }
 `;
 
 export const StyledCategory = styled.div`
@@ -211,6 +240,7 @@ export const StyledCategory = styled.div`
   font-size: 1rem;
   padding: 0.5rem;
   background-color: ${(props) => props.color};
+  transition: background-color 0.5s;
   color: black;
   width: 100%;
 
@@ -224,9 +254,28 @@ export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
   font-size: 1.5rem;
   margin-left: 0.5rem;
+  animation-name: buffCategoryImage;
+  animation-duration: 0.5s;
 `;
 export const CheckCircle = styled(FaRegCheckCircle)`
   color: green;
   font-size: 1.5rem;
   margin-left: 0.5rem;
+  animation-name: buffCategoryImage;
+  animation-duration: 0.8s;
+
+  @keyframes buffCategoryImage {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 `;
