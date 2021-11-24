@@ -437,12 +437,6 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
-        category: "Stamina",
-        name: "Power Word: Fortitude",
-        image: require("./images/dk_unholy.png").default,
-        text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
-      },
-      {
         category: "Replenishment",
         name: "Vampiric Touch",
         image: require("./images/dk_unholy.png").default,

@@ -13,7 +13,7 @@ export const Main = styled.main`
   min-height: 100%;
   padding: 20px;
   margin-top: 10%;
-  background-color: #85a1f2;
+  background-color: #444444;
   opacity: 90%;
 
   @media (min-width: 1200px) {
@@ -195,8 +195,8 @@ export const CategoryContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  opacity: 75%;
   width: 100%;
+
   @media (min-width: 1200px) {
     flex-direction: row;
     border-bottom: 1px solid grey;
@@ -249,12 +249,54 @@ export const StyledCategory = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  user-select: none;
+  cursor: pointer;
   font-size: 1rem;
   padding: 0.5rem;
   background-color: ${(props) => props.color};
   transition: background-color 0.5s;
   color: black;
   width: 100%;
+
+  .tooltip {
+    position: relative;
+    padding: 0px;
+    left: 100%;
+  }
+
+  .tooltip .tooltiptext {
+    position: absolute;
+    min-width: 200px;
+    min-height: 300px;
+    background-color: white;
+    z-index: 1;
+    visibility: hidden;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    transition: opacity 0.5s;
+    transform: translate(10%, -50%);
+    color: #eeeeee;
+    background-color: #444444;
+    opacity: 0;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  }
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: transparent #444444 transparent transparent;
+  }
+
+  &:hover {
+    .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 
   @media (min-width: 1200px) {
     flex-direction: row;
@@ -264,6 +306,7 @@ export const StyledCategory = styled.div`
 
 export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
+  min-width: 1.5rem;
   font-size: 1.5rem;
   margin-left: 0.5rem;
   animation-name: buffCategoryImage;
@@ -271,6 +314,7 @@ export const CrossIcon = styled(FaRegTimesCircle)`
 `;
 export const CheckCircle = styled(FaRegCheckCircle)`
   color: green;
+  min-width: 1.5rem;
   font-size: 1.5rem;
   margin-left: 0.5rem;
   animation-name: buffCategoryImage;

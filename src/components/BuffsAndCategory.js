@@ -6,6 +6,8 @@ import {
   CheckCircle,
 } from "./styles/RaidAssembler.styled";
 
+// import SpecList from "../SpecList";
+
 const BuffsAndCategory = ({ category, currentBuffs }) => {
   let newBuff = [];
   let count = 0;
@@ -32,6 +34,11 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
   return (
     <CategoryContainer>
       <StyledCategory color={categoryColor}>
+        <div className="tooltip">
+          <p className="tooltiptext">
+            <h3>Blessing of Kings</h3>
+          </p>
+        </div>
         {category}
         {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}
       </StyledCategory>
