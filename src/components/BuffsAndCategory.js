@@ -6,9 +6,7 @@ import {
   CheckCircle,
 } from "./styles/RaidAssembler.styled";
 
-// import SpecList from "../SpecList";
-
-const BuffsAndCategory = ({ category, currentBuffs }) => {
+const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
   let newBuff = [];
   let count = 0;
   let categoryColor = "pink";
@@ -20,7 +18,6 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
       if (buff.buffCategory === category) {
         // if the buff and the category thats being created match
         categoryColor = "#72e263";
-        console.log(AllBuffsInRaid);
         newBuff.push(
           <StyledBuff key={count++}>
             <p>{buff.buffName}</p>
@@ -35,9 +32,14 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
     <CategoryContainer>
       <StyledCategory color={categoryColor}>
         <div className="tooltip">
-          <p className="tooltiptext">
-            <h3>Blessing of Kings</h3>
-          </p>
+          <div className="tooltiptext">
+            <div className="title">
+              <h3>{category}</h3>
+            </div>
+            {categoryTooltip.map((specName) => (
+              <div>{specName}</div>
+            ))}
+          </div>
         </div>
         {category}
         {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}

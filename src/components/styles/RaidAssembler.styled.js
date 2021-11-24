@@ -268,6 +268,7 @@ export const StyledCategory = styled.div`
     position: absolute;
     min-width: 200px;
     min-height: 300px;
+    max-height: 100%;
     background-color: white;
     z-index: 1;
     visibility: hidden;
@@ -275,10 +276,31 @@ export const StyledCategory = styled.div`
     box-sizing: border-box;
     transition: opacity 0.5s;
     transform: translate(10%, -50%);
-    color: #eeeeee;
     background-color: #444444;
     opacity: 0;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    color: #eeeeee;
+    .title {
+      display: flex;
+      flex-direction: column;
+      background-color: #757575;
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid #444444;
+      border-radius: 0.5rem 0.5rem 0 0;
+      padding-bottom: 10px;
+
+      h3 {
+        margin-top: 10%;
+        font-style: italic;
+      }
+    }
+
+    p {
+      margin: auto;
+    }
   }
   .tooltip .tooltiptext::after {
     content: " ";

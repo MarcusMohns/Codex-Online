@@ -162,6 +162,7 @@ const BuffCategories = ({ currentBuffs }) => {
           key={category.name}
           id={category.name}
           category={category.name}
+          categoryTooltip={category.source}
           currentBuffs={currentBuffs}
         />
       ))}
