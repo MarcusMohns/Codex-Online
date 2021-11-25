@@ -13,6 +13,8 @@ const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
   let AllBuffsInRaid = Object.values(currentBuffs);
 
   for (let aPlayersBuffs of AllBuffsInRaid) {
+    console.log(AllBuffsInRaid);
+
     // iterate over state
     for (let buff of aPlayersBuffs) {
       if (buff.buffCategory === category) {
@@ -37,7 +39,7 @@ const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
               <h3>{category}</h3>
             </div>
             {categoryTooltip.map((specName) => (
-              <div>{specName}</div>
+              <div key={`${specName} ${category}`}>{specName}</div>
             ))}
           </div>
         </div>
