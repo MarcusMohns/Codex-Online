@@ -11,12 +11,11 @@ import {
 } from "../components/styles/RaidAssembler.styled";
 
 const formReducer = (state, action) => {
+  // run for every buff the new player posseses
   if (action.name in state) {
-    // If ID already exists
-    let newEntry = state[action.name].slice(-state[action.name].length);
-    // add all the items in ID to newEntry
-    newEntry.push(action.value);
-
+    // If player ID already exists in state
+    let newEntry = [...state[action.name], action.value];
+    // spread the IDs values into newEntry and add the new value
     return {
       ...state,
       [action.name]: newEntry,

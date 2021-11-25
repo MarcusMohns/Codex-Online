@@ -24,8 +24,8 @@ export const Main = styled.main`
     grid-template-areas:
       "raid-container spec-container"
       "buff-container spec-container";
-    max-width: 75vw;
-    min-height: 75vw;
+    max-width: 95vw;
+    min-height: 95vw;
     border-radius: 5px;
     box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   }
