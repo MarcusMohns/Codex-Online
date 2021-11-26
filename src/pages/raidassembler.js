@@ -1,5 +1,5 @@
 import { useReducer, useState } from "react";
-import SpecList from "../SpecList";
+import SpecArray from "../SpecArray";
 import PlayersInRaid from "../components/PlayersInRaid";
 import SpecButtons from "../components/SpecButtons";
 import BuffCategories from "../components/BuffCategories";
@@ -81,7 +81,7 @@ const RaidAssembler = () => {
       <SpecContainer className="spec-container">
         <SpecButtons
           className="spec-buttons"
-          specs={SpecList}
+          specs={SpecArray}
           onClick={addPlayer}
         />
       </SpecContainer>
