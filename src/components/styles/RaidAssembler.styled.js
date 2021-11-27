@@ -11,7 +11,6 @@ export const Main = styled.main`
   min-height: 100vw;
   margin: auto;
   min-height: 100%;
-  padding: 20px;
   margin-top: 10%;
   background-color: #444444;
   opacity: 90%;
@@ -21,6 +20,7 @@ export const Main = styled.main`
     grid-template-columns: 1.6fr 0.4fr;
     grid-template-rows: 0.3fr 1.4fr;
     gap: 0px 0px;
+    padding: 2rem;
     grid-template-areas:
       "raid-container spec-container"
       "buff-container spec-container";

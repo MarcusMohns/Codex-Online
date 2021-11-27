@@ -5,8 +5,9 @@ export const Main = styled.main`
   flex-direction: row;
   align-items: start;
   justify-content: space-evenly;
-  background-color: #85a1f2;
-  max-width: 75vw;
+  background-color: #444444;
+  box-sizing: border-box;
+  max-width: 95vw;
   min-height: 75vw;
   margin: auto;
   padding: 3rem;

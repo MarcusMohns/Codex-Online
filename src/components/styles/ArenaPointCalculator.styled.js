@@ -1,15 +1,13 @@
 import styled from "styled-components";
-// 768px wide
-// 768px wide
-// 992px wide
-// 1200px wide
+
 export const Main = styled.main`
   // Mobile
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #85a1f2;
-
+  background-color: #444444;
+  flex-direction: column;
+  box-sizing: border-box;
   max-width: 100vw;
   max-height: 100vw;
   min-height: 100%;
@@ -23,7 +21,7 @@ export const Main = styled.main`
   @media (min-width: 1200px) {
     align-items: center;
     justify-content: top;
-    max-width: 75vw;
+    max-width: 95vw;
     min-width: 75vw;
   }
 
