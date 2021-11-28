@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
+import { CgChevronDoubleLeftR } from "react-icons/cg";
 
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   max-width: 100vw;
   min-height: 100vw;
   margin: auto;
@@ -17,47 +18,91 @@ export const Main = styled.main`
 
   @media (min-width: 1200px) {
     display: grid;
-    grid-template-columns: 1.6fr 0.4fr;
-    grid-template-rows: 0.3fr 1.4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
     gap: 0px 0px;
-    padding: 2rem;
     grid-template-areas:
-      "raid-container spec-container"
-      "buff-container spec-container";
+      "Raid specs"
+      "Buffs Buffs";
+
+    padding: 2rem;
     max-width: 95vw;
     min-height: 95vw;
     border-radius: 5px;
-    box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
+  }
+
+  .right-menu {
+    display: flex;
+    flex-direction: row;
+    background-color: #264874;
+    position: fixed;
+    top: 15%;
+    right: 0%;
+    width: 50%;
+    height: 80%;
+    z-index: 1;
+    border-radius: 0.3rem;
+    transition: all 300ms;
+    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+
+    @media screen and (min-width: 1200px) {
+      width: fit-content;
+      padding: 1rem;
+      right: 1%;
+    }
+
+    .double-arrow-right {
+      padding: 1rem;
+      position: absolute;
+      transition: all 300ms;
+      transform: translate(-100%) rotate(180deg);
+      align-self: center;
+      color: #000;
+      opacity: 100%;
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+  .hide-right-menu {
+    display: flex;
+    background-color: #264874;
+    position: fixed;
+    top: 15%;
+    right: 0%;
+    width: 25%;
+    height: 80%;
+    z-index: 1;
+    border-radius: 0.3rem;
+    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+    transition: all 300ms;
+    transform: translate(100%);
+    .double-arrow-right {
+      transition: all 300ms;
+      transform: translate(-100%);
+      align-self: center;
+      color: #fff;
+      opacity: 100%;
+      height: 5rem;
+      width: 5rem;
+    }
   }
 `;
 
 export const SpecContainer = styled.section`
   box-sizing: border-box;
   display: flex;
+  grid-area: specs;
+
   flex-direction: row;
   align-items: center;
   justify-content: center;
   max-width: 100%;
   max-height: 100%;
-  margin-bottom: 1rem;
 
   .spec-buttons {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-columns: repeat(3, 1fr);
-  }
-  @media (min-width: 1200px) {
-    grid-area: spec-container;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-    .spec-buttons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
   }
 `;
 export const StyledSpecButton = styled.button`
@@ -67,7 +112,8 @@ export const StyledSpecButton = styled.button`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 0.7rem;
+  margin: 0.5rem;
   font-size: 0.8rem;
   background: ${(props) => props.color};
   color: #fff;
@@ -102,15 +148,14 @@ export const RaidContainer = styled.section`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  grid-area: raid-container;
+  align-items: flex-start;
   border-radius: 0.5rem;
   background-color: white;
-  margin-bottom: 1rem;
   padding: 1rem;
-  max-width: 100%;
+  min-width: 100%;
   max-height: 100%;
 
-  .count {
+  .raidCount {
     font-size: 1rem;
     letter-spacing: 1px;
     margin-bottom: 1rem;
@@ -123,6 +168,7 @@ export const RaidContainer = styled.section`
   }
   @media (min-width: 1200px) {
     min-height: 420px;
+    grid-area: Raid;
   }
 `;
 
@@ -168,8 +214,8 @@ export const StyledPlayer = styled.div`
 `;
 
 export const BuffContainer = styled.section`
+  grid-area: Buffs;
   box-sizing: border-box;
-  grid-area: buff-container;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -356,4 +402,12 @@ export const CheckCircle = styled(FaRegCheckCircle)`
       transform: scale(1);
     }
   }
+`;
+
+export const DoubleArrowLeft = styled(CgChevronDoubleLeftR)`
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 50%;
+  z-index: 2;
 `;

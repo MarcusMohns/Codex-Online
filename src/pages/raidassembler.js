@@ -8,6 +8,7 @@ import {
   SpecContainer,
   RaidContainer,
   BuffContainer,
+  DoubleArrowLeft,
 } from "../components/styles/RaidAssembler.styled";
 
 const formReducer = (state, action) => {
@@ -31,15 +32,20 @@ const formReducer = (state, action) => {
 const RaidAssembler = () => {
   const [raid, setRaid] = useState([]);
   const [buffs, setBuffs] = useReducer(formReducer, {});
-  const [count, setCount] = useState(0);
+  const [raidCount, setCount] = useState(0);
+  const [rightMenuOpen, setRightMenuOpen] = useState(false);
+
+  const handleRightMenuToggle = () => {
+    setRightMenuOpen(!rightMenuOpen);
+  };
 
   const addPlayer = (player) => {
-    if (count < 25) {
+    if (raidCount < 25) {
       const id = Math.floor(Math.random() * 10000 + 1);
       const newPlayer = { id, ...player };
       setRaid([...raid, newPlayer]);
       addBuff(id, player);
-      setCount(count + 1);
+      setCount(raidCount + 1);
     } else {
       alert("Raid is full");
     }
@@ -61,7 +67,7 @@ const RaidAssembler = () => {
 
   const deletePlayer = (id) => {
     setRaid(raid.filter((player) => player.id !== id));
-    setCount(count - 1);
+    setCount(raidCount - 1);
     deleteBuff(id);
   };
   const deleteBuff = (id) => {
@@ -70,22 +76,29 @@ const RaidAssembler = () => {
 
   return (
     <Main>
+      <div className={`${rightMenuOpen ? "right-menu" : "hide-right-menu"}`}>
+        <DoubleArrowLeft
+          className="double-arrow-right"
+          onClick={handleRightMenuToggle}
+        />
+        <SpecContainer className="spec-container">
+          <SpecButtons
+            className="spec-buttons"
+            specs={SpecArray}
+            onClick={addPlayer}
+          />
+        </SpecContainer>
+      </div>
+
       <RaidContainer className="raid-container">
-        <div className="count"> {count} / 25 </div>
+        <div className="raidCount"> {raidCount} / 25 </div>
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
         ) : (
           "No players in raid!"
         )}
       </RaidContainer>
-      <SpecContainer className="spec-container">
-        <SpecButtons
-          className="spec-buttons"
-          specs={SpecArray}
-          onClick={addPlayer}
-        />
-      </SpecContainer>
-
+      <div>Utility placeholder</div>
       <BuffContainer className="buff-container">
         <BuffCategories currentBuffs={buffs}></BuffCategories>
       </BuffContainer>
