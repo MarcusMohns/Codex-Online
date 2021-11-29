@@ -13,8 +13,6 @@ const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
   let AllBuffsInRaid = Object.values(currentBuffs);
 
   for (let aPlayersBuffs of AllBuffsInRaid) {
-    console.log(AllBuffsInRaid);
-
     // iterate over state
     for (let buff of aPlayersBuffs) {
       if (buff.buffCategory === category) {
