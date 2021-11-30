@@ -18,10 +18,13 @@ const handleSelect = (event) => {
 const ratingRequried = (pointsNeeded, percentage) => {
   let theRatingRequired = 0;
   if (
-    (pointsNeeded <= 261 && percentage === 0.76) ||
-    (pointsNeeded <= 302 && percentage === 0.88) ||
-    (pointsNeeded <= 344 && percentage === 1)
     // in 3.3.5 you are rewarded a baseline amount of points if you are 1500 or below
+    (pointsNeeded <= 261 && percentage === 0.76) ||
+    // 261 is the min points recieved in 2v2
+    (pointsNeeded <= 302 && percentage === 0.88) ||
+    // 302 is the min points recieved in 3v3
+    (pointsNeeded <= 344 && percentage === 1)
+    // 344 is the min points recieved in 5v5
   )
     return theRatingRequired;
   else
