@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
-import { CgChevronDoubleLeftR } from "react-icons/cg";
+import { CgChevronLeftO } from "react-icons/cg";
 
 export const Main = styled.main`
   display: flex;
@@ -22,7 +22,7 @@ export const Main = styled.main`
     grid-template-rows: 0.5fr 1.5fr;
     gap: 0px 0px;
     grid-template-areas:
-      "Raid specs"
+      "Raid Utils"
       "Buffs Buffs";
 
     padding: 2rem;
@@ -34,16 +34,11 @@ export const Main = styled.main`
   .right-menu {
     display: flex;
     flex-direction: row;
-    background-color: #fff;
     position: fixed;
-    top: 15%;
+    top: 25%;
     right: 0%;
-    width: fit-content;
-    height: fit-content;
     z-index: 1;
-    border-radius: 0.3rem;
-    transition: all 300ms;
-    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+    transition: all 150ms;
 
     @media screen and (min-width: 1200px) {
       padding: 0.5rem;
@@ -51,42 +46,43 @@ export const Main = styled.main`
     }
 
     .double-arrow-right {
-      padding: 1rem;
-      position: absolute;
-      transition: all 300ms;
-      transform: translate(-100%) rotate(180deg);
+      transition: all 400ms;
+      transform: rotate(180deg) translate(-100%);
+      align-self: center;
+      color: #000;
+      opacity: 100%;
+      @media screen and (min-width: 1200px) {
+        transform: rotate(180deg) translate(0%);
+      }
+    }
+  }
+  .hide-right-menu {
+    display: flex;
+    position: fixed;
+    top: 25%;
+    right: 0%;
+    height: fit-content;
+    z-index: 1;
+    transition: all 150ms;
+    transform: translate(100%);
+
+    @media screen and (min-width: 1200px) {
+      right: 1%;
+    }
+    .double-arrow-right {
+      transition: all 400ms;
+      transform: translate(-100%);
       align-self: center;
       color: #000;
       opacity: 100%;
       height: 2rem;
       width: 2rem;
-    }
-  }
-  .hide-right-menu {
-    display: flex;
-    background-color: #fff;
-    position: fixed;
-    top: 15%;
-    right: 0%;
-    height: fit-content;
-    z-index: 1;
-    border-radius: 0.3rem;
-    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
-    transition: all 300ms;
-    transform: translate(100%);
 
-    @media screen and (min-width: 1200px) {
-      padding: 1rem;
-      right: 0%;
-    }
-    .double-arrow-right {
-      transition: all 300ms;
-      transform: translate(-150%);
-      align-self: center;
-      color: #fff;
-      opacity: 100%;
-      height: 2rem;
-      width: 2rem;
+      @media screen and (min-width: 1200px) {
+        transform: translate(-50%);
+        color: #fff;
+        right: 1%;
+      }
     }
   }
 `;
@@ -94,15 +90,26 @@ export const Main = styled.main`
 export const SpecContainer = styled.section`
   box-sizing: border-box;
   display: flex;
-  grid-area: specs;
   flex-direction: column;
-  border-radius: 1rem;
   align-items: center;
-  background-color: #264874;
   justify-content: center;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 1rem;
+  margin: auto;
+  max-width: 75%;
+  max-height: 50%;
+
+  @media screen and (min-width: 1200px) {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    align-items: center;
+    background-color: #264874;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1rem;
+    transition: all 300ms;
+  }
 
   .spec-buttons {
     display: grid;
@@ -110,38 +117,32 @@ export const SpecContainer = styled.section`
     grid-template-columns: repeat(3, 1fr);
   }
   #spec-container-text {
-    color: white;
+    color: #fff;
     padding: 1rem;
   }
 `;
 export const StyledSpecButton = styled.button`
-  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 1fr;
+  font-weight: bold;
   padding: 0.7rem;
-  margin: 0.2rem;
-  font-size: 0.8rem;
-  background: ${(props) => props.color};
   color: #fff;
-  border: ridge transparent;
+  transition: 0.4s;
+  background: ${(props) => props.color};
   cursor: pointer;
 
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
 
   &:hover {
+    border: 2px solid black;
   }
 
   &:active {
-    transform: translateY(1px);
-    filter: saturate(120%);
+    filter: saturate(150%);
   }
   img {
-    width: 1rem;
-    height: 1rem;
+    width: 1.1rem;
+    height: 1.1rem;
     border-radius: 20%;
   }
 
@@ -150,6 +151,10 @@ export const StyledSpecButton = styled.button`
   }
 
   @media (min-width: 1200px) {
+    padding: 1rem;
+    margin: 2px;
+    border-radius: 5px;
+    border: ridge transparent;
   }
 `;
 
@@ -206,9 +211,6 @@ export const StyledPlayer = styled.div`
   }
   &:hover {
     transform: translateY(-0.1em);
-  }
-
-  p {
   }
 
   @media (min-width: 1200px) {
@@ -413,7 +415,7 @@ export const CheckCircle = styled(FaRegCheckCircle)`
   }
 `;
 
-export const DoubleArrowLeft = styled(CgChevronDoubleLeftR)`
+export const DoubleArrowLeft = styled(CgChevronLeftO)`
   color: white;
   font-size: 2rem;
   cursor: pointer;
