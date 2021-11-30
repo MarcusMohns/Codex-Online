@@ -34,20 +34,19 @@ export const Main = styled.main`
   .right-menu {
     display: flex;
     flex-direction: row;
-    background-color: #264874;
+    background-color: #fff;
     position: fixed;
     top: 15%;
     right: 0%;
-    width: 50%;
-    height: 80%;
+    width: fit-content;
+    height: fit-content;
     z-index: 1;
     border-radius: 0.3rem;
     transition: all 300ms;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 
     @media screen and (min-width: 1200px) {
-      width: fit-content;
-      padding: 1rem;
+      padding: 0.5rem;
       right: 1%;
     }
 
@@ -65,25 +64,29 @@ export const Main = styled.main`
   }
   .hide-right-menu {
     display: flex;
-    background-color: #264874;
+    background-color: #fff;
     position: fixed;
     top: 15%;
     right: 0%;
-    width: 25%;
-    height: 80%;
+    height: fit-content;
     z-index: 1;
     border-radius: 0.3rem;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
     transition: all 300ms;
     transform: translate(100%);
+
+    @media screen and (min-width: 1200px) {
+      padding: 1rem;
+      right: 0%;
+    }
     .double-arrow-right {
       transition: all 300ms;
-      transform: translate(-100%);
+      transform: translate(-150%);
       align-self: center;
       color: #fff;
       opacity: 100%;
-      height: 5rem;
-      width: 5rem;
+      height: 2rem;
+      width: 2rem;
     }
   }
 `;
@@ -92,17 +95,23 @@ export const SpecContainer = styled.section`
   box-sizing: border-box;
   display: flex;
   grid-area: specs;
-
-  flex-direction: row;
+  flex-direction: column;
+  border-radius: 1rem;
   align-items: center;
+  background-color: #264874;
   justify-content: center;
   max-width: 100%;
   max-height: 100%;
+  padding: 1rem;
 
   .spec-buttons {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-columns: repeat(3, 1fr);
+  }
+  #spec-container-text {
+    color: white;
+    padding: 1rem;
   }
 `;
 export const StyledSpecButton = styled.button`
@@ -111,9 +120,9 @@ export const StyledSpecButton = styled.button`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 1fr;
   padding: 0.7rem;
-  margin: 0.5rem;
+  margin: 0.2rem;
   font-size: 0.8rem;
   background: ${(props) => props.color};
   color: #fff;

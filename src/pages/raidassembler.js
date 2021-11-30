@@ -82,6 +82,7 @@ const RaidAssembler = () => {
           onClick={handleRightMenuToggle}
         />
         <SpecContainer className="spec-container">
+          <h1 id="spec-container-text">Spec Button container</h1>
           <SpecButtons
             className="spec-buttons"
             specs={SpecArray}
