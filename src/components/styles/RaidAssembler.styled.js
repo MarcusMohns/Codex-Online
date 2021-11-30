@@ -103,7 +103,7 @@ export const SpecContainer = styled.section`
     flex-direction: column;
     border-radius: 0.5rem;
     align-items: center;
-    background-color: #264874;
+    background-color: rgba(68, 68, 68, 80%);
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
@@ -126,7 +126,7 @@ export const StyledSpecButton = styled.button`
   font-weight: bold;
   padding: 0.7rem;
   color: #fff;
-  transition: 0.4s;
+  transition: 0.2s;
   background: ${(props) => props.color};
   cursor: pointer;
 
@@ -134,11 +134,11 @@ export const StyledSpecButton = styled.button`
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
 
   &:hover {
-    border: 2px solid black;
+    transform: scale(95%);
   }
 
   &:active {
-    filter: saturate(150%);
+    transform: scale(90%);
   }
   img {
     width: 1.1rem;
