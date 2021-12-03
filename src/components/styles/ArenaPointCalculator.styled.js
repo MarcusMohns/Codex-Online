@@ -5,14 +5,14 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #444444;
+  background-color: rgba(99, 102, 106, 0.5);
   flex-direction: column;
   box-sizing: border-box;
   max-width: 100vw;
   max-height: 100vw;
   min-height: 100%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 20%;
   opacity: 90%;
   border-radius: 5px;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
@@ -21,7 +21,7 @@ export const Main = styled.main`
   @media (min-width: 1200px) {
     align-items: center;
     justify-content: top;
-    max-width: 95vw;
+    max-width: 100vw;
     min-width: 75vw;
   }
 

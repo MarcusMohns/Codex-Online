@@ -5,13 +5,13 @@ export const Main = styled.main`
   flex-direction: row;
   align-items: start;
   justify-content: space-evenly;
-  background-color: #444444;
+  background-color: rgba(99, 102, 106, 0.5);
   box-sizing: border-box;
-  max-width: 95vw;
+  max-width: 100vw;
   min-height: 75vw;
   margin: auto;
   padding: 3rem;
-  margin-top: 10%;
+  margin-top: 20%;
   opacity: 90%;
   border-radius: 5px;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);

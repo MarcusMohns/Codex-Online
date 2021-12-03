@@ -12,8 +12,8 @@ export const Main = styled.main`
   min-height: 100vw;
   margin: auto;
   min-height: 100%;
-  margin-top: 10%;
-  background-color: #444444;
+  margin-top: 20%;
+  background-color: rgba(99, 102, 106, 0.5);
   opacity: 90%;
 
   @media (min-width: 1200px) {
@@ -26,7 +26,7 @@ export const Main = styled.main`
       "Buffs Buffs";
 
     padding: 2rem;
-    max-width: 95vw;
+    max-width: 100vw;
     min-height: 95vw;
     border-radius: 5px;
   }

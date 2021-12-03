@@ -130,15 +130,15 @@ body,
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   box-sizing: border-box;
 }
 
 body {
   background-color: black;
-  /* background-image: url("/src/images/background.png");
-	background-repeat: no-repeat;
-	background-position: top; */
+  background-image: url("/src/images/background.png");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 /* COLOR PALETTE 

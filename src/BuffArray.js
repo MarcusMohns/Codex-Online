@@ -67,7 +67,7 @@ const BuffArray = [
   },
   {
     name: "Intellect",
-    source: ["Affliction Warlock", "Warriors"],
+    source: ["Affliction Warlock", "Mages"],
   },
   {
     name: "Mana per 5",
