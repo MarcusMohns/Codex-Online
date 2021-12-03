@@ -7,13 +7,13 @@ const SpecList = [
       {
         category: "Agility and Strength",
         name: "Horn of Winter",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Horn_Of_Winter.png").default,
         text: "The Death Knight blows the Horn of Winter, which generates 10 runic power and increases total Strength and Agility of all party or raid members within 30 yards by 155. Lasts 2 min.",
       },
       {
         category: "Attack Power %",
         name: "Abomination's Might",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Aboms_Might.png").default,
         text: "Increases the attack power by 10% of party and raid members whitin 100 yards. Also Increases your total Strength by 2%",
       },
     ],
@@ -26,7 +26,7 @@ const SpecList = [
       {
         category: "Agility and Strength",
         name: "Horn of Winter",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Horn_Of_Winter.png").default,
         text: "The Death Knight blows the Horn of Winter, which generates 10 runic power and increases total Strength and Agility of all party or raid members within 30 yards by 155. Lasts 2 min.",
       },
       {
@@ -51,13 +51,13 @@ const SpecList = [
       {
         category: "Agility and Strength",
         name: "Horn of Winter",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Horn_Of_Winter.png").default,
         text: "The Death Knight blows the Horn of Winter, which generates 10 runic power and increases total Strength and Agility of all party or raid members within 30 yards by 155. Lasts 2 min.",
       },
       {
         category: "Melee Haste",
         name: "Improved Icy Talons",
-        image: require("./images/Ebon_Plaguebringer.png").default,
+        image: require("./images/Icy_Talons.png").default,
         text: "Increases the melee haste of all party and raid members within 100 yds by 20% and your haste by an additional 5%.",
       },
     ],
@@ -76,13 +76,13 @@ const SpecList = [
       {
         category: "Spell Crit",
         name: "Moonkin Form",
-        image: require("./images/Ebon_Plaguebringer.png").default,
+        image: require("./images/Moonkin_Aura.png").default,
         text: "Shapeshift into Moonkin Form. While in this form the armor contribution from items is increased by 370%, damage taken while stunned is reduced by 15%, and all party and raid members within 100 yards have their spell critical chance increased by 5%. Single target spell critical strikes in this form have a chance to instantly regenerate 2% of your total mana. The Moonkin can not cast healing or resurrection spells while shapeshifted.",
       },
       {
         category: "Mark of the Wild",
         name: "Mark of the Wild",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Mark_Of_The_Wild.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -94,7 +94,7 @@ const SpecList = [
       {
         category: "Spell Hit",
         name: "Improved Faerie Fire",
-        image: require("./images/Ebon_Plaguebringer.png").default,
+        image: require("./images/Faerie_Fire.png").default,
         text: "Your Faerie Fire spell also increases the chance the target will be hit by spell attacks by 3%, and increases the critical strike chance of your damage spells by 3% on targets afflicted by Faerie Fire.",
       },
     ],
@@ -113,13 +113,13 @@ const SpecList = [
       {
         category: "Armor Reduction (Minor)",
         name: "Faerie Fire",
-        image: require("./images/Ebon_Plaguebringer.png").default,
+        image: require("./images/Faerie_Fire.png").default,
         text: "Shapeshift into Moonkin Form. While in this form the armor contribution from items is increased by 370%, damage taken while stunned is reduced by 15%, and all party and raid members within 100 yards have their spell critical chance increased by 5%. Single target spell critical strikes in this form have a chance to instantly regenerate 2% of your total mana. The Moonkin can not cast healing or resurrection spells while shapeshifted.",
       },
       {
         category: "Mark of the Wild",
         name: "Mark of the Wild",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Mark_Of_The_Wild.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -138,13 +138,13 @@ const SpecList = [
       {
         category: "Mark of the Wild",
         name: "Mark of the Wild",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Mark_Of_The_Wild.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Healing Recieved %",
         name: "Tree of Life",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Improved_Tree_Form.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -170,7 +170,7 @@ const SpecList = [
       {
         category: "Attack Power %",
         name: "Trueshot Aura",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Trueshot_Aura.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -183,7 +183,7 @@ const SpecList = [
       {
         category: "Replenishment",
         name: "Hunting Party",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Replenishment.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -202,7 +202,7 @@ const SpecList = [
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Intellect.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -221,7 +221,7 @@ const SpecList = [
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Intellect.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -240,13 +240,13 @@ const SpecList = [
       {
         category: "Replenishment",
         name: "Enduring Winter",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Replenishment.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Intellect.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -266,13 +266,13 @@ const SpecList = [
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Greater_Blessing_Of_Wisdom.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Greater_Blessing_Of_Kings.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -291,13 +291,13 @@ const SpecList = [
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Greater_Blessing_Of_Wisdom.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Greater_Blessing_Of_Kings.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -309,7 +309,7 @@ const SpecList = [
       {
         category: "Damage Reduction %",
         name: "Blessing of Sanctuary",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Greater_Blessing_Of_Sanctuary.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -334,13 +334,13 @@ const SpecList = [
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Greater_Blessing_Of_Wisdom.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Greater_Blessing_Of_Kings.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -358,7 +358,7 @@ const SpecList = [
       {
         category: "Replenishment",
         name: "Judgements of the Wise",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Replenishment.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -389,13 +389,13 @@ const SpecList = [
       {
         category: "Spirit",
         name: "Divine Spirit ",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Prayer_of_Spirit.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Word_Fortitude.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -414,13 +414,13 @@ const SpecList = [
       {
         category: "Spirit",
         name: "Divine Spirit ",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Prayer_of_Spirit.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Word_Fortitude.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -439,13 +439,13 @@ const SpecList = [
       {
         category: "Replenishment",
         name: "Vampiric Touch",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Replenishment.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Word_Fortitude.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -510,19 +510,19 @@ const SpecList = [
       {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Strength_Of_Earth_Totem.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Bloodlust/Heroism",
         name: "Bloodlust/Heroism",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Bloodlust.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Mana per 5",
         name: "Mana Spring Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Mana_Spring_Totem.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -534,19 +534,19 @@ const SpecList = [
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Wrath_Of_Air.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Spellpower (Major)",
         name: "Totem of Wrath",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Totem_Of_Wrath.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Crit Strike %",
         name: "Totem of Wrath",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Totem_Of_Wrath.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -565,19 +565,19 @@ const SpecList = [
       {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Strength_Of_Earth_Totem.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Bloodlust/Heroism",
         name: "Bloodlust/Heroism",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Bloodlust.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Mana per 5",
         name: "Mana Spring Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Mana_Spring_Totem.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -589,7 +589,7 @@ const SpecList = [
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Wrath_Of_Air.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -601,7 +601,7 @@ const SpecList = [
       {
         category: "Melee Haste",
         name: "Improved Windfury Totem ",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Windfury.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
@@ -614,19 +614,19 @@ const SpecList = [
       {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Strength_Of_Earth_Totem.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Bloodlust/Heroism",
         name: "Bloodlust/Heroism",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Bloodlust.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
         category: "Mana per 5",
         name: "Mana Spring Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Mana_Spring_Totem.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -638,7 +638,7 @@ const SpecList = [
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Wrath_Of_Air.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -657,7 +657,7 @@ const SpecList = [
       {
         category: "Attack Power",
         name: "Battle Shout",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Battle_Shout.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -694,7 +694,7 @@ const SpecList = [
       {
         category: "Attack Power",
         name: "Battle Shout",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Battle_Shout.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -726,7 +726,7 @@ const SpecList = [
       {
         category: "Attack Power",
         name: "Battle Shout",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Battle_Shout.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
       {
@@ -837,7 +837,7 @@ const SpecList = [
       {
         category: "Replenishment",
         name: "Improved Soul Leech",
-        image: require("./images/dk_unholy.png").default,
+        image: require("./images/Replenishment.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
