@@ -2,9 +2,10 @@ import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
 import { CgChevronDoubleLeftR } from "react-icons/cg";
 import styled from "styled-components";
+import COLORS from "../../components";
+
 export const Nav = styled.nav`
-  position: absolute;
-  background: #264874;
+  background: ${COLORS.primary};
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -15,63 +16,61 @@ export const Nav = styled.nav`
   @media screen and (min-width: 768px) {
     position: sticky;
     top: 0px;
-    opacity: ${(props) => (props.shrunk ? `75%` : `100%`)};
+    background: ${(props) =>
+      props.shrunk ? `${COLORS.fadedPrimary}` : `${COLORS.primary}`};
     height: ${(props) => (props.shrunk ? `75px` : `150px`)};
   }
 
-  .left-menu {
+  .profile-menu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    background-color: #264874;
+    background-color: rgba(000, 000, 000, 1);
     color: white;
     position: fixed;
-    width: 50%;
-    height: 80%;
-    top: 15%;
-    left: 0;
+    width: 25%;
+    height: 100%;
+    right: 0;
     font-size: 1.8rem;
     cursor: pointer;
-    z-index: 1;
+    z-index: 100;
     border-radius: 0.3rem;
     transition: all 300ms;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 
     @media screen and (min-width: 1200px) {
-      width: 25%;
+      width: 10%;
     }
 
     .double-arrow-right {
       transition: all 300ms;
-      transform: translate(100%);
-      align-self: center;
-      color: black;
       opacity: 100%;
+      transform: translate(-100%, 200%);
     }
   }
-  .hide-left-menu {
+  .hide-profile-menu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    background-color: #264874;
+    background-color: rgba(38, 72, 116, 1);
     color: white;
-    position: fixed;
-    width: 50%;
-    height: 80%;
-    top: 15%;
-    left: 0;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    right: 0;
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 1;
     border-radius: 0.3rem;
     transition: all 300ms;
-    transform: translate(-100%);
+    transform: translate(100%);
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 
+    @media screen and (min-width: 1200px) {
+      width: 10%;
+    }
     .double-arrow-right {
       transition: all 300ms;
-      transform: rotate(180deg) translate(-100%);
-      align-self: center;
+      opacity: 100%;
+      transform: translate(-100%, 200%);
     }
   }
 
@@ -102,7 +101,6 @@ export const BarsNavLink = styled(Link)`
 
 export const NavLink = styled(Link)`
   color: #fff;
-  background: #264874;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -126,9 +124,9 @@ export const Bars = styled(FaBars)`
   display: block;
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   color: white;
-  transform: translate(-100%, 75%);
+  transform: translate(100%, 75%);
   font-size: 1.8rem;
   cursor: pointer;
   @media screen and (min-width: 768px) {

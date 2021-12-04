@@ -14,9 +14,9 @@ const Navbar = () => {
   const handleNavBarToggle = () => {
     setBarsMenuOpen(!barsMenuOpen);
   };
-  const [leftMenuOpen, setLeftMenuOpen] = useState(false);
-  const handleLeftMenuToggle = () => {
-    setLeftMenuOpen(!leftMenuOpen);
+  const [profileMenuOpen, setProfileMenuOpen] = useState(false);
+  const handleProfileMenuToggle = () => {
+    setProfileMenuOpen(!profileMenuOpen);
   };
 
   const [isShrunk, setShrunk] = useState(false);
@@ -52,10 +52,12 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="logo" />
       </NavLink>
 
-      <div className={`${leftMenuOpen ? "left-menu" : "hide-left-menu"}`}>
+      <div
+        className={`${profileMenuOpen ? "profile-menu" : "hide-profile-menu"}`}
+      >
         <DoubleArrowLeft
           className="double-arrow-right"
-          onClick={handleLeftMenuToggle}
+          onClick={handleProfileMenuToggle}
         />
       </div>
       <Bars onClick={handleNavBarToggle} />
