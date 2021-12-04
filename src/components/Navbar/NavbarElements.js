@@ -3,14 +3,20 @@ import { NavLink as Link } from "react-router-dom";
 import { CgChevronDoubleLeftR } from "react-icons/cg";
 import styled from "styled-components";
 export const Nav = styled.nav`
+  position: absolute;
   background: #264874;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 10%;
+  height: 150px;
+  transition: 0.4s;
+  z-index: 500;
 
   @media screen and (min-width: 768px) {
-    height: 10%;
+    position: sticky;
+    top: 0px;
+    opacity: ${(props) => (props.shrunk ? `75%` : `100%`)};
+    height: ${(props) => (props.shrunk ? `75px` : `150px`)};
   }
 
   .left-menu {

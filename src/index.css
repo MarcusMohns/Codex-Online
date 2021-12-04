@@ -122,13 +122,6 @@ table {
   border-spacing: 0;
 }
 
-html,
-body,
-#app,
-#root {
-  height: 100%;
-}
-
 html {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;

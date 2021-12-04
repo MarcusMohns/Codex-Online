@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Nav,
   NavLink,
@@ -19,8 +19,35 @@ const Navbar = () => {
     setLeftMenuOpen(!leftMenuOpen);
   };
 
+  const [isShrunk, setShrunk] = useState(false);
+  useEffect(() => {
+    const onScroll = () => {
+      setShrunk((isShrunk) => {
+        if (
+          !isShrunk &&
+          (document.body.scrollTop > 100 ||
+            document.documentElement.scrollTop > 100)
+        ) {
+          return true;
+        }
+
+        if (
+          isShrunk &&
+          document.body.scrollTop < 10 &&
+          document.documentElement.scrollTop < 10
+        ) {
+          return false;
+        }
+        return isShrunk;
+      });
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <Nav>
+    <Nav shrunk={isShrunk}>
       <NavLink to="/home">
         <img src={logo} alt="logo" className="logo" />
       </NavLink>
@@ -33,9 +60,7 @@ const Navbar = () => {
       </div>
       <Bars onClick={handleNavBarToggle} />
       <div
-        className={`barsMenu ${
-          barsMenuOpen ? " showBarsMenu" : "hideBarsMenu"
-        }`}
+        className={`barsMenu ${barsMenuOpen ? "showBarsMenu" : "hideBarsMenu"}`}
         onClick={handleNavBarToggle}
       >
         <BarsNavLink to="/home">Home</BarsNavLink>

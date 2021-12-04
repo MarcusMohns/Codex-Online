@@ -110,8 +110,6 @@ export const GemTableContainer = styled.section`
   th {
     color: #fff;
     padding: 1rem;
-    position: sticky;
-    top: 0;
     background-color: #264874;
     user-select: none;
   }
@@ -224,7 +222,6 @@ export const GemTableContainer = styled.section`
     .gemColorCell {
       font-weight: 300;
       border: none;
-      position: sticky;
     }
     .gemStatsCell {
       box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
