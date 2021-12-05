@@ -1,4 +1,5 @@
 import { FaSort } from "react-icons/fa";
+
 const GemTable = ({ gems, onClick }) => {
   return (
     <table className="gemTable">

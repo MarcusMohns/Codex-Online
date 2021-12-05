@@ -182,7 +182,7 @@ export const GemTableContainer = styled.section`
     cursor: pointer;
     .sortImage {
       transition: transform 450ms;
-      z-index: 0;
+      pointer-events: none;
     }
     &:hover {
       color: #256ce1;
