@@ -14,7 +14,6 @@ export const Main = styled.main`
   min-height: 100%;
   margin-top: 20%;
   background-color: rgba(99, 102, 106, 0.5);
-  opacity: 90%;
 
   @media (min-width: 1200px) {
     display: grid;
