@@ -28,7 +28,6 @@ export const Main = styled.main`
     padding: 2rem;
     max-width: 100vw;
     min-height: 95vw;
-    border-radius: 5px;
   }
 
   .right-menu {

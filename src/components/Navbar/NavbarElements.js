@@ -8,14 +8,15 @@ export const Nav = styled.nav`
   background: ${COLORS.primary};
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   height: 150px;
   transition: 0.4s;
   z-index: 500;
 
   @media screen and (min-width: 768px) {
     position: sticky;
+    justify-content: space-evenly;
     top: 0px;
     background: ${(props) =>
       props.shrunk ? `${COLORS.fadedPrimary}` : `${COLORS.primary}`};
@@ -29,12 +30,12 @@ export const Nav = styled.nav`
     width: 200px;
     height: 500px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
-    transform: translate(0, 60%);
+    transform: translate(-50%, 0%);
     border-radius: 0.5rem;
     transition: 0.5ms all;
-
     @media screen and (min-width: 1200px) {
       width: 200px;
+      transform: translate(0, 60%);
     }
   }
   .hide-profile-menu {
@@ -46,15 +47,16 @@ export const Nav = styled.nav`
   }
 
   .showBarsMenu {
+    padding-top: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 100%;
+    height: 1000vw;
     width: 100%;
-    position: fixed;
-    z-index: 1;
-    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    z-index: 10000;
     background-color: rgba(0, 0, 0, 0.9);
   }
 
@@ -92,12 +94,11 @@ export const NavLink = styled(Link)`
   }
 `;
 export const Bars = styled(FaBars)`
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
   color: white;
-  transform: translate(100%, 75%);
+  transform: translate(100%, 200%);
   font-size: 1.8rem;
   cursor: pointer;
   @media screen and (min-width: 768px) {
@@ -106,10 +107,21 @@ export const Bars = styled(FaBars)`
 `;
 
 export const ProfileContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  font-size: 1.8rem;
+  transform: translate(-100%, 150%);
+
+  @media screen and (min-width: 768px) {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: none;
+  }
 `;
 
 export const ProfileImage = styled(CgProfile)`

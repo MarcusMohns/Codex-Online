@@ -14,7 +14,6 @@ export const Main = styled.main`
   margin: auto;
   margin-top: 20%;
   opacity: 90%;
-  border-radius: 5px;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   padding: 3rem;
 
