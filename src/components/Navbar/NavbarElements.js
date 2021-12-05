@@ -1,6 +1,6 @@
 import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
-import { CgChevronDoubleLeftR } from "react-icons/cg";
+import { CgProfile } from "react-icons/cg";
 import styled from "styled-components";
 import COLORS from "../../components";
 
@@ -8,7 +8,8 @@ export const Nav = styled.nav`
   background: ${COLORS.primary};
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   height: 150px;
   transition: 0.4s;
   z-index: 500;
@@ -23,54 +24,24 @@ export const Nav = styled.nav`
 
   .profile-menu {
     display: flex;
-    flex-direction: row;
-    background-color: rgba(000, 000, 000, 1);
-    color: white;
-    position: fixed;
-    width: 25%;
-    height: 100%;
-    right: 0;
-    font-size: 1.8rem;
-    cursor: pointer;
-    z-index: 100;
-    border-radius: 0.3rem;
-    transition: all 300ms;
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 500px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+    transform: translate(0, 60%);
+    border-radius: 0.5rem;
+    transition: 0.5ms all;
 
     @media screen and (min-width: 1200px) {
-      width: 10%;
-    }
-
-    .double-arrow-right {
-      transition: all 300ms;
-      opacity: 100%;
-      transform: translate(-100%, 200%);
+      width: 200px;
     }
   }
   .hide-profile-menu {
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(38, 72, 116, 1);
-    color: white;
     position: absolute;
-    width: 25%;
-    height: 100%;
-    right: 0;
-    font-size: 1.8rem;
-    cursor: pointer;
-    z-index: 1;
-    border-radius: 0.3rem;
-    transition: all 300ms;
-    transform: translate(100%);
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 
     @media screen and (min-width: 1200px) {
-      width: 10%;
-    }
-    .double-arrow-right {
-      transition: all 300ms;
-      opacity: 100%;
-      transform: translate(-100%, 200%);
     }
   }
 
@@ -134,12 +105,19 @@ export const Bars = styled(FaBars)`
   }
 `;
 
-export const DoubleArrowLeft = styled(CgChevronDoubleLeftR)`
+export const ProfileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ProfileImage = styled(CgProfile)`
   color: white;
   font-size: 2rem;
   cursor: pointer;
-  opacity: 50%;
   z-index: 2;
+  position: relative;
 `;
 
 export const NavMenu = styled.div`

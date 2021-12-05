@@ -5,7 +5,8 @@ import {
   Bars,
   BarsNavLink,
   NavMenu,
-  DoubleArrowLeft,
+  ProfileImage,
+  ProfileContainer,
 } from "./NavbarElements";
 import logo from "../../images/icon.png";
 
@@ -52,14 +53,6 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="logo" />
       </NavLink>
 
-      <div
-        className={`${profileMenuOpen ? "profile-menu" : "hide-profile-menu"}`}
-      >
-        <DoubleArrowLeft
-          className="double-arrow-right"
-          onClick={handleProfileMenuToggle}
-        />
-      </div>
       <Bars onClick={handleNavBarToggle} />
       <div
         className={`barsMenu ${barsMenuOpen ? "showBarsMenu" : "hideBarsMenu"}`}
@@ -80,6 +73,15 @@ const Navbar = () => {
         <NavLink to="/gemfinder">Gem Finder</NavLink>
         <NavLink to="/about">About</NavLink>
       </NavMenu>
+      <ProfileContainer>
+        <ProfileImage onClick={handleProfileMenuToggle} />
+
+        <div
+          className={`${
+            profileMenuOpen ? "profile-menu" : "hide-profile-menu"
+          }`}
+        ></div>
+      </ProfileContainer>
     </Nav>
   );
 };
