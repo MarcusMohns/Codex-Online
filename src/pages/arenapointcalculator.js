@@ -93,7 +93,7 @@ function Arenapointcalculator() {
     <Main>
       <ArenaContainer>
         <div className="textArea">
-          <h2>Arena Points rewarded</h2>
+          <h2>Arena Points Rewarded</h2>
           <h3>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

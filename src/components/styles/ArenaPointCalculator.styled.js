@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import COLORS from "../../components";
 export const Main = styled.main`
   // Mobile
   display: flex;
@@ -48,13 +48,18 @@ export const ArenaContainer = styled.section`
     box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.1);
 
     h2 {
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      background-color: ${COLORS.primary};
+      color: ${COLORS.specialText};
+      text-align: center;
       letter-spacing: 1px;
-      font-weight: 800;
-      font-size: 1.5rem;
+      padding: 1.2rem;
+      font-size: 1rem;
     }
     h3 {
       padding: 2rem;
-      opacity: 70%;
       font-size: 1rem;
     }
   }

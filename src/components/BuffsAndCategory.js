@@ -8,6 +8,7 @@ import {
 
 const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
   let newBuff = [];
+  let newBuffs = [];
   let count = 0;
   let categoryColor = "pink";
   let AllBuffsInRaid = Object.values(currentBuffs);
@@ -16,14 +17,19 @@ const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
     // iterate over state
     for (let buff of aPlayersBuffs) {
       if (buff.buffCategory === category) {
+        newBuffs.push(buff.buffName);
+
         // if the buff and the category thats being created match
         categoryColor = "#72e263";
+
         newBuff.push(
           <StyledBuff key={count++}>
             <p>{buff.buffName}</p>
             <img src={buff.buffImg} alt="buff icon" />
+            <p>{newBuffs.length}</p>
           </StyledBuff>
         );
+
         // add buff to newBuff
       }
     }

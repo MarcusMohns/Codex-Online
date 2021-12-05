@@ -164,6 +164,7 @@ export const RaidContainer = styled.section`
   border-radius: 0.5rem;
   background-color: white;
   padding: 1rem;
+  margin-bottom: 1rem;
   min-width: 100%;
   max-height: 100%;
 
@@ -254,7 +255,6 @@ export const CategoryContainer = styled.div`
 
   @media (min-width: 1200px) {
     flex-direction: row;
-    border-bottom: 1px solid grey;
   }
 `;
 
@@ -306,8 +306,8 @@ export const StyledCategory = styled.div`
   justify-content: space-between;
   user-select: none;
   cursor: pointer;
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.2rem;
   background-color: ${(props) => props.color};
   transition: background-color 0.5s;
   color: black;
