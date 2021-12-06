@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
+import COLORS from "../../components";
 
 export const Main = styled.main`
   display: flex;
@@ -13,7 +14,7 @@ export const Main = styled.main`
   margin: auto;
   min-height: 100%;
   margin-top: 20%;
-  background-color: rgba(99, 102, 106, 0.5);
+  background-color: ${COLORS.background};
 
   @media (min-width: 1200px) {
     display: grid;
@@ -101,7 +102,7 @@ export const SpecContainer = styled.section`
     flex-direction: column;
     border-radius: 0.5rem;
     align-items: center;
-    background-color: rgba(68, 68, 68, 80%);
+    background-color: ${COLORS.fadedPrimary};
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
@@ -115,7 +116,7 @@ export const SpecContainer = styled.section`
     grid-template-columns: repeat(3, 1fr);
   }
   #spec-container-text {
-    color: #fff;
+    color: ${COLORS.lighttext};
     padding: 1rem;
   }
 `;
@@ -123,7 +124,7 @@ export const StyledSpecButton = styled.button`
   display: flex;
   font-weight: bold;
   padding: 0.7rem;
-  color: #fff;
+  color: ${COLORS.lighttext};
   transition: 0.2s;
   background: ${(props) => props.color};
   cursor: pointer;
@@ -162,7 +163,7 @@ export const RaidContainer = styled.section`
   flex-direction: column;
   align-items: flex-start;
   border-radius: 0.5rem;
-  background-color: white;
+  background-color: #fff;
   padding: 1rem;
   margin-bottom: 1rem;
   min-width: 100%;
@@ -196,7 +197,7 @@ export const StyledPlayer = styled.div`
   border-radius: 0.33rem;
   border: 1px solid #dcdcdc;
   cursor: pointer;
-  color: #666666;
+  color: ${COLORS.darktext};
   font-size: 0.7rem;
   padding: 0.5rem;
   text-shadow: 0px 1px 0px #ffffff;
@@ -264,9 +265,14 @@ export const StyledBuff = styled.div`
   align-items: center;
   justify-content: space-between;
   font-size: 0.8rem;
-  padding: 0.5rem;
+  padding: 0.2rem;
+  border: 1px solid grey;
+  background-color: ${COLORS.highlight};
+  border-radius: 5px;
+  margin: 1px;
 
   img {
+    width: 25px;
     border-radius: 20%;
     margin-left: 0.5rem;
     opacity: 0%;
@@ -279,7 +285,7 @@ export const StyledBuff = styled.div`
     opacity: 0%;
     animation-name: FadeIn;
     animation-duration: 0.5s;
-    color: #666666;
+    color: ${COLORS.darktext};
     animation-fill-mode: forwards;
   }
 
@@ -307,10 +313,11 @@ export const StyledCategory = styled.div`
   user-select: none;
   cursor: pointer;
   font-size: 0.9rem;
-  padding: 0.2rem;
+  padding: 0.4rem;
+  margin-right: 1px;
   background-color: ${(props) => props.color};
   transition: background-color 0.5s;
-  color: black;
+  color: ${COLORS.darktext};
   width: 100%;
 
   .tooltip {

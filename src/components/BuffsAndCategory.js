@@ -55,7 +55,7 @@ const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
             ))}
           </div>
         </div>
-        {category} {newBuffs.length > 0 ? `x${newBuffs.length}` : ""}
+        {category}
         {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}
       </StyledCategory>
       {newBuffs.map((buff) => (
@@ -70,7 +70,7 @@ const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
 
 BuffsAndCategory.defaultProps = {
   category: "No category found",
-  newBuffs: "No Buff found",
+  currentBuffs: "No Buffs found",
 };
 
 export default BuffsAndCategory;
