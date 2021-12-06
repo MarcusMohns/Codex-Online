@@ -7,25 +7,38 @@ import {
 } from "./styles/RaidAssembler.styled";
 
 const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
-  let newBuff = [];
-  let count = 0;
+  let newBuffs = [];
+  let exists_already = [];
   let categoryColor = "pink";
   let AllBuffsInRaid = Object.values(currentBuffs);
 
-  for (let aPlayersBuffs of AllBuffsInRaid) {
-    // iterate over state
-    for (let buff of aPlayersBuffs) {
-      if (buff.buffCategory === category) {
-        categoryColor = "#72e263";
-        console.log(newBuff[0]);
-        newBuff.push(
-          <StyledBuff key={count++}>
-            <p>{buff.buffName}</p>
-            <img src={buff.buffImg} alt="buff icon" />
-          </StyledBuff>
-        );
+  if (AllBuffsInRaid.length > 0) {
+    for (let aPlayersBuffs of AllBuffsInRaid) {
+      // iterate over state
+      for (let buff of aPlayersBuffs) {
+        if (buff.buffCategory === category) {
+          // If buff matches category being created
+          categoryColor = "#72e263";
 
-        // add buff to newBuff
+          if (!exists_already.includes(buff.buffName)) {
+            // if buff is not already displayed
+            exists_already.push(buff.buffName);
+            newBuffs.push({
+              name: buff.buffName,
+              image: buff.buffImg,
+              count: 1,
+            });
+          } else {
+            // if it is displayed add +1 to the count.
+            for (let newBuff of newBuffs) {
+              if (newBuff.name === buff.buffName) {
+                newBuff.count++;
+              }
+            }
+          }
+
+          // add buff to newBuffs
+        }
       }
     }
   }
@@ -42,17 +55,22 @@ const BuffsAndCategory = ({ category, currentBuffs, categoryTooltip }) => {
             ))}
           </div>
         </div>
-        {category} {newBuff.length > 0 ? `x${newBuff.length}` : ""}
+        {category} {newBuffs.length > 0 ? `x${newBuffs.length}` : ""}
         {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}
       </StyledCategory>
-      {newBuff}
+      {newBuffs.map((buff) => (
+        <StyledBuff key={(buff.count, buff.name)}>
+          {buff.count} <p>x {buff.name} </p>
+          <img src={buff.image} alt="buff icon" />
+        </StyledBuff>
+      ))}
     </CategoryContainer>
   );
 };
 
 BuffsAndCategory.defaultProps = {
   category: "No category found",
-  newBuff: "No Buff found",
+  newBuffs: "No Buff found",
 };
 
 export default BuffsAndCategory;
