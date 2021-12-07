@@ -17,6 +17,7 @@ const SpecList = [
         text: "Increases the attack power by 10% of party and raid members whitin 100 yards. Also Increases your total Strength by 2%",
       },
     ],
+    utility: ["Death Grip", "Hysteria"],
   },
   {
     text: "Unholy Death Knight",
@@ -42,6 +43,7 @@ const SpecList = [
         text: "Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 30%.",
       },
     ],
+    utility: ["Death Grip"],
   },
   {
     text: "Frost Death Knight",
@@ -61,6 +63,7 @@ const SpecList = [
         text: "Increases the melee haste of all party and raid members within 100 yds by 20% and your haste by an additional 5%.",
       },
     ],
+    utility: ["Death Grip"],
   },
   {
     text: "Balance Druid",
@@ -98,6 +101,7 @@ const SpecList = [
         text: "Your Faerie Fire spell also increases the chance the target will be hit by spell attacks by 3%, and increases the critical strike chance of your damage spells by 3% on targets afflicted by Faerie Fire.",
       },
     ],
+    utility: ["Rebirth", "Innervate"],
   },
   {
     text: "Feral Druid",
@@ -129,6 +133,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Rebirth", "Innervate"],
   },
   {
     text: "Restoration Druid",
@@ -148,6 +153,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Rebirth", "Innervate"],
   },
   {
     text: "Beast Mastery Hunter",
@@ -161,6 +167,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Misdirection"],
   },
   {
     text: "Marksman Hunter",
@@ -174,6 +181,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Misdirection"],
   },
   {
     text: "Survival Hunter",
@@ -187,6 +195,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Misdirection"],
   },
   {
     text: "Arcane Mage",
@@ -206,6 +215,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Spellsteal"],
   },
   {
     text: "Fire Mage",
@@ -225,6 +235,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Spellsteal"],
   },
   {
     text: "Frost Mage",
@@ -250,6 +261,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Spellsteal"],
   },
 
   {
@@ -275,6 +287,13 @@ const SpecList = [
         image: require("./images/Greater_Blessing_Of_Kings.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
+    ],
+    utility: [
+      "Divine Sacrifice",
+      "Hand of Sacrifice",
+      "Hand of Protection",
+      "Hand of Freedom",
+      "Aura Mastery",
     ],
   },
   {
@@ -318,6 +337,13 @@ const SpecList = [
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
+    ],
+    utility: [
+      "Divine Sacrifice",
+      "Hand of Sacrifice",
+      "Hand of Protection",
+      "Hand of Freedom",
+      "Aura Mastery",
     ],
   },
   {
@@ -368,6 +394,13 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: [
+      "Divine Sacrifice",
+      "Hand of Sacrifice",
+      "Hand of Protection",
+      "Hand of Freedom",
+      "Aura Mastery",
+    ],
   },
   {
     text: "Discipline Priest",
@@ -399,6 +432,12 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: [
+      "Hymn of Hope",
+      "Divine Hymn",
+      "Pain Suppression",
+      "Mind Control",
+    ],
   },
   {
     text: "Holy Priest",
@@ -424,6 +463,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Hymn of Hope", "Divine Hymn", "Mind Control"],
   },
   {
     text: "Shadow Priest",
@@ -449,6 +489,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Hymn of Hope", "Divine Hymn", "Mind Control"],
   },
   {
     text: "Assassination Rogue",
@@ -468,6 +509,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Tricks of the Trade"],
   },
   {
     text: "Combat Rogue",
@@ -487,6 +529,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Tricks of the Trade"],
   },
   {
     text: "Subtlety Rogue",
@@ -500,6 +543,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Tricks of the Trade"],
   },
 
   {
@@ -556,6 +600,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Nature Resistance", "Wind Shear"],
   },
   {
     text: "Enhancement Shaman",
@@ -605,6 +650,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Nature Resistance", "Wind Shear"],
   },
   {
     text: "Restoration Shaman",
@@ -648,6 +694,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Nature Resistance", "Wind Shear"],
   },
   {
     text: "Arms Warrior",
@@ -685,6 +732,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Pummel"],
   },
   {
     text: "Fury Warrior",
@@ -716,6 +764,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Pummel"],
   },
 
   {
@@ -742,6 +791,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: ["Pummel", "Vigilance"],
   },
   {
     text: "Affliction Warlock",
@@ -779,6 +829,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: [],
   },
   {
     text: "Demonology Warlock",
@@ -810,6 +861,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: [],
   },
   {
     text: "Destruction Warlock",
@@ -841,6 +893,7 @@ const SpecList = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
+    utility: [],
   },
 ];
 

@@ -83,8 +83,7 @@ const Gemfinder = () => {
 
   const gemSorter = (gemsToSort, sortBy) => {
     if (sortBy === "quality" || sortBy === "stats") {
-      //  Sort by quality and stats in the same way we would just quality. We are usually not interested in amount of stats just
-      //  the quality of the stats e.g Rare 32 AP gems are not superior to Epic 20 STR gems in-game so we sort by quality instead.
+      //  Sort by quality and stats in the same way we would just quality.
       gemsToSort.sort(function (a, b) {
         if (
           (a.quality === "Perfect" && b.quality === "Rare") ||
