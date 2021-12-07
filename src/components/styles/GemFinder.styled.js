@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import COLORS from "../../components";
 
 export const Main = styled.main`
   display: flex;
   flex-direction: row;
   align-items: start;
   justify-content: space-evenly;
-  background-color: rgba(99, 102, 106, 0.5);
+  background-color: ${COLORS.background};
   box-sizing: border-box;
   max-width: 100vw;
   min-height: 75vw;
@@ -40,7 +41,7 @@ export const CheckBoxContainer = styled.section`
     grid-template-rows: 2fr 0fr;
     max-height: fit-content;
     max-width: fit-content;
-    background-color: #f8f8ff;
+    background-color: ${COLORS.offWhite};
     border-radius: 5px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
     border-right: 1px solid black;
@@ -49,7 +50,7 @@ export const CheckBoxContainer = styled.section`
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    background-color: #f8f8ff;
+    background-color: ${COLORS.offWhite};
     border-radius: 5px;
   }
   .category-name {
@@ -59,8 +60,8 @@ export const CheckBoxContainer = styled.section`
     padding: 0.4rem;
     height: 2rem;
     text-align: center;
-    background-color: #264874;
-    color: #f8f8ff;
+    background-color: ${COLORS.primary};
+    color: ${COLORS.offWhite};
     margin-bottom: 1rem;
   }
   .aCheckbox label,
@@ -104,19 +105,17 @@ export const GemTableContainer = styled.section`
     padding: 0.5rem;
   }
   th {
-    color: #fff;
+    color: ${COLORS.offWhite};
     padding: 1rem;
-    background-color: #264874;
+    background-color: ${COLORS.primary};
     user-select: none;
   }
-  tr {
-    background-color: green;
-  }
+
   tbody tr {
-    background-color: #f8f8ff;
+    background-color: ${COLORS.offWhite};
     color: black;
     &:hover {
-      background-color: lightblue;
+      background-color: ${COLORS.highlight};
     }
   }
   .gemNameCell {
@@ -182,10 +181,10 @@ export const GemTableContainer = styled.section`
       pointer-events: none;
     }
     &:hover {
-      color: #256ce1;
+      color: ${COLORS.highlight};
 
       .sortImage {
-        color: #f8f8ff;
+        color: ${COLORS.offWhite};
         transition: transform 325ms;
         transform: rotate(180deg);
       }
@@ -194,7 +193,7 @@ export const GemTableContainer = styled.section`
   p.gemsNotFound {
     font-size: 23px;
     text-align: center;
-    color: #f8f8ff;
+    color: ${COLORS.offWhite};
     margin: 30%;
     margin-right: 50%;
   }

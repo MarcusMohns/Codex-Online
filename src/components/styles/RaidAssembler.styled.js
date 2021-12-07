@@ -79,7 +79,7 @@ export const Main = styled.main`
 
       @media screen and (min-width: 1200px) {
         transform: translate(-50%);
-        color: #fff;
+        color: ${COLORS.offWhite};
         right: 1%;
       }
     }
@@ -163,7 +163,7 @@ export const RaidContainer = styled.section`
   flex-direction: column;
   align-items: flex-start;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: ${COLORS.offWhite};
   padding: 1rem;
   margin-bottom: 1rem;
   min-width: 100%;
@@ -193,7 +193,6 @@ export const StyledPlayer = styled.div`
   justify-content: space-between;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-  background-color: #ffffff;
   border-radius: 0.33rem;
   border: 1px solid #dcdcdc;
   cursor: pointer;
@@ -227,7 +226,7 @@ export const StyledPlayer = styled.div`
 export const BuffContainer = styled.section`
   grid-area: Buffs;
   box-sizing: border-box;
-  background-color: white;
+  background-color: ${COLORS.background};
   display: flex;
   flex-direction: column;
   align-items: top;
@@ -338,7 +337,7 @@ export const StyledCategory = styled.div`
     box-sizing: border-box;
     transition: opacity 0.5s;
     transform: translate(10%, -50%);
-    background-color: #444444;
+    background-color: black;
     opacity: 0;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -347,7 +346,7 @@ export const StyledCategory = styled.div`
     .title {
       display: flex;
       flex-direction: column;
-      background-color: #757575;
+      background-color: ${COLORS.fadedPrimary};
       width: 100%;
       height: 50px;
       border-bottom: 1px solid #444444;

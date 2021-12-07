@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   height: 150px;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   z-index: 500;
 
   @media screen and (min-width: 768px) {
@@ -26,7 +26,7 @@ export const Nav = styled.nav`
   .profile-menu {
     display: flex;
     position: absolute;
-    background-color: #fff;
+    background-color: ${COLORS.offWhite};
     width: 200px;
     height: 500px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
@@ -73,7 +73,7 @@ export const BarsNavLink = styled(Link)`
 `;
 
 export const NavLink = styled(Link)`
-  color: #fff;
+  color: ${COLORS.offWhite};
   display: flex;
   align-items: center;
   text-decoration: none;

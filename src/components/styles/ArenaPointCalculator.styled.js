@@ -33,7 +33,7 @@ export const ArenaContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f8f8ff;
+  background-color: ${COLORS.offWhite};
   margin-bottom: 3rem;
   border-radius: 5px;
   min-width: 80%;
@@ -52,7 +52,7 @@ export const ArenaContainer = styled.section`
       align-items: center;
       box-sizing: border-box;
       background-color: ${COLORS.primary};
-      color: ${COLORS.specialText};
+      color: ${COLORS.lighttext};
       text-align: center;
       letter-spacing: 1px;
       padding: 1.2rem;
@@ -79,7 +79,7 @@ export const ArenaContainer = styled.section`
   }
 
   .bracket-col {
-    background-color: lightblue;
+    background-color: ${COLORS.highlight};
     padding: 1rem;
   }
   input {
