@@ -11,16 +11,16 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   height: 150px;
-  transition: 0.4s;
+  transition: 0.5s;
   z-index: 500;
 
   @media screen and (min-width: 768px) {
     position: sticky;
     justify-content: space-evenly;
     top: 0px;
-    background: ${(props) =>
-      props.shrunk ? `${COLORS.fadedPrimary}` : `${COLORS.primary}`};
-    height: ${(props) => (props.shrunk ? `75px` : `150px`)};
+    background-color: ${(props) =>
+      props.shrunk ? `${COLORS.primary}` : `${COLORS.primaryTransparent}`};
+    height: ${(props) => (props.shrunk ? `75px` : `100px`)};
   }
 
   .profile-menu {
