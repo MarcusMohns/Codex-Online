@@ -34,7 +34,7 @@ const formReducer = (state, action) => {
 const RaidAssembler = () => {
   const [raid, setRaid] = useState([]);
   const [buffs, setBuffs] = useReducer(formReducer, {});
-  const [utilities, setUtilities] = useState([]);
+  const [utilities, setUtilities] = useReducer(formReducer, {});
   const [raidCount, setCount] = useState(0);
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
 
@@ -48,7 +48,7 @@ const RaidAssembler = () => {
       const newPlayer = { id, ...player };
       setRaid([...raid, newPlayer]);
       addBuff(id, player);
-      addUtility(player);
+      addUtility(id, player);
       setCount(raidCount + 1);
     } else {
       alert("Raid is full");
@@ -59,6 +59,7 @@ const RaidAssembler = () => {
     setRaid(raid.filter((player) => player.id !== id));
     setCount(raidCount - 1);
     deleteBuff(id);
+    deleteUtlity(id);
   };
 
   const addBuff = (id, player) => {
@@ -79,8 +80,20 @@ const RaidAssembler = () => {
     delete buffs[id];
   };
 
-  const addUtility = (player) => {
-    setUtilities([...utilities, player.utility]);
+  const addUtility = (id, player) => {
+    for (let utility of player.utility) {
+      let newUtility = {
+        name: utility.name,
+        image: utility.image,
+      };
+      setUtilities({
+        name: id,
+        value: newUtility,
+      });
+    }
+  };
+  const deleteUtlity = (id) => {
+    delete utilities[id];
   };
 
   return (

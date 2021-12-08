@@ -17,7 +17,16 @@ const SpecArray = [
         text: "Increases the attack power by 10% of party and raid members whitin 100 yards. Also Increases your total Strength by 2%",
       },
     ],
-    utility: ["Death Grip", "Hysteria"],
+    utility: [
+      {
+        name: "Death Grip",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hysteria",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Unholy Death Knight",
@@ -43,7 +52,12 @@ const SpecArray = [
         text: "Your diseases also cause Crypt Fever, which increases disease damage taken by the target by 30%.",
       },
     ],
-    utility: ["Death Grip"],
+    utility: [
+      {
+        name: "Death Grip",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Frost Death Knight",
@@ -63,7 +77,12 @@ const SpecArray = [
         text: "Increases the melee haste of all party and raid members within 100 yds by 20% and your haste by an additional 5%.",
       },
     ],
-    utility: ["Death Grip"],
+    utility: [
+      {
+        name: "Death Grip",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Balance Druid",
@@ -133,7 +152,16 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Rebirth", "Innervate"],
+    utility: [
+      {
+        name: "Rebirth",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Innervate",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Restoration Druid",
@@ -153,7 +181,16 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Rebirth", "Innervate"],
+    utility: [
+      {
+        name: "Rebirth",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Innervate",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Beast Mastery Hunter",
@@ -167,7 +204,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Misdirection"],
+    utility: [
+      {
+        name: "Misdirection",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Marksman Hunter",
@@ -181,7 +223,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Misdirection"],
+    utility: [
+      {
+        name: "Misdirection",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Survival Hunter",
@@ -195,7 +242,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Misdirection"],
+    utility: [
+      {
+        name: "Misdirection",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Arcane Mage",
@@ -215,7 +267,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Spellsteal"],
+    utility: [
+      {
+        name: "Spellsteal",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Fire Mage",
@@ -235,7 +292,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Spellsteal"],
+    utility: [
+      {
+        name: "Spellsteal",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Frost Mage",
@@ -261,7 +323,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Spellsteal"],
+    utility: [
+      {
+        name: "Spellsteal",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
 
   {
@@ -289,11 +356,26 @@ const SpecArray = [
       },
     ],
     utility: [
-      "Divine Sacrifice",
-      "Hand of Sacrifice",
-      "Hand of Protection",
-      "Hand of Freedom",
-      "Aura Mastery",
+      {
+        name: "Divine Sacrifice",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Sacrifice",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Protection",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Freedom",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Aura Mastery",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -339,11 +421,26 @@ const SpecArray = [
       },
     ],
     utility: [
-      "Divine Sacrifice",
-      "Hand of Sacrifice",
-      "Hand of Protection",
-      "Hand of Freedom",
-      "Aura Mastery",
+      {
+        name: "Divine Sacrifice",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Sacrifice",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Protection",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Freedom",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Aura Mastery",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -395,11 +492,26 @@ const SpecArray = [
       },
     ],
     utility: [
-      "Divine Sacrifice",
-      "Hand of Sacrifice",
-      "Hand of Protection",
-      "Hand of Freedom",
-      "Aura Mastery",
+      {
+        name: "Divine Sacrifice",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Sacrifice",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Protection",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Hand of Freedom",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Aura Mastery",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -433,10 +545,26 @@ const SpecArray = [
       },
     ],
     utility: [
-      "Hymn of Hope",
-      "Divine Hymn",
-      "Pain Suppression",
-      "Mind Control",
+      {
+        name: "Hymn of Hope",
+
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Divine Hymn",
+
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Pain Suppression",
+
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Mind Control",
+
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -463,7 +591,20 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Hymn of Hope", "Divine Hymn", "Mind Control"],
+    utility: [
+      {
+        name: "Hymn of Hope",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Divine Hymn",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Mind Control",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Shadow Priest",
@@ -489,7 +630,20 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Hymn of Hope", "Divine Hymn", "Mind Control"],
+    utility: [
+      {
+        name: "Hymn of Hope",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Divine Hymn",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Mind Control",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Assassination Rogue",
@@ -509,7 +663,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Tricks of the Trade"],
+    utility: [
+      {
+        name: "Tricks of the Trade",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Combat Rogue",
@@ -529,7 +688,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Tricks of the Trade"],
+    utility: [
+      {
+        name: "Tricks of the Trade",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Subtlety Rogue",
@@ -543,7 +707,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Tricks of the Trade"],
+    utility: [
+      {
+        name: "Tricks of the Trade",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
 
   {
@@ -600,7 +769,16 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Nature Resistance", "Wind Shear"],
+    utility: [
+      {
+        name: "Nature resistance",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Wind Shear",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Enhancement Shaman",
@@ -650,7 +828,16 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Nature Resistance", "Wind Shear"],
+    utility: [
+      {
+        name: "Nature resistance",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Wind Shear",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Restoration Shaman",
@@ -694,7 +881,16 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Nature Resistance", "Wind Shear"],
+    utility: [
+      {
+        name: "Nature resistance",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Wind Shear",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Arms Warrior",
@@ -732,7 +928,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Pummel"],
+    utility: [
+      {
+        name: "Pummel",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Fury Warrior",
@@ -764,7 +965,12 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Pummel"],
+    utility: [
+      {
+        name: "Pummel",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
 
   {
@@ -791,7 +997,16 @@ const SpecArray = [
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },
     ],
-    utility: ["Pummel", "Vigilance"],
+    utility: [
+      {
+        name: "Pummel",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Vigilance",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Affliction Warlock",

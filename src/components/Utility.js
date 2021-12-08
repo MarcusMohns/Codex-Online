@@ -1,5 +1,5 @@
 const Utility = ({ utility }) => {
-  return <div>{utility}</div>;
+  return utility.map((aUtility) => <div>{aUtility.name}</div>);
 };
 
 export default Utility;
