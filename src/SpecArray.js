@@ -120,7 +120,16 @@ const SpecArray = [
         text: "Your Faerie Fire spell also increases the chance the target will be hit by spell attacks by 3%, and increases the critical strike chance of your damage spells by 3% on targets afflicted by Faerie Fire.",
       },
     ],
-    utility: ["Rebirth", "Innervate"],
+    utility: [
+      {
+        name: "Rebirth",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Innervate",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Feral Druid",

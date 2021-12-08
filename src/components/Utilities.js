@@ -1,10 +1,11 @@
 import Utility from "./Utility";
 const Utilities = ({ utilities }) => {
   utilities = Object.values(utilities);
+
   return (
     <div>
-      {utilities.map((utility) => (
-        <Utility utility={utility} />
+      {utilities.map((utility, index) => (
+        <Utility key={index} utility={utility} />
       ))}
     </div>
   );
