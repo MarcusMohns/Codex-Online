@@ -3,12 +3,14 @@ import SpecArray from "../SpecArray";
 import PlayersInRaid from "../components/PlayersInRaid";
 import SpecButtons from "../components/SpecButtons";
 import BuffCategories from "../components/BuffCategories";
+import Utilities from "../components/Utilities";
 import {
   Main,
   SpecContainer,
   RaidContainer,
   BuffContainer,
   DoubleArrowLeft,
+  UtilityContainer,
 } from "../components/styles/RaidAssembler.styled";
 
 const formReducer = (state, action) => {
@@ -32,6 +34,7 @@ const formReducer = (state, action) => {
 const RaidAssembler = () => {
   const [raid, setRaid] = useState([]);
   const [buffs, setBuffs] = useReducer(formReducer, {});
+  const [utilities, setUtilities] = useState([]);
   const [raidCount, setCount] = useState(0);
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
 
@@ -45,10 +48,17 @@ const RaidAssembler = () => {
       const newPlayer = { id, ...player };
       setRaid([...raid, newPlayer]);
       addBuff(id, player);
+      addUtility(player);
       setCount(raidCount + 1);
     } else {
       alert("Raid is full");
     }
+  };
+
+  const deletePlayer = (id) => {
+    setRaid(raid.filter((player) => player.id !== id));
+    setCount(raidCount - 1);
+    deleteBuff(id);
   };
 
   const addBuff = (id, player) => {
@@ -65,13 +75,12 @@ const RaidAssembler = () => {
     }
   };
 
-  const deletePlayer = (id) => {
-    setRaid(raid.filter((player) => player.id !== id));
-    setCount(raidCount - 1);
-    deleteBuff(id);
-  };
   const deleteBuff = (id) => {
     delete buffs[id];
+  };
+
+  const addUtility = (player) => {
+    setUtilities([...utilities, player.utility]);
   };
 
   return (
@@ -99,7 +108,9 @@ const RaidAssembler = () => {
           "No players in raid!"
         )}
       </RaidContainer>
-      <div>Utility placeholder</div>
+      <UtilityContainer>
+        <Utilities utilities={utilities}></Utilities>
+      </UtilityContainer>
       <BuffContainer className="buff-container">
         <BuffCategories currentBuffs={buffs}></BuffCategories>
       </BuffContainer>

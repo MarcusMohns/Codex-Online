@@ -163,16 +163,20 @@ export const RaidContainer = styled.section`
   flex-direction: column;
   align-items: flex-start;
   border-radius: 0.5rem;
-  background-color: ${COLORS.offWhite};
-  padding: 1rem;
+  background-color: ${COLORS.background};
+  padding: 0.8rem;
   margin-bottom: 1rem;
   min-width: 100%;
   max-height: 100%;
 
   .raidCount {
+    padding: 0.7rem;
+    font-weight: 800;
     font-size: 1rem;
     letter-spacing: 1px;
     margin-bottom: 1rem;
+    background-color: ${COLORS.primary};
+    color: ${COLORS.lighttext};
   }
   .grid {
     display: grid;
@@ -183,6 +187,23 @@ export const RaidContainer = styled.section`
   @media (min-width: 1200px) {
     min-height: 420px;
     grid-area: Raid;
+  }
+`;
+export const UtilityContainer = styled.section`
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  background-color: ${COLORS.background};
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-width: 100%;
+  max-height: 100%;
+
+  @media (min-width: 1200px) {
+    min-height: 420px;
+    grid-area: Utils;
   }
 `;
 
@@ -203,7 +224,6 @@ export const StyledPlayer = styled.div`
   transition: transform 0.2;
 
   img {
-    position: relative;
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;

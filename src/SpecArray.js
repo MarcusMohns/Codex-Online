@@ -1,4 +1,4 @@
-const SpecList = [
+const SpecArray = [
   {
     text: "Blood Death Knight",
     image: require("./images/dk_blood.png").default,
@@ -897,4 +897,4 @@ const SpecList = [
   },
 ];
 
-export default SpecList;
+export default SpecArray;
