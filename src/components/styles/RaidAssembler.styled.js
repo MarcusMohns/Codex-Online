@@ -259,8 +259,10 @@ export const BuffContainer = styled.section`
 `;
 
 export const StyledBuffCategories = styled.div`
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
 
   @media (min-width: 1200px) {
   }
@@ -271,6 +273,7 @@ export const CategoryContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 100%;
   width: 100%;
 
   @media (min-width: 1200px) {
@@ -403,7 +406,7 @@ export const StyledCategory = styled.div`
 
   @media (min-width: 1200px) {
     flex-direction: row;
-    width: 20%;
+    width: 250px;
   }
 `;
 

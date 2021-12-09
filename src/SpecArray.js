@@ -142,6 +142,7 @@ const SpecArray = [
         image: require("./images/dk_unholy.png").default,
         text: "Your Moonkin Aura also causes affected targets to gain 3% haste and you to gain 30% of your spirit as additional spell damage.",
       },
+
       {
         category: "Armor Reduction (Minor)",
         name: "Faerie Fire",
@@ -156,7 +157,7 @@ const SpecArray = [
       },
       {
         category: "Bleed Damage",
-        name: "Mangle - Feral Druid",
+        name: "Mangle",
         image: require("./images/dk_unholy.png").default,
         text: "'Increases the friendly target's armor by 750, all attributes by 37 and all resistances by 54 for 30 min.'",
       },

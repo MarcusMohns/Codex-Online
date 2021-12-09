@@ -30,6 +30,10 @@ const BuffArray = [
     source: ["Shamans"],
   },
   {
+    name: "Bleed Damage",
+    source: ["Arms Warrior", "Feral Druid"],
+  },
+  {
     name: "Crit Strike %",
     source: [
       "Protection Paladin",
