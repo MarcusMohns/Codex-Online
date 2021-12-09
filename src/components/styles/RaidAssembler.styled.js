@@ -202,7 +202,6 @@ export const UtilityContainer = styled.section`
   max-height: 100%;
 
   @media (min-width: 1200px) {
-    min-height: 420px;
     grid-area: Utils;
   }
 `;
@@ -260,11 +259,12 @@ export const BuffContainer = styled.section`
 
 export const StyledBuffCategories = styled.div`
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0px 0px;
-
+  display: flex;
+  flex-direction: column;
   @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 0px;
   }
 `;
 
