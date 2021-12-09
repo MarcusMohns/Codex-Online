@@ -212,15 +212,15 @@ export const StyledPlayer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  box-shadow: inset 0px 1px 0px 0px #ffffff;
-  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background: ${(props) => props.background};
   border-radius: 0.33rem;
-  border: 1px solid #dcdcdc;
+
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
+    #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
   cursor: pointer;
-  color: ${COLORS.darktext};
-  font-size: 0.7rem;
+  color: white;
+  font-size: 0.4rem;
   padding: 0.5rem;
-  text-shadow: 0px 1px 0px #ffffff;
   transition: transform 0.2;
 
   img {
@@ -229,13 +229,13 @@ export const StyledPlayer = styled.div`
     border-radius: 50%;
   }
   &:hover {
-    transform: translateY(-0.1em);
+    transform: translateY(-0.2em);
   }
 
   @media (min-width: 1200px) {
     margin: 5px;
-    font-size: 0.8rem;
-    padding: 1rem;
+    font-size: 0.7rem;
+    padding: 0.8rem;
 
     img {
       display: normal;
