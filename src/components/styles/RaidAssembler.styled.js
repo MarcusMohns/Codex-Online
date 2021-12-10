@@ -162,19 +162,16 @@ export const RaidContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-radius: 0.5rem;
   background-color: ${COLORS.background};
-  padding: 0.8rem;
-  margin-bottom: 1rem;
   min-width: 100%;
   max-height: 100%;
+  margin-bottom: 50px;
 
   .raidCount {
     padding: 0.7rem;
     font-weight: 800;
     font-size: 1rem;
     letter-spacing: 1px;
-    margin-bottom: 1rem;
     background-color: ${COLORS.primary};
     color: ${COLORS.lighttext};
   }
@@ -183,10 +180,17 @@ export const RaidContainer = styled.section`
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: column;
+    width: 100%;
   }
   @media (min-width: 1200px) {
-    min-height: 420px;
     grid-area: Raid;
+    min-height: 95%;
+
+    .grid {
+      margin: auto;
+      width: 80%;
+      margin-bottom: auto;
+    }
   }
 `;
 
@@ -196,13 +200,12 @@ export const StyledPlayer = styled.div`
   align-items: center;
   justify-content: space-between;
   background: ${(props) => props.background};
-  border-radius: 0.33rem;
 
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
   cursor: pointer;
   color: white;
-  font-size: 0.4rem;
+  font-size: 0.8rem;
   padding: 0.5rem;
   transition: transform 0.2;
 
@@ -217,8 +220,9 @@ export const StyledPlayer = styled.div`
 
   @media (min-width: 1200px) {
     margin: 5px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 0.8rem;
+    border-radius: 0.33rem;
 
     img {
       display: normal;
@@ -400,15 +404,16 @@ export const UtilityContainer = styled.section`
   align-items: flex-start;
   box-sizing: border-box;
   flex-wrap: wrap;
-  border-radius: 0.5rem;
   background-color: ${COLORS.background};
-  padding: 1rem;
-  margin-bottom: 1rem;
   min-width: 100%;
-  max-height: 100%;
+  margin-bottom: 50px;
 
   @media (min-width: 1200px) {
     grid-area: Utils;
+    min-height: 95%;
+    padding: 2rem;
+    border-left: 1px solid black;
+    margin-bottom: 0px;
   }
 `;
 
@@ -416,6 +421,7 @@ export const StyledUtilities = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin: auto;
 `;
 
 export const StyledUtility = styled.div`
@@ -423,7 +429,7 @@ export const StyledUtility = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width:fit-content;
+  width: fit-content;
   font-size: 0.8rem;
   padding: 0.5rem;
   border: 1px solid grey;
@@ -431,26 +437,20 @@ export const StyledUtility = styled.div`
   border-radius: 5px;
   margin: 1px;
   opacity: 0%;
-    animation-name: FadeIn;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-  }
+  animation-name: FadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 
   img {
-    
     width: 30px;
     border-radius: 20%;
     margin-left: 0.5rem;
-
+  }
 
   p {
     opacity: 0%;
-
     color: ${COLORS.darktext};
- 
   }
-
-  
 `;
 
 export const CrossIcon = styled(FaRegTimesCircle)`
