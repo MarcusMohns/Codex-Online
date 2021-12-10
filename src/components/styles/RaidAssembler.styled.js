@@ -189,22 +189,6 @@ export const RaidContainer = styled.section`
     grid-area: Raid;
   }
 `;
-export const UtilityContainer = styled.section`
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 0.5rem;
-  background-color: ${COLORS.background};
-  padding: 1rem;
-  margin-bottom: 1rem;
-  min-width: 100%;
-  max-height: 100%;
-
-  @media (min-width: 1200px) {
-    grid-area: Utils;
-  }
-`;
 
 export const StyledPlayer = styled.div`
   display: flex;
@@ -408,6 +392,65 @@ export const StyledCategory = styled.div`
     flex-direction: row;
     width: 250px;
   }
+`;
+
+export const UtilityContainer = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: ${COLORS.background};
+  padding: 1rem;
+  margin-bottom: 1rem;
+  min-width: 100%;
+  max-height: 100%;
+
+  @media (min-width: 1200px) {
+    grid-area: Utils;
+  }
+`;
+
+export const StyledUtilities = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+`;
+
+export const StyledUtility = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:fit-content;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  background-color: ${COLORS.highlight};
+  border-radius: 5px;
+  margin: 1px;
+  opacity: 0%;
+    animation-name: FadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  img {
+    
+    width: 30px;
+    border-radius: 20%;
+    margin-left: 0.5rem;
+
+
+  p {
+    opacity: 0%;
+
+    color: ${COLORS.darktext};
+ 
+  }
+
+  
 `;
 
 export const CrossIcon = styled(FaRegTimesCircle)`

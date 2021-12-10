@@ -1,3 +1,4 @@
+import { StyledUtilities } from "./styles/RaidAssembler.styled";
 import Utility from "./Utility";
 const Utilities = ({ utilities }) => {
   utilities = Object.values(utilities);
@@ -23,11 +24,11 @@ const Utilities = ({ utilities }) => {
     }
   }
   return (
-    <div>
-      {currentUtils.map((utility, index) => (
-        <Utility key={index} utility={utility} />
+    <StyledUtilities>
+      {currentUtils.map((utility) => (
+        <Utility key={utility.name + utility.count} utility={utility} />
       ))}
-    </div>
+    </StyledUtilities>
   );
 };
 
