@@ -1,8 +1,10 @@
 const Utility = ({ utility }) => {
-  console.log(utility);
-  return utility.map((aUtility) => (
-    <div key={aUtility.name}>{aUtility.name}</div>
-  ));
+  return (
+    <div key={utility.name}>
+      {utility.count}x{utility.name}
+      <img src={utility.image} alt="utility spell, e.g misdirection" />
+    </div>
+  );
 };
 
 export default Utility;
