@@ -20,7 +20,7 @@ export const Main = styled.main`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1.5fr;
-    gap: 0px 0px;
+    gap: 0px 10px;
     grid-template-areas:
       "Raid Utils"
       "Buffs Buffs";
@@ -128,7 +128,7 @@ export const StyledSpecButton = styled.button`
   transition: 0.2s;
   background: ${(props) => props.color};
   cursor: pointer;
-
+  user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
 
@@ -150,7 +150,6 @@ export const StyledSpecButton = styled.button`
   }
 
   @media (min-width: 1200px) {
-    padding: 1rem;
     margin: 2px;
     border-radius: 5px;
     border: ridge transparent;
@@ -164,9 +163,9 @@ export const RaidContainer = styled.section`
   align-items: flex-start;
   background-color: ${COLORS.offWhite};
   min-width: 100%;
-  max-height: 100%;
+  height: min-content;
   margin-bottom: 50px;
-  padding: 1rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 
   .grid {
     display: grid;
@@ -194,7 +193,7 @@ export const StyledPlayer = styled.div`
   align-items: center;
   justify-content: space-between;
   background: ${(props) => props.background};
-
+  user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
   cursor: pointer;
@@ -405,8 +404,6 @@ export const UtilityContainer = styled.section`
   @media (min-width: 1200px) {
     grid-area: Utils;
     min-height: 95%;
-    padding: 1rem;
-    border-left: 1px solid black;
     margin-bottom: 0px;
   }
 `;
@@ -451,26 +448,13 @@ export const StyledContentHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4rem;
-  height: 2rem;
+  height: 3rem;
   width: 100%;
   text-align: center;
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
-`;
-
-export const RaidCount = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.4rem;
-  height: 2rem;
-  width: 100%;
-  text-align: center;
-  background-color: ${COLORS.primary};
-  color: ${COLORS.offWhite};
-  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px -1px black;
 `;
 
 export const CrossIcon = styled(FaRegTimesCircle)`

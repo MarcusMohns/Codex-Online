@@ -13,7 +13,6 @@ import {
   DoubleArrowLeft,
   UtilityContainer,
   StyledContentHeader,
-  RaidCount,
 } from "../components/styles/RaidAssembler.styled";
 const { v4: uuidv4 } = require("uuid");
 
@@ -39,7 +38,7 @@ const RaidAssembler = () => {
   const [raid, setRaid] = useState([]);
   const [buffs, setBuffs] = useReducer(formReducer, {});
   const [utilities, setUtilities] = useReducer(formReducer, {});
-  const [raidCount, setCount] = useState(0);
+  const [raidCount, setCount] = useState([0, 0, 0, 0]);
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
 
   const handleRightMenuToggle = () => {
@@ -47,23 +46,23 @@ const RaidAssembler = () => {
   };
 
   const addPlayer = (player) => {
-    if (raidCount < 25) {
+    if (raidCount[0] < 25) {
       const id = uuidv4();
       const newPlayer = { id, ...player };
       setRaid([...raid, newPlayer]);
       addBuff(id, player);
       addUtility(id, player);
-      setCount(raidCount + 1);
+      handleCount(player, "add");
     } else {
       alert("Raid is full");
     }
   };
 
-  const deletePlayer = (id) => {
-    setRaid(raid.filter((player) => player.id !== id));
-    setCount(raidCount - 1);
-    deleteBuff(id);
-    deleteUtlity(id);
+  const deletePlayer = (player) => {
+    setRaid(raid.filter((gamer) => gamer.id !== player.id));
+    handleCount(player, "delete");
+    deleteBuff(player.id);
+    deleteUtlity(player.id);
   };
 
   const addBuff = (id, player) => {
@@ -100,6 +99,44 @@ const RaidAssembler = () => {
     delete utilities[id];
   };
 
+  const handleCount = (player, status) => {
+    // first value 0/25, 2nd value Tanks, 3rd value healers, 4th value DPS.
+    let value = 0;
+    if (status === "add") {
+      value = 1;
+    } else if (status === "delete") {
+      value = -1;
+    } else {
+      console.error("unexpected value passed to handleCount");
+    }
+
+    let count = [...raidCount];
+    const tanks = [
+      "Protection Paladin",
+      "Blood Death Knight",
+      "Feral Druid",
+      "Protection Warrior",
+    ];
+    const healers = [
+      "Discipline Priest",
+      "Holy Priest",
+      "Holy Paladin",
+      "Restoration Druid",
+      "Restoration Shaman",
+    ];
+    if (tanks.includes(player.text)) {
+      count[1] += value;
+    } else if (healers.includes(player.text)) {
+      count[2] += value;
+    } else {
+      count[3] += value;
+    }
+
+    count[0] += value;
+
+    setCount(count);
+  };
+
   return (
     <Main>
       <div className={`${rightMenuOpen ? "right-menu" : "hide-right-menu"}`}>
@@ -118,7 +155,13 @@ const RaidAssembler = () => {
       </div>
 
       <RaidContainer className="raid-container">
-        <RaidCount> {raidCount} / 25 </RaidCount>
+        <StyledContentHeader>
+          <div>Raid</div>
+          <div>{raidCount[0]} / 25 ---</div>
+          <div>{raidCount[1]} Tanks ---</div>
+          <div>{raidCount[2]} Healers ---</div>
+          <div>{raidCount[3]} DPS ---</div>
+        </StyledContentHeader>
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
         ) : (
