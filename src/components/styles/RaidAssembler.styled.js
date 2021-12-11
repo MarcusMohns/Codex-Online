@@ -162,25 +162,19 @@ export const RaidContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: ${COLORS.background};
+  background-color: ${COLORS.offWhite};
   min-width: 100%;
   max-height: 100%;
   margin-bottom: 50px;
+  padding: 1rem;
 
-  .raidCount {
-    padding: 0.7rem;
-    font-weight: 800;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    background-color: ${COLORS.primary};
-    color: ${COLORS.lighttext};
-  }
   .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: column;
     width: 100%;
+    background-color: ${COLORS.background};
   }
   @media (min-width: 1200px) {
     grid-area: Raid;
@@ -411,7 +405,7 @@ export const UtilityContainer = styled.section`
   @media (min-width: 1200px) {
     grid-area: Utils;
     min-height: 95%;
-    padding: 2rem;
+    padding: 1rem;
     border-left: 1px solid black;
     margin-bottom: 0px;
   }
@@ -451,6 +445,32 @@ export const StyledUtility = styled.div`
     opacity: 0%;
     color: ${COLORS.darktext};
   }
+`;
+
+export const StyledContentHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  height: 2rem;
+  width: 100%;
+  text-align: center;
+  background-color: ${COLORS.primary};
+  color: ${COLORS.offWhite};
+  margin-bottom: 1rem;
+`;
+
+export const RaidCount = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  height: 2rem;
+  width: 100%;
+  text-align: center;
+  background-color: ${COLORS.primary};
+  color: ${COLORS.offWhite};
+  margin-bottom: 1rem;
 `;
 
 export const CrossIcon = styled(FaRegTimesCircle)`

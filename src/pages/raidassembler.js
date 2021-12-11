@@ -1,4 +1,5 @@
 import { useReducer, useState } from "react";
+
 import SpecArray from "../SpecArray";
 import PlayersInRaid from "../components/PlayersInRaid";
 import SpecButtons from "../components/SpecButtons";
@@ -11,7 +12,10 @@ import {
   BuffContainer,
   DoubleArrowLeft,
   UtilityContainer,
+  StyledContentHeader,
+  RaidCount,
 } from "../components/styles/RaidAssembler.styled";
+const { v4: uuidv4 } = require("uuid");
 
 const formReducer = (state, action) => {
   // run for every buff the new player posseses
@@ -44,7 +48,7 @@ const RaidAssembler = () => {
 
   const addPlayer = (player) => {
     if (raidCount < 25) {
-      const id = Math.floor(Math.random() * 10000 + 1);
+      const id = uuidv4();
       const newPlayer = { id, ...player };
       setRaid([...raid, newPlayer]);
       addBuff(id, player);
@@ -114,7 +118,7 @@ const RaidAssembler = () => {
       </div>
 
       <RaidContainer className="raid-container">
-        <div className="raidCount"> {raidCount} / 25 </div>
+        <RaidCount> {raidCount} / 25 </RaidCount>
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
         ) : (
@@ -122,9 +126,11 @@ const RaidAssembler = () => {
         )}
       </RaidContainer>
       <UtilityContainer>
+        <StyledContentHeader>Utilities</StyledContentHeader>
         <Utilities utilities={utilities}></Utilities>
       </UtilityContainer>
       <BuffContainer className="buff-container">
+        <StyledContentHeader>Buffs & Debuffs</StyledContentHeader>
         <BuffCategories currentBuffs={buffs}></BuffCategories>
       </BuffContainer>
     </Main>
