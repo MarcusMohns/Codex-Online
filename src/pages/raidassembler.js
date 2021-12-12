@@ -14,6 +14,7 @@ import {
   UtilityContainer,
   StyledContentHeader,
 } from "../components/styles/RaidAssembler.styled";
+
 const { v4: uuidv4 } = require("uuid");
 
 const formReducer = (state, action) => {
@@ -156,6 +157,7 @@ const RaidAssembler = () => {
 
       <RaidContainer className="raid-container">
         <StyledContentHeader>
+          {/* make this pretty */}
           <div>Raid</div>
           <div>{raidCount[0]} / 25 ---</div>
           <div>{raidCount[1]} Tanks ---</div>
@@ -165,7 +167,7 @@ const RaidAssembler = () => {
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
         ) : (
-          "No players in raid!"
+          <p className="no-players-text">No players in raid</p>
         )}
       </RaidContainer>
       <UtilityContainer>
