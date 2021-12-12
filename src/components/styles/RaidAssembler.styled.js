@@ -161,11 +161,18 @@ export const RaidContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: ${COLORS.offWhite};
+  background-color: ${COLORS.primaryTransparent};
   min-width: 100%;
   height: min-content;
   margin-bottom: 50px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+
+  .no-players-text {
+    margin: auto;
+    display: flex;
+    color: ${COLORS.lighttext};
+    font-size: 1.3rem;
+  }
 
   .grid {
     display: grid;
@@ -173,7 +180,7 @@ export const RaidContainer = styled.section`
     grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: column;
     width: 100%;
-    background-color: ${COLORS.background};
+    background-color: ${COLORS.primaryTransparent};
   }
   @media (min-width: 1200px) {
     grid-area: Raid;
@@ -256,9 +263,11 @@ export const CategoryContainer = styled.div`
   text-align: center;
   height: 100%;
   width: 100%;
+  margin-bottom: 2px;
 
   @media (min-width: 1200px) {
     flex-direction: row;
+    margin-bottom: 0px;
   }
 `;
 
@@ -412,7 +421,8 @@ export const StyledUtilities = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const StyledUtility = styled.div`

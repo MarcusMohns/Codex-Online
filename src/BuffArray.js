@@ -89,7 +89,7 @@ const BuffArray = [
     source: ["Enhancement Shamans", ["Frost Death Knights"]],
   },
   {
-    name: "Motw",
+    name: "Mark of the Wild",
     source: ["Druids"],
   },
   {
