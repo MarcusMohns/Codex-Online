@@ -9,8 +9,7 @@ const BuffCategories = ({ currentBuffs }) => {
         <BuffsAndCategory
           key={category.name}
           id={category.name}
-          category={category.name}
-          categoryTooltip={category.source}
+          category={category}
           currentBuffs={currentBuffs}
         />
       ))}

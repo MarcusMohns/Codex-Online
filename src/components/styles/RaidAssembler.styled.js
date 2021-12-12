@@ -357,23 +357,25 @@ export const StyledCategory = styled.div`
     flex-direction: column;
     color: #eeeeee;
     .title {
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background-color: ${COLORS.fadedPrimary};
       width: 100%;
-      height: 50px;
+      height: fit-content;
       border-bottom: 1px solid #444444;
       border-radius: 0.5rem 0.5rem 0 0;
-      padding-bottom: 10px;
-
-      h3 {
-        margin-top: 10%;
-        font-style: italic;
-      }
     }
 
-    p {
-      margin: auto;
+    img {
+      width: 32px;
+      padding: 5px;
+    }
+    h3 {
+      margin-top: 5%;
+      font-style: italic;
     }
   }
   .tooltip .tooltiptext::after {
