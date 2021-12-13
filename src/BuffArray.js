@@ -50,6 +50,9 @@ const BuffArray = [
         <div>
           Improved Stoneskin Totem: <span className="buff-value">1380</span>
         </div>
+        <div className="fine-print">
+          Devotion Aura and Stoneskin Totem stack with one another
+        </div>
       </div>
     ),
   },
@@ -63,6 +66,9 @@ const BuffArray = [
         <span className="debuff">Decreases</span> the Armor of the{" "}
         <span className="debuff">enemy target</span> by{" "}
         <span className="buff-value">20%</span>.
+        <div className="fine-print">
+          Sunder Armor is preferable to Expose Armor.
+        </div>
       </div>
     ),
   },
@@ -75,8 +81,8 @@ const BuffArray = [
       <div>
         <div className="spell-names">Faerie Fire, Curse of Weakness</div>
         <span className="debuff">Decreases</span> the Armor of the{" "}
-        <span className="debuff">enemy target</span>
-        by <span className="buff-value">5%</span>.
+        <span className="debuff">enemy target</span> by{" "}
+        <span className="buff-value">5%</span>.
       </div>
     ),
   },
@@ -102,6 +108,7 @@ const BuffArray = [
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
+        <div className="spell-names">Blessing of Might, Battle Shout</div>
         <div>
           <span className="buff">Increases</span> Attack Power by x
         </div>
@@ -218,8 +225,8 @@ const BuffArray = [
           Improved Moonkin Form, Swift Retribution
         </div>
         <span className="buff">Increases</span> casting, ranged and melee
-        attacks speeds by <span className="buff-value">3%</span>{" "}
-        <span className="buff">for all party and raid members</span>.
+        attacks speeds by <span className="buff-value">3%</span> for all{" "}
+        <span className="buff">party and raid members</span>.
       </div>
     ),
   },
@@ -263,10 +270,11 @@ const BuffArray = [
   },
   {
     name: "Intellect",
-    source: ["Affliction Warlock", "Mages"],
+    source: ["Mages", "Affliction Warlock"],
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
+        <div className="spell-names">Arcane Intellect, Fel Intelligence</div>
         <div>
           Arcane Intellect: <span className="buff">Increases</span> Intellect by{" "}
           <span className="buff-value">60</span>.
@@ -322,10 +330,13 @@ const BuffArray = [
 
   {
     name: "Melee Haste",
-    source: ["Enhancement Shamans", "Frost Death Knights"],
+    source: ["Shamans", "Enhancement Shamans", "Frost Death Knights"],
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
+        <div className="spell-names">
+          Windfury Totem, Improved Windfury Totem, Improved Icy Talons
+        </div>
         <div>
           <span className="buff">Increases</span> the melee haste of all raid
           members by x
@@ -352,6 +363,7 @@ const BuffArray = [
     text: (
       <div>
         <div>
+          <div className="spell-names">Mark of the Wild</div>
           <div>Motw:</div>
           <span className="buff">Increases</span> Armor by{" "}
           <span className="buff-value">750</span>, all attributes by{" "}
@@ -365,6 +377,10 @@ const BuffArray = [
           <span className="buff-value">1050</span>, all attributes by{" "}
           <span className="buff-value">51</span> and all resistances by{" "}
           <span className="buff-value">75</span>.
+        </div>
+        <div className="fine-print">
+          Alternatively, Drums of the Wild provide the same stats as the
+          unupgraded Motw and can be bought off the auction house.
         </div>
       </div>
     ),
@@ -499,6 +515,7 @@ const BuffArray = [
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
+        <div className="spell-names">Totem of Wrath, Flametongue Totem</div>
         <div>
           <span className="buff">Increases</span> Spell Power by x for all{" "}
           <span className="buff">party and raid members</span>.
@@ -521,6 +538,7 @@ const BuffArray = [
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
+        <div className="spell-names">Divine Spirit, Fel Intelligence</div>
         <div>
           <span className="buff">Increases</span> Spirit by x
         </div>
@@ -567,9 +585,13 @@ const BuffArray = [
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
-        <div> Blessing of Kings:</div>
+        <div className="spell-names"> Blessing of Kings</div>
         <span className="buff">Increases</span> stats by{" "}
         <span className="buff-value">10%</span>.
+        <div className="fine-print">
+          Alternatively, Drums of the Forgotten Kings provide 8% all stats and
+          can be bought off the auction house.
+        </div>
       </div>
     ),
   },

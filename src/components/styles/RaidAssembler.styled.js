@@ -398,7 +398,8 @@ export const StyledCategory = styled.div`
         }
       }
       .fine-print {
-        color: red;
+        font-weight: 200;
+        color: grey;
       }
     }
   }
