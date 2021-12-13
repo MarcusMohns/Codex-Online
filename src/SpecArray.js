@@ -319,6 +319,11 @@ const SpecArray = [
     color: "pink",
     buffs: [
       {
+        category: "Armor (Stackable)",
+        name: "Devotion Aura",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Attack Power",
         name: "Blessing of Might",
         image: require("./images/dk_unholy.png").default,
@@ -362,6 +367,11 @@ const SpecArray = [
     image: require("./images/paladin_protection.png").default,
     color: "pink",
     buffs: [
+      {
+        category: "Armor (Stackable)",
+        name: "Devotion Aura",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Attack Power",
         name: "Blessing of Might",
@@ -421,6 +431,11 @@ const SpecArray = [
     image: require("./images/paladin_retribution.png").default,
     color: "pink",
     buffs: [
+      {
+        category: "Armor (Stackable)",
+        name: "Devotion Aura",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Attack Power",
         name: "Blessing of Might",
@@ -672,6 +687,11 @@ const SpecArray = [
     color: "blue",
     buffs: [
       {
+        category: "Armor",
+        name: "Stoneskin Totem",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
         image: require("./images/Strength_Of_Earth_Totem.png").default,
@@ -697,7 +717,7 @@ const SpecArray = [
         image: require("./images/Wrath_Of_Air.png").default,
       },
       {
-        category: "Spellpower (Major)",
+        category: "Spellpower",
         name: "Totem of Wrath",
         image: require("./images/Totem_Of_Wrath.png").default,
       },
@@ -707,7 +727,7 @@ const SpecArray = [
         image: require("./images/Totem_Of_Wrath.png").default,
       },
       {
-        category: "Spellpower (Minor)",
+        category: "Spellpower",
         name: "Flametongue Totem",
         image: require("./images/dk_unholy.png").default,
       },
@@ -728,6 +748,11 @@ const SpecArray = [
     image: require("./images/shaman_enhancement.png").default,
     color: "blue",
     buffs: [
+      {
+        category: "Armor (Stackable)",
+        name: "Stoneskin Totem",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
@@ -754,7 +779,7 @@ const SpecArray = [
         image: require("./images/Wrath_Of_Air.png").default,
       },
       {
-        category: "Spellpower (Minor)",
+        category: "Spellpower",
         name: "Flametongue Weapon",
         image: require("./images/dk_unholy.png").default,
       },
@@ -781,6 +806,11 @@ const SpecArray = [
     color: "blue",
     buffs: [
       {
+        category: "Armor (Stackable)",
+        name: "Stoneskin Totem",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
         image: require("./images/Strength_Of_Earth_Totem.png").default,
@@ -796,7 +826,7 @@ const SpecArray = [
         image: require("./images/Mana_Spring_Totem.png").default,
       },
       {
-        category: "Spellpower (Minor)",
+        category: "Spellpower",
         name: "Flametongue Totem",
         image: require("./images/dk_unholy.png").default,
       },
@@ -818,6 +848,10 @@ const SpecArray = [
       },
       {
         name: "Wind Shear",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Mana Tide Totem",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -858,6 +892,10 @@ const SpecArray = [
         name: "Pummel",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Shattering Throw",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -891,6 +929,10 @@ const SpecArray = [
         name: "Pummel",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Shattering Throw",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
 
@@ -922,6 +964,10 @@ const SpecArray = [
       },
       {
         name: "Vigilance",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Shattering Throw",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -965,7 +1011,7 @@ const SpecArray = [
     color: "purple",
     buffs: [
       {
-        category: "Spellpower",
+        category: "Demonic Pact",
         name: "Demonic Pact",
         image: require("./images/dk_unholy.png").default,
       },
