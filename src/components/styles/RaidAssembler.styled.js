@@ -377,6 +377,22 @@ export const StyledCategory = styled.div`
       margin-top: 5%;
       font-style: italic;
     }
+    .spell-description {
+      padding: 10px;
+
+      div {
+        padding: 5px;
+        .debuff {
+          color: red;
+        }
+        .buff {
+          color: green;
+        }
+        .buff-value {
+          font-weight: 800;
+        }
+      }
+    }
   }
   .tooltip .tooltiptext::after {
     content: " ";
@@ -386,7 +402,7 @@ export const StyledCategory = styled.div`
     margin-top: -5px;
     border-width: 0.5rem;
     border-style: solid;
-    border-color: transparent #444444 transparent transparent;
+    border-color: transparent black transparent transparent;
   }
 
   &:hover {

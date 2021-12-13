@@ -55,7 +55,7 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
             {category.source.map((specName) => (
               <div key={`${specName} ${category}`}>{specName}</div>
             ))}
-            <div>{category.text}</div>
+            <div className="spell-description">{category.text}</div>
           </div>
         </div>
         {category.name}
