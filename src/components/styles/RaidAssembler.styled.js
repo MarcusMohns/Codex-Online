@@ -341,8 +341,7 @@ export const StyledCategory = styled.div`
   .tooltip .tooltiptext {
     position: absolute;
     min-width: 200px;
-    min-height: 300px;
-    max-height: 100%;
+    min-height: 100%;
     background-color: white;
     z-index: 1;
     visibility: hidden;
@@ -377,6 +376,7 @@ export const StyledCategory = styled.div`
       margin-top: 5%;
       font-style: italic;
     }
+
     .spell-description {
       padding: 10px;
 
@@ -391,6 +391,14 @@ export const StyledCategory = styled.div`
         .buff-value {
           font-weight: 800;
         }
+        .spell-names {
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+          margin-bottom: 5px;
+        }
+      }
+      .fine-print {
+        color: red;
       }
     }
   }

@@ -31,25 +31,27 @@ const BuffArray = [
     name: "Armor",
     source: ["Shamans", "Paladins"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        <div className="spell-names">Devotion Aura, Stoneskin Totem</div>
-        <span className="buff">Increases</span> Armor of all{" "}
-        <span className="buff">party and raid members</span> by x
-      </div>,
-      <div>
-        Devotion Aura:<span className="buff-value">1205</span>
-      </div>,
-      <div>
-        Improved Devotion Aura:<span className="buff-value">1807</span>
-      </div>,
-      <div>
-        Stoneskin Totem: <span className="buff-value">1150</span>
-      </div>,
-      <div>
-        Improved Stoneskin Totem: <span className="buff-value">1380</span>
-      </div>,
-    ],
+        <div>
+          <div className="spell-names">Devotion Aura, Stoneskin Totem</div>
+          <span className="buff">Increases</span> Armor of all{" "}
+          <span className="buff">party and raid members</span> by x
+        </div>
+        <div>
+          Devotion Aura:<span className="buff-value">1205</span>
+        </div>
+        <div>
+          Improved Devotion Aura:<span className="buff-value">1807</span>
+        </div>
+        <div>
+          Stoneskin Totem: <span className="buff-value">1150</span>
+        </div>
+        <div>
+          Improved Stoneskin Totem: <span className="buff-value">1380</span>
+        </div>
+      </div>
+    ),
   },
   {
     name: "Armor Reduction (Major)",
@@ -98,23 +100,25 @@ const BuffArray = [
     name: "Attack Power",
     source: ["Paladins", "Warriors"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        <span className="buff">Increases</span> Attack Power by x
-      </div>,
-      <div>
-        Battle Shout:<span className="buff-value"> 548</span>
-      </div>,
-      <div>
-        Improved Battle Shout:<span className="buff-value"> 695</span>
-      </div>,
-      <div>
-        Blessing of Might: <span className="buff-value"> 550</span>
-      </div>,
-      <div>
-        Improved Blessing of Might:<span className="buff-value"> 687</span>
-      </div>,
-    ],
+        <div>
+          <span className="buff">Increases</span> Attack Power by x
+        </div>
+        <div>
+          Battle Shout:<span className="buff-value"> 548</span>
+        </div>
+        <div>
+          Improved Battle Shout:<span className="buff-value"> 695</span>
+        </div>
+        <div>
+          Blessing of Might: <span className="buff-value"> 550</span>
+        </div>
+        <div>
+          Improved Blessing of Might:<span className="buff-value"> 687</span>
+        </div>
+      </div>
+    ),
   },
   {
     name: "Bloodlust/Heroism",
@@ -237,60 +241,71 @@ const BuffArray = [
     name: "Health",
     source: ["Destruction Warlock", "Warriors"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        Maximum health <span className="buff">increased</span> by x.
-      </div>,
-      <div>
-        Commanding Shout: <span className="buff-value">2255</span>.
-      </div>,
-      <div>
-        Improved Commanding Shout: <span className="buff-value">2818</span>.
-      </div>,
-      <div>
-        Blood Pact: <span className="buff-value">1330</span>.
-      </div>,
-      <div>
-        Improved Blood Pact: <span className="buff-value">1729</span>.
-      </div>,
-    ],
+        <div>
+          Maximum health <span className="buff">increased</span> by x.
+        </div>
+        <div>
+          Commanding Shout: <span className="buff-value">2255</span>.
+        </div>
+        <div>
+          Improved Commanding Shout: <span className="buff-value">2818</span>.
+        </div>
+        <div>
+          Blood Pact: <span className="buff-value">1330</span>.
+        </div>
+        <div>
+          Improved Blood Pact: <span className="buff-value">1729</span>.
+        </div>
+      </div>
+    ),
   },
   {
     name: "Intellect",
     source: ["Affliction Warlock", "Mages"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        Arcane Intellect: <span className="buff">Increases</span> Intellect by{" "}
-        <span className="buff-value">60</span>.
-      </div>,
-      <div>
-        Fel Intelligence: <span className="buff">Increases</span> Intellect by{" "}
-        <span className="buff-value">48</span>.
-      </div>,
-    ],
+        <div>
+          Arcane Intellect: <span className="buff">Increases</span> Intellect by{" "}
+          <span className="buff-value">60</span>.
+        </div>
+
+        <div>
+          Fel Intelligence: <span className="buff">Increases</span> Intellect by{" "}
+          <span className="buff-value">48</span>.
+        </div>
+      </div>
+    ),
   },
   {
     name: "Mana per 5",
     source: ["Paladins", "Shamans"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        <span className="buff">Restores</span> x mana every 5 seconds
-      </div>,
-      <div>
-        Blessing of Wisdom: <span className="buff-value">92</span>
-      </div>,
-      <div>
-        Improved Blessing of Wisdom <span className="buff-value">110</span>
-      </div>,
-      <div>
-        Mana Spring Totem:<span className="buff-value">91</span>
-      </div>,
-      <div>
-        Improved Mana Spring Totem:<span className="buff-value">109</span>
-      </div>,
-    ],
+        <div>
+          <span className="buff">Restores</span> x mana every 5 seconds
+        </div>
+
+        <div>
+          Blessing of Wisdom: <span className="buff-value">92</span>
+        </div>
+
+        <div>
+          Improved Blessing of Wisdom <span className="buff-value">110</span>
+        </div>
+
+        <div>
+          Mana Spring Totem:<span className="buff-value">91</span>
+        </div>
+
+        <div>
+          Improved Mana Spring Totem:<span className="buff-value">109</span>
+        </div>
+      </div>
+    ),
   },
   {
     name: "Melee Crit",
@@ -298,7 +313,7 @@ const BuffArray = [
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
-        <div>Rampage, Leader of the Pack:</div>
+        <div className="spell-names">Rampage, Leader of the Pack:</div>
         <span className="buff">Increases</span> ranged and melee critical chance
         by <span className="buff-value">5%</span>.
       </div>
@@ -309,42 +324,50 @@ const BuffArray = [
     name: "Melee Haste",
     source: ["Enhancement Shamans", "Frost Death Knights"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        <span className="buff">Increases</span> the melee haste of all raid
-        members by x
-      </div>,
-      <div>
-        Windfury Totem: <span className="buff-value">16%</span>.
-      </div>,
-      <div>
-        Improved Windfury Totem: <span className="buff-value">20%</span>.
-      </div>,
-      <div>
-        Improved Icy Talons: <span className="buff-value">20%</span>.
-      </div>,
-    ],
+        <div>
+          <span className="buff">Increases</span> the melee haste of all raid
+          members by x
+        </div>
+
+        <div>
+          Windfury Totem: <span className="buff-value">16%</span>.
+        </div>
+
+        <div>
+          Improved Windfury Totem: <span className="buff-value">20%</span>.
+        </div>
+
+        <div>
+          Improved Icy Talons: <span className="buff-value">20%</span>.
+        </div>
+      </div>
+    ),
   },
   {
     name: "Mark of the Wild",
     source: ["Druids"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        <div>Motw:</div>
-        <span className="buff">Increases</span> Armor by{" "}
-        <span className="buff-value">750</span>, all attributes by{" "}
-        <span className="buff-value">36</span> and all resistances by{" "}
-        <span className="buff-value">54</span>.
-      </div>,
-      <div>
-        <div>Improved Motw:</div>
-        <span className="buff">Increases</span> Armor by{" "}
-        <span className="buff-value">1050</span>, all attributes by{" "}
-        <span className="buff-value">51</span> and all resistances by{" "}
-        <span className="buff-value">75</span>.
-      </div>,
-    ],
+        <div>
+          <div>Motw:</div>
+          <span className="buff">Increases</span> Armor by{" "}
+          <span className="buff-value">750</span>, all attributes by{" "}
+          <span className="buff-value">36</span> and all resistances by{" "}
+          <span className="buff-value">54</span>.
+        </div>
+
+        <div>
+          <div>Improved Motw:</div>
+          <span className="buff">Increases</span> Armor by{" "}
+          <span className="buff-value">1050</span>, all attributes by{" "}
+          <span className="buff-value">51</span> and all resistances by{" "}
+          <span className="buff-value">75</span>.
+        </div>
+      </div>
+    ),
   },
   {
     name: "Phys Vulnerability",
@@ -474,35 +497,43 @@ const BuffArray = [
     name: "Spellpower",
     source: ["Elemental Shaman", "Shamans"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        <span className="buff">Increases</span> Spell Power by x for all{" "}
-        <span className="buff">party and raid members</span>.
-      </div>,
-      <div>
-        Totem of Wrath: <span className="buff-value">280</span>.
-      </div>,
-      <div>
-        Flametongue Totem: <span className="buff-value">144</span>.
-      </div>,
-    ],
+        <div>
+          <span className="buff">Increases</span> Spell Power by x for all{" "}
+          <span className="buff">party and raid members</span>.
+        </div>
+
+        <div>
+          Totem of Wrath: <span className="buff-value">280</span>.
+        </div>
+
+        <div>
+          Flametongue Totem: <span className="buff-value">144</span>.
+        </div>
+      </div>
+    ),
   },
 
   {
     name: "Spirit",
     source: ["Priests", "Affliction Warlock"],
     image: require("./images/dk_unholy.png").default,
-    text: [
+    text: (
       <div>
-        <span className="buff">Increases</span> Spirit by x
-      </div>,
-      <div>
-        Divine Spirit: <span className="buff-value">80</span>.
-      </div>,
-      <div>
-        Fel Intelligence: <span className="buff-value">64</span>.
-      </div>,
-    ],
+        <div>
+          <span className="buff">Increases</span> Spirit by x
+        </div>
+
+        <div>
+          Divine Spirit: <span className="buff-value">80</span>.
+        </div>
+
+        <div>
+          Fel Intelligence: <span className="buff-value">64</span>.
+        </div>
+      </div>
+    ),
   },
   {
     name: "Demonic Pact",
