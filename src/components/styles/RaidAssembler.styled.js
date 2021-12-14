@@ -116,7 +116,7 @@ export const SpecContainer = styled.section`
     grid-template-columns: repeat(3, 1fr);
   }
   #spec-container-text {
-    color: ${COLORS.lighttext};
+    color: ${COLORS.lightText};
     padding: 1rem;
   }
 `;
@@ -124,7 +124,7 @@ export const StyledSpecButton = styled.button`
   display: flex;
   font-weight: bold;
   padding: 0.7rem;
-  color: ${COLORS.lighttext};
+  color: ${COLORS.lightText};
   transition: 0.2s;
   background: ${(props) => props.color};
   cursor: pointer;
@@ -170,7 +170,7 @@ export const RaidContainer = styled.section`
   .no-players-text {
     margin: auto;
     display: flex;
-    color: ${COLORS.lighttext};
+    color: ${COLORS.lightText};
     font-size: 1.3rem;
   }
 
@@ -297,7 +297,7 @@ export const StyledBuff = styled.div`
     opacity: 0%;
     animation-name: FadeIn;
     animation-duration: 0.5s;
-    color: ${COLORS.darktext};
+    color: ${COLORS.blackText};
     animation-fill-mode: forwards;
   }
 

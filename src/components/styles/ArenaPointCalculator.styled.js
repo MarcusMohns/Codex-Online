@@ -52,7 +52,7 @@ export const ArenaContainer = styled.section`
       align-items: center;
       box-sizing: border-box;
       background-color: ${COLORS.primary};
-      color: ${COLORS.lighttext};
+      color: ${COLORS.lightText};
       text-align: center;
       letter-spacing: 1px;
       padding: 1.2rem;
