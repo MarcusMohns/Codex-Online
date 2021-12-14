@@ -15,7 +15,6 @@ export const Main = styled.main`
   min-height: 100%;
   margin-top: 20%;
   background-color: ${COLORS.background};
-
   @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -24,12 +23,10 @@ export const Main = styled.main`
     grid-template-areas:
       "Raid Utils"
       "Buffs Buffs";
-
     padding: 2rem;
     max-width: 100vw;
     min-height: 95vw;
   }
-
   .right-menu {
     display: flex;
     flex-direction: row;
@@ -38,12 +35,10 @@ export const Main = styled.main`
     right: 0%;
     z-index: 1;
     transition: all 150ms;
-
     @media screen and (min-width: 1200px) {
       padding: 0.5rem;
       right: 1%;
     }
-
     .double-arrow-right {
       transition: all 400ms;
       transform: rotate(180deg) translate(-100%);
@@ -64,7 +59,6 @@ export const Main = styled.main`
     z-index: 1;
     transition: all 150ms;
     transform: translate(100%);
-
     @media screen and (min-width: 1200px) {
       right: 1%;
     }
@@ -76,7 +70,6 @@ export const Main = styled.main`
       opacity: 100%;
       height: 2rem;
       width: 2rem;
-
       @media screen and (min-width: 1200px) {
         transform: translate(-50%);
         color: ${COLORS.offWhite};
@@ -95,7 +88,6 @@ export const SpecContainer = styled.section`
   margin: auto;
   max-width: 75%;
   max-height: 50%;
-
   @media screen and (min-width: 1200px) {
     box-sizing: border-box;
     display: flex;
@@ -109,7 +101,6 @@ export const SpecContainer = styled.section`
     padding: 1rem;
     transition: all 300ms;
   }
-
   .spec-buttons {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -131,11 +122,9 @@ export const StyledSpecButton = styled.button`
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
-
   &:hover {
     transform: scale(95%);
   }
-
   &:active {
     transform: scale(90%);
   }
@@ -144,11 +133,9 @@ export const StyledSpecButton = styled.button`
     height: 1.1rem;
     border-radius: 20%;
   }
-
   p {
     margin: auto;
   }
-
   @media (min-width: 1200px) {
     margin: 2px;
     border-radius: 5px;
@@ -166,14 +153,12 @@ export const RaidContainer = styled.section`
   height: min-content;
   margin-bottom: 50px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-
   .no-players-text {
     margin: auto;
     display: flex;
     color: ${COLORS.lightText};
     font-size: 1.3rem;
   }
-
   .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -185,7 +170,6 @@ export const RaidContainer = styled.section`
   @media (min-width: 1200px) {
     grid-area: Raid;
     min-height: 95%;
-
     .grid {
       margin: auto;
       width: 80%;
@@ -208,7 +192,6 @@ export const StyledPlayer = styled.div`
   font-size: 0.8rem;
   padding: 0.5rem;
   transition: transform 0.2;
-
   img {
     width: 1.2rem;
     height: 1.2rem;
@@ -217,13 +200,11 @@ export const StyledPlayer = styled.div`
   &:hover {
     transform: translateY(-0.2em);
   }
-
   @media (min-width: 1200px) {
     margin: 5px;
     font-size: 0.8rem;
     padding: 0.8rem;
     border-radius: 0.33rem;
-
     img {
       display: normal;
     }
@@ -264,7 +245,6 @@ export const CategoryContainer = styled.div`
   height: 100%;
   width: 100%;
   margin-bottom: 2px;
-
   @media (min-width: 1200px) {
     flex-direction: row;
     margin-bottom: 0px;
@@ -282,7 +262,6 @@ export const StyledBuff = styled.div`
   background-color: ${COLORS.highlight};
   border-radius: 5px;
   margin: 1px;
-
   img {
     width: 25px;
     border-radius: 20%;
@@ -292,7 +271,6 @@ export const StyledBuff = styled.div`
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
-
   p {
     opacity: 0%;
     animation-name: FadeIn;
@@ -300,7 +278,6 @@ export const StyledBuff = styled.div`
     color: ${COLORS.blackText};
     animation-fill-mode: forwards;
   }
-
   @keyframes FadeIn {
     0% {
       opacity: 0%;
@@ -331,13 +308,11 @@ export const StyledCategory = styled.div`
   transition: background-color 0.5s;
   color: ${COLORS.darktext};
   width: 100%;
-
   .tooltip {
     position: relative;
     padding: 0px;
     left: 100%;
   }
-
   .tooltip .tooltiptext {
     position: absolute;
     min-width: 200px;
@@ -367,7 +342,6 @@ export const StyledCategory = styled.div`
       border-bottom: 1px solid #444444;
       border-radius: 0.5rem 0.5rem 0 0;
     }
-
     img {
       width: 32px;
       padding: 5px;
@@ -376,10 +350,8 @@ export const StyledCategory = styled.div`
       margin-top: 5%;
       font-style: italic;
     }
-
     .spell-description {
       padding: 10px;
-
       div {
         padding: 5px;
         .debuff {
@@ -413,14 +385,12 @@ export const StyledCategory = styled.div`
     border-style: solid;
     border-color: transparent black transparent transparent;
   }
-
   &:hover {
     .tooltiptext {
       visibility: visible;
       opacity: 1;
     }
   }
-
   @media (min-width: 1200px) {
     flex-direction: row;
     width: 250px;
@@ -436,7 +406,6 @@ export const UtilityContainer = styled.section`
   background-color: ${COLORS.background};
   min-width: 100%;
   margin-bottom: 50px;
-
   @media (min-width: 1200px) {
     grid-area: Utils;
     min-height: 95%;
@@ -468,13 +437,11 @@ export const StyledUtility = styled.div`
   animation-name: FadeIn;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-
   img {
     width: 30px;
     border-radius: 20%;
     margin-left: 0.5rem;
   }
-
   p {
     opacity: 0%;
     color: ${COLORS.darktext};
@@ -509,7 +476,6 @@ export const CheckCircle = styled(FaRegCheckCircle)`
   margin-left: 0.5rem;
   animation-name: buffCategoryImage;
   animation-duration: 0.8s;
-
   @keyframes buffCategoryImage {
     0% {
       transform: scale(1);
