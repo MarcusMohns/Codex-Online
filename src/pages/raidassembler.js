@@ -84,9 +84,9 @@ const RaidAssembler = () => {
 
   const deletePlayer = (player) => {
     setRaid(raid.filter((gamer) => gamer.id !== player.id));
+    setBuffs({ type: "delete", id: player.id });
+    setUtilities({ type: "delete", id: player.id });
     handleCount(player, "delete");
-    deleteBuff(player.id);
-    deleteUtlity(player.id);
   };
 
   const addBuff = (id, player) => {
@@ -100,11 +100,6 @@ const RaidAssembler = () => {
     }
   };
 
-  const deleteBuff = (id) => {
-    //delete buffs[id];
-    setBuffs({ type: "delete", id: id });
-  };
-
   const addUtility = (id, player) => {
     for (let utility of player.utility) {
       let newUtility = {
@@ -113,9 +108,6 @@ const RaidAssembler = () => {
       };
       setUtilities({ type: "add", name: id, value: newUtility });
     }
-  };
-  const deleteUtlity = (id) => {
-    setUtilities({ type: "delete", id: id });
   };
 
   const handleCount = (player, status) => {
@@ -183,7 +175,7 @@ const RaidAssembler = () => {
           <div>{raidCount[1]} Tanks ---</div>
           <div>{raidCount[2]} Healers ---</div>
           <div>{raidCount[3]} DPS ---</div>
-          <button onClick={handleRightMenuToggle}>Hey</button>
+          <button onClick={handleRightMenuToggle}>Add a player</button>
           <button onClick={resetRaid}>Reset</button>
         </StyledContentHeader>
         {raid.length > 0 ? (
