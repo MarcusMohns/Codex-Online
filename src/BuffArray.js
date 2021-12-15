@@ -408,9 +408,9 @@ const BuffArray = [
         Leader of the pack also causes{" "}
         <span className="buff">friendly targets</span> to{" "}
         <span className="buff">heal themselves</span> for{" "}
-        <span className="buff-value">4%</span> of their total health and{" "}
-        <span className="buff-value">8%</span> of their total mana when they
-        deal a melee or ranged critical strike.
+        <span className="buff-value">4%</span> of their total health when they
+        critically hit with a melee or ranged attack.
+        <div className="fine-print">May only occur every 6 seconds</div>
       </div>
     ),
   },
@@ -485,7 +485,7 @@ const BuffArray = [
   },
   {
     name: "Spell Haste",
-    source: ["Elemental Shaman"],
+    source: ["Shamans"],
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
@@ -510,7 +510,7 @@ const BuffArray = [
   },
 
   {
-    name: "Spellpower",
+    name: "Spell Power",
     source: ["Elemental Shaman", "Shamans", "Demonology Warlocks"],
     image: require("./images/dk_unholy.png").default,
     text: (
