@@ -112,7 +112,7 @@ const SpecArray = [
         image: require("./images/dk_unholy.png").default,
       },
       {
-        category: "Spell Crit",
+        category: "Spell Crit %",
         name: "Moonkin Form",
         image: require("./images/Moonkin_Aura.png").default,
       },
@@ -360,7 +360,7 @@ const SpecArray = [
     color: "teal",
     buffs: [
       {
-        category: "Spell Crit",
+        category: "Spell Crit Taken",
         name: "Improved Scorch",
         image: require("./images/dk_unholy.png").default,
       },
@@ -391,8 +391,8 @@ const SpecArray = [
     color: "teal",
     buffs: [
       {
-        category: "Spell Crit",
-        name: "Improved Scorch",
+        category: "Spell Crit Taken",
+        name: "Winter's Chill",
         image: require("./images/dk_unholy.png").default,
       },
       {
@@ -920,7 +920,7 @@ const SpecArray = [
         image: require("./images/Mana_Spring_Totem.png").default,
       },
       {
-        category: "Spell Crit",
+        category: "Spell Crit %",
         name: "Elemental Oath",
         image: require("./images/dk_unholy.png").default,
       },
@@ -1256,7 +1256,7 @@ const SpecArray = [
         image: require("./images/dk_unholy.png").default,
       },
       {
-        category: "Spell Crit",
+        category: "Spell Crit Taken",
         name: "Improved Shadow Bolt",
         image: require("./images/dk_unholy.png").default,
       },
@@ -1294,7 +1294,7 @@ const SpecArray = [
         image: require("./images/dk_unholy.png").default,
       },
       {
-        category: "Spell Crit",
+        category: "Spell Crit Taken",
         name: "Improved Shadow Bolt",
         image: require("./images/dk_unholy.png").default,
       },
