@@ -169,6 +169,11 @@ const SpecArray = [
         name: "Leader of the Pack",
         image: require("./images/dk_unholy.png").default,
       },
+      {
+        category: "Improved Leader of the Pack",
+        name: "Improved Leader of the Pack",
+        image: require("./images/dk_unholy.png").default,
+      },
 
       {
         category: "Armor Reduction (Minor)",
@@ -265,7 +270,7 @@ const SpecArray = [
         image: require("./images/Aboms_Might.png").default,
       },
       {
-        name: "Tranquility Shot",
+        name: "Tranquilizing Shot",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -287,7 +292,7 @@ const SpecArray = [
         image: require("./images/Aboms_Might.png").default,
       },
       {
-        name: "Tranquility Shot",
+        name: "Tranquilizing Shot",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -309,7 +314,7 @@ const SpecArray = [
         image: require("./images/Aboms_Might.png").default,
       },
       {
-        name: "Tranquility Shot",
+        name: "Tranquilizing Shot",
         image: require("./images/Aboms_Might.png").default,
       },
       {
@@ -925,7 +930,7 @@ const SpecArray = [
         image: require("./images/Wrath_Of_Air.png").default,
       },
       {
-        category: "Spellpower",
+        category: "Spell Power",
         name: "Totem of Wrath",
         image: require("./images/Totem_Of_Wrath.png").default,
       },
@@ -935,7 +940,7 @@ const SpecArray = [
         image: require("./images/Totem_Of_Wrath.png").default,
       },
       {
-        category: "Spellpower",
+        category: "Spell Power",
         name: "Flametongue Totem",
         image: require("./images/dk_unholy.png").default,
       },
@@ -1004,7 +1009,7 @@ const SpecArray = [
         image: require("./images/Wrath_Of_Air.png").default,
       },
       {
-        category: "Spellpower",
+        category: "Spell Power",
         name: "Flametongue Weapon",
         image: require("./images/dk_unholy.png").default,
       },
@@ -1063,7 +1068,7 @@ const SpecArray = [
         image: require("./images/Mana_Spring_Totem.png").default,
       },
       {
-        category: "Spellpower",
+        category: "Spell Power",
         name: "Flametongue Totem",
         image: require("./images/dk_unholy.png").default,
       },
@@ -1274,7 +1279,7 @@ const SpecArray = [
     color: "purple",
     buffs: [
       {
-        category: "Spellpower",
+        category: "Spell Power",
         name: "Demonic Pact",
         image: require("./images/dk_unholy.png").default,
       },
