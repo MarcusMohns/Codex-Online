@@ -18,21 +18,36 @@ import {
 const { v4: uuidv4 } = require("uuid");
 
 const formReducer = (state, action) => {
-  // run for every buff the new player posseses
-  if (action.name in state) {
-    // If player ID already exists in state
-    let newEntry = [...state[action.name], action.value];
-    // spread the IDs values into newEntry and add the new value
-    return {
-      ...state,
-      [action.name]: newEntry,
-    };
-  } else {
-    return {
-      ...state,
-      [action.name]: [action.value],
-    };
+  switch (action.type) {
+    case "add":
+      if (action.name in state) {
+        // If player ID already exists in state
+        let newEntry = [...state[action.name], action.value];
+        // spread the IDs values into newEntry and add the new value
+        return {
+          ...state,
+          [action.name]: newEntry,
+        };
+      } else {
+        return {
+          ...state,
+          [action.name]: [action.value],
+        };
+      }
+    case "delete":
+      console.log(action.id);
+      const newState = Object.entries(state).filter(
+        (item) => item[0] !== action.id
+      );
+      return Object.fromEntries(newState);
+
+    case "reset":
+      return {};
+    default:
+      return state;
   }
+
+  // run for every buff the new player posseses
 };
 
 const RaidAssembler = () => {
@@ -41,6 +56,14 @@ const RaidAssembler = () => {
   const [utilities, setUtilities] = useReducer(formReducer, {});
   const [raidCount, setCount] = useState([0, 0, 0, 0]);
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
+
+  const resetRaid = () => {
+    setRaid([]);
+    setCount([0, 0, 0, 0]);
+    setRightMenuOpen(false);
+    setBuffs({ type: "reset" });
+    setUtilities({ type: "reset" });
+  };
 
   const handleRightMenuToggle = () => {
     setRightMenuOpen(!rightMenuOpen);
@@ -73,15 +96,13 @@ const RaidAssembler = () => {
         buffName: buff.name,
         buffImg: buff.image,
       };
-      setBuffs({
-        name: id,
-        value: newBuff,
-      });
+      setBuffs({ type: "add", name: id, value: newBuff });
     }
   };
 
   const deleteBuff = (id) => {
-    delete buffs[id];
+    //delete buffs[id];
+    setBuffs({ type: "delete", id: id });
   };
 
   const addUtility = (id, player) => {
@@ -90,18 +111,14 @@ const RaidAssembler = () => {
         name: utility.name,
         image: utility.image,
       };
-      setUtilities({
-        name: id,
-        value: newUtility,
-      });
+      setUtilities({ type: "add", name: id, value: newUtility });
     }
   };
   const deleteUtlity = (id) => {
-    delete utilities[id];
+    setUtilities({ type: "delete", id: id });
   };
 
   const handleCount = (player, status) => {
-    // first value 0/25, 2nd value Tanks, 3rd value healers, 4th value DPS.
     let value = 0;
     if (status === "add") {
       value = 1;
@@ -112,6 +129,9 @@ const RaidAssembler = () => {
     }
 
     let count = [...raidCount];
+    // raidCount is an arrray [0,0,0,0]
+    // first value 0/25, 2nd value Tanks, 3rd value healers, 4th value DPS.
+
     const tanks = [
       "Protection Paladin",
       "Blood Death Knight",
@@ -163,6 +183,8 @@ const RaidAssembler = () => {
           <div>{raidCount[1]} Tanks ---</div>
           <div>{raidCount[2]} Healers ---</div>
           <div>{raidCount[3]} DPS ---</div>
+          <button onClick={handleRightMenuToggle}>Hey</button>
+          <button onClick={resetRaid}>Reset</button>
         </StyledContentHeader>
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
