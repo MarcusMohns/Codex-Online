@@ -1274,7 +1274,7 @@ const SpecArray = [
     color: "purple",
     buffs: [
       {
-        category: "Demonic Pact",
+        category: "Spellpower",
         name: "Demonic Pact",
         image: require("./images/dk_unholy.png").default,
       },

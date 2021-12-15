@@ -511,11 +511,13 @@ const BuffArray = [
 
   {
     name: "Spellpower",
-    source: ["Elemental Shaman", "Shamans"],
+    source: ["Elemental Shaman", "Shamans", "Demonology Warlocks"],
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
-        <div className="spell-names">Totem of Wrath, Flametongue Totem</div>
+        <div className="spell-names">
+          Totem of Wrath, Flametongue Totem, Demonic Pact
+        </div>
         <div>
           <span className="buff">Increases</span> Spell Power by x for all{" "}
           <span className="buff">party and raid members</span>.
@@ -527,6 +529,15 @@ const BuffArray = [
 
         <div>
           Flametongue Totem: <span className="buff-value">144</span>.
+        </div>
+        <div>
+          Demonic Pact: <span className="buff-value">10%</span> of Warlocks
+          Spell Damage.
+        </div>
+        <div className="fine-print">
+          When the Warlock acquires enough Spell Power Demonic Pact will
+          overshadow any other buff, note that the crit from Totem of Wrath
+          still applies, even if the spell power might not.{" "}
         </div>
       </div>
     ),
@@ -550,19 +561,6 @@ const BuffArray = [
         <div>
           Fel Intelligence: <span className="buff-value">64</span>.
         </div>
-      </div>
-    ),
-  },
-  {
-    name: "Demonic Pact",
-    source: ["Demonology Warlock"],
-    image: require("./images/dk_unholy.png").default,
-    text: (
-      <div>
-        <div className="spell-names">Demonic Pact</div>
-        Increases <span className="buff">all party and raid members</span> spell
-        power by <span className="buff-value">10%</span> of Warlocks Spell
-        Damage
       </div>
     ),
   },
