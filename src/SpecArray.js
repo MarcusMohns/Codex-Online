@@ -24,6 +24,14 @@ const SpecArray = [
         name: "Hysteria",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Interrupt",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Chains of Ice",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -52,6 +60,14 @@ const SpecArray = [
         name: "Death Grip",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Interrupt",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Chains of Ice",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -73,6 +89,14 @@ const SpecArray = [
     utility: [
       {
         name: "Death Grip",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Interrupt",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Chains of Ice",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -117,6 +141,22 @@ const SpecArray = [
         name: "Innervate",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Typhoon",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Tranquility",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Remove Curse",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -155,6 +195,18 @@ const SpecArray = [
         name: "Innervate",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Tranquility",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Remove Curse",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -182,6 +234,18 @@ const SpecArray = [
         name: "Innervate",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Tranquility",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Remove Curse",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -198,6 +262,10 @@ const SpecArray = [
     utility: [
       {
         name: "Misdirection",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Tranquility Shot",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -218,6 +286,10 @@ const SpecArray = [
         name: "Misdirection",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Tranquility Shot",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -234,6 +306,14 @@ const SpecArray = [
     utility: [
       {
         name: "Misdirection",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Tranquility Shot",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Wyvern Sting",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -259,6 +339,14 @@ const SpecArray = [
         name: "Spellsteal",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Focus Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Remove Curse",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -280,6 +368,14 @@ const SpecArray = [
     utility: [
       {
         name: "Spellsteal",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Focus Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Remove Curse",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -310,6 +406,14 @@ const SpecArray = [
         name: "Spellsteal",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Focus Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Remove Curse",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
 
@@ -319,7 +423,7 @@ const SpecArray = [
     color: "pink",
     buffs: [
       {
-        category: "Armor (Stackable)",
+        category: "Armor",
         name: "Devotion Aura",
         image: require("./images/dk_unholy.png").default,
       },
@@ -341,6 +445,18 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
         name: "Divine Sacrifice",
         image: require("./images/Aboms_Might.png").default,
       },
@@ -360,6 +476,10 @@ const SpecArray = [
         name: "Aura Mastery",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Divine Intervention",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -368,7 +488,7 @@ const SpecArray = [
     color: "pink",
     buffs: [
       {
-        category: "Armor (Stackable)",
+        category: "Armor",
         name: "Devotion Aura",
         image: require("./images/dk_unholy.png").default,
       },
@@ -405,6 +525,18 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
         name: "Divine Sacrifice",
         image: require("./images/Aboms_Might.png").default,
       },
@@ -424,6 +556,10 @@ const SpecArray = [
         name: "Aura Mastery",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Divine Intervention",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -432,7 +568,7 @@ const SpecArray = [
     color: "pink",
     buffs: [
       {
-        category: "Armor (Stackable)",
+        category: "Armor",
         name: "Devotion Aura",
         image: require("./images/dk_unholy.png").default,
       },
@@ -474,6 +610,18 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
         name: "Divine Sacrifice",
         image: require("./images/Aboms_Might.png").default,
       },
@@ -491,6 +639,10 @@ const SpecArray = [
       },
       {
         name: "Aura Mastery",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Divine Intervention",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -523,23 +675,35 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Mass Dispel",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
         name: "Hymn of Hope",
-
         image: require("./images/Aboms_Might.png").default,
       },
       {
         name: "Divine Hymn",
-
         image: require("./images/Aboms_Might.png").default,
       },
       {
         name: "Pain Suppression",
-
         image: require("./images/Aboms_Might.png").default,
       },
       {
         name: "Mind Control",
-
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -566,6 +730,22 @@ const SpecArray = [
       },
     ],
     utility: [
+      {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Mass Dispel",
+        image: require("./images/Aboms_Might.png").default,
+      },
       {
         name: "Hymn of Hope",
         image: require("./images/Aboms_Might.png").default,
@@ -603,6 +783,22 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Mass Dispel",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
         name: "Hymn of Hope",
         image: require("./images/Aboms_Might.png").default,
       },
@@ -637,6 +833,10 @@ const SpecArray = [
         name: "Tricks of the Trade",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Interrupt",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -660,6 +860,10 @@ const SpecArray = [
         name: "Tricks of the Trade",
         image: require("./images/Aboms_Might.png").default,
       },
+      {
+        name: "Interrupt",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
   },
   {
@@ -676,6 +880,10 @@ const SpecArray = [
     utility: [
       {
         name: "Tricks of the Trade",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Interrupt",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -731,14 +939,31 @@ const SpecArray = [
         name: "Flametongue Totem",
         image: require("./images/dk_unholy.png").default,
       },
+      {
+        category: "Melee Haste",
+        name: "Windfury Totem ",
+        image: require("./images/Windfury.png").default,
+      },
     ],
     utility: [
+      {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Cleansing Totem",
+        image: require("./images/Aboms_Might.png").default,
+      },
       {
         name: "Nature resistance",
         image: require("./images/Aboms_Might.png").default,
       },
       {
-        name: "Wind Shear",
+        name: "Interrupt",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -749,7 +974,7 @@ const SpecArray = [
     color: "blue",
     buffs: [
       {
-        category: "Armor (Stackable)",
+        category: "Armor",
         name: "Stoneskin Totem",
         image: require("./images/dk_unholy.png").default,
       },
@@ -791,11 +1016,23 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Cleansing Totem",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
         name: "Nature resistance",
         image: require("./images/Aboms_Might.png").default,
       },
       {
-        name: "Wind Shear",
+        name: "Interrupt",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -806,7 +1043,7 @@ const SpecArray = [
     color: "blue",
     buffs: [
       {
-        category: "Armor (Stackable)",
+        category: "Armor",
         name: "Stoneskin Totem",
         image: require("./images/dk_unholy.png").default,
       },
@@ -840,14 +1077,35 @@ const SpecArray = [
         name: "Ancestral Healing",
         image: require("./images/dk_unholy.png").default,
       },
+      {
+        category: "Melee Haste",
+        name: "Windfury Totem ",
+        image: require("./images/Windfury.png").default,
+      },
     ],
     utility: [
+      {
+        name: "Remove Curse",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Disease",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Dispel Poison",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Cleansing Totem",
+        image: require("./images/Aboms_Might.png").default,
+      },
       {
         name: "Nature resistance",
         image: require("./images/Aboms_Might.png").default,
       },
       {
-        name: "Wind Shear",
+        name: "Interrupt",
         image: require("./images/Aboms_Might.png").default,
       },
       {
@@ -889,7 +1147,7 @@ const SpecArray = [
     ],
     utility: [
       {
-        name: "Pummel",
+        name: "Interrupt",
         image: require("./images/Aboms_Might.png").default,
       },
       {
@@ -926,7 +1184,7 @@ const SpecArray = [
     ],
     utility: [
       {
-        name: "Pummel",
+        name: "Interrupt",
         image: require("./images/Aboms_Might.png").default,
       },
       {
@@ -959,7 +1217,7 @@ const SpecArray = [
     ],
     utility: [
       {
-        name: "Pummel",
+        name: "Interrupt",
         image: require("./images/Aboms_Might.png").default,
       },
       {
@@ -1003,7 +1261,12 @@ const SpecArray = [
         image: require("./images/dk_unholy.png").default,
       },
     ],
-    utility: [],
+    utility: [
+      {
+        name: "Felhunter's Devour Magic",
+        image: require("./images/Aboms_Might.png").default,
+      },
+    ],
   },
   {
     text: "Demonology Warlock",
