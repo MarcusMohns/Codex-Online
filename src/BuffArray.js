@@ -250,6 +250,7 @@ const BuffArray = [
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
+        <div className="spell-names">Commanding Shout, Blood Pact</div>
         <div>
           Maximum health <span className="buff">increased</span> by x.
         </div>
@@ -590,6 +591,18 @@ const BuffArray = [
           Alternatively, Drums of the Forgotten Kings provide 8% all stats and
           can be bought off the auction house.
         </div>
+      </div>
+    ),
+  },
+  {
+    name: "Attack Speed Reduce",
+    source: ["Warriors"],
+    image: require("./images/dk_unholy.png").default,
+    text: (
+      <div>
+        <div className="spell-names"> Thunderclap</div>
+        <span className="debuff">Reduces</span> boss Attack Speed by{" "}
+        <span className="buff-value">10%</span>.
       </div>
     ),
   },
