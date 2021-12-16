@@ -1149,10 +1149,23 @@ const SpecArray = [
         name: "Trauma",
         image: require("./images/dk_unholy.png").default,
       },
+      {
+        category: "Attack Speed Reduce",
+        name: "Thunderclap",
+        image: require("./images/dk_unholy.png").default,
+      },
     ],
     utility: [
       {
         name: "Interrupt",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Shattering Throw",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Demoralizing Shout",
         image: require("./images/Aboms_Might.png").default,
       },
       {
@@ -1186,6 +1199,11 @@ const SpecArray = [
         name: "Rampage",
         image: require("./images/dk_unholy.png").default,
       },
+      {
+        category: "Attack Speed Reduce",
+        name: "Thunderclap",
+        image: require("./images/dk_unholy.png").default,
+      },
     ],
     utility: [
       {
@@ -1194,6 +1212,10 @@ const SpecArray = [
       },
       {
         name: "Shattering Throw",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Demoralizing Shout",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
@@ -1219,6 +1241,11 @@ const SpecArray = [
         name: "Sunder Armor",
         image: require("./images/dk_unholy.png").default,
       },
+      {
+        category: "Attack Speed Reduce",
+        name: "Thunderclap",
+        image: require("./images/dk_unholy.png").default,
+      },
     ],
     utility: [
       {
@@ -1231,6 +1258,10 @@ const SpecArray = [
       },
       {
         name: "Shattering Throw",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        name: "Demoralizing Shout",
         image: require("./images/Aboms_Might.png").default,
       },
     ],
