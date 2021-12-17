@@ -294,6 +294,7 @@ const BuffArray = [
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
+        <div className="spell-names">Blessing of Wisdom, Mana Spring Totem</div>
         <div>
           <span className="buff">Restores</span> x mana every 5 seconds
         </div>
@@ -600,9 +601,113 @@ const BuffArray = [
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
-        <div className="spell-names"> Thunderclap</div>
-        <span className="debuff">Reduces</span> boss Attack Speed by{" "}
-        <span className="buff-value">10%</span>.
+        <div className="spell-names">
+          {" "}
+          Icy Touch, Improved Icy Touch, Infected Wounds, Judgements of the
+          Just, Thunder Clap, Improved Thunder Clap
+        </div>
+        <span className="debuff">Reduces</span> Melee Attack Speed by{" "}
+        <span className="buff-value">x</span>.
+        <div>
+          Icy Touch: <span className="buff-value">411</span>.
+        </div>
+        <div>
+          Improved Icy Touch: <span className="buff-value">575</span>.
+        </div>
+        <div>
+          Infected Wounds: <span className="buff-value">411</span>.
+        </div>
+        <div>
+          Judgements of the Just: <span className="buff-value">575</span>.
+        </div>
+        <div>
+          Thunder Clap: <span className="buff-value">478</span>.
+        </div>
+        <div>
+          Improved Thunder Clap: <span className="buff-value">573</span>.
+        </div>
+      </div>
+    ),
+  },
+  {
+    name: "Attack Power Reduce",
+    source: ["Warriors,Druids,Warlocks"],
+    image: require("./images/dk_unholy.png").default,
+    text: (
+      <div>
+        <div className="spell-names">
+          Demopralizing Shout, Demoralizing Roar, Curse of Weakness
+        </div>
+        <span className="debuff">Decreases</span> nearby{" "}
+        <span className="debuff">enemies'</span> attack power by{" "}
+        <span className="buff-value">x</span>.
+        <div>
+          Demoralizing Shout: <span className="buff-value">411</span>.
+        </div>
+        <div>
+          Improved Curse of Weakness: <span className="buff-value">575</span>.
+        </div>
+        <div>
+          Demoralizing Roar: <span className="buff-value">411</span>.
+        </div>
+        <div>
+          Improved Demoralizing Roar: <span className="buff-value">575</span>.
+        </div>
+        <div>
+          Curse of Weakness: <span className="buff-value">478</span>.
+        </div>
+        <div>
+          Improved Curse of Weakness: <span className="buff-value">573</span>.
+        </div>
+        <div className="fine-print">
+          Warlocks using Curse of Weakness will suffer a steep DPS loss.
+        </div>
+      </div>
+    ),
+  },
+  {
+    name: "Healing Reduce",
+    source: ["Hunters, Arms Warrior, Fury Warrior, Rogues"],
+    image: require("./images/dk_unholy.png").default,
+    text: (
+      <div>
+        <div className="spell-names">
+          {" "}
+          Aimed Shot, Mortal Strike, Furious Attacks, Wound Poison
+        </div>
+        <span className="debuff">Decreases enemy target</span> Healing Taken by{" "}
+        <span className="buff-value">50%</span>.
+        <div className="fine-print">
+          Rogues using Wound Poison will suffer a steep DPS loss.
+        </div>
+      </div>
+    ),
+  },
+  {
+    name: "Health Restore",
+    source: ["Paladins"],
+    image: require("./images/dk_unholy.png").default,
+    text: (
+      <div>
+        <div className="spell-names">Judgement of Light</div>
+        Judges an <span className="debuff">enemy target</span> for 20 seconds,
+        granting attacks made against the judged enemy a chance to heal{" "}
+        <span className="buff-value">2%</span> of the{" "}
+        <span className="buff">friendly targets'</span> health.
+      </div>
+    ),
+  },
+  {
+    name: "Mana Restore",
+    source: ["Paladins"],
+    image: require("./images/dk_unholy.png").default,
+    text: (
+      <div>
+        <div className="spell-names">Judgement of Wisdom</div>
+        Judges an <span className="debuff">enemy target</span> for 20 seconds,
+        granting attacks made against the judged enemy a chance to restore{" "}
+        <span className="buff-value">2%</span> of the{" "}
+        <span className="buff">friendly targets'</span> mana.
       </div>
     ),
   },
