@@ -10,6 +10,11 @@ const SpecArray = [
         image: require("./images/Horn_Of_Winter.png").default,
       },
       {
+        category: "Attack Speed Reduction",
+        name: "Improved Icy Touch",
+        image: require("./images/Horn_Of_Winter.png").default,
+      },
+      {
         category: "Attack Power %",
         name: "Abomination's Might",
         image: require("./images/Aboms_Might.png").default,
@@ -39,6 +44,11 @@ const SpecArray = [
     image: require("./images/dk_unholy.png").default,
     color: "red",
     buffs: [
+      {
+        category: "Attack Speed Reduction",
+        name: "Improved Icy Touch",
+        image: require("./images/Horn_Of_Winter.png").default,
+      },
       {
         category: "Agility and Strength",
         name: "Horn of Winter",
@@ -76,6 +86,11 @@ const SpecArray = [
     color: "red",
     buffs: [
       {
+        category: "Attack Speed Reduction",
+        name: "Improved Icy Touch",
+        image: require("./images/Horn_Of_Winter.png").default,
+      },
+      {
         category: "Agility and Strength",
         name: "Horn of Winter",
         image: require("./images/Horn_Of_Winter.png").default,
@@ -106,6 +121,11 @@ const SpecArray = [
     image: require("./images/druid_balance.png").default,
     color: "orange",
     buffs: [
+      {
+        category: "Attack Power Reduction",
+        name: "Demoralizing Roar",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Haste %",
         name: "Improved Moonkin Form",
@@ -165,6 +185,16 @@ const SpecArray = [
     color: "orange",
     buffs: [
       {
+        category: "Attack Speed Reduction",
+        name: "Infected Wounds",
+        image: require("./images/Horn_Of_Winter.png").default,
+      },
+      {
+        category: "Attack Power Reduction",
+        name: "Demoralizing Roar",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Melee Crit",
         name: "Leader of the Pack",
         image: require("./images/dk_unholy.png").default,
@@ -220,6 +250,11 @@ const SpecArray = [
     color: "orange",
     buffs: [
       {
+        category: "Attack Power Reduction",
+        name: "Demoralizing Roar",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Mark of the Wild",
         name: "Mark of the Wild",
         image: require("./images/Mark_Of_The_Wild.png").default,
@@ -263,6 +298,11 @@ const SpecArray = [
         name: "Ferocious Inspiration",
         image: require("./images/dk_unholy.png").default,
       },
+      {
+        category: "Healing Reduction",
+        name: "Aimed Shot",
+        image: require("./images/dk_unholy.png").default,
+      },
     ],
     utility: [
       {
@@ -280,6 +320,11 @@ const SpecArray = [
     image: require("./images/hunter_marksman.png").default,
     color: "green",
     buffs: [
+      {
+        category: "Healing Reduction",
+        name: "Aimed Shot",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Attack Power %",
         name: "Trueshot Aura",
@@ -306,6 +351,11 @@ const SpecArray = [
         category: "Replenishment",
         name: "Hunting Party",
         image: require("./images/Replenishment.png").default,
+      },
+      {
+        category: "Healing Reduction",
+        name: "Aimed Shot",
+        image: require("./images/dk_unholy.png").default,
       },
     ],
     utility: [
@@ -447,6 +497,16 @@ const SpecArray = [
         name: "Blessing of Kings",
         image: require("./images/Greater_Blessing_Of_Kings.png").default,
       },
+      {
+        category: "Health Restore",
+        name: "Judgement of Light",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        category: "Mana Restore",
+        name: "Judgement of Wisdom",
+        image: require("./images/Aboms_Might.png").default,
+      },
     ],
     utility: [
       {
@@ -526,6 +586,16 @@ const SpecArray = [
         category: "Healing Recieved %",
         name: "Improved Devotion Aura",
         image: require("./images/dk_unholy.png").default,
+      },
+      {
+        category: "Health Restore",
+        name: "Judgement of Light",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        category: "Mana Restore",
+        name: "Judgement of Wisdom",
+        image: require("./images/Aboms_Might.png").default,
       },
     ],
     utility: [
@@ -611,6 +681,16 @@ const SpecArray = [
         category: "Haste %",
         name: "Swift Retribution",
         image: require("./images/dk_unholy.png").default,
+      },
+      {
+        category: "Health Restore",
+        name: "Judgement of Light",
+        image: require("./images/Aboms_Might.png").default,
+      },
+      {
+        category: "Mana Restore",
+        name: "Judgement of Wisdom",
+        image: require("./images/Aboms_Might.png").default,
       },
     ],
     utility: [
@@ -823,6 +903,11 @@ const SpecArray = [
     color: "yellow",
     buffs: [
       {
+        category: "Healing Reduction",
+        name: "Wound Poison",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Armor Reduction (Major)",
         name: "Expose Armor",
         image: require("./images/dk_unholy.png").default,
@@ -850,6 +935,11 @@ const SpecArray = [
     color: "yellow",
     buffs: [
       {
+        category: "Healing Reduction",
+        name: "Wound Poison",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Armor Reduction (Major)",
         name: "Expose Armor",
         image: require("./images/dk_unholy.png").default,
@@ -876,6 +966,11 @@ const SpecArray = [
     image: require("./images/rogue_subtlety.png").default,
     color: "yellow",
     buffs: [
+      {
+        category: "Healing Reduction",
+        name: "Wound Poison",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Phys Vulnerability",
         name: "Savage Combat",
@@ -1125,6 +1220,17 @@ const SpecArray = [
     color: "brown",
     buffs: [
       {
+        category: "Healing Reduction",
+        name: "Mortal Strike",
+        image: require("./images/dk_unholy.png").default,
+      },
+
+      {
+        category: "Attack Power Reduction",
+        name: "Demoralizing Shout",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Attack Power",
         name: "Battle Shout",
         image: require("./images/Battle_Shout.png").default,
@@ -1150,7 +1256,7 @@ const SpecArray = [
         image: require("./images/dk_unholy.png").default,
       },
       {
-        category: "Attack Speed Reduce",
+        category: "Attack Speed Reduction",
         name: "Thunderclap",
         image: require("./images/dk_unholy.png").default,
       },
@@ -1164,10 +1270,7 @@ const SpecArray = [
         name: "Shattering Throw",
         image: require("./images/Aboms_Might.png").default,
       },
-      {
-        name: "Demoralizing Shout",
-        image: require("./images/Aboms_Might.png").default,
-      },
+
       {
         name: "Shattering Throw",
         image: require("./images/Aboms_Might.png").default,
@@ -1179,6 +1282,16 @@ const SpecArray = [
     image: require("./images/warrior_fury.png").default,
     color: "brown",
     buffs: [
+      {
+        category: "Attack Power Reduction",
+        name: "Demoralizing Shout",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
+        category: "Healing Reduction",
+        name: "Furious Attacks",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Attack Power",
         name: "Battle Shout",
@@ -1200,7 +1313,7 @@ const SpecArray = [
         image: require("./images/dk_unholy.png").default,
       },
       {
-        category: "Attack Speed Reduce",
+        category: "Attack Speed Reduction",
         name: "Thunderclap",
         image: require("./images/dk_unholy.png").default,
       },
@@ -1214,10 +1327,6 @@ const SpecArray = [
         name: "Shattering Throw",
         image: require("./images/Aboms_Might.png").default,
       },
-      {
-        name: "Demoralizing Shout",
-        image: require("./images/Aboms_Might.png").default,
-      },
     ],
   },
 
@@ -1226,6 +1335,11 @@ const SpecArray = [
     image: require("./images/warrior_protection.png").default,
     color: "brown",
     buffs: [
+      {
+        category: "Attack Power Reduction",
+        name: "Demoralizing Shout",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Attack Power",
         name: "Battle Shout",
@@ -1242,8 +1356,8 @@ const SpecArray = [
         image: require("./images/dk_unholy.png").default,
       },
       {
-        category: "Attack Speed Reduce",
-        name: "Thunderclap",
+        category: "Attack Speed Reduction",
+        name: "Improved Thunderclap",
         image: require("./images/dk_unholy.png").default,
       },
     ],
@@ -1260,10 +1374,6 @@ const SpecArray = [
         name: "Shattering Throw",
         image: require("./images/Aboms_Might.png").default,
       },
-      {
-        name: "Demoralizing Shout",
-        image: require("./images/Aboms_Might.png").default,
-      },
     ],
   },
   {
@@ -1271,6 +1381,11 @@ const SpecArray = [
     image: require("./images/warlock_affliction.png").default,
     color: "purple",
     buffs: [
+      {
+        category: "Attack Power Reduction",
+        name: "Curse of Weakness",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Intellect",
         name: "Fel Intelligence",
@@ -1310,6 +1425,11 @@ const SpecArray = [
     color: "purple",
     buffs: [
       {
+        category: "Attack Power Reduction",
+        name: "Curse of Weakness",
+        image: require("./images/dk_unholy.png").default,
+      },
+      {
         category: "Spell Power",
         name: "Demonic Pact",
         image: require("./images/dk_unholy.png").default,
@@ -1337,6 +1457,11 @@ const SpecArray = [
     image: require("./images/warlock_destruction.png").default,
     color: "purple",
     buffs: [
+      {
+        category: "Attack Power Reduction",
+        name: "Curse of Weakness",
+        image: require("./images/dk_unholy.png").default,
+      },
       {
         category: "Health",
         name: "Improved Imp",

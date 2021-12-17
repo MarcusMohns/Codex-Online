@@ -596,42 +596,39 @@ const BuffArray = [
     ),
   },
   {
-    name: "Attack Speed Reduce",
-    source: ["Warriors"],
+    name: "Attack Speed Reduction",
+    source: ["Death Knights, Feral Druid, Warriors"],
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
         <div className="spell-names">
           {" "}
-          Icy Touch, Improved Icy Touch, Infected Wounds, Judgements of the
-          Just, Thunder Clap, Improved Thunder Clap
+          Icy Touch, Improved Icy Touch, Infected Wounds, Thunder Clap, Improved
+          Thunder Clap
         </div>
         <span className="debuff">Reduces</span> Melee Attack Speed by{" "}
         <span className="buff-value">x</span>.
         <div>
-          Icy Touch: <span className="buff-value">411</span>.
+          Icy Touch: <span className="buff-value">14%</span>.
         </div>
         <div>
-          Improved Icy Touch: <span className="buff-value">575</span>.
+          Improved Icy Touch: <span className="buff-value">20%</span>.
         </div>
         <div>
-          Infected Wounds: <span className="buff-value">411</span>.
+          Infected Wounds: <span className="buff-value">20%</span>.
         </div>
         <div>
-          Judgements of the Just: <span className="buff-value">575</span>.
+          Thunder Clap: <span className="buff-value">10%</span>.
         </div>
         <div>
-          Thunder Clap: <span className="buff-value">478</span>.
-        </div>
-        <div>
-          Improved Thunder Clap: <span className="buff-value">573</span>.
+          Improved Thunder Clap: <span className="buff-value">20%</span>.
         </div>
       </div>
     ),
   },
   {
-    name: "Attack Power Reduce",
-    source: ["Warriors,Druids,Warlocks"],
+    name: "Attack Power Reduction",
+    source: ["Warriors, Druids, Warlocks"],
     image: require("./images/dk_unholy.png").default,
     text: (
       <div>
@@ -666,7 +663,7 @@ const BuffArray = [
     ),
   },
   {
-    name: "Healing Reduce",
+    name: "Healing Reduction",
     source: ["Hunters, Arms Warrior, Fury Warrior, Rogues"],
     image: require("./images/dk_unholy.png").default,
     text: (
