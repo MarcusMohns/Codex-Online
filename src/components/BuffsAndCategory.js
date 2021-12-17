@@ -52,7 +52,10 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
       </StyledCategory>
       {newBuffs.map((buff) => (
         <StyledBuff key={(buff.count, buff.name)}>
-          {buff.count} <p>x {buff.name} </p>
+          <p>
+            {" "}
+            {buff.count}x {buff.name}
+          </p>
           <img src={buff.image} alt="buff icon" />
         </StyledBuff>
       ))}

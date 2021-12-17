@@ -265,7 +265,7 @@ export const StyledBuff = styled.div`
   img {
     width: 25px;
     border-radius: 20%;
-    margin-left: 0.5rem;
+    margin-left: 0.3rem;
     opacity: 0%;
     animation-name: FadeIn;
     animation-duration: 0.5s;
