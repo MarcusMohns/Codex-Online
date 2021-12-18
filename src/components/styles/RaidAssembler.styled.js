@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
-import { BiReset } from "react-icons/bi";
-import { MdOutlineAddBox } from "react-icons/md";
+import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -504,10 +503,15 @@ export const DoubleArrowLeft = styled(CgChevronLeftO)`
   z-index: 2;
 `;
 
-export const ResetIcon = styled(BiReset)`
+export const ResetIcon = styled(MdRestartAlt)`
   font-size: 2rem;
   cursor: pointer;
   color: white;
+  transition: transform 400ms;
+
+  &:hover {
+    transform: rotate(-180deg);
+  }
 `;
 export const AddPlayerIcon = styled(MdOutlineAddBox)`
   font-size: 1.5em;
