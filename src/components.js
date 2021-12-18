@@ -8,7 +8,8 @@ const COLORS = {
   primary: "rgba(38, 72, 116, 1)",
   fadedPrimary: "rgba(38, 72, 116, 0.75)",
   primaryTransparent: "rgba(38, 72, 116, 0)",
-  highlight: "lightblue",
+  fadedHighlight: "rgba(173,216,230,0.50)",
+  highlight: "rgba(173,216,230,1)",
 };
 
 export default COLORS;
