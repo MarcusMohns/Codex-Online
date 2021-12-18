@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
+import { BiReset } from "react-icons/bi";
+import { MdOutlineAddBox } from "react-icons/md";
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -105,10 +107,6 @@ export const SpecContainer = styled.section`
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-columns: repeat(3, 1fr);
-  }
-  #spec-container-text {
-    color: ${COLORS.lightText};
-    padding: 1rem;
   }
 `;
 export const StyledSpecButton = styled.button`
@@ -409,6 +407,7 @@ export const UtilityContainer = styled.section`
   @media (min-width: 1200px) {
     grid-area: Utils;
     min-height: 95%;
+    max-height: 100%;
     margin-bottom: 0px;
   }
 `;
@@ -448,10 +447,10 @@ export const StyledUtility = styled.div`
   }
 `;
 
-export const StyledContentHeader = styled.div`
+export const ContentHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 3rem;
   width: 100%;
   text-align: center;
@@ -459,6 +458,11 @@ export const StyledContentHeader = styled.div`
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
   box-shadow: 0 2px 6px -1px black;
+
+  .raid-count {
+    font-size: 1.1rem;
+    background-color: ${COLORS.fadedPrimary};
+  }
 `;
 
 export const CrossIcon = styled(FaRegTimesCircle)`
@@ -498,4 +502,36 @@ export const DoubleArrowLeft = styled(CgChevronLeftO)`
   cursor: pointer;
   opacity: 50%;
   z-index: 2;
+`;
+
+export const ResetIcon = styled(BiReset)`
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+`;
+export const AddPlayerIcon = styled(MdOutlineAddBox)`
+  font-size: 1.5em;
+  margin-left: 5px;
+  color: white;
+`;
+export const AddPlayerButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: ${COLORS.fadedHighlight};
+  color: ${COLORS.lightText};
+  border-radius: 3px;
+
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: ${COLORS.highlight};
+  }
 `;

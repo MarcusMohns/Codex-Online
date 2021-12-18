@@ -11,8 +11,11 @@ import {
   RaidContainer,
   BuffContainer,
   DoubleArrowLeft,
+  ResetIcon,
+  AddPlayerIcon,
+  AddPlayerButton,
   UtilityContainer,
-  StyledContentHeader,
+  ContentHeader,
 } from "../components/styles/RaidAssembler.styled";
 
 const { v4: uuidv4 } = require("uuid");
@@ -158,7 +161,6 @@ const RaidAssembler = () => {
           onClick={handleRightMenuToggle}
         />
         <SpecContainer className="spec-container">
-          <h1 id="spec-container-text">Spec Button container</h1>
           <SpecButtons
             className="spec-buttons"
             specs={SpecArray}
@@ -168,16 +170,14 @@ const RaidAssembler = () => {
       </div>
 
       <RaidContainer className="raid-container">
-        <StyledContentHeader>
-          {/* make this pretty */}
-          <div>Raid</div>
-          <div>{raidCount[0]} / 25 ---</div>
-          <div>{raidCount[1]} Tanks ---</div>
-          <div>{raidCount[2]} Healers ---</div>
-          <div>{raidCount[3]} DPS ---</div>
-          <button onClick={handleRightMenuToggle}>Add a player</button>
-          <button onClick={resetRaid}>Reset</button>
-        </StyledContentHeader>
+        <ContentHeader>
+          {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
+          <p className="raid-count">{raidCount[0]} / 25</p>
+          <AddPlayerButton onClick={handleRightMenuToggle}>
+            Add a player <AddPlayerIcon />
+          </AddPlayerButton>
+          <ResetIcon onClick={resetRaid} />
+        </ContentHeader>
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
         ) : (
@@ -185,11 +185,11 @@ const RaidAssembler = () => {
         )}
       </RaidContainer>
       <UtilityContainer>
-        <StyledContentHeader>Utilities</StyledContentHeader>
+        <ContentHeader>Utilities</ContentHeader>
         <Utilities utilities={utilities}></Utilities>
       </UtilityContainer>
       <BuffContainer className="buff-container">
-        <StyledContentHeader>Buffs & Debuffs</StyledContentHeader>
+        <ContentHeader>Buffs & Debuffs</ContentHeader>
         <BuffCategories currentBuffs={buffs}></BuffCategories>
       </BuffContainer>
     </Main>
