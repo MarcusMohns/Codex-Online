@@ -176,7 +176,7 @@ const RaidAssembler = () => {
             <p className="raid-count">{raidCount[0]} / 25 </p>
             {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
           </div>
-          <p className="raid">Raid</p>
+          <div className="raid-text">Raid</div>
           <div className="btn-container">
             <AddPlayerButton onClick={handleRightMenuToggle}>
               Add a player <AddPlayerIcon />

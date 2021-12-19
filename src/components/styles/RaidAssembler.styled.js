@@ -148,6 +148,7 @@ export const RaidContainer = styled.section`
   background-color: ${COLORS.primaryTransparent};
   min-width: 100%;
   height: min-content;
+
   margin-bottom: 50px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
   .no-players-text {
@@ -155,6 +156,7 @@ export const RaidContainer = styled.section`
     display: flex;
     color: ${COLORS.lightText};
     font-size: 1.3rem;
+    margin-bottom: 1rem;
   }
   .grid {
     display: grid;
@@ -171,6 +173,12 @@ export const RaidContainer = styled.section`
       margin: auto;
       width: 80%;
       margin-bottom: auto;
+    }
+    .no-players-text {
+      margin: auto;
+      display: flex;
+      color: ${COLORS.lightText};
+      font-size: 1.3rem;
     }
   }
 `;
@@ -452,7 +460,6 @@ export const ContentHeader = styled.div`
   justify-content: space-around;
   height: 3rem;
   width: 100%;
-  text-align: center;
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
@@ -462,31 +469,40 @@ export const RaidContentHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3rem;
+  height: 5rem;
   width: 100%;
-  text-align: center;
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
   box-shadow: 0 2px 6px -1px black;
-  .raid {
-    margin-right: 5rem;
-  }
-  .raid-status-container {
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    background-color: ${COLORS.fadedPrimary};
-
-    .raid-count {
-      margin-right: 1rem;
-      margin-left: 1rem;
-      font-size: 1.1rem;
-    }
+  .raid-text {
+    display: none;
   }
   .btn-container {
     display: flex;
-    margin-right: 1rem;
+    justify-self: flex-end;
+  }
+  .raid-status-container {
+    display: flex;
+    .raid-count {
+      margin-right: 1rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    height: 3rem;
+    .raid {
+      margin-right: 5rem;
+    }
+    .raid-status-container {
+      display: flex;
+      .raid-count {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        font-size: 1.1rem;
+      }
+    }
   }
 `;
 
