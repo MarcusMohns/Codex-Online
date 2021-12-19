@@ -16,6 +16,7 @@ import {
   AddPlayerButton,
   UtilityContainer,
   ContentHeader,
+  RaidContentHeader,
 } from "../components/styles/RaidAssembler.styled";
 
 const { v4: uuidv4 } = require("uuid");
@@ -170,14 +171,19 @@ const RaidAssembler = () => {
       </div>
 
       <RaidContainer className="raid-container">
-        <ContentHeader>
-          {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
-          <p className="raid-count">{raidCount[0]} / 25</p>
-          <AddPlayerButton onClick={handleRightMenuToggle}>
-            Add a player <AddPlayerIcon />
-          </AddPlayerButton>
-          <ResetIcon onClick={resetRaid} />
-        </ContentHeader>
+        <RaidContentHeader>
+          <div className="raid-status-container">
+            <p className="raid-count">{raidCount[0]} / 25 </p>
+            {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
+          </div>
+          <p className="raid">Raid</p>
+          <div className="btn-container">
+            <AddPlayerButton onClick={handleRightMenuToggle}>
+              Add a player <AddPlayerIcon />
+            </AddPlayerButton>
+            <ResetIcon onClick={resetRaid} />
+          </div>
+        </RaidContentHeader>
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
         ) : (
