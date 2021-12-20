@@ -322,14 +322,14 @@ export const StyledCategory = styled.div`
     position: absolute;
     min-width: 200px;
     min-height: 100%;
-    background-color: white;
+    background-color: ${COLORS.offWhite};
     z-index: 1;
     visibility: hidden;
     border-radius: 0.5rem;
     box-sizing: border-box;
     transition: opacity 0.5s;
     transform: translate(10%, -50%);
-    background-color: black;
+    background-color: ${COLORS.blackText};
     opacity: 0;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -388,7 +388,7 @@ export const StyledCategory = styled.div`
     margin-top: -5px;
     border-width: 0.5rem;
     border-style: solid;
-    border-color: transparent black transparent transparent;
+    border-color: transparent #000 transparent transparent;
   }
   &:hover {
     .tooltiptext {
@@ -463,7 +463,7 @@ export const ContentHeader = styled.div`
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
-  box-shadow: 0 2px 6px -1px black;
+  box-shadow: 0 2px 6px -1px #000; ;
 `;
 export const RaidContentHeader = styled.div`
   display: flex;
@@ -474,7 +474,7 @@ export const RaidContentHeader = styled.div`
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
-  box-shadow: 0 2px 6px -1px black;
+  box-shadow: 0 2px 6px -1px #000;
   .raid-text {
     display: none;
   }
