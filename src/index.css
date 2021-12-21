@@ -129,16 +129,7 @@ html {
 
 body {
   background-color: black;
-  background-image: url("/src/images/background.png");
+  /* background-image: url("/src/images/background.png");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top; */
 }
-
-/* COLOR PALETTE 
-
-#f8f8ff (OFF WHITE)
-lightblue(YE)
-#256ce1 (DARK BLUE) 
-#264874 (DARKER BLUE)
-
-*/
