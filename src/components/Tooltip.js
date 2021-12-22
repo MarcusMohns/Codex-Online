@@ -16,4 +16,12 @@ const Tooltip = ({ category }) => {
   );
 };
 
+Tooltip.defaultProps = {
+  category: {
+    name: "missing tooltip",
+    text: "missing tooltip",
+    image: require("../images/hunter_beastmastery.png").default,
+  },
+};
+
 export default Tooltip;

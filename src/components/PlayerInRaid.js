@@ -8,4 +8,12 @@ const PlayerInRaid = ({ player, onDelete }) => {
   );
 };
 
+PlayerInRaid.defaultProps = {
+  player: {
+    color: "red",
+    text: "missing player",
+    image: require("../images/hunter_beastmastery.png").default,
+  },
+};
+
 export default PlayerInRaid;

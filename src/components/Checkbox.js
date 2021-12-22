@@ -7,4 +7,8 @@ const Checkbox = ({ text, onChange }) => {
   );
 };
 
+Checkbox.defaultProps = {
+  text: "missing checkbox",
+};
+
 export default Checkbox;

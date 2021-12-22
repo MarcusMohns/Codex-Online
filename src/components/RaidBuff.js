@@ -9,4 +9,8 @@ const RaidBuff = ({ text }) => {
   return <div>{allBuffs}</div>;
 };
 
+Checkbox.defaultProps = {
+  RaidBuff: "missing buff",
+};
+
 export default RaidBuff;

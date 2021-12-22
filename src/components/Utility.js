@@ -9,4 +9,10 @@ const Utility = ({ utility }) => {
   );
 };
 
+Utility.defaultProps = {
+  image: require("../images/hunter_beastmastery.png").default,
+  name: "missing spec",
+  count: 0,
+};
+
 export default Utility;
