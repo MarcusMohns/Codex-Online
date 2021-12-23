@@ -75,7 +75,7 @@ const BuffArray = [
 
   {
     name: "Armor Reduction (Minor)",
-    source: ["Feral Druid", "Warlocks"],
+    source: ["Druids", "Warlocks"],
     image: require("./images/Faerie_Fire.png").default,
     text: (
       <div>

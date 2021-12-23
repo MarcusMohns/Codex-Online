@@ -151,6 +151,11 @@ const SpecArray = [
         name: "Improved Faerie Fire",
         image: require("./images/Faerie_Fire.png").default,
       },
+      {
+        category: "Armor Reduction (Minor)",
+        name: "Improved Faerie Fire",
+        image: require("./images/Faerie_Fire.png").default,
+      },
     ],
     utility: [
       {
@@ -263,6 +268,11 @@ const SpecArray = [
         category: "Healing Recieved %",
         name: "Tree of Life",
         image: require("./images/Improved_Tree_Form.png").default,
+      },
+      {
+        category: "Armor Reduction (Minor)",
+        name: "Faerie Fire",
+        image: require("./images/Faerie_Fire.png").default,
       },
     ],
     utility: [
@@ -805,7 +815,7 @@ const SpecArray = [
       },
       {
         category: "Spirit",
-        name: "Divine Spirit ",
+        name: "Divine Spirit",
         image: require("./images/Divine_Spirit.png").default,
       },
       {
@@ -854,6 +864,11 @@ const SpecArray = [
         category: "Spell Hit",
         name: "Misery",
         image: require("./images/Misery.png").default,
+      },
+      {
+        category: "Spirit",
+        name: "Divine Spirit",
+        image: require("./images/Divine_Spirit.png").default,
       },
       {
         category: "Replenishment",
@@ -927,6 +942,14 @@ const SpecArray = [
         name: "Interrupt",
         image: require("./images/Kick.png").default,
       },
+      {
+        name: "Anesthetic Poison",
+        image: require("./images/Anesthetic_Poison.png").default,
+      },
+      {
+        name: "Mind-numbing Poison",
+        image: require("./images/Crypt_Fever.png").default,
+      },
     ],
   },
   {
@@ -959,6 +982,14 @@ const SpecArray = [
         name: "Interrupt",
         image: require("./images/Kick.png").default,
       },
+      {
+        name: "Anesthetic Poison",
+        image: require("./images/Anesthetic_Poison.png").default,
+      },
+      {
+        name: "Mind-numbing Poison",
+        image: require("./images/Crypt_Fever.png").default,
+      },
     ],
   },
   {
@@ -966,6 +997,11 @@ const SpecArray = [
     image: require("./images/rogue_subtlety.png").default,
     color: "yellow",
     buffs: [
+      {
+        category: "Armor Reduction (Major)",
+        name: "Expose Armor",
+        image: require("./images/Expose_Armor.png").default,
+      },
       {
         category: "Healing Reduction",
         name: "Wound Poison",
@@ -980,6 +1016,14 @@ const SpecArray = [
       {
         name: "Interrupt",
         image: require("./images/Kick.png").default,
+      },
+      {
+        name: "Anesthetic Poison",
+        image: require("./images/Anesthetic_Poison.png").default,
+      },
+      {
+        name: "Mind-numbing Poison",
+        image: require("./images/Crypt_Fever.png").default,
       },
     ],
   },
@@ -1028,11 +1072,6 @@ const SpecArray = [
         category: "Crit Strike %",
         name: "Totem of Wrath",
         image: require("./images/Totem_Of_Wrath.png").default,
-      },
-      {
-        category: "Spell Power",
-        name: "Flametongue Totem",
-        image: require("./images/Flametongue_Totem.png").default,
       },
       {
         category: "Melee Haste",
