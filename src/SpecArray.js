@@ -750,12 +750,12 @@ const SpecArray = [
       {
         category: "Spirit",
         name: "Divine Spirit",
-        image: require("./images/Prayer_of_Spirit.png").default,
+        image: require("./images/Divine_Spirit.png").default,
       },
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/Word_Fortitude.png").default,
+        image: require("./images/Power_Word_Fortitude.png").default,
       },
     ],
     utility: [
@@ -806,12 +806,12 @@ const SpecArray = [
       {
         category: "Spirit",
         name: "Divine Spirit ",
-        image: require("./images/Prayer_of_Spirit.png").default,
+        image: require("./images/Divine_Spirit.png").default,
       },
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/Word_Fortitude.png").default,
+        image: require("./images/Power_Word_Fortitude.png").default,
       },
     ],
     utility: [
@@ -863,7 +863,7 @@ const SpecArray = [
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/Word_Fortitude.png").default,
+        image: require("./images/Power_Word_Fortitude.png").default,
       },
     ],
     utility: [
@@ -1017,7 +1017,7 @@ const SpecArray = [
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/Wrath_Of_Air.png").default,
+        image: require("./images/Wrath_Of_Air_Totem.png").default,
       },
       {
         category: "Spell Power",
@@ -1096,7 +1096,7 @@ const SpecArray = [
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/Wrath_Of_Air.png").default,
+        image: require("./images/Wrath_Of_Air_Totem.png").default,
       },
       {
         category: "Spell Power",
@@ -1165,7 +1165,7 @@ const SpecArray = [
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/Wrath_Of_Air.png").default,
+        image: require("./images/Wrath_Of_Air_Totem.png").default,
       },
       {
         category: "Armor %",
