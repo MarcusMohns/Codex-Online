@@ -149,7 +149,6 @@ export const RaidContainer = styled.section`
   background-color: ${COLORS.primaryTransparent};
   min-width: 100%;
   height: min-content;
-
   margin-bottom: 50px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
   .no-players-text {
@@ -161,10 +160,13 @@ export const RaidContainer = styled.section`
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow:column;
+
+}
+    gap: 0px 0px;
     grid-auto-flow: column;
-    width: 100%;
     background-color: ${COLORS.primaryTransparent};
   }
   @media (min-width: 1200px) {
@@ -174,6 +176,11 @@ export const RaidContainer = styled.section`
       margin: auto;
       width: 80%;
       margin-bottom: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-auto-flow: column;
+      background-color: ${COLORS.primaryTransparent};
     }
     .no-players-text {
       margin: auto;
@@ -252,9 +259,12 @@ export const CategoryContainer = styled.div`
   height: 100%;
   width: 100%;
   margin-bottom: 2px;
+  border: 3px solid black;
+
   @media (min-width: 1200px) {
     flex-direction: row;
     margin-bottom: 0px;
+    border: none;
   }
 `;
 
@@ -304,18 +314,22 @@ export const StyledBuff = styled.div`
 export const StyledCategory = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   user-select: none;
   cursor: pointer;
   font-size: 0.9rem;
-  padding: 0.4rem;
-  margin-right: 1px;
   background-color: ${(props) => props.color};
   transition: background-color 0.5s;
   color: ${COLORS.darktext};
   width: 100%;
+  .category-name-text {
+    display: flex;
+    margin-left: 1.5rem;
+    padding: 1rem;
+  }
   .tooltip {
+    display: none;
     position: relative;
     padding: 0px;
     left: 100%;
@@ -401,6 +415,17 @@ export const StyledCategory = styled.div`
   @media (min-width: 1200px) {
     flex-direction: row;
     width: 250px;
+    padding: 0.4rem;
+    justify-content: space-between;
+
+    .tooltip {
+      display: initial;
+    }
+
+    .category-name-text {
+      margin-left: 1.5rem;
+      padding: 0rem;
+    }
   }
 `;
 
@@ -478,6 +503,7 @@ export const RaidContentHeader = styled.div`
   justify-content: space-between;
   height: 5rem;
   width: 100%;
+  max-width: 100%;
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
@@ -491,6 +517,8 @@ export const RaidContentHeader = styled.div`
   }
   .raid-status-container {
     display: flex;
+    margin-left: 2px;
+
     .raid-count {
       margin-right: 1rem;
       font-size: 1.1rem;
@@ -499,7 +527,9 @@ export const RaidContentHeader = styled.div`
 
   @media (min-width: 1200px) {
     height: 3rem;
-    .raid {
+
+    .raid-text {
+      display: initial;
       margin-right: 5rem;
     }
     .raid-status-container {
@@ -517,7 +547,6 @@ export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
   min-width: 1.5rem;
   font-size: 1.5rem;
-  margin-left: 0.5rem;
   animation-name: buffCategoryImage;
   animation-duration: 0.5s;
 `;
@@ -525,7 +554,6 @@ export const CheckCircle = styled(FaRegCheckCircle)`
   color: green;
   min-width: 1.5rem;
   font-size: 1.5rem;
-  margin-left: 0.5rem;
   animation-name: buffCategoryImage;
   animation-duration: 0.8s;
   @keyframes buffCategoryImage {

@@ -47,7 +47,7 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
     <CategoryContainer>
       <StyledCategory color={categoryColor}>
         <Tooltip category={category} />
-        {category.name}
+        <p className="category-name-text">{category.name}</p>
         {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}
       </StyledCategory>
       {newBuffs.map((buff) => (
