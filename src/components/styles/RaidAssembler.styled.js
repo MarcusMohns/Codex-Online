@@ -34,7 +34,7 @@ export const Main = styled.main`
     position: fixed;
     top: 25%;
     right: 0%;
-    z-index: 1;
+    z-index: 2;
     transition: all 150ms;
     @media screen and (min-width: 1200px) {
       padding: 0.5rem;
@@ -89,6 +89,7 @@ export const SpecContainer = styled.section`
   margin: auto;
   max-width: 75%;
   max-height: 50%;
+  z-index: 2;
   @media screen and (min-width: 1200px) {
     box-sizing: border-box;
     display: flex;
@@ -196,6 +197,7 @@ export const StyledPlayer = styled.div`
   color: white;
   font-size: 0.8rem;
   padding: 0.5rem;
+  margin: 1px;
   transition: transform 0.2;
   img {
     width: 1.2rem;
@@ -317,13 +319,13 @@ export const StyledCategory = styled.div`
     position: relative;
     padding: 0px;
     left: 100%;
+    z-index: 1;
   }
   .tooltip .tooltiptext {
     position: absolute;
     min-width: 200px;
     min-height: 100%;
     background-color: ${COLORS.offWhite};
-    z-index: 1;
     visibility: hidden;
     border-radius: 0.5rem;
     box-sizing: border-box;
@@ -411,11 +413,16 @@ export const UtilityContainer = styled.section`
   background-color: ${COLORS.background};
   min-width: 100%;
   margin-bottom: 50px;
+  height: fit-content;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
   @media (min-width: 1200px) {
     grid-area: Utils;
     min-height: 95%;
     max-height: 100%;
     margin-bottom: 0px;
+    padding: 0rem;
   }
 `;
 
