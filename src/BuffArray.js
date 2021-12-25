@@ -83,6 +83,9 @@ const BuffArray = [
         <span className="debuff">Decreases</span> the Armor of the{" "}
         <span className="debuff">enemy target</span> by{" "}
         <span className="buff-value">5%</span>.
+        <div className="fine-print">
+          Warlocks using Curse of Weakness will suffer a DPS loss.
+        </div>
       </div>
     ),
   },
@@ -633,7 +636,7 @@ const BuffArray = [
     text: (
       <div>
         <div className="spell-names">
-          Demopralizing Shout, Demoralizing Roar, Curse of Weakness
+          Demoralizing Shout, Demoralizing Roar, Curse of Weakness
         </div>
         <span className="debuff">Decreases</span> nearby{" "}
         <span className="debuff">enemies'</span> attack power by{" "}
@@ -642,7 +645,7 @@ const BuffArray = [
           Demoralizing Shout: <span className="buff-value">411</span>.
         </div>
         <div>
-          Improved Curse of Weakness: <span className="buff-value">575</span>.
+          Improved Demoralizing Shout: <span className="buff-value">575</span>.
         </div>
         <div>
           Demoralizing Roar: <span className="buff-value">411</span>.
@@ -657,7 +660,7 @@ const BuffArray = [
           Improved Curse of Weakness: <span className="buff-value">573</span>.
         </div>
         <div className="fine-print">
-          Warlocks using Curse of Weakness will suffer a steep DPS loss.
+          Warlocks using Curse of Weakness will suffer a DPS loss.
         </div>
       </div>
     ),
