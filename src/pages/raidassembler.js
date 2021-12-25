@@ -58,8 +58,9 @@ const RaidAssembler = () => {
   const [raid, setRaid] = useState([]);
   const [buffs, setBuffs] = useReducer(formReducer, {});
   const [utilities, setUtilities] = useReducer(formReducer, {});
-  const [raidCount, setCount] = useState([0, 0, 0, 0]);
+  const [raidCount, setCount] = useState([0, 0, 0, 0]); // first value full raid count, 2nd value Tanks, 3rd value Healers, 4th value DPS.
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
+  const [raidIsFull, setRaidIsFull] = useState(false);
 
   const resetRaid = () => {
     setRaid([]);
@@ -82,7 +83,7 @@ const RaidAssembler = () => {
       addUtility(id, player);
       handleCount(player, "add");
     } else {
-      alert("Raid is full");
+      setRaidIsFull(true);
     }
   };
 
@@ -91,6 +92,10 @@ const RaidAssembler = () => {
     setBuffs({ type: "delete", id: player.id });
     setUtilities({ type: "delete", id: player.id });
     handleCount(player, "delete");
+
+    if (raidIsFull) {
+      setRaidIsFull(false);
+    }
   };
 
   const addBuff = (id, player) => {
@@ -125,8 +130,6 @@ const RaidAssembler = () => {
     }
 
     let count = [...raidCount];
-    // raidCount is an arrray [0,0,0,0]
-    // first value 0/25, 2nd value Tanks, 3rd value healers, 4th value DPS.
 
     const tanks = [
       "Protection Paladin",
@@ -174,7 +177,7 @@ const RaidAssembler = () => {
         <RaidContentHeader>
           <div className="raid-status-container">
             <p className="raid-count">{raidCount[0]} / 25 </p>
-            {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
+            {raidCount[1]} Tanks | {raidCount[2]} Healer(s) | {raidCount[3]} DPS
           </div>
           <div className="raid-text">Raid</div>
           <div className="btn-container">
@@ -184,6 +187,21 @@ const RaidAssembler = () => {
             <ResetIcon onClick={resetRaid} />
           </div>
         </RaidContentHeader>
+        {raidIsFull ? (
+          <div
+            className={
+              raidCount[0] >= 25 ? "raid-is-full-warning" : "raid-is-not-full"
+            }
+          >
+            Raid is full
+          </div>
+        ) : (
+          <div
+            className={raidCount[0] >= 25 ? "raid-is-full" : "raid-is-not-full"}
+          >
+            Raid is full
+          </div>
+        )}
         {raid.length > 0 ? (
           <PlayersInRaid raid={raid} onDelete={deletePlayer} />
         ) : (

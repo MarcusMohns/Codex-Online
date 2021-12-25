@@ -145,7 +145,8 @@ export const RaidContainer = styled.section`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   background-color: ${COLORS.primaryTransparent};
   min-width: 100%;
   height: min-content;
@@ -157,31 +158,62 @@ export const RaidContainer = styled.section`
     color: ${COLORS.lightText};
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .grid {
+    width: 100%;
+    height: 100%;
+    margin-bottom: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-flow:column;
-
-}
-    gap: 0px 0px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: column;
     background-color: ${COLORS.primaryTransparent};
+  }
+
+  .raid-is-not-full {
+    display: flex;
+    width: 100%;
+    transform: translate(0%, -100%);
+    transition: all 0.5s;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .raid-is-full {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: ${COLORS.lightText};
+    width: 100%;
+    transform: translate(0%, 0%);
+    transition: all 0.5s;
+    margin-top: 1px;
+    padding: 2px;
+    z-index: 0;
+  }
+  .raid-is-full-warning {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: ${COLORS.lightText};
+    width: 100%;
+    transform: translate(0%, 0%);
+    transition: all 0.3s;
+    margin-top: 1px;
+    padding: 2px;
+    z-index: 0;
   }
   @media (min-width: 1200px) {
     grid-area: Raid;
     min-height: 95%;
-    .grid {
-      margin: auto;
-      width: 80%;
-      margin-bottom: auto;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-auto-flow: column;
-      background-color: ${COLORS.primaryTransparent};
-    }
+
     .no-players-text {
       margin: auto;
       display: flex;
@@ -217,8 +249,10 @@ export const StyledPlayer = styled.div`
   @media (min-width: 1200px) {
     margin: 5px;
     font-size: 0.8rem;
+    font-weight: bold;
     padding: 0.8rem;
     border-radius: 0.33rem;
+
     img {
       display: normal;
     }
@@ -314,7 +348,7 @@ export const StyledBuff = styled.div`
 export const StyledCategory = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   user-select: none;
   cursor: pointer;
@@ -325,7 +359,7 @@ export const StyledCategory = styled.div`
   width: 100%;
   .category-name-text {
     display: flex;
-    margin-left: 1.5rem;
+
     padding: 1rem;
   }
   .tooltip {
@@ -504,10 +538,11 @@ export const RaidContentHeader = styled.div`
   height: 5rem;
   width: 100%;
   max-width: 100%;
+  margin-bottom: 2px;
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
-  margin-bottom: 1rem;
   box-shadow: 0 2px 6px -1px #000;
+  z-index: 1;
   .raid-text {
     display: none;
   }
@@ -530,7 +565,7 @@ export const RaidContentHeader = styled.div`
 
     .raid-text {
       display: initial;
-      margin-right: 5rem;
+      margin-right: 7.3rem;
     }
     .raid-status-container {
       display: flex;
