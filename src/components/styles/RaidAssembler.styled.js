@@ -149,6 +149,7 @@ export const RaidContainer = styled.section`
   justify-content: center;
   background-color: ${COLORS.primaryTransparent};
   min-width: 100%;
+  max-width: 100%;
   height: min-content;
   margin-bottom: 50px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
@@ -161,13 +162,13 @@ export const RaidContainer = styled.section`
     margin-top: 1rem;
   }
   .grid {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     margin-bottom: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: row;
     background-color: ${COLORS.primaryTransparent};
   }
 
@@ -210,10 +211,20 @@ export const RaidContainer = styled.section`
     padding: 2px;
     z-index: 0;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 576px) {
     grid-area: Raid;
     min-height: 95%;
 
+    .grid {
+      max-width: 100%;
+      height: 100%;
+      margin-bottom: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-auto-flow: column;
+      background-color: ${COLORS.primaryTransparent};
+    }
     .no-players-text {
       margin: auto;
       display: flex;
@@ -225,16 +236,18 @@ export const RaidContainer = styled.section`
 
 export const StyledPlayer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
+  font-weight: bold;
   background: ${(props) => props.background};
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
   cursor: pointer;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   padding: 0.5rem;
   margin: 1px;
   transition: transform 0.2;
@@ -246,10 +259,10 @@ export const StyledPlayer = styled.div`
   &:hover {
     transform: translateY(-0.2em);
   }
+
   @media (min-width: 1200px) {
     margin: 5px;
     font-size: 0.8rem;
-    font-weight: bold;
     padding: 0.8rem;
     border-radius: 0.33rem;
 
@@ -306,6 +319,7 @@ export const StyledBuff = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 0.8rem;
   padding: 0.2rem;
