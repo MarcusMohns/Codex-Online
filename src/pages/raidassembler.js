@@ -39,7 +39,6 @@ const formReducer = (state, action) => {
         };
       }
     case "delete":
-      console.log(action.id);
       const newState = Object.entries(state).filter(
         (item) => item[0] !== action.id
       );
