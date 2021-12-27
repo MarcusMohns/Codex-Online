@@ -98,7 +98,18 @@ const RaidAssembler = () => {
   };
 
   const addBuff = (id, player) => {
-    for (let buff of player.buffs) {
+    let playerBuffs = [...player.buffs];
+
+    if (
+      // Paladins can only have 1 blessing on the raid at one time
+      player.text === "Holy Paladin" ||
+      "Protection Paladin" ||
+      "Retribution Paladin"
+    ) {
+      playerBuffs = [...paladinBlessings(player)]; // Their playerBuffs needs to be edited
+    }
+
+    for (let buff of playerBuffs) {
       let newBuff = {
         buffCategory: buff.category,
         buffName: buff.name,
@@ -106,6 +117,40 @@ const RaidAssembler = () => {
       };
       setBuffs({ type: "add", name: id, value: newBuff });
     }
+  };
+
+  const paladinBlessings = (player) => {
+    // Return edited array of buffs depending on user choice (Kings,Might or Wisdom)
+    let playerBuffs = [...player.buffs];
+
+    for (let buff of player.buffs) {
+      if (
+        buff.name === "Blessing of Wisdom" &&
+        !document.querySelector(
+          `#${player.text.replace(/ /g, "")}-bow-checkbox`
+        ).checked
+      ) {
+        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
+      }
+      if (
+        buff.name === "Blessing of Might" &&
+        !document.querySelector(
+          `#${player.text.replace(/ /g, "")}-bom-checkbox`
+        ).checked
+      ) {
+        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
+      }
+      if (
+        buff.name === "Blessing of Kings" &&
+        !document.querySelector(
+          `#${player.text.replace(/ /g, "")}-bok-checkbox`
+        ).checked
+      ) {
+        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
+      }
+    }
+
+    return playerBuffs;
   };
 
   const addUtility = (id, player) => {
