@@ -1,6 +1,8 @@
+import { StyledBlessingCheckboxes } from "./styles/RaidAssembler.styled";
+
 const BlessingCheckboxes = ({ text }) => {
   return (
-    <div>
+    <StyledBlessingCheckboxes>
       <input
         type="checkbox"
         name={text.replace(/\s+/g, "")}
@@ -23,7 +25,7 @@ const BlessingCheckboxes = ({ text }) => {
         value="Wisdom"
       />{" "}
       <label htmlFor={`${text.replace(/\s+/g, "")}-bow-checkbox`}>BoW</label>
-    </div>
+    </StyledBlessingCheckboxes>
   );
 };
 

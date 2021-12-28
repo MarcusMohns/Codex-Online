@@ -111,8 +111,10 @@ export const SpecContainer = styled.section`
 `;
 export const StyledSpecButton = styled.button`
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
-  padding: 0.7rem;
   color: ${COLORS.lightText};
   transition: 0.2s;
   background: ${(props) => props.color};
@@ -126,19 +128,34 @@ export const StyledSpecButton = styled.button`
   &:active {
     transform: scale(90%);
   }
-  img {
-    width: 1.1rem;
-    height: 1.1rem;
-    border-radius: 20%;
-  }
-  p {
-    margin: auto;
+  .text-and-image-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 0.7rem;
+
+    .specbutton-text {
+      margin-left: auto;
+    }
+    .specbutton-image {
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 20%;
+      margin-left: auto;
+    }
   }
   @media (min-width: 1200px) {
     margin: 2px;
     border-radius: 5px;
     border: ridge transparent;
   }
+`;
+
+export const StyledBlessingCheckboxes = styled.div`
+  z-index: 1;
 `;
 
 export const RaidContainer = styled.section`

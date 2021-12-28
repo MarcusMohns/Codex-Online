@@ -2,9 +2,11 @@ import BlessingCheckboxes from "./BlessingCheckboxes";
 import { StyledSpecButton } from "./styles/RaidAssembler.styled";
 const SpecButton = ({ text, image, onClick, color }) => {
   return (
-    <StyledSpecButton color={color} onClick={onClick}>
-      <p>{text}</p>
-      <img src={image} alt="spec icon" />
+    <StyledSpecButton color={color}>
+      <div className="text-and-image-button-container" onClick={onClick}>
+        <p className="specbutton-text">{text}</p>
+        <img src={image} alt="spec icon" className="specbutton-image" />
+      </div>
       {color === "pink" && <BlessingCheckboxes text={text} />}
       {/* // If paladin add checkboxes */}
     </StyledSpecButton>
