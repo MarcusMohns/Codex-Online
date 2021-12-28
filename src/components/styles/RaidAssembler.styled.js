@@ -125,9 +125,7 @@ export const StyledSpecButton = styled.button`
   &:hover {
     transform: scale(95%);
   }
-  &:active {
-    transform: scale(90%);
-  }
+
   .text-and-image-button-container {
     display: flex;
     flex-direction: row;
@@ -155,7 +153,8 @@ export const StyledSpecButton = styled.button`
 `;
 
 export const StyledBlessingCheckboxes = styled.div`
-  z-index: 1;
+  padding: 0.5rem;
+  border-top: 1px solid black;
 `;
 
 export const RaidContainer = styled.section`
