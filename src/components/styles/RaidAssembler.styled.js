@@ -40,11 +40,11 @@ export const Main = styled.main`
       padding: 0.5rem;
       right: 1%;
     }
-    .double-arrow-right {
+    .arrow-left {
       transition: all 400ms;
       transform: rotate(180deg) translate(-100%);
       align-self: center;
-      color: #000;
+      color: #fff;
       opacity: 100%;
       @media screen and (min-width: 1200px) {
         transform: rotate(180deg) translate(0%);
@@ -63,7 +63,7 @@ export const Main = styled.main`
     @media screen and (min-width: 1200px) {
       right: 1%;
     }
-    .double-arrow-right {
+    .arrow-left {
       transition: all 400ms;
       transform: translate(-100%);
       align-self: center;
@@ -654,7 +654,7 @@ export const CheckCircle = styled(FaRegCheckCircle)`
   }
 `;
 
-export const DoubleArrowLeft = styled(CgChevronLeftO)`
+export const ArrowLeft = styled(CgChevronLeftO)`
   color: white;
   font-size: 2rem;
   cursor: pointer;
