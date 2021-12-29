@@ -139,8 +139,7 @@ export const StyledSpecButton = styled.button`
       margin-left: auto;
     }
     .specbutton-image {
-      width: 1.1rem;
-      height: 1.1rem;
+      width: 1.3rem;
       border-radius: 20%;
       margin-left: auto;
     }
@@ -153,8 +152,26 @@ export const StyledSpecButton = styled.button`
 `;
 
 export const StyledBlessingCheckboxes = styled.div`
-  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
   border-top: 1px solid black;
+  .blessing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    .a-blessing-image {
+      width: 1.1rem;
+    }
+
+    .a-blessing-checkbox {
+    }
+  }
 `;
 
 export const RaidContainer = styled.section`
