@@ -34,6 +34,25 @@ const BlessingCheckboxes = ({ text }) => {
         />{" "}
         <label htmlFor={`${text.replace(/\s+/g, "")}-bom-checkbox`}>BoM</label>
       </div>
+      {text === "Protection Paladin" && (
+        <div className="blessing-container">
+          <img
+            className="a-blessing-image"
+            src={require("../images/Greater_Blessing_Of_Sanctuary.png").default}
+            alt="Blessing of Sanctuary"
+          />
+          <input
+            className="a-blessing-checkbox"
+            type="checkbox"
+            name={text.replace(/\s+/g, "")}
+            id={`${text.replace(/\s+/g, "")}-bos-checkbox`}
+            value="Sanctuary"
+          />{" "}
+          <label htmlFor={`${text.replace(/\s+/g, "")}-bos-checkbox`}>
+            BoS
+          </label>
+        </div>
+      )}
       <div className="blessing-container">
         <img
           className="a-blessing-image"

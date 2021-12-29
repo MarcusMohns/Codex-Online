@@ -148,6 +148,14 @@ const RaidAssembler = () => {
       ) {
         playerBuffs.splice(playerBuffs.indexOf(buff), 1);
       }
+      if (
+        buff.name === "Blessing of Sanctuary" &&
+        !document.querySelector(
+          `#${player.text.replace(/ /g, "")}-bos-checkbox`
+        ).checked
+      ) {
+        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
+      }
     }
 
     return playerBuffs;
