@@ -10,7 +10,7 @@ import {
   SpecContainer,
   RaidContainer,
   BuffContainer,
-  DoubleArrowLeft,
+  ArrowLeft,
   ResetIcon,
   AddPlayerIcon,
   AddPlayerButton,
@@ -212,10 +212,7 @@ const RaidAssembler = () => {
   return (
     <Main>
       <div className={`${rightMenuOpen ? "right-menu" : "hide-right-menu"}`}>
-        <DoubleArrowLeft
-          className="double-arrow-right"
-          onClick={handleRightMenuToggle}
-        />
+        <ArrowLeft className="arrow-left" onClick={handleRightMenuToggle} />
         <SpecContainer className="spec-container">
           <SpecButtons
             className="spec-buttons"
