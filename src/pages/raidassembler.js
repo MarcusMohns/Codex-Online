@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useReducer, useState, useEffect } from "react";
 
 import SpecArray from "../SpecArray";
 import PlayersInRaid from "../components/PlayersInRaid";
@@ -61,16 +61,16 @@ const RaidAssembler = () => {
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
   const [raidIsFull, setRaidIsFull] = useState(false);
 
+  const handleRightMenuToggle = () => {
+    setRightMenuOpen(!rightMenuOpen);
+  };
+
   const resetRaid = () => {
     setRaid([]);
     setCount([0, 0, 0, 0]);
     setRightMenuOpen(false);
     setBuffs({ type: "reset" });
     setUtilities({ type: "reset" });
-  };
-
-  const handleRightMenuToggle = () => {
-    setRightMenuOpen(!rightMenuOpen);
   };
 
   const addPlayer = (player) => {
@@ -209,6 +209,12 @@ const RaidAssembler = () => {
     setCount(count);
   };
 
+  useEffect(() => {
+    window.addEventListener("keydown", handleRightMenuToggle);
+    return function cleanup() {
+      window.removeEventListener("keydown", handleRightMenuToggle);
+    };
+  });
   return (
     <Main>
       <div className={`${rightMenuOpen ? "right-menu" : "hide-right-menu"}`}>
