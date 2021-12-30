@@ -61,7 +61,7 @@ const RaidAssembler = () => {
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
   const [raidIsFull, setRaidIsFull] = useState(false);
 
-  const handleRightMenuToggle = () => {
+  const handleRightMenuToggle = (e) => {
     setRightMenuOpen(!rightMenuOpen);
   };
 
