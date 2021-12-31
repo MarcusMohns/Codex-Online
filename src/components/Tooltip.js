@@ -20,7 +20,7 @@ Tooltip.defaultProps = {
   category: {
     name: "missing tooltip",
     text: "missing tooltip",
-    image: require("../images/hunter_beastmastery.png").default,
+    image: "images/hunter_beastmastery.png",
   },
 };
 

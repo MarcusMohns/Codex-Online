@@ -1,10 +1,8 @@
-import { Container } from "../components/styles/Container.styled";
-
 const Home = () => {
   return (
-    <Container>
+    <div>
       <h1>Home</h1>
-    </Container>
+    </div>
   );
 };
 

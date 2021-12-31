@@ -8,7 +8,6 @@ import {
   ProfileImage,
   ProfileContainer,
 } from "./NavbarElements";
-import logo from "../../images/icon.png";
 
 const Navbar = () => {
   const [barsMenuOpen, setBarsMenuOpen] = useState(false);
@@ -50,7 +49,7 @@ const Navbar = () => {
   return (
     <Nav shrunk={isShrunk}>
       <NavLink to="/home">
-        <img src={logo} alt="logo" className="logo" />
+        <img src={"images/icon.png"} alt="logo" className="logo" />
       </NavLink>
 
       <Bars onClick={handleNavBarToggle} />

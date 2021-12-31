@@ -1,12 +1,11 @@
 import { StyledBlessingCheckboxes } from "./styles/RaidAssembler.styled";
-
 const BlessingCheckboxes = ({ text }) => {
   return (
     <StyledBlessingCheckboxes>
       <div className="blessing-container">
         <img
           className="a-blessing-image"
-          src={require("../images/Greater_Blessing_Of_Kings.png").default}
+          src="images/Greater_Blessing_Of_Kings.png"
           alt="Blessing of Kings"
         />
         <input
@@ -22,7 +21,7 @@ const BlessingCheckboxes = ({ text }) => {
       <div className="blessing-container">
         <img
           className="a-blessing-image"
-          src={require("../images/Greater_Blessing_Of_Might.png").default}
+          src="images/Greater_Blessing_Of_Might.png"
           alt="Blessing of Might"
         />
         <input
@@ -38,7 +37,7 @@ const BlessingCheckboxes = ({ text }) => {
         <div className="blessing-container">
           <img
             className="a-blessing-image"
-            src={require("../images/Greater_Blessing_Of_Sanctuary.png").default}
+            src="images/Greater_Blessing_Of_Sanctuary.png"
             alt="Blessing of Sanctuary"
           />
           <input
@@ -56,7 +55,7 @@ const BlessingCheckboxes = ({ text }) => {
       <div className="blessing-container">
         <img
           className="a-blessing-image"
-          src={require("../images/Greater_Blessing_Of_Wisdom.png").default}
+          src="images/Greater_Blessing_Of_Wisdom.png"
           alt="Blessing of Wisdom"
         />
         <input

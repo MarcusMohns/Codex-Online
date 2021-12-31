@@ -12,7 +12,7 @@ PlayerInRaid.defaultProps = {
   player: {
     color: "red",
     text: "missing player",
-    image: require("../images/hunter_beastmastery.png").default,
+    image: "images/hunter_beastmastery.png",
   },
 };
 

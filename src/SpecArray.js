@@ -1,1515 +1,1515 @@
 const SpecArray = [
   {
     text: "Blood Death Knight",
-    image: require("./images/dk_blood.png").default,
+    image: "images/dk_blood.png",
     color: "red",
     buffs: [
       {
         category: "Agility and Strength",
         name: "Horn of Winter",
-        image: require("./images/Horn_Of_Winter.png").default,
+        image: "images/Horn_Of_Winter.png",
       },
       {
         category: "Attack Speed Reduction",
         name: "Improved Icy Touch",
-        image: require("./images/Icy_Touch.png").default,
+        image: "images/Icy_Touch.png",
       },
       {
         category: "Attack Power %",
         name: "Abomination's Might",
-        image: require("./images/Aboms_Might.png").default,
+        image: "images/Aboms_Might.png",
       },
     ],
     utility: [
       {
         name: "Death Grip",
-        image: require("./images/Death_Grip.png").default,
+        image: "images/Death_Grip.png",
       },
       {
         name: "Hysteria",
-        image: require("./images/Hysteria.png").default,
+        image: "images/Hysteria.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Chains of Ice",
-        image: require("./images/Chains_Of_Ice.png").default,
+        image: "images/Chains_Of_Ice.png",
       },
     ],
   },
   {
     text: "Unholy Death Knight",
-    image: require("./images/dk_unholy.png").default,
+    image: "images/dk_unholy.png",
     color: "red",
     buffs: [
       {
         category: "Attack Speed Reduction",
         name: "Improved Icy Touch",
-        image: require("./images/Icy_Touch.png").default,
+        image: "images/Icy_Touch.png",
       },
       {
         category: "Agility and Strength",
         name: "Horn of Winter",
-        image: require("./images/Horn_Of_Winter.png").default,
+        image: "images/Horn_Of_Winter.png",
       },
       {
         category: "Spell Damage %",
         name: "Ebon Plaguebringer",
-        image: require("./images/Ebon_Plaguebringer.png").default,
+        image: "images/Ebon_Plaguebringer.png",
       },
       {
         category: "Disease Damage",
         name: "Crypt Fever",
-        image: require("./images/Crypt_Fever.png").default,
+        image: "images/Crypt_Fever.png",
       },
     ],
     utility: [
       {
         name: "Death Grip",
-        image: require("./images/Death_Grip.png").default,
+        image: "images/Death_Grip.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Chains of Ice",
-        image: require("./images/Chains_Of_Ice.png").default,
+        image: "images/Chains_Of_Ice.png",
       },
     ],
   },
   {
     text: "Frost Death Knight",
-    image: require("./images/dk_frost.png").default,
+    image: "images/dk_frost.png",
     color: "red",
     buffs: [
       {
         category: "Attack Speed Reduction",
         name: "Improved Icy Touch",
-        image: require("./images/Icy_Touch.png").default,
+        image: "images/Icy_Touch.png",
       },
       {
         category: "Agility and Strength",
         name: "Horn of Winter",
-        image: require("./images/Horn_Of_Winter.png").default,
+        image: "images/Horn_Of_Winter.png",
       },
       {
         category: "Melee Haste",
         name: "Improved Icy Talons",
-        image: require("./images/Icy_Talons.png").default,
+        image: "images/Icy_Talons.png",
       },
     ],
     utility: [
       {
         name: "Death Grip",
-        image: require("./images/Death_Grip.png").default,
+        image: "images/Death_Grip.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Chains of Ice",
-        image: require("./images/Chains_Of_Ice.png").default,
+        image: "images/Chains_Of_Ice.png",
       },
     ],
   },
   {
     text: "Balance Druid",
-    image: require("./images/druid_balance.png").default,
+    image: "images/druid_balance.png",
     color: "orange",
     buffs: [
       {
         category: "Attack Power Reduction",
         name: "Demoralizing Roar",
-        image: require("./images/Demoralizing_Roar.png").default,
+        image: "images/Demoralizing_Roar.png",
       },
       {
         category: "Haste %",
         name: "Improved Moonkin Form",
-        image: require("./images/Moonkin_Form.png").default,
+        image: "images/Moonkin_Form.png",
       },
       {
         category: "Spell Crit %",
         name: "Moonkin Form",
-        image: require("./images/Moonkin_Aura.png").default,
+        image: "images/Moonkin_Aura.png",
       },
       {
         category: "Mark of the Wild",
         name: "Mark of the Wild",
-        image: require("./images/Mark_Of_The_Wild.png").default,
+        image: "images/Mark_Of_The_Wild.png",
       },
       {
         category: "Spell Damage %",
         name: "Earth and Moon",
-        image: require("./images/Ebon_Plaguebringer.png").default,
+        image: "images/Ebon_Plaguebringer.png",
       },
       {
         category: "Spell Hit",
         name: "Improved Faerie Fire",
-        image: require("./images/Faerie_Fire.png").default,
+        image: "images/Faerie_Fire.png",
       },
       {
         category: "Armor Reduction (Minor)",
         name: "Improved Faerie Fire",
-        image: require("./images/Faerie_Fire.png").default,
+        image: "images/Faerie_Fire.png",
       },
     ],
     utility: [
       {
         name: "Rebirth",
-        image: require("./images/Rebirth.png").default,
+        image: "images/Rebirth.png",
       },
       {
         name: "Innervate",
-        image: require("./images/Innervate.png").default,
+        image: "images/Innervate.png",
       },
       {
         name: "Typhoon",
-        image: require("./images/Typhoon.png").default,
+        image: "images/Typhoon.png",
       },
       {
         name: "Tranquility",
-        image: require("./images/Tranquility.png").default,
+        image: "images/Tranquility.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Remove Curse",
-        image: require("./images/Remove_Curse.png").default,
+        image: "images/Remove_Curse.png",
       },
     ],
   },
   {
     text: "Feral Druid",
-    image: require("./images/druid_feral.png").default,
+    image: "images/druid_feral.png",
     color: "orange",
     buffs: [
       {
         category: "Attack Speed Reduction",
         name: "Infected Wounds",
-        image: require("./images/Infected_Wounds.png").default,
+        image: "images/Infected_Wounds.png",
       },
       {
         category: "Attack Power Reduction",
         name: "Demoralizing Roar",
-        image: require("./images/Demoralizing_Roar.png").default,
+        image: "images/Demoralizing_Roar.png",
       },
       {
         category: "Melee Crit",
         name: "Leader of the Pack",
-        image: require("./images/Leader_Of_The_Pack.png").default,
+        image: "images/Leader_Of_The_Pack.png",
       },
       {
         category: "Improved Leader of the Pack",
         name: "Improved Leader of the Pack",
-        image: require("./images/Leader_Of_The_Pack.png").default,
+        image: "images/Leader_Of_The_Pack.png",
       },
 
       {
         category: "Armor Reduction (Minor)",
         name: "Faerie Fire",
-        image: require("./images/Faerie_Fire.png").default,
+        image: "images/Faerie_Fire.png",
       },
       {
         category: "Mark of the Wild",
         name: "Mark of the Wild",
-        image: require("./images/Mark_Of_The_Wild.png").default,
+        image: "images/Mark_Of_The_Wild.png",
       },
       {
         category: "Bleed Damage",
         name: "Mangle",
-        image: require("./images/Mangle.png").default,
+        image: "images/Mangle.png",
       },
     ],
     utility: [
       {
         name: "Rebirth",
-        image: require("./images/Rebirth.png").default,
+        image: "images/Rebirth.png",
       },
       {
         name: "Innervate",
-        image: require("./images/Innervate.png").default,
+        image: "images/Innervate.png",
       },
       {
         name: "Tranquility",
-        image: require("./images/Tranquility.png").default,
+        image: "images/Tranquility.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Remove Curse",
-        image: require("./images/Remove_Curse.png").default,
+        image: "images/Remove_Curse.png",
       },
     ],
   },
   {
     text: "Restoration Druid",
-    image: require("./images/druid_restoration.png").default,
+    image: "images/druid_restoration.png",
     color: "orange",
     buffs: [
       {
         category: "Attack Power Reduction",
         name: "Demoralizing Roar",
-        image: require("./images/Demoralizing_Roar.png").default,
+        image: "images/Demoralizing_Roar.png",
       },
       {
         category: "Mark of the Wild",
         name: "Mark of the Wild",
-        image: require("./images/Mark_Of_The_Wild.png").default,
+        image: "images/Mark_Of_The_Wild.png",
       },
       {
         category: "Healing Recieved %",
         name: "Tree of Life",
-        image: require("./images/Improved_Tree_Form.png").default,
+        image: "images/Improved_Tree_Form.png",
       },
       {
         category: "Armor Reduction (Minor)",
         name: "Faerie Fire",
-        image: require("./images/Faerie_Fire.png").default,
+        image: "images/Faerie_Fire.png",
       },
     ],
     utility: [
       {
         name: "Rebirth",
-        image: require("./images/Rebirth.png").default,
+        image: "images/Rebirth.png",
       },
       {
         name: "Innervate",
-        image: require("./images/Innervate.png").default,
+        image: "images/Innervate.png",
       },
       {
         name: "Tranquility",
-        image: require("./images/Tranquility.png").default,
+        image: "images/Tranquility.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Remove Curse",
-        image: require("./images/Remove_Curse.png").default,
+        image: "images/Remove_Curse.png",
       },
     ],
   },
   {
     text: "Beast Mastery Hunter",
-    image: require("./images/hunter_beastmastery.png").default,
+    image: "images/hunter_beastmastery.png",
     color: "green",
     buffs: [
       {
         category: "Damage %",
         name: "Ferocious Inspiration",
-        image: require("./images/Ferocious_Inspiration.png").default,
+        image: "images/Ferocious_Inspiration.png",
       },
       {
         category: "Healing Reduction",
         name: "Aimed Shot",
-        image: require("./images/Aimed_Shot.png").default,
+        image: "images/Aimed_Shot.png",
       },
     ],
     utility: [
       {
         name: "Misdirection",
-        image: require("./images/Misdirection.png").default,
+        image: "images/Misdirection.png",
       },
       {
         name: "Tranquilizing Shot",
-        image: require("./images/Tranquilizing_Shot.png").default,
+        image: "images/Tranquilizing_Shot.png",
       },
     ],
   },
   {
     text: "Marksman Hunter",
-    image: require("./images/hunter_marksman.png").default,
+    image: "images/hunter_marksman.png",
     color: "green",
     buffs: [
       {
         category: "Healing Reduction",
         name: "Aimed Shot",
-        image: require("./images/Aimed_Shot.png").default,
+        image: "images/Aimed_Shot.png",
       },
       {
         category: "Attack Power %",
         name: "Trueshot Aura",
-        image: require("./images/Trueshot_Aura.png").default,
+        image: "images/Trueshot_Aura.png",
       },
     ],
     utility: [
       {
         name: "Misdirection",
-        image: require("./images/Misdirection.png").default,
+        image: "images/Misdirection.png",
       },
       {
         name: "Tranquilizing Shot",
-        image: require("./images/Tranquilizing_Shot.png").default,
+        image: "images/Tranquilizing_Shot.png",
       },
     ],
   },
   {
     text: "Survival Hunter",
-    image: require("./images/hunter_survival.png").default,
+    image: "images/hunter_survival.png",
     color: "green",
     buffs: [
       {
         category: "Replenishment",
         name: "Hunting Party",
-        image: require("./images/Replenishment.png").default,
+        image: "images/Replenishment.png",
       },
       {
         category: "Healing Reduction",
         name: "Aimed Shot",
-        image: require("./images/Aimed_Shot.png").default,
+        image: "images/Aimed_Shot.png",
       },
     ],
     utility: [
       {
         name: "Misdirection",
-        image: require("./images/Misdirection.png").default,
+        image: "images/Misdirection.png",
       },
       {
         name: "Tranquilizing Shot",
-        image: require("./images/Tranquilizing_Shot.png").default,
+        image: "images/Tranquilizing_Shot.png",
       },
       {
         name: "Wyvern Sting",
-        image: require("./images/Wyvern_Sting.png").default,
+        image: "images/Wyvern_Sting.png",
       },
     ],
   },
   {
     text: "Arcane Mage",
-    image: require("./images/mage_arcane.png").default,
+    image: "images/mage_arcane.png",
     color: "teal",
     buffs: [
       {
         category: "Damage %",
         name: "Arcane Empowerment",
-        image: require("./images/Arcane_Empowerment.png").default,
+        image: "images/Arcane_Empowerment.png",
       },
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: require("./images/Intellect.png").default,
+        image: "images/Intellect.png",
       },
     ],
     utility: [
       {
         name: "Spellsteal",
-        image: require("./images/Spellsteal.png").default,
+        image: "images/Spellsteal.png",
       },
       {
         name: "Focus Magic",
-        image: require("./images/Focus_Magic.png").default,
+        image: "images/Focus_Magic.png",
       },
       {
         name: "Remove Curse",
-        image: require("./images/Remove_Curse.png").default,
+        image: "images/Remove_Curse.png",
       },
     ],
   },
   {
     text: "Fire Mage",
-    image: require("./images/mage_fire.png").default,
+    image: "images/mage_fire.png",
     color: "teal",
     buffs: [
       {
         category: "Spell Crit Taken",
         name: "Improved Scorch",
-        image: require("./images/Improved_Scorch.png").default,
+        image: "images/Improved_Scorch.png",
       },
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: require("./images/Intellect.png").default,
+        image: "images/Intellect.png",
       },
     ],
     utility: [
       {
         name: "Spellsteal",
-        image: require("./images/Spellsteal.png").default,
+        image: "images/Spellsteal.png",
       },
       {
         name: "Focus Magic",
-        image: require("./images/Focus_Magic.png").default,
+        image: "images/Focus_Magic.png",
       },
       {
         name: "Remove Curse",
-        image: require("./images/Remove_Curse.png").default,
+        image: "images/Remove_Curse.png",
       },
     ],
   },
   {
     text: "Frost Mage",
-    image: require("./images/mage_frost.png").default,
+    image: "images/mage_frost.png",
     color: "teal",
     buffs: [
       {
         category: "Spell Crit Taken",
         name: "Winter's Chill",
-        image: require("./images/Winters_Chill.png").default,
+        image: "images/Winters_Chill.png",
       },
       {
         category: "Replenishment",
         name: "Enduring Winter",
-        image: require("./images/Replenishment.png").default,
+        image: "images/Replenishment.png",
       },
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: require("./images/Intellect.png").default,
+        image: "images/Intellect.png",
       },
     ],
     utility: [
       {
         name: "Spellsteal",
-        image: require("./images/Spellsteal.png").default,
+        image: "images/Spellsteal.png",
       },
       {
         name: "Focus Magic",
-        image: require("./images/Focus_Magic.png").default,
+        image: "images/Focus_Magic.png",
       },
       {
         name: "Remove Curse",
-        image: require("./images/Remove_Curse.png").default,
+        image: "images/Remove_Curse.png",
       },
     ],
   },
 
   {
     text: "Holy Paladin",
-    image: require("./images/paladin_holy.png").default,
+    image: "images/paladin_holy.png",
     color: "pink",
     buffs: [
       {
         category: "Armor",
         name: "Devotion Aura",
-        image: require("./images/Devotion_Aura.png").default,
+        image: "images/Devotion_Aura.png",
       },
       {
         category: "Attack Power",
         name: "Blessing of Might",
-        image: require("./images/Greater_Blessing_Of_Might.png").default,
+        image: "images/Greater_Blessing_Of_Might.png",
       },
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
-        image: require("./images/Greater_Blessing_Of_Wisdom.png").default,
+        image: "images/Greater_Blessing_Of_Wisdom.png",
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
-        image: require("./images/Greater_Blessing_Of_Kings.png").default,
+        image: "images/Greater_Blessing_Of_Kings.png",
       },
       {
         category: "Health Restore",
         name: "Judgement of Light",
-        image: require("./images/Judgement_Of_Light.png").default,
+        image: "images/Judgement_Of_Light.png",
       },
       {
         category: "Mana Restore",
         name: "Judgement of Wisdom",
-        image: require("./images/Judgement_Of_Wisdom.png").default,
+        image: "images/Judgement_Of_Wisdom.png",
       },
     ],
     utility: [
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Dispel Magic",
-        image: require("./images/Dispel_Magic.png").default,
+        image: "images/Dispel_Magic.png",
       },
       {
         name: "Divine Sacrifice",
-        image: require("./images/Divine_Sacrifice.png").default,
+        image: "images/Divine_Sacrifice.png",
       },
       {
         name: "Hand of Sacrifice",
-        image: require("./images/Hand_Of_Sacrifice.png").default,
+        image: "images/Hand_Of_Sacrifice.png",
       },
       {
         name: "Hand of Protection",
-        image: require("./images/Hand_Of_Protection.png").default,
+        image: "images/Hand_Of_Protection.png",
       },
       {
         name: "Hand of Freedom",
-        image: require("./images/Hand_Of_Freedom.png").default,
+        image: "images/Hand_Of_Freedom.png",
       },
       {
         name: "Aura Mastery",
-        image: require("./images/Aura_Mastery.png").default,
+        image: "images/Aura_Mastery.png",
       },
       {
         name: "Divine Intervention",
-        image: require("./images/Divine_Intervention.png").default,
+        image: "images/Divine_Intervention.png",
       },
     ],
   },
   {
     text: "Protection Paladin",
-    image: require("./images/paladin_protection.png").default,
+    image: "images/paladin_protection.png",
     color: "pink",
     buffs: [
       {
         category: "Armor",
         name: "Devotion Aura",
-        image: require("./images/Devotion_Aura.png").default,
+        image: "images/Devotion_Aura.png",
       },
       {
         category: "Attack Power",
         name: "Blessing of Might",
-        image: require("./images/Greater_Blessing_Of_Might.png").default,
+        image: "images/Greater_Blessing_Of_Might.png",
       },
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
-        image: require("./images/Greater_Blessing_Of_Wisdom.png").default,
+        image: "images/Greater_Blessing_Of_Wisdom.png",
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
-        image: require("./images/Greater_Blessing_Of_Kings.png").default,
+        image: "images/Greater_Blessing_Of_Kings.png",
       },
       {
         category: "Crit Strike %",
         name: "Heart of the Crusader",
-        image: require("./images/Heart_Of_The_Crusader.png").default,
+        image: "images/Heart_Of_The_Crusader.png",
       },
       {
         category: "Damage Reduction %",
         name: "Blessing of Sanctuary",
-        image: require("./images/Greater_Blessing_Of_Sanctuary.png").default,
+        image: "images/Greater_Blessing_Of_Sanctuary.png",
       },
       {
         category: "Healing Recieved %",
         name: "Improved Devotion Aura",
-        image: require("./images/Devotion_Aura.png").default,
+        image: "images/Devotion_Aura.png",
       },
       {
         category: "Health Restore",
         name: "Judgement of Light",
-        image: require("./images/Judgement_Of_Light.png").default,
+        image: "images/Judgement_Of_Light.png",
       },
       {
         category: "Mana Restore",
         name: "Judgement of Wisdom",
-        image: require("./images/Judgement_Of_Wisdom.png").default,
+        image: "images/Judgement_Of_Wisdom.png",
       },
     ],
     utility: [
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Dispel Magic",
-        image: require("./images/Dispel_Magic.png").default,
+        image: "images/Dispel_Magic.png",
       },
       {
         name: "Divine Sacrifice",
-        image: require("./images/Divine_Sacrifice.png").default,
+        image: "images/Divine_Sacrifice.png",
       },
       {
         name: "Hand of Sacrifice",
-        image: require("./images/Hand_Of_Sacrifice.png").default,
+        image: "images/Hand_Of_Sacrifice.png",
       },
       {
         name: "Hand of Protection",
-        image: require("./images/Hand_Of_Protection.png").default,
+        image: "images/Hand_Of_Protection.png",
       },
       {
         name: "Hand of Freedom",
-        image: require("./images/Hand_Of_Freedom.png").default,
+        image: "images/Hand_Of_Freedom.png",
       },
       {
         name: "Aura Mastery",
-        image: require("./images/Aura_Mastery.png").default,
+        image: "images/Aura_Mastery.png",
       },
       {
         name: "Divine Intervention",
-        image: require("./images/Divine_Intervention.png").default,
+        image: "images/Divine_Intervention.png",
       },
     ],
   },
   {
     text: "Retribution Paladin",
-    image: require("./images/paladin_retribution.png").default,
+    image: "images/paladin_retribution.png",
     color: "pink",
     buffs: [
       {
         category: "Armor",
         name: "Devotion Aura",
-        image: require("./images/Devotion_Aura.png").default,
+        image: "images/Devotion_Aura.png",
       },
       {
         category: "Attack Power",
         name: "Blessing of Might",
-        image: require("./images/Greater_Blessing_Of_Might.png").default,
+        image: "images/Greater_Blessing_Of_Might.png",
       },
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
-        image: require("./images/Greater_Blessing_Of_Wisdom.png").default,
+        image: "images/Greater_Blessing_Of_Wisdom.png",
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
-        image: require("./images/Greater_Blessing_Of_Kings.png").default,
+        image: "images/Greater_Blessing_Of_Kings.png",
       },
       {
         category: "Crit Strike %",
         name: "Heart of the Crusader",
-        image: require("./images/Heart_Of_The_Crusader.png").default,
+        image: "images/Heart_Of_The_Crusader.png",
       },
       {
         category: "Damage %",
         name: "Sanctified Retribution",
-        image: require("./images/Sanctified_Retribution.png").default,
+        image: "images/Sanctified_Retribution.png",
       },
       {
         category: "Replenishment",
         name: "Judgements of the Wise",
-        image: require("./images/Replenishment.png").default,
+        image: "images/Replenishment.png",
       },
       {
         category: "Haste %",
         name: "Swift Retribution",
-        image: require("./images/Swift_Retribution.png").default,
+        image: "images/Swift_Retribution.png",
       },
       {
         category: "Health Restore",
         name: "Judgement of Light",
-        image: require("./images/Judgement_Of_Light.png").default,
+        image: "images/Judgement_Of_Light.png",
       },
       {
         category: "Mana Restore",
         name: "Judgement of Wisdom",
-        image: require("./images/Judgement_Of_Wisdom.png").default,
+        image: "images/Judgement_Of_Wisdom.png",
       },
     ],
     utility: [
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Dispel Magic",
-        image: require("./images/Dispel_Magic.png").default,
+        image: "images/Dispel_Magic.png",
       },
       {
         name: "Divine Sacrifice",
-        image: require("./images/Divine_Sacrifice.png").default,
+        image: "images/Divine_Sacrifice.png",
       },
       {
         name: "Hand of Sacrifice",
-        image: require("./images/Hand_Of_Sacrifice.png").default,
+        image: "images/Hand_Of_Sacrifice.png",
       },
       {
         name: "Hand of Protection",
-        image: require("./images/Hand_Of_Protection.png").default,
+        image: "images/Hand_Of_Protection.png",
       },
       {
         name: "Hand of Freedom",
-        image: require("./images/Hand_Of_Freedom.png").default,
+        image: "images/Hand_Of_Freedom.png",
       },
       {
         name: "Aura Mastery",
-        image: require("./images/Aura_Mastery.png").default,
+        image: "images/Aura_Mastery.png",
       },
       {
         name: "Divine Intervention",
-        image: require("./images/Divine_Intervention.png").default,
+        image: "images/Divine_Intervention.png",
       },
     ],
   },
   {
     text: "Discipline Priest",
-    image: require("./images/priest_discipline.png").default,
+    image: "images/priest_discipline.png",
     color: "white",
     buffs: [
       {
         category: "Armor %",
         name: "Inspiration",
-        image: require("./images/Inspiration.png").default,
+        image: "images/Inspiration.png",
       },
       {
         category: "Damage Reduction %",
         name: "Renewed Hope",
-        image: require("./images/Renewed_Hope.png").default,
+        image: "images/Renewed_Hope.png",
       },
       {
         category: "Spirit",
         name: "Divine Spirit",
-        image: require("./images/Divine_Spirit.png").default,
+        image: "images/Divine_Spirit.png",
       },
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/Power_Word_Fortitude.png").default,
+        image: "images/Power_Word_Fortitude.png",
       },
     ],
     utility: [
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Dispel Magic",
-        image: require("./images/Dispel_Magic.png").default,
+        image: "images/Dispel_Magic.png",
       },
       {
         name: "Mass Dispel",
-        image: require("./images/Mass_Dispel.png").default,
+        image: "images/Mass_Dispel.png",
       },
       {
         name: "Hymn of Hope",
-        image: require("./images/Hymn_Of_Hope.png").default,
+        image: "images/Hymn_Of_Hope.png",
       },
       {
         name: "Divine Hymn",
-        image: require("./images/Divine_Hymn.png").default,
+        image: "images/Divine_Hymn.png",
       },
       {
         name: "Pain Suppression",
-        image: require("./images/Pain_Suppression.png").default,
+        image: "images/Pain_Suppression.png",
       },
       {
         name: "Mind Control",
-        image: require("./images/Mind_Control.png").default,
+        image: "images/Mind_Control.png",
       },
     ],
   },
   {
     text: "Holy Priest",
-    image: require("./images/priest_holy.png").default,
+    image: "images/priest_holy.png",
     color: "white",
     buffs: [
       {
         category: "Armor %",
         name: "Inspiration",
-        image: require("./images/Inspiration.png").default,
+        image: "images/Inspiration.png",
       },
       {
         category: "Spirit",
         name: "Divine Spirit",
-        image: require("./images/Divine_Spirit.png").default,
+        image: "images/Divine_Spirit.png",
       },
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/Power_Word_Fortitude.png").default,
+        image: "images/Power_Word_Fortitude.png",
       },
     ],
     utility: [
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Dispel Magic",
-        image: require("./images/Dispel_Magic.png").default,
+        image: "images/Dispel_Magic.png",
       },
       {
         name: "Mass Dispel",
-        image: require("./images/Mass_Dispel.png").default,
+        image: "images/Mass_Dispel.png",
       },
       {
         name: "Hymn of Hope",
-        image: require("./images/Hymn_Of_Hope.png").default,
+        image: "images/Hymn_Of_Hope.png",
       },
       {
         name: "Divine Hymn",
-        image: require("./images/Divine_Hymn.png").default,
+        image: "images/Divine_Hymn.png",
       },
       {
         name: "Mind Control",
-        image: require("./images/Mind_Control.png").default,
+        image: "images/Mind_Control.png",
       },
     ],
   },
   {
     text: "Shadow Priest",
-    image: require("./images/priest_shadow.png").default,
+    image: "images/priest_shadow.png",
     color: "white",
     buffs: [
       {
         category: "Spell Hit",
         name: "Misery",
-        image: require("./images/Misery.png").default,
+        image: "images/Misery.png",
       },
       {
         category: "Spirit",
         name: "Divine Spirit",
-        image: require("./images/Divine_Spirit.png").default,
+        image: "images/Divine_Spirit.png",
       },
       {
         category: "Replenishment",
         name: "Vampiric Touch",
-        image: require("./images/Replenishment.png").default,
+        image: "images/Replenishment.png",
       },
       {
         category: "Stamina",
         name: "Power Word: Fortitude",
-        image: require("./images/Power_Word_Fortitude.png").default,
+        image: "images/Power_Word_Fortitude.png",
       },
     ],
     utility: [
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Dispel Magic",
-        image: require("./images/Dispel_Magic.png").default,
+        image: "images/Dispel_Magic.png",
       },
       {
         name: "Mass Dispel",
-        image: require("./images/Mass_Dispel.png").default,
+        image: "images/Mass_Dispel.png",
       },
       {
         name: "Hymn of Hope",
-        image: require("./images/Hymn_Of_Hope.png").default,
+        image: "images/Hymn_Of_Hope.png",
       },
       {
         name: "Divine Hymn",
-        image: require("./images/Divine_Hymn.png").default,
+        image: "images/Divine_Hymn.png",
       },
       {
         name: "Mind Control",
-        image: require("./images/Mind_Control.png").default,
+        image: "images/Mind_Control.png",
       },
     ],
   },
   {
     text: "Assassination Rogue",
-    image: require("./images/rogue_assassination.png").default,
+    image: "images/rogue_assassination.png",
     color: "yellow",
     buffs: [
       {
         category: "Healing Reduction",
         name: "Wound Poison",
-        image: require("./images/Wound_Poison.png").default,
+        image: "images/Wound_Poison.png",
       },
       {
         category: "Armor Reduction (Major)",
         name: "Expose Armor",
-        image: require("./images/Expose_Armor.png").default,
+        image: "images/Expose_Armor.png",
       },
       {
         category: "Crit Strike %",
         name: "Master Poisoner",
-        image: require("./images/Master_Poisoner.png").default,
+        image: "images/Master_Poisoner.png",
       },
     ],
     utility: [
       {
         name: "Tricks of the Trade",
-        image: require("./images/Tricks_Of_The_Trade.png").default,
+        image: "images/Tricks_Of_The_Trade.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Anesthetic Poison",
-        image: require("./images/Anesthetic_Poison.png").default,
+        image: "images/Anesthetic_Poison.png",
       },
       {
         name: "Mind-numbing Poison",
-        image: require("./images/Crypt_Fever.png").default,
+        image: "images/Crypt_Fever.png",
       },
     ],
   },
   {
     text: "Combat Rogue",
-    image: require("./images/rogue_combat.png").default,
+    image: "images/rogue_combat.png",
     color: "yellow",
     buffs: [
       {
         category: "Healing Reduction",
         name: "Wound Poison",
-        image: require("./images/Wound_Poison.png").default,
+        image: "images/Wound_Poison.png",
       },
       {
         category: "Armor Reduction (Major)",
         name: "Expose Armor",
-        image: require("./images/Expose_Armor.png").default,
+        image: "images/Expose_Armor.png",
       },
       {
         category: "Phys Vulnerability",
         name: "Savage Combat",
-        image: require("./images/Savage_Combat.png").default,
+        image: "images/Savage_Combat.png",
       },
     ],
     utility: [
       {
         name: "Tricks of the Trade",
-        image: require("./images/Tricks_Of_The_Trade.png").default,
+        image: "images/Tricks_Of_The_Trade.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Anesthetic Poison",
-        image: require("./images/Anesthetic_Poison.png").default,
+        image: "images/Anesthetic_Poison.png",
       },
       {
         name: "Mind-numbing Poison",
-        image: require("./images/Crypt_Fever.png").default,
+        image: "images/Crypt_Fever.png",
       },
     ],
   },
   {
     text: "Subtlety Rogue",
-    image: require("./images/rogue_subtlety.png").default,
+    image: "images/rogue_subtlety.png",
     color: "yellow",
     buffs: [
       {
         category: "Armor Reduction (Major)",
         name: "Expose Armor",
-        image: require("./images/Expose_Armor.png").default,
+        image: "images/Expose_Armor.png",
       },
       {
         category: "Healing Reduction",
         name: "Wound Poison",
-        image: require("./images/Wound_Poison.png").default,
+        image: "images/Wound_Poison.png",
       },
     ],
     utility: [
       {
         name: "Tricks of the Trade",
-        image: require("./images/Tricks_Of_The_Trade.png").default,
+        image: "images/Tricks_Of_The_Trade.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Anesthetic Poison",
-        image: require("./images/Anesthetic_Poison.png").default,
+        image: "images/Anesthetic_Poison.png",
       },
       {
         name: "Mind-numbing Poison",
-        image: require("./images/Crypt_Fever.png").default,
+        image: "images/Crypt_Fever.png",
       },
     ],
   },
 
   {
     text: "Elemental Shaman",
-    image: require("./images/shaman_elemental.png").default,
+    image: "images/shaman_elemental.png",
     color: "blue",
     buffs: [
       {
         category: "Armor",
         name: "Stoneskin Totem",
-        image: require("./images/Stoneskin_Totem.png").default,
+        image: "images/Stoneskin_Totem.png",
       },
       {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
-        image: require("./images/Strength_Of_Earth_Totem.png").default,
+        image: "images/Strength_Of_Earth_Totem.png",
       },
       {
         category: "Bloodlust/Heroism",
         name: "Bloodlust/Heroism",
-        image: require("./images/Bloodlust.png").default,
+        image: "images/Bloodlust.png",
       },
       {
         category: "Mana per 5",
         name: "Mana Spring Totem",
-        image: require("./images/Mana_Spring_Totem.png").default,
+        image: "images/Mana_Spring_Totem.png",
       },
       {
         category: "Spell Crit %",
         name: "Elemental Oath",
-        image: require("./images/Elemental_Oath.png").default,
+        image: "images/Elemental_Oath.png",
       },
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/Wrath_Of_Air_Totem.png").default,
+        image: "images/Wrath_Of_Air_Totem.png",
       },
       {
         category: "Spell Power",
         name: "Totem of Wrath",
-        image: require("./images/Totem_Of_Wrath.png").default,
+        image: "images/Totem_Of_Wrath.png",
       },
       {
         category: "Crit Strike %",
         name: "Totem of Wrath",
-        image: require("./images/Totem_Of_Wrath.png").default,
+        image: "images/Totem_Of_Wrath.png",
       },
       {
         category: "Melee Haste",
         name: "Windfury Totem ",
-        image: require("./images/Windfury.png").default,
+        image: "images/Windfury.png",
       },
     ],
     utility: [
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Cleansing Totem",
-        image: require("./images/Cleansing_Totem.png").default,
+        image: "images/Cleansing_Totem.png",
       },
       {
         name: "Nature resistance",
-        image: require("./images/Aboms_Might.png").default,
+        image: "images/Aboms_Might.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
     ],
   },
   {
     text: "Enhancement Shaman",
-    image: require("./images/shaman_enhancement.png").default,
+    image: "images/shaman_enhancement.png",
     color: "blue",
     buffs: [
       {
         category: "Armor",
         name: "Stoneskin Totem",
-        image: require("./images/Stoneskin_Totem.png").default,
+        image: "images/Stoneskin_Totem.png",
       },
       {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
-        image: require("./images/Strength_Of_Earth_Totem.png").default,
+        image: "images/Strength_Of_Earth_Totem.png",
       },
       {
         category: "Bloodlust/Heroism",
         name: "Bloodlust/Heroism",
-        image: require("./images/Bloodlust.png").default,
+        image: "images/Bloodlust.png",
       },
       {
         category: "Mana per 5",
         name: "Mana Spring Totem",
-        image: require("./images/Mana_Spring_Totem.png").default,
+        image: "images/Mana_Spring_Totem.png",
       },
       {
         category: "Attack Power %",
         name: "Unleashed Rage",
-        image: require("./images/Unleashed_Rage.png").default,
+        image: "images/Unleashed_Rage.png",
       },
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/Wrath_Of_Air_Totem.png").default,
+        image: "images/Wrath_Of_Air_Totem.png",
       },
       {
         category: "Spell Power",
         name: "Flametongue Totem",
-        image: require("./images/Flametongue_Totem.png").default,
+        image: "images/Flametongue_Totem.png",
       },
       {
         category: "Melee Haste",
         name: "Improved Windfury Totem ",
-        image: require("./images/Windfury.png").default,
+        image: "images/Windfury.png",
       },
     ],
     utility: [
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Cleansing Totem",
-        image: require("./images/Cleansing_Totem.png").default,
+        image: "images/Cleansing_Totem.png",
       },
       {
         name: "Nature resistance",
-        image: require("./images/Aboms_Might.png").default,
+        image: "images/Aboms_Might.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
     ],
   },
   {
     text: "Restoration Shaman",
-    image: require("./images/shaman_restoration.png").default,
+    image: "images/shaman_restoration.png",
     color: "blue",
     buffs: [
       {
         category: "Armor",
         name: "Stoneskin Totem",
-        image: require("./images/Stoneskin_Totem.png").default,
+        image: "images/Stoneskin_Totem.png",
       },
       {
         category: "Agility and Strength",
         name: "Strength of Earth Totem",
-        image: require("./images/Strength_Of_Earth_Totem.png").default,
+        image: "images/Strength_Of_Earth_Totem.png",
       },
       {
         category: "Bloodlust/Heroism",
         name: "Bloodlust/Heroism",
-        image: require("./images/Bloodlust.png").default,
+        image: "images/Bloodlust.png",
       },
       {
         category: "Mana per 5",
         name: "Mana Spring Totem",
-        image: require("./images/Mana_Spring_Totem.png").default,
+        image: "images/Mana_Spring_Totem.png",
       },
       {
         category: "Spell Power",
         name: "Flametongue Totem",
-        image: require("./images/Flametongue_Totem.png").default,
+        image: "images/Flametongue_Totem.png",
       },
       {
         category: "Spell Haste",
         name: "Wrath of Air Totem",
-        image: require("./images/Wrath_Of_Air_Totem.png").default,
+        image: "images/Wrath_Of_Air_Totem.png",
       },
       {
         category: "Armor %",
         name: "Ancestral Healing",
-        image: require("./images/Ancestral_Healing.png").default,
+        image: "images/Ancestral_Healing.png",
       },
       {
         category: "Melee Haste",
         name: "Windfury Totem ",
-        image: require("./images/Windfury.png").default,
+        image: "images/Windfury.png",
       },
     ],
     utility: [
       {
         name: "Remove Curse",
-        image: require("./images/Remove_Curse.png").default,
+        image: "images/Remove_Curse.png",
       },
       {
         name: "Dispel Disease",
-        image: require("./images/Dispel_Disease.png").default,
+        image: "images/Dispel_Disease.png",
       },
       {
         name: "Dispel Poison",
-        image: require("./images/Dispel_Poison.png").default,
+        image: "images/Dispel_Poison.png",
       },
       {
         name: "Cleansing Totem",
-        image: require("./images/Cleansing_Totem.png").default,
+        image: "images/Cleansing_Totem.png",
       },
       {
         name: "Nature resistance",
-        image: require("./images/Aboms_Might.png").default,
+        image: "images/Aboms_Might.png",
       },
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Mana Tide Totem",
-        image: require("./images/Aboms_Might.png").default,
+        image: "images/Aboms_Might.png",
       },
     ],
   },
   {
     text: "Arms Warrior",
-    image: require("./images/warrior_arms.png").default,
+    image: "images/warrior_arms.png",
     color: "brown",
     buffs: [
       {
         category: "Healing Reduction",
         name: "Mortal Strike",
-        image: require("./images/Mortal_Strike.png").default,
+        image: "images/Mortal_Strike.png",
       },
 
       {
         category: "Attack Power Reduction",
         name: "Demoralizing Shout",
-        image: require("./images/Demoralizing_Shout.png").default,
+        image: "images/Demoralizing_Shout.png",
       },
       {
         category: "Attack Power",
         name: "Battle Shout",
-        image: require("./images/Battle_Shout.png").default,
+        image: "images/Battle_Shout.png",
       },
       {
         category: "Health",
         name: "Commanding Shout",
-        image: require("./images/Commanding_Shout.png").default,
+        image: "images/Commanding_Shout.png",
       },
       {
         category: "Armor Reduction (Major)",
         name: "Sunder Armor",
-        image: require("./images/Sunder_Armor.png").default,
+        image: "images/Sunder_Armor.png",
       },
       {
         category: "Phys Vulnerability",
         name: "Blood Frenzy",
-        image: require("./images/Blood_Frenzy.png").default,
+        image: "images/Blood_Frenzy.png",
       },
       {
         category: "Bleed Damage",
         name: "Trauma",
-        image: require("./images/Trauma.png").default,
+        image: "images/Trauma.png",
       },
       {
         category: "Attack Speed Reduction",
         name: "Thunderclap",
-        image: require("./images/Thunderclap.png").default,
+        image: "images/Thunderclap.png",
       },
     ],
     utility: [
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Shattering Throw",
-        image: require("./images/Shattering_Throw.png").default,
+        image: "images/Shattering_Throw.png",
       },
     ],
   },
   {
     text: "Fury Warrior",
-    image: require("./images/warrior_fury.png").default,
+    image: "images/warrior_fury.png",
     color: "brown",
     buffs: [
       {
         category: "Attack Power Reduction",
         name: "Demoralizing Shout",
-        image: require("./images/Demoralizing_Shout.png").default,
+        image: "images/Demoralizing_Shout.png",
       },
       {
         category: "Healing Reduction",
         name: "Furious Attacks",
-        image: require("./images/Furious_Attacks.png").default,
+        image: "images/Furious_Attacks.png",
       },
       {
         category: "Attack Power",
         name: "Battle Shout",
-        image: require("./images/Battle_Shout.png").default,
+        image: "images/Battle_Shout.png",
       },
       {
         category: "Health",
         name: "Commanding Shout",
-        image: require("./images/Commanding_Shout.png").default,
+        image: "images/Commanding_Shout.png",
       },
       {
         category: "Armor Reduction (Major)",
         name: "Sunder Armor",
-        image: require("./images/Sunder_Armor.png").default,
+        image: "images/Sunder_Armor.png",
       },
       {
         category: "Melee Crit",
         name: "Rampage",
-        image: require("./images/Rampage.png").default,
+        image: "images/Rampage.png",
       },
       {
         category: "Attack Speed Reduction",
         name: "Thunderclap",
-        image: require("./images/Thunderclap.png").default,
+        image: "images/Thunderclap.png",
       },
     ],
     utility: [
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Shattering Throw",
-        image: require("./images/Shattering_Throw.png").default,
+        image: "images/Shattering_Throw.png",
       },
     ],
   },
 
   {
     text: "Protection Warrior",
-    image: require("./images/warrior_protection.png").default,
+    image: "images/warrior_protection.png",
     color: "brown",
     buffs: [
       {
         category: "Attack Power Reduction",
         name: "Demoralizing Shout",
-        image: require("./images/Demoralizing_Shout.png").default,
+        image: "images/Demoralizing_Shout.png",
       },
       {
         category: "Attack Power",
         name: "Battle Shout",
-        image: require("./images/Battle_Shout.png").default,
+        image: "images/Battle_Shout.png",
       },
       {
         category: "Health",
         name: "Commanding Shout",
-        image: require("./images/Commanding_Shout.png").default,
+        image: "images/Commanding_Shout.png",
       },
       {
         category: "Armor Reduction (Major)",
         name: "Sunder Armor",
-        image: require("./images/Sunder_Armor.png").default,
+        image: "images/Sunder_Armor.png",
       },
       {
         category: "Attack Speed Reduction",
         name: "Improved Thunderclap",
-        image: require("./images/Thunderclap.png").default,
+        image: "images/Thunderclap.png",
       },
     ],
     utility: [
       {
         name: "Interrupt",
-        image: require("./images/Kick.png").default,
+        image: "images/Kick.png",
       },
       {
         name: "Vigilance",
-        image: require("./images/Vigilance.png").default,
+        image: "images/Vigilance.png",
       },
       {
         name: "Shattering Throw",
-        image: require("./images/Shattering_Throw.png").default,
+        image: "images/Shattering_Throw.png",
       },
     ],
   },
   {
     text: "Affliction Warlock",
-    image: require("./images/warlock_affliction.png").default,
+    image: "images/warlock_affliction.png",
     color: "purple",
     buffs: [
       {
         category: "Attack Power Reduction",
         name: "Curse of Weakness",
-        image: require("./images/Curse_Of_Weakness.png").default,
+        image: "images/Curse_Of_Weakness.png",
       },
       {
         category: "Intellect",
         name: "Fel Intelligence",
-        image: require("./images/Fel_Intelligence.png").default,
+        image: "images/Fel_Intelligence.png",
       },
       {
         category: "Spirit",
         name: "Fel Intelligence",
-        image: require("./images/Fel_Intelligence.png").default,
+        image: "images/Fel_Intelligence.png",
       },
       {
         category: "Armor Reduction (Minor)",
         name: "Curse of Weakness",
-        image: require("./images/Curse_Of_Weakness.png").default,
+        image: "images/Curse_Of_Weakness.png",
       },
       {
         category: "Spell Crit Taken",
         name: "Improved Shadow Bolt",
-        image: require("./images/Shadow_Bolt.png").default,
+        image: "images/Shadow_Bolt.png",
       },
       {
         category: "Spell Damage %",
         name: "Curse of the Elements",
-        image: require("./images/Curse_Of_The_Elements.png").default,
+        image: "images/Curse_Of_The_Elements.png",
       },
     ],
     utility: [
       {
         name: "Felhunter's Devour Magic",
-        image: require("./images/Devour_Magic.png").default,
+        image: "images/Devour_Magic.png",
       },
     ],
   },
   {
     text: "Demonology Warlock",
-    image: require("./images/warlock_demonology.png").default,
+    image: "images/warlock_demonology.png",
     color: "purple",
     buffs: [
       {
         category: "Attack Power Reduction",
         name: "Curse of Weakness",
-        image: require("./images/Curse_Of_Weakness.png").default,
+        image: "images/Curse_Of_Weakness.png",
       },
       {
         category: "Spell Power",
         name: "Demonic Pact",
-        image: require("./images/Demonic_Pact.png").default,
+        image: "images/Demonic_Pact.png",
       },
       {
         category: "Spell Damage %",
         name: "Curse of the Elements",
-        image: require("./images/Curse_Of_The_Elements.png").default,
+        image: "images/Curse_Of_The_Elements.png",
       },
       {
         category: "Armor Reduction (Minor)",
         name: "Curse of Weakness",
-        image: require("./images/Curse_Of_Weakness.png").default,
+        image: "images/Curse_Of_Weakness.png",
       },
       {
         category: "Spell Crit Taken",
         name: "Improved Shadow Bolt",
-        image: require("./images/Shadow_Bolt.png").default,
+        image: "images/Shadow_Bolt.png",
       },
     ],
     utility: [],
   },
   {
     text: "Destruction Warlock",
-    image: require("./images/warlock_destruction.png").default,
+    image: "images/warlock_destruction.png",
     color: "purple",
     buffs: [
       {
         category: "Attack Power Reduction",
         name: "Curse of Weakness",
-        image: require("./images/Curse_Of_Weakness.png").default,
+        image: "images/Curse_Of_Weakness.png",
       },
       {
         category: "Health",
         name: "Improved Imp",
-        image: require("./images/Blood_Pact.png").default,
+        image: "images/Blood_Pact.png",
       },
       {
         category: "Spell Damage %",
         name: "Curse of the Elements",
-        image: require("./images/Curse_Of_The_Elements.png").default,
+        image: "images/Curse_Of_The_Elements.png",
       },
       {
         category: "Armor Reduction (Minor)",
         name: "Curse of Weakness",
-        image: require("./images/Curse_Of_Weakness.png").default,
+        image: "images/Curse_Of_Weakness.png",
       },
       {
         category: "Replenishment",
         name: "Improved Soul Leech",
-        image: require("./images/Replenishment.png").default,
+        image: "images/Replenishment.png",
       },
     ],
     utility: [],

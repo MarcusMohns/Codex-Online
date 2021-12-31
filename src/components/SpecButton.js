@@ -13,7 +13,7 @@ const SpecButton = ({ text, image, onClick, color }) => {
   );
 };
 SpecButton.defaultProps = {
-  image: require("../images/hunter_beastmastery.png").default,
+  image: "images/hunter_beastmastery.png",
   text: "missing spec",
   color: "red",
 };

@@ -2,7 +2,7 @@ const BuffArray = [
   {
     name: "Agility and Strength",
     source: ["Death Knights", "Shamans"],
-    image: require("./images/Strength_Of_Earth_Totem.png").default,
+    image: "images/Strength_Of_Earth_Totem.png",
     text: (
       <div>
         <div className="spell-names">
@@ -17,7 +17,7 @@ const BuffArray = [
   {
     name: "Armor %",
     source: ["Disc Priest", "Holy Priest", "Restoration Shamans"],
-    image: require("./images/Ancestral_Healing.png").default,
+    image: "images/Ancestral_Healing.png",
     text: (
       <div>
         <div className="spell-names">Inspiration, Ancestral Healing </div>
@@ -30,7 +30,7 @@ const BuffArray = [
   {
     name: "Armor",
     source: ["Shamans", "Paladins"],
-    image: require("./images/Devotion_Aura.png").default,
+    image: "images/Devotion_Aura.png",
     text: (
       <div>
         <div>
@@ -59,7 +59,7 @@ const BuffArray = [
   {
     name: "Armor Reduction (Major)",
     source: ["Rogues", "Warriors"],
-    image: require("./images/Sunder_Armor.png").default,
+    image: "images/Sunder_Armor.png",
     text: (
       <div>
         <div className="spell-names">Sunder Armor, Expose Armor</div>
@@ -76,7 +76,7 @@ const BuffArray = [
   {
     name: "Armor Reduction (Minor)",
     source: ["Druids", "Warlocks"],
-    image: require("./images/Faerie_Fire.png").default,
+    image: "images/Faerie_Fire.png",
     text: (
       <div>
         <div className="spell-names">Faerie Fire, Curse of Weakness</div>
@@ -93,7 +93,7 @@ const BuffArray = [
   {
     name: "Attack Power %",
     source: ["Marksman Hunter", "Enhancement Shaman", "Blood Death Knight"],
-    image: require("./images/Trueshot_Aura.png").default,
+    image: "images/Trueshot_Aura.png",
     text: (
       <div>
         <div className="spell-names">
@@ -108,7 +108,7 @@ const BuffArray = [
   {
     name: "Attack Power",
     source: ["Paladins", "Warriors"],
-    image: require("./images/Battle_Shout.png").default,
+    image: "images/Battle_Shout.png",
     text: (
       <div>
         <div className="spell-names">Blessing of Might, Battle Shout</div>
@@ -133,7 +133,7 @@ const BuffArray = [
   {
     name: "Bloodlust/Heroism",
     source: ["Shamans"],
-    image: require("./images/Bloodlust.png").default,
+    image: "images/Bloodlust.png",
     text: (
       <div>
         <div className="spell-names">Bloodlust,Heroism</div>
@@ -146,7 +146,7 @@ const BuffArray = [
   {
     name: "Bleed Damage",
     source: ["Arms Warrior", "Feral Druid"],
-    image: require("./images/Trauma.png").default,
+    image: "images/Trauma.png",
     text: (
       <div>
         <div className="spell-names">Trauma, Mangle</div>
@@ -164,7 +164,7 @@ const BuffArray = [
       "Assassination Rogue",
       "Elemental Shaman",
     ],
-    image: require("./images/Totem_Of_Wrath.png").default,
+    image: "images/Totem_Of_Wrath.png",
     text: (
       <div>
         <div className="spell-names">
@@ -179,7 +179,7 @@ const BuffArray = [
   {
     name: "Damage %",
     source: ["Beast Mastery Hunter", "Retribution Paladin", "Arcane Mage"],
-    image: require("./images/Sanctified_Retribution.png").default,
+    image: "images/Sanctified_Retribution.png",
     text: (
       <div>
         <div className="spell-names">
@@ -194,7 +194,7 @@ const BuffArray = [
   {
     name: "Damage Reduction %",
     source: ["Discipline Priest", "Protection Paladin"],
-    image: require("./images/Renewed_Hope.png").default,
+    image: "images/Renewed_Hope.png",
     text: (
       <div>
         <div className="spell-names">Renewed Hope, Blessing of Sanctuary</div>
@@ -207,7 +207,7 @@ const BuffArray = [
   {
     name: "Disease Damage",
     source: ["Unholy Death Knight"],
-    image: require("./images/Crypt_Fever.png").default,
+    image: "images/Crypt_Fever.png",
     text: (
       <div>
         <div className="spell-names">Ebon Plaguebringer</div>
@@ -221,7 +221,7 @@ const BuffArray = [
   {
     name: "Haste %",
     source: ["Balance Druid", "Retribution Paladin"],
-    image: require("./images/Moonkin_Form.png").default,
+    image: "images/Moonkin_Form.png",
     text: (
       <div>
         <div className="spell-names">
@@ -237,7 +237,7 @@ const BuffArray = [
   {
     name: "Healing Recieved %",
     source: ["Restoration Druid", "Protection Paladin"],
-    image: require("./images/Improved_Tree_Form.png").default,
+    image: "images/Improved_Tree_Form.png",
     text: (
       <div>
         <div className="spell-names">Tree of Life, Improved Devotion Aura</div>
@@ -250,7 +250,7 @@ const BuffArray = [
   {
     name: "Health",
     source: ["Destruction Warlock", "Warriors"],
-    image: require("./images/Commanding_Shout.png").default,
+    image: "images/Commanding_Shout.png",
     text: (
       <div>
         <div className="spell-names">Commanding Shout, Blood Pact</div>
@@ -275,7 +275,7 @@ const BuffArray = [
   {
     name: "Intellect",
     source: ["Mages", "Affliction Warlock"],
-    image: require("./images/Intellect.png").default,
+    image: "images/Intellect.png",
     text: (
       <div>
         <div className="spell-names">Arcane Intellect, Fel Intelligence</div>
@@ -294,7 +294,7 @@ const BuffArray = [
   {
     name: "Mana per 5",
     source: ["Paladins", "Shamans"],
-    image: require("./images/Greater_Blessing_Of_Wisdom.png").default,
+    image: "images/Greater_Blessing_Of_Wisdom.png",
     text: (
       <div>
         <div className="spell-names">Blessing of Wisdom, Mana Spring Totem</div>
@@ -323,7 +323,7 @@ const BuffArray = [
   {
     name: "Melee Crit",
     source: ["Feral Druid", "Fury Warrior"],
-    image: require("./images/Rampage.png").default,
+    image: "images/Rampage.png",
     text: (
       <div>
         <div className="spell-names">Rampage, Leader of the Pack:</div>
@@ -336,7 +336,7 @@ const BuffArray = [
   {
     name: "Melee Haste",
     source: ["Shamans", "Enhancement Shamans", "Frost Death Knights"],
-    image: require("./images/Icy_Talons.png").default,
+    image: "images/Icy_Talons.png",
     text: (
       <div>
         <div className="spell-names">
@@ -364,7 +364,7 @@ const BuffArray = [
   {
     name: "Mark of the Wild",
     source: ["Druids"],
-    image: require("./images/Mark_Of_The_Wild.png").default,
+    image: "images/Mark_Of_The_Wild.png",
     text: (
       <div>
         <div>
@@ -393,7 +393,7 @@ const BuffArray = [
   {
     name: "Phys Vulnerability",
     source: ["Combat Rogue", "Arms Warrior"],
-    image: require("./images/Blood_Frenzy.png").default,
+    image: "images/Blood_Frenzy.png",
     text: (
       <div>
         <div className="spell-names">Savage Combat, Blood Frenzy</div>
@@ -406,7 +406,7 @@ const BuffArray = [
   {
     name: "Improved Leader of the Pack",
     source: ["Feral Druid"],
-    image: require("./images/Leader_Of_The_Pack.png").default,
+    image: "images/Leader_Of_The_Pack.png",
     text: (
       <div>
         <div className="spell-names">Improved Leader of the Pack</div>
@@ -428,7 +428,7 @@ const BuffArray = [
       "Shadow Priest",
       "Destruction Warlock",
     ],
-    image: require("./images/Replenishment.png").default,
+    image: "images/Replenishment.png",
     text: (
       <div>
         <div className="spell-names">
@@ -443,7 +443,7 @@ const BuffArray = [
   {
     name: "Spell Crit %",
     source: ["Balance Druid", "Elemental Shaman"],
-    image: require("./images/Elemental_Oath.png").default,
+    image: "images/Elemental_Oath.png",
     text: (
       <div>
         <div className="spell-names">Moonkin Aura, Elemental Oath</div>
@@ -461,7 +461,7 @@ const BuffArray = [
       "Affliction Warlock",
       "Demonology Warlock",
     ],
-    image: require("./images/Improved_Scorch.png").default,
+    image: "images/Improved_Scorch.png",
     text: (
       <div>
         <div className="spell-names">
@@ -476,7 +476,7 @@ const BuffArray = [
   {
     name: "Spell Damage %",
     source: ["Balance Druid", "Warlocks", "Unholy Death Knights"],
-    image: require("./images/Earth_And_Moon.png").default,
+    image: "images/Earth_And_Moon.png",
     text: (
       <div>
         <div className="spell-names">
@@ -491,7 +491,7 @@ const BuffArray = [
   {
     name: "Spell Haste",
     source: ["Shamans"],
-    image: require("./images/Wrath_Of_Air_Totem.png").default,
+    image: "images/Wrath_Of_Air_Totem.png",
     text: (
       <div>
         <div className="spell-names">Wrath of Air Totem</div>
@@ -503,7 +503,7 @@ const BuffArray = [
   {
     name: "Spell Hit",
     source: ["Balance Druid", "Shadow Priest"],
-    image: require("./images/Misery.png").default,
+    image: "images/Misery.png",
     text: (
       <div>
         <div className="spell-names">Improved Faerie Fire, Misery</div>
@@ -517,7 +517,7 @@ const BuffArray = [
   {
     name: "Spell Power",
     source: ["Elemental Shaman", "Shamans", "Demonology Warlocks"],
-    image: require("./images/Demonic_Pact.png").default,
+    image: "images/Demonic_Pact.png",
     text: (
       <div>
         <div className="spell-names">
@@ -551,7 +551,7 @@ const BuffArray = [
   {
     name: "Spirit",
     source: ["Priests", "Affliction Warlock"],
-    image: require("./images/Divine_Spirit.png").default,
+    image: "images/Divine_Spirit.png",
     text: (
       <div>
         <div className="spell-names">Divine Spirit, Fel Intelligence</div>
@@ -573,7 +573,7 @@ const BuffArray = [
   {
     name: "Stamina",
     source: ["Priests"],
-    image: require("./images/Power_Word_Fortitude.png").default,
+    image: "images/Power_Word_Fortitude.png",
     text: (
       <div>
         <div className="spell-names">Power Word: Fortitude</div>
@@ -585,7 +585,7 @@ const BuffArray = [
   {
     name: "Stats 10%",
     source: ["Paladins"],
-    image: require("./images/Greater_Blessing_Of_Kings.png").default,
+    image: "images/Greater_Blessing_Of_Kings.png",
     text: (
       <div>
         <div className="spell-names"> Blessing of Kings</div>
@@ -601,7 +601,7 @@ const BuffArray = [
   {
     name: "Attack Speed Reduction",
     source: ["Death Knights, Feral Druid, Warriors"],
-    image: require("./images/Icy_Touch.png").default,
+    image: "images/Icy_Touch.png",
     text: (
       <div>
         <div className="spell-names">
@@ -632,7 +632,7 @@ const BuffArray = [
   {
     name: "Attack Power Reduction",
     source: ["Warriors, Druids, Warlocks"],
-    image: require("./images/Demoralizing_Shout.png").default,
+    image: "images/Demoralizing_Shout.png",
     text: (
       <div>
         <div className="spell-names">
@@ -668,7 +668,7 @@ const BuffArray = [
   {
     name: "Healing Reduction",
     source: ["Hunters, Arms Warrior, Fury Warrior, Rogues"],
-    image: require("./images/Mortal_Strike.png").default,
+    image: "images/Mortal_Strike.png",
     text: (
       <div>
         <div className="spell-names">
@@ -686,7 +686,7 @@ const BuffArray = [
   {
     name: "Health Restore",
     source: ["Paladins"],
-    image: require("./images/Judgement_Of_Light.png").default,
+    image: "images/Judgement_Of_Light.png",
     text: (
       <div>
         <div className="spell-names">Judgement of Light</div>
@@ -700,7 +700,7 @@ const BuffArray = [
   {
     name: "Mana Restore",
     source: ["Paladins"],
-    image: require("./images/Judgement_Of_Wisdom.png").default,
+    image: "images/Judgement_Of_Wisdom.png",
     text: (
       <div>
         <div className="spell-names">Judgement of Wisdom</div>

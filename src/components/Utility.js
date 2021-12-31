@@ -10,7 +10,7 @@ const Utility = ({ utility }) => {
 };
 
 Utility.defaultProps = {
-  image: require("../images/hunter_beastmastery.png").default,
+  image: "images/hunter_beastmastery.png",
   name: "missing spec",
   count: 0,
 };
