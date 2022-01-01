@@ -1,9 +1,13 @@
-import { StyledPlayer } from "./styles/RaidAssembler.styled";
+import { StyledPlayer, DeletePlayerIcon } from "./styles/RaidAssembler.styled";
 const PlayerInRaid = ({ player, onDelete }) => {
   return (
-    <StyledPlayer onClick={() => onDelete(player)} background={player.color}>
+    <StyledPlayer background={player.color}>
+      <DeletePlayerIcon
+        id="delete-player-img"
+        onClick={() => onDelete(player)}
+      />
       <p>{player.text}</p>
-      <img src={player.image} alt="player in raid" />
+      <img id="class-img" src={player.image} alt="player in raid" />
     </StyledPlayer>
   );
 };

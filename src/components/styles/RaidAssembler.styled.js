@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
 import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
+import { RiDeleteBack2Line } from "react-icons/ri";
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -284,10 +285,17 @@ export const StyledPlayer = styled.div`
   padding: 0.5rem;
   margin: 1px;
   transition: transform 0.2;
-  img {
+  #class-img {
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
+  }
+  #delete-player-img {
+    align-self: flex-end;
+    padding: 0px;
+    &:hover {
+      color: red;
+    }
   }
   &:hover {
     transform: translateY(-0.2em);
@@ -296,11 +304,12 @@ export const StyledPlayer = styled.div`
   @media (min-width: 1200px) {
     margin: 5px;
     font-size: 0.8rem;
-    padding: 0.8rem;
+    padding: 0.2rem;
     border-radius: 0.33rem;
 
     img {
       display: normal;
+      padding: 0.5rem;
     }
   }
 `;
@@ -677,6 +686,10 @@ export const AddPlayerIcon = styled(MdOutlineAddBox)`
   font-size: 1.5em;
   margin-left: 5px;
   color: white;
+`;
+export const DeletePlayerIcon = styled(RiDeleteBack2Line)`
+  font-size: 1.5em;
+  color: black;
 `;
 export const AddPlayerButton = styled.div`
   display: flex;
