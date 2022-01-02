@@ -16,7 +16,7 @@ export const Main = styled.main`
   margin: auto;
   min-height: 100%;
   margin-top: 20%;
-  background-color: ${COLORS.background};
+  background-color: ${COLORS.fadedBackground};
   @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -32,15 +32,14 @@ export const Main = styled.main`
   .right-menu {
     display: flex;
     flex-direction: row;
+    width: fit-content;
     position: fixed;
     top: 25%;
     right: 0%;
     z-index: 2;
     transition: all 150ms;
-    @media screen and (min-width: 1200px) {
-      padding: 0.5rem;
-      right: 1%;
-    }
+    max-width: 50%;
+
     .arrow-left {
       transition: all 400ms;
       transform: rotate(180deg) translate(-100%);
@@ -87,21 +86,21 @@ export const SpecContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  max-width: 75%;
+  max-width: 50%;
   max-height: 50%;
   z-index: 2;
   @media screen and (min-width: 1200px) {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    border-radius: 0.5rem;
     align-items: center;
-    background-color: ${COLORS.fadedPrimary};
     justify-content: center;
+    border-radius: 0.5rem;
+    background-color: ${COLORS.fadedBackground};
+    border: 1px solid black;
     max-width: 100%;
     max-height: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     transition: all 300ms;
   }
   .spec-buttons {
@@ -317,7 +316,7 @@ export const StyledPlayer = styled.div`
 export const BuffContainer = styled.section`
   grid-area: Buffs;
   box-sizing: border-box;
-  background-color: ${COLORS.background};
+  background-color: ${COLORS.fadedBackground};
   display: flex;
   flex-direction: column;
   align-items: top;
@@ -525,7 +524,7 @@ export const UtilityContainer = styled.section`
   align-items: flex-start;
   box-sizing: border-box;
   flex-wrap: wrap;
-  background-color: ${COLORS.background};
+  background-color: ${COLORS.fadedBackground};
   min-width: 100%;
   margin-bottom: 50px;
   height: fit-content;
