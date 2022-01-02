@@ -6,7 +6,7 @@ export const Main = styled.main`
   flex-direction: row;
   align-items: start;
   justify-content: space-evenly;
-  background-color: ${COLORS.background};
+  background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
   max-width: 100vw;
   min-height: 75vw;
