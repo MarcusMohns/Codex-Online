@@ -5,7 +5,7 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${COLORS.background};
+  background-color: ${COLORS.fadedBackground};
   flex-direction: column;
   box-sizing: border-box;
   max-width: 100vw;
