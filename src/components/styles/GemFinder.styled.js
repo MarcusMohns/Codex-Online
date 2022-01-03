@@ -11,7 +11,7 @@ export const Main = styled.main`
   max-width: 100vw;
   min-height: 75vw;
   margin: auto;
-  padding: 3rem;
+  padding: 4rem;
   margin-top: 20%;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   font-size: 1rem;
