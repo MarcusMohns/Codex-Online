@@ -312,6 +312,19 @@ export const StyledPlayer = styled.div`
     }
   }
 `;
+export const StyledPlayer2 = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  border: 1px solid black;
+  align-items: center;
+  box-sizing: border-box;
+  :before {
+    content: "";
+    display: table;
+    padding-top: 100%;
+  }
+`;
 
 export const BuffContainer = styled.section`
   grid-area: Buffs;
@@ -631,6 +644,14 @@ export const RaidContentHeader = styled.div`
       }
     }
   }
+`;
+
+export const RaidGrid = styled.div`
+  width: 600px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  background-color: ${COLORS.primaryTransparent};
 `;
 
 export const CrossIcon = styled(FaRegTimesCircle)`

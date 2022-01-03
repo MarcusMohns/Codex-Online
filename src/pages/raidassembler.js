@@ -1,10 +1,11 @@
 import { useReducer, useState, useEffect } from "react";
-
+import { DragDropContext } from "react-beautiful-dnd";
 import SpecArray from "../SpecArray";
 import PlayersInRaid from "../components/PlayersInRaid";
 import SpecButtons from "../components/SpecButtons";
 import BuffCategories from "../components/BuffCategories";
 import Utilities from "../components/Utilities";
+import Raid from "../components/Raid";
 import {
   Main,
   SpecContainer,
@@ -54,7 +55,17 @@ const formReducer = (state, action) => {
 };
 
 const RaidAssembler = () => {
-  const [raid, setRaid] = useState([]);
+  const [raid, setRaid] = useState({
+    players: [],
+    groups: {
+      "group-1": {
+        id: "group-1",
+        title: "Group 1",
+        taskIds: [],
+      },
+    },
+    columnOrder: ["column-1"],
+  });
   const [buffs, setBuffs] = useReducer(formReducer, {});
   const [utilities, setUtilities] = useReducer(formReducer, {});
   const [raidCount, setCount] = useState([0, 0, 0, 0]); // first value full raid count, 2nd value Tanks, 3rd value Healers, 4th value DPS.
@@ -66,7 +77,7 @@ const RaidAssembler = () => {
   };
 
   const resetRaid = () => {
-    setRaid([]);
+    setRaid([]); // FIX
     setCount([0, 0, 0, 0]);
     setRightMenuOpen(false);
     setBuffs({ type: "reset" });
@@ -74,10 +85,11 @@ const RaidAssembler = () => {
   };
 
   const addPlayer = (player) => {
+    console.log(raid);
     if (raidCount[0] < 25) {
       const id = uuidv4();
       const newPlayer = { id, ...player };
-      setRaid([...raid, newPlayer]);
+      setRaid({ ...raid, players: [...raid.players, newPlayer] });
       addBuff(id, player);
       addUtility(id, player);
       handleCount(player, "add");
@@ -87,7 +99,8 @@ const RaidAssembler = () => {
   };
 
   const deletePlayer = (player) => {
-    setRaid(raid.filter((gamer) => gamer.id !== player.id));
+    const newRaid = raid.players.filter((gamer) => gamer.id !== player.id);
+    setRaid({ ...raid, players: newRaid });
     setBuffs({ type: "delete", id: player.id });
     setUtilities({ type: "delete", id: player.id });
     handleCount(player, "delete");
@@ -257,9 +270,14 @@ const RaidAssembler = () => {
             Raid is full
           </div>
         )}
-        {raid.length > 0 ? (
-          <PlayersInRaid raid={raid} onDelete={deletePlayer} />
+        {raid.players.length > 0 ? (
+          //////////////////
+          <DragDropContext>
+            <Raid raid={raid} onDelete={deletePlayer} />
+          </DragDropContext>
         ) : (
+          /////////////////
+
           <p className="no-players-text">No players in raid</p>
         )}
       </RaidContainer>
