@@ -140,8 +140,10 @@ const RaidAssembler = () => {
 
   const deletePlayer = (player) => {
     const newPlayers = raid.players.filter((gamer) => gamer.id !== player.id);
-    const newGroup = { ...raid.groups };
-    //const newGroup = JSON.stringify(raid.groups);
+    // const newGroup = { ...raid.groups };
+
+    const newGroup = JSON.parse(JSON.stringify(raid.groups));
+    // deep copy as to not alter state directly
     for (let group in newGroup) {
       for (let ids of newGroup[group].playerIds) {
         if (ids.id === player.id) {
