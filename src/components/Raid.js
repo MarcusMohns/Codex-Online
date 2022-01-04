@@ -1,25 +1,29 @@
-import Player from "./Player";
-import { Droppable } from "react-beautiful-dnd";
-import { RaidGrid } from "./styles/RaidAssembler.styled";
+import { DragDropContext } from "react-beautiful-dnd";
+import Group from "./Group";
+import { RaidGroupContainer } from "./styles/RaidAssembler.styled";
 
-const Raid = ({ raid, onDelete }) => {
-  console.log(raid);
+const Raid = ({ raid, onDelete, onDragEnd }) => {
   return (
-    <Droppable droppableId="raid">
-      {(provided) => (
-        <RaidGrid ref={provided.innerRef} {...provided.droppableProps}>
-          {raid.players.map((player, index) => (
-            <Player
-              key={player.id}
+    <RaidGroupContainer>
+      <DragDropContext onDragEnd={onDragEnd}>
+        {raid.groupOrder.map((groupId) => {
+          const group = raid.groups[groupId];
+          const players = group.playerIds.filter(
+            (playerId, index) => raid.players[index].id !== playerId
+          );
+
+          return (
+            <Group
+              dropId={group.id}
+              key={group.id}
+              group={group}
+              players={players}
               onDelete={onDelete}
-              player={player}
-              index={index}
             />
-          ))}
-          {provided.placeholder}
-        </RaidGrid>
-      )}
-    </Droppable>
+          );
+        })}
+      </DragDropContext>
+    </RaidGroupContainer>
   );
 };
 
