@@ -1,5 +1,4 @@
 import { useReducer, useState, useEffect } from "react";
-import { DragDropContext } from "react-beautiful-dnd";
 import SpecArray from "../SpecArray";
 import PlayersInRaid from "../components/PlayersInRaid";
 import SpecButtons from "../components/SpecButtons";
@@ -55,41 +54,82 @@ const formReducer = (state, action) => {
 };
 
 const RaidAssembler = () => {
-  const [raid, setRaid] = useState({
+  const intitialRaidState = {
     players: [],
     groups: {
       "group-1": {
         id: "group-1",
         title: "Group 1",
-        taskIds: [],
+        playerIds: [],
+      },
+      "group-2": {
+        id: "group-2",
+        title: "Group 2",
+        playerIds: [],
+      },
+      "group-3": {
+        id: "group-3",
+        title: "Group 3",
+        playerIds: [],
+      },
+      "group-4": {
+        id: "group-4",
+        title: "Group 4",
+        playerIds: [],
+      },
+      "group-5": {
+        id: "group-5",
+        title: "Group 5",
+        playerIds: [],
       },
     },
-    columnOrder: ["column-1"],
-  });
+    groupOrder: ["group-1", "group-2", "group-3", "group-4", "group-5"],
+  };
+
+  const [raid, setRaid] = useState(intitialRaidState);
   const [buffs, setBuffs] = useReducer(formReducer, {});
   const [utilities, setUtilities] = useReducer(formReducer, {});
   const [raidCount, setCount] = useState([0, 0, 0, 0]); // first value full raid count, 2nd value Tanks, 3rd value Healers, 4th value DPS.
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
   const [raidIsFull, setRaidIsFull] = useState(false);
 
-  const handleRightMenuToggle = (e) => {
+  const handleRightMenuToggle = () => {
     setRightMenuOpen(!rightMenuOpen);
+    console.log(raid);
   };
 
   const resetRaid = () => {
-    setRaid([]); // FIX
+    setRaid(intitialRaidState);
     setCount([0, 0, 0, 0]);
     setRightMenuOpen(false);
     setBuffs({ type: "reset" });
     setUtilities({ type: "reset" });
+    console.log("reset ran now! :)");
+  };
+
+  const groupSort = (groups, player) => {
+    const sortedGroup = {};
+    Object.assign(sortedGroup, groups);
+    for (let group of Object.entries(sortedGroup)) {
+      if (group[1].playerIds.length < 5) {
+        group[1].playerIds.push(player);
+        return sortedGroup;
+      }
+    }
+    return sortedGroup;
   };
 
   const addPlayer = (player) => {
-    console.log(raid);
     if (raidCount[0] < 25) {
       const id = uuidv4();
       const newPlayer = { id, ...player };
-      setRaid({ ...raid, players: [...raid.players, newPlayer] });
+      const newGroups = groupSort(raid.groups, newPlayer);
+
+      setRaid({
+        ...raid,
+        players: [...raid.players, newPlayer],
+        groups: newGroups,
+      });
       addBuff(id, player);
       addUtility(id, player);
       handleCount(player, "add");
@@ -99,8 +139,20 @@ const RaidAssembler = () => {
   };
 
   const deletePlayer = (player) => {
-    const newRaid = raid.players.filter((gamer) => gamer.id !== player.id);
-    setRaid({ ...raid, players: newRaid });
+    const newPlayers = raid.players.filter((gamer) => gamer.id !== player.id);
+    const newGroup = { ...raid.groups };
+    //const newGroup = JSON.stringify(raid.groups);
+    for (let group in newGroup) {
+      for (let ids of newGroup[group].playerIds) {
+        if (ids.id === player.id) {
+          newGroup[group].playerIds.splice(
+            newGroup[group].playerIds.indexOf(ids),
+            1
+          );
+        }
+      }
+    }
+    setRaid({ ...raid, players: newPlayers, groups: newGroup });
     setBuffs({ type: "delete", id: player.id });
     setUtilities({ type: "delete", id: player.id });
     handleCount(player, "delete");
@@ -222,6 +274,39 @@ const RaidAssembler = () => {
     setCount(count);
   };
 
+  const onDragEnd = (result) => {
+    const { destination, source, draggableId } = result;
+
+    if (!destination) {
+      return;
+    }
+    if (
+      destination.droppableId === source.droppableId &&
+      destination.index === source.index
+    ) {
+      return;
+    }
+    const group = raid.groups[source.droppableId];
+    const newPlayerIds = Array.from(group.playerIds);
+    const newPlayerId = newPlayerIds[source.index];
+    newPlayerIds.splice(source.index, 1);
+    newPlayerIds.splice(destination.index, 0, newPlayerId);
+
+    const newGroup = {
+      ...group,
+      playerIds: newPlayerIds,
+    };
+
+    const newRaid = {
+      ...raid,
+      groups: {
+        ...raid.groups,
+        [newGroup.id]: newGroup,
+      },
+    };
+    setRaid(newRaid);
+  };
+
   useEffect(() => {
     window.addEventListener("keydown", handleRightMenuToggle);
     return function cleanup() {
@@ -272,12 +357,14 @@ const RaidAssembler = () => {
         )}
         {raid.players.length > 0 ? (
           //////////////////
-          <DragDropContext>
-            <Raid raid={raid} onDelete={deletePlayer} />
-          </DragDropContext>
+          <Raid
+            raid={raid}
+            onDelete={deletePlayer}
+            setRaid={setRaid}
+            onDragEnd={onDragEnd}
+          />
         ) : (
           /////////////////
-
           <p className="no-players-text">No players in raid</p>
         )}
       </RaidContainer>
