@@ -95,7 +95,6 @@ const RaidAssembler = () => {
 
   const handleRightMenuToggle = () => {
     setRightMenuOpen(!rightMenuOpen);
-    console.log(raid);
   };
 
   const resetRaid = () => {
@@ -104,7 +103,6 @@ const RaidAssembler = () => {
     setRightMenuOpen(false);
     setBuffs({ type: "reset" });
     setUtilities({ type: "reset" });
-    console.log("reset ran now! :)");
   };
 
   const groupSort = (groups, player) => {
@@ -140,8 +138,6 @@ const RaidAssembler = () => {
 
   const deletePlayer = (player) => {
     const newPlayers = raid.players.filter((gamer) => gamer.id !== player.id);
-    // const newGroup = { ...raid.groups };
-
     const newGroup = JSON.parse(JSON.stringify(raid.groups));
     // deep copy as to not alter state directly
     for (let group in newGroup) {
