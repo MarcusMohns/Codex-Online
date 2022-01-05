@@ -284,22 +284,51 @@ const RaidAssembler = () => {
     ) {
       return;
     }
-    const group = raid.groups[source.droppableId];
-    const newPlayerIds = Array.from(group.playerIds);
+
+    const start = raid.groups[source.droppableId];
+    const finish = raid.groups[destination.droppableId];
+    const newPlayerIds = Array.from(start.playerIds);
     const newPlayerId = newPlayerIds[source.index];
-    newPlayerIds.splice(source.index, 1);
-    newPlayerIds.splice(destination.index, 0, newPlayerId);
 
-    const newGroup = {
-      ...group,
-      playerIds: newPlayerIds,
+    if (start === finish) {
+      // if moving inside same group
+      newPlayerIds.splice(source.index, 1);
+      newPlayerIds.splice(destination.index, 0, newPlayerId);
+
+      const newGroup = {
+        ...start,
+        playerIds: newPlayerIds,
+      };
+
+      const newRaid = {
+        ...raid,
+        groups: {
+          ...raid.groups,
+          [newGroup.id]: newGroup,
+        },
+      };
+      setRaid(newRaid);
+      return;
+    }
+    // if moving outside the group
+    const startPlayerIds = Array.from(start.playerIds);
+    startPlayerIds.splice(source.index, 1);
+    const newStart = {
+      ...start,
+      playerIds: startPlayerIds,
     };
-
+    const finishPlayerIds = Array.from(finish.playerIds);
+    finishPlayerIds.splice(destination.index, 0, newPlayerId);
+    const newFinish = {
+      ...finish,
+      playerIds: finishPlayerIds,
+    };
     const newRaid = {
       ...raid,
       groups: {
         ...raid.groups,
-        [newGroup.id]: newGroup,
+        [newStart.id]: newStart,
+        [newFinish.id]: newFinish,
       },
     };
     setRaid(newRaid);
