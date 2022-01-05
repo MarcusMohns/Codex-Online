@@ -4,12 +4,13 @@ import { Draggable } from "react-beautiful-dnd";
 const Player = ({ player, onDelete, index }) => {
   return (
     <Draggable draggableId={player.id} index={index}>
-      {(provided) => (
+      {(provided, snapshot) => (
         <StyledPlayer
           background={player.color}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           ref={provided.innerRef}
+          isDragging={snapshot.isDragging}
         >
           <DeletePlayerIcon
             id="delete-player-img"

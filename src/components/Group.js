@@ -10,10 +10,11 @@ const Group = ({ dropId, group, players, onDelete }) => {
     <GroupContainer>
       <div>{group.title}</div>
       <Droppable droppableId={dropId}>
-        {(provided) => (
+        {(provided, snapshot) => (
           <PlayersContainer
             ref={provided.innerRef}
             {...provided.droppableProps}
+            isDraggingOver={snapshot.isDraggingOver}
           >
             {players.map((player, index) => (
               <Player

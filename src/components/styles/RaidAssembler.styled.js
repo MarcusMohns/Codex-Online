@@ -284,6 +284,9 @@ export const StyledPlayer = styled.div`
   padding: 0.5rem;
   margin: 1px;
   transition: transform 0.2;
+
+  border: ${(props) => (props.isDragging ? "1px solid white" : "none")};
+
   #class-img {
     width: 1.2rem;
     height: 1.2rem;
@@ -303,26 +306,13 @@ export const StyledPlayer = styled.div`
   @media (min-width: 1200px) {
     margin: 5px;
     font-size: 0.8rem;
-    padding: 0.2rem;
+    padding: 0rem;
     border-radius: 0.33rem;
 
     img {
       display: normal;
       padding: 0.5rem;
     }
-  }
-`;
-export const StyledPlayer2 = styled.div`
-  display: flex;
-  justify-content: center;
-  background-color: red;
-  border: 1px solid black;
-  align-items: center;
-  box-sizing: border-box;
-  :before {
-    content: "";
-    display: table;
-    padding-top: 100%;
   }
 `;
 
@@ -646,14 +636,32 @@ export const RaidContentHeader = styled.div`
   }
 `;
 
-export const RaidGrid = styled.div`
-  width: 600px;
+export const PlayersContainer = styled.div`
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  background-color: ${(props) =>
+    props.isDraggingOver
+      ? `${COLORS.primary}`
+      : `${COLORS.primaryTransparent}`};
+`;
+
+export const GroupContainer = styled.div`
+  flex: 1 0 20%;
+  justify-content: center;
+  flex-direction: column;
+  background: red;
   flex-wrap: wrap;
   background-color: ${COLORS.primaryTransparent};
 `;
-
+export const RaidGroupContainer = styled.div`
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: baseline;
+  text-align: center;
+  width: 100%;
+  min-height: 100%;
+`;
 export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
   min-width: 1.5rem;
