@@ -1,5 +1,7 @@
 import { StyledUtilities } from "./styles/RaidAssembler.styled";
 import Utility from "./Utility";
+import { memo } from "react";
+
 const Utilities = ({ utilities }) => {
   utilities = Object.values(utilities);
   let currentUtils = [];
@@ -32,4 +34,4 @@ const Utilities = ({ utilities }) => {
   );
 };
 
-export default Utilities;
+export default memo(Utilities);

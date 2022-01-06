@@ -1,3 +1,5 @@
+import React from "react";
+import { memo } from "react";
 import SpecButton from "./SpecButton";
 
 const SpecButtons = ({ specs, onClick }) => {
@@ -16,4 +18,4 @@ const SpecButtons = ({ specs, onClick }) => {
   );
 };
 
-export default SpecButtons;
+export default memo(SpecButtons);

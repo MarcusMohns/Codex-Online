@@ -1,6 +1,7 @@
 import { StyledBuffCategories } from "./styles/RaidAssembler.styled";
 import BuffsAndCategory from "./BuffsAndCategory";
 import BuffArray from "../BuffArray";
+import { memo } from "react";
 
 const BuffCategories = ({ currentBuffs }) => {
   return (
@@ -17,4 +18,4 @@ const BuffCategories = ({ currentBuffs }) => {
   );
 };
 
-export default BuffCategories;
+export default memo(BuffCategories);
