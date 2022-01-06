@@ -1,6 +1,6 @@
 import { StyledPlayer, DeletePlayerIcon } from "./styles/RaidAssembler.styled";
 import { Draggable } from "react-beautiful-dnd";
-
+import { memo } from "react";
 const Player = ({ player, onDelete, index }) => {
   return (
     <Draggable draggableId={player.id} index={index}>
@@ -32,4 +32,4 @@ Player.defaultProps = {
   },
 };
 
-export default Player;
+export default memo(Player);
