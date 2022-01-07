@@ -186,24 +186,6 @@ export const RaidContainer = styled.section`
   height: min-content;
   margin-bottom: 50px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
-  .no-players-text {
-    margin: auto;
-    display: flex;
-    color: ${COLORS.lightText};
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-  .grid {
-    max-width: 100%;
-    height: 100%;
-    margin-bottom: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-auto-flow: row;
-    background-color: ${COLORS.primaryTransparent};
-  }
 
   .raid-is-not-full {
     display: flex;
@@ -248,16 +230,6 @@ export const RaidContainer = styled.section`
     grid-area: Raid;
     min-height: 95%;
 
-    .grid {
-      max-width: 100%;
-      height: 100%;
-      margin-bottom: auto;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      grid-auto-flow: column;
-      background-color: ${COLORS.primaryTransparent};
-    }
     .no-players-text {
       margin: auto;
       display: flex;
@@ -281,15 +253,15 @@ export const StyledPlayer = styled.div`
   cursor: pointer;
   color: white;
   font-size: 0.7rem;
-  padding: 0.5rem;
   margin: 1px;
   transition: transform 0.2;
-
-  border: ${(props) => (props.isDragging ? "1px solid white" : "none")};
+  transition: border-width 0.2;
+  box-shadow: ${(props) =>
+    props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"};
 
   #class-img {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
   }
   #delete-player-img {
@@ -304,7 +276,7 @@ export const StyledPlayer = styled.div`
   }
 
   @media (min-width: 1200px) {
-    margin: 5px;
+    margin: 3px;
     font-size: 0.8rem;
     padding: 0rem;
     border-radius: 0.33rem;
@@ -636,9 +608,23 @@ export const RaidContentHeader = styled.div`
   }
 `;
 
+export const NoPlayersText = styled.p`
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${COLORS.lightText};
+  font-size: 1.3rem;
+  min-height: 20vw;
+`;
+
 export const PlayersContainer = styled.div`
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  flex: 1;
+
+  transition: background-color 0.2s ease;
   background-color: ${(props) =>
     props.isDraggingOver
       ? `${COLORS.primary}`
@@ -646,12 +632,15 @@ export const PlayersContainer = styled.div`
 `;
 
 export const GroupContainer = styled.div`
-  flex: 1 0 20%;
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  background: red;
-  flex-wrap: wrap;
+  flex: 1 0 20%;
+  min-height: 20vw;
   background-color: ${COLORS.primaryTransparent};
+`;
+export const GroupTitle = styled.div`
+  color: white;
 `;
 export const RaidGroupContainer = styled.div`
   display: flex;
@@ -660,7 +649,8 @@ export const RaidGroupContainer = styled.div`
   align-items: baseline;
   text-align: center;
   width: 100%;
-  min-height: 100%;
+  transition: min-height 0.2s;
+  min-height: 20vw;
 `;
 export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
