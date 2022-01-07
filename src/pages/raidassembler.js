@@ -1,6 +1,5 @@
 import { useReducer, useState, useEffect } from "react";
 import SpecArray from "../SpecArray";
-import PlayersInRaid from "../components/PlayersInRaid";
 import SpecButtons from "../components/SpecButtons";
 import BuffCategories from "../components/BuffCategories";
 import Utilities from "../components/Utilities";
@@ -17,6 +16,7 @@ import {
   UtilityContainer,
   ContentHeader,
   RaidContentHeader,
+  NoPlayersText,
 } from "../components/styles/RaidAssembler.styled";
 
 const { v4: uuidv4 } = require("uuid");
@@ -273,7 +273,7 @@ const RaidAssembler = () => {
   };
 
   const onDragEnd = (result) => {
-    const { destination, source, draggableId } = result;
+    const { destination, source } = result;
 
     if (!destination) {
       return;
@@ -392,7 +392,7 @@ const RaidAssembler = () => {
           />
         ) : (
           /////////////////
-          <p className="no-players-text">No players in raid</p>
+          <NoPlayersText>No players in raid</NoPlayersText>
         )}
       </RaidContainer>
       <UtilityContainer>
