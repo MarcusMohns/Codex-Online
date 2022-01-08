@@ -651,14 +651,42 @@ export const GroupContainer = styled.div`
   background-color: ${COLORS.primaryTransparent};
 `;
 export const GroupTitle = styled.div`
-  color: white;
+  ${COLORS.veryFadedPrimary};
   user-select: none;
   margin-right: 2px;
   margin-bottom: 5px;
   padding: 5px;
   background-color: ${COLORS.primary};
+  color: ${COLORS.offWhite};
   border: none;
   font-size: 1rem;
+  animation-name: reveal;
+  animation-duration: 1s;
+  transition: transform 1000ms;
+  -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+  -moz-animation-fill-mode: forwards; /* FF 5+ */
+  -o-animation-fill-mode: forwards; /* Not implemented yet */
+  -ms-animation-fill-mode: forwards; /* IE 10+ */
+  animation-fill-mode: forwards;
+
+  @keyframes reveal {
+    0% {
+      opacity: 0%;
+    }
+    25% {
+      opacity: 25%;
+    }
+    50% {
+      opacity: 50%;
+    }
+    75% {
+      opacity: 75%;
+    }
+    100% {
+      transform: translateY(15%);
+      opacity: 100%;
+    }
+  }
 `;
 export const RaidGroupContainer = styled.div`
   display: flex;
