@@ -3,12 +3,13 @@ import { Droppable } from "react-beautiful-dnd";
 import {
   PlayersContainer,
   GroupContainer,
+  GroupTitle,
 } from "./styles/RaidAssembler.styled";
 
 const Group = ({ dropId, group, players, onDelete }) => {
   return (
     <GroupContainer>
-      <div>{group.title}</div>
+      <GroupTitle>{group.title}</GroupTitle>
       <Droppable droppableId={dropId}>
         {(provided, snapshot) => (
           <PlayersContainer
