@@ -254,10 +254,9 @@ export const StyledPlayer = styled.div`
   color: white;
   font-size: 0.7rem;
   margin: 1px;
-  transition: transform 0.2;
-  transition: border-width 0.2;
-  box-shadow: ${(props) =>
-    props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"};
+
+  /* box-shadow: ${(props) =>
+    props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
 
   #class-img {
     width: 1rem;
@@ -266,9 +265,15 @@ export const StyledPlayer = styled.div`
   }
   #delete-player-img {
     align-self: flex-end;
-    padding: 0px;
+    padding: 1px;
+    margin-right: 2px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
+      #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
+    cursor: pointer;
     &:hover {
-      color: red;
+      transform: scale(1.2);
     }
   }
   &:hover {
@@ -529,6 +534,7 @@ export const StyledUtility = styled.div`
   justify-content: space-between;
   align-items: center;
   width: fit-content;
+  user-select: none;
   font-size: 0.8rem;
   padding: 0.5rem;
   border: 1px solid grey;
@@ -573,6 +579,8 @@ export const RaidContentHeader = styled.div`
   color: ${COLORS.offWhite};
   box-shadow: 0 2px 6px -1px #000;
   z-index: 1;
+  user-select: none;
+
   .raid-text {
     display: none;
   }
@@ -623,8 +631,9 @@ export const PlayersContainer = styled.div`
   flex-direction: column;
   min-height: 100%;
   flex: 1;
-
-  transition: background-color 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
   background-color: ${(props) =>
     props.isDraggingOver
       ? `${COLORS.primary}`
@@ -632,15 +641,24 @@ export const PlayersContainer = styled.div`
 `;
 
 export const GroupContainer = styled.div`
+  box-sizing: border-box;
+  margin-top: 2px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex: 1 0 20%;
-  min-height: 20vw;
+  min-height: 22vw;
   background-color: ${COLORS.primaryTransparent};
 `;
 export const GroupTitle = styled.div`
   color: white;
+  user-select: none;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: ${COLORS.primary};
+  border: none;
+  font-size: 1rem;
 `;
 export const RaidGroupContainer = styled.div`
   display: flex;
@@ -650,7 +668,7 @@ export const RaidGroupContainer = styled.div`
   text-align: center;
   width: 100%;
   transition: min-height 0.2s;
-  min-height: 20vw;
+  min-height: 22vw;
 `;
 export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
@@ -695,9 +713,9 @@ export const ResetIcon = styled(MdRestartAlt)`
   color: white;
   transition: transform 400ms;
   display: flex;
-
+  border-radius: 50%;
   &:hover {
-    transform: rotate(-180deg);
+    transform: scale(1.2);
   }
 `;
 export const AddPlayerIcon = styled(MdOutlineAddBox)`
@@ -707,25 +725,32 @@ export const AddPlayerIcon = styled(MdOutlineAddBox)`
 `;
 export const DeletePlayerIcon = styled(RiDeleteBack2Line)`
   font-size: 1.5em;
-  color: black;
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
+    #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
 `;
 export const AddPlayerButton = styled.div`
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
   align-items: center;
   justify-content: center;
   background-color: ${COLORS.fadedHighlight};
   color: ${COLORS.lightText};
   border-radius: 3px;
   margin-right: 1rem;
-
   cursor: pointer;
   padding: 0.2rem 0.6rem;
   text-align: center;
   user-select: none;
   -webkit-user-select: none;
   white-space: nowrap;
+
+  #plus-sign {
+    margin-left: 5px;
+    font-size: 1.3rem;
+  }
 
   &:hover {
     background-color: ${COLORS.highlight};

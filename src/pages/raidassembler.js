@@ -11,7 +11,6 @@ import {
   BuffContainer,
   ArrowLeft,
   ResetIcon,
-  AddPlayerIcon,
   AddPlayerButton,
   UtilityContainer,
   ContentHeader,
@@ -362,7 +361,7 @@ const RaidAssembler = () => {
           <div className="raid-text">Raid</div>
           <div className="btn-container">
             <AddPlayerButton onClick={handleRightMenuToggle}>
-              Add a player <AddPlayerIcon />
+              Add a Player <span id="plus-sign">+</span>
             </AddPlayerButton>
             <ResetIcon onClick={resetRaid} />
           </div>
