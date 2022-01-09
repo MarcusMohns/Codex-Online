@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
+import {
+  FaRegTimesCircle,
+  FaRegCheckCircle,
+  FaPencilAlt,
+} from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
 import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
 import { RiDeleteBack2Line } from "react-icons/ri";
@@ -255,6 +259,24 @@ export const StyledPlayer = styled.div`
   font-size: 0.7rem;
   margin: 1px;
 
+  .player-name {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: white;
+    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
+      #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
+    font-size: 0.7rem;
+    margin: 1px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+  }
+
   /* box-shadow: ${(props) =>
     props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
 
@@ -263,10 +285,18 @@ export const StyledPlayer = styled.div`
     height: 1rem;
     border-radius: 50%;
   }
+  #edit-player-icon {
+    display: flex;
+    color: white;
+    margin-left: 2px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
   #delete-player-img {
-    align-self: flex-end;
+    display: flex;
     padding: 1px;
-    margin-right: 2px;
     font-weight: bold;
     font-size: 1.3rem;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
@@ -691,6 +721,34 @@ export const GroupTitle = styled.div`
     }
   }
 `;
+export const AddPlayerButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+  align-items: center;
+  justify-content: center;
+  background-color: ${COLORS.fadedHighlight};
+  color: ${COLORS.lightText};
+  border-radius: 3px;
+  margin-right: 1rem;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+
+  #plus-sign {
+    margin-left: 5px;
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    background-color: ${COLORS.highlight};
+  }
+`;
 export const RaidGroupContainer = styled.div`
   display: flex;
   flex-grow: 1;
@@ -701,6 +759,14 @@ export const RaidGroupContainer = styled.div`
   transition: min-height 0.2s;
   min-height: 22vw;
 `;
+export const TinyContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
   min-width: 1.5rem;
@@ -759,31 +825,7 @@ export const DeletePlayerIcon = styled(RiDeleteBack2Line)`
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
 `;
-export const AddPlayerButton = styled.div`
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
-  align-items: center;
-  justify-content: center;
-  background-color: ${COLORS.fadedHighlight};
-  color: ${COLORS.lightText};
-  border-radius: 3px;
-  margin-right: 1rem;
-  cursor: pointer;
-  padding: 0.2rem 0.6rem;
-  text-align: center;
-  user-select: none;
-  -webkit-user-select: none;
-  white-space: nowrap;
-
-  #plus-sign {
-    margin-left: 5px;
-    font-size: 1.3rem;
-  }
-
-  &:hover {
-    background-color: ${COLORS.highlight};
-  }
+export const EditIcon = styled(FaPencilAlt)`
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
+    #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
 `;

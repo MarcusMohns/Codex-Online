@@ -158,6 +158,9 @@ const RaidAssembler = () => {
       setRaidIsFull(false);
     }
   };
+  const editPlayer = (player) => {
+    console.log("hey", player);
+  };
 
   const addBuff = (id, player) => {
     let playerBuffs = [...player.buffs];
@@ -386,6 +389,7 @@ const RaidAssembler = () => {
           <Raid
             raid={raid}
             onDelete={deletePlayer}
+            onEdit={editPlayer}
             setRaid={setRaid}
             onDragEnd={onDragEnd}
           />

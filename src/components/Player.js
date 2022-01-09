@@ -1,7 +1,12 @@
-import { StyledPlayer, DeletePlayerIcon } from "./styles/RaidAssembler.styled";
+import {
+  StyledPlayer,
+  DeletePlayerIcon,
+  EditIcon,
+  TinyContainer,
+} from "./styles/RaidAssembler.styled";
 import { Draggable } from "react-beautiful-dnd";
 import { memo } from "react";
-const Player = ({ player, onDelete, index }) => {
+const Player = ({ player, onDelete, onEdit, index }) => {
   return (
     <Draggable draggableId={player.id} index={index}>
       {(provided, snapshot) => (
@@ -12,11 +17,20 @@ const Player = ({ player, onDelete, index }) => {
           ref={provided.innerRef}
           isDragging={snapshot.isDragging}
         >
-          <DeletePlayerIcon
-            id="delete-player-img"
-            onClick={() => onDelete(player)}
+          <TinyContainer>
+            <EditIcon id="edit-player-icon" onClick={() => onEdit(player)} />
+            <DeletePlayerIcon
+              id="delete-player-img"
+              onClick={() => onDelete(player)}
+            />
+          </TinyContainer>
+          <input
+            type="text"
+            id="player-name"
+            className="player-name"
+            name="player-name"
+            value={player.text}
           />
-          <p>{player.text}</p>
           <img id="class-img" src={player.image} alt="player in raid" />
         </StyledPlayer>
       )}
