@@ -591,6 +591,8 @@ export const RaidContentHeader = styled.div`
   .raid-status-container {
     display: flex;
     margin-left: 2px;
+    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
+      #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
 
     .raid-count {
       margin-right: 1rem;
@@ -607,6 +609,7 @@ export const RaidContentHeader = styled.div`
     }
     .raid-status-container {
       display: flex;
+
       .raid-count {
         margin-right: 1rem;
         margin-left: 1rem;
@@ -634,6 +637,8 @@ export const PlayersContainer = styled.div`
   padding: 0.5rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  border: 1px solid grey;
+
   background-color: ${(props) =>
     props.isDraggingOver
       ? `${COLORS.primary}`
@@ -651,18 +656,16 @@ export const GroupContainer = styled.div`
   background-color: ${COLORS.primaryTransparent};
 `;
 export const GroupTitle = styled.div`
-  ${COLORS.veryFadedPrimary};
   user-select: none;
   margin-right: 2px;
   margin-bottom: 5px;
   padding: 5px;
-  background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   border: none;
   font-size: 1rem;
   animation-name: reveal;
-  animation-duration: 1s;
-  transition: transform 1000ms;
+  animation-duration: 0.4s;
+  transition: transform 400ms;
   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
   -moz-animation-fill-mode: forwards; /* FF 5+ */
   -o-animation-fill-mode: forwards; /* Not implemented yet */
