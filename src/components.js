@@ -8,6 +8,7 @@ const COLORS = {
   fadedBackground: "rgba(99, 102, 106, 0.5)",
   primary: "rgba(38, 72, 116, 1)",
   fadedPrimary: "rgba(38, 72, 116, 0.75)",
+  veryFadedPrimary: "rgba(38, 72, 116, 0.25)",
   primaryTransparent: "rgba(38, 72, 116, 0)",
   fadedHighlight: "rgba(173,216,230,0.50)",
   highlight: "rgba(173,216,230,1)",
