@@ -244,6 +244,7 @@ export const RaidContainer = styled.section`
 `;
 
 export const StyledPlayer = styled.div`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,8 +259,11 @@ export const StyledPlayer = styled.div`
   color: white;
   font-size: 0.7rem;
   margin: 1px;
+  max-width: 100%;
 
   .player-name {
+    width: 85%;
+    flex-wrap: wrap;
     pointer-events: none;
     border: none;
     background-image: none;
@@ -271,7 +275,7 @@ export const StyledPlayer = styled.div`
     color: white;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
       #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin: 1px;
     align-items: center;
     text-align: center;
@@ -283,9 +287,9 @@ export const StyledPlayer = styled.div`
     props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
 
   #class-img {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 35%;
   }
   #edit-player-icon {
     display: flex;
