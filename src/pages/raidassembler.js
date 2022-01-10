@@ -167,11 +167,12 @@ const RaidAssembler = () => {
     nameTextObject.addEventListener("keydown", function confirmEdit(e) {
       if (e.key === "Enter") {
         nameTextObject.blur();
+        nameTextObject.removeEventListener("keydown", confirmEdit);
       }
       if (e.key === "Escape") {
         nameTextObject.blur();
+        nameTextObject.removeEventListener("keydown", confirmEdit);
       }
-      nameTextObject.removeEventListener("keydown", confirmEdit);
     });
   };
 
