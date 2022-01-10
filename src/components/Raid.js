@@ -2,7 +2,7 @@ import { DragDropContext } from "react-beautiful-dnd";
 import Group from "./Group";
 import { RaidGroupContainer } from "./styles/RaidAssembler.styled";
 
-const Raid = ({ raid, onDelete, onDragEnd, onEdit }) => {
+const Raid = ({ raid, onDelete, onDragEnd, focusName, editName }) => {
   return (
     <RaidGroupContainer>
       <DragDropContext onDragEnd={onDragEnd}>
@@ -19,7 +19,8 @@ const Raid = ({ raid, onDelete, onDragEnd, onEdit }) => {
               group={group}
               players={players}
               onDelete={onDelete}
-              onEdit={onEdit}
+              focusName={focusName}
+              editName={editName}
             />
           );
         })}

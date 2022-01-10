@@ -6,7 +6,7 @@ import {
   GroupTitle,
 } from "./styles/RaidAssembler.styled";
 
-const Group = ({ dropId, group, players, onDelete, onEdit }) => {
+const Group = ({ dropId, group, players, onDelete, focusName, editName }) => {
   return (
     <GroupContainer>
       <GroupTitle>{group.title}</GroupTitle>
@@ -21,7 +21,8 @@ const Group = ({ dropId, group, players, onDelete, onEdit }) => {
               <Player
                 key={player.id}
                 onDelete={onDelete}
-                onEdit={onEdit}
+                focusName={focusName}
+                editName={editName}
                 player={player}
                 index={index}
               />

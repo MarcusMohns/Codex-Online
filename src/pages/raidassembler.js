@@ -158,8 +158,46 @@ const RaidAssembler = () => {
       setRaidIsFull(false);
     }
   };
-  const editPlayer = (player) => {
-    console.log("hey", player);
+
+  const focusName = (nameText) => {
+    let nameTextObject = document.querySelector(`#${nameText}`);
+    nameTextObject.focus();
+    nameTextObject.value = "";
+
+    nameTextObject.addEventListener("keydown", function confirmEdit(e) {
+      if (e.key === "Enter") {
+        nameTextObject.blur();
+      }
+      if (e.key === "Escape") {
+        nameTextObject.blur();
+      }
+      nameTextObject.removeEventListener("keydown", confirmEdit);
+    });
+  };
+
+  const editName = (playerId, nameText) => {
+    const nameTextObject = document.querySelector(`#${nameText}`);
+    if (nameTextObject.value === "") {
+      nameTextObject.value = nameTextObject.defaultValue;
+    }
+    const playerArray = JSON.parse(JSON.stringify(raid.players));
+    const newGroups = JSON.parse(JSON.stringify(raid.groups));
+    const newPlayers = playerArray.map((player) => {
+      if (player.id === playerId) {
+        player.name = nameTextObject.value;
+      }
+      return player;
+    });
+
+    for (let group in newGroups) {
+      for (let ids of newGroups[group].playerIds) {
+        if (ids.id === playerId) {
+          ids.name = nameTextObject.value;
+        }
+      }
+    }
+
+    setRaid({ ...raid, players: newPlayers, groups: newGroups });
   };
 
   const addBuff = (id, player) => {
@@ -389,7 +427,8 @@ const RaidAssembler = () => {
           <Raid
             raid={raid}
             onDelete={deletePlayer}
-            onEdit={editPlayer}
+            focusName={focusName}
+            editName={editName}
             setRaid={setRaid}
             onDragEnd={onDragEnd}
           />

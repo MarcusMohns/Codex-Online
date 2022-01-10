@@ -3,6 +3,7 @@ const SpecArray = [
     text: "Blood Death Knight",
     image: "images/dk_blood.png",
     color: "red",
+    name: "",
     buffs: [
       {
         category: "Agility and Strength",
@@ -43,6 +44,7 @@ const SpecArray = [
     text: "Unholy Death Knight",
     image: "images/dk_unholy.png",
     color: "red",
+    name: "",
     buffs: [
       {
         category: "Attack Speed Reduction",
@@ -84,6 +86,7 @@ const SpecArray = [
     text: "Frost Death Knight",
     image: "images/dk_frost.png",
     color: "red",
+    name: "",
     buffs: [
       {
         category: "Attack Speed Reduction",
@@ -120,6 +123,7 @@ const SpecArray = [
     text: "Balance Druid",
     image: "images/druid_balance.png",
     color: "orange",
+    name: "",
     buffs: [
       {
         category: "Attack Power Reduction",
@@ -188,6 +192,7 @@ const SpecArray = [
     text: "Feral Druid",
     image: "images/druid_feral.png",
     color: "orange",
+    name: "",
     buffs: [
       {
         category: "Attack Speed Reduction",
@@ -253,6 +258,7 @@ const SpecArray = [
     text: "Restoration Druid",
     image: "images/druid_restoration.png",
     color: "orange",
+    name: "",
     buffs: [
       {
         category: "Attack Power Reduction",
@@ -302,6 +308,7 @@ const SpecArray = [
     text: "Beast Mastery Hunter",
     image: "images/hunter_beastmastery.png",
     color: "green",
+    name: "",
     buffs: [
       {
         category: "Damage %",
@@ -329,6 +336,7 @@ const SpecArray = [
     text: "Marksman Hunter",
     image: "images/hunter_marksman.png",
     color: "green",
+    name: "",
     buffs: [
       {
         category: "Healing Reduction",
@@ -356,6 +364,7 @@ const SpecArray = [
     text: "Survival Hunter",
     image: "images/hunter_survival.png",
     color: "green",
+    name: "",
     buffs: [
       {
         category: "Replenishment",
@@ -387,6 +396,7 @@ const SpecArray = [
     text: "Arcane Mage",
     image: "images/mage_arcane.png",
     color: "teal",
+    name: "",
     buffs: [
       {
         category: "Damage %",
@@ -418,6 +428,7 @@ const SpecArray = [
     text: "Fire Mage",
     image: "images/mage_fire.png",
     color: "teal",
+    name: "",
     buffs: [
       {
         category: "Spell Crit Taken",
@@ -449,6 +460,7 @@ const SpecArray = [
     text: "Frost Mage",
     image: "images/mage_frost.png",
     color: "teal",
+    name: "",
     buffs: [
       {
         category: "Spell Crit Taken",
@@ -486,6 +498,7 @@ const SpecArray = [
     text: "Holy Paladin",
     image: "images/paladin_holy.png",
     color: "pink",
+    name: "",
     buffs: [
       {
         category: "Armor",
@@ -561,6 +574,7 @@ const SpecArray = [
     text: "Protection Paladin",
     image: "images/paladin_protection.png",
     color: "pink",
+    name: "",
     buffs: [
       {
         category: "Armor",
@@ -651,6 +665,7 @@ const SpecArray = [
     text: "Retribution Paladin",
     image: "images/paladin_retribution.png",
     color: "pink",
+    name: "",
     buffs: [
       {
         category: "Armor",
@@ -746,6 +761,7 @@ const SpecArray = [
     text: "Discipline Priest",
     image: "images/priest_discipline.png",
     color: "white",
+    name: "",
     buffs: [
       {
         category: "Armor %",
@@ -807,6 +823,7 @@ const SpecArray = [
     text: "Holy Priest",
     image: "images/priest_holy.png",
     color: "white",
+    name: "",
     buffs: [
       {
         category: "Armor %",
@@ -859,6 +876,7 @@ const SpecArray = [
     text: "Shadow Priest",
     image: "images/priest_shadow.png",
     color: "white",
+    name: "",
     buffs: [
       {
         category: "Spell Hit",
@@ -916,6 +934,7 @@ const SpecArray = [
     text: "Assassination Rogue",
     image: "images/rogue_assassination.png",
     color: "yellow",
+    name: "",
     buffs: [
       {
         category: "Healing Reduction",
@@ -956,6 +975,7 @@ const SpecArray = [
     text: "Combat Rogue",
     image: "images/rogue_combat.png",
     color: "yellow",
+    name: "",
     buffs: [
       {
         category: "Healing Reduction",
@@ -996,6 +1016,7 @@ const SpecArray = [
     text: "Subtlety Rogue",
     image: "images/rogue_subtlety.png",
     color: "yellow",
+    name: "",
     buffs: [
       {
         category: "Armor Reduction (Major)",
@@ -1032,6 +1053,7 @@ const SpecArray = [
     text: "Elemental Shaman",
     image: "images/shaman_elemental.png",
     color: "blue",
+    name: "",
     buffs: [
       {
         category: "Armor",
@@ -1106,6 +1128,7 @@ const SpecArray = [
     text: "Enhancement Shaman",
     image: "images/shaman_enhancement.png",
     color: "blue",
+    name: "",
     buffs: [
       {
         category: "Armor",
@@ -1175,6 +1198,7 @@ const SpecArray = [
     text: "Restoration Shaman",
     image: "images/shaman_restoration.png",
     color: "blue",
+    name: "",
     buffs: [
       {
         category: "Armor",
@@ -1252,6 +1276,7 @@ const SpecArray = [
     text: "Arms Warrior",
     image: "images/warrior_arms.png",
     color: "brown",
+    name: "",
     buffs: [
       {
         category: "Healing Reduction",
@@ -1310,6 +1335,7 @@ const SpecArray = [
     text: "Fury Warrior",
     image: "images/warrior_fury.png",
     color: "brown",
+    name: "",
     buffs: [
       {
         category: "Attack Power Reduction",
@@ -1363,6 +1389,7 @@ const SpecArray = [
     text: "Protection Warrior",
     image: "images/warrior_protection.png",
     color: "brown",
+    name: "",
     buffs: [
       {
         category: "Attack Power Reduction",
@@ -1409,6 +1436,7 @@ const SpecArray = [
     text: "Affliction Warlock",
     image: "images/warlock_affliction.png",
     color: "purple",
+    name: "",
     buffs: [
       {
         category: "Attack Power Reduction",
@@ -1452,6 +1480,7 @@ const SpecArray = [
     text: "Demonology Warlock",
     image: "images/warlock_demonology.png",
     color: "purple",
+    name: "",
     buffs: [
       {
         category: "Attack Power Reduction",
@@ -1485,6 +1514,7 @@ const SpecArray = [
     text: "Destruction Warlock",
     image: "images/warlock_destruction.png",
     color: "purple",
+    name: "",
     buffs: [
       {
         category: "Attack Power Reduction",

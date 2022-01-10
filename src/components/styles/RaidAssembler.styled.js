@@ -260,11 +260,13 @@ export const StyledPlayer = styled.div`
   margin: 1px;
 
   .player-name {
+    pointer-events: none;
     border: none;
     background-image: none;
     background-color: transparent;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
+    border-radius: 0px;
     box-shadow: none;
     color: white;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,

@@ -6,7 +6,7 @@ import {
 } from "./styles/RaidAssembler.styled";
 import { Draggable } from "react-beautiful-dnd";
 import { memo } from "react";
-const Player = ({ player, onDelete, onEdit, index }) => {
+const Player = ({ player, onDelete, focusName, editName, index }) => {
   return (
     <Draggable draggableId={player.id} index={index}>
       {(provided, snapshot) => (
@@ -18,7 +18,10 @@ const Player = ({ player, onDelete, onEdit, index }) => {
           isDragging={snapshot.isDragging}
         >
           <TinyContainer>
-            <EditIcon id="edit-player-icon" onClick={() => onEdit(player)} />
+            <EditIcon
+              id="edit-player-icon"
+              onClick={() => focusName(`player-input-${player.id}`)}
+            />
             <DeletePlayerIcon
               id="delete-player-img"
               onClick={() => onDelete(player)}
@@ -26,10 +29,11 @@ const Player = ({ player, onDelete, onEdit, index }) => {
           </TinyContainer>
           <input
             type="text"
-            id="player-name"
+            id={`player-input-${player.id}`}
             className="player-name"
             name="player-name"
-            value={player.text}
+            defaultValue={player.name === "" ? player.text : player.name}
+            onBlur={() => editName(player.id, `player-input-${player.id}`)}
           />
           <img id="class-img" src={player.image} alt="player in raid" />
         </StyledPlayer>
