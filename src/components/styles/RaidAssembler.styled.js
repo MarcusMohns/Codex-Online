@@ -252,7 +252,6 @@ export const StyledPlayer = styled.div`
   justify-content: space-between;
   font-weight: bold;
   background: ${(props) => props.background};
-  user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
   cursor: pointer;
@@ -262,6 +261,7 @@ export const StyledPlayer = styled.div`
   max-width: 100%;
 
   .player-name {
+    user-select: none;
     width: 85%;
     flex-wrap: wrap;
     pointer-events: none;
@@ -276,11 +276,12 @@ export const StyledPlayer = styled.div`
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
       #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
     font-size: 0.8rem;
-    margin: 1px;
     align-items: center;
     text-align: center;
     font-weight: bold;
     border: none;
+    margin: 0px;
+    padding: 0px;
   }
 
   /* box-shadow: ${(props) =>
@@ -537,7 +538,7 @@ export const StyledCategory = styled.div`
 export const UtilityContainer = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   box-sizing: border-box;
   flex-wrap: wrap;
   background-color: ${COLORS.fadedBackground};
@@ -682,13 +683,14 @@ export const PlayersContainer = styled.div`
 `;
 
 export const GroupContainer = styled.div`
+  user-select: none;
   box-sizing: border-box;
   margin-top: 2px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex: 1 0 20%;
-  min-height: 22vw;
+  min-height: 455px;
   background-color: ${COLORS.primaryTransparent};
 `;
 export const GroupTitle = styled.div`
@@ -761,9 +763,8 @@ export const RaidGroupContainer = styled.div`
   flex-direction: row;
   align-items: baseline;
   text-align: center;
-  width: 100%;
-  transition: min-height 0.2s;
-  min-height: 22vw;
+  width: 99%;
+  min-height: 450px;
 `;
 export const TinyContainer = styled.div`
   width: 100%;
