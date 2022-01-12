@@ -12,6 +12,7 @@ const COLORS = {
   primaryTransparent: "rgba(38, 72, 116, 0)",
   fadedHighlight: "rgba(173,216,230,0.50)",
   highlight: "rgba(173,216,230,1)",
+  fadedGrey: "rgb(169,169,169,0.20)",
 };
 
 export default COLORS;

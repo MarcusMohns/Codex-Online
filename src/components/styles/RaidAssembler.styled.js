@@ -256,7 +256,7 @@ export const StyledPlayer = styled.div`
   .player-name {
     color: white;
     user-select: none;
-    width: 85%;
+    width: 90%;
     flex-wrap: wrap;
     pointer-events: none;
     border: none;
@@ -289,6 +289,8 @@ export const StyledPlayer = styled.div`
     display: flex;
     margin-left: 2px;
     cursor: pointer;
+    padding: 1px;
+    font-size: 1.4rem;
     &:hover {
       transform: scale(1.2);
     }
