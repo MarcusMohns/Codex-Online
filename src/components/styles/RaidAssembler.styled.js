@@ -1,12 +1,8 @@
 import styled from "styled-components";
-import {
-  FaRegTimesCircle,
-  FaRegCheckCircle,
-  FaPencilAlt,
-} from "react-icons/fa";
+import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
 import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
-import { RiDeleteBack2Line } from "react-icons/ri";
+import { RiDeleteBin2Line, RiEdit2Line } from "react-icons/ri";
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -252,15 +248,13 @@ export const StyledPlayer = styled.div`
   justify-content: space-between;
   font-weight: bold;
   background: ${(props) => props.background};
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
-    #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
   cursor: pointer;
   color: white;
-  font-size: 0.7rem;
   margin: 1px;
   max-width: 100%;
 
   .player-name {
+    color: white;
     user-select: none;
     width: 85%;
     flex-wrap: wrap;
@@ -272,7 +266,6 @@ export const StyledPlayer = styled.div`
     -moz-box-shadow: none;
     border-radius: 0px;
     box-shadow: none;
-    color: white;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
       #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
     font-size: 0.8rem;
@@ -294,7 +287,6 @@ export const StyledPlayer = styled.div`
   }
   #edit-player-icon {
     display: flex;
-    color: white;
     margin-left: 2px;
     cursor: pointer;
     &:hover {
@@ -306,9 +298,8 @@ export const StyledPlayer = styled.div`
     padding: 1px;
     font-weight: bold;
     font-size: 1.3rem;
-    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
-      #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
     cursor: pointer;
+
     &:hover {
       transform: scale(1.2);
     }
@@ -767,8 +758,11 @@ export const RaidGroupContainer = styled.div`
   min-height: 450px;
 `;
 export const TinyContainer = styled.div`
+  border-radius: 5px;
   width: 100%;
   display: flex;
+  margin-bottom: 1px;
+  box-sizing: border-box;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -827,12 +821,11 @@ export const AddPlayerIcon = styled(MdOutlineAddBox)`
   margin-left: 5px;
   color: white;
 `;
-export const DeletePlayerIcon = styled(RiDeleteBack2Line)`
+export const DeletePlayerIcon = styled(RiDeleteBin2Line)`
   font-size: 1.5em;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
-    #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
+  color: black;
 `;
-export const EditIcon = styled(FaPencilAlt)`
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
-    #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
+export const EditIcon = styled(RiEdit2Line)`
+  color: black;
+  font-size: 1.5em;
 `;
