@@ -35,6 +35,7 @@ const Player = ({ player, onDelete, focusName, editName, index }) => {
             defaultValue={player.name === "" ? player.text : player.name}
             onBlur={() => editName(player.id, `player-input-${player.id}`)}
             autoComplete="off"
+            spellCheck="false"
           />
           <img id="class-img" src={player.image} alt="player in raid" />
         </StyledPlayer>
