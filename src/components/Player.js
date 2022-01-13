@@ -16,6 +16,7 @@ const Player = ({ player, onDelete, focusName, editName, index }) => {
           {...provided.dragHandleProps}
           ref={provided.innerRef}
           isDragging={snapshot.isDragging}
+          hasText={player.name === "" ? false : true}
         >
           <TinyContainer>
             <EditIcon
@@ -27,16 +28,19 @@ const Player = ({ player, onDelete, focusName, editName, index }) => {
               onClick={() => onDelete(player)}
             />
           </TinyContainer>
-          <input
-            type="text"
-            id={`player-input-${player.id}`}
-            className="player-name"
-            name="player-name"
-            defaultValue={player.name === "" ? player.text : player.name}
-            onBlur={() => editName(player.id, `player-input-${player.id}`)}
-            autoComplete="off"
-            spellCheck="false"
-          />
+          <label className="player-name">
+            <input
+              type="text"
+              id={`player-input-${player.id}`}
+              name="player-name"
+              onBlur={() => editName(player.id, `player-input-${player.id}`)}
+              autoComplete="off"
+              spellCheck="false"
+              required={true}
+              defaultValue={player.name}
+            />
+            <span className="placeholder">{player.text}</span>
+          </label>
           <img id="class-img" src={player.image} alt="player in raid" />
         </StyledPlayer>
       )}

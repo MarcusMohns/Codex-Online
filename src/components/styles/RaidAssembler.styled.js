@@ -251,31 +251,84 @@ export const StyledPlayer = styled.div`
   cursor: pointer;
   color: white;
   margin: 1px;
-  max-width: 100%;
+  max-width: 90%;
 
   .player-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    pointer-events: none;
+  }
+
+  .player-name input {
+    align-items: center;
+    text-align: center;
+    border: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    transform: translate(0%, 60%);
+    border-radius: 3px;
+    color: white;
+    background-color: transparent;
+    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+    width: 100%;
+  }
+
+  .player-name .placeholder {
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
+    transition: font-size 0.3s;
+    transform: translate(0%, -10%);
+    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+  }
+
+  .player-name input:focus + .placeholder {
+    font-size: 10px;
+    color: white;
+    transition: transform 0.3s;
+    transition: font-size 0.3s;
+    transform: translate(0%, -300%);
+  }
+  .player-name input + .placeholder {
+    ${(props) =>
+      props.hasText &&
+      "top: 10px; font-size: 10px; color: white;transform: translate(0%, -300%);transition: transform 0.3s ease;transition: font-size 0.3s ease;"};
+  }
+  /* .player-name {
     color: white;
     user-select: none;
     width: 90%;
     flex-wrap: wrap;
     pointer-events: none;
-    border: none;
     background-image: none;
     background-color: transparent;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
-    border-radius: 0px;
-    box-shadow: none;
+    border: none;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
       #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
     font-size: 0.8rem;
     align-items: center;
     text-align: center;
-    font-weight: bold;
     border: none;
     margin: 0px;
     padding: 0px;
-  }
+    &:focus {
+    }
+  } */
 
   /* box-shadow: ${(props) =>
     props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
@@ -664,10 +717,10 @@ export const PlayersContainer = styled.div`
   flex-direction: column;
   min-height: 100%;
   flex: 1;
-  padding: 0.5rem;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   border: 1px solid grey;
+  align-items: center;
 
   background-color: ${(props) =>
     props.isDraggingOver
