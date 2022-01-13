@@ -178,9 +178,6 @@ const RaidAssembler = () => {
 
   const editName = (playerId, nameText) => {
     const nameTextObject = document.querySelector(`#${nameText}`);
-    if (nameTextObject.value === "") {
-      nameTextObject.value = nameTextObject.defaultValue;
-    }
     const playerArray = JSON.parse(JSON.stringify(raid.players));
     const newGroups = JSON.parse(JSON.stringify(raid.groups));
     const newPlayers = playerArray.map((player) => {
