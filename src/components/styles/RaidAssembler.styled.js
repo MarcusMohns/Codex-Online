@@ -251,17 +251,15 @@ export const StyledPlayer = styled.div`
   background: ${(props) => props.background};
   cursor: pointer;
   color: white;
-  margin: 1px;
   max-width: 100%;
 
   .player-name {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 5px;
-    width: 95%;
-    box-sizing: border-box;
     font-size: 0.8rem;
     pointer-events: none;
   }
@@ -279,9 +277,9 @@ export const StyledPlayer = styled.div`
     border: none;
     user-select: none;
     pointer-events: none;
-    transform: translate(0%, 60%);
     border-radius: 3px;
     color: white;
+    font-weight: bold;
     background-color: transparent;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
       #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
@@ -289,33 +287,27 @@ export const StyledPlayer = styled.div`
     box-sizing: border-box;
   }
 
-  .player-name .placeholder {
+  .placeholder {
+    position: absolute;
+    top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     border: none;
     user-select: none;
     pointer-events: none;
-    transition: transform 0.3s;
-    transition: font-size 0.3s;
-    transform: translate(0%, -10%);
+    transition: top 0.3s ease, top 0.3s ease, top 0.3s ease, font-size 0.3s ease;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
       #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
-    width: 95%;
   }
 
   .player-name input:focus + .placeholder {
+    top: -20px;
     font-size: 10px;
     color: white;
-    transition: transform 0.3s;
-    transition: font-size 0.4s;
-    transform: translate(0%, -300%);
   }
   .player-name input + .placeholder {
-    ${(props) =>
-      props.hasText &&
-      "top: 10px; font-size: 10px; color: white;transform: translate(0%, -300%);transition: transform 0.3s ease;transition: font-size 0.3s ease;"};
+    ${(props) => props.hasText && "top: -20px; font-size: 10px; color: white;"};
   }
   /* .player-name {
     color: white;
@@ -344,6 +336,8 @@ export const StyledPlayer = styled.div`
     props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
 
   #class-img {
+    width: 20px;
+    height: 20px;
     border-radius: 35%;
   }
 
