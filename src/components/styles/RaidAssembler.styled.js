@@ -187,6 +187,8 @@ export const RaidContainer = styled.section`
   margin-bottom: 50px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
 
+  }
+
   .raid-is-not-full {
     display: flex;
     width: 100%;
@@ -712,7 +714,6 @@ export const NoPlayersText = styled.p`
   justify-content: center;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
-  min-height: 20vw;
 `;
 
 export const PlayersContainer = styled.div`
@@ -751,8 +752,8 @@ export const GroupTitle = styled.div`
   border: none;
   font-size: 1rem;
   animation-name: reveal;
-  animation-duration: 0.4s;
-  transition: transform 400ms;
+  animation-duration: 0.5s;
+  transition: transform 500ms;
   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
   -moz-animation-fill-mode: forwards; /* FF 5+ */
   -o-animation-fill-mode: forwards; /* Not implemented yet */
@@ -763,15 +764,7 @@ export const GroupTitle = styled.div`
     0% {
       opacity: 0%;
     }
-    25% {
-      opacity: 25%;
-    }
-    50% {
-      opacity: 50%;
-    }
-    75% {
-      opacity: 75%;
-    }
+
     100% {
       transform: translateY(15%);
       opacity: 100%;
@@ -813,7 +806,18 @@ export const RaidGroupContainer = styled.div`
   align-items: baseline;
   text-align: center;
   width: 99%;
-  min-height: 450px;
+  height: 450px;
+  overflow: hidden;
+  animation-name: revealGroups;
+  animation-duration: .5s;
+  @keyframes revealGroups {
+    0% {
+      opacity: 0%;
+      height: 100px;
+    }
+    100% {
+      height: 450px;
+  }
 `;
 export const TinyContainer = styled.div`
   border-radius: 5px;
