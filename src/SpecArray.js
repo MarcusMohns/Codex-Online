@@ -406,7 +406,7 @@ const SpecArray = [
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: "images/Intellect.png",
+        image: "images/Arcane_Intellect.png",
       },
     ],
     utility: [
@@ -438,7 +438,7 @@ const SpecArray = [
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: "images/Intellect.png",
+        image: "images/Arcane_Intellect.png",
       },
     ],
     utility: [
@@ -475,7 +475,7 @@ const SpecArray = [
       {
         category: "Intellect",
         name: "Arcane Intellect",
-        image: "images/Intellect.png",
+        image: "images/Arcane_Intellect.png",
       },
     ],
     utility: [
