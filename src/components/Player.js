@@ -3,6 +3,7 @@ import {
   DeletePlayerIcon,
   EditIcon,
   TinyContainer,
+  PlayerNameContainer,
 } from "./styles/RaidAssembler.styled";
 import { Draggable } from "react-beautiful-dnd";
 import { memo } from "react";
@@ -28,20 +29,22 @@ const Player = ({ player, onDelete, focusName, editName, index }) => {
               onClick={() => onDelete(player)}
             />
           </TinyContainer>
-          <label className="player-name">
-            <input
-              type="text"
-              id={`player-input-${player.id}`}
-              name="player-name"
-              onBlur={() => editName(player.id, `player-input-${player.id}`)}
-              autoComplete="off"
-              spellCheck="false"
-              required={true}
-              defaultValue={player.name}
-            />
-            <span className="placeholder">{player.text}</span>
-          </label>
-          <img id="class-img" src={player.image} alt="player in raid" />
+          <PlayerNameContainer>
+            <label className="player-name">
+              <input
+                type="text"
+                id={`player-input-${player.id}`}
+                name="player-name"
+                onBlur={() => editName(player.id, `player-input-${player.id}`)}
+                autoComplete="off"
+                spellCheck="false"
+                required={true}
+                defaultValue={player.name}
+              />
+              <span className="placeholder">{player.text}</span>
+            </label>
+            <img id="class-img" src={player.image} alt="player in raid" />
+          </PlayerNameContainer>
         </StyledPlayer>
       )}
     </Draggable>

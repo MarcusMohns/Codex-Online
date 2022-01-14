@@ -244,6 +244,7 @@ export const StyledPlayer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   justify-content: space-between;
   font-weight: bold;
@@ -251,55 +252,64 @@ export const StyledPlayer = styled.div`
   cursor: pointer;
   color: white;
   margin: 1px;
-  max-width: 90%;
+  max-width: 100%;
 
   .player-name {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
     box-sizing: border-box;
     font-size: 0.8rem;
     pointer-events: none;
   }
 
   .player-name input {
-    align-items: center;
-    text-align: center;
-    border: none;
-    user-select: none;
-    pointer-events: none;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
     appearance: none;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    user-select: none;
+    pointer-events: none;
     transform: translate(0%, 60%);
     border-radius: 3px;
     color: white;
     background-color: transparent;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
       #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
-    width: 100%;
+    width: 95%;
+    box-sizing: border-box;
   }
 
   .player-name .placeholder {
+    display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    border: none;
+    user-select: none;
+    pointer-events: none;
     transition: transform 0.3s;
     transition: font-size 0.3s;
     transform: translate(0%, -10%);
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
       #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+    width: 95%;
   }
 
   .player-name input:focus + .placeholder {
     font-size: 10px;
     color: white;
     transition: transform 0.3s;
-    transition: font-size 0.3s;
+    transition: font-size 0.4s;
     transform: translate(0%, -300%);
   }
   .player-name input + .placeholder {
@@ -334,10 +344,9 @@ export const StyledPlayer = styled.div`
     props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
 
   #class-img {
-    width: 1.3rem;
-    height: 1.3rem;
     border-radius: 35%;
   }
+
   #edit-player-icon {
     display: flex;
     margin-left: 2px;
@@ -821,6 +830,14 @@ export const TinyContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+`;
+export const PlayerNameContainer = styled.div`
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const CrossIcon = styled(FaRegTimesCircle)`
