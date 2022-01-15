@@ -17,6 +17,7 @@ export const Main = styled.main`
   min-height: 100%;
   margin-top: 20%;
   background-color: ${COLORS.fadedBackground};
+
   @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,8 +185,8 @@ export const RaidContainer = styled.section`
   min-width: 100%;
   max-width: 100%;
   height: min-content;
-  margin-bottom: 50px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
 
   }
 
@@ -230,7 +231,9 @@ export const RaidContainer = styled.section`
   }
   @media (min-width: 576px) {
     grid-area: Raid;
-    min-height: 95%;
+    min-height: 100%;
+    max-height: 100%;
+    padding: 0rem;
 
     .no-players-text {
       margin: auto;
@@ -254,6 +257,9 @@ export const StyledPlayer = styled.div`
   cursor: pointer;
   color: white;
   max-width: 100%;
+  margin: 3px;
+  font-size: 0.8rem;
+  border-radius: 0.33rem;
 
   .player-name {
     position: relative;
@@ -305,34 +311,11 @@ export const StyledPlayer = styled.div`
 
   .player-name input:focus + .placeholder {
     top: -20px;
-    font-size: 10px;
-    color: white;
+    font-size: 11px;
   }
   .player-name input + .placeholder {
-    ${(props) => props.hasText && "top: -20px; font-size: 10px; color: white;"};
+    ${(props) => props.hasText && "top: -20px; font-size: 11px; color: white;"};
   }
-  /* .player-name {
-    color: white;
-    user-select: none;
-    width: 90%;
-    flex-wrap: wrap;
-    pointer-events: none;
-    background-image: none;
-    background-color: transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    border: none;
-    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
-      #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
-    font-size: 0.8rem;
-    align-items: center;
-    text-align: center;
-    border: none;
-    margin: 0px;
-    padding: 0px;
-    &:focus {
-    }
-  } */
 
   /* box-shadow: ${(props) =>
     props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
@@ -341,6 +324,7 @@ export const StyledPlayer = styled.div`
     width: 20px;
     height: 20px;
     border-radius: 35%;
+    padding-bottom: 3px;
   }
 
   #edit-player-icon {
@@ -369,14 +353,15 @@ export const StyledPlayer = styled.div`
   }
 
   @media (min-width: 1200px) {
-    margin: 3px;
     font-size: 0.8rem;
     padding: 0rem;
     border-radius: 0.33rem;
 
-    img {
-      display: normal;
-      padding: 0.5rem;
+    #class-img {
+      width: 20px;
+      height: 20px;
+      border-radius: 35%;
+      padding: 0.3rem;
     }
   }
 `;
@@ -394,6 +379,7 @@ export const BuffContainer = styled.section`
   height: fit-content;
   border-radius: 0.5rem;
   padding: 1rem;
+  margin-top: 25px;
 `;
 
 export const StyledBuffCategories = styled.div`
@@ -596,12 +582,12 @@ export const UtilityContainer = styled.section`
   min-width: 100%;
   margin-bottom: 50px;
   height: fit-content;
-  border-radius: 0.5rem;
   padding: 1rem;
+  border-radius: 0.5rem;
 
   @media (min-width: 1200px) {
     grid-area: Utils;
-    min-height: 95%;
+    min-height: 100%;
     max-height: 100%;
     margin-bottom: 0px;
     padding: 0rem;
@@ -740,8 +726,13 @@ export const GroupContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   flex: 1 0 20%;
-  min-height: 455px;
+  min-height: 400px;
+
   background-color: ${COLORS.primaryTransparent};
+
+  @media (min-width: 1200px) {
+    min-height: 425px;
+  }
 `;
 export const GroupTitle = styled.div`
   user-select: none;
@@ -806,10 +797,13 @@ export const RaidGroupContainer = styled.div`
   align-items: baseline;
   text-align: center;
   width: 99%;
-  height: 450px;
-  overflow: hidden;
-  animation-name: revealGroups;
-  animation-duration: .5s;
+  @media (min-width: 1200px) {
+    height: 450px;
+    animation-name: revealGroups;
+    animation-duration: 0.5s;
+    overflow: hidden;
+  }
+
   @keyframes revealGroups {
     0% {
       opacity: 0%;
@@ -817,6 +811,7 @@ export const RaidGroupContainer = styled.div`
     }
     100% {
       height: 450px;
+    }
   }
 `;
 export const TinyContainer = styled.div`
