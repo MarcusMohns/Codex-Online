@@ -38,7 +38,6 @@ const Player = ({ player, onDelete, focusName, editName, index }) => {
                 onBlur={() => editName(player.id, `player-input-${player.id}`)}
                 autoComplete="off"
                 spellCheck="false"
-                required={true}
                 defaultValue={player.name}
               />
               <span className="placeholder">{player.text}</span>
