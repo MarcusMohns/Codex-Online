@@ -232,7 +232,6 @@ export const RaidContainer = styled.section`
   @media (min-width: 576px) {
     grid-area: Raid;
     min-height: 100%;
-    max-height: 100%;
     padding: 0rem;
 
     .no-players-text {
@@ -379,7 +378,7 @@ export const BuffContainer = styled.section`
   height: fit-content;
   border-radius: 0.5rem;
   padding: 1rem;
-  margin-top: 25px;
+  margin-top: 20px;
 `;
 
 export const StyledBuffCategories = styled.div`
@@ -580,7 +579,6 @@ export const UtilityContainer = styled.section`
   flex-wrap: wrap;
   background-color: ${COLORS.fadedBackground};
   min-width: 100%;
-  margin-bottom: 50px;
   height: fit-content;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -588,7 +586,6 @@ export const UtilityContainer = styled.section`
   @media (min-width: 1200px) {
     grid-area: Utils;
     min-height: 100%;
-    max-height: 100%;
     margin-bottom: 0px;
     padding: 0rem;
   }
@@ -727,7 +724,6 @@ export const GroupContainer = styled.div`
   flex-direction: column;
   flex: 1 0 20%;
   min-height: 400px;
-
   background-color: ${COLORS.primaryTransparent};
 
   @media (min-width: 1200px) {
@@ -797,20 +793,23 @@ export const RaidGroupContainer = styled.div`
   align-items: baseline;
   text-align: center;
   width: 99%;
+  overflow: hidden;
+  height: 100px;
+
   @media (min-width: 1200px) {
-    height: 450px;
     animation-name: revealGroups;
     animation-duration: 0.5s;
-    overflow: hidden;
+    animation-fill-mode: forwards;
   }
 
   @keyframes revealGroups {
-    0% {
+    from {
       opacity: 0%;
-      height: 100px;
+      min-height: 300px;
     }
-    100% {
-      height: 450px;
+    to {
+      min-height: 450px;
+      height: inherit;
     }
   }
 `;
