@@ -191,6 +191,7 @@ export const RaidContainer = styled.section`
   }
 
   .raid-is-not-full {
+    user-select:none;
     display: flex;
     width: 100%;
     transform: translate(0%, -100%);
@@ -200,6 +201,7 @@ export const RaidContainer = styled.section`
     justify-content: center;
   }
   .raid-is-full {
+    user-select:none;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -215,6 +217,7 @@ export const RaidContainer = styled.section`
     z-index: 0;
   }
   .raid-is-full-warning {
+    user-select:none;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -310,10 +313,10 @@ export const StyledPlayer = styled.div`
 
   .player-name input:focus + .placeholder {
     top: -20px;
-    font-size: 11px;
+    font-size: 10px;
   }
   .player-name input + .placeholder {
-    ${(props) => props.hasText && "top: -20px; font-size: 11px; color: white;"};
+    ${(props) => props.hasText && "top: -20px; font-size: 10px; color: white;"};
   }
 
   /* box-shadow: ${(props) =>
@@ -740,7 +743,6 @@ export const GroupTitle = styled.div`
   font-size: 1rem;
   animation-name: reveal;
   animation-duration: 0.5s;
-  transition: transform 500ms;
   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
   -moz-animation-fill-mode: forwards; /* FF 5+ */
   -o-animation-fill-mode: forwards; /* Not implemented yet */
@@ -754,7 +756,6 @@ export const GroupTitle = styled.div`
 
     100% {
       transform: translateY(15%);
-      opacity: 100%;
     }
   }
 `;
@@ -793,23 +794,16 @@ export const RaidGroupContainer = styled.div`
   align-items: baseline;
   text-align: center;
   width: 99%;
-  overflow: hidden;
-  height: 100px;
 
   @media (min-width: 1200px) {
     animation-name: revealGroups;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
   }
 
   @keyframes revealGroups {
-    from {
+    0% {
       opacity: 0%;
-      min-height: 300px;
-    }
-    to {
-      min-height: 450px;
-      height: inherit;
     }
   }
 `;
