@@ -92,8 +92,10 @@ const RaidAssembler = () => {
   const [rightMenuOpen, setRightMenuOpen] = useState(false);
   const [raidIsFull, setRaidIsFull] = useState(false);
 
-  const handleRightMenuToggle = () => {
-    setRightMenuOpen(!rightMenuOpen);
+  const handleRightMenuToggle = (e) => {
+    if (e.code === "KeyQ") {
+      setRightMenuOpen(!rightMenuOpen);
+    }
   };
 
   const resetRaid = () => {
