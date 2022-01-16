@@ -105,8 +105,7 @@ const RaidAssembler = () => {
   };
 
   const groupSort = (groups, player) => {
-    const sortedGroup = {};
-    Object.assign(sortedGroup, groups);
+    const sortedGroup = JSON.parse(JSON.stringify(groups));
     for (let group of Object.entries(sortedGroup)) {
       if (group[1].playerIds.length < 5) {
         group[1].playerIds.push(player);
