@@ -93,8 +93,10 @@ const RaidAssembler = () => {
   const [raidIsFull, setRaidIsFull] = useState(false);
 
   const handleRightMenuToggle = (e) => {
-    if (e.code === "KeyQ") {
+    if (e.code === "KeyQ" || e.type === "click") {
       setRightMenuOpen(!rightMenuOpen);
+
+      // TO DO Add a way for users to keybind which button they want to use to open the menu... Also when input is highlighted the menu shouldnt be openable by the keystroke.
     }
   };
 
