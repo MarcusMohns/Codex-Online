@@ -14,7 +14,6 @@ export const Main = styled.main`
   max-width: 100vw;
   min-height: 100vw;
   margin: auto;
-  min-height: 100%;
   margin-top: 20%;
   background-color: ${COLORS.fadedBackground};
 
@@ -22,13 +21,13 @@ export const Main = styled.main`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1.5fr;
-    gap: 0px 10px;
+    gap: 10px 10px;
     grid-template-areas:
       "Raid Utils"
       "Buffs Buffs";
     padding: 2rem;
     max-width: 100vw;
-    min-height: 95vw;
+    min-height: 100vw;
   }
   .right-menu {
     display: flex;
@@ -184,7 +183,6 @@ export const RaidContainer = styled.section`
   background-color: ${COLORS.primaryTransparent};
   min-width: 100%;
   max-width: 100%;
-  height: min-content;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
 
@@ -234,7 +232,6 @@ export const RaidContainer = styled.section`
   }
   @media (min-width: 576px) {
     grid-area: Raid;
-    min-height: 100%;
     padding: 0rem;
 
     .no-players-text {
@@ -251,9 +248,8 @@ export const StyledPlayer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
-  justify-content: space-between;
   font-weight: bold;
   background: ${(props) => props.background};
   cursor: pointer;
@@ -262,6 +258,7 @@ export const StyledPlayer = styled.div`
   margin: 3px;
   font-size: 0.8rem;
   border-radius: 0.33rem;
+  min-height: 70px;
 
   .player-name {
     position: relative;
@@ -306,7 +303,9 @@ export const StyledPlayer = styled.div`
     border: none;
     user-select: none;
     pointer-events: none;
-    transition: top 0.3s ease, top 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+    opacity: 100%;
+    transition: top 0.3s ease, top 0.3s ease, top 0.3s ease, font-size 0.3s ease,
+      opacity 0.3s ease;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
       #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
   }
@@ -314,26 +313,25 @@ export const StyledPlayer = styled.div`
   .player-name input:focus + .placeholder {
     top: -20px;
     font-size: 10px;
+    opacity: 0%;
   }
   .player-name input + .placeholder {
-    ${(props) => props.hasText && "top: -20px; font-size: 10px; color: white;"};
+    ${(props) =>
+      props.hasText &&
+      "top: -20px; font-size: 10px; color: white; opacity:0%;"};
   }
 
   /* box-shadow: ${(props) =>
     props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
 
   #class-img {
-    width: 20px;
-    height: 20px;
-    border-radius: 35%;
-    padding-bottom: 3px;
+    display: none;
   }
 
   #edit-player-icon {
     display: flex;
     margin-left: 2px;
     cursor: pointer;
-    padding: 1px;
     font-size: 1.4rem;
     &:hover {
       transform: scale(1.2);
@@ -341,30 +339,41 @@ export const StyledPlayer = styled.div`
   }
   #delete-player-img {
     display: flex;
-    padding: 1px;
     font-weight: bold;
     font-size: 1.3rem;
     cursor: pointer;
-
     &:hover {
       transform: scale(1.2);
     }
   }
   &:hover {
-    transform: translateY(-0.2em);
+    transform: translateY(-0.1em); // change it to something btr
+  }
+
+  @media (min-width: 576px) {
+    .player-name input:focus + .placeholder {
+      top: -20px;
+      font-size: 10px;
+      opacity: 100%;
+    }
+    .player-name input + .placeholder {
+      ${(props) =>
+        props.hasText &&
+        "top: -20px; font-size: 10px; color: white;opacity:100%;"};
+    }
+    #class-img {
+      display: flex;
+      width: 20px;
+      height: 20px;
+      border-radius: 35%;
+      padding: 0.3rem;
+    }
   }
 
   @media (min-width: 1200px) {
     font-size: 0.8rem;
     padding: 0rem;
     border-radius: 0.33rem;
-
-    #class-img {
-      width: 20px;
-      height: 20px;
-      border-radius: 35%;
-      padding: 0.3rem;
-    }
   }
 `;
 
@@ -378,7 +387,6 @@ export const BuffContainer = styled.section`
   justify-content: top;
   width: 100%;
   max-width: 100%;
-  height: fit-content;
   border-radius: 0.5rem;
   padding: 1rem;
   margin-top: 20px;
@@ -639,7 +647,8 @@ export const ContentHeader = styled.div`
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
-  box-shadow: 0 2px 6px -1px #000; ;
+  box-shadow: 0 2px 6px -1px #000;
+  user-select: none;
 `;
 export const RaidContentHeader = styled.div`
   display: flex;
@@ -700,6 +709,7 @@ export const NoPlayersText = styled.p`
   justify-content: center;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
+  min-height: 419px;
 `;
 
 export const PlayersContainer = styled.div`
@@ -730,7 +740,7 @@ export const GroupContainer = styled.div`
   background-color: ${COLORS.primaryTransparent};
 
   @media (min-width: 1200px) {
-    min-height: 425px;
+    min-height: 417px;
   }
 `;
 export const GroupTitle = styled.div`
@@ -808,7 +818,6 @@ export const RaidGroupContainer = styled.div`
   }
 `;
 export const TinyContainer = styled.div`
-  border-radius: 5px;
   width: 100%;
   display: flex;
   margin-bottom: 1px;
@@ -880,8 +889,8 @@ export const AddPlayerIcon = styled(MdOutlineAddBox)`
   color: white;
 `;
 export const DeletePlayerIcon = styled(RiDeleteBin2Line)`
-  font-size: 1.5em;
   color: black;
+  font-size: 1.5em;
 `;
 export const EditIcon = styled(RiEdit2Line)`
   color: black;
