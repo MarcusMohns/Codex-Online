@@ -275,7 +275,7 @@ const BuffArray = [
   {
     name: "Intellect",
     source: ["Mages", "Affliction Warlock"],
-    image: "images/Intellect.png",
+    image: "images/Arcane_Intellect.png",
     text: (
       <div>
         <div className="spell-names">Arcane Intellect, Fel Intelligence</div>
