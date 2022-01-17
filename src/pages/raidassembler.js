@@ -103,15 +103,16 @@ const RaidAssembler = () => {
   const resetRaid = () => {
     setRaid(intitialRaidState);
     setCount([0, 0, 0, 0]);
-    setRightMenuOpen(false);
     setBuffs({ type: "reset" });
     setUtilities({ type: "reset" });
   };
 
   const groupSort = (groups, player) => {
+    // Sorts the new player into a availible slot in one of the groups.
     const sortedGroup = JSON.parse(JSON.stringify(groups));
     for (let group of Object.entries(sortedGroup)) {
       if (group[1].playerIds.length < 5) {
+        // if group isnt full (5/5) add our player.
         group[1].playerIds.push(player);
         return sortedGroup;
       }
@@ -145,10 +146,11 @@ const RaidAssembler = () => {
     for (let group in newGroup) {
       for (let ids of newGroup[group].playerIds) {
         if (ids.id === player.id) {
+          // If ids.id contains our passed in players' id
           newGroup[group].playerIds.splice(
             newGroup[group].playerIds.indexOf(ids),
             1
-          );
+          ); // Remove player
         }
       }
     }
