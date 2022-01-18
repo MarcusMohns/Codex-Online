@@ -30,51 +30,51 @@ export const Main = styled.main`
     min-height: 100vw;
   }
   .right-menu {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    top: 25%;
-    right: 0%;
+    bottom: 0px;
+    left: 0%;
     z-index: 2;
-    transition: all 150ms;
-    max-width: 50%;
+    transition: transform 150ms;
 
     .arrow-left {
-      transition: all 400ms;
-      transform: rotate(180deg) translate(-100%);
-      align-self: center;
-      color: #fff;
+      position: absolute;
+      bottom: 100%;
       opacity: 100%;
+      transition: transform 400ms;
       @media screen and (min-width: 1200px) {
-        transform: rotate(180deg) translate(0%);
+        transform: rotate(-90deg) translate(0%);
       }
     }
   }
   .hide-right-menu {
+    position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    top: 25%;
-    right: 0%;
-    height: fit-content;
-    z-index: 1;
-    transition: all 150ms;
-    transform: translate(100%);
+    bottom: 0px;
+    left: 0%;
+    z-index: 2;
+    transition: transform 150ms;
+    transform: translateY(100%);
     @media screen and (min-width: 1200px) {
-      right: 1%;
     }
     .arrow-left {
-      transition: all 400ms;
-      transform: translate(-100%);
+      position: absolute;
+      bottom: 100%;
+      transition: transform 400ms;
+      transform: rotate(90deg);
       align-self: center;
-      color: #000;
       opacity: 100%;
-      height: 2rem;
-      width: 2rem;
+
       @media screen and (min-width: 1200px) {
-        transform: translate(-50%);
         color: ${COLORS.offWhite};
-        right: 1%;
       }
     }
   }
@@ -86,7 +86,7 @@ export const SpecContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 50%;
+  max-width: 100%;
   max-height: 50%;
   z-index: 2;
   @media screen and (min-width: 1200px) {
@@ -96,17 +96,18 @@ export const SpecContainer = styled.section`
     align-items: center;
     justify-content: center;
     border-radius: 0.5rem;
-    background-color: ${COLORS.fadedBackground};
+    background-color: ${COLORS.fadedPrimary};
     border: 1px solid black;
     max-width: 100%;
     max-height: 100%;
-    padding: 0.5rem;
+    padding: 0.3rem;
     transition: all 300ms;
   }
   .spec-buttons {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 `;
 export const StyledSpecButton = styled.button`
@@ -153,14 +154,20 @@ export const StyledSpecButton = styled.button`
 
 export const StyledBlessingCheckboxes = styled.div`
   display: flex;
+  display: none;
   flex-direction: row;
   border-top: 1px solid black;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
   .blessing-container {
+    padding: 0.2rem;
+    flex: 0 0 30%;
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0.3rem;
+    flex-direction: column;
 
     &:hover {
       transform: scale(1.1);
@@ -254,11 +261,11 @@ export const StyledPlayer = styled.div`
   background: ${(props) => props.background};
   cursor: pointer;
   color: white;
-  max-width: 100%;
   margin: 3px;
   font-size: 0.8rem;
   border-radius: 0.33rem;
   min-height: 70px;
+  //max-width:100%;
 
   .player-name {
     position: relative;
