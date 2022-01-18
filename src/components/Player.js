@@ -34,7 +34,6 @@ const Player = ({ player, onDelete, focusName, editName, index }) => {
               <input
                 type="text"
                 id={`player-input-${player.id}`}
-                name="player-name"
                 onBlur={() => editName(player.id, `player-input-${player.id}`)}
                 autoComplete="off"
                 spellCheck="false"
