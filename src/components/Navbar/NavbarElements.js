@@ -10,8 +10,8 @@ export const Nav = styled.nav`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  transition: 0.5s ease-in-out;
+  height: 100px;
+  transition: 0.5s ease;
   z-index: 500;
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 
