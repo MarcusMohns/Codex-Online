@@ -1,6 +1,7 @@
 import { DragDropContext } from "react-beautiful-dnd";
 import Group from "./Group";
 import { RaidGroupContainer } from "./styles/RaidAssembler.styled";
+import { memo } from "react";
 
 const Raid = ({ raid, onDelete, onDragEnd, focusName, editName }) => {
   return (
@@ -29,4 +30,4 @@ const Raid = ({ raid, onDelete, onDragEnd, focusName, editName }) => {
   );
 };
 
-export default Raid;
+export default memo(Raid);
