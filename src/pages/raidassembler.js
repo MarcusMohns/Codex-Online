@@ -207,12 +207,15 @@ const RaidAssembler = () => {
     let playerBuffs = [...player.buffs];
 
     if (
-      // Paladins can only have 1 blessing on the raid at one time
+      // Paladins  can only have 1 blessing on the raid at one time, Warriors can only have one shout
       player.text === "Holy Paladin" ||
       "Protection Paladin" ||
-      "Retribution Paladin"
+      "Retribution Paladin" ||
+      "Arms Warrior" ||
+      "Fury Warrior" ||
+      "Protection Warrior"
     ) {
-      playerBuffs = [...paladinBlessings(player)]; // Their playerBuffs needs to be edited
+      playerBuffs = [...playerBuffsEdited(player)]; // Their playerBuffs needs to be edited
     }
 
     for (let buff of playerBuffs) {
@@ -225,8 +228,8 @@ const RaidAssembler = () => {
     }
   };
 
-  const paladinBlessings = (player) => {
-    // Return edited array of buffs depending on user choice (Kings,Might or Wisdom)
+  const playerBuffsEdited = (player) => {
+    // Return edited array of buffs depending on user choice (Kings,Might,Wisdom, Might,Commanding)
     let playerBuffs = [...player.buffs];
 
     for (let buff of player.buffs) {
@@ -259,6 +262,20 @@ const RaidAssembler = () => {
         !document.querySelector(
           `#${player.text.replace(/ /g, "")}-bos-checkbox`
         ).checked
+      ) {
+        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
+      }
+      if (
+        buff.name === "Battle Shout" &&
+        !document.querySelector(`#${player.text.replace(/ /g, "")}-bs-checkbox`)
+          .checked
+      ) {
+        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
+      }
+      if (
+        buff.name === "Commanding Shout" &&
+        !document.querySelector(`#${player.text.replace(/ /g, "")}-cs-checkbox`)
+          .checked
       ) {
         playerBuffs.splice(playerBuffs.indexOf(buff), 1);
       }
