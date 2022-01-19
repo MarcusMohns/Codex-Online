@@ -3,6 +3,8 @@ import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
 import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
 import { RiDeleteBin2Line, RiEdit2Line } from "react-icons/ri";
+import { IoIosArrowDropup } from "react-icons/io";
+
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -87,21 +89,18 @@ export const SpecContainer = styled.section`
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  max-height: 50%;
   z-index: 2;
+  border-top: 2px solid black;
   @media screen and (min-width: 1200px) {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 0.5rem;
-    background-color: ${COLORS.fadedPrimary};
-    border: 1px solid black;
+    background-color: ${COLORS.background};
     max-width: 100%;
     max-height: 100%;
-    padding: 0.3rem;
-    transition: all 300ms;
+    padding: 0.1rem;
   }
   .spec-buttons {
     display: grid;
@@ -111,13 +110,14 @@ export const SpecContainer = styled.section`
   }
 `;
 export const StyledSpecButton = styled.button`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   color: ${COLORS.lightText};
-  transition: 0.2s;
+  transition: transform 0.2s;
   background: ${(props) => props.color};
   cursor: pointer;
   user-select: none;
@@ -125,6 +125,19 @@ export const StyledSpecButton = styled.button`
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
   &:hover {
     transform: scale(95%);
+  }
+
+  .checkbox-and-image-container {
+    &:hover #drop-arrow-image ~ div {
+      display: flex;
+    }
+    #drop-arrow-image ~ div {
+      display: none;
+    }
+    #drop-arrow-image {
+      position: absolute;
+      left: 0;
+    }
   }
 
   .text-and-image-button-container {
@@ -148,21 +161,24 @@ export const StyledSpecButton = styled.button`
   @media (min-width: 1200px) {
     margin: 2px;
     border-radius: 5px;
-    border: ridge transparent;
   }
 `;
 
-export const StyledBlessingCheckboxes = styled.div`
+export const StyledClassBtnCheckboxes = styled.div`
   display: flex;
-  display: none;
+  position: absolute;
+  top: -200%;
+  right: 50%;
+  background: black;
+  width: 150px;
+  height: 100px;
   flex-direction: row;
-  border-top: 1px solid black;
   max-width: 100%;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 
-  .blessing-container {
+  .buff-checkbox-container {
     padding: 0.2rem;
     flex: 0 0 30%;
     flex-wrap: wrap;
@@ -172,11 +188,11 @@ export const StyledBlessingCheckboxes = styled.div`
     &:hover {
       transform: scale(1.1);
     }
-    .a-blessing-image {
+    .buff-checkbox-image {
       width: 1.1rem;
     }
 
-    .a-blessing-checkbox {
+    .buff-checkbox {
     }
   }
 `;
@@ -258,7 +274,9 @@ export const StyledPlayer = styled.div`
   justify-content: flex-start;
   text-align: center;
   font-weight: bold;
-  background: ${(props) => props.background};
+  background-color: ${(props) => props.background};
+  //background-image: linear-gradient(315deg, green 0%, #9fa4c4 74%); FIX <---
+
   cursor: pointer;
   color: white;
   margin: 3px;
@@ -900,6 +918,11 @@ export const DeletePlayerIcon = styled(RiDeleteBin2Line)`
   font-size: 1.5em;
 `;
 export const EditIcon = styled(RiEdit2Line)`
+  color: black;
+  font-size: 1.5em;
+`;
+
+export const DropArrow = styled(IoIosArrowDropup)`
   color: black;
   font-size: 1.5em;
 `;
