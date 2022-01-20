@@ -589,6 +589,47 @@ export const StyledCategory = styled.div`
     display: flex;
     flex-direction: column;
     color: #eeeeee;
+
+    #death-knight {
+      color: red;
+      display: block;
+    }
+    #druid {
+      color: orange;
+      display: block;
+    }
+    #hunter {
+      color: green;
+      display: block;
+    }
+    #mage {
+      color: teal;
+      display: block;
+    }
+    #paladin {
+      color: pink;
+      display: block;
+    }
+    #priest {
+      color: white;
+      display: block;
+    }
+    #rogue {
+      color: yellow;
+      display: block;
+    }
+    #shaman {
+      color: blue;
+      display: block;
+    }
+    #warrior {
+      color: brown;
+      display: block;
+    }
+    #warlock {
+      color: purple;
+      display: block;
+    }
     .title {
       box-sizing: border-box;
       display: flex;

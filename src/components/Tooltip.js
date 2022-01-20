@@ -1,3 +1,4 @@
+import { memo } from "react";
 const Tooltip = ({ category }) => {
   return (
     <div className="tooltip">
@@ -7,9 +8,7 @@ const Tooltip = ({ category }) => {
           {<img src={category.image} alt="Buff category" />}
         </div>
         <h3>Provided by:</h3>
-        {category.source.map((specName) => (
-          <div key={`${specName} ${category}`}>{specName}</div>
-        ))}
+        {category.source}
         <div className="spell-description">{category.text}</div>
       </div>
     </div>
@@ -24,4 +23,4 @@ Tooltip.defaultProps = {
   },
 };
 
-export default Tooltip;
+export default memo(Tooltip);

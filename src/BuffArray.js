@@ -1,7 +1,12 @@
 const BuffArray = [
   {
     name: "Agility and Strength",
-    source: ["Death Knights", "Shamans"],
+    source: [
+      <div key={"agility-and-strength-provided-by"}>
+        <span id="death-knight">Death Knights</span>
+        <span id="shaman">Shamans</span>
+      </div>,
+    ],
     image: "images/Strength_Of_Earth_Totem.png",
     text: (
       <div>
@@ -16,7 +21,14 @@ const BuffArray = [
   },
   {
     name: "Armor %",
-    source: ["Disc Priest", "Holy Priest", "Restoration Shamans"],
+    source: [
+      <div key={"armor-percent-provided-by"}>
+        <span id="priest">Disc Priests</span>
+        <span id="priest">Holy Priests</span>
+        <span id="shaman">Restoration Shamans</span>
+      </div>,
+    ],
+
     image: "images/Ancestral_Healing.png",
     text: (
       <div>
@@ -29,7 +41,11 @@ const BuffArray = [
   },
   {
     name: "Armor",
-    source: ["Shamans", "Paladins"],
+    source: [
+      <div key={"armor-provided-by"}>
+        <span id="shaman">Shamans</span> <span id="paladin">Paladins</span>
+      </div>,
+    ],
     image: "images/Devotion_Aura.png",
     text: (
       <div>
@@ -58,7 +74,11 @@ const BuffArray = [
   },
   {
     name: "Armor Reduction (Major)",
-    source: ["Rogues", "Warriors"],
+    source: [
+      <div key={"armor-reduction-major-provided-by"}>
+        <span id="rogue">Rogues</span> <span id="warrior">Warriors</span>
+      </div>,
+    ],
     image: "images/Sunder_Armor.png",
     text: (
       <div>
@@ -72,10 +92,14 @@ const BuffArray = [
       </div>
     ),
   },
-
   {
     name: "Armor Reduction (Minor)",
-    source: ["Druids", "Warlocks"],
+    source: [
+      <div key={"armor-reduction-minor-provided-by"}>
+        <span id="druid">Druids</span> <span id="warlock">Warlocks</span>
+      </div>,
+    ],
+
     image: "images/Faerie_Fire.png",
     text: (
       <div>
@@ -92,7 +116,13 @@ const BuffArray = [
 
   {
     name: "Attack Power %",
-    source: ["Marksman Hunter", "Enhancement Shaman", "Blood Death Knight"],
+    source: [
+      <div key={"attack-power-percent-provided-by"}>
+        <span id="hunter">Marksman Hunter</span>
+        <span id="shaman">Enhancement Shaman</span>
+        <span id="death-knight">Blood Death Knight</span>
+      </div>,
+    ],
     image: "images/Trueshot_Aura.png",
     text: (
       <div>
@@ -107,7 +137,11 @@ const BuffArray = [
   },
   {
     name: "Attack Power",
-    source: ["Paladins", "Warriors"],
+    source: [
+      <div key={"attack-power-provided-by"}>
+        <span id="paladin">Paladins</span> <span id="warrior">Warriors</span>
+      </div>,
+    ],
     image: "images/Battle_Shout.png",
     text: (
       <div>
@@ -132,7 +166,11 @@ const BuffArray = [
   },
   {
     name: "Bloodlust/Heroism",
-    source: ["Shamans"],
+    source: [
+      <div key={"bloodlust-provided-by"}>
+        <span id="shaman">Shamans</span>
+      </div>,
+    ],
     image: "images/Bloodlust.png",
     text: (
       <div>
@@ -145,7 +183,12 @@ const BuffArray = [
   },
   {
     name: "Bleed Damage",
-    source: ["Arms Warrior", "Feral Druid"],
+    source: [
+      <div key={"bleed-damage-provided-by"}>
+        <span id="warrior">Arms Warrior</span>
+        <span id="druid">Feral Druid</span>
+      </div>,
+    ],
     image: "images/Trauma.png",
     text: (
       <div>
@@ -159,10 +202,12 @@ const BuffArray = [
   {
     name: "Crit Strike %",
     source: [
-      "Protection Paladin",
-      "Retribution Paladin",
-      "Assassination Rogue",
-      "Elemental Shaman",
+      <div key={"crit-strike-percent-provided-by"}>
+        <span id="paladin">Protection Paladin</span>
+        <span id="paladin">Retribution Paladin</span>
+        <span id="rogue">Assassination Rogue</span>
+        <span id="shaman">Elemental Shaman</span>
+      </div>,
     ],
     image: "images/Totem_Of_Wrath.png",
     text: (
@@ -178,7 +223,13 @@ const BuffArray = [
   },
   {
     name: "Damage %",
-    source: ["Beast Mastery Hunter", "Retribution Paladin", "Arcane Mage"],
+    source: [
+      <div key={"damage-percent-provided-by"}>
+        <span id="hunter">Beast Mastery Hunter</span>
+        <span id="paladin">Retribution Paladin</span>
+        <span id="mage">Arcane Mage</span>
+      </div>,
+    ],
     image: "images/Sanctified_Retribution.png",
     text: (
       <div>
@@ -193,7 +244,12 @@ const BuffArray = [
   },
   {
     name: "Damage Reduction %",
-    source: ["Discipline Priest", "Protection Paladin"],
+    source: [
+      <div key={"damage-reduction-percent-provided-by"}>
+        <span id="priest">Discipline Priest</span>
+        <span id="paladin">Protection Paladin</span>
+      </div>,
+    ],
     image: "images/Renewed_Hope.png",
     text: (
       <div>
@@ -206,7 +262,11 @@ const BuffArray = [
 
   {
     name: "Disease Damage",
-    source: ["Unholy Death Knight"],
+    source: [
+      <div key={"disease-damage-provided-by"}>
+        <span id="death-knight">Unholy Death Knight</span>
+      </div>,
+    ],
     image: "images/Crypt_Fever.png",
     text: (
       <div>
@@ -220,7 +280,12 @@ const BuffArray = [
 
   {
     name: "Haste %",
-    source: ["Balance Druid", "Retribution Paladin"],
+    source: [
+      <div key={"haste-percent-provided-by"}>
+        <span id="druid">Balance Druid</span>
+        <span id="paladin">Retribution Paladin</span>
+      </div>,
+    ],
     image: "images/Moonkin_Form.png",
     text: (
       <div>
@@ -236,7 +301,12 @@ const BuffArray = [
 
   {
     name: "Healing Recieved %",
-    source: ["Restoration Druid", "Protection Paladin"],
+    source: [
+      <div key={"healing-recieved-provided-by"}>
+        <span id="druid">Restoration Druid</span>
+        <span id="paladin">Protection Paladin</span>
+      </div>,
+    ],
     image: "images/Improved_Tree_Form.png",
     text: (
       <div>
@@ -249,7 +319,12 @@ const BuffArray = [
   },
   {
     name: "Health",
-    source: ["Destruction Warlock", "Warriors"],
+    source: [
+      <div key={"health-provided-by"}>
+        <span id="warlock">Destruction Warlock</span>
+        <span id="warrior">Warriors</span>
+      </div>,
+    ],
     image: "images/Commanding_Shout.png",
     text: (
       <div>
@@ -274,7 +349,11 @@ const BuffArray = [
   },
   {
     name: "Intellect",
-    source: ["Mages", "Affliction Warlock"],
+    source: [
+      <div key={"intellect-provided-by"}>
+        <span id="mage">Mages</span> <span id="warlock">Warlock</span>
+      </div>,
+    ],
     image: "images/Arcane_Intellect.png",
     text: (
       <div>
@@ -293,7 +372,11 @@ const BuffArray = [
   },
   {
     name: "Mana per 5",
-    source: ["Paladins", "Shamans"],
+    source: [
+      <div key={"mp5-provided-by"}>
+        <span id="paladin">Paladins</span> <span id="shaman">Shamans</span>
+      </div>,
+    ],
     image: "images/Greater_Blessing_Of_Wisdom.png",
     text: (
       <div>
@@ -322,7 +405,12 @@ const BuffArray = [
   },
   {
     name: "Melee Crit",
-    source: ["Feral Druid", "Fury Warrior"],
+    source: [
+      <div key={"melee-crit-provided-by"}>
+        <span id="druid">Feral Druid</span>
+        <span id="warrior">Fury Warrior</span>
+      </div>,
+    ],
     image: "images/Rampage.png",
     text: (
       <div>
@@ -335,7 +423,13 @@ const BuffArray = [
 
   {
     name: "Melee Haste",
-    source: ["Shamans", "Enhancement Shamans", "Frost Death Knights"],
+    source: [
+      <div key={"melee-haste-provided-by"}>
+        <span id="shaman">Shamans</span>
+        <span id="death-knight">Frost Death Knights</span>
+        <span id="shaman">Enhancement Shamans</span>
+      </div>,
+    ],
     image: "images/Icy_Talons.png",
     text: (
       <div>
@@ -363,7 +457,11 @@ const BuffArray = [
   },
   {
     name: "Mark of the Wild",
-    source: ["Druids"],
+    source: [
+      <div key={"motw-provided-by"}>
+        <span id="druid">Druids</span>
+      </div>,
+    ],
     image: "images/Mark_Of_The_Wild.png",
     text: (
       <div>
@@ -392,7 +490,12 @@ const BuffArray = [
   },
   {
     name: "Phys Vulnerability",
-    source: ["Combat Rogue", "Arms Warrior"],
+    source: [
+      <div key={"phys-vuln-provided-by"}>
+        <span id="rogue">Combat Rogue</span>
+        <span id="warrior">Arms Warrior</span>
+      </div>,
+    ],
     image: "images/Blood_Frenzy.png",
     text: (
       <div>
@@ -405,7 +508,12 @@ const BuffArray = [
   },
   {
     name: "Improved Leader of the Pack",
-    source: ["Feral Druid"],
+    source: [
+      <div key={"imp-leader-of-the-pack"}>
+        <span id="druid">Feral Druid</span>
+      </div>,
+    ],
+
     image: "images/Leader_Of_The_Pack.png",
     text: (
       <div>
@@ -422,11 +530,13 @@ const BuffArray = [
   {
     name: "Replenishment",
     source: [
-      "Survival Hunter",
-      "Frost Mage",
-      "Retribution Paladin",
-      "Shadow Priest",
-      "Destruction Warlock",
+      <div key={"replenishment-provided-by"}>
+        <span id="hunter">Survival Hunter</span>
+        <span id="mage">Frost Mage</span>
+        <span id="paladin">Retribution Paladin</span>
+        <span id="priest">Shadow Priest</span>
+        <span id="warlock">Destruction Warlock</span>
+      </div>,
     ],
     image: "images/Replenishment.png",
     text: (
@@ -442,7 +552,14 @@ const BuffArray = [
   },
   {
     name: "Spell Crit %",
-    source: ["Balance Druid", "Elemental Shaman"],
+
+    source: [
+      <div key={"spell-crit-percent-provided-by"}>
+        <span id="druid">Balance Druid</span>
+        <span id="shaman">Elemental Shaman</span>
+      </div>,
+    ],
+
     image: "images/Elemental_Oath.png",
     text: (
       <div>
@@ -456,11 +573,13 @@ const BuffArray = [
   {
     name: "Spell Crit Taken",
     source: [
-      "Fire Mage",
-      "Frost Mage",
-      "Affliction Warlock",
-      "Demonology Warlock",
+      <div key={"spell-crit-taken-provided-by"}>
+        <span id="mage">Fire Mage</span> <span id="mage">Frost Mage</span>
+        <span id="warlock">Affliction Warlock</span>
+        <span id="warlock">Demonology Warlock</span>
+      </div>,
     ],
+
     image: "images/Improved_Scorch.png",
     text: (
       <div>
@@ -475,7 +594,13 @@ const BuffArray = [
   },
   {
     name: "Spell Damage %",
-    source: ["Balance Druid", "Warlocks", "Unholy Death Knights"],
+    source: [
+      <div key={"spell-damage-percent-provided-by"}>
+        <span id="druid">Balance Druid</span>
+        <span id="warlock">Warlocks</span>
+        <span id="death-knight">Unholy Death Knights</span>
+      </div>,
+    ],
     image: "images/Earth_And_Moon.png",
     text: (
       <div>
@@ -490,7 +615,11 @@ const BuffArray = [
   },
   {
     name: "Spell Haste",
-    source: ["Shamans"],
+    source: [
+      <div key={"spell-haste-percent-provided-by"}>
+        <span id="shaman">Shamans</span>
+      </div>,
+    ],
     image: "images/Wrath_Of_Air_Totem.png",
     text: (
       <div>
@@ -502,7 +631,13 @@ const BuffArray = [
   },
   {
     name: "Spell Hit",
-    source: ["Balance Druid", "Shadow Priest"],
+    source: [
+      <div key={"spell-hit-provided-by"}>
+        <span id="priest">Shadow Priest</span>
+        <span id="druid">Balance Druid</span>
+      </div>,
+    ],
+
     image: "images/Misery.png",
     text: (
       <div>
@@ -516,7 +651,13 @@ const BuffArray = [
 
   {
     name: "Spell Power",
-    source: ["Elemental Shaman", "Shamans", "Demonology Warlocks"],
+    source: [
+      <div key={"spell-power-provided-by"}>
+        <span id="shaman">Elemental Shaman</span>
+        <span id="warlock">Demonology Warlocks</span>
+        <span id="shaman">Shamans</span>
+      </div>,
+    ],
     image: "images/Demonic_Pact.png",
     text: (
       <div>
@@ -550,7 +691,12 @@ const BuffArray = [
 
   {
     name: "Spirit",
-    source: ["Priests", "Affliction Warlock"],
+    source: [
+      <div key={"spirit-provided-by"}>
+        <span id="priest">Priests</span>
+        <span id="warlock">Affliction Warlock</span>
+      </div>,
+    ],
     image: "images/Divine_Spirit.png",
     text: (
       <div>
@@ -572,7 +718,11 @@ const BuffArray = [
 
   {
     name: "Stamina",
-    source: ["Priests"],
+    source: [
+      <div key={"stamina-provided-by"}>
+        <span id="priest">Priests</span>
+      </div>,
+    ],
     image: "images/Power_Word_Fortitude.png",
     text: (
       <div>
@@ -584,7 +734,11 @@ const BuffArray = [
   },
   {
     name: "Stats 10%",
-    source: ["Paladins"],
+    source: [
+      <div key={"stats-percent-provided-by"}>
+        <span id="paladin">Paladins</span>
+      </div>,
+    ],
     image: "images/Greater_Blessing_Of_Kings.png",
     text: (
       <div>
@@ -600,7 +754,12 @@ const BuffArray = [
   },
   {
     name: "Attack Speed Reduction",
-    source: ["Death Knights, Feral Druid, Warriors"],
+    source: [
+      <div key={"attack-speed-reduction-provided-by"}>
+        <span id="death-knight">Death Knights</span>
+        <span id="warrior">Warriors</span>
+      </div>,
+    ],
     image: "images/Icy_Touch.png",
     text: (
       <div>
@@ -631,7 +790,12 @@ const BuffArray = [
   },
   {
     name: "Attack Power Reduction",
-    source: ["Warriors, Druids, Warlocks"],
+    source: [
+      <div key={"attack-power-reduction-provided-by"}>
+        <span id="warrior">Warriors</span> <span id="warlock">Druids</span>
+        <span id="druid">Warlocks</span>
+      </div>,
+    ],
     image: "images/Demoralizing_Shout.png",
     text: (
       <div>
@@ -667,7 +831,12 @@ const BuffArray = [
   },
   {
     name: "Healing Reduction",
-    source: ["Hunters, Arms Warrior, Fury Warrior, Rogues"],
+    source: [
+      <div key={"healing-reduction-provided-by"}>
+        <span id="hunter">Hunters</span> <span id="warlock">Arms Warrior</span>
+        <span id="warlock">Fury Warrior</span> <span id="druid">Rogues</span>
+      </div>,
+    ],
     image: "images/Mortal_Strike.png",
     text: (
       <div>
@@ -685,7 +854,11 @@ const BuffArray = [
   },
   {
     name: "Health Restore",
-    source: ["Paladins"],
+    source: [
+      <div key={"health-restore-provided-by"}>
+        <span id="paladin">Paladins</span>
+      </div>,
+    ],
     image: "images/Judgement_Of_Light.png",
     text: (
       <div>
@@ -699,7 +872,11 @@ const BuffArray = [
   },
   {
     name: "Mana Restore",
-    source: ["Paladins"],
+    source: [
+      <div key={"mana-restore-provided-by"}>
+        <span id="paladin">Paladins</span>
+      </div>,
+    ],
     image: "images/Judgement_Of_Wisdom.png",
     text: (
       <div>
