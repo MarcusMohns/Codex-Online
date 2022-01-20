@@ -129,8 +129,29 @@ html {
 }
 
 body {
+  overflow: overlay;
   background-color: black;
   /* background-image: url("/src/images/background.png");
   background-repeat: no-repeat;
   background-position: top; */
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(38, 72, 116, 0.9);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
