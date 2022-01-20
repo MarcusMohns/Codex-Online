@@ -88,7 +88,7 @@ export const SpecContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  min-width: 100%;
   z-index: 2;
   border-top: 2px solid black;
   @media screen and (min-width: 1200px) {
@@ -99,8 +99,8 @@ export const SpecContainer = styled.section`
     justify-content: center;
     background-color: ${COLORS.background};
     max-width: 100%;
+    min-width: 100vw;
     max-height: 100%;
-    padding: 0.1rem;
   }
   .spec-buttons {
     display: grid;
@@ -109,20 +109,26 @@ export const SpecContainer = styled.section`
     grid-template-rows: repeat(3, 1fr);
   }
 `;
-export const StyledSpecButton = styled.button`
+export const StyledSpecButton = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  padding: 2px;
+  font-size: 0.9rem;
+  font-style: normal;
   color: ${COLORS.lightText};
-  transition: transform 0.2s;
+  transition: transform 0.1s;
   background: ${(props) => props.color};
+  border: 1px outset black;
+  transition: transform 0.2s;
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
     #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
+
   &:hover {
     transform: scale(95%);
   }
@@ -151,6 +157,12 @@ export const StyledSpecButton = styled.button`
 
     .specbutton-text {
       margin-left: auto;
+      transition: transform 300ms ease;
+    }
+    &:active {
+      .specbutton-text {
+        transform: scale(95%);
+      }
     }
     .specbutton-image {
       width: 1.3rem;
@@ -167,32 +179,43 @@ export const StyledSpecButton = styled.button`
 export const StyledClassBtnCheckboxes = styled.div`
   display: flex;
   position: absolute;
-  top: -200%;
-  right: 50%;
+  bottom: 90%;
+  left: 0%;
+  box-sizing: border-box;
   background: black;
-  width: 150px;
-  height: 100px;
+  min-height: 100%;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
   flex-direction: row;
-  max-width: 100%;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  user-select: none;
+  cursor: default;
 
   .buff-checkbox-container {
-    padding: 0.2rem;
-    flex: 0 0 30%;
-    flex-wrap: wrap;
+    margin: 0.2rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: column;
 
     &:hover {
       transform: scale(1.1);
     }
+
+    .buff-label {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
     .buff-checkbox-image {
-      width: 1.1rem;
+      width: 2rem;
     }
 
     .buff-checkbox {
+      cursor: pointer;
     }
   }
 `;
@@ -535,11 +558,10 @@ export const StyledCategory = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      border-radius: 0.5rem;
       background-color: ${COLORS.fadedPrimary};
       width: 100%;
       height: fit-content;
-      border-bottom: 1px solid #444444;
-      border-radius: 0.5rem 0.5rem 0 0;
     }
     img {
       width: 32px;
