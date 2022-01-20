@@ -32,12 +32,12 @@ export const Main = styled.main`
     min-height: 100vw;
   }
   .right-menu {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
+    min-width: 100%;
     bottom: 0px;
     left: 0%;
     z-index: 2;
@@ -54,12 +54,12 @@ export const Main = styled.main`
     }
   }
   .hide-right-menu {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
+    min-width: 100%;
     bottom: 0px;
     left: 0%;
     z-index: 2;
@@ -88,9 +88,10 @@ export const SpecContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100%;
+  min-width: 100vw;
   z-index: 2;
-  border-top: 2px solid black;
+  border-top: 2px black;
+
   @media screen and (min-width: 1200px) {
     box-sizing: border-box;
     display: flex;
@@ -115,19 +116,16 @@ export const StyledSpecButton = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 0.6rem;
   font-weight: bold;
-  padding: 2px;
-  font-size: 0.9rem;
-  font-style: normal;
   color: ${COLORS.lightText};
-  transition: transform 0.1s;
   background: ${(props) => props.color};
   border: 1px outset black;
   transition: transform 0.2s;
   cursor: pointer;
   user-select: none;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
-    #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
 
   &:hover {
     transform: scale(95%);
@@ -153,26 +151,58 @@ export const StyledSpecButton = styled.div`
     align-items: center;
     width: 100%;
     text-align: center;
-    padding: 0.7rem;
+    padding: 0.4rem;
 
     .specbutton-text {
-      margin-left: auto;
-      transition: transform 300ms ease;
+      display: none;
     }
     &:active {
       .specbutton-text {
-        transform: scale(95%);
+        transform: scale(90%);
       }
     }
     .specbutton-image {
-      width: 1.3rem;
       border-radius: 20%;
-      margin-left: auto;
+      width: 1.3rem;
     }
   }
+  @media (min-width: 765px) {
+    .text-and-image-button-container {
+      padding: 0.7rem;
+
+      .specbutton-text {
+        display: flex;
+        text-align: center;
+        margin-left: initial;
+        transition: transform 300ms ease;
+      }
+      .specbutton-image {
+        display: none;
+      }
+    }
+  }
+
   @media (min-width: 1200px) {
     margin: 2px;
     border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 2px;
+
+    .text-and-image-button-container {
+      padding: 0.7rem;
+
+      .specbutton-text {
+        display: flex;
+        margin-left: auto;
+        transition: transform 300ms ease;
+      }
+
+      .specbutton-image {
+        display: flex;
+        margin-left: auto;
+        width: 1.3rem;
+      }
+    }
   }
 `;
 
@@ -185,11 +215,11 @@ export const StyledClassBtnCheckboxes = styled.div`
   background: black;
   min-height: 100%;
   border-radius: 0.5rem;
-  width: 100%;
+  min-width: 100%;
   padding: 0.5rem;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   user-select: none;
   cursor: default;
 
@@ -211,11 +241,18 @@ export const StyledClassBtnCheckboxes = styled.div`
     }
 
     .buff-checkbox-image {
-      width: 2rem;
+      width: 1rem;
     }
 
     .buff-checkbox {
       cursor: pointer;
+    }
+  }
+  @media (min-width: 1200px) {
+    .buff-checkbox-container {
+      .buff-checkbox-image {
+        width: 2rem;
+      }
     }
   }
 `;
@@ -721,8 +758,8 @@ export const RaidContentHeader = styled.div`
   .raid-status-container {
     display: flex;
     margin-left: 2px;
-    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.2rem,
-      #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem, #000 0rem 0rem 0.2rem;
+    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
 
     .raid-count {
       margin-right: 1rem;
@@ -821,7 +858,7 @@ export const AddPlayerButton = styled.div`
   flex-direction: row;
   cursor: pointer;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   align-items: center;
   justify-content: center;
   background-color: ${COLORS.fadedHighlight};
