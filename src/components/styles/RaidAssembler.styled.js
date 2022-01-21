@@ -155,7 +155,7 @@ export const StyledSpecButton = styled.div`
     #info-image {
       position: absolute;
       left: 0;
-      top: 0;
+      bottom: 0;
     }
   }
 
@@ -224,17 +224,19 @@ export const StyledSpecButton = styled.div`
 export const StyledClassToolTip = styled.div`
   display: flex;
   position: absolute;
-  flex-direction: column;
-  height: 400px;
   bottom: 90%;
-  bottom: 1000%;
   left: 0%;
-  height: 100%;
-  width: 100%;
   box-sizing: border-box;
   background: black;
+  min-height: 100%;
   border-radius: 0.5rem;
+  min-width: 100%;
   padding: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: default;
 `;
 
 export const StyledClassBtnCheckboxes = styled.div`
@@ -1047,7 +1049,7 @@ export const DeletePlayerIcon = styled(RiDeleteBin2Line)`
   font-size: 1.5em;
 `;
 export const EditIcon = styled(RiEdit2Line)`
-  color: blue;
+  color: black;
   font-size: 1.5em;
 `;
 export const InfoIcon = styled(FcInfo)`

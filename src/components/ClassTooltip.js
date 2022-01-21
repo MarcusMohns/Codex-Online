@@ -6,7 +6,11 @@ const ClassTooltip = ({ text, buffs }) => {
     <StyledClassToolTip>
       {text}
       {buffs.map((buff, index) => (
-        <div key={`${text}-${buff.name}-${index}`}>{buff.name}</div>
+        <div key={`${text}-${buff.name}-${index}`}>
+          {buff.name}
+          {buff.category}
+          <img src={`${buff.image}`} alt={`${buff.name}`} />
+        </div>
       ))}
     </StyledClassToolTip>
   );
