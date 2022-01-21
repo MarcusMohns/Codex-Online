@@ -76,7 +76,8 @@ const BuffArray = [
     name: "Armor Reduction (Major)",
     source: [
       <div key={"armor-reduction-major-provided-by"}>
-        <span id="rogue">Rogues</span> <span id="warrior">Warriors</span>
+        <span id="rogue">Rogues</span>
+        <span id="warrior">Warriors</span>
       </div>,
     ],
     image: "images/Sunder_Armor.png",
@@ -96,7 +97,8 @@ const BuffArray = [
     name: "Armor Reduction (Minor)",
     source: [
       <div key={"armor-reduction-minor-provided-by"}>
-        <span id="druid">Druids</span> <span id="warlock">Warlocks</span>
+        <span id="druid">Druids</span>
+        <span id="warlock">Warlocks</span>
       </div>,
     ],
 
@@ -139,7 +141,8 @@ const BuffArray = [
     name: "Attack Power",
     source: [
       <div key={"attack-power-provided-by"}>
-        <span id="paladin">Paladins</span> <span id="warrior">Warriors</span>
+        <span id="paladin">Paladins</span>
+        <span id="warrior">Warriors</span>
       </div>,
     ],
     image: "images/Battle_Shout.png",
@@ -351,7 +354,8 @@ const BuffArray = [
     name: "Intellect",
     source: [
       <div key={"intellect-provided-by"}>
-        <span id="mage">Mages</span> <span id="warlock">Warlock</span>
+        <span id="mage">Mages</span>
+        <span id="warlock">Warlock</span>
       </div>,
     ],
     image: "images/Arcane_Intellect.png",
@@ -374,7 +378,8 @@ const BuffArray = [
     name: "Mana per 5",
     source: [
       <div key={"mp5-provided-by"}>
-        <span id="paladin">Paladins</span> <span id="shaman">Shamans</span>
+        <span id="paladin">Paladins</span>
+        <span id="shaman">Shamans</span>
       </div>,
     ],
     image: "images/Greater_Blessing_Of_Wisdom.png",
@@ -574,7 +579,8 @@ const BuffArray = [
     name: "Spell Crit Taken",
     source: [
       <div key={"spell-crit-taken-provided-by"}>
-        <span id="mage">Fire Mage</span> <span id="mage">Frost Mage</span>
+        <span id="mage">Fire Mage</span>
+        <span id="mage">Frost Mage</span>
         <span id="warlock">Affliction Warlock</span>
         <span id="warlock">Demonology Warlock</span>
       </div>,
