@@ -4,6 +4,7 @@ import { CgChevronLeftO } from "react-icons/cg";
 import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
 import { RiDeleteBin2Line, RiEdit2Line } from "react-icons/ri";
 import { IoIosArrowDropup } from "react-icons/io";
+import { FcInfo } from "react-icons/fc";
 
 import COLORS from "../../components";
 
@@ -144,6 +145,20 @@ export const StyledSpecButton = styled.div`
     }
   }
 
+  .class-tooltip-container {
+    &:hover #info-image ~ div {
+      display: flex;
+    }
+    #info-image ~ div {
+      display: none;
+    }
+    #info-image {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
   .text-and-image-button-container {
     display: flex;
     flex-direction: row;
@@ -204,6 +219,22 @@ export const StyledSpecButton = styled.div`
       }
     }
   }
+`;
+
+export const StyledClassToolTip = styled.div`
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  height: 400px;
+  bottom: 90%;
+  bottom: 1000%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 `;
 
 export const StyledClassBtnCheckboxes = styled.div`
@@ -581,14 +612,13 @@ export const StyledCategory = styled.div`
     visibility: hidden;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    transition: opacity 0.5s;
     transform: translate(10%, -50%);
     background-color: ${COLORS.blackText};
-    opacity: 0;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     color: #eeeeee;
+    font-weight: bold;
 
     #death-knight {
       color: red;
@@ -687,7 +717,6 @@ export const StyledCategory = styled.div`
   &:hover {
     .tooltiptext {
       visibility: visible;
-      opacity: 1;
     }
   }
   @media (min-width: 1200px) {
@@ -1018,6 +1047,10 @@ export const DeletePlayerIcon = styled(RiDeleteBin2Line)`
   font-size: 1.5em;
 `;
 export const EditIcon = styled(RiEdit2Line)`
+  color: blue;
+  font-size: 1.5em;
+`;
+export const InfoIcon = styled(FcInfo)`
   color: black;
   font-size: 1.5em;
 `;

@@ -1,6 +1,11 @@
 import ClassBtnCheckboxes from "./ClassBtnCheckboxes";
-import { StyledSpecButton, DropArrow } from "./styles/RaidAssembler.styled";
-const SpecButton = ({ text, image, onClick, color }) => {
+import ClassTooltip from "./ClassTooltip";
+import {
+  StyledSpecButton,
+  DropArrow,
+  InfoIcon,
+} from "./styles/RaidAssembler.styled";
+const SpecButton = ({ text, image, onClick, color, buffs }) => {
   return (
     <StyledSpecButton color={color}>
       {(color === "pink" || color === "brown") && (
@@ -13,6 +18,10 @@ const SpecButton = ({ text, image, onClick, color }) => {
       <div className="text-and-image-button-container" onClick={onClick}>
         <p className="specbutton-text">{text}</p>
         <img src={image} alt="spec icon" className="specbutton-image" />
+      </div>
+      <div className="class-tooltip-container">
+        <InfoIcon id="info-image" />
+        <ClassTooltip buffs={buffs} text={text} />
       </div>
     </StyledSpecButton>
   );
