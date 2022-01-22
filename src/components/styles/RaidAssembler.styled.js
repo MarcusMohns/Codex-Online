@@ -177,7 +177,8 @@ export const StyledSpecButton = styled.div`
       }
     }
     .specbutton-image {
-      border-radius: 20%;
+      border-radius: 50%;
+      border: 1px solid grey;
       width: 1.3rem;
     }
   }
@@ -224,7 +225,7 @@ export const StyledSpecButton = styled.div`
 export const StyledClassToolTip = styled.div`
   display: flex;
   position: absolute;
-  bottom: 90%;
+  bottom: 100%;
   left: 0%;
   box-sizing: border-box;
   background: black;
@@ -237,6 +238,31 @@ export const StyledClassToolTip = styled.div`
   justify-content: center;
   user-select: none;
   cursor: default;
+  .class-tooltip-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  .class-tooltip-buff-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .class-tooltip-image {
+      width: 2rem;
+    }
+  }
+  }
+  .class-tooltip-utility-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .class-tooltip-image {
+      width: 2rem;
+    }
+  }
 `;
 
 export const StyledClassBtnCheckboxes = styled.div`
@@ -594,10 +620,17 @@ export const StyledCategory = styled.div`
   transition: background-color 0.5s;
   color: ${COLORS.darktext};
   width: 100%;
+  height: 100%;
+
   .category-name-text {
     display: flex;
-
     padding: 1rem;
+    margin-right: auto;
+  }
+  .category-image {
+    display: flex;
+    width: 1rem;
+    margin-right: auto;
   }
   .tooltip {
     display: none;
@@ -725,14 +758,12 @@ export const StyledCategory = styled.div`
     flex-direction: row;
     width: 250px;
     padding: 0.4rem;
-    justify-content: space-between;
 
     .tooltip {
       display: initial;
     }
 
     .category-name-text {
-      margin-left: 1.5rem;
       padding: 0rem;
     }
   }
