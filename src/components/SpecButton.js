@@ -5,7 +5,7 @@ import {
   DropArrow,
   InfoIcon,
 } from "./styles/RaidAssembler.styled";
-const SpecButton = ({ text, image, onClick, color, buffs }) => {
+const SpecButton = ({ text, image, onClick, color, buffs, utility }) => {
   return (
     <StyledSpecButton color={color}>
       {(color === "pink" || color === "brown") && (
@@ -21,7 +21,7 @@ const SpecButton = ({ text, image, onClick, color, buffs }) => {
       </div>
       <div className="class-tooltip-container">
         <InfoIcon id="info-image" />
-        <ClassTooltip buffs={buffs} text={text} />
+        <ClassTooltip buffs={buffs} text={text} utility={utility} />
       </div>
     </StyledSpecButton>
   );

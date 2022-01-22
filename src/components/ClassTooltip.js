@@ -1,15 +1,34 @@
 import { StyledClassToolTip } from "./styles/RaidAssembler.styled";
 
-const ClassTooltip = ({ text, buffs }) => {
-  console.log(buffs);
+const ClassTooltip = ({ text, buffs, utility }) => {
   return (
     <StyledClassToolTip>
-      {text}
+      <p className="class-tooltip-title">{text}</p>
       {buffs.map((buff, index) => (
-        <div key={`${text}-${buff.name}-${index}`}>
+        <div
+          key={`${text}-${buff.name}-${index}`}
+          className="class-tooltip-buff-content"
+        >
           {buff.name}
+          <img
+            src={`${buff.image}`}
+            alt={`${buff.name}`}
+            className="class-tooltip-image"
+          />
           {buff.category}
-          <img src={`${buff.image}`} alt={`${buff.name}`} />
+        </div>
+      ))}
+      {utility.map((spell, index) => (
+        <div
+          key={`${text}-${spell.name}-${index}`}
+          className="class-tooltip-utility-content"
+        >
+          {spell.name}
+          <img
+            src={spell.image}
+            alt={`${spell.name}`}
+            className="class-tooltip-image"
+          />
         </div>
       ))}
     </StyledClassToolTip>
