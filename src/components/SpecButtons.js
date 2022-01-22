@@ -13,6 +13,7 @@ const SpecButtons = ({ specs, onClick }) => {
           onClick={() => onClick(spec)}
           color={spec.color}
           buffs={spec.buffs}
+          utility={spec.utility}
         />
       ))}
     </div>
