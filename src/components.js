@@ -13,6 +13,17 @@ const COLORS = {
   fadedHighlight: "rgba(173,216,230,0.50)",
   highlight: "rgba(173,216,230,1)",
   fadedGrey: "rgb(169,169,169,0.20)",
+
+  deathKnight: "rgb(196,30,58)",
+  druid: "rgb(255,124,10)",
+  hunter: "rgb(170,211,114)",
+  mage: "rgb(63,199,235)",
+  paladin: "rgb(244,140,186)",
+  priest: "rgb(255,255,255)",
+  rogue: "rgb(255,244,104)",
+  shaman: "rgb(0,112,221)",
+  warlock: "rgb(135,136,238)",
+  warrior: "rgb(198,155,109)",
 };
 
 export default COLORS;

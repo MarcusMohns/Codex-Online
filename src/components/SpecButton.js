@@ -1,5 +1,6 @@
 import ClassBtnCheckboxes from "./ClassBtnCheckboxes";
 import ClassTooltip from "./ClassTooltip";
+import COLORS from "../components";
 import {
   StyledSpecButton,
   DropArrow,
@@ -8,7 +9,7 @@ import {
 const SpecButton = ({ text, image, onClick, color, buffs, utility }) => {
   return (
     <StyledSpecButton color={color}>
-      {(color === "pink" || color === "brown") && (
+      {(color === COLORS.paladin || color === COLORS.warrior) && (
         /* // If paladin or warrior add checkboxes */
         <div className="checkbox-and-image-container">
           <DropArrow id="drop-arrow-image" />

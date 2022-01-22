@@ -5,7 +5,6 @@ import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
 import { RiDeleteBin2Line, RiEdit2Line } from "react-icons/ri";
 import { IoIosArrowDropup } from "react-icons/io";
 import { FcInfo } from "react-icons/fc";
-
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -108,7 +107,7 @@ export const SpecContainer = styled.section`
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
     background-color: ${COLORS.background};
-    padding: 2px;
+    padding: 1px;
     border-radius: 5px;
   }
 `;
@@ -657,43 +656,43 @@ export const StyledCategory = styled.div`
     font-weight: bold;
 
     #death-knight {
-      color: red;
+      color: ${COLORS.deathKnight};
       display: block;
     }
     #druid {
-      color: orange;
+      color: ${COLORS.druid};
       display: block;
     }
     #hunter {
-      color: green;
+      color: ${COLORS.hunter};
       display: block;
     }
     #mage {
-      color: teal;
+      color: ${COLORS.mage};
       display: block;
     }
     #paladin {
-      color: pink;
+      color: ${COLORS.paladin};
       display: block;
     }
     #priest {
-      color: white;
+      color: ${COLORS.priest};
       display: block;
     }
     #rogue {
-      color: yellow;
+      color: ${COLORS.rogue};
       display: block;
     }
     #shaman {
-      color: blue;
+      color: ${COLORS.shaman};
       display: block;
     }
     #warrior {
-      color: brown;
+      color: ${COLORS.warrior};
       display: block;
     }
     #warlock {
-      color: purple;
+      color: ${COLORS.warlock};
       display: block;
     }
     .title {

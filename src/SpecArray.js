@@ -2,7 +2,7 @@ const SpecArray = [
   {
     text: "Blood Death Knight",
     image: "images/dk_blood.png",
-    color: "red",
+    color: "rgb(196,30,58)",
     name: "",
     buffs: [
       {
@@ -43,7 +43,7 @@ const SpecArray = [
   {
     text: "Unholy Death Knight",
     image: "images/dk_unholy.png",
-    color: "red",
+    color: "rgb(196,30,58)",
     name: "",
     buffs: [
       {
@@ -85,7 +85,7 @@ const SpecArray = [
   {
     text: "Frost Death Knight",
     image: "images/dk_frost.png",
-    color: "red",
+    color: "rgb(196,30,58)",
     name: "",
     buffs: [
       {
@@ -122,7 +122,7 @@ const SpecArray = [
   {
     text: "Balance Druid",
     image: "images/druid_balance.png",
-    color: "orange",
+    color: "rgb(255,124,10)",
     name: "",
     buffs: [
       {
@@ -191,7 +191,7 @@ const SpecArray = [
   {
     text: "Feral Druid",
     image: "images/druid_feral.png",
-    color: "orange",
+    color: "rgb(255,124,10)",
     name: "",
     buffs: [
       {
@@ -257,7 +257,7 @@ const SpecArray = [
   {
     text: "Restoration Druid",
     image: "images/druid_restoration.png",
-    color: "orange",
+    color: "rgb(255,124,10)",
     name: "",
     buffs: [
       {
@@ -307,7 +307,7 @@ const SpecArray = [
   {
     text: "Beast Mastery Hunter",
     image: "images/hunter_beastmastery.png",
-    color: "green",
+    color: "rgb(170,211,114)",
     name: "",
     buffs: [
       {
@@ -335,7 +335,7 @@ const SpecArray = [
   {
     text: "Marksman Hunter",
     image: "images/hunter_marksman.png",
-    color: "green",
+    color: "rgb(170,211,114)",
     name: "",
     buffs: [
       {
@@ -363,7 +363,7 @@ const SpecArray = [
   {
     text: "Survival Hunter",
     image: "images/hunter_survival.png",
-    color: "green",
+    color: "rgb(170,211,114)",
     name: "",
     buffs: [
       {
@@ -395,7 +395,7 @@ const SpecArray = [
   {
     text: "Arcane Mage",
     image: "images/mage_arcane.png",
-    color: "teal",
+    color: "rgb(63,199,235)",
     name: "",
     buffs: [
       {
@@ -427,7 +427,7 @@ const SpecArray = [
   {
     text: "Fire Mage",
     image: "images/mage_fire.png",
-    color: "teal",
+    color: "rgb(63,199,235)",
     name: "",
     buffs: [
       {
@@ -459,7 +459,7 @@ const SpecArray = [
   {
     text: "Frost Mage",
     image: "images/mage_frost.png",
-    color: "teal",
+    color: "rgb(63,199,235)",
     name: "",
     buffs: [
       {
@@ -497,7 +497,7 @@ const SpecArray = [
   {
     text: "Holy Paladin",
     image: "images/paladin_holy.png",
-    color: "pink",
+    color: "rgb(244,140,186)",
     name: "",
     buffs: [
       {
@@ -573,7 +573,7 @@ const SpecArray = [
   {
     text: "Protection Paladin",
     image: "images/paladin_protection.png",
-    color: "pink",
+    color: "rgb(244,140,186)",
     name: "",
     buffs: [
       {
@@ -664,7 +664,7 @@ const SpecArray = [
   {
     text: "Retribution Paladin",
     image: "images/paladin_retribution.png",
-    color: "pink",
+    color: "rgb(244,140,186)",
     name: "",
     buffs: [
       {
@@ -760,7 +760,7 @@ const SpecArray = [
   {
     text: "Discipline Priest",
     image: "images/priest_discipline.png",
-    color: "white",
+    color: "rgb(255,255,255)",
     name: "",
     buffs: [
       {
@@ -822,7 +822,7 @@ const SpecArray = [
   {
     text: "Holy Priest",
     image: "images/priest_holy.png",
-    color: "white",
+    color: "rgb(255,255,255)",
     name: "",
     buffs: [
       {
@@ -875,7 +875,7 @@ const SpecArray = [
   {
     text: "Shadow Priest",
     image: "images/priest_shadow.png",
-    color: "white",
+    color: "rgb(255,255,255)",
     name: "",
     buffs: [
       {
@@ -933,7 +933,7 @@ const SpecArray = [
   {
     text: "Assassination Rogue",
     image: "images/rogue_assassination.png",
-    color: "yellow",
+    color: "rgb(255,244,104)",
     name: "",
     buffs: [
       {
@@ -974,7 +974,7 @@ const SpecArray = [
   {
     text: "Combat Rogue",
     image: "images/rogue_combat.png",
-    color: "yellow",
+    color: "rgb(255,244,104)",
     name: "",
     buffs: [
       {
@@ -1015,7 +1015,7 @@ const SpecArray = [
   {
     text: "Subtlety Rogue",
     image: "images/rogue_subtlety.png",
-    color: "yellow",
+    color: "rgb(255,244,104)",
     name: "",
     buffs: [
       {
@@ -1052,7 +1052,7 @@ const SpecArray = [
   {
     text: "Elemental Shaman",
     image: "images/shaman_elemental.png",
-    color: "blue",
+    color: "rgb(0,112,221)",
     name: "",
     buffs: [
       {
@@ -1127,7 +1127,7 @@ const SpecArray = [
   {
     text: "Enhancement Shaman",
     image: "images/shaman_enhancement.png",
-    color: "blue",
+    color: "rgb(0,112,221)",
     name: "",
     buffs: [
       {
@@ -1197,7 +1197,7 @@ const SpecArray = [
   {
     text: "Restoration Shaman",
     image: "images/shaman_restoration.png",
-    color: "blue",
+    color: "rgb(0,112,221)",
     name: "",
     buffs: [
       {
@@ -1275,7 +1275,7 @@ const SpecArray = [
   {
     text: "Arms Warrior",
     image: "images/warrior_arms.png",
-    color: "brown",
+    color: "rgb(198,155,109)",
     name: "",
     buffs: [
       {
@@ -1334,7 +1334,7 @@ const SpecArray = [
   {
     text: "Fury Warrior",
     image: "images/warrior_fury.png",
-    color: "brown",
+    color: "rgb(198,155,109)",
     name: "",
     buffs: [
       {
@@ -1388,7 +1388,7 @@ const SpecArray = [
   {
     text: "Protection Warrior",
     image: "images/warrior_protection.png",
-    color: "brown",
+    color: "rgb(198,155,109)",
     name: "",
     buffs: [
       {
@@ -1435,7 +1435,7 @@ const SpecArray = [
   {
     text: "Affliction Warlock",
     image: "images/warlock_affliction.png",
-    color: "purple",
+    color: "rgb(135,136,238)",
     name: "",
     buffs: [
       {
@@ -1479,7 +1479,7 @@ const SpecArray = [
   {
     text: "Demonology Warlock",
     image: "images/warlock_demonology.png",
-    color: "purple",
+    color: "rgb(135,136,238)",
     name: "",
     buffs: [
       {
@@ -1513,7 +1513,7 @@ const SpecArray = [
   {
     text: "Destruction Warlock",
     image: "images/warlock_destruction.png",
-    color: "purple",
+    color: "rgb(135,136,238)",
     name: "",
     buffs: [
       {

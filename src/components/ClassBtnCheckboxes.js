@@ -1,6 +1,8 @@
 import { StyledClassBtnCheckboxes } from "./styles/RaidAssembler.styled";
+import COLORS from "../components";
+
 const ClassBtnCheckboxes = ({ text, color }) => {
-  return color === "pink" ? (
+  return color === COLORS.paladin ? (
     <StyledClassBtnCheckboxes>
       <div className="buff-checkbox-container">
         <label
