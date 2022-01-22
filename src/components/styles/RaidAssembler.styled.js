@@ -99,9 +99,7 @@ export const SpecContainer = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: ${COLORS.background};
     max-width: 100%;
-    min-width: 100vw;
     max-height: 100%;
   }
   .spec-buttons {
@@ -109,6 +107,9 @@ export const SpecContainer = styled.section`
     grid-auto-flow: column;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    background-color: ${COLORS.background};
+    padding: 2px;
+    border-radius: 5px;
   }
 `;
 export const StyledSpecButton = styled.div`
@@ -121,8 +122,8 @@ export const StyledSpecButton = styled.div`
   font-weight: bold;
   color: ${COLORS.lightText};
   background: ${(props) => props.color};
-  border: 1px outset black;
-  transition: transform 0.2s;
+  border: 1.5px outset grey;
+  transition: transform 0.1s;
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
@@ -171,6 +172,7 @@ export const StyledSpecButton = styled.div`
     .specbutton-text {
       display: none;
     }
+
     &:active {
       .specbutton-text {
         transform: scale(90%);
@@ -178,7 +180,7 @@ export const StyledSpecButton = styled.div`
     }
     .specbutton-image {
       border-radius: 50%;
-      border: 1px solid grey;
+      border: 2px solid grey;
       width: 1.3rem;
     }
   }
@@ -199,9 +201,9 @@ export const StyledSpecButton = styled.div`
   }
 
   @media (min-width: 1200px) {
-    margin: 2px;
+    margin: 1px;
     border-radius: 5px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding: 2px;
 
     .text-and-image-button-container {
@@ -216,7 +218,7 @@ export const StyledSpecButton = styled.div`
       .specbutton-image {
         display: flex;
         margin-left: auto;
-        width: 1.3rem;
+        width: 1.4rem;
       }
     }
   }
@@ -231,13 +233,14 @@ export const StyledClassToolTip = styled.div`
   background: black;
   min-height: 100%;
   border-radius: 0.5rem;
+  border:2px solid grey;
   min-width: 100%;
   padding: 0.5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  user-select: none;
   cursor: default;
+  
   .class-tooltip-title {
     font-size: 1.2rem;
     margin-bottom: 5px;
@@ -274,20 +277,19 @@ export const StyledClassBtnCheckboxes = styled.div`
   background: black;
   min-height: 100%;
   border-radius: 0.5rem;
-  min-width: 100%;
   padding: 0.5rem;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  user-select: none;
   cursor: default;
+  border: 2px solid grey;
 
   .buff-checkbox-container {
     margin: 0.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: column;
+    justify-content: center;
 
     &:hover {
       transform: scale(1.1);
@@ -296,6 +298,8 @@ export const StyledClassBtnCheckboxes = styled.div`
     .buff-label {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
     }
 
@@ -620,8 +624,7 @@ export const StyledCategory = styled.div`
   transition: background-color 0.5s;
   color: ${COLORS.darktext};
   width: 100%;
-  height: 100%;
-
+  height: fit-content;
   .category-name-text {
     display: flex;
     padding: 1rem;
@@ -629,7 +632,7 @@ export const StyledCategory = styled.div`
   }
   .category-image {
     display: flex;
-    width: 1rem;
+    width: 1.5rem;
     margin-right: auto;
   }
   .tooltip {
@@ -643,16 +646,14 @@ export const StyledCategory = styled.div`
     position: absolute;
     min-width: 200px;
     min-height: 100%;
-    background-color: ${COLORS.offWhite};
     visibility: hidden;
-    border-radius: 0.5rem;
     box-sizing: border-box;
     transform: translate(10%, -50%);
     background-color: ${COLORS.blackText};
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     color: #eeeeee;
+    border-radius: 5px;
     font-weight: bold;
 
     #death-knight {
@@ -700,9 +701,15 @@ export const StyledCategory = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
+      border-radius: 5px;
       align-items: center;
-      border-radius: 0.5rem;
-      background-color: ${COLORS.fadedPrimary};
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(38, 72, 116, 0.6979166666666667) 40%,
+        rgba(38, 72, 116, 0.9556197478991597) 70%
+      );
       width: 100%;
       height: fit-content;
     }
@@ -777,13 +784,14 @@ export const UtilityContainer = styled.section`
   flex-wrap: wrap;
   background-color: ${COLORS.fadedBackground};
   min-width: 100%;
+  max-width: 100%;
   height: fit-content;
   padding: 1rem;
   border-radius: 0.5rem;
+  min-height: 100%;
 
   @media (min-width: 1200px) {
     grid-area: Utils;
-    min-height: 100%;
     margin-bottom: 0px;
     padding: 0rem;
   }
