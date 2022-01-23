@@ -509,16 +509,19 @@ const SpecArray = [
         category: "Attack Power",
         name: "Blessing of Might",
         image: "images/Greater_Blessing_Of_Might.png",
+        checked: true,
       },
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
         image: "images/Greater_Blessing_Of_Wisdom.png",
+        checked: true,
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
         image: "images/Greater_Blessing_Of_Kings.png",
+        checked: true,
       },
       {
         category: "Health Restore",
@@ -585,26 +588,30 @@ const SpecArray = [
         category: "Attack Power",
         name: "Blessing of Might",
         image: "images/Greater_Blessing_Of_Might.png",
+        checked: true,
       },
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
         image: "images/Greater_Blessing_Of_Wisdom.png",
+        checked: true,
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
         image: "images/Greater_Blessing_Of_Kings.png",
-      },
-      {
-        category: "Crit Strike %",
-        name: "Heart of the Crusader",
-        image: "images/Heart_Of_The_Crusader.png",
+        checked: true,
       },
       {
         category: "Damage Reduction %",
         name: "Blessing of Sanctuary",
         image: "images/Greater_Blessing_Of_Sanctuary.png",
+        checked: true,
+      },
+      {
+        category: "Crit Strike %",
+        name: "Heart of the Crusader",
+        image: "images/Heart_Of_The_Crusader.png",
       },
       {
         category: "Healing Recieved %",
@@ -676,16 +683,19 @@ const SpecArray = [
         category: "Attack Power",
         name: "Blessing of Might",
         image: "images/Greater_Blessing_Of_Might.png",
+        checked: true,
       },
       {
         category: "Mana per 5",
         name: "Blessing of Wisdom",
         image: "images/Greater_Blessing_Of_Wisdom.png",
+        checked: true,
       },
       {
         category: "Stats 10%",
         name: "Blessing of Kings",
         image: "images/Greater_Blessing_Of_Kings.png",
+        checked: true,
       },
       {
         category: "Crit Strike %",
@@ -1293,11 +1303,13 @@ const SpecArray = [
         category: "Attack Power",
         name: "Battle Shout",
         image: "images/Battle_Shout.png",
+        checked: true,
       },
       {
         category: "Health",
         name: "Commanding Shout",
         image: "images/Commanding_Shout.png",
+        checked: true,
       },
       {
         category: "Armor Reduction (Major)",
@@ -1351,11 +1363,13 @@ const SpecArray = [
         category: "Attack Power",
         name: "Battle Shout",
         image: "images/Battle_Shout.png",
+        checked: true,
       },
       {
         category: "Health",
         name: "Commanding Shout",
         image: "images/Commanding_Shout.png",
+        checked: true,
       },
       {
         category: "Armor Reduction (Major)",
@@ -1400,11 +1414,13 @@ const SpecArray = [
         category: "Attack Power",
         name: "Battle Shout",
         image: "images/Battle_Shout.png",
+        checked: true,
       },
       {
         category: "Health",
         name: "Commanding Shout",
         image: "images/Commanding_Shout.png",
+        checked: true,
       },
       {
         category: "Armor Reduction (Major)",
