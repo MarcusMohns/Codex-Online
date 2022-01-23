@@ -43,6 +43,12 @@ const formReducer = (state, action) => {
       );
       return Object.fromEntries(newState);
 
+    case "edit":
+      const newState1 = state[action.id].filter(
+        (item) => item.buff === action.value.buffName
+      );
+      return { ...state, [action.id]: newState1 };
+
     case "reset":
       return {};
     default:
@@ -226,6 +232,63 @@ const RaidAssembler = () => {
       };
       setBuffs({ type: "add", name: id, value: newBuff });
     }
+  };
+
+  const playerBuffsEdited2 = (player, thebuff, e) => {
+    const playerArray = [...raid.players];
+    let newPlayers;
+
+    let newBuff = {
+      buffCategory: thebuff.category,
+      buffName: thebuff.name,
+      buffImg: thebuff.image,
+    };
+    if (e.target.checked) {
+      newBuff.checked = true;
+
+      newPlayers = playerArray.map((gamer) =>
+        gamer.id === player.id
+          ? {
+              ...gamer,
+              buffs: [...gamer.buffs, newBuff],
+            }
+          : { ...gamer }
+      );
+      setBuffs({ type: "add", name: player.id, value: newBuff });
+    } else if (!e.target.checked) {
+      newBuff.checked = false;
+
+      newPlayers = playerArray.map((gamer) =>
+        gamer.id === player.id
+          ? {
+              ...gamer,
+              buffs: gamer.buffs.filter((buff) => buff !== newBuff),
+            }
+          : { ...gamer }
+      );
+      setBuffs({ type: "edit", id: player.id, value: newBuff });
+    } else {
+      return console.error(
+        "unexpected missing checkbox value in playerBuffsEdited func"
+      );
+    }
+    const newGroups = JSON.parse(JSON.stringify(raid.groups));
+    for (let group in newGroups) {
+      for (let ids of newGroups[group].playerIds) {
+        for (let idBuff of ids.buffs) {
+          if (idBuff.name === newBuff.buffName && ids.id === player.id) {
+            newBuff.checked
+              ? (idBuff.checked = true)
+              : (idBuff.checked = false);
+          }
+        }
+      }
+    }
+
+    setRaid({ ...raid, players: newPlayers, groups: newGroups });
+
+    // setRaid({ ...raid, players: newPlayers });
+    // addBuff(player.id, player);
   };
 
   const playerBuffsEdited = (player) => {
@@ -449,6 +512,7 @@ const RaidAssembler = () => {
             onDelete={deletePlayer}
             focusName={focusName}
             editName={editName}
+            editBuffs={playerBuffsEdited2}
             setRaid={setRaid}
             onDragEnd={onDragEnd}
           />

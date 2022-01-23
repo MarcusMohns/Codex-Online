@@ -3,7 +3,14 @@ import Group from "./Group";
 import { RaidGroupContainer } from "./styles/RaidAssembler.styled";
 import { memo } from "react";
 
-const Raid = ({ raid, onDelete, onDragEnd, focusName, editName }) => {
+const Raid = ({
+  raid,
+  onDelete,
+  onDragEnd,
+  focusName,
+  editName,
+  editBuffs,
+}) => {
   return (
     <RaidGroupContainer>
       <DragDropContext onDragEnd={onDragEnd}>
@@ -22,6 +29,7 @@ const Raid = ({ raid, onDelete, onDragEnd, focusName, editName }) => {
               onDelete={onDelete}
               focusName={focusName}
               editName={editName}
+              editBuffs={editBuffs}
             />
           );
         })}
