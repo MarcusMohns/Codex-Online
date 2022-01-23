@@ -3,55 +3,20 @@ const PlayerCheckboxes = ({ player, editBuffs }) => {
     <div>
       {player.buffs.map(
         (buff) =>
-          (buff.name === "Blessing of Kings" && (
+          (buff.name === "Blessing of Kings" ||
+            buff.name === "Blessing of Might" ||
+            buff.name === "Blessing of Wisdom" ||
+            buff.name === "Blessing of Sanctuary" ||
+            buff.name === "Commanding Shout" ||
+            buff.name === "Battle Shout") && (
             <input
               type="checkbox"
               defaultChecked={buff.checked}
+              checked={buff.checked}
               onClick={(e) => editBuffs(player, buff, e)}
               key={`${buff.name}-${player.id}-checkbox`}
             />
-          )) ||
-          (buff.name === "Battle Shout" && (
-            <input
-              type="checkbox"
-              defaultChecked={buff.checked}
-              onClick={(e) => editBuffs(player, buff, e)}
-              key={`${buff.name}-${player.id}-checkbox`}
-            />
-          )) ||
-          (buff.name === "Commanding Shout" && (
-            <input
-              type="checkbox"
-              defaultChecked={buff.checked}
-              onClick={(e) => editBuffs(player, buff, e)}
-              key={`${buff.name}-${player.id}-checkbox`}
-            />
-          )) ||
-          (buff.name === "Blessing of Might" && (
-            <input
-              type="checkbox"
-              defaultChecked={buff.checked}
-              onClick={(e) => editBuffs(player, buff, e)}
-              key={`${buff.name}-${player.id}-checkbox`}
-            />
-          )) ||
-          (buff.name === "Blessing of Wisdom" && (
-            <input
-              type="checkbox"
-              defaultChecked={buff.checked}
-              onClick={(e) => editBuffs(player, buff, e)}
-              key={`${buff.name}-${player.id}-checkbox`}
-            />
-          )) ||
-          (player.text === "Protection Paladin" &&
-            buff.name === "Blessing of Sanctuary" && (
-              <input
-                type="checkbox"
-                defaultChecked={buff.checked}
-                onClick={(e) => editBuffs(player, buff, e)}
-                key={`${buff.name}-${player.id}-checkbox`}
-              />
-            ))
+          )
       )}
     </div>
   );
