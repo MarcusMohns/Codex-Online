@@ -1,21 +1,8 @@
-import ClassBtnCheckboxes from "./ClassBtnCheckboxes";
 import ClassTooltip from "./ClassTooltip";
-import COLORS from "../components";
-import {
-  StyledSpecButton,
-  DropArrow,
-  InfoIcon,
-} from "./styles/RaidAssembler.styled";
+import { StyledSpecButton, InfoIcon } from "./styles/RaidAssembler.styled";
 const SpecButton = ({ text, image, onClick, color, buffs, utility }) => {
   return (
     <StyledSpecButton color={color}>
-      {(color === COLORS.paladin || color === COLORS.warrior) && (
-        /* // If paladin or warrior add checkboxes */
-        <div className="checkbox-and-image-container">
-          <DropArrow id="drop-arrow-image" />
-          <ClassBtnCheckboxes text={text} color={color} />
-        </div>
-      )}
       <div className="text-and-image-button-container" onClick={onClick}>
         <p className="specbutton-text">{text}</p>
         <img src={image} alt="spec icon" className="specbutton-image" />

@@ -12,7 +12,6 @@ const PlayerCheckboxes = ({ player, editBuffs }) => {
             <input
               type="checkbox"
               defaultChecked={buff.checked}
-              checked={buff.checked}
               onClick={(e) => editBuffs(player, buff, e)}
               key={`${buff.name}-${player.id}-checkbox`}
             />

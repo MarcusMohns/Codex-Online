@@ -45,7 +45,7 @@ const formReducer = (state, action) => {
 
     case "edit":
       const newState1 = state[action.id].filter(
-        (item) => item.buff === action.value.buffName
+        (item) => item.buffName !== action.value.buffName
       );
       return { ...state, [action.id]: newState1 };
 
@@ -212,18 +212,6 @@ const RaidAssembler = () => {
   const addBuff = (id, player) => {
     let playerBuffs = [...player.buffs];
 
-    if (
-      // Paladins  can only have 1 blessing on the raid at one time, Warriors can only have one shout
-      player.text === "Holy Paladin" ||
-      "Protection Paladin" ||
-      "Retribution Paladin" ||
-      "Arms Warrior" ||
-      "Fury Warrior" ||
-      "Protection Warrior"
-    ) {
-      playerBuffs = [...playerBuffsEdited(player)]; // Their playerBuffs needs to be edited
-    }
-
     for (let buff of playerBuffs) {
       let newBuff = {
         buffCategory: buff.category,
@@ -234,15 +222,15 @@ const RaidAssembler = () => {
     }
   };
 
-  const playerBuffsEdited2 = (player, thebuff, e) => {
+  const playerBuffsEdited = (player, buff, e) => {
     const playerArray = [...raid.players];
     let newPlayers;
-
     let newBuff = {
-      buffCategory: thebuff.category,
-      buffName: thebuff.name,
-      buffImg: thebuff.image,
+      buffCategory: buff.category,
+      buffName: buff.name,
+      buffImg: buff.image,
     };
+
     if (e.target.checked) {
       newBuff.checked = true;
 
@@ -289,62 +277,6 @@ const RaidAssembler = () => {
 
     // setRaid({ ...raid, players: newPlayers });
     // addBuff(player.id, player);
-  };
-
-  const playerBuffsEdited = (player) => {
-    // Return edited array of buffs depending on user choice (Kings,Might,Wisdom, Might,Commanding)
-    let playerBuffs = [...player.buffs];
-
-    for (let buff of player.buffs) {
-      if (
-        buff.name === "Blessing of Wisdom" &&
-        !document.querySelector(
-          `#${player.text.replace(/ /g, "")}-bow-checkbox`
-        ).checked
-      ) {
-        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
-      }
-      if (
-        buff.name === "Blessing of Might" &&
-        !document.querySelector(
-          `#${player.text.replace(/ /g, "")}-bom-checkbox`
-        ).checked
-      ) {
-        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
-      }
-      if (
-        buff.name === "Blessing of Kings" &&
-        !document.querySelector(
-          `#${player.text.replace(/ /g, "")}-bok-checkbox`
-        ).checked
-      ) {
-        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
-      }
-      if (
-        buff.name === "Blessing of Sanctuary" &&
-        !document.querySelector(
-          `#${player.text.replace(/ /g, "")}-bos-checkbox`
-        ).checked
-      ) {
-        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
-      }
-      if (
-        buff.name === "Battle Shout" &&
-        !document.querySelector(`#${player.text.replace(/ /g, "")}-bs-checkbox`)
-          .checked
-      ) {
-        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
-      }
-      if (
-        buff.name === "Commanding Shout" &&
-        !document.querySelector(`#${player.text.replace(/ /g, "")}-cs-checkbox`)
-          .checked
-      ) {
-        playerBuffs.splice(playerBuffs.indexOf(buff), 1);
-      }
-    }
-
-    return playerBuffs;
   };
 
   const addUtility = (id, player) => {
@@ -506,18 +438,16 @@ const RaidAssembler = () => {
           </div>
         )}
         {raid.players.length > 0 ? (
-          //////////////////
           <Raid
             raid={raid}
             onDelete={deletePlayer}
             focusName={focusName}
             editName={editName}
-            editBuffs={playerBuffsEdited2}
+            editBuffs={playerBuffsEdited}
             setRaid={setRaid}
             onDragEnd={onDragEnd}
           />
         ) : (
-          /////////////////
           <NoPlayersText>No players in raid</NoPlayersText>
         )}
       </RaidContainer>

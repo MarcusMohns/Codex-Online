@@ -3,7 +3,6 @@ import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
 import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
 import { RiDeleteBin2Line, RiEdit2Line } from "react-icons/ri";
-import { IoIosArrowDropup } from "react-icons/io";
 import { FcInfo } from "react-icons/fc";
 import COLORS from "../../components";
 
@@ -263,76 +262,6 @@ export const StyledClassToolTip = styled.div`
 
     .class-tooltip-image {
       width: 2rem;
-    }
-  }
-`;
-
-export const StyledClassBtnCheckboxes = styled.div`
-  display: flex;
-  position: absolute;
-  bottom: 90%;
-  left: 0%;
-  box-sizing: border-box;
-  background: black;
-  min-height: 100%;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  cursor: default;
-  border: 2px solid grey;
-
-  .buff-checkboxes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .checkbox-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    border-bottom: 1px solid grey;
-    margin-bottom: 5px;
-    margin-bottom-bottom
-  }
-
-  .buff-checkbox-container {
-    margin: 0.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    .buff-label {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-
-    .buff-checkbox-image {
-      width: 1rem;
-    }
-
-    .buff-checkbox {
-      cursor: pointer;
-    }
-  }
-  @media (min-width: 1200px) {
-    .buff-checkbox-container {
-      .buff-checkbox-image {
-        width: 2rem;
-      }
     }
   }
 `;
@@ -1104,11 +1033,6 @@ export const EditIcon = styled(RiEdit2Line)`
   font-size: 1.5em;
 `;
 export const InfoIcon = styled(FcInfo)`
-  color: black;
-  font-size: 1.5em;
-`;
-
-export const DropArrow = styled(IoIosArrowDropup)`
   color: black;
   font-size: 1.5em;
 `;
