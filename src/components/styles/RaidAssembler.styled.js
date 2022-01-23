@@ -277,11 +277,29 @@ export const StyledClassBtnCheckboxes = styled.div`
   min-height: 100%;
   border-radius: 0.5rem;
   padding: 0.5rem;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   cursor: default;
   border: 2px solid grey;
+
+  .buff-checkboxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkbox-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    margin-bottom-bottom
+  }
 
   .buff-checkbox-container {
     margin: 0.2rem;
@@ -398,12 +416,10 @@ export const StyledPlayer = styled.div`
   font-weight: bold;
   background-color: ${(props) => props.background};
   //background-image: linear-gradient(315deg, green 0%, #9fa4c4 74%); FIX <---
-
   cursor: pointer;
   color: white;
   margin: 3px;
   font-size: 0.8rem;
-  border-radius: 0.33rem;
   min-height: 70px;
   //max-width:100%;
 
@@ -520,7 +536,6 @@ export const StyledPlayer = styled.div`
   @media (min-width: 1200px) {
     font-size: 0.8rem;
     padding: 0rem;
-    border-radius: 0.33rem;
   }
 `;
 
@@ -653,7 +668,6 @@ export const StyledCategory = styled.div`
     flex-direction: column;
     color: #eeeeee;
     border-radius: 5px;
-    font-weight: bold;
 
     #death-knight {
       color: ${COLORS.deathKnight};
@@ -702,12 +716,11 @@ export const StyledCategory = styled.div`
       justify-content: center;
       border-radius: 5px;
       align-items: center;
-      background: rgb(0, 0, 0);
+      background: rgb(38, 72, 116);
       background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 1) 0%,
-        rgba(38, 72, 116, 0.6979166666666667) 40%,
-        rgba(38, 72, 116, 0.9556197478991597) 70%
+        rgba(38, 72, 116, 0.4206057422969187) 0%,
+        rgba(38, 72, 116, 0.9556197478991597) 90%
       );
       width: 100%;
       height: fit-content;
