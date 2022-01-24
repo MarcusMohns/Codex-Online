@@ -30,7 +30,7 @@ export const Main = styled.main`
     max-width: 100vw;
     min-height: 100vw;
   }
-  .right-menu {
+  .add-player-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,12 +47,14 @@ export const Main = styled.main`
       bottom: 100%;
       opacity: 100%;
       transition: transform 400ms;
+      transform: rotate(-90deg);
+
       @media screen and (min-width: 1200px) {
         transform: rotate(-90deg) translate(0%);
       }
     }
   }
-  .hide-right-menu {
+  .hide-add-player-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -853,7 +855,6 @@ export const PlayersContainer = styled.div`
   flex-direction: column;
   min-height: 100%;
   flex: 1;
-  border-radius: 5px;
   transition: background-color 0.3s ease;
   border: 1px solid grey;
   align-items: center;

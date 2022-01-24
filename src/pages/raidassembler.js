@@ -44,10 +44,10 @@ const formReducer = (state, action) => {
       return Object.fromEntries(newState);
 
     case "edit":
-      const newState1 = state[action.id].filter(
+      const editedState = state[action.id].filter(
         (item) => item.buffName !== action.value.buffName
       );
-      return { ...state, [action.id]: newState1 };
+      return { ...state, [action.id]: editedState };
 
     case "reset":
       return {};
@@ -95,12 +95,12 @@ const RaidAssembler = () => {
   const [buffs, setBuffs] = useReducer(formReducer, {});
   const [utilities, setUtilities] = useReducer(formReducer, {});
   const [raidCount, setCount] = useState([0, 0, 0, 0]); // first value full raid count, 2nd value Tanks, 3rd value Healers, 4th value DPS.
-  const [rightMenuOpen, setRightMenuOpen] = useState(false);
+  const [addPlayerMenu, setAddPlayerMenu] = useState(false);
   const [raidIsFull, setRaidIsFull] = useState(false);
 
   const handleRightMenuToggle = (e) => {
     if (e.code === "KeyQ" || e.type === "click") {
-      setRightMenuOpen(!rightMenuOpen);
+      setAddPlayerMenu(!addPlayerMenu);
 
       // TO DO Add a way for users to keybind which button they want to use to open the menu... Also when input is highlighted the menu shouldnt be openable by the keystroke.
     }
@@ -397,7 +397,11 @@ const RaidAssembler = () => {
   });
   return (
     <Main>
-      <div className={`${rightMenuOpen ? "right-menu" : "hide-right-menu"}`}>
+      <div
+        className={`${
+          addPlayerMenu ? "add-player-menu" : "hide-add-player-menu"
+        }`}
+      >
         <ArrowLeft className="arrow-left" onClick={handleRightMenuToggle} />
         <SpecContainer className="spec-container">
           <SpecButtons
