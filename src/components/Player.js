@@ -7,9 +7,10 @@ import {
   EditIcon,
   TinyContainer,
   PlayerNameContainer,
+  InfoIcon,
 } from "./styles/RaidAssembler.styled";
-
 import COLORS from "../components";
+
 const Player = ({
   player,
   onDelete,
@@ -52,10 +53,14 @@ const Player = ({
               <span className="placeholder">{player.text}</span>
             </label>
             <img id="class-img" src={player.image} alt="player in raid" />
+
             {/* If warrior or paladin add the checkboxes to check what buffs they provide */}
             {(player.color === COLORS.paladin ||
               player.color === COLORS.warrior) && (
-              <PlayerCheckboxes player={player} editBuffs={editBuffs} />
+              <div className="player-tooltip-container">
+                <InfoIcon id="info-image" />
+                <PlayerCheckboxes player={player} editBuffs={editBuffs} />
+              </div>
             )}
           </PlayerNameContainer>
         </StyledPlayer>

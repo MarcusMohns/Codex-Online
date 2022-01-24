@@ -133,19 +133,6 @@ export const StyledSpecButton = styled.div`
     transform: scale(95%);
   }
 
-  .checkbox-and-image-container {
-    &:hover #drop-arrow-image ~ div {
-      display: flex;
-    }
-    #drop-arrow-image ~ div {
-      display: none;
-    }
-    #drop-arrow-image {
-      position: absolute;
-      left: 0;
-    }
-  }
-
   .class-tooltip-container {
     &:hover #info-image ~ div {
       display: flex;
@@ -338,6 +325,7 @@ export const RaidContainer = styled.section`
 `;
 
 export const StyledPlayer = styled.div`
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -352,7 +340,24 @@ export const StyledPlayer = styled.div`
   margin: 3px;
   font-size: 0.8rem;
   min-height: 70px;
-  //max-width:100%;
+
+  .player-tooltip-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &:hover #info-image ~ div {
+      display: flex;
+    }
+    #info-image ~ div {
+      display: none;
+    }
+    #info-image {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
 
   .player-name {
     position: relative;
@@ -470,6 +475,38 @@ export const StyledPlayer = styled.div`
   }
 `;
 
+export const StyledPlayerCheckboxes = styled.div`
+  display: flex;
+  position: absolute;
+  bottom: -100%;
+  left: 0%;
+  box-sizing: border-box;
+  background: black;
+  min-height: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid grey;
+  min-width: 100%;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+
+  .player-checkbox-container {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .player-checkbox {
+  }
+
+  .player-checkbox-image {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 80%;
+  }
+`;
+
 export const BuffContainer = styled.section`
   grid-area: Buffs;
   box-sizing: border-box;
@@ -578,6 +615,8 @@ export const StyledCategory = styled.div`
   .category-image {
     display: flex;
     width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 80%;
     margin-right: auto;
   }
   .tooltip {

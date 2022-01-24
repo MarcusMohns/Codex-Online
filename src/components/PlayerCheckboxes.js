@@ -1,6 +1,8 @@
+import { StyledPlayerCheckboxes } from "./styles/RaidAssembler.styled";
+
 const PlayerCheckboxes = ({ player, editBuffs }) => {
   return (
-    <div>
+    <StyledPlayerCheckboxes>
       {player.buffs.map(
         (buff) =>
           (buff.name === "Blessing of Kings" ||
@@ -9,15 +11,29 @@ const PlayerCheckboxes = ({ player, editBuffs }) => {
             buff.name === "Blessing of Sanctuary" ||
             buff.name === "Commanding Shout" ||
             buff.name === "Battle Shout") && (
-            <input
-              type="checkbox"
-              defaultChecked={buff.checked}
-              onClick={(e) => editBuffs(player, buff, e)}
+            <div
               key={`${buff.name}-${player.id}-checkbox`}
-            />
+              className="player-checkbox-container"
+            >
+              <label htmlFor={`${buff.name}-${player.id}`}>
+                <img
+                  src={buff.image}
+                  alt="buff"
+                  className="player-checkbox-image"
+                />
+                {buff.name}
+              </label>
+              <input
+                type="checkbox"
+                id={`${buff.name}-${player.id}`}
+                className="player-checkbox"
+                defaultChecked={buff.checked}
+                onClick={(e) => editBuffs(player, buff, e)}
+              />
+            </div>
           )
       )}
-    </div>
+    </StyledPlayerCheckboxes>
   );
 };
 
