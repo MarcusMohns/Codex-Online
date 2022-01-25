@@ -1,6 +1,7 @@
 import { StyledPlayerCheckboxes } from "./styles/RaidAssembler.styled";
 
 const PlayerCheckboxes = ({ player, editBuffs }) => {
+  console.log(player);
   return (
     <StyledPlayerCheckboxes>
       {player.buffs.map(
@@ -15,7 +16,15 @@ const PlayerCheckboxes = ({ player, editBuffs }) => {
               key={`${buff.name}-${player.id}-checkbox`}
               className="player-checkbox-container"
             >
-              <label htmlFor={`${buff.name}-${player.id}`}>
+              <label
+                htmlFor={`${buff.name}-${player.id}`}
+                className="image-and-name-label"
+              >
+                {player.name === "" ? (
+                  <h2>{player.text}'s buffs</h2>
+                ) : (
+                  <h2>{player.name}'s buffs</h2>
+                )}
                 <img
                   src={buff.image}
                   alt="buff"
