@@ -273,11 +273,12 @@ export const RaidContainer = styled.section`
     user-select:none;
     display: flex;
     width: 100%;
-    transform: translate(0%, -100%);
-    transition: all 0.5s;
-    z-index: 0;
     align-items: center;
     justify-content: center;
+    background-color: green;
+    color: ${COLORS.lightText};
+    transition: opacity 0.3s;
+    opacity:0%;
   }
   .raid-is-full {
     user-select:none;
@@ -289,11 +290,12 @@ export const RaidContainer = styled.section`
     background-color: green;
     color: ${COLORS.lightText};
     width: 100%;
-    transform: translate(0%, 0%);
-    transition: all 0.5s;
     margin-top: 1px;
     padding: 2px;
-    z-index: 0;
+    transition: opacity 0.3s ease;
+    opacity:100%;
+
+
   }
   .raid-is-full-warning {
     user-select:none;
@@ -302,15 +304,24 @@ export const RaidContainer = styled.section`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: green;
     color: ${COLORS.lightText};
     width: 100%;
-    transform: translate(0%, 0%);
-    transition: all 0.3s;
     margin-top: 1px;
     padding: 2px;
-    z-index: 0;
+    transition: opacity 0.3s ease;
+    opacity:100%;
+    animation-name: shake;
+    animation-duration: 0.5s;
   }
+  @keyframes shake {
+  0% { transform: translateX(3px);}
+  20% { transform: translateX(-3px);}
+  40% { transform: translateX(3px);}
+  60% { transform: translateX(-3px);}
+  80% { transform: translateX(3px);}
+  100% { transform: translateX(-3px); }
+}
   @media (min-width: 576px) {
     grid-area: Raid;
     padding: 0rem;
@@ -346,16 +357,23 @@ export const StyledPlayer = styled.div`
     width: 100%;
     height: 100%;
 
-    &:hover #info-image ~ div {
+    &:active #info-image ~ div {
       display: flex;
     }
     #info-image ~ div {
       display: none;
+      &:hover {
+        display: flex;
+      }
     }
     #info-image {
       position: absolute;
       left: 0;
       bottom: 0;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -483,6 +501,7 @@ export const StyledPlayerCheckboxes = styled.div`
   box-sizing: border-box;
   background: black;
   min-height: 100%;
+
   border-radius: 0.5rem;
   border: 2px solid grey;
   min-width: 100%;
@@ -493,13 +512,23 @@ export const StyledPlayerCheckboxes = styled.div`
   cursor: default;
 
   .player-checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     &:hover {
       transform: scale(1.1);
     }
   }
   .player-checkbox {
   }
-
+  .image-and-name-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .player-checkbox-image {
     width: 1.1rem;
     height: 1.1rem;
@@ -838,7 +867,6 @@ export const RaidContentHeader = styled.div`
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   box-shadow: 0 2px 6px -1px #000;
-  z-index: 1;
   user-select: none;
 
   .raid-text {
