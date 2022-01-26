@@ -121,6 +121,7 @@ export const StyledSpecButton = styled.div`
   font-size: 0.6rem;
   font-weight: bold;
   color: ${COLORS.lightText};
+  color: white;
   background: ${(props) => props.color};
   border: 1.5px outset grey;
   transition: transform 0.1s;
@@ -192,6 +193,7 @@ export const StyledSpecButton = styled.div`
     border-radius: 5px;
     font-size: 0.7rem;
     padding: 2px;
+    letter-spacing: 1px;
 
     .text-and-image-button-container {
       padding: 0.7rem;
@@ -324,7 +326,8 @@ export const RaidContainer = styled.section`
 }
   @media (min-width: 576px) {
     grid-area: Raid;
-    padding: 0rem;
+    padding-bottom:5px;
+
 
     .no-players-text {
       margin: auto;
@@ -344,13 +347,17 @@ export const StyledPlayer = styled.div`
   justify-content: flex-start;
   text-align: center;
   font-weight: bold;
-  background-color: ${(props) => props.background};
-  //background-image: linear-gradient(315deg, green 0%, #9fa4c4 74%); FIX <---
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+  color: #fff;
+  background: ${(props) => props.background};
+  border: 1px solid black;
   cursor: pointer;
-  color: white;
   margin: 3px;
   font-size: 0.8rem;
   min-height: 70px;
+  font-weight: 800;
+  letter-spacing: 1px;
 
   .player-tooltip-container {
     position: relative;
@@ -383,7 +390,6 @@ export const StyledPlayer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 5px;
     font-size: 0.8rem;
     pointer-events: none;
   }
@@ -405,10 +411,10 @@ export const StyledPlayer = styled.div`
     color: white;
     font-weight: bold;
     background-color: transparent;
-    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
     width: 95%;
     box-sizing: border-box;
+    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
   }
 
   .placeholder {
@@ -423,8 +429,6 @@ export const StyledPlayer = styled.div`
     opacity: 100%;
     transition: top 0.3s ease, top 0.3s ease, top 0.3s ease, font-size 0.3s ease,
       opacity 0.3s ease;
-    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
   }
 
   .player-name input:focus + .placeholder {
@@ -499,33 +503,48 @@ export const StyledPlayerCheckboxes = styled.div`
   bottom: -100%;
   left: 0%;
   box-sizing: border-box;
-  background: black;
   min-height: 100%;
-
   border-radius: 0.5rem;
   border: 2px solid grey;
   min-width: 100%;
+  max-width: 100%;
   padding: 0.5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: default;
+  overflow: hidden;
+  background: #000;
 
+  .player-checkbox-header {
+    font-weight: 300;
+    font-size: 1rem;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+  }
   .player-checkbox-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5px;
+    padding: 3px;
+    background-color: ${COLORS.fadedPrimary};
+    width: 90%;
 
     &:hover {
-      transform: scale(1.1);
+      .image-and-name-label {
+        transform: scale(1.1);
+      }
     }
   }
   .player-checkbox {
   }
   .image-and-name-label {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   }
@@ -667,7 +686,18 @@ export const StyledCategory = styled.div`
     flex-direction: column;
     color: #eeeeee;
     border-radius: 5px;
-
+    background: rgba(38, 73, 116, 1);
+    background: -webkit-linear-gradient(
+      bottom,
+      rgba(38, 73, 116, 1),
+      rgba(0, 0, 0, 1)
+    );
+    background: -moz-linear-gradient(
+      bottom,
+      rgba(38, 73, 116, 1),
+      rgba(0, 0, 0, 1)
+    );
+    background: linear-gradient(to top, rgba(38, 73, 116, 1), rgba(0, 0, 0, 1));
     #death-knight {
       color: ${COLORS.deathKnight};
       display: block;
@@ -715,12 +745,6 @@ export const StyledCategory = styled.div`
       justify-content: center;
       border-radius: 5px;
       align-items: center;
-      background: rgb(38, 72, 116);
-      background: linear-gradient(
-        0deg,
-        rgba(38, 72, 116, 0.4206057422969187) 0%,
-        rgba(38, 72, 116, 0.9556197478991597) 90%
-      );
       width: 100%;
       height: fit-content;
     }
@@ -914,7 +938,7 @@ export const NoPlayersText = styled.p`
   justify-content: center;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
-  min-height: 419px;
+  min-height: 425px;
 `;
 
 export const PlayersContainer = styled.div`
@@ -944,7 +968,7 @@ export const GroupContainer = styled.div`
   background-color: ${COLORS.primaryTransparent};
 
   @media (min-width: 1200px) {
-    min-height: 417px;
+    min-height: 423px;
   }
 `;
 export const GroupTitle = styled.div`

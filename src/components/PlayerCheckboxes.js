@@ -4,6 +4,11 @@ const PlayerCheckboxes = ({ player, editBuffs }) => {
   console.log(player);
   return (
     <StyledPlayerCheckboxes>
+      {player.name === "" ? (
+        <h2 className="player-checkbox-header">{player.text}s' buffs</h2>
+      ) : (
+        <h2 className="player-checkbox-header">{player.name}'s buffs</h2>
+      )}
       {player.buffs.map(
         (buff) =>
           (buff.name === "Blessing of Kings" ||
@@ -12,34 +17,27 @@ const PlayerCheckboxes = ({ player, editBuffs }) => {
             buff.name === "Blessing of Sanctuary" ||
             buff.name === "Commanding Shout" ||
             buff.name === "Battle Shout") && (
-            <div
+            <label
+              htmlFor={`${buff.name}-${player.id}`}
               key={`${buff.name}-${player.id}-checkbox`}
               className="player-checkbox-container"
             >
-              <label
-                htmlFor={`${buff.name}-${player.id}`}
-                className="image-and-name-label"
-              >
-                {player.name === "" ? (
-                  <h2>{player.text}'s buffs</h2>
-                ) : (
-                  <h2>{player.name}'s buffs</h2>
-                )}
+              <div className="image-and-name-label">{buff.name}</div>
+              <label className="image-and-name-label">
+                <input
+                  type="checkbox"
+                  id={`${buff.name}-${player.id}`}
+                  className="player-checkbox"
+                  defaultChecked={buff.checked}
+                  onClick={(e) => editBuffs(player, buff, e)}
+                />
                 <img
                   src={buff.image}
                   alt="buff"
                   className="player-checkbox-image"
                 />
-                {buff.name}
               </label>
-              <input
-                type="checkbox"
-                id={`${buff.name}-${player.id}`}
-                className="player-checkbox"
-                defaultChecked={buff.checked}
-                onClick={(e) => editBuffs(player, buff, e)}
-              />
-            </div>
+            </label>
           )
       )}
     </StyledPlayerCheckboxes>
