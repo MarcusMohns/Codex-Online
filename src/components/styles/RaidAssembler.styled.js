@@ -231,14 +231,34 @@ export const StyledClassToolTip = styled.div`
   cursor: default;
   
   .class-tooltip-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-align:center;
     margin-bottom: 5px;
+    border-bottom:1px solid grey;
+  }
+  .class-tooltip-header {
+    font-size:1.2rem;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-bottom:1px solid grey;
+  }
+  .class-tooltip-category-name {
+    display:flex;
+    flex-direction:row;
+    font-size:1rem;
+
+
   }
   .class-tooltip-buff-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    width:100%;
+    height:100%;
+    background-color: ${COLORS.primary};
+    margin-top:5px;
+    margin-bottom:5px;
 
     .class-tooltip-image {
       width: 2rem;

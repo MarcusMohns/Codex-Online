@@ -4,20 +4,22 @@ const ClassTooltip = ({ text, buffs, utility }) => {
   return (
     <StyledClassToolTip>
       <p className="class-tooltip-title">{text}</p>
+      <h2 className="class-tooltip-header">Buffs</h2>
       {buffs.map((buff, index) => (
         <div
           key={`${text}-${buff.name}-${index}`}
           className="class-tooltip-buff-content"
         >
-          {buff.name}
+          <div className="class-tooltip-category-name"> {buff.category}</div>
+          <h2 className="class-tooltip-buff-name">{buff.name}</h2>
           <img
             src={`${buff.image}`}
             alt={`${buff.name}`}
             className="class-tooltip-image"
           />
-          {buff.category}
         </div>
       ))}
+      <h2 className="class-tooltip-header">Utilities</h2>
       {utility.map((spell, index) => (
         <div
           key={`${text}-${spell.name}-${index}`}
