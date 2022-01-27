@@ -561,6 +561,8 @@ export const StyledPlayerCheckboxes = styled.div`
     }
   }
   .player-checkbox {
+    width: 1.3rem;
+    height: 1.3rem;
   }
   .image-and-name-label {
     display: flex;
@@ -569,8 +571,8 @@ export const StyledPlayerCheckboxes = styled.div`
     justify-content: center;
   }
   .player-checkbox-image {
-    width: 1.1rem;
-    height: 1.1rem;
+    width: 1.6rem;
+    height: 1.6rem;
     border-radius: 80%;
   }
 `;
