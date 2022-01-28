@@ -1,7 +1,6 @@
 import { StyledPlayerCheckboxes } from "./styles/RaidAssembler.styled";
 
 const PlayerCheckboxes = ({ player, editBuffs }) => {
-  console.log(player);
   return (
     <StyledPlayerCheckboxes>
       {player.name === "" ? (
