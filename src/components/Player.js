@@ -58,7 +58,7 @@ const Player = ({
             {(player.color === COLORS.paladin ||
               player.color === COLORS.warrior) && (
               <div className="player-tooltip-container">
-                <DropUpArrow id="info-image" />
+                <DropUpArrow id="player-info-image" />
                 <PlayerCheckboxes player={player} editBuffs={editBuffs} />
               </div>
             )}

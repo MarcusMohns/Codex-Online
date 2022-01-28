@@ -389,18 +389,18 @@ export const StyledPlayer = styled.div`
     width: 100%;
     height: 100%;
 
-    &:active #info-image ~ div {
+    &:active #player-info-image ~ div {
       display: flex;
     }
-    #info-image ~ div {
+    #player-info-image ~ div {
       display: none;
       &:hover {
         display: flex;
       }
     }
-    #info-image {
+    #player-info-image {
       position: absolute;
-      left: 0;
+      left: 2px;
       bottom: 0;
       cursor: pointer;
       &:hover {
@@ -1158,5 +1158,5 @@ export const InfoIcon = styled(FcInfo)`
 export const DropUpArrow = styled(MdOutlineArrowDropDownCircle)`
   transform: rotate(180deg);
   color: black;
-  font-size: 1.5em;
+  font-size: 1.7em;
 `;
