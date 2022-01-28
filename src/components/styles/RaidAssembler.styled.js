@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
 import { CgChevronLeftO } from "react-icons/cg";
-import { MdOutlineAddBox, MdRestartAlt } from "react-icons/md";
+import {
+  MdOutlineAddBox,
+  MdRestartAlt,
+  MdOutlineArrowDropDownCircle,
+} from "react-icons/md";
 import { RiDeleteBin2Line, RiEdit2Line } from "react-icons/ri";
 import { FcInfo } from "react-icons/fc";
 import COLORS from "../../components";
@@ -246,6 +250,7 @@ export const StyledClassToolTip = styled.div`
     display:flex;
     flex-direction:row;
     font-size:1rem;
+    text-align:center;
 
 
   }
@@ -261,7 +266,7 @@ export const StyledClassToolTip = styled.div`
     margin-bottom:5px;
 
     .class-tooltip-image {
-      width: 2rem;
+      width: 1.8rem;
     }
   }
   }
@@ -272,7 +277,7 @@ export const StyledClassToolTip = styled.div`
     justify-content: center;
 
     .class-tooltip-image {
-      width: 2rem;
+      width: 1.5rem;
     }
   }
 `;
@@ -399,7 +404,7 @@ export const StyledPlayer = styled.div`
       bottom: 0;
       cursor: pointer;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.2) rotate(180deg);
       }
     }
   }
@@ -1147,6 +1152,11 @@ export const EditIcon = styled(RiEdit2Line)`
   font-size: 1.5em;
 `;
 export const InfoIcon = styled(FcInfo)`
+  color: black;
+  font-size: 1.5em;
+`;
+export const DropUpArrow = styled(MdOutlineArrowDropDownCircle)`
+  transform: rotate(180deg);
   color: black;
   font-size: 1.5em;
 `;
