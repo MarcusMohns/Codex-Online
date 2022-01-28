@@ -845,12 +845,10 @@ export const UtilityContainer = styled.section`
   box-sizing: border-box;
   flex-wrap: wrap;
   background-color: ${COLORS.fadedBackground};
-  min-width: 100%;
-  max-width: 100%;
-  height: fit-content;
   padding: 1rem;
   border-radius: 0.5rem;
   min-height: 100%;
+  height: auto;
 
   @media (min-width: 1200px) {
     grid-area: Utils;
@@ -865,6 +863,10 @@ export const StyledUtilities = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  min-height: 100%;
+  height: auto;
+  min-width: 100%;
+  max-width: 100%;
 `;
 
 export const StyledUtility = styled.div`
