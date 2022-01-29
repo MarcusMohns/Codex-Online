@@ -36,7 +36,7 @@ const Player = ({
               onClick={() => focusName(`player-input-${player.id}`)}
             />
             <DeletePlayerIcon
-              id="delete-player-img"
+              id="delete-player-icon"
               onClick={() => onDelete(player)}
             />
           </TinyContainer>
@@ -58,7 +58,7 @@ const Player = ({
             {(player.color === COLORS.paladin ||
               player.color === COLORS.warrior) && (
               <div className="player-tooltip-container">
-                <DropUpArrow id="player-info-image" />
+                <DropUpArrow id="player-info-icon" />
                 <PlayerCheckboxes player={player} editBuffs={editBuffs} />
               </div>
             )}
