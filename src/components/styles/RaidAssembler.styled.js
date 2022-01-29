@@ -389,19 +389,20 @@ export const StyledPlayer = styled.div`
     width: 100%;
     height: 100%;
 
-    &:active #player-info-image ~ div {
+    &:active #player-info-icon ~ div {
       display: flex;
     }
-    #player-info-image ~ div {
+    #player-info-icon ~ div {
       display: none;
       &:hover {
         display: flex;
       }
     }
-    #player-info-image {
+    #player-info-icon {
       position: absolute;
       left: 2px;
       bottom: 0;
+      visibility: hidden;
       cursor: pointer;
       &:hover {
         transform: scale(1.2) rotate(180deg);
@@ -433,11 +434,12 @@ export const StyledPlayer = styled.div`
     user-select: none;
     pointer-events: none;
     border-radius: 3px;
-    color: white;
     font-weight: bold;
     background-color: transparent;
     width: 95%;
     box-sizing: border-box;
+    caret-color: black;
+    color: #fff;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
       #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
   }
@@ -479,21 +481,33 @@ export const StyledPlayer = styled.div`
     margin-left: 2px;
     cursor: pointer;
     font-size: 1.4rem;
+    visibility: hidden;
     &:hover {
       transform: scale(1.2);
     }
   }
-  #delete-player-img {
+  #delete-player-icon {
     display: flex;
     font-weight: bold;
     font-size: 1.3rem;
     cursor: pointer;
+    visibility: hidden;
     &:hover {
       transform: scale(1.2);
     }
   }
   &:hover {
     transform: translateY(-0.1em); // change it to something btr
+
+    #edit-player-icon {
+      visibility: visible;
+    }
+    #delete-player-icon {
+      visibility: visible;
+    }
+    #player-info-icon {
+      visibility: visible;
+    }
   }
 
   @media (min-width: 576px) {
@@ -848,6 +862,7 @@ export const UtilityContainer = styled.section`
   padding: 1rem;
   border-radius: 0.5rem;
   min-height: 100%;
+  min-width: 100%;
   height: auto;
 
   @media (min-width: 1200px) {
