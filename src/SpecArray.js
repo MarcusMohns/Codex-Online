@@ -571,6 +571,18 @@ const SpecArray = [
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
       },
+      {
+        name: "Fire resistance",
+        image: "images/Aboms_Might.png",
+      },
+      {
+        name: "Frost resistance",
+        image: "images/Aboms_Might.png",
+      },
+      {
+        name: "Shadow resistance",
+        image: "images/Aboms_Might.png",
+      },
     ],
   },
   {
@@ -665,6 +677,18 @@ const SpecArray = [
       {
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
+      },
+      {
+        name: "Fire resistance",
+        image: "images/Aboms_Might.png",
+      },
+      {
+        name: "Frost resistance",
+        image: "images/Aboms_Might.png",
+      },
+      {
+        name: "Shadow resistance",
+        image: "images/Aboms_Might.png",
       },
     ],
   },
@@ -765,6 +789,18 @@ const SpecArray = [
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
       },
+      {
+        name: "Fire resistance",
+        image: "images/Aboms_Might.png",
+      },
+      {
+        name: "Frost resistance",
+        image: "images/Aboms_Might.png",
+      },
+      {
+        name: "Shadow resistance",
+        image: "images/Aboms_Might.png",
+      },
     ],
   },
   {
@@ -827,6 +863,10 @@ const SpecArray = [
         name: "Mind Control",
         image: "images/Mind_Control.png",
       },
+      {
+        name: "Shadow resistance",
+        image: "images/Aboms_Might.png",
+      },
     ],
   },
   {
@@ -879,6 +919,10 @@ const SpecArray = [
       {
         name: "Mind Control",
         image: "images/Mind_Control.png",
+      },
+      {
+        name: "Shadow resistance",
+        image: "images/Aboms_Might.png",
       },
     ],
   },
@@ -937,6 +981,10 @@ const SpecArray = [
       {
         name: "Mind Control",
         image: "images/Mind_Control.png",
+      },
+      {
+        name: "Shadow resistance",
+        image: "images/Aboms_Might.png",
       },
     ],
   },
