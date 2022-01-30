@@ -331,7 +331,7 @@ const SpecArray = [
         image: "images/Tranquilizing_Shot.png",
       },
       {
-        name: "Nature resistance",
+        name: "Nature Resistance",
         image: "images/Aspect_Of_The_Wild.png",
       },
     ],
@@ -363,7 +363,7 @@ const SpecArray = [
         image: "images/Tranquilizing_Shot.png",
       },
       {
-        name: "Nature resistance",
+        name: "Nature Resistance",
         image: "images/Aspect_Of_The_Wild.png",
       },
     ],
@@ -399,7 +399,7 @@ const SpecArray = [
         image: "images/Wyvern_Sting.png",
       },
       {
-        name: "Nature resistance",
+        name: "Nature Resistance",
         image: "images/Aspect_Of_The_Wild.png",
       },
     ],
@@ -584,16 +584,16 @@ const SpecArray = [
         image: "images/Divine_Intervention.png",
       },
       {
-        name: "Fire resistance",
-        image: "images/Aboms_Might.png",
+        name: "Fire Resistance",
+        image: "images/Fire_Resistance_Aura.png",
       },
       {
-        name: "Frost resistance",
-        image: "images/Aboms_Might.png",
+        name: "Frost Resistance",
+        image: "images/Frost_Resistance_Aura.png",
       },
       {
-        name: "Shadow resistance",
-        image: "images/Aboms_Might.png",
+        name: "Shadow Resistance",
+        image: "images/Shadow_Resistance_Aura.png",
       },
     ],
   },
@@ -691,16 +691,16 @@ const SpecArray = [
         image: "images/Divine_Intervention.png",
       },
       {
-        name: "Fire resistance",
-        image: "images/Aboms_Might.png",
+        name: "Fire Resistance",
+        image: "images/Fire_Resistance_Aura.png",
       },
       {
-        name: "Frost resistance",
-        image: "images/Aboms_Might.png",
+        name: "Frost Resistance",
+        image: "images/Frost_Resistance_Aura.png",
       },
       {
-        name: "Shadow resistance",
-        image: "images/Aboms_Might.png",
+        name: "Shadow Resistance",
+        image: "images/Shadow_Resistance_Aura.png",
       },
     ],
   },
@@ -802,16 +802,16 @@ const SpecArray = [
         image: "images/Divine_Intervention.png",
       },
       {
-        name: "Fire resistance",
-        image: "images/Aboms_Might.png",
+        name: "Fire Resistance",
+        image: "images/Fire_Resistance_Aura.png",
       },
       {
-        name: "Frost resistance",
-        image: "images/Aboms_Might.png",
+        name: "Frost Resistance",
+        image: "images/Frost_Resistance_Aura.png",
       },
       {
-        name: "Shadow resistance",
-        image: "images/Aboms_Might.png",
+        name: "Shadow Resistance",
+        image: "images/Shadow_Resistance_Aura.png",
       },
     ],
   },
@@ -876,8 +876,8 @@ const SpecArray = [
         image: "images/Mind_Control.png",
       },
       {
-        name: "Shadow resistance",
-        image: "images/Aboms_Might.png",
+        name: "Shadow Resistance",
+        image: "images/Prayer_Of_Shadow_Resistance.png",
       },
     ],
   },
@@ -933,8 +933,8 @@ const SpecArray = [
         image: "images/Mind_Control.png",
       },
       {
-        name: "Shadow resistance",
-        image: "images/Aboms_Might.png",
+        name: "Shadow Resistance",
+        image: "images/Prayer_Of_Shadow_Resistance.png",
       },
     ],
   },
@@ -995,8 +995,8 @@ const SpecArray = [
         image: "images/Mind_Control.png",
       },
       {
-        name: "Shadow resistance",
-        image: "images/Aboms_Might.png",
+        name: "Shadow Resistance",
+        image: "images/Prayer_Of_Shadow_Resistance.png",
       },
     ],
   },
@@ -1185,7 +1185,7 @@ const SpecArray = [
         image: "images/Cleansing_Totem.png",
       },
       {
-        name: "Nature resistance",
+        name: "Nature Resistance",
         image: "images/Nature_Resistance_Totem.png",
       },
       {
@@ -1255,7 +1255,7 @@ const SpecArray = [
         image: "images/Cleansing_Totem.png",
       },
       {
-        name: "Nature resistance",
+        name: "Nature Resistance",
         image: "images/Nature_Resistance_Totem.png",
       },
       {
@@ -1329,7 +1329,7 @@ const SpecArray = [
         image: "images/Cleansing_Totem.png",
       },
       {
-        name: "Nature resistance",
+        name: "Nature Resistance",
         image: "images/Nature_Resistance_Totem.png",
       },
       {
