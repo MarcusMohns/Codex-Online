@@ -330,6 +330,10 @@ const SpecArray = [
         name: "Tranquilizing Shot",
         image: "images/Tranquilizing_Shot.png",
       },
+      {
+        name: "Nature resistance",
+        image: "images/Aspect_Of_The_Wild.png",
+      },
     ],
   },
   {
@@ -357,6 +361,10 @@ const SpecArray = [
       {
         name: "Tranquilizing Shot",
         image: "images/Tranquilizing_Shot.png",
+      },
+      {
+        name: "Nature resistance",
+        image: "images/Aspect_Of_The_Wild.png",
       },
     ],
   },
@@ -389,6 +397,10 @@ const SpecArray = [
       {
         name: "Wyvern Sting",
         image: "images/Wyvern_Sting.png",
+      },
+      {
+        name: "Nature resistance",
+        image: "images/Aspect_Of_The_Wild.png",
       },
     ],
   },
@@ -1174,7 +1186,7 @@ const SpecArray = [
       },
       {
         name: "Nature resistance",
-        image: "images/Aboms_Might.png",
+        image: "images/Nature_Resistance_Totem.png",
       },
       {
         name: "Interrupt",
@@ -1244,7 +1256,7 @@ const SpecArray = [
       },
       {
         name: "Nature resistance",
-        image: "images/Aboms_Might.png",
+        image: "images/Nature_Resistance_Totem.png",
       },
       {
         name: "Interrupt",
@@ -1318,7 +1330,7 @@ const SpecArray = [
       },
       {
         name: "Nature resistance",
-        image: "images/Aboms_Might.png",
+        image: "images/Nature_Resistance_Totem.png",
       },
       {
         name: "Interrupt",
@@ -1326,7 +1338,7 @@ const SpecArray = [
       },
       {
         name: "Mana Tide Totem",
-        image: "images/Aboms_Might.png",
+        image: "images/Mana_Tide_Totem.png",
       },
     ],
   },
