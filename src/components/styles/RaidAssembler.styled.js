@@ -136,19 +136,30 @@ export const StyledSpecButton = styled.div`
 
   &:hover {
     transform: scale(95%);
-  }
 
+    .class-tooltip-container {
+      #info-image {
+        visibility: visible;
+      }
+    }
+  }
   .class-tooltip-container {
+    #info-image {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      visibility: hidden;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
     &:hover #info-image ~ div {
       display: flex;
     }
     #info-image ~ div {
       display: none;
-    }
-    #info-image {
-      position: absolute;
-      left: 0;
-      bottom: 0;
     }
   }
 
