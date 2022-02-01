@@ -11,12 +11,14 @@ const ClassTooltip = ({ text, buffs, utility }) => {
           className="class-tooltip-buff-content"
         >
           <div className="class-tooltip-category-name"> {buff.category}</div>
-          <h2 className="class-tooltip-buff-name">{buff.name}</h2>
-          <img
-            src={`${buff.image}`}
-            alt={`${buff.name}`}
-            className="class-tooltip-image"
-          />
+          <div className="class-tooltip-buff">
+            <h2 className="class-tooltip-buff-name">{buff.name}</h2>
+            <img
+              src={`${buff.image}`}
+              alt={`${buff.name}`}
+              className="class-tooltip-image"
+            />
+          </div>
         </div>
       ))}
       <h2 className="class-tooltip-header">Utilities</h2>

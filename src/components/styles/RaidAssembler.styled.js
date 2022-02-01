@@ -237,7 +237,8 @@ export const StyledClassToolTip = styled.div`
   min-height: 100%;
   border-radius: 0.5rem;
   border:2px solid grey;
-  min-width: 200%;
+  min-width: 100%;
+  width:100%;
   padding: 0.5rem;
   flex-direction: column;
   align-items: center;
@@ -262,6 +263,16 @@ export const StyledClassToolTip = styled.div`
     font-size:1rem;
     text-align:center;
   }
+
+  .class-tooltip-buff {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    
+  }
   .class-tooltip-buff-content {
     display: flex;
     flex-direction: column;
@@ -274,7 +285,9 @@ export const StyledClassToolTip = styled.div`
     margin-bottom:5px;
 
     .class-tooltip-image {
-      width: 1.8rem;
+      width: 1.2rem;
+    }
+    .class-tooltip-buff-name {
     }
   }
   }
