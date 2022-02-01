@@ -9,7 +9,12 @@ const SpecButton = ({ text, image, onClick, color, buffs, utility }) => {
       </div>
       <div className="class-tooltip-container">
         <InfoIcon id="info-image" />
-        <ClassTooltip buffs={buffs} text={text} utility={utility} />
+        <ClassTooltip
+          buffs={buffs}
+          text={text}
+          utility={utility}
+          color={color}
+        />
       </div>
     </StyledSpecButton>
   );

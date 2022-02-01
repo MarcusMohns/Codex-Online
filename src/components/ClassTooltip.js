@@ -1,8 +1,8 @@
 import { StyledClassToolTip } from "./styles/RaidAssembler.styled";
 
-const ClassTooltip = ({ text, buffs, utility }) => {
+const ClassTooltip = ({ text, buffs, utility, color }) => {
   return (
-    <StyledClassToolTip>
+    <StyledClassToolTip color={color}>
       <p className="class-tooltip-title">{text}</p>
       <h2 className="class-tooltip-header">Buffs</h2>
       {buffs.map((buff, index) => (

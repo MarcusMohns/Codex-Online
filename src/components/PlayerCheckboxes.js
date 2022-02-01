@@ -2,7 +2,7 @@ import { StyledPlayerCheckboxes } from "./styles/RaidAssembler.styled";
 
 const PlayerCheckboxes = ({ player, editBuffs }) => {
   return (
-    <StyledPlayerCheckboxes>
+    <StyledPlayerCheckboxes color={player.color}>
       {player.name === "" ? (
         <h2 className="player-checkbox-header">{player.text}s' buffs</h2>
       ) : (
