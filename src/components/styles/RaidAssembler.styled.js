@@ -117,7 +117,6 @@ export const SpecContainer = styled.section`
   }
 `;
 export const StyledSpecButton = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -238,7 +237,7 @@ export const StyledClassToolTip = styled.div`
   min-height: 100%;
   border-radius: 0.5rem;
   border:2px solid grey;
-  min-width: 100%;
+  min-width: 200%;
   padding: 0.5rem;
   flex-direction: column;
   align-items: center;
@@ -262,8 +261,6 @@ export const StyledClassToolTip = styled.div`
     flex-direction:row;
     font-size:1rem;
     text-align:center;
-
-
   }
   .class-tooltip-buff-content {
     display: flex;
