@@ -242,7 +242,7 @@ export const StyledClassToolTip = styled.div`
   align-items: center;
   justify-content: center;
   cursor: default;
-  border:0.5px solid grey;
+  border:1px solid grey;
   background: rgba(38, 73, 116, 1);
   background: -webkit-linear-gradient(
     bottom,
@@ -275,7 +275,7 @@ export const StyledClassToolTip = styled.div`
   .class-tooltip-category-name {
     display:flex;
     flex-direction:row;
-    font-size:1rem;
+    font-size:.9rem;
     text-align:center;
   }
 
@@ -581,7 +581,7 @@ export const StyledPlayerCheckboxes = styled.div`
   box-sizing: border-box;
   min-height: 100%;
   border-radius: 0.5rem;
-  border: 2px solid grey;
+  border: 1px solid grey;
   min-width: 100%;
   max-width: 100%;
   padding: 0.5rem;
