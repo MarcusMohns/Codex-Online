@@ -839,8 +839,8 @@ const BuffArray = [
     name: "Healing Reduction",
     source: [
       <div key={"healing-reduction-provided-by"}>
-        <span id="hunter">Hunters</span> <span id="warlock">Arms Warrior</span>
-        <span id="warlock">Fury Warrior</span> <span id="druid">Rogues</span>
+        <span id="hunter">Hunters</span> <span id="warrior">Arms Warrior</span>
+        <span id="warrior">Fury Warrior</span> <span id="druid">Rogues</span>
       </div>,
     ],
     image: "images/Mortal_Strike.png",
