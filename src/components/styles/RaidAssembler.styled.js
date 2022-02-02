@@ -242,6 +242,7 @@ export const StyledClassToolTip = styled.div`
   align-items: center;
   justify-content: center;
   cursor: default;
+  border:0.5px solid grey;
   background: rgba(38, 73, 116, 1);
   background: -webkit-linear-gradient(
     bottom,
@@ -267,7 +268,8 @@ export const StyledClassToolTip = styled.div`
     justify-content:center;
     width:100%;
     font-size:1.1rem;
-    padding-bottom:2px;
+    padding:1px;
+    border-top:2px solid grey;
     border-bottom:2px solid grey;
   }
   .class-tooltip-category-name {
@@ -301,7 +303,7 @@ export const StyledClassToolTip = styled.div`
       width: 1.2rem;
     }
     .class-tooltip-buff-name {
-      font-weight:600;
+      font-weight:400;
     }
   }
   }
@@ -608,7 +610,10 @@ export const StyledPlayerCheckboxes = styled.div`
     margin-bottom: 1rem;
     width: 100%;
     height: 100%;
-    color: ${(props) => props.color};
+
+    .checkbox-header-player-text {
+      color: ${(props) => props.color};
+    }
   }
   .player-checkbox-container {
     display: flex;
@@ -775,20 +780,16 @@ export const StyledCategory = styled.div`
     border-radius: 5px;
     background: rgba(38, 73, 116, 1);
     background: -webkit-linear-gradient(
-      top,
+      bottom,
       rgba(38, 73, 116, 1),
       rgba(0, 0, 0, 1)
     );
     background: -moz-linear-gradient(
-      top,
+      bottom,
       rgba(38, 73, 116, 1),
       rgba(0, 0, 0, 1)
     );
-    background: linear-gradient(
-      to bottom,
-      rgba(38, 73, 116, 1),
-      rgba(0, 0, 0, 1)
-    );
+    background: linear-gradient(to top, rgba(38, 73, 116, 1), rgba(0, 0, 0, 1));
 
     #death-knight {
       color: ${COLORS.deathKnight};

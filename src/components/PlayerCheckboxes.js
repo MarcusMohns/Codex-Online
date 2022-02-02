@@ -4,9 +4,17 @@ const PlayerCheckboxes = ({ player, editBuffs }) => {
   return (
     <StyledPlayerCheckboxes color={player.color}>
       {player.name === "" ? (
-        <h2 className="player-checkbox-header">{player.text}s' buffs</h2>
+        <h2 className="player-checkbox-header">
+          Select what buffs this{" "}
+          <span className="checkbox-header-player-text">{player.text}</span>{" "}
+          will bring
+        </h2>
       ) : (
-        <h2 className="player-checkbox-header">{player.name}'s buffs</h2>
+        <h2 className="player-checkbox-header">
+          Select what buffs{" "}
+          <span className="checkbox-header-player-text">{player.name}</span>{" "}
+          will bring
+        </h2>
       )}
       {player.buffs.map(
         (buff) =>
