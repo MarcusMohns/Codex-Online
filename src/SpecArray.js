@@ -20,6 +20,11 @@ const SpecArray = [
         name: "Abomination's Might",
         image: "images/Aboms_Might.png",
       },
+      {
+        category: "Melee Haste",
+        name: "Improved Icy Talons",
+        image: "images/Icy_Talons.png",
+      },
     ],
     utility: [
       {

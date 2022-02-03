@@ -432,6 +432,7 @@ const BuffArray = [
       <div key={"melee-haste-provided-by"}>
         <span id="shaman">Shamans</span>
         <span id="death-knight">Frost Death Knights</span>
+        <span id="death-knight">Blood Death Knights</span>
         <span id="shaman">Enhancement Shamans</span>
       </div>,
     ],

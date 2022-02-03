@@ -506,8 +506,8 @@ export const StyledPlayer = styled.div`
       "top: -20px; font-size: 10px; color: white; opacity:0%;"};
   }
 
-  /* box-shadow: ${(props) =>
-    props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
+  /* box-shadow: $/{(props) =>
+  / props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
 
   #class-img {
     display: none;
