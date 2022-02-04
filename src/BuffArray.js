@@ -15,7 +15,7 @@ const BuffArray = [
         </div>
         <span className="buff">Increases</span> Strength and Agility by{" "}
         <span>155</span> for all{" "}
-        <span className="buff">party and raid members</span>.
+        <span className="buff">party and raid members</span>
       </div>
     ),
   },
@@ -86,7 +86,7 @@ const BuffArray = [
         <div className="spell-names">Sunder Armor, Expose Armor</div>
         <span className="debuff">Decreases</span> the Armor of the{" "}
         <span className="debuff">enemy target</span> by{" "}
-        <span className="buff-value">20%</span>.
+        <span className="buff-value">20%</span>
         <div className="fine-print">
           Sunder Armor is preferable to Expose Armor.
         </div>
@@ -108,7 +108,7 @@ const BuffArray = [
         <div className="spell-names">Faerie Fire, Curse of Weakness</div>
         <span className="debuff">Decreases</span> the Armor of the{" "}
         <span className="debuff">enemy target</span> by{" "}
-        <span className="buff-value">5%</span>.
+        <span className="buff-value">5%</span>
         <div className="fine-print">
           Warlocks using Curse of Weakness will suffer a DPS loss.
         </div>
@@ -133,7 +133,7 @@ const BuffArray = [
         </div>
         <span className="buff"> Increases</span> Attack Power by{" "}
         <span className="buff-value">10%</span> for all{" "}
-        <span className="buff">party and raid members</span>.
+        <span className="buff">party and raid members</span>
       </div>
     ),
   },
@@ -220,7 +220,7 @@ const BuffArray = [
         </div>
         <span className="buff"> Increases</span> the critical strike chance on
         the <span className="debuff">enemy target</span>by{" "}
-        <span className="buff-value">3%</span>.
+        <span className="buff-value">3%</span>
       </div>
     ),
   },
@@ -241,7 +241,7 @@ const BuffArray = [
         </div>
         <span className="buff">Increases</span> all damage dealt by{" "}
         <span className="buff">party and raid members </span> by{" "}
-        <span className="buff-value">3%</span>.
+        <span className="buff-value">3%</span>
       </div>
     ),
   },
@@ -258,7 +258,7 @@ const BuffArray = [
       <div>
         <div className="spell-names">Renewed Hope, Blessing of Sanctuary</div>
         <span className="buff">Reduces</span> damage taken from all sources by{" "}
-        <span className="buff-value">3%</span>.
+        <span className="buff-value">3%</span>
       </div>
     ),
   },
@@ -276,7 +276,7 @@ const BuffArray = [
         <div className="spell-names">Ebon Plaguebringer</div>
         <span className="buff">Increases</span> disease damage taken by the{" "}
         <span className="debuff">enemy target</span> by{" "}
-        <span className="buff-value">30%</span>.
+        <span className="buff-value">30%</span>
       </div>
     ),
   },
@@ -297,7 +297,7 @@ const BuffArray = [
         </div>
         <span className="buff">Increases</span> casting, ranged and melee
         attacks speeds by <span className="buff-value">3%</span> for all{" "}
-        <span className="buff">party and raid members</span>.
+        <span className="buff">party and raid members</span>
       </div>
     ),
   },
@@ -316,7 +316,7 @@ const BuffArray = [
         <div className="spell-names">Tree of Life, Improved Devotion Aura</div>
         <span className="buff">Increases</span> healing recieved by{" "}
         <span className="buff-value">6%</span> for all{" "}
-        <span className="buff">party and raid members </span>.
+        <span className="buff">party and raid members </span>
       </div>
     ),
   },
@@ -336,16 +336,16 @@ const BuffArray = [
           Maximum health <span className="buff">increased</span> by x.
         </div>
         <div>
-          Commanding Shout: <span className="buff-value">2255</span>.
+          Commanding Shout: <span className="buff-value">2255</span>
         </div>
         <div>
-          Improved Commanding Shout: <span className="buff-value">2818</span>.
+          Improved Commanding Shout: <span className="buff-value">2818</span>
         </div>
         <div>
-          Blood Pact: <span className="buff-value">1330</span>.
+          Blood Pact: <span className="buff-value">1330</span>
         </div>
         <div>
-          Improved Blood Pact: <span className="buff-value">1729</span>.
+          Improved Blood Pact: <span className="buff-value">1729</span>
         </div>
       </div>
     ),
@@ -364,12 +364,12 @@ const BuffArray = [
         <div className="spell-names">Arcane Intellect, Fel Intelligence</div>
         <div>
           Arcane Intellect: <span className="buff">Increases</span> Intellect by{" "}
-          <span className="buff-value">60</span>.
+          <span className="buff-value">60</span>
         </div>
 
         <div>
           Fel Intelligence: <span className="buff">Increases</span> Intellect by{" "}
-          <span className="buff-value">48</span>.
+          <span className="buff-value">48</span>
         </div>
       </div>
     ),
@@ -421,7 +421,7 @@ const BuffArray = [
       <div>
         <div className="spell-names">Rampage, Leader of the Pack:</div>
         <span className="buff">Increases</span> ranged and melee critical chance
-        by <span className="buff-value">5%</span>.
+        by <span className="buff-value">5%</span>
       </div>
     ),
   },
@@ -448,15 +448,15 @@ const BuffArray = [
         </div>
 
         <div>
-          Windfury Totem: <span className="buff-value">16%</span>.
+          Windfury Totem: <span className="buff-value">16%</span>
         </div>
 
         <div>
-          Improved Windfury Totem: <span className="buff-value">20%</span>.
+          Improved Windfury Totem: <span className="buff-value">20%</span>
         </div>
 
         <div>
-          Improved Icy Talons: <span className="buff-value">20%</span>.
+          Improved Icy Talons: <span className="buff-value">20%</span>
         </div>
       </div>
     ),
@@ -477,7 +477,7 @@ const BuffArray = [
           <span className="buff">Increases</span> Armor by{" "}
           <span className="buff-value">750</span>, all attributes by{" "}
           <span className="buff-value">36</span> and all resistances by{" "}
-          <span className="buff-value">54</span>.
+          <span className="buff-value">54</span>
         </div>
 
         <div>
@@ -485,7 +485,7 @@ const BuffArray = [
           <span className="buff">Increases</span> Armor by{" "}
           <span className="buff-value">1050</span>, all attributes by{" "}
           <span className="buff-value">51</span> and all resistances by{" "}
-          <span className="buff-value">75</span>.
+          <span className="buff-value">75</span>
         </div>
         <div className="fine-print">
           Alternatively, Drums of the Wild provide the same stats as the
@@ -508,7 +508,7 @@ const BuffArray = [
         <div className="spell-names">Savage Combat, Blood Frenzy</div>
         <span className="buff">Increases</span> physical damage caused to the{" "}
         <span className="debuff">enemy target</span> by{" "}
-        <span className="buff-value">4%</span>.
+        <span className="buff-value">4%</span>
       </div>
     ),
   },
@@ -595,7 +595,7 @@ const BuffArray = [
         </div>
         <span className="buff">Increases</span> the chance spells will
         critically hit the <span className="debuff">enemy target</span> by{" "}
-        <span className="buff-value">5%</span>.
+        <span className="buff-value">5%</span>
       </div>
     ),
   },
@@ -616,7 +616,7 @@ const BuffArray = [
         </div>
         <span className="buff">Increases</span> spell damage taken by the{" "}
         <span className="debuff">enemy target</span> by{" "}
-        <span className="buff-value">13%</span>.
+        <span className="buff-value">13%</span>
       </div>
     ),
   },
@@ -651,7 +651,7 @@ const BuffArray = [
         <div className="spell-names">Improved Faerie Fire, Misery</div>
         <span className="buff">Increases</span> the chance the{" "}
         <span className="debuff">enemy target</span> will be hit by spell
-        attacks by <span className="buff-value">3%</span>.
+        attacks by <span className="buff-value">3%</span>
       </div>
     ),
   },
@@ -673,15 +673,15 @@ const BuffArray = [
         </div>
         <div>
           <span className="buff">Increases</span> Spell Power by x for all{" "}
-          <span className="buff">party and raid members</span>.
+          <span className="buff">party and raid members</span>
         </div>
 
         <div>
-          Totem of Wrath: <span className="buff-value">280</span>.
+          Totem of Wrath: <span className="buff-value">280</span>
         </div>
 
         <div>
-          Flametongue Totem: <span className="buff-value">144</span>.
+          Flametongue Totem: <span className="buff-value">144</span>
         </div>
         <div>
           Demonic Pact: <span className="buff-value">10%</span> of Warlocks
@@ -713,11 +713,11 @@ const BuffArray = [
         </div>
 
         <div>
-          Divine Spirit: <span className="buff-value">80</span>.
+          Divine Spirit: <span className="buff-value">80</span>
         </div>
 
         <div>
-          Fel Intelligence: <span className="buff-value">64</span>.
+          Fel Intelligence: <span className="buff-value">64</span>
         </div>
       </div>
     ),
@@ -735,7 +735,7 @@ const BuffArray = [
       <div>
         <div className="spell-names">Power Word: Fortitude</div>
         <span className="buff">Increases</span> Stamina by{" "}
-        <span className="buff-value">165</span>.
+        <span className="buff-value">165</span>
       </div>
     ),
   },
@@ -751,7 +751,7 @@ const BuffArray = [
       <div>
         <div className="spell-names"> Blessing of Kings</div>
         <span className="buff">Increases</span> stats by{" "}
-        <span className="buff-value">10%</span>.
+        <span className="buff-value">10%</span>
         <div className="fine-print">
           Alternatively, Drums of the Forgotten Kings provide 8% all stats and
           can be bought off the auction house.
@@ -776,21 +776,21 @@ const BuffArray = [
           Thunder Clap
         </div>
         <span className="debuff">Reduces</span> Melee Attack Speed by{" "}
-        <span className="buff-value">x</span>.
+        <span className="buff-value">x</span>
         <div>
-          Icy Touch: <span className="buff-value">14%</span>.
+          Icy Touch: <span className="buff-value">14%</span>
         </div>
         <div>
-          Improved Icy Touch: <span className="buff-value">20%</span>.
+          Improved Icy Touch: <span className="buff-value">20%</span>
         </div>
         <div>
-          Infected Wounds: <span className="buff-value">20%</span>.
+          Infected Wounds: <span className="buff-value">20%</span>
         </div>
         <div>
-          Thunder Clap: <span className="buff-value">10%</span>.
+          Thunder Clap: <span className="buff-value">10%</span>
         </div>
         <div>
-          Improved Thunder Clap: <span className="buff-value">20%</span>.
+          Improved Thunder Clap: <span className="buff-value">20%</span>
         </div>
       </div>
     ),
@@ -811,24 +811,24 @@ const BuffArray = [
         </div>
         <span className="debuff">Decreases</span> nearby{" "}
         <span className="debuff">enemies'</span> attack power by{" "}
-        <span className="buff-value">x</span>.
+        <span className="buff-value">x</span>
         <div>
-          Demoralizing Shout: <span className="buff-value">411</span>.
+          Demoralizing Shout: <span className="buff-value">411</span>
         </div>
         <div>
-          Improved Demoralizing Shout: <span className="buff-value">575</span>.
+          Improved Demoralizing Shout: <span className="buff-value">575</span>
         </div>
         <div>
-          Demoralizing Roar: <span className="buff-value">411</span>.
+          Demoralizing Roar: <span className="buff-value">411</span>
         </div>
         <div>
-          Improved Demoralizing Roar: <span className="buff-value">575</span>.
+          Improved Demoralizing Roar: <span className="buff-value">575</span>
         </div>
         <div>
-          Curse of Weakness: <span className="buff-value">478</span>.
+          Curse of Weakness: <span className="buff-value">478</span>
         </div>
         <div>
-          Improved Curse of Weakness: <span className="buff-value">573</span>.
+          Improved Curse of Weakness: <span className="buff-value">573</span>
         </div>
         <div className="fine-print">
           Warlocks using Curse of Weakness will suffer a DPS loss.
@@ -852,7 +852,7 @@ const BuffArray = [
           Aimed Shot, Mortal Strike, Furious Attacks, Wound Poison
         </div>
         <span className="debuff">Decreases enemy target</span> Healing Taken by{" "}
-        <span className="buff-value">50%</span>.
+        <span className="buff-value">50%</span>
         <div className="fine-print">
           Rogues using Wound Poison will suffer a steep DPS loss.
         </div>
