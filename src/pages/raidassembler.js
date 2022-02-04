@@ -289,6 +289,20 @@ const RaidAssembler = () => {
     }
   };
 
+  const saveOnClick = () => {
+    const savedRaid = JSON.stringify(raid);
+    const savedBuffs = JSON.stringify(buffs);
+    const savedUtils = JSON.stringify(utilities);
+    const savedCount = JSON.stringify(raidCount);
+    localStorage.setItem("raid", savedRaid);
+    console.log("Saved raid!");
+  };
+  const loadOnClick = () => {
+    const newState = JSON.parse(localStorage.getItem("raid"));
+    setRaid(newState);
+    console.log("Raid loaded!");
+  };
+
   const handleCount = (player, status) => {
     let value = 0;
     if (status === "add") {
@@ -420,6 +434,8 @@ const RaidAssembler = () => {
           </div>
           <div className="raid-text">Raid</div>
           <div className="btn-container">
+            <button onClick={saveOnClick}>Save</button>
+            <button onClick={loadOnClick}>Load</button>
             <AddPlayerButton onClick={handleRightMenuToggle}>
               Add a Player <span id="plus-sign">+</span>
             </AddPlayerButton>
