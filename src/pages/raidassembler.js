@@ -43,6 +43,9 @@ const formReducer = (state, action) => {
       );
       return Object.fromEntries(newState);
 
+    case "load":
+      return action.value;
+
     case "edit":
       const editedState = state[action.id].filter(
         (item) => item.buffName !== action.value.buffName
@@ -294,13 +297,27 @@ const RaidAssembler = () => {
     const savedBuffs = JSON.stringify(buffs);
     const savedUtils = JSON.stringify(utilities);
     const savedCount = JSON.stringify(raidCount);
-    localStorage.setItem("raid", savedRaid);
-    console.log("Saved raid!");
+
+    const saveOne = JSON.stringify([
+      savedRaid,
+      savedBuffs,
+      savedUtils,
+      savedCount,
+    ]);
+
+    localStorage.setItem("raid", saveOne);
   };
   const loadOnClick = () => {
     const newState = JSON.parse(localStorage.getItem("raid"));
-    setRaid(newState);
-    console.log("Raid loaded!");
+    const newRaid = JSON.parse(newState[0]);
+    const newBuffs = JSON.parse(newState[1]);
+    const newUtilities = JSON.parse(newState[2]);
+    const newCount = JSON.parse(newState[3]);
+
+    setRaid(newRaid);
+    setBuffs({ type: "load", value: newBuffs });
+    setUtilities({ type: "load", value: newUtilities });
+    setCount(newCount);
   };
 
   const handleCount = (player, status) => {
