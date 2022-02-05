@@ -989,9 +989,6 @@ export const RaidContentHeader = styled.div`
   box-shadow: 0 2px 6px -1px #000;
   user-select: none;
 
-  .raid-text {
-    display: none;
-  }
   .btn-container {
     display: flex;
     justify-self: flex-end;
@@ -1011,10 +1008,6 @@ export const RaidContentHeader = styled.div`
   @media (min-width: 1200px) {
     height: 3rem;
 
-    .raid-text {
-      display: initial;
-      margin-right: 7.3rem;
-    }
     .raid-status-container {
       display: flex;
 
