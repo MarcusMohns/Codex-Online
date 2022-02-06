@@ -242,19 +242,9 @@ export const StyledClassToolTip = styled.div`
   align-items: center;
   justify-content: center;
   cursor: default;
-  border:1px solid grey;
-  background: rgba(38, 73, 116, 1);
-  background: -webkit-linear-gradient(
-    bottom,
-    rgba(38, 73, 116, 1),
-    rgba(0, 0, 0, 1)
-  );
-  background: -moz-linear-gradient(
-    bottom,
-    rgba(38, 73, 116, 1),
-    rgba(0, 0, 0, 1)
-  );
-  background: linear-gradient(to top, rgba(38, 73, 116, 1), rgba(0, 0, 0, 1));
+  background: #000;
+  border: 1px solid #777;
+  box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
 
   .class-tooltip-title {
     font-size: 1.3rem;
@@ -287,6 +277,7 @@ export const StyledClassToolTip = styled.div`
     justify-content: center;
     text-align:center;
     
+    
   }
   .class-tooltip-buff-content {
     display: flex;
@@ -304,6 +295,8 @@ export const StyledClassToolTip = styled.div`
     }
     .class-tooltip-buff-name {
       font-weight:400;
+      color: ${COLORS.goldHighlight};
+
     }
   }
   }
@@ -312,6 +305,7 @@ export const StyledClassToolTip = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: ${COLORS.goldHighlight};
 
     .class-tooltip-image {
       width: 1.5rem;
@@ -581,7 +575,6 @@ export const StyledPlayerCheckboxes = styled.div`
   box-sizing: border-box;
   min-height: 100%;
   border-radius: 0.5rem;
-  border: 1px solid grey;
   min-width: 100%;
   max-width: 100%;
   padding: 0.5rem;
@@ -590,18 +583,9 @@ export const StyledPlayerCheckboxes = styled.div`
   justify-content: center;
   cursor: default;
   overflow: hidden;
-  background: rgba(38, 73, 116, 1);
-  background: -webkit-linear-gradient(
-    bottom,
-    rgba(38, 73, 116, 1),
-    rgba(0, 0, 0, 1)
-  );
-  background: -moz-linear-gradient(
-    bottom,
-    rgba(38, 73, 116, 1),
-    rgba(0, 0, 0, 1)
-  );
-  background: linear-gradient(to top, rgba(38, 73, 116, 1), rgba(0, 0, 0, 1));
+  background: #000;
+  border: 1px solid #777;
+  box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
 
   .player-checkbox-header {
     font-size: 1.1rem;
@@ -639,6 +623,7 @@ export const StyledPlayerCheckboxes = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    color: ${COLORS.goldHighlight};
   }
   .player-checkbox-image {
     width: 1.6rem;
@@ -778,19 +763,9 @@ export const StyledCategory = styled.div`
     flex-direction: column;
     color: #eeeeee;
     border-radius: 5px;
-    background: rgba(38, 73, 116, 1);
-    background: -webkit-linear-gradient(
-      bottom,
-      rgba(38, 73, 116, 1),
-      rgba(0, 0, 0, 1)
-    );
-    background: -moz-linear-gradient(
-      bottom,
-      rgba(38, 73, 116, 1),
-      rgba(0, 0, 0, 1)
-    );
-    background: linear-gradient(to top, rgba(38, 73, 116, 1), rgba(0, 0, 0, 1));
-
+    background: #000;
+    border: 1px solid #777;
+    box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
     #death-knight {
       color: ${COLORS.deathKnight};
       display: block;
@@ -850,6 +825,7 @@ export const StyledCategory = styled.div`
       font-style: italic;
     }
     .spell-description {
+      color: ${COLORS.goldHighlight};
       padding: 10px;
       div {
         padding: 5px;
@@ -866,6 +842,7 @@ export const StyledCategory = styled.div`
           border-top: 1px solid white;
           border-bottom: 1px solid white;
           margin-bottom: 5px;
+          color: #eeeeee;
         }
       }
       .fine-print {
@@ -916,6 +893,7 @@ export const UtilityContainer = styled.section`
   min-height: 100%;
   min-width: 100%;
   height: auto;
+  overflow: hidden;
 
   @media (min-width: 1200px) {
     grid-area: Utils;
@@ -954,7 +932,7 @@ export const StyledUtility = styled.div`
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   img {
-    width: 30px;
+    width: 25px;
     border-radius: 20%;
     margin-left: 0.5rem;
   }
