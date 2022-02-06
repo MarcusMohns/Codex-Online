@@ -1112,6 +1112,19 @@ export const RaidGroupContainer = styled.div`
     }
   }
 `;
+
+export const StyledSaveMenu = styled.div`
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+`;
+
 export const TinyContainer = styled.div`
   width: 100%;
   display: flex;

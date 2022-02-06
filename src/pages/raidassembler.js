@@ -4,6 +4,7 @@ import SpecButtons from "../components/SpecButtons";
 import BuffCategories from "../components/BuffCategories";
 import Utilities from "../components/Utilities";
 import Raid from "../components/Raid";
+import SaveMenu from "../components/SaveMenu";
 import {
   Main,
   SpecContainer,
@@ -100,6 +101,7 @@ const RaidAssembler = () => {
   const [raidCount, setCount] = useState([0, 0, 0, 0]); // first value full raid count, 2nd value Tanks, 3rd value Healers, 4th value DPS.
   const [addPlayerMenu, setAddPlayerMenu] = useState(false);
   const [raidIsFull, setRaidIsFull] = useState(false);
+  const [saveMenuOpen, setSaveMenuOpen] = useState(true);
 
   const handleRightMenuToggle = (e) => {
     if (e.code === "KeyQ" || e.type === "click") {
@@ -428,6 +430,7 @@ const RaidAssembler = () => {
   });
   return (
     <Main>
+      {saveMenuOpen && <SaveMenu />}
       <div
         className={`${
           addPlayerMenu ? "add-player-menu" : "hide-add-player-menu"
@@ -452,6 +455,7 @@ const RaidAssembler = () => {
           <div className="btn-container">
             <button onClick={saveOnClick}>Save</button>
             <button onClick={loadOnClick}>Load</button>
+            <button onClick={() => setSaveMenuOpen(!saveMenuOpen)}>Open</button>
             <AddPlayerButton onClick={handleRightMenuToggle}>
               Add a Player <span id="plus-sign">+</span>
             </AddPlayerButton>
