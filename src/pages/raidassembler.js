@@ -447,7 +447,7 @@ const RaidAssembler = () => {
         <RaidContentHeader>
           <div className="raid-status-container">
             <p className="raid-count">{raidCount[0]} / 25 </p>
-            {raidCount[1]} Tanks | {raidCount[2]} Healer(s) | {raidCount[3]} DPS
+            {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
           </div>
           <div className="btn-container">
             <button onClick={saveOnClick}>Save</button>
