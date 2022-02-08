@@ -18,6 +18,7 @@ export const Main = styled.main`
   justify-content: flex-start;
   max-width: 100vw;
   min-height: 100vw;
+  height: auto;
   margin: auto;
   margin-top: 20%;
   background-color: ${COLORS.fadedBackground};
@@ -31,8 +32,6 @@ export const Main = styled.main`
       "Raid Utils"
       "Buffs Buffs";
     padding: 2rem;
-    max-width: 100vw;
-    min-height: 100vw;
   }
   .add-player-menu {
     display: flex;
@@ -1114,15 +1113,28 @@ export const RaidGroupContainer = styled.div`
 `;
 
 export const StyledSaveMenu = styled.div`
-  background-color: black;
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+  height: auto;
+  width: 100vw;
   left: 0;
-  right: 0;
-  text-align: center;
+  top: 0%;
+  z-index: 1;
+
+  .save-menu {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 1px solid grey;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 `;
 
 export const TinyContainer = styled.div`
