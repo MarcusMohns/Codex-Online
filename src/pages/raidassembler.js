@@ -294,27 +294,28 @@ const RaidAssembler = () => {
     }
   };
 
-  const saveOnClick = () => {
+  const saveOnClick = (saveName) => {
     const savedRaid = JSON.stringify(raid);
     const savedBuffs = JSON.stringify(buffs);
     const savedUtils = JSON.stringify(utilities);
     const savedCount = JSON.stringify(raidCount);
 
-    const saveOne = JSON.stringify([
-      savedRaid,
-      savedBuffs,
-      savedUtils,
-      savedCount,
-    ]);
+    const saveOne = JSON.stringify({
+      name: saveName,
+      raid: savedRaid,
+      buffs: savedBuffs,
+      utils: savedUtils,
+      count: savedCount,
+    });
 
     localStorage.setItem("raid", saveOne);
   };
   const loadOnClick = () => {
     const newState = JSON.parse(localStorage.getItem("raid"));
-    const newRaid = JSON.parse(newState[0]);
-    const newBuffs = JSON.parse(newState[1]);
-    const newUtilities = JSON.parse(newState[2]);
-    const newCount = JSON.parse(newState[3]);
+    const newRaid = JSON.parse(newState.raid);
+    const newBuffs = JSON.parse(newState.buffs);
+    const newUtilities = JSON.parse(newState.utils);
+    const newCount = JSON.parse(newState.count);
 
     setRaid(newRaid);
     setBuffs({ type: "load", value: newBuffs });
