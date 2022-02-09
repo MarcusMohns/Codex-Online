@@ -308,10 +308,10 @@ const RaidAssembler = () => {
       count: savedCount,
     });
 
-    localStorage.setItem("raid", saveOne);
+    localStorage.setItem(saveName, saveOne);
   };
-  const loadOnClick = () => {
-    const newState = JSON.parse(localStorage.getItem("raid"));
+  const loadOnClick = (loadName) => {
+    const newState = JSON.parse(localStorage.getItem(loadName));
     const newRaid = JSON.parse(newState.raid);
     const newBuffs = JSON.parse(newState.buffs);
     const newUtilities = JSON.parse(newState.utils);

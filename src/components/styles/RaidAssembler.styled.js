@@ -1123,6 +1123,8 @@ export const StyledSaveMenu = styled.div`
   z-index: 1;
 
   .save-menu {
+    display: flex;
+    flex-direction: column;
     width: 300px;
     height: 300px;
     background-color: black;
@@ -1134,6 +1136,14 @@ export const StyledSaveMenu = styled.div`
     left: 0;
     right: 0;
     text-align: center;
+    .one-save {
+      display: flex;
+      flex-direction: row;
+
+      .save-text {
+        color: white;
+      }
+    }
   }
 `;
 

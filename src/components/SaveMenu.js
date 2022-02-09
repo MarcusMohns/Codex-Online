@@ -1,4 +1,14 @@
 import { StyledSaveMenu } from "./styles/RaidAssembler.styled";
+
+const saves = ["saveSlotOne", "saveSlotTwo", "saveSlotThree"];
+const saveExist = (aSave) => {
+  try {
+    return JSON.parse(localStorage.getItem(aSave)).name;
+  } catch {
+    return "EMPTY";
+  }
+};
+
 const SaveMenu = ({
   saveOnClick,
   loadOnClick,
@@ -8,9 +18,16 @@ const SaveMenu = ({
   return (
     <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
       <div className="save-menu">
-        <button onClick={() => saveOnClick("Retard! :)")}>Save</button>
-        <div>{localStorage["raid"].name}</div>
-        <button onClick={loadOnClick}>Load</button>
+        {saves.map((aSave) => (
+          <div className="one-save">
+            <button onClick={() => saveOnClick(aSave)}>Save</button>
+            <div className="save-text"> {saveExist(aSave)} </div>
+            <button onClick={() => loadOnClick(aSave)}>Load</button>
+            <button onClick={() => localStorage.removeItem(aSave)}>
+              delete
+            </button>
+          </div>
+        ))}
       </div>
     </StyledSaveMenu>
   );
