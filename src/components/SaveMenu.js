@@ -19,7 +19,7 @@ const SaveMenu = ({
     <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
       <div className="save-menu">
         {saves.map((aSave) => (
-          <div className="one-save">
+          <div className="one-save" key={aSave}>
             <button onClick={() => saveOnClick(aSave)}>Save</button>
             <div className="save-text"> {saveExist(aSave)} </div>
             <button onClick={() => loadOnClick(aSave)}>Load</button>
