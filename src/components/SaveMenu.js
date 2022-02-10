@@ -1,6 +1,14 @@
 import { StyledSaveMenu } from "./styles/RaidAssembler.styled";
+import { DeletePlayerIcon, EditIcon } from "./styles/RaidAssembler.styled";
 
-const saves = ["saveSlotOne", "saveSlotTwo", "saveSlotThree"];
+const saves = [
+  "saveSlotOne",
+  "saveSlotTwo",
+  "saveSlotThree",
+  "saveSlotFour",
+  "saveSlotFive",
+];
+
 const saveExist = (aSave) => {
   try {
     return JSON.parse(localStorage.getItem(aSave)).name;
@@ -20,9 +28,17 @@ const SaveMenu = ({
   return (
     <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
       <div className="save-menu" onClick={(e) => e.stopPropagation()}>
-        {saves.map((aSave) => (
+        <h2 className="save-menu-header">Saves</h2>
+        {saves.map((aSave, index) => (
           <div className="one-save" key={aSave}>
-            <button onClick={() => saveOnClick(aSave)}>Save</button>
+            <div className="save-slot-number">{index + 1}</div>
+            <div
+              onClick={() => saveOnClick(aSave)}
+              className="save-buttons"
+              id="save-button"
+            >
+              Save
+            </div>
             <input
               type="text"
               className="save-text"
@@ -30,8 +46,21 @@ const SaveMenu = ({
               defaultValue={saveExist(aSave)}
               onChange={(e) => editSaveOnChange(aSave, e)}
             />
-            <button onClick={() => loadOnClick(aSave)}>Load</button>
-            <button onClick={() => deleteSaveOnClick(aSave)}>delete</button>
+            <EditIcon id="edit-save-button" />
+            <div
+              onClick={() => loadOnClick(aSave)}
+              className="save-buttons"
+              id="load-button"
+            >
+              Load
+            </div>
+            <div
+              onClick={() => deleteSaveOnClick(aSave)}
+              className="save-buttons"
+              id="delete-button"
+            >
+              Delete <DeletePlayerIcon id="delete-icon" />
+            </div>
           </div>
         ))}
       </div>

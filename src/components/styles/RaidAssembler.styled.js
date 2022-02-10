@@ -6,8 +6,9 @@ import {
   MdRestartAlt,
   MdOutlineArrowDropDownCircle,
 } from "react-icons/md";
-import { RiDeleteBin2Line, RiEdit2Line } from "react-icons/ri";
+import { RiDeleteBin2Line, RiEdit2Line, RiSave3Fill } from "react-icons/ri";
 import { FcInfo } from "react-icons/fc";
+import { GiLoad } from "react-icons/gi";
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -446,7 +447,7 @@ export const StyledPlayer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     pointer-events: none;
   }
 
@@ -467,6 +468,7 @@ export const StyledPlayer = styled.div`
     font-weight: bold;
     background-color: transparent;
     width: 95%;
+    font-size: 0.9rem;
     box-sizing: border-box;
     caret-color: black;
     color: #fff;
@@ -1126,9 +1128,10 @@ export const StyledSaveMenu = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 300px;
+    justify-content: flex-start;
+    width: 350px;
+    height: 350px;
+    padding: 1rem;
     background-color: black;
     border: 1px solid grey;
     position: fixed;
@@ -1138,12 +1141,69 @@ export const StyledSaveMenu = styled.div`
     left: 0;
     right: 0;
     text-align: center;
+    .save-menu-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 3rem;
+      color: white;
+      background-color: ${COLORS.primary};
+    }
     .one-save {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
       width: 100%;
+      background-color: black;
+      margin-top: 1rem;
+      border: 1px solid grey;
+      padding: 5px;
 
+      .save-slot-number {
+        color: grey;
+        margin-right: 5px;
+        width: 3.5rem;
+      }
+      .save-buttons {
+        border: none;
+        color: white;
+        padding: 5px;
+        background-color: ${COLORS.primary};
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+          background-color: ${COLORS.fadedPrimary};
+        }
+      }
+      #save-button {
+      }
+      #load-button {
+        margin-left: 7px;
+      }
+      #edit-save-button {
+        color: grey;
+        width: 3rem;
+        margin-right: 2px;
+        margin-left: 2px;
+      }
+      #delete-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        #delete-icon {
+          color: white;
+          height: 1rem;
+        }
+      }
       .save-text {
+        background-color: black;
+        color: grey;
+        border: none;
+        text-align: center;
         padding: 5px;
         width: 100%;
       }
@@ -1237,5 +1297,11 @@ export const InfoIcon = styled(FcInfo)`
 export const DropUpArrow = styled(MdOutlineArrowDropDownCircle)`
   transform: rotate(180deg);
   color: black;
+  font-size: 1.7em;
+`;
+export const SaveIcon = styled(RiSave3Fill)`
+  font-size: 1.7em;
+`;
+export const LoadIcon = styled(GiLoad)`
   font-size: 1.7em;
 `;
