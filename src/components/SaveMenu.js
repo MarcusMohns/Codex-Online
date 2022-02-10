@@ -18,8 +18,8 @@ const SaveMenu = ({
   setSaveMenuOpen,
 }) => {
   return (
-    <StyledSaveMenu>
-      <div className="save-menu">
+    <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
+      <div className="save-menu" onClick={(e) => e.stopPropagation()}>
         {saves.map((aSave) => (
           <div className="one-save" key={aSave}>
             <button onClick={() => saveOnClick(aSave)}>Save</button>

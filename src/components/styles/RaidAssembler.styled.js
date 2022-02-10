@@ -1144,7 +1144,6 @@ export const StyledSaveMenu = styled.div`
       width: 100%;
 
       .save-text {
-        color: white;
         padding: 5px;
         width: 100%;
       }

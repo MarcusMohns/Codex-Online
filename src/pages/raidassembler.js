@@ -295,25 +295,31 @@ const RaidAssembler = () => {
   };
   const deleteSaveOnClick = (saveName) => {
     const saveNameInput = document.querySelector(`#${saveName}`);
-    saveNameInput.value = "EMPTY";
-    localStorage.removeItem(saveName);
+    if (saveNameInput) {
+      // save exists
+      saveNameInput.value = "EMPTY";
+      localStorage.removeItem(saveName);
+    }
   };
   const editSaveOnChange = (saveName, e) => {
-    console.log(e);
     const newState = JSON.parse(localStorage.getItem(saveName));
-    newState.name = e.target.value;
-    const newSave = JSON.stringify(newState);
-    localStorage.setItem(saveName, newSave);
+    if (newState) {
+      // save exists
+      newState.name = e.target.value;
+      const newSave = JSON.stringify(newState);
+      localStorage.setItem(saveName, newSave);
+    }
   };
 
   const saveOnClick = (saveName) => {
     const saveNameInput = document.querySelector(`#${saveName}`);
-
+    // turn state into JSON
     const savedRaid = JSON.stringify(raid);
     const savedBuffs = JSON.stringify(buffs);
     const savedUtils = JSON.stringify(utilities);
     const savedCount = JSON.stringify(raidCount);
 
+    // handles the displayed name of the save
     let newSaveName = "";
     saveNameInput.value === "EMPTY"
       ? (newSaveName = new Date())
@@ -331,19 +337,19 @@ const RaidAssembler = () => {
     localStorage.setItem(saveName, saveOne);
   };
   const loadOnClick = (loadName) => {
-    // const LoadNameInput = document.querySelector(`#${loadName}`);
-    // LoadNameInput.value !== "EMPTY" && (LoadNameInput.value = "EMPTY");
-
     const newState = JSON.parse(localStorage.getItem(loadName));
-    const newRaid = JSON.parse(newState.raid);
-    const newBuffs = JSON.parse(newState.buffs);
-    const newUtilities = JSON.parse(newState.utils);
-    const newCount = JSON.parse(newState.count);
+    if (newState) {
+      // save exists
+      const newRaid = JSON.parse(newState.raid);
+      const newBuffs = JSON.parse(newState.buffs);
+      const newUtilities = JSON.parse(newState.utils);
+      const newCount = JSON.parse(newState.count);
 
-    setRaid(newRaid);
-    setBuffs({ type: "load", value: newBuffs });
-    setUtilities({ type: "load", value: newUtilities });
-    setCount(newCount);
+      setRaid(newRaid);
+      setBuffs({ type: "load", value: newBuffs });
+      setUtilities({ type: "load", value: newUtilities });
+      setCount(newCount);
+    }
   };
 
   const handleCount = (player, status) => {
