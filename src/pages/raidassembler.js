@@ -17,6 +17,7 @@ import {
   ContentHeader,
   RaidContentHeader,
   NoPlayersText,
+  SaveIcon,
 } from "../components/styles/RaidAssembler.styled";
 
 const { v4: uuidv4 } = require("uuid");
@@ -320,9 +321,11 @@ const RaidAssembler = () => {
     const savedCount = JSON.stringify(raidCount);
 
     // handles the displayed name of the save
+    const date = new Date();
+    const curDate = `${date.getDay()}/${date.getMonth()}-${date.getFullYear()}`;
     let newSaveName = "";
     saveNameInput.value === "EMPTY"
-      ? (newSaveName = new Date())
+      ? (newSaveName = `(${raidCount[0]}/25) - ${curDate}`)
       : (newSaveName = saveNameInput.value);
 
     const saveOne = JSON.stringify({
@@ -492,9 +495,9 @@ const RaidAssembler = () => {
             {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
           </div>
           <div className="btn-container">
-            <button onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
-              Saves
-            </button>
+            <AddPlayerButton onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
+              Saves <SaveIcon />
+            </AddPlayerButton>
             <AddPlayerButton onClick={handleRightMenuToggle}>
               Add a Player <span id="plus-sign">+</span>
             </AddPlayerButton>
