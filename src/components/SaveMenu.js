@@ -12,20 +12,26 @@ const saveExist = (aSave) => {
 const SaveMenu = ({
   saveOnClick,
   loadOnClick,
+  editSaveOnChange,
+  deleteSaveOnClick,
   saveMenuOpen,
   setSaveMenuOpen,
 }) => {
   return (
-    <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
+    <StyledSaveMenu>
       <div className="save-menu">
         {saves.map((aSave) => (
           <div className="one-save" key={aSave}>
             <button onClick={() => saveOnClick(aSave)}>Save</button>
-            <div className="save-text"> {saveExist(aSave)} </div>
+            <input
+              type="text"
+              className="save-text"
+              id={aSave}
+              defaultValue={saveExist(aSave)}
+              onChange={(e) => editSaveOnChange(aSave, e)}
+            />
             <button onClick={() => loadOnClick(aSave)}>Load</button>
-            <button onClick={() => localStorage.removeItem(aSave)}>
-              delete
-            </button>
+            <button onClick={() => deleteSaveOnClick(aSave)}>delete</button>
           </div>
         ))}
       </div>

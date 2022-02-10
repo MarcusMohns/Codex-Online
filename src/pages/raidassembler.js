@@ -293,24 +293,47 @@ const RaidAssembler = () => {
       setUtilities({ type: "add", name: id, value: newUtility });
     }
   };
+  const deleteSaveOnClick = (saveName) => {
+    const saveNameInput = document.querySelector(`#${saveName}`);
+    saveNameInput.value = "EMPTY";
+    localStorage.removeItem(saveName);
+  };
+  const editSaveOnChange = (saveName, e) => {
+    console.log(e);
+    const newState = JSON.parse(localStorage.getItem(saveName));
+    newState.name = e.target.value;
+    const newSave = JSON.stringify(newState);
+    localStorage.setItem(saveName, newSave);
+  };
 
   const saveOnClick = (saveName) => {
+    const saveNameInput = document.querySelector(`#${saveName}`);
+
     const savedRaid = JSON.stringify(raid);
     const savedBuffs = JSON.stringify(buffs);
     const savedUtils = JSON.stringify(utilities);
     const savedCount = JSON.stringify(raidCount);
 
+    let newSaveName = "";
+    saveNameInput.value === "EMPTY"
+      ? (newSaveName = new Date())
+      : (newSaveName = saveNameInput.value);
+
     const saveOne = JSON.stringify({
-      name: saveName,
+      name: newSaveName,
       raid: savedRaid,
       buffs: savedBuffs,
       utils: savedUtils,
       count: savedCount,
     });
 
+    saveNameInput.value = newSaveName;
     localStorage.setItem(saveName, saveOne);
   };
   const loadOnClick = (loadName) => {
+    // const LoadNameInput = document.querySelector(`#${loadName}`);
+    // LoadNameInput.value !== "EMPTY" && (LoadNameInput.value = "EMPTY");
+
     const newState = JSON.parse(localStorage.getItem(loadName));
     const newRaid = JSON.parse(newState.raid);
     const newBuffs = JSON.parse(newState.buffs);
@@ -435,6 +458,8 @@ const RaidAssembler = () => {
         <SaveMenu
           saveOnClick={saveOnClick}
           loadOnClick={loadOnClick}
+          editSaveOnChange={editSaveOnChange}
+          deleteSaveOnClick={deleteSaveOnClick}
           saveMenuOpen={saveMenuOpen}
           setSaveMenuOpen={setSaveMenuOpen}
         />
