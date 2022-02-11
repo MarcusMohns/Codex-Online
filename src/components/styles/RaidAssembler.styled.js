@@ -322,7 +322,7 @@ export const RaidContainer = styled.section`
   background-color: ${COLORS.primaryTransparent};
   min-width: 100%;
   max-width: 100%;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
 
   }
@@ -890,7 +890,6 @@ export const UtilityContainer = styled.section`
   flex-wrap: wrap;
   background-color: ${COLORS.fadedBackground};
   padding: 1rem;
-  border-radius: 0.5rem;
   min-height: 100%;
   min-width: 100%;
   height: auto;
@@ -972,30 +971,22 @@ export const RaidContentHeader = styled.div`
     display: flex;
     justify-self: flex-end;
   }
-  .raid-status-container {
-    display: flex;
-    margin-left: 2px;
-    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+  #raid-saves-btn {
+    margin-left: 5px;
+  }
+  .raid-count {
+    margin-right: auto;
+    justify-self: flex-start;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
 
-    .raid-count {
-      margin-right: 1rem;
-      font-size: 1.1rem;
-    }
+  .role-count {
+    margin-right: auto;
   }
 
   @media (min-width: 1200px) {
     height: 3rem;
-
-    .raid-status-container {
-      display: flex;
-
-      .raid-count {
-        margin-right: 1rem;
-        margin-left: 1rem;
-        font-size: 1.1rem;
-      }
-    }
   }
 `;
 
@@ -1065,7 +1056,7 @@ export const GroupTitle = styled.div`
     }
   }
 `;
-export const AddPlayerButton = styled.div`
+export const RaidHeaderButton = styled.div`
   display: flex;
   flex-direction: row;
   cursor: pointer;
@@ -1292,7 +1283,7 @@ export const EditIcon = styled(RiEdit2Line)`
 `;
 export const InfoIcon = styled(FcInfo)`
   color: black;
-  font-size: 1.5em;
+  font-size: 1.7em;
 `;
 export const DropUpArrow = styled(MdOutlineArrowDropDownCircle)`
   transform: rotate(180deg);

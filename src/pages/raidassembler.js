@@ -12,7 +12,7 @@ import {
   BuffContainer,
   ArrowLeft,
   ResetIcon,
-  AddPlayerButton,
+  RaidHeaderButton,
   UtilityContainer,
   ContentHeader,
   RaidContentHeader,
@@ -490,17 +490,20 @@ const RaidAssembler = () => {
 
       <RaidContainer className="raid-container">
         <RaidContentHeader>
-          <div className="raid-status-container">
-            <p className="raid-count">{raidCount[0]} / 25 </p>
+          <RaidHeaderButton
+            onClick={() => setSaveMenuOpen(!saveMenuOpen)}
+            id="raid-saves-btn"
+          >
+            Saves <SaveIcon />
+          </RaidHeaderButton>
+          <p className="raid-count">{raidCount[0]} / 25 </p>
+          <p className="role-count">
             {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
-          </div>
+          </p>
           <div className="btn-container">
-            <AddPlayerButton onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
-              Saves <SaveIcon />
-            </AddPlayerButton>
-            <AddPlayerButton onClick={handleRightMenuToggle}>
+            <RaidHeaderButton onClick={handleRightMenuToggle}>
               Add a Player <span id="plus-sign">+</span>
-            </AddPlayerButton>
+            </RaidHeaderButton>
             <ResetIcon onClick={resetRaid} />
           </div>
         </RaidContentHeader>
