@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/home";
 import About from "./pages/about";
 import RaidAssembler from "./pages/raidassembler";
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/arenapointcalculator" component={Arenapointcalculator} />
         <Route path="/gemfinder" component={gemfinder} />
       </Switch>
+      <Footer />
     </Router>
   );
 };
