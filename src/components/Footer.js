@@ -6,7 +6,6 @@ const StyledFooter = styled.footer`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  align-self: flex-end;
   height: 75px;
   background-color: ${COLORS.fadedGrey};
   box-shadow: 0 0 0.2rem ${COLORS.fadedGrey};
