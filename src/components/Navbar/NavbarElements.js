@@ -19,9 +19,8 @@ export const Nav = styled.nav`
     position: sticky;
     justify-content: space-evenly;
     top: 0px;
-    background-color: ${(props) =>
-      props.shrunk ? `${COLORS.primary}` : `${COLORS.primaryTransparent}`};
-    height: ${(props) => (props.shrunk ? `75px` : `100px`)};
+
+    height: ${(props) => (props.shrunk ? `60px` : `100px`)};
   }
 
   .profile-menu {
