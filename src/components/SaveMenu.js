@@ -22,6 +22,7 @@ const SaveMenu = ({
   loadOnClick,
   editSaveOnChange,
   deleteSaveOnClick,
+  saveOnClickToFile,
   saveMenuOpen,
   setSaveMenuOpen,
 }) => {
@@ -29,6 +30,9 @@ const SaveMenu = ({
     <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
       <div className="save-menu" onClick={(e) => e.stopPropagation()}>
         <h2 className="save-menu-header">Saves</h2>
+        <div style={{ color: "white" }} onClick={() => saveOnClickToFile()}>
+          download
+        </div>
         {saves.map((aSave, index) => (
           <div className="one-save" key={aSave}>
             <div className="save-slot-number">{index + 1}</div>
@@ -48,7 +52,10 @@ const SaveMenu = ({
             />
             <EditIcon id="edit-save-button" />
             <div
-              onClick={() => loadOnClick(aSave)}
+              onClick={() => {
+                loadOnClick(aSave);
+                setSaveMenuOpen(!saveMenuOpen);
+              }}
               className="save-buttons"
               id="load-button"
             >

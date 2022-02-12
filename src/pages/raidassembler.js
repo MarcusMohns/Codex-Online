@@ -311,7 +311,29 @@ const RaidAssembler = () => {
       localStorage.setItem(saveName, newSave);
     }
   };
+  const saveOnClickToFile = () => {
+    const savedRaid = JSON.stringify(raid);
+    const savedBuffs = JSON.stringify(buffs);
+    const savedUtils = JSON.stringify(utilities);
+    const savedCount = JSON.stringify(raidCount);
 
+    const data = JSON.stringify({
+      name: `${raidCount[0]}/25 - Saved Raid`,
+      raid: savedRaid,
+      buffs: savedBuffs,
+      utils: savedUtils,
+      count: savedCount,
+    });
+    let c = document.createElement("a");
+    c.download = `${raidCount[0]}/25 - Saved Raid`;
+
+    const t = new Blob([data], {
+      type: "text/plain",
+    });
+
+    c.href = window.URL.createObjectURL(t);
+    c.click();
+  };
   const saveOnClick = (saveName) => {
     const saveNameInput = document.querySelector(`#${saveName}`);
     // turn state into JSON
@@ -469,6 +491,7 @@ const RaidAssembler = () => {
           loadOnClick={loadOnClick}
           editSaveOnChange={editSaveOnChange}
           deleteSaveOnClick={deleteSaveOnClick}
+          saveOnClickToFile={saveOnClickToFile}
           saveMenuOpen={saveMenuOpen}
           setSaveMenuOpen={setSaveMenuOpen}
         />
