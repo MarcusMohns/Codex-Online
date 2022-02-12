@@ -343,6 +343,7 @@ const RaidAssembler = () => {
     fileSelector.addEventListener("change", () => {
       let files = fileSelector.files;
       if (files.length === 0) return;
+      if (files[0].type !== "text/plain") return;
 
       const file = files[0];
       let reader = new FileReader();
