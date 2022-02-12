@@ -23,6 +23,7 @@ const SaveMenu = ({
   editSaveOnChange,
   deleteSaveOnClick,
   saveOnClickToFile,
+  loadOnClickToFile,
   saveMenuOpen,
   setSaveMenuOpen,
 }) => {
@@ -33,6 +34,16 @@ const SaveMenu = ({
         <div style={{ color: "white" }} onClick={() => saveOnClickToFile()}>
           download
         </div>
+        <div
+          style={{ color: "white" }}
+          onClick={() => {
+            loadOnClickToFile();
+            setSaveMenuOpen(!saveMenuOpen);
+          }}
+        >
+          upload
+        </div>
+
         {saves.map((aSave, index) => (
           <div className="one-save" key={aSave}>
             <div className="save-slot-number">{index + 1}</div>

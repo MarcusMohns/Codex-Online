@@ -334,6 +334,41 @@ const RaidAssembler = () => {
     c.href = window.URL.createObjectURL(t);
     c.click();
   };
+
+  const loadOnClickToFile = () => {
+    const fileSelector = document.createElement("input");
+    fileSelector.setAttribute("type", "file");
+    fileSelector.click();
+
+    fileSelector.addEventListener("change", () => {
+      let files = fileSelector.files;
+      if (files.length === 0) return;
+
+      const file = files[0];
+      let reader = new FileReader();
+
+      reader.onload = (e) => {
+        const file = e.target.result;
+        try {
+          const newState = JSON.parse(file);
+          const newRaid = JSON.parse(newState.raid);
+          const newBuffs = JSON.parse(newState.buffs);
+          const newUtilities = JSON.parse(newState.utils);
+          const newCount = JSON.parse(newState.count);
+
+          setRaid(newRaid);
+          setBuffs({ type: "load", value: newBuffs });
+          setUtilities({ type: "load", value: newUtilities });
+          setCount(newCount);
+        } catch {
+          console.error("could not load");
+        }
+      };
+
+      reader.onerror = (e) => alert(e.target.error.name);
+      reader.readAsText(file);
+    });
+  };
   const saveOnClick = (saveName) => {
     const saveNameInput = document.querySelector(`#${saveName}`);
     // turn state into JSON
@@ -492,6 +527,7 @@ const RaidAssembler = () => {
           editSaveOnChange={editSaveOnChange}
           deleteSaveOnClick={deleteSaveOnClick}
           saveOnClickToFile={saveOnClickToFile}
+          loadOnClickToFile={loadOnClickToFile}
           saveMenuOpen={saveMenuOpen}
           setSaveMenuOpen={setSaveMenuOpen}
         />
