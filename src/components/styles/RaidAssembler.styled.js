@@ -6,7 +6,13 @@ import {
   MdRestartAlt,
   MdOutlineArrowDropDownCircle,
 } from "react-icons/md";
-import { RiDeleteBin2Line, RiEdit2Line, RiSave3Fill } from "react-icons/ri";
+import {
+  RiDeleteBin2Line,
+  RiEdit2Line,
+  RiSave3Fill,
+  RiDownload2Fill,
+  RiUpload2Fill,
+} from "react-icons/ri";
 import { FcInfo } from "react-icons/fc";
 import { GiLoad } from "react-icons/gi";
 import COLORS from "../../components";
@@ -1120,9 +1126,8 @@ export const StyledSaveMenu = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 350px;
-    height: 350px;
-    padding: 1rem;
+    width: max-content;
+    height: 400px;
     background-color: black;
     border: 1px solid grey;
     position: fixed;
@@ -1141,12 +1146,57 @@ export const StyledSaveMenu = styled.div`
       color: white;
       background-color: ${COLORS.primary};
     }
+
+    .save-menu-footer {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      width: 100%;
+      .save-menu-footer-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 5px;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      #save-to-disk-button {
+        background-color: ${COLORS.primary};
+
+        &:hover {
+          background-color: ${COLORS.druid}; // FIX
+        }
+      }
+      #load-from-disk-button {
+        background-color: ${COLORS.primary};
+
+        &:hover {
+          background-color: ${COLORS.druid}; // FIX
+        }
+      }
+
+      #delete-all-saves-button {
+        background-color: ${COLORS.deathKnight};
+
+        &:hover {
+          background-color: ${COLORS.druid}; // FIX
+        }
+
+        #delete-icon {
+          color: white;
+        }
+      }
+    }
     .one-save {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      width: 90%;
       background-color: black;
       margin-top: 1rem;
       border: 1px solid grey;
@@ -1184,6 +1234,7 @@ export const StyledSaveMenu = styled.div`
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        background-color: ${COLORS.deathKnight};
         margin-left: 10px;
         #delete-icon {
           color: white;
@@ -1295,4 +1346,10 @@ export const SaveIcon = styled(RiSave3Fill)`
 `;
 export const LoadIcon = styled(GiLoad)`
   font-size: 1.7em;
+`;
+export const DownloadIcon = styled(RiDownload2Fill)`
+  font-size: 1.3em;
+`;
+export const UploadIcon = styled(RiUpload2Fill)`
+  font-size: 1.3em;
 `;

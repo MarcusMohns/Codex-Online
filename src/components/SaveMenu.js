@@ -1,5 +1,10 @@
 import { StyledSaveMenu } from "./styles/RaidAssembler.styled";
-import { DeletePlayerIcon, EditIcon } from "./styles/RaidAssembler.styled";
+import {
+  DeletePlayerIcon,
+  EditIcon,
+  DownloadIcon,
+  UploadIcon,
+} from "./styles/RaidAssembler.styled";
 
 const saves = [
   "saveSlotOne",
@@ -31,18 +36,6 @@ const SaveMenu = ({
     <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
       <div className="save-menu" onClick={(e) => e.stopPropagation()}>
         <h2 className="save-menu-header">Saves</h2>
-        <div style={{ color: "white" }} onClick={() => saveOnClickToFile()}>
-          download
-        </div>
-        <div
-          style={{ color: "white" }}
-          onClick={() => {
-            loadOnClickToFile();
-            setSaveMenuOpen(!saveMenuOpen);
-          }}
-        >
-          upload
-        </div>
 
         {saves.map((aSave, index) => (
           <div className="one-save" key={aSave}>
@@ -81,6 +74,34 @@ const SaveMenu = ({
             </div>
           </div>
         ))}
+        <div className="save-menu-footer">
+          <div
+            id="save-to-disk-button"
+            className="save-menu-footer-buttons"
+            onClick={() => saveOnClickToFile()}
+          >
+            Save to Disk... <DownloadIcon />
+          </div>
+
+          <div
+            className="save-menu-footer-buttons"
+            id="load-from-disk-button"
+            onClick={() => {
+              loadOnClickToFile();
+              setSaveMenuOpen(!saveMenuOpen);
+            }}
+          >
+            Load from Disk... <UploadIcon />
+          </div>
+
+          <div
+            className="save-menu-footer-buttons"
+            id="delete-all-saves-button"
+          >
+            Delete All
+            <DeletePlayerIcon id="delete-icon" />
+          </div>
+        </div>
       </div>
     </StyledSaveMenu>
   );
