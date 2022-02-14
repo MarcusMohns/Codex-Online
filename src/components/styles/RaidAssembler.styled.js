@@ -413,14 +413,18 @@ export const StyledPlayer = styled.div`
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
   color: #fff;
   background: ${(props) => props.background};
-  border: 1px solid black;
+  border: 2px solid black;
   cursor: pointer;
-  margin: 3px;
+  margin: 2px;
   font-size: 0.8rem;
   min-height: 70px;
   font-weight: 800;
   letter-spacing: 1px;
-
+  .role-img {
+    position: absolute;
+    right: 2px;
+    bottom: 0;
+  }
   .player-tooltip-container {
     position: relative;
     width: 100%;
