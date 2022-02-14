@@ -551,7 +551,10 @@ const RaidAssembler = () => {
       <RaidContainer className="raid-container">
         <RaidContentHeader>
           <RaidHeaderButton
-            onClick={() => setSaveMenuOpen(!saveMenuOpen)}
+            onClick={() => {
+              setSaveMenuOpen(!saveMenuOpen);
+              setAddPlayerMenu(false);
+            }}
             id="raid-saves-btn"
           >
             Saves <SaveIcon />

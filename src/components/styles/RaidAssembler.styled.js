@@ -453,7 +453,7 @@ export const StyledPlayer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     pointer-events: none;
   }
 
@@ -1119,7 +1119,7 @@ export const StyledSaveMenu = styled.div`
   width: 100vw;
   left: 0;
   top: 0%;
-  z-index: 1;
+  z-index: 3;
 
   .save-menu {
     display: flex;

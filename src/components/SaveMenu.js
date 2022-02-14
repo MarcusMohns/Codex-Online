@@ -22,6 +22,13 @@ const saveExist = (aSave) => {
   }
 };
 
+const deleteAllSavesOnClick = () => {
+  localStorage.clear();
+  saves.map((save) => {
+    return (document.querySelector(`#${save}`).value = "EMPTY");
+  });
+};
+
 const SaveMenu = ({
   saveOnClick,
   loadOnClick,
@@ -97,8 +104,9 @@ const SaveMenu = ({
           <div
             className="save-menu-footer-buttons"
             id="delete-all-saves-button"
+            onClick={() => deleteAllSavesOnClick()}
           >
-            Delete All
+            Delete All Saves
             <DeletePlayerIcon id="delete-icon" />
           </div>
         </div>
