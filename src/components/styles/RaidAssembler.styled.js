@@ -1163,19 +1163,20 @@ export const StyledSaveMenu = styled.div`
         padding: 5px;
         border-radius: 2px;
         cursor: pointer;
+        user-select: none;
       }
       #save-to-disk-button {
         background-color: ${COLORS.primary};
 
         &:hover {
-          background-color: ${COLORS.druid}; // FIX
+          background-color: ${COLORS.fadedPrimary}; // FIX
         }
       }
       #load-from-disk-button {
         background-color: ${COLORS.primary};
 
         &:hover {
-          background-color: ${COLORS.druid}; // FIX
+          background-color: ${COLORS.fadedPrimary}; // FIX
         }
       }
 
@@ -1183,7 +1184,7 @@ export const StyledSaveMenu = styled.div`
         background-color: ${COLORS.deathKnight};
 
         &:hover {
-          background-color: ${COLORS.druid}; // FIX
+          background-color: ${COLORS.fadedRed};
         }
 
         #delete-icon {
@@ -1239,6 +1240,9 @@ export const StyledSaveMenu = styled.div`
         #delete-icon {
           color: white;
           height: 1rem;
+        }
+        &:hover {
+          background-color: ${COLORS.fadedRed};
         }
       }
       .save-text {

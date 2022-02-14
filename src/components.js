@@ -14,6 +14,8 @@ const COLORS = {
   highlight: "rgba(173,216,230,1)",
   fadedGrey: "rgba(169,169,169,0.20)",
   goldHighlight: "rgba(255,213,23,1)",
+  red: "rgb(196,30,58)",
+  fadedRed: "rgba(196,30,58,0.5)",
 
   deathKnight: "rgb(196,30,58)",
   druid: "rgb(255,124,10)",
