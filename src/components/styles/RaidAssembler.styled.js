@@ -1167,22 +1167,19 @@ export const StyledSaveMenu = styled.div`
       }
       #save-to-disk-button {
         background-color: ${COLORS.primary};
-
         &:hover {
-          background-color: ${COLORS.fadedPrimary}; // FIX
+          background-color: ${COLORS.fadedPrimary};
         }
       }
       #load-from-disk-button {
         background-color: ${COLORS.primary};
-
         &:hover {
-          background-color: ${COLORS.fadedPrimary}; // FIX
+          background-color: ${COLORS.fadedPrimary};
         }
       }
 
       #delete-all-saves-button {
         background-color: ${COLORS.deathKnight};
-
         &:hover {
           background-color: ${COLORS.fadedRed};
         }

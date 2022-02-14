@@ -60,8 +60,12 @@ const SaveMenu = ({
               id={aSave}
               defaultValue={saveExist(aSave)}
               onChange={(e) => editSaveOnChange(aSave, e)}
+              autoComplete="off"
             />
-            <EditIcon id="edit-save-button" />
+            <EditIcon
+              id="edit-save-button"
+              onClick={() => document.querySelector(`#${aSave}`).select()}
+            />
             <div
               onClick={() => {
                 loadOnClick(aSave);

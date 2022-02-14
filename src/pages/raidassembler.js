@@ -325,7 +325,7 @@ const RaidAssembler = () => {
       count: savedCount,
     });
     let c = document.createElement("a");
-    c.download = `${raidCount[0]}/25 - Saved Raid`;
+    c.download = data.name;
 
     const t = new Blob([data], {
       type: "text/plain",
