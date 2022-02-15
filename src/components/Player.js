@@ -54,7 +54,7 @@ const Player = ({
               <span className="placeholder">{player.text}</span>
             </label>
             <img id="class-img" src={player.image} alt="player in raid" />
-            <RaidRole classText={player.text} />
+            <RaidRole player={player} />
             {/* If warrior or paladin add the checkboxes to check what buffs they provide */}
             {(player.color === COLORS.paladin ||
               player.color === COLORS.warrior) && (
