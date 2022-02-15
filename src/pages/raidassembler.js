@@ -425,29 +425,15 @@ const RaidAssembler = () => {
 
     let count = [...raidCount];
 
-    const tanks = [
-      "Protection Paladin",
-      "Blood Death Knight",
-      "Feral Druid",
-      "Protection Warrior",
-    ];
-    const healers = [
-      "Discipline Priest",
-      "Holy Priest",
-      "Holy Paladin",
-      "Restoration Druid",
-      "Restoration Shaman",
-    ];
-    if (tanks.includes(player.text)) {
+    if (player.role === "tank") {
       count[1] += value;
-    } else if (healers.includes(player.text)) {
+    } else if (player.role === "healer") {
       count[2] += value;
     } else {
       count[3] += value;
     }
 
     count[0] += value;
-
     setCount(count);
   };
 
