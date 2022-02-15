@@ -14,6 +14,7 @@ const Group = ({
   focusName,
   editName,
   editBuffs,
+  playerRoleEdit,
 }) => {
   return (
     <GroupContainer>
@@ -34,6 +35,7 @@ const Group = ({
                 player={player}
                 index={index}
                 editBuffs={editBuffs}
+                playerRoleEdit={playerRoleEdit}
               />
             ))}
             {provided.placeholder}

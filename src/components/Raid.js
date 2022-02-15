@@ -10,6 +10,7 @@ const Raid = ({
   focusName,
   editName,
   editBuffs,
+  playerRoleEdit,
 }) => {
   return (
     <RaidGroupContainer>
@@ -30,6 +31,7 @@ const Raid = ({
               focusName={focusName}
               editName={editName}
               editBuffs={editBuffs}
+              playerRoleEdit={playerRoleEdit}
             />
           );
         })}

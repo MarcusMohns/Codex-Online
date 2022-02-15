@@ -19,6 +19,7 @@ const Player = ({
   editName,
   index,
   editBuffs,
+  playerRoleEdit,
 }) => {
   return (
     <Draggable draggableId={player.id} index={index}>
@@ -57,10 +58,16 @@ const Player = ({
             <RaidRole player={player} />
             {/* If warrior or paladin add the checkboxes to check what buffs they provide */}
             {(player.color === COLORS.paladin ||
-              player.color === COLORS.warrior) && (
+              player.color === COLORS.warrior ||
+              player.text === "Feral Druid" ||
+              player.text === "Blood Death Knight") && (
               <div className="player-tooltip-container">
                 <DropUpArrow id="player-info-icon" />
-                <PlayerCheckboxes player={player} editBuffs={editBuffs} />
+                <PlayerCheckboxes
+                  player={player}
+                  editBuffs={editBuffs}
+                  playerRoleEdit={playerRoleEdit}
+                />
               </div>
             )}
           </PlayerNameContainer>

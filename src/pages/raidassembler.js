@@ -227,8 +227,41 @@ const RaidAssembler = () => {
       setBuffs({ type: "add", name: id, value: newBuff });
     }
   };
+  const playerRoleEdit = async (player, e) => {
+    let newRole = "dps";
+    e.target.checked && (newRole = "tank");
+    const newPlayer = { ...player, role: newRole };
+    // if checked role is set to tank
 
-  const playerBuffsEdited = (player, buff, e) => {
+    const newRaid = { ...raid };
+    const newPlayers = newRaid.players.map((gamer) => {
+      return player.id === gamer.id && newPlayer;
+    });
+    // set raid.players
+
+    const newGroups = JSON.parse(JSON.stringify(raid.groups));
+    for (let group in newGroups) {
+      for (let gamer of newGroups[group].playerIds) {
+        player.id === gamer.id && (gamer.role = newRole);
+      }
+    }
+    setRaid({ ...raid, players: newPlayers, groups: newGroups });
+
+    let count = [...raidCount];
+    if (e.target.checked) {
+      // if checked remove 1 from dps count and add to tank count
+      count[1] += 1;
+      count[3] -= 1;
+    } else if (!e.target.checked) {
+      // if unchecked remove 1 from tank count and add to dps count
+      count[1] -= 1;
+      count[3] += 1;
+    } else {
+      console.error("error in playerRoleEdit when updating raid count");
+    }
+    setCount(count);
+  };
+  const playerBuffsEdit = (player, buff, e) => {
     const playerArray = [...raid.players];
     let newPlayers;
     let newBuff = {
@@ -263,7 +296,7 @@ const RaidAssembler = () => {
       setBuffs({ type: "edit", id: player.id, value: newBuff });
     } else {
       return console.error(
-        "unexpected missing checkbox value in playerBuffsEdited func"
+        "unexpected missing checkbox value in playerBuffsEdit func"
       );
     }
     const newGroups = JSON.parse(JSON.stringify(raid.groups));
@@ -325,7 +358,7 @@ const RaidAssembler = () => {
       count: savedCount,
     });
     let c = document.createElement("a");
-    c.download = data.name;
+    c.download = `${raidCount[0]}/25 - Saved Raid`;
 
     const t = new Blob([data], {
       type: "text/plain",
@@ -414,7 +447,9 @@ const RaidAssembler = () => {
   };
 
   const handleCount = (player, status) => {
+    let count = [...raidCount];
     let value = 0;
+
     if (status === "add") {
       value = 1;
     } else if (status === "delete") {
@@ -422,8 +457,6 @@ const RaidAssembler = () => {
     } else {
       console.error("unexpected value passed to handleCount");
     }
-
-    let count = [...raidCount];
 
     if (player.role === "tank") {
       count[1] += value;
@@ -577,7 +610,8 @@ const RaidAssembler = () => {
             onDelete={deletePlayer}
             focusName={focusName}
             editName={editName}
-            editBuffs={playerBuffsEdited}
+            editBuffs={playerBuffsEdit}
+            playerRoleEdit={playerRoleEdit}
             setRaid={setRaid}
             onDragEnd={onDragEnd}
           />
