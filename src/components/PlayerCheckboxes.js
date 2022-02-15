@@ -1,5 +1,12 @@
 import { StyledPlayerCheckboxes } from "./styles/RaidAssembler.styled";
 
+const tankIcon = (
+  <img src="images/Tank_icon.png" alt="shield" className="role-icon" />
+);
+const dpsIcon = (
+  <img src="images/DPS_icon.png" alt="sword" className="role-icon" />
+);
+
 const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
   if (player.text === "Feral Druid" || player.text === "Blood Death Knight") {
     return (
@@ -17,13 +24,16 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
             role:
           </h2>
         )}
-
-        <input
-          type="checkbox"
-          className="toggle-role"
-          defaultChecked={player.role === "tank" ? true : false}
-          onClick={(e) => playerRoleEdit(player, e)}
-        />
+        <div className="role-toggler-container">
+          DPS{dpsIcon}
+          <input
+            type="checkbox"
+            className="toggle-role"
+            defaultChecked={player.role === "tank" ? true : false}
+            onClick={(e) => playerRoleEdit(player, e)}
+          />
+          {tankIcon}Tank
+        </div>
       </StyledPlayerCheckboxes>
     );
   } else {

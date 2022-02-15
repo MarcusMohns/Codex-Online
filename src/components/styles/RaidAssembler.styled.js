@@ -4,7 +4,7 @@ import { CgChevronLeftO } from "react-icons/cg";
 import {
   MdOutlineAddBox,
   MdRestartAlt,
-  MdOutlineArrowDropDownCircle,
+  MdOutlineSettings,
 } from "react-icons/md";
 import {
   RiDeleteBin2Line,
@@ -442,11 +442,11 @@ export const StyledPlayer = styled.div`
     #player-info-icon {
       position: absolute;
       left: 2px;
-      bottom: 0;
+      bottom: 1px;
       visibility: hidden;
       cursor: pointer;
       &:hover {
-        transform: scale(1.2) rotate(180deg);
+        transform: scale(1.2);
       }
     }
   }
@@ -610,6 +610,19 @@ export const StyledPlayerCheckboxes = styled.div`
       color: ${(props) => props.color};
     }
   }
+
+  .role-toggler-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .role-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   .player-checkbox-container {
     display: flex;
     flex-direction: column;
@@ -655,7 +668,7 @@ export const StyledPlayerCheckboxes = styled.div`
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #707070;
+    background-color: ${COLORS.deathKnight};
     transition: background-color ease 0.3s;
   }
 
@@ -670,20 +683,14 @@ export const StyledPlayerCheckboxes = styled.div`
     left: 2px;
     top: 2px;
     border-radius: 50%;
-    font: 10px/28px Helvetica;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-indent: -22px;
-    word-spacing: 37px;
     color: #fff;
-    text-shadow: -1px -1px rgba(0, 0, 0, 0.15);
     white-space: nowrap;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
   }
 
   .toggle-role:checked {
-    background-color: #4cd964;
+    background-color: ${COLORS.primary};
   }
 
   .toggle-role:checked:before {
@@ -1389,10 +1396,9 @@ export const InfoIcon = styled(FcInfo)`
   color: black;
   font-size: 1.7em;
 `;
-export const DropUpArrow = styled(MdOutlineArrowDropDownCircle)`
-  transform: rotate(180deg);
+export const SettingsIcon = styled(MdOutlineSettings)`
   color: black;
-  font-size: 1.7em;
+  font-size: 1.6em;
 `;
 export const SaveIcon = styled(RiSave3Fill)`
   font-size: 1.7em;

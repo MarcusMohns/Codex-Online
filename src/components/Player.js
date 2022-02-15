@@ -8,7 +8,7 @@ import {
   EditIcon,
   TinyContainer,
   PlayerNameContainer,
-  DropUpArrow,
+  SettingsIcon,
 } from "./styles/RaidAssembler.styled";
 import COLORS from "../components";
 
@@ -62,7 +62,7 @@ const Player = ({
               player.text === "Feral Druid" ||
               player.text === "Blood Death Knight") && (
               <div className="player-tooltip-container">
-                <DropUpArrow id="player-info-icon" />
+                <SettingsIcon id="player-info-icon" />
                 <PlayerCheckboxes
                   player={player}
                   editBuffs={editBuffs}
