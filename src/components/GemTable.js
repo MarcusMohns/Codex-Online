@@ -1,4 +1,4 @@
-import { FaSort } from "react-icons/fa";
+import { FaSort } from "@react-icons/all-files/fa/FaSort";
 
 const GemTable = ({ gems, onClick }) => {
   return (

@@ -1,20 +1,17 @@
 import styled from "styled-components";
-import { FaRegTimesCircle, FaRegCheckCircle } from "react-icons/fa";
-import { CgChevronLeftO } from "react-icons/cg";
-import {
-  MdOutlineAddBox,
-  MdRestartAlt,
-  MdOutlineSettings,
-} from "react-icons/md";
-import {
-  RiDeleteBin2Line,
-  RiEdit2Line,
-  RiSave3Fill,
-  RiDownload2Fill,
-  RiUpload2Fill,
-} from "react-icons/ri";
-import { FcInfo } from "react-icons/fc";
-import { GiLoad } from "react-icons/gi";
+import { FaRegTimesCircle } from "@react-icons/all-files/fa/FaRegTimesCircle";
+import { FaRegCheckCircle } from "@react-icons/all-files/fa/FaRegCheckCircle";
+import { CgChevronLeftO } from "@react-icons/all-files/cg/CgChevronLeftO";
+import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
+import { GiLoad } from "@react-icons/all-files/gi/GiLoad";
+import { RiSettings4Fill } from "@react-icons/all-files/ri/RiSettings4Fill";
+import { VscDebugRestart } from "@react-icons/all-files/vsc/VscDebugRestart";
+import { RiDeleteBin2Line } from "@react-icons/all-files/ri/RiDeleteBin2Line";
+import { RiEdit2Line } from "@react-icons/all-files/ri/RiEdit2Line";
+import { RiSave3Fill } from "@react-icons/all-files/ri/RiSave3Fill";
+import { RiDownload2Fill } from "@react-icons/all-files/ri/RiDownload2Fill";
+import { RiUpload2Fill } from "@react-icons/all-files/ri/RiUpload2Fill";
+
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -530,7 +527,6 @@ export const StyledPlayer = styled.div`
   }
   #delete-player-icon {
     display: flex;
-    font-weight: bold;
     font-size: 1.3rem;
     cursor: pointer;
     visibility: hidden;
@@ -1129,7 +1125,7 @@ export const RaidHeaderButton = styled.div`
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   align-items: center;
   justify-content: center;
-  background-color: ${COLORS.fadedHighlight};
+  background-color: ${COLORS.fadedGrey};
   color: ${COLORS.lightText};
   border-radius: 3px;
   margin-right: 1rem;
@@ -1146,7 +1142,7 @@ export const RaidHeaderButton = styled.div`
   }
 
   &:hover {
-    background-color: ${COLORS.highlight};
+    background-color: ${COLORS.fadedBackground};
   }
 `;
 export const RaidGroupContainer = styled.div`
@@ -1368,7 +1364,7 @@ export const ArrowLeft = styled(CgChevronLeftO)`
   z-index: 2;
 `;
 
-export const ResetIcon = styled(MdRestartAlt)`
+export const ResetIcon = styled(VscDebugRestart)`
   font-size: 2rem;
   cursor: pointer;
   color: white;
@@ -1379,11 +1375,7 @@ export const ResetIcon = styled(MdRestartAlt)`
     transform: scale(1.2);
   }
 `;
-export const AddPlayerIcon = styled(MdOutlineAddBox)`
-  font-size: 1.5em;
-  margin-left: 5px;
-  color: white;
-`;
+
 export const DeletePlayerIcon = styled(RiDeleteBin2Line)`
   color: black;
   font-size: 1.5em;
@@ -1396,7 +1388,7 @@ export const InfoIcon = styled(FcInfo)`
   color: black;
   font-size: 1.7em;
 `;
-export const SettingsIcon = styled(MdOutlineSettings)`
+export const SettingsIcon = styled(RiSettings4Fill)`
   color: black;
   font-size: 1.6em;
 `;

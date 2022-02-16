@@ -1,6 +1,6 @@
-import { FaBars } from "react-icons/fa";
 import { NavLink as Link } from "react-router-dom";
-import { CgProfile } from "react-icons/cg";
+import { CgProfile } from "@react-icons/all-files/cg/CgProfile";
+import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import styled from "styled-components";
 import COLORS from "../../components";
 
