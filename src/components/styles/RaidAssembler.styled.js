@@ -1062,7 +1062,7 @@ export const NoPlayersText = styled.p`
   justify-content: center;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
-  min-height: 425px;
+  min-height: 430px;
 `;
 
 export const PlayersContainer = styled.div`
@@ -1092,7 +1092,7 @@ export const GroupContainer = styled.div`
   background-color: ${COLORS.primaryTransparent};
 
   @media (min-width: 1200px) {
-    min-height: 423px;
+    min-height: 428px;
   }
 `;
 export const GroupTitle = styled.div`
