@@ -1,11 +1,6 @@
-import {
-  CategoryContainer,
-  StyledBuff,
-  StyledCategory,
-  CrossIcon,
-  CheckCircle,
-} from "./styles/RaidAssembler.styled";
-import Tooltip from "./Tooltip";
+import { CategoryContainer } from "./styles/RaidAssembler.styled";
+import Buff from "./Buff";
+import Category from "./Category";
 
 const BuffsAndCategory = ({ category, currentBuffs }) => {
   let newBuffs = [];
@@ -45,24 +40,19 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
   }
   return (
     <CategoryContainer>
-      <StyledCategory color={categoryColor}>
-        <Tooltip category={category} />
-        <img
-          src={category.image}
-          className="category-image"
-          alt={`${category.name}`}
-        />
-        <p className="category-name-text">{category.name}</p>
-        {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}
-      </StyledCategory>
+      <Category
+        category={category}
+        categoryColor={categoryColor}
+        name={category.name}
+        image={category.image}
+      />
       {newBuffs.map((buff) => (
-        <StyledBuff key={(buff.count, buff.name)}>
-          <p>
-            {" "}
-            {buff.count}x {buff.name}
-          </p>
-          <img src={buff.image} alt="buff icon" />
-        </StyledBuff>
+        <Buff
+          count={buff.count}
+          name={buff.name}
+          image={buff.image}
+          key={(buff.count, buff.name)}
+        />
       ))}
     </CategoryContainer>
   );
