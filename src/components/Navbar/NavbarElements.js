@@ -91,6 +91,7 @@ export const NavLink = styled(Link)`
 
   .logo {
     width: 50px;
+    height: 50px;
   }
 `;
 export const Bars = styled(FaBars)`

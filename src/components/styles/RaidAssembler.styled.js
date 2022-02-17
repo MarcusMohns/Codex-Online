@@ -187,6 +187,7 @@ export const StyledSpecButton = styled.div`
       border-radius: 50%;
       border: 2px solid grey;
       width: 1.3rem;
+      height: 1.3rem;
     }
   }
   @media (min-width: 765px) {
@@ -225,6 +226,7 @@ export const StyledSpecButton = styled.div`
         display: flex;
         margin-left: auto;
         width: 1.4rem;
+        height: 1.4rem;
       }
     }
   }
@@ -295,6 +297,7 @@ export const StyledClassToolTip = styled.div`
     .class-tooltip-image {
       display:flex;
       width: 1.2rem;
+      height:1.2rem;
     }
     .class-tooltip-buff-name {
       font-weight:400;
@@ -312,6 +315,7 @@ export const StyledClassToolTip = styled.div`
 
     .class-tooltip-image {
       width: 1.5rem;
+      height:1.5rem;
     }
   }
 `;
@@ -1329,14 +1333,17 @@ export const PlayerNameContainer = styled.div`
 
 export const CrossIcon = styled(FaRegTimesCircle)`
   color: red;
-  min-width: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   font-size: 1.5rem;
   animation-name: buffCategoryImage;
   animation-duration: 0.5s;
 `;
 export const CheckCircle = styled(FaRegCheckCircle)`
   color: green;
-  min-width: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+
   font-size: 1.5rem;
   animation-name: buffCategoryImage;
   animation-duration: 0.8s;
