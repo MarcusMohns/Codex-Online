@@ -1,5 +1,5 @@
 import { StyledClassToolTip } from "./styles/RaidAssembler.styled";
-
+import { memo } from "react";
 const ClassTooltip = ({ text, buffs, utility, color }) => {
   return (
     <StyledClassToolTip color={color}>
@@ -39,4 +39,4 @@ const ClassTooltip = ({ text, buffs, utility, color }) => {
   );
 };
 
-export default ClassTooltip;
+export default memo(ClassTooltip);
