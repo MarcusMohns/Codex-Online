@@ -144,6 +144,10 @@ export const StyledSpecButton = styled.div`
       }
     }
   }
+
+  &:active {
+    transform: scale(90%);
+  }
   .class-tooltip-container {
     #info-image {
       position: absolute;
@@ -177,11 +181,6 @@ export const StyledSpecButton = styled.div`
       display: none;
     }
 
-    &:active {
-      .specbutton-text {
-        transform: scale(90%);
-      }
-    }
     .specbutton-image {
       border-radius: 50%;
       border: 2px solid grey;
