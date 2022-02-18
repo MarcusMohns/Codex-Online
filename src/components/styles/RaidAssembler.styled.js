@@ -11,7 +11,6 @@ import { RiEdit2Line } from "@react-icons/all-files/ri/RiEdit2Line";
 import { RiSave3Fill } from "@react-icons/all-files/ri/RiSave3Fill";
 import { RiDownload2Fill } from "@react-icons/all-files/ri/RiDownload2Fill";
 import { RiUpload2Fill } from "@react-icons/all-files/ri/RiUpload2Fill";
-
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -335,6 +334,7 @@ export const RaidContainer = styled.section`
   }
 
   .raid-is-not-full {
+    position:relative;
     user-select:none;
     display: flex;
     width: 100%;
@@ -344,6 +344,7 @@ export const RaidContainer = styled.section`
     color: ${COLORS.lightText};
     transition: opacity 0.3s;
     opacity:0%;
+
   }
   .raid-is-full {
     user-select:none;
@@ -355,11 +356,8 @@ export const RaidContainer = styled.section`
     background-color: green;
     color: ${COLORS.lightText};
     width: 100%;
-    margin-top: 1px;
-    padding: 2px;
     transition: opacity 0.3s ease;
     opacity:100%;
-
 
   }
   .raid-is-full-warning {
@@ -372,8 +370,6 @@ export const RaidContainer = styled.section`
     background-color: green;
     color: ${COLORS.lightText};
     width: 100%;
-    margin-top: 1px;
-    padding: 2px;
     transition: opacity 0.3s ease;
     opacity:100%;
     animation-name: shake;
@@ -745,7 +741,6 @@ export const StyledBuff = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-between;
   font-size: 0.8rem;
   padding: 0.2rem;
