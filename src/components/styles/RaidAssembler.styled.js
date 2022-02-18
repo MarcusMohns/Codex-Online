@@ -755,6 +755,7 @@ export const StyledBuff = styled.div`
   margin: 1px;
   img {
     width: 25px;
+    height: 25px;
     border-radius: 20%;
     margin-left: 0.3rem;
     opacity: 0%;
