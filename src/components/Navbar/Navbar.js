@@ -25,16 +25,16 @@ const Navbar = () => {
       setShrunk((isShrunk) => {
         if (
           !isShrunk &&
-          (document.body.scrollTop > 70 ||
-            document.documentElement.scrollTop > 70)
+          (document.body.scrollTop > 100 ||
+            document.documentElement.scrollTop > 100)
         ) {
           return true;
         }
 
         if (
           isShrunk &&
-          document.body.scrollTop < 20 &&
-          document.documentElement.scrollTop < 20
+          document.body.scrollTop < 60 &&
+          document.documentElement.scrollTop < 60
         ) {
           return false;
         }
