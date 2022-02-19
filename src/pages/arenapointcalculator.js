@@ -92,18 +92,7 @@ function Arenapointcalculator() {
   return (
     <Main>
       <ArenaContainer>
-        <div className="textArea">
-          <h2>Arena Points Rewarded</h2>
-          <h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </h3>
-        </div>
+        <h2>Arena Points Rewarded</h2>
         <form
           onChange={ratingChange}
           onSelect={handleSelect}
@@ -123,7 +112,9 @@ function Arenapointcalculator() {
                 <td>
                   <input type="number" name="twos" />
                 </td>
-                <td className="twosResults">{formData.twos}</td>
+                <td className="results" id="twosResults">
+                  {formData.twos}
+                </td>
               </tr>
 
               <tr>
@@ -131,7 +122,9 @@ function Arenapointcalculator() {
                 <td>
                   <input type="number" name="threes" />
                 </td>
-                <td className="threesResults">{formData.threes}</td>
+                <td className="results" id="threesResults">
+                  {formData.threes}
+                </td>
               </tr>
 
               <tr>
@@ -139,7 +132,9 @@ function Arenapointcalculator() {
                 <td>
                   <input type="number" name="fives" />
                 </td>
-                <td className="fivesResults">{formData.fives}</td>
+                <td className="results" id="fivesResults">
+                  {formData.fives}
+                </td>
               </tr>
             </tbody>
           </table>
@@ -147,32 +142,21 @@ function Arenapointcalculator() {
       </ArenaContainer>
 
       <ArenaContainer>
-        <div className="textArea">
-          <h2>Arena Rating Required</h2>
-          <h3>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </h3>
-        </div>
+        <h2>Arena Rating Needed</h2>
         <form onChange={pointChange} onSelect={handleSelect} autoComplete="off">
           <table>
             <thead>
               <tr>
                 <th>Points needed</th>
                 <th>Bracket</th>
-                <th>Arena Rating</th>
+                <th>Arena Rating Needed</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td />
                 <th className="bracket-col">2v2</th>
-                <td className="twosRatingRequired">
+                <td className="results" id="twosRatingRequired">
                   {formData.twosRatingRequired}
                 </td>
               </tr>
@@ -182,7 +166,7 @@ function Arenapointcalculator() {
                   <input type="number" name="threes" />
                 </td>
                 <th className="bracket-col">3v3</th>
-                <td className="threesRatingRequired">
+                <td className="results" id="threesRatingRequired">
                   {formData.threesRatingRequired}
                 </td>
               </tr>
@@ -190,7 +174,7 @@ function Arenapointcalculator() {
               <tr>
                 <td />
                 <th className="bracket-col">5v5</th>
-                <td className="fivesRatingRequired">
+                <td className="results" id="fivesRatingRequired">
                   {formData.fivesRatingRequired}
                 </td>
               </tr>

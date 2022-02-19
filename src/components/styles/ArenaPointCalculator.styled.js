@@ -6,22 +6,23 @@ export const Main = styled.main`
   flex-direction: column;
   align-items: center;
   background-color: ${COLORS.fadedBackground};
-  flex-direction: column;
   box-sizing: border-box;
   max-width: 100vw;
-  max-height: 100vw;
-  min-height: 100%;
+  height: auto;
   margin: auto;
   margin-top: 20%;
+  margin-bottom: 20%;
   opacity: 90%;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-  padding: 3rem;
+  padding: 2rem;
 
   @media (min-width: 1200px) {
     align-items: center;
+    flex-direction: row;
     justify-content: top;
     max-width: 100vw;
     min-width: 75vw;
+    padding: 3rem;
   }
 
   @media screen and (min-width: 992px) {
@@ -33,74 +34,77 @@ export const ArenaContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${COLORS.offWhite};
-  margin-bottom: 3rem;
+  background-color: ${COLORS.fadedBackground};
   border-radius: 5px;
-  min-width: 80%;
-  max-width: 100%;
   padding: 0.8rem;
+  margin: 15px;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
+  flex: 1 0 40%;
 
-  .textArea {
+  h2 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.1);
-
-    h2 {
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-      background-color: ${COLORS.primary};
-      color: ${COLORS.lightText};
-      text-align: center;
-      letter-spacing: 1px;
-      padding: 1.2rem;
-      font-size: 1rem;
-    }
-    h3 {
-      padding: 2rem;
-      font-size: 1rem;
-    }
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    width: 100%;
+    background-color: ${COLORS.primary};
+    color: ${COLORS.offWhite};
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 6px -1px #000;
+    user-select: none;
   }
 
   table {
-    margin-top: 2rem;
     letter-spacing: 1px;
+    border-spacing: 0.5rem;
+
+    .results {
+      color: ${COLORS.goldHighlight};
+      font-size: 1.3rem;
+      height: 100%;
+      border: 1px solid grey;
+      border-radius: 5px;
+    }
+
+    thead {
+      tr {
+        th {
+          background-color: ${COLORS.primary};
+          color: ${COLORS.offWhite};
+          box-shadow: 0 2px 6px -1px #000;
+          border-radius: 5px;
+          user-select: none;
+          text-align: center;
+          vertical-align: center;
+        }
+      }
+    }
   }
   td,
   th {
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
-  }
-
-  td {
-    font-weight: 800;
+    color: white;
   }
 
   .bracket-col {
-    background-color: ${COLORS.highlight};
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
+    background-color: ${COLORS.fadedBackground};
+    height: 2.5rem;
   }
   input {
-    height: 1rem;
-    width: 8rem;
     padding: 0.5rem;
+    text-align: center;
+    border-radius: 5px;
   }
 
   @media (min-width: 1200px) {
-    align-items: top;
-    border-radius: 1rem;
-    max-width: 90%;
-
     table {
-      border-collapse: separate;
-      padding: 0.5rem;
-      box-shadow: 3px 5px 5px -2px rgba(0, 0, 0, 0.2);
-    }
-    input {
-      height: 0.5rem;
-      width: 8rem;
+      padding: 1rem;
+      box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.6);
     }
   }
 `;
