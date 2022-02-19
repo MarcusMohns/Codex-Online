@@ -39,7 +39,7 @@ export const ArenaContainer = styled.section`
   padding: 0.8rem;
   margin: 15px;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-  flex: 1 0 40%;
+  flex: 1 0 35%;
 
   h2 {
     display: flex;
@@ -57,12 +57,13 @@ export const ArenaContainer = styled.section`
   table {
     letter-spacing: 1px;
     border-spacing: 0.5rem;
+    border-radius: 5px;
+    background-color: ${COLORS.fadedBlack};
 
     .results {
       color: ${COLORS.goldHighlight};
       font-size: 1.3rem;
       height: 100%;
-      border: 1px solid grey;
       border-radius: 5px;
     }
 
