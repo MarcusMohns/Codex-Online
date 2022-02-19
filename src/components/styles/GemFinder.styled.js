@@ -63,7 +63,12 @@ export const CheckBoxContainer = styled.section`
     background-color: ${COLORS.primary};
     color: ${COLORS.offWhite};
     margin-bottom: 1rem;
+    user-select: none;
   }
+  .aCheckbox label {
+    user-select: none;
+  }
+
   .aCheckbox label,
   input {
     margin: 0.4rem;

@@ -232,6 +232,9 @@ export const StyledSpecButton = styled.div`
 
 export const StyledClassToolTip = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 100%;
   left: 0%;
@@ -241,9 +244,6 @@ export const StyledClassToolTip = styled.div`
   min-width: 100%;
   width:auto;
   padding: 0.5rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   cursor: default;
   background: #000;
   border: 1px solid #777;
@@ -403,17 +403,16 @@ export const StyledPlayer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+  min-height: 70px;
   color: #fff;
   background: ${(props) => props.background};
   border: 2px solid black;
   cursor: pointer;
   margin: 2px;
+  text-align: center;
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
   font-size: 0.8rem;
-  min-height: 70px;
   font-weight: 800;
   letter-spacing: 1px;
   .role-img {
@@ -466,20 +465,20 @@ export const StyledPlayer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     border: none;
     user-select: none;
     pointer-events: none;
     border-radius: 3px;
-    font-weight: bold;
     background-color: transparent;
     width: 95%;
-    font-size: 0.9rem;
     box-sizing: border-box;
     caret-color: black;
     color: #fff;
+    text-align: center;
     text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
   }
 
   .placeholder {
@@ -1087,7 +1086,7 @@ export const GroupContainer = styled.div`
   background-color: ${COLORS.primaryTransparent};
 
   @media (min-width: 1200px) {
-    min-height: 428px;
+    min-height: 443px;
   }
 `;
 export const GroupTitle = styled.div`

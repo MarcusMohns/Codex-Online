@@ -19,7 +19,6 @@ export const Nav = styled.nav`
     position: sticky;
     justify-content: space-evenly;
     top: 0px;
-
     height: ${(props) => (props.shrunk ? `60px` : `100px`)};
   }
 
