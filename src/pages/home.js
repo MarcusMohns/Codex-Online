@@ -1,9 +1,12 @@
-import { Container } from "../components/styles/Container.styled";
+import { Main, BackGround, HomeSection } from "../components/styles/HomeStyled";
 const Home = () => {
   return (
-    <Container>
-      <div>hey</div>
-    </Container>
+    <BackGround>
+      <Main>
+        <HomeSection />
+        <HomeSection />
+      </Main>
+    </BackGround>
   );
 };
 
