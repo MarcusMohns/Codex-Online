@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
@@ -17,6 +22,9 @@ const App = () => {
         <Route path="/raidassembler" component={RaidAssembler} />
         <Route path="/arenapointcalculator" component={Arenapointcalculator} />
         <Route path="/gemfinder" component={gemfinder} />
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
       </Switch>
       <Footer />
     </Router>
