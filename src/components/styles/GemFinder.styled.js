@@ -100,6 +100,9 @@ export const GemTableContainer = styled.section`
   max-width: 100%;
   min-width: 70%;
   font-size: 0.95rem;
+  overflow-y: scroll;
+  height: 50vw;
+  display: block;
   table {
     width: 100%;
     border-collapse: separate;
@@ -114,6 +117,9 @@ export const GemTableContainer = styled.section`
     padding: 1rem;
     background-color: ${COLORS.primary};
     user-select: none;
+    top: 0;
+    z-index: 2;
+    position: sticky;
   }
 
   tbody tr {

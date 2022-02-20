@@ -16,10 +16,10 @@ export const BackGround = styled.div`
 `;
 export const Main = styled.main`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   box-sizing: border-box;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-around;
   max-width: 100vw;
   min-width: 100%;
   min-height: 80%;
@@ -33,11 +33,11 @@ export const HomeSection = styled.section`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  border-radius: 10px;
   min-height: 100%;
   margin-top: 50px;
-  width: 50%;
   height: 500px;
-  width: 100%;
+  width: 40%;
   background-color: ${COLORS.background};
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
 `;
