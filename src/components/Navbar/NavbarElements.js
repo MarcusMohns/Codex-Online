@@ -15,6 +15,11 @@ export const Nav = styled.nav`
   z-index: 500;
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
 
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
   @media screen and (min-width: 768px) {
     position: sticky;
     justify-content: space-evenly;
@@ -76,21 +81,31 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  margin: 0 1rem;
   height: 100%;
+  padding: 7px 0;
   cursor: pointer;
   transition: all 0.2s ease-out;
-  &.active {
-    color: #256ce1;
-  }
-  &:hover,
-  &:focus {
-    color: #256ce1;
-  }
+  position: relative;
+  user-select: none;
 
-  .logo {
-    width: 50px;
-    height: 50px;
+  &:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: ${COLORS.fadedOffWhite};
+    transition: width 0.2s ease 0s, left 0.2s ease 0s;
+    box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
+    width: 0;
+  }
+  &:hover:after,
+  &.active:after {
+    width: 100%;
+    left: 0;
   }
 `;
 export const Bars = styled(FaBars)`

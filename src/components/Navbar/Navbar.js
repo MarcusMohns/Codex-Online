@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Nav,
   NavLink,
@@ -48,9 +49,9 @@ const Navbar = () => {
 
   return (
     <Nav shrunk={isShrunk}>
-      <NavLink to="/home">
+      <Link to="/home">
         <img src={"images/icon.png"} alt="logo" className="logo" />
-      </NavLink>
+      </Link>
 
       <Bars onClick={handleNavBarToggle} />
       <div
