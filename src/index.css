@@ -130,10 +130,7 @@ html {
 
 body {
   overflow: overlay;
-  background-color: black;
-  /* background-image: url("/src/images/background.png");
-  background-repeat: no-repeat;
-  background-position: top; */
+  background: linear-gradient(#212124, #151517);
 }
 
 /* custom scrollbar */
