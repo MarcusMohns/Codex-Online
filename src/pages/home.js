@@ -1,12 +1,9 @@
-import { Main, BackGround, HomeSection } from "../components/styles/HomeStyled";
+import { Main, HomeSection } from "../components/styles/HomeStyled";
 const Home = () => {
   return (
-    <BackGround>
-      <Main>
-        <HomeSection />
-        <HomeSection />
-      </Main>
-    </BackGround>
+    <Main>
+      <HomeSection />
+    </Main>
   );
 };
 
