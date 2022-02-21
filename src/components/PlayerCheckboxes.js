@@ -25,14 +25,14 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
           </h2>
         )}
         <div className="role-toggler-container">
-          DPS{dpsIcon}
+          <label className="role-select-label">DPS{dpsIcon}</label>
           <input
             type="checkbox"
             className="toggle-role"
             defaultChecked={player.role === "tank" ? true : false}
             onClick={(e) => playerRoleEdit(player, e)}
           />
-          {tankIcon}Tank
+          <label className="role-select-label">Tank{tankIcon}</label>
         </div>
       </StyledPlayerCheckboxes>
     );
