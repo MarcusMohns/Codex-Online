@@ -63,14 +63,12 @@ const Navbar = () => {
           Arena Point Calculator
         </BarsNavLink>
         <BarsNavLink to="/gemfinder">Gem Finder</BarsNavLink>
-        <BarsNavLink to="/about">About</BarsNavLink>
       </div>
       <NavMenu>
         <NavLink to="/home">Home</NavLink>
         <NavLink to="/raidassembler">Raid Assembler</NavLink>
         <NavLink to="/arenapointcalculator">Arena Point Calculator</NavLink>
         <NavLink to="/gemfinder">Gem Finder</NavLink>
-        <NavLink to="/about">About</NavLink>
       </NavMenu>
       <ProfileContainer>
         <ProfileImage onClick={handleProfileMenuToggle} />
