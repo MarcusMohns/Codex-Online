@@ -104,12 +104,20 @@ const RaidAssembler = () => {
   const [raidIsFull, setRaidIsFull] = useState(false);
   const [saveMenuOpen, setSaveMenuOpen] = useState(false);
 
-  const handleRightMenuToggle = (e) => {
-    if (e.code === "KeyQ" || e.type === "click") {
-      if (e.path[0].localName !== "input") {
-        // if user isn't typing inside an input
-        setAddPlayerMenu(!addPlayerMenu);
+  const handlePlayerMenuToggle = (e) => {
+    if (e.type === "click") {
+      setAddPlayerMenu(!addPlayerMenu);
+    }
+    if (e.code === "KeyQ") {
+      try {
+        if (e.path[0].localName !== "input") {
+          setAddPlayerMenu(!addPlayerMenu);
+        }
+      } catch {
+        return;
       }
+
+      // if user isn't typing inside an input
     }
   };
 
@@ -534,9 +542,9 @@ const RaidAssembler = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("keydown", handleRightMenuToggle);
+    window.addEventListener("keydown", handlePlayerMenuToggle);
     return function cleanup() {
-      window.removeEventListener("keydown", handleRightMenuToggle);
+      window.removeEventListener("keydown", handlePlayerMenuToggle);
     };
   });
   return (
@@ -558,7 +566,7 @@ const RaidAssembler = () => {
           addPlayerMenu ? "add-player-menu" : "hide-add-player-menu"
         }`}
       >
-        <ArrowLeft className="arrow-left" onClick={handleRightMenuToggle} />
+        <ArrowLeft className="arrow-left" onClick={handlePlayerMenuToggle} />
         <SpecContainer className="spec-container">
           <SpecButtons
             className="spec-buttons"
@@ -584,7 +592,7 @@ const RaidAssembler = () => {
             {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
           </p>
           <div className="btn-container">
-            <RaidHeaderButton onClick={handleRightMenuToggle}>
+            <RaidHeaderButton onClick={handlePlayerMenuToggle}>
               Add a Player <span id="plus-sign">+</span>
             </RaidHeaderButton>
             <ResetIcon onClick={resetRaid} />
