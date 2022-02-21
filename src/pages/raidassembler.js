@@ -106,9 +106,10 @@ const RaidAssembler = () => {
 
   const handleRightMenuToggle = (e) => {
     if (e.code === "KeyQ" || e.type === "click") {
-      setAddPlayerMenu(!addPlayerMenu);
-
-      // TO DO Add a way for users to keybind which button they want to use to open the menu... Also when input is highlighted the menu shouldnt be openable by the keystroke.
+      if (e.path[0].localName !== "input") {
+        // if user isn't typing inside an input
+        setAddPlayerMenu(!addPlayerMenu);
+      }
     }
   };
 
