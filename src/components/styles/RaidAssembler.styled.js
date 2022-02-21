@@ -246,8 +246,9 @@ export const StyledClassToolTip = styled.div`
   padding: 0.5rem;
   cursor: default;
   background: #000;
-  border: 1px solid #777;
-  box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0,1);
+
 
   .class-tooltip-title {
     font-size: 1.3rem;
@@ -262,8 +263,7 @@ export const StyledClassToolTip = styled.div`
     width:100%;
     font-size:1.1rem;
     padding:1px;
-    border-top:2px solid grey;
-    border-bottom:2px solid grey;
+    background-color: ${COLORS.primary};
   }
   .class-tooltip-category-name {
     display:flex;
@@ -324,11 +324,10 @@ export const RaidContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: ${COLORS.primaryTransparent};
+  background-color: transparent;
   min-width: 100%;
   max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 0.5rem;
 
   }
 
@@ -403,12 +402,12 @@ export const StyledPlayer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 70px;
   color: #fff;
   background: ${(props) => props.background};
   border: 2px solid black;
   cursor: pointer;
   margin: 2px;
+  min-height: 70px;
   text-align: center;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
@@ -498,12 +497,9 @@ export const StyledPlayer = styled.div`
   .player-name input:focus + .placeholder {
     top: -20px;
     font-size: 10px;
-    opacity: 0%;
   }
   .player-name input + .placeholder {
-    ${(props) =>
-      props.hasText &&
-      "top: -20px; font-size: 10px; color: white; opacity:0%;"};
+    ${(props) => props.hasText && "top: -20px; font-size: 10px; color: white;"};
   }
 
   /* box-shadow: $/{(props) =>
@@ -562,7 +558,7 @@ export const StyledPlayer = styled.div`
       width: 20px;
       height: 20px;
       border-radius: 35%;
-      padding: 0.3rem;
+      margin-bottom: 2px;
     }
   }
 
@@ -610,7 +606,12 @@ export const StyledPlayerCheckboxes = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    .role-select-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     .role-icon {
       width: 20px;
       height: 20px;
@@ -1041,11 +1042,17 @@ export const RaidContentHeader = styled.div`
   }
 
   .role-count {
+    display: none;
     margin-right: auto;
   }
 
   @media (min-width: 1200px) {
     height: 3rem;
+  }
+  @media (min-width: 600px) {
+    .role-count {
+      display: flex;
+    }
   }
 `;
 
@@ -1056,7 +1063,7 @@ export const NoPlayersText = styled.p`
   justify-content: center;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
-  min-height: 430px;
+  min-height: 407px;
 `;
 
 export const PlayersContainer = styled.div`
@@ -1065,13 +1072,10 @@ export const PlayersContainer = styled.div`
   min-height: 100%;
   flex: 1;
   transition: background-color 0.3s ease;
-  border: 1px solid grey;
   align-items: center;
-
   background-color: ${(props) =>
-    props.isDraggingOver
-      ? `${COLORS.primary}`
-      : `${COLORS.primaryTransparent}`};
+    props.isDraggingOver ? `${COLORS.primary}` : `transparent`};
+  padding: 0 4px;
 `;
 
 export const GroupContainer = styled.div`
@@ -1083,10 +1087,13 @@ export const GroupContainer = styled.div`
   flex-direction: column;
   flex: 1 0 20%;
   min-height: 400px;
-  background-color: ${COLORS.primaryTransparent};
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
 
   @media (min-width: 1200px) {
-    min-height: 443px;
+    min-height: 405px;
+    padding: 0 1px;
   }
 `;
 export const GroupTitle = styled.div`
