@@ -36,12 +36,11 @@ export const CheckBoxContainer = styled.section`
   width: 100%;
   .categories-and-checkboxes {
     padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 0fr;
-    max-height: fit-content;
-    max-width: fit-content;
-    background-color: ${COLORS.offWhite};
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: ${COLORS.fadedBackground};
     border-radius: 5px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
     border-right: 1px solid black;
@@ -50,7 +49,6 @@ export const CheckBoxContainer = styled.section`
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
-    background-color: ${COLORS.offWhite};
     border-radius: 5px;
   }
   .category-name {
@@ -60,38 +58,68 @@ export const CheckBoxContainer = styled.section`
     padding: 0.4rem;
     height: 2rem;
     text-align: center;
-    background-color: ${COLORS.primary};
     color: ${COLORS.offWhite};
     margin-bottom: 1rem;
     user-select: none;
   }
-  .aCheckbox label {
-    user-select: none;
-  }
 
-  .aCheckbox label,
-  input {
-    margin: 0.4rem;
-    cursor: pointer;
-    transform: scale(1.2);
-  }
-  .aCheckbox input {
-    &:hover {
-      transform: scale(1.5);
+  .a-checkbox {
+    position: relative;
+    label {
+      user-select: none;
+      color: ${COLORS.offWhite};
     }
-  }
 
-  @media screen and (max-width: 1200px) {
-    .categories-and-checkboxes {
-      margin-bottom: 50px;
+    input[type="checkbox"] {
+      visibility: hidden;
     }
-    .aCheckbox label {
-      margin: 0rem;
+
+    .styled-checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      border: 1px solid grey;
+    }
+
+    &:hover input ~ .styled-checkmark {
+      background-color: yellow;
+    }
+    &:active input ~ .styled-checkmark {
+      background-color: red;
+    }
+    input:checked ~ .styled-checkmark {
+      background-color: blue;
+    }
+    .styled-checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* display checkmark when checked */
+    input:checked ~ .styled-checkmark:after {
+      display: block;
+    }
+
+    .styled-checkmark:after {
+      left: 6px;
+      bottom: 5px;
+      width: 6px;
+      height: 6px;
+      border: solid white;
+      border-width: 4px 4px 4px 4px;
+    }
+
+    label,
+    input {
+      margin: 0.4rem;
       cursor: pointer;
       transform: scale(1.2);
-    }
-    .category-container {
-      padding: 0rem;
+      &:hover {
+        transform: scale(1.5);
+      }
     }
   }
 `;
