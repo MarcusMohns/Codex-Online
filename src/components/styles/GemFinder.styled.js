@@ -55,14 +55,13 @@ export const CheckBoxContainer = styled.section`
     flex-direction: column;
     padding: 0.5rem;
     background-color: ${COLORS.fadedBlack};
-    width: 100%;
     border-radius: 5px;
+    width: 100%;
   }
   .category-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.4rem;
     height: 2rem;
     text-align: center;
     color: ${COLORS.offWhite};
@@ -74,7 +73,6 @@ export const CheckBoxContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
   }
 
   .a-checkbox {
@@ -87,6 +85,8 @@ export const CheckBoxContainer = styled.section`
     .label-text {
       user-select: none;
       color: ${COLORS.offWhite};
+      font-size: 0.8rem;
+
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -152,18 +152,12 @@ export const CheckBoxContainer = styled.section`
 
   @media screen and (min-width: 1200px) {
     .categories-and-checkboxes {
-      min-width: 65vw;
       width: 80%;
-
-      .category-container {
-        width: 50%;
-      }
-    }
-    .category-container {
-      height: 100%;
     }
   }
   @media screen and (min-width: 992px) {
+    .categories-and-checkboxes {
+      width: 80%;
   }
 `;
 
