@@ -7,9 +7,11 @@ const Checkboxes = ({ filters, onChange }) => {
         return (
           <div key={item.name} className="category-container">
             <p className="category-name">{item.name}</p>
-            {item.content.map((content, index) => (
-              <Checkbox key={index} text={content} onChange={onChange} />
-            ))}
+            <div className="checkboxes">
+              {item.content.map((content, index) => (
+                <Checkbox key={index} text={content} onChange={onChange} />
+              ))}
+            </div>
           </div>
         );
       })}

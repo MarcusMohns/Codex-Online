@@ -1,10 +1,10 @@
 const Checkbox = ({ text, onChange }) => {
   return (
-    <p className="a-checkbox">
+    <label className="a-checkbox">
+      <div className="label-text">{text}</div>
       <input type="checkbox" value={text} onChange={onChange} id={text} />
-      <span class="styled-checkmark"></span>
-      <label htmlFor={text}>{text}</label>
-    </p>
+      <span className="styled-checkmark"></span>
+    </label>
   );
 };
 

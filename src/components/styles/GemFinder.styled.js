@@ -3,12 +3,13 @@ import COLORS from "../../components";
 
 export const Main = styled.main`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: start;
   justify-content: space-evenly;
   background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
   max-width: 100vw;
+  width: auto;
   min-height: 75vw;
   margin: auto;
   padding: 4rem;
@@ -22,9 +23,11 @@ export const Main = styled.main`
     padding: 5px;
     font-size: 0.9rem;
     max-width: 90vw;
+    min-width: 100%;
   }
   @media screen and (max-width: 992px) {
     max-width: 90vw;
+    min-width: 100%;
   }
 `;
 
@@ -44,11 +47,15 @@ export const CheckBoxContainer = styled.section`
     border-radius: 5px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
     border-right: 1px solid black;
+    width: 100%;
   }
   .category-container {
+    margin: 0.5rem;
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
+    background-color: ${COLORS.fadedBlack};
+    width: 100%;
     border-radius: 5px;
   }
   .category-name {
@@ -62,35 +69,58 @@ export const CheckBoxContainer = styled.section`
     margin-bottom: 1rem;
     user-select: none;
   }
+  .checkboxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+  }
 
   .a-checkbox {
+    display: flex;
     position: relative;
-    label {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    .label-text {
       user-select: none;
       color: ${COLORS.offWhite};
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     input[type="checkbox"] {
       visibility: hidden;
+      display: none;
     }
 
     .styled-checkmark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: absolute;
-      top: 0;
       left: 0;
-      height: 25px;
-      width: 25px;
-      border: 1px solid grey;
+      margin: 0;
+      height: 1.1rem;
+      width: 1.1rem;
+      padding: 0;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: ${COLORS.fadedBackground};
     }
 
     &:hover input ~ .styled-checkmark {
-      background-color: yellow;
+      border: 1px solid grey;
+      background-color: ${COLORS.fadedBackground};
     }
     &:active input ~ .styled-checkmark {
-      background-color: red;
+      background-color: ${COLORS.fadedBlack};
     }
     input:checked ~ .styled-checkmark {
-      background-color: blue;
+      background-color: ${COLORS.fadedGrey};
     }
     .styled-checkmark:after {
       content: "";
@@ -104,23 +134,36 @@ export const CheckBoxContainer = styled.section`
     }
 
     .styled-checkmark:after {
-      left: 6px;
-      bottom: 5px;
-      width: 6px;
+      content: "";
+      width: 10px;
       height: 6px;
-      border: solid white;
-      border-width: 4px 4px 4px 4px;
+      border: 2px solid #dbdbec;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
     }
 
-    label,
     input {
-      margin: 0.4rem;
-      cursor: pointer;
-      transform: scale(1.2);
       &:hover {
         transform: scale(1.5);
       }
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .categories-and-checkboxes {
+      min-width: 65vw;
+      width: 80%;
+
+      .category-container {
+        width: 50%;
+      }
+    }
+    .category-container {
+      height: 100%;
+    }
+  }
+  @media screen and (min-width: 992px) {
   }
 `;
 
