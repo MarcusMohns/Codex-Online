@@ -4,7 +4,7 @@ import { FaRegCheckCircle } from "@react-icons/all-files/fa/FaRegCheckCircle";
 import { CgChevronLeftO } from "@react-icons/all-files/cg/CgChevronLeftO";
 import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
 import { GiLoad } from "@react-icons/all-files/gi/GiLoad";
-import { RiSettings4Fill } from "@react-icons/all-files/ri/RiSettings4Fill";
+import { RiSettings3Line } from "@react-icons/all-files/ri/RiSettings3Line";
 import { VscDebugRestart } from "@react-icons/all-files/vsc/VscDebugRestart";
 import { RiDeleteBin2Line } from "@react-icons/all-files/ri/RiDeleteBin2Line";
 import { RiEdit2Line } from "@react-icons/all-files/ri/RiEdit2Line";
@@ -1396,7 +1396,7 @@ export const InfoIcon = styled(FcInfo)`
   color: black;
   font-size: 1.7em;
 `;
-export const SettingsIcon = styled(RiSettings4Fill)`
+export const SettingsIcon = styled(RiSettings3Line)`
   color: black;
   font-size: 1.6em;
 `;
