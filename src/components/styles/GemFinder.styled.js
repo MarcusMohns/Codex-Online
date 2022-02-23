@@ -43,10 +43,8 @@ export const CheckBoxContainer = styled.section`
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    background-color: ${COLORS.fadedBackground};
     border-radius: 5px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
-    border-right: 1px solid black;
     width: 100%;
   }
   .category-container {
@@ -155,11 +153,18 @@ export const CheckBoxContainer = styled.section`
   }
 
   @media screen and (min-width: 1200px) {
+    .checkboxes {
+      height:220px;
+    }
     .categories-and-checkboxes {
       width: 80%;
     }
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (max-width: 992px) {
+    .checkboxes {
+      height:100%;
+      flex-wrap:nowrap;
+    }
     .categories-and-checkboxes {
       width: 80%;
   }
@@ -175,30 +180,39 @@ export const GemTableContainer = styled.section`
   margin-right: auto;
   width: 95%;
   margin-top: 50px;
+  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+
   table {
-    width: 100%;
+    min-width: 100%;
     border-collapse: separate;
     text-align: center;
-    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+    margin: 10px 0;
+    border-bottom: 1px solid white;
   }
   td {
-    padding: 0.5rem;
+    padding: 0.2rem;
   }
+
   th {
+    background-color: ${COLORS.blackText};
     color: ${COLORS.offWhite};
     padding: 1rem;
-    background-color: ${COLORS.primary};
     user-select: none;
     top: 0;
     z-index: 2;
     position: sticky;
+    border-bottom: 1px solid white;
   }
 
   tbody tr {
-    background-color: ${COLORS.offWhite};
-    color: black;
+    color: ${COLORS.offWhite};
+
+    &:nth-child(even) {
+      background: ${COLORS.fadedBlack};
+    }
+
     &:hover {
-      background-color: ${COLORS.highlight};
+      background-color: ${COLORS.fadedHighlight};
     }
   }
   .gemNameCell {
@@ -206,6 +220,10 @@ export const GemTableContainer = styled.section`
     align-items: center;
     justify-content: space-between;
     user-select: all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
     img {
       width: 2.2rem;
       user-select: none;
@@ -252,6 +270,7 @@ export const GemTableContainer = styled.section`
     color: purple;
   }
   .gemStatsHeader,
+  .gemSourceHeader,
   .gemQualityHeader,
   .gemColorHeader,
   .gemNameHeader {

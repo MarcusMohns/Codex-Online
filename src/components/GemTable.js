@@ -25,6 +25,11 @@ const GemTable = ({ gems, onClick }) => {
               Stats <FaSort className="sortImage" alt="sort icon" />
             </div>
           </th>
+          <th>
+            <div className="gemSourceHeader" onClick={onClick}>
+              Pattern Source <FaSort className="sortImage" alt="sort icon" />
+            </div>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -44,6 +49,7 @@ const GemTable = ({ gems, onClick }) => {
               {gem.quality}
             </td>
             <td className="gemStatsCell">{gem.stats}</td>
+            <td className="gemSourceCell">{gem.source}</td>
           </tr>
         ))}
       </tbody>

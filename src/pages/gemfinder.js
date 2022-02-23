@@ -18,6 +18,7 @@ const Gemfinder = () => {
     gemQuality: false,
     gemColor: false,
     gemName: false,
+    gemSource: false,
   });
 
   const handleChange = (e) => {
@@ -46,6 +47,8 @@ const Gemfinder = () => {
       sortBy = "color";
     } else if (e.target.className === "gemQualityHeader") {
       sortBy = "quality";
+    } else if (e.target.className === "gemSourceHeader") {
+      sortBy = "source";
     } else if (e.target.className === "gemStatsHeader") {
       sortBy = "stats";
     } else {
@@ -142,6 +145,23 @@ const Gemfinder = () => {
       });
       setSort((sort) => ({
         gemName: !sort.gemName,
+      }));
+    }
+
+    if (sortBy === "source") {
+      /// FIX SO IT SORTS BY SOURCE
+      gemsToSort.sort(function (a, b) {
+        if (a.source < b.source) {
+          return sort.gemSource ? 1 : -1;
+        }
+        if (a.source > b.source) {
+          return sort.gemSource ? -1 : 1;
+        }
+
+        return 0;
+      });
+      setSort((sort) => ({
+        gemSource: !sort.gemSource,
       }));
     }
 
