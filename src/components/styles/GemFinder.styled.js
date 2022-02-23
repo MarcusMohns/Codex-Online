@@ -72,7 +72,10 @@ export const CheckBoxContainer = styled.section`
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    height:150px;
+    margin-left:auto;
   }
 
   .a-checkbox {
@@ -82,11 +85,13 @@ export const CheckBoxContainer = styled.section`
     align-items: center;
     cursor: pointer;
     padding: 0.5rem;
+
     .label-text {
       user-select: none;
       color: ${COLORS.offWhite};
       font-size: 0.8rem;
-
+      margin-right:auto;
+      margin-left:1rem;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -103,7 +108,6 @@ export const CheckBoxContainer = styled.section`
       justify-content: center;
       position: absolute;
       left: 0;
-      margin: 0;
       height: 1.1rem;
       width: 1.1rem;
       padding: 0;
@@ -162,12 +166,15 @@ export const CheckBoxContainer = styled.section`
 `;
 
 export const GemTableContainer = styled.section`
-  max-width: 100%;
-  min-width: 70%;
+  box-sizing: border-box;
   font-size: 0.95rem;
   overflow-y: scroll;
   height: 50vw;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  margin-top: 50px;
   table {
     width: 100%;
     border-collapse: separate;
@@ -287,7 +294,7 @@ export const GemTableContainer = styled.section`
       font-size: 1.5rem;
     }
     table {
-      width: 90vw;
+      width: 100%;
     }
     .gemStatsCell,
     .gemQualityCell,
