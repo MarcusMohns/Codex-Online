@@ -45,7 +45,7 @@ export const CheckBoxContainer = styled.section`
     justify-content: center;
     border-radius: 5px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
-    width: 100%;
+    width: 80%;
   }
   .category-container {
     margin: 0.5rem;
@@ -71,9 +71,9 @@ export const CheckBoxContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex-wrap:wrap;
-    height:150px;
-    margin-left:auto;
+    flex-wrap: wrap;
+    height: 150px;
+    margin-left: auto;
   }
 
   .a-checkbox {
@@ -88,8 +88,8 @@ export const CheckBoxContainer = styled.section`
       user-select: none;
       color: ${COLORS.offWhite};
       font-size: 0.8rem;
-      margin-right:auto;
-      margin-left:1rem;
+      margin-right: auto;
+      margin-left: 1rem;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -152,21 +152,14 @@ export const CheckBoxContainer = styled.section`
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1500px) {
     .checkboxes {
-      height:220px;
+      height: 100%;
+      flex-wrap: nowrap;
     }
     .categories-and-checkboxes {
-      width: 80%;
+      width: 100%;
     }
-  }
-  @media screen and (max-width: 992px) {
-    .checkboxes {
-      height:100%;
-      flex-wrap:nowrap;
-    }
-    .categories-and-checkboxes {
-      width: 80%;
   }
 `;
 
@@ -296,10 +289,11 @@ export const GemTableContainer = styled.section`
     font-size: 23px;
     text-align: center;
     color: ${COLORS.offWhite};
-    margin: 30%;
-    margin-right: 50%;
+    margin-top: 20px;
   }
   @media screen and (max-width: 992px) {
+    height: 500px;
+
     // Mobile
     td {
       padding: 3px;
@@ -311,6 +305,7 @@ export const GemTableContainer = styled.section`
     th {
       padding: 0.2rem;
       font-size: 1.5rem;
+      border: none;
     }
     table {
       width: 100%;
@@ -322,9 +317,10 @@ export const GemTableContainer = styled.section`
       border: none;
     }
     .gemStatsCell {
-      box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
-
       font-weight: 500;
+    }
+    .gemSourceCell {
+      box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
     }
     .gemNameCell {
       display: flex;
@@ -338,8 +334,10 @@ export const GemTableContainer = styled.section`
     }
     .gemColorHeader,
     .gemNameHeader,
+    .gemSourceHeader,
     .gemStatsHeader {
       display: none;
+      border: none;
     }
   }
 `;
