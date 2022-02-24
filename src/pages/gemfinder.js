@@ -60,7 +60,7 @@ const Gemfinder = () => {
 
   // Sets our state depending on which checkboxes are ticked.
   const gemFilterer = () => {
-    let newArray = [].concat(gemArray);
+    let newArray = [...gemArray];
     currentFilters.forEach((aFilter) => {
       if (filterNames[2].content.includes(aFilter))
         // Gem color
@@ -112,6 +112,7 @@ const Gemfinder = () => {
         return 0;
       });
       setSort((sort) => ({
+        ...sort,
         gemQuality: !sort.gemQuality,
       }));
     }
@@ -128,6 +129,7 @@ const Gemfinder = () => {
         return 0;
       });
       setSort((sort) => ({
+        ...sort,
         gemColor: !sort.gemColor,
       }));
     }
@@ -143,7 +145,10 @@ const Gemfinder = () => {
 
         return 0;
       });
+      console.log(sort);
+
       setSort((sort) => ({
+        ...sort,
         gemName: !sort.gemName,
       }));
     }
