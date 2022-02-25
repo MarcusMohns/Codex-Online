@@ -20,7 +20,7 @@ export const Main = styled.main`
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100vw;
-  min-height: 100vw;
+  min-height: 100v;
   height: auto;
   margin: auto;
   margin-top: 20%;
@@ -1337,31 +1337,12 @@ export const CrossIcon = styled(FaRegTimesCircle)`
   width: 1.5rem;
   height: 1.5rem;
   font-size: 1.5rem;
-  animation-name: buffCategoryImage;
-  animation-duration: 0.5s;
 `;
 export const CheckCircle = styled(FaRegCheckCircle)`
   color: green;
   width: 1.5rem;
   height: 1.5rem;
-
   font-size: 1.5rem;
-  animation-name: buffCategoryImage;
-  animation-duration: 0.8s;
-  @keyframes buffCategoryImage {
-    0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(0.9);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 `;
 
 export const ArrowLeft = styled(CgChevronLeftO)`
