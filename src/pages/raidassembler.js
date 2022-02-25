@@ -593,7 +593,7 @@ const RaidAssembler = () => {
           </p>
           <div className="btn-container">
             <RaidHeaderButton onClick={handlePlayerMenuToggle}>
-              Add a Player <span id="plus-sign">+</span>
+              (Q) Add a Player <span id="plus-sign">+</span>
             </RaidHeaderButton>
             <ResetIcon onClick={resetRaid} />
           </div>
