@@ -5,15 +5,13 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-evenly;
   background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
   max-width: 100vw;
   width: auto;
-  min-height: 75vw;
   margin: auto;
   padding: 4rem;
-  margin-top: 20%;
+  margin-top: 15%;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   font-size: 1rem;
   @media screen and (max-width: 1200px) {
@@ -29,6 +27,18 @@ export const Main = styled.main`
     max-width: 90vw;
     min-width: 100%;
   }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 100%;
+    margin-left: 10vw;
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 3rem;
+  }
 `;
 
 export const CheckBoxContainer = styled.section`
@@ -36,15 +46,16 @@ export const CheckBoxContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  min-width: 100%;
+
   .categories-and-checkboxes {
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     border-radius: 5px;
-    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 80%;
   }
   .category-container {
@@ -161,26 +172,33 @@ export const CheckBoxContainer = styled.section`
       width: 100%;
     }
   }
+  @media screen and (max-width: 1500px) {
+    .checkboxes {
+      height: 100%;
+      flex-wrap: nowrap;
+    }
+    .categories-and-checkboxes {
+      width: 100%;
+    }
+  }
 `;
 
 export const GemTableContainer = styled.section`
   box-sizing: border-box;
   font-size: 0.95rem;
   overflow-y: scroll;
-  height: 50vw;
+  height: 60vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
-  margin-top: 50px;
-  box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+  width: 80%;
+  border-bottom: 1px solid grey;
 
   table {
     min-width: 100%;
     border-collapse: separate;
     text-align: center;
     margin: 10px 0;
-    border-bottom: 1px solid white;
   }
   td {
     padding: 0.2rem;
@@ -194,7 +212,6 @@ export const GemTableContainer = styled.section`
     top: 0;
     z-index: 2;
     position: sticky;
-    border-bottom: 1px solid white;
   }
 
   tbody tr {
@@ -225,7 +242,7 @@ export const GemTableContainer = styled.section`
     }
   }
   .gemColorCell {
-    border-left: 1px solid black;
+    border-left: 1px solid grey;
   }
   .gemQualityCell {
     letter-spacing: 0.5px;
@@ -241,14 +258,12 @@ export const GemTableContainer = styled.section`
   #uncommonCells {
     color: #29c714;
   }
-  #perfectCells {
-    color: #29c714;
-  }
+
   #blueCells {
-    color: blue;
+    color: ${COLORS.shaman};
   }
   #redCells {
-    color: red;
+    color: ${COLORS.deathKnight};
   }
   #yellowCells {
     color: #cccc00;
@@ -260,7 +275,7 @@ export const GemTableContainer = styled.section`
     color: green;
   }
   #purpleCells {
-    color: purple;
+    color: ${COLORS.warlock};
   }
   .gemStatsHeader,
   .gemSourceHeader,

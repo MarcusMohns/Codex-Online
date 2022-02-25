@@ -180,9 +180,12 @@ const Gemfinder = () => {
 
   return (
     <Main>
+      <h2 className="header">FILTERS</h2>
       <CheckBoxContainer className="checkbox-container">
         <Checkboxes filters={filterNames} onChange={handleChange} />
       </CheckBoxContainer>
+      <h2 className="header">RESULTS</h2>
+
       <GemTableContainer>
         {gems.length > 0 ? (
           <GemTable gems={gems} onClick={handleClick} />
