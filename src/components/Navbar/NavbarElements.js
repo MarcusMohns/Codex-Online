@@ -56,7 +56,7 @@ export const Nav = styled.nav`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 1000vw;
+    height: 1000vh;
     width: 100%;
     position: absolute;
     top: 0;
