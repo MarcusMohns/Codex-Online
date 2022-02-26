@@ -20,7 +20,7 @@ export const Main = styled.main`
   align-items: flex-start;
   justify-content: flex-start;
   max-width: 100vw;
-  min-height: 100v;
+  min-height: 100%;
   height: auto;
   margin: auto;
   margin-top: 20%;
@@ -72,8 +72,7 @@ export const Main = styled.main`
     z-index: 2;
     transition: transform 150ms;
     transform: translateY(100%);
-    @media screen and (min-width: 1200px) {
-    }
+
     .arrow-left {
       position: absolute;
       bottom: 100%;
