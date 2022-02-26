@@ -4,7 +4,7 @@ import COLORS from "../../components";
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
   max-width: 100vw;
@@ -16,7 +16,6 @@ export const Main = styled.main`
   font-size: 1rem;
   @media screen and (max-width: 1200px) {
     flex-direction: column;
-    align-items: center;
     box-shadow: none;
     padding: 5px;
     font-size: 0.9rem;
@@ -33,11 +32,15 @@ export const Main = styled.main`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-width: 100%;
-    margin-left: 10vw;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     color: white;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    width: 80%;
+
+    @media screen and (max-width: 992px) {
+      margin-left: 0px;
+      align-items: center;
+    }
   }
 `;
 
@@ -52,11 +55,21 @@ export const CheckBoxContainer = styled.section`
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
     align-items: flex-start;
     justify-content: center;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 80%;
+
+    @media screen and (max-width: 992px) {
+      padding: 0px;
+    }
+    @media screen and (max-width: 510px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
   }
   .category-container {
     margin: 0.5rem;
@@ -66,6 +79,13 @@ export const CheckBoxContainer = styled.section`
     background-color: ${COLORS.fadedBlack};
     border-radius: 5px;
     width: 100%;
+
+    @media screen and (max-width: 992px) {
+      width: auto;
+    }
+    @media screen and (max-width: 510px) {
+      width: 100%;
+    }
   }
   .category-name {
     display: flex;
@@ -76,6 +96,7 @@ export const CheckBoxContainer = styled.section`
     color: ${COLORS.offWhite};
     margin-bottom: 1rem;
     user-select: none;
+    flex-wrap: wrap;
   }
   .checkboxes {
     width: 100%;
@@ -163,15 +184,6 @@ export const CheckBoxContainer = styled.section`
     }
   }
 
-  @media screen and (max-width: 1500px) {
-    .checkboxes {
-      height: 100%;
-      flex-wrap: nowrap;
-    }
-    .categories-and-checkboxes {
-      width: 100%;
-    }
-  }
   @media screen and (max-width: 1500px) {
     .checkboxes {
       height: 100%;
