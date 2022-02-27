@@ -8,10 +8,10 @@ export const Main = styled.main`
   background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
   max-width: 100vw;
+  min-height: 40vw;
   height: auto;
   margin: auto;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 15%;
   opacity: 90%;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   padding: 2rem;
