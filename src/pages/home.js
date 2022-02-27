@@ -35,9 +35,9 @@ const Home = () => {
       <PagePreviewContainer>
         <PagePreviewText>
           <PagePreviewHeader>Raid Assembler</PagePreviewHeader>
-          Kill more bosses with less effort. Monitor what buffs or utilities you
-          have and what you are missing, optimize your raids performance, manage
-          the players in your raid and monitor roles, all at a glance!
+          Kill more bosses with less effort! The Raid Assembler helps you
+          optimize your raids performance, manage the players in your raid,
+          monitor the raids buffs, utilities and roles, all at a glance.
           <div className="step-container">
             <span className="step-number">1</span>
             Add players to your raid
@@ -46,6 +46,9 @@ const Home = () => {
             <span className="step-number">3</span>
             Save your raid in the browser or locally to share with others
           </div>
+          <a href="/raidassembler" className="link-button">
+            Get Started!
+          </a>
         </PagePreviewText>
         {raidAssemblerImage}
       </PagePreviewContainer>
@@ -54,14 +57,6 @@ const Home = () => {
           <PagePreviewHeader>Gem Finder</PagePreviewHeader>
           Gem Finder consists of every non-meta gem in 3.3.5. Find a gem with
           the stats, quality or color that suit your needs!
-          <div className="step-container">
-            <span className="step-number">1</span>
-            Select your filters
-            <span className="step-number">2</span>
-            Find a gem
-            <span className="step-number">3</span>
-            Left click the gem to highlight!
-          </div>
         </PagePreviewText>
         {gemFinderImage}
       </PagePreviewContainer>

@@ -110,6 +110,22 @@ export const PagePreviewText = styled.div`
     color: white;
     border: 2px solid ${COLORS.goldHighlight};
   }
+
+  .link-button {
+    display: inline-block;
+    background: ${COLORS.fadedBlack};
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 30px;
+    border: 1px solid ${COLORS.goldHighlight};
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+    &:hover {
+      background: ${COLORS.fadedPrimary};
+    }
+  }
 `;
 
 export const PagePreviewHeader = styled.h2`
