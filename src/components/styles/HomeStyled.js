@@ -83,6 +83,33 @@ export const PagePreviewText = styled.div`
   color: ${COLORS.offWhite};
   flex-grow: 1;
   margin: 15px;
+  width: 100%;
+  .step-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: ${COLORS.goldHighlight};
+    background-color: ${COLORS.fadedBlack};
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.8rem;
+    min-height: 1.8rem;
+    padding: 0.2rem;
+    font-size: 1.4rem;
+    margin: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+    font-family: sans-serif;
+    color: white;
+    border: 2px solid ${COLORS.goldHighlight};
+  }
 `;
 
 export const PagePreviewHeader = styled.h2`
