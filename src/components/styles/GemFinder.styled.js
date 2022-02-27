@@ -234,7 +234,7 @@ export const GemTableContainer = styled.section`
     }
 
     &:hover {
-      background-color: ${COLORS.fadedHighlight};
+      background-color: ${COLORS.fadedBackground};
     }
   }
   .gemNameCell {
