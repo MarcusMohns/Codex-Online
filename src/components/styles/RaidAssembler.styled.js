@@ -742,7 +742,6 @@ export const StyledBuff = styled.div`
   justify-content: space-between;
   font-size: 0.8rem;
   padding: 0.2rem;
-  border: 1px solid grey;
   background-color: ${COLORS.highlight};
   border-radius: 5px;
   margin: 1px;
@@ -982,7 +981,6 @@ export const StyledUtility = styled.div`
   user-select: none;
   font-size: 0.8rem;
   padding: 0.5rem;
-  border: 1px solid grey;
   background-color: ${COLORS.highlight};
   border-radius: 5px;
   margin: 1px;
