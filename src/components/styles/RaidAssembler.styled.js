@@ -1178,6 +1178,14 @@ export const StyledSaveMenu = styled.div`
   top: 0%;
   z-index: 3;
 
+  .saved-tooltip {
+    width: 100%;
+    opacity: 0%;
+    color: ${COLORS.offWhite};
+    user-select: none;
+    margin-top: 10px;
+  }
+
   .save-menu {
     display: flex;
     flex-direction: column;

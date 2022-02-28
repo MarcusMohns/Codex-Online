@@ -437,6 +437,12 @@ const RaidAssembler = () => {
       count: savedCount,
     });
 
+    document.querySelector(".saved-tooltip").style.opacity = "100%";
+    setTimeout(function () {
+      document.querySelector(".saved-tooltip").style.opacity = "0%";
+    }, 1000);
+    // Show 'Saved!' for 1 second
+
     saveNameInput.value = newSaveName;
     localStorage.setItem(saveName, saveOne);
   };
