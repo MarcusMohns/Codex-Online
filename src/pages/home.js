@@ -5,6 +5,7 @@ import {
   PagePreviewContainer,
   PagePreviewHeader,
 } from "../components/styles/HomeStyled";
+import { Link } from "react-router-dom";
 
 const raidAssemblerImage = (
   <img
@@ -37,7 +38,7 @@ const Home = () => {
           <PagePreviewHeader>Raid Assembler</PagePreviewHeader>
           Kill more bosses with less effort! The Raid Assembler helps you
           optimize your raids performance, manage the players in your raid,
-          monitor the raids buffs, utilities and roles, all at a glance.
+          monitor the raids buffs, utilities and roles, all at a glance
           <div className="step-container">
             <span className="step-number">1</span>
             Add players to your raid
@@ -46,9 +47,9 @@ const Home = () => {
             <span className="step-number">3</span>
             Save your raid in the browser or locally to share with others
           </div>
-          <a href="/raidassembler" className="link-button">
-            Get Started!
-          </a>
+          <Link to="/raidassembler" className="link-button">
+            Let's go!
+          </Link>
         </PagePreviewText>
         {raidAssemblerImage}
       </PagePreviewContainer>
@@ -56,7 +57,10 @@ const Home = () => {
         <PagePreviewText>
           <PagePreviewHeader>Gem Finder</PagePreviewHeader>
           Gem Finder consists of every non-meta gem in 3.3.5. Find a gem with
-          the stats, quality or color that suit your needs!
+          the stats, quality or color that suit your needs
+          <Link to="/gemfinder" className="link-button">
+            Let's go!
+          </Link>
         </PagePreviewText>
         {gemFinderImage}
       </PagePreviewContainer>
@@ -65,7 +69,10 @@ const Home = () => {
           <PagePreviewHeader>Arena Point Calculator</PagePreviewHeader>
           Updated for 3.3.5. Calculate how many points you will receive at the
           end of the reset or check how much rating you need for that upgrade
-          you're looking at.
+          you're looking at
+          <Link to="/arenapointcalculator" className="link-button">
+            Let's go!
+          </Link>
         </PagePreviewText>
         {arenaPointCalcImage}
       </PagePreviewContainer>
