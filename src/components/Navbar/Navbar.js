@@ -60,25 +60,26 @@ const Navbar = () => {
       >
         <BarsNavLink to="/home">Home</BarsNavLink>
         <BarsNavLink to="/raidassembler">Raid Assembler</BarsNavLink>
+        <BarsNavLink to="/gemfinder">Gem Finder</BarsNavLink>
         <BarsNavLink to="/arenapointcalculator">
           Arena Point Calculator
         </BarsNavLink>
-        <BarsNavLink to="/gemfinder">Gem Finder</BarsNavLink>
       </div>
       <NavMenu>
         <NavLink to="/home">Home</NavLink>
         <NavLink to="/raidassembler">Raid Assembler</NavLink>
-        <NavLink to="/arenapointcalculator">Arena Point Calculator</NavLink>
         <NavLink to="/gemfinder">Gem Finder</NavLink>
+        <NavLink to="/arenapointcalculator">Arena Point Calculator</NavLink>
       </NavMenu>
       <ProfileContainer>
         <ProfileImage onClick={handleProfileMenuToggle} />
-
         <div
           className={`${
             profileMenuOpen ? "profile-menu" : "hide-profile-menu"
           }`}
-        ></div>
+        >
+          Input for profile menu here (Under construction)
+        </div>
       </ProfileContainer>
     </Nav>
   );

@@ -30,24 +30,24 @@ export const Nav = styled.nav`
   .profile-menu {
     display: flex;
     position: absolute;
-    background-color: ${COLORS.offWhite};
+    background-color: black;
     width: 200px;
     height: 500px;
     box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
     transform: translate(-50%, 0%);
     border-radius: 0.5rem;
+    border: 1px solid grey;
     transition: 0.5ms all;
+
+    display: none; // <----
+
     @media screen and (min-width: 1200px) {
       width: 200px;
       transform: translate(0, 60%);
     }
   }
   .hide-profile-menu {
-    position: absolute;
-    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
-
-    @media screen and (min-width: 1200px) {
-    }
+    display: none;
   }
 
   .showBarsMenu {
@@ -141,8 +141,9 @@ export const ProfileContainer = styled.div`
 
 export const ProfileImage = styled(CgProfile)`
   color: white;
+  color: transparent; // <-------
+  //cursor: pointer; // <-------
   font-size: 2rem;
-  cursor: pointer;
   z-index: 2;
   position: relative;
 `;
