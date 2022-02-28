@@ -33,6 +33,7 @@ export const Main = styled.main`
       "Raid Utils"
       "Buffs Buffs";
     padding: 2rem;
+    padding-bottom: 10rem;
   }
   .add-player-menu {
     display: flex;
@@ -1315,6 +1316,7 @@ export const Header = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: white;
   width: 100%;
   height: 100%;

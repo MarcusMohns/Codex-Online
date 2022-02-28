@@ -3,6 +3,7 @@ import GemTable from "../components/GemTable";
 import gemArray from "../Gems";
 import Checkboxes from "../components/Checkboxes";
 import filterNames from "../FilterNames";
+import { Header } from "../components/styles/RaidAssembler.styled";
 import {
   Main,
   GemTableContainer,
@@ -179,21 +180,24 @@ const Gemfinder = () => {
   }, []);
 
   return (
-    <Main>
-      <h2 className="header">FILTERS</h2>
-      <CheckBoxContainer className="checkbox-container">
-        <Checkboxes filters={filterNames} onChange={handleChange} />
-      </CheckBoxContainer>
-      <h2 className="header">RESULTS</h2>
+    <>
+      <Header>Gem Finder - WOTLK Gems</Header>
+      <Main>
+        <h2 className="header">FILTERS</h2>
+        <CheckBoxContainer className="checkbox-container">
+          <Checkboxes filters={filterNames} onChange={handleChange} />
+        </CheckBoxContainer>
+        <h2 className="header">RESULTS</h2>
 
-      <GemTableContainer>
-        {gems.length > 0 ? (
-          <GemTable gems={gems} onClick={handleClick} />
-        ) : (
-          <p className="gemsNotFound">No gems found</p>
-        )}
-      </GemTableContainer>
-    </Main>
+        <GemTableContainer>
+          {gems.length > 0 ? (
+            <GemTable gems={gems} onClick={handleClick} />
+          ) : (
+            <p className="gemsNotFound">No gems found</p>
+          )}
+        </GemTableContainer>
+      </Main>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import {
   ArenaContainer,
   Main,
 } from "../components/styles/ArenaPointCalculator.styled";
+import { Header } from "../components/styles/RaidAssembler.styled";
 import React, { useReducer } from "react";
 
 const formReducer = (state, event) => {
@@ -90,99 +91,105 @@ function Arenapointcalculator() {
   };
 
   return (
-    <Main>
-      <ArenaContainer>
-        <h2>Arena Points Rewarded</h2>
-        <form
-          onChange={ratingChange}
-          onSelect={handleSelect}
-          autoComplete="off"
-        >
-          <table>
-            <thead>
-              <tr>
-                <th>Bracket</th>
-                <th>Your Rating</th>
-                <th>Arena Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th className="bracket-col">2v2</th>
-                <td>
-                  <input type="number" name="twos" />
-                </td>
-                <td className="results" id="twosResults">
-                  {formData.twos}
-                </td>
-              </tr>
+    <>
+      <Header>Arena Point Calculator - 3.3.5 WOTLK</Header>
+      <Main>
+        <ArenaContainer>
+          <h2>Arena Points Rewarded</h2>
+          <form
+            onChange={ratingChange}
+            onSelect={handleSelect}
+            autoComplete="off"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th>Bracket</th>
+                  <th>Your Rating</th>
+                  <th>Arena Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th className="bracket-col">2v2</th>
+                  <td>
+                    <input type="number" name="twos" />
+                  </td>
+                  <td className="results" id="twosResults">
+                    {formData.twos}
+                  </td>
+                </tr>
 
-              <tr>
-                <th className="bracket-col">3v3</th>
-                <td>
-                  <input type="number" name="threes" />
-                </td>
-                <td className="results" id="threesResults">
-                  {formData.threes}
-                </td>
-              </tr>
+                <tr>
+                  <th className="bracket-col">3v3</th>
+                  <td>
+                    <input type="number" name="threes" />
+                  </td>
+                  <td className="results" id="threesResults">
+                    {formData.threes}
+                  </td>
+                </tr>
 
-              <tr>
-                <th className="bracket-col">5v5</th>
-                <td>
-                  <input type="number" name="fives" />
-                </td>
-                <td className="results" id="fivesResults">
-                  {formData.fives}
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </form>
-      </ArenaContainer>
+                <tr>
+                  <th className="bracket-col">5v5</th>
+                  <td>
+                    <input type="number" name="fives" />
+                  </td>
+                  <td className="results" id="fivesResults">
+                    {formData.fives}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </ArenaContainer>
+        <ArenaContainer>
+          <h2>Arena Rating Needed</h2>
+          <form
+            onChange={pointChange}
+            onSelect={handleSelect}
+            autoComplete="off"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th>Points needed</th>
+                  <th>Bracket</th>
+                  <th>Arena Rating Needed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td />
+                  <th className="bracket-col">2v2</th>
+                  <td className="results" id="twosRatingRequired">
+                    {formData.twosRatingRequired}
+                  </td>
+                </tr>
 
-      <ArenaContainer>
-        <h2>Arena Rating Needed</h2>
-        <form onChange={pointChange} onSelect={handleSelect} autoComplete="off">
-          <table>
-            <thead>
-              <tr>
-                <th>Points needed</th>
-                <th>Bracket</th>
-                <th>Arena Rating Needed</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td />
-                <th className="bracket-col">2v2</th>
-                <td className="results" id="twosRatingRequired">
-                  {formData.twosRatingRequired}
-                </td>
-              </tr>
+                <tr>
+                  <td>
+                    <input type="number" name="threes" />
+                  </td>
+                  <th className="bracket-col">3v3</th>
+                  <td className="results" id="threesRatingRequired">
+                    {formData.threesRatingRequired}
+                  </td>
+                </tr>
 
-              <tr>
-                <td>
-                  <input type="number" name="threes" />
-                </td>
-                <th className="bracket-col">3v3</th>
-                <td className="results" id="threesRatingRequired">
-                  {formData.threesRatingRequired}
-                </td>
-              </tr>
-
-              <tr>
-                <td />
-                <th className="bracket-col">5v5</th>
-                <td className="results" id="fivesRatingRequired">
-                  {formData.fivesRatingRequired}
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </form>
-      </ArenaContainer>
-    </Main>
+                <tr>
+                  <td />
+                  <th className="bracket-col">5v5</th>
+                  <td className="results" id="fivesRatingRequired">
+                    {formData.fivesRatingRequired}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </ArenaContainer>
+      </Main>
+    </>
   );
 }
 export default Arenapointcalculator;

@@ -11,21 +11,18 @@ export const Main = styled.main`
   min-height: 40vw;
   height: auto;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 5%;
   opacity: 90%;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   padding: 2rem;
 
   @media (min-width: 1200px) {
-    align-items: center;
     flex-direction: row;
-    justify-content: top;
+    align-items: flex-start;
+    justify-content: center;
     max-width: 100vw;
     min-width: 75vw;
     padding: 3rem;
-  }
-
-  @media screen and (min-width: 992px) {
   }
 `;
 

@@ -551,7 +551,7 @@ const RaidAssembler = () => {
   return (
     <>
       <Header>
-        Raid Assembler - Organize 3.3.5 Buffs, Debuffs and Utilities
+        Raid Assembler - Organize WOTLK 3.3.5 Buffs, Debuffs and Utilities
       </Header>
       <Main>
         {saveMenuOpen && (
