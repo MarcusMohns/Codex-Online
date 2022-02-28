@@ -1323,6 +1323,19 @@ export const Header = styled.h1`
   height: 100%;
   margin-top: 10%;
 `;
+export const SubHeader = styled.h2`
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  width: 80%;
+  height: 100%;
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
+`;
 
 export const TinyContainer = styled.div`
   width: 100%;

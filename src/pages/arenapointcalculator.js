@@ -2,7 +2,7 @@ import {
   ArenaContainer,
   Main,
 } from "../components/styles/ArenaPointCalculator.styled";
-import { Header } from "../components/styles/RaidAssembler.styled";
+import { Header, SubHeader } from "../components/styles/RaidAssembler.styled";
 import React, { useReducer } from "react";
 
 const formReducer = (state, event) => {
@@ -92,7 +92,13 @@ function Arenapointcalculator() {
 
   return (
     <>
-      <Header>Arena Point Calculator - 3.3.5 WOTLK</Header>
+      <Header>Arena Point Calculator - 3.3.5 WOTLK </Header>
+      <SubHeader>
+        Make sure that the team has played at least 10 games and that you have
+        played 30% of the total week team games at the reset. Otherwise you will
+        not receive the calculated points. You will recieve points from the team
+        that provides the most amount of points.
+      </SubHeader>
       <Main>
         <ArenaContainer>
           <h2>Arena Points Rewarded</h2>
