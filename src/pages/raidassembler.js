@@ -108,10 +108,10 @@ const RaidAssembler = () => {
   const handlePlayerMenuToggle = (e) => {
     if (e.type === "click") {
       setAddPlayerMenu(!addPlayerMenu);
-    }
-    if (e.code === "KeyQ") {
+    } else if (e.code === "KeyQ") {
       try {
-        if (e.path[0].localName !== "input") {
+        if (e.target.localName !== "input") {
+          // Trigger addplayermenu only if Q is not typed inside an input
           setAddPlayerMenu(!addPlayerMenu);
         }
       } catch {
