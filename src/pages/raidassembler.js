@@ -18,6 +18,7 @@ import {
   RaidContentHeader,
   NoPlayersText,
   SaveIcon,
+  Header,
 } from "../components/styles/RaidAssembler.styled";
 
 const { v4: uuidv4 } = require("uuid");
@@ -548,95 +549,102 @@ const RaidAssembler = () => {
     };
   });
   return (
-    <Main>
-      {saveMenuOpen && (
-        <SaveMenu
-          saveOnClick={saveOnClick}
-          loadOnClick={loadOnClick}
-          editSaveOnChange={editSaveOnChange}
-          deleteSaveOnClick={deleteSaveOnClick}
-          saveOnClickToFile={saveOnClickToFile}
-          loadOnClickToFile={loadOnClickToFile}
-          saveMenuOpen={saveMenuOpen}
-          setSaveMenuOpen={setSaveMenuOpen}
-        />
-      )}
-      <div
-        className={`${
-          addPlayerMenu ? "add-player-menu" : "hide-add-player-menu"
-        }`}
-      >
-        <ArrowLeft className="arrow-left" onClick={handlePlayerMenuToggle} />
-        <SpecContainer className="spec-container">
-          <SpecButtons
-            className="spec-buttons"
-            specs={SpecArray}
-            onClick={addPlayer}
+    <>
+      <Header>
+        Raid Assembler - Organize 3.3.5 Buffs, Debuffs and Utilities
+      </Header>
+      <Main>
+        {saveMenuOpen && (
+          <SaveMenu
+            saveOnClick={saveOnClick}
+            loadOnClick={loadOnClick}
+            editSaveOnChange={editSaveOnChange}
+            deleteSaveOnClick={deleteSaveOnClick}
+            saveOnClickToFile={saveOnClickToFile}
+            loadOnClickToFile={loadOnClickToFile}
+            saveMenuOpen={saveMenuOpen}
+            setSaveMenuOpen={setSaveMenuOpen}
           />
-        </SpecContainer>
-      </div>
+        )}
+        <div
+          className={`${
+            addPlayerMenu ? "add-player-menu" : "hide-add-player-menu"
+          }`}
+        >
+          <ArrowLeft className="arrow-left" onClick={handlePlayerMenuToggle} />
+          <SpecContainer className="spec-container">
+            <SpecButtons
+              className="spec-buttons"
+              specs={SpecArray}
+              onClick={addPlayer}
+            />
+          </SpecContainer>
+        </div>
 
-      <RaidContainer className="raid-container">
-        <RaidContentHeader>
-          <RaidHeaderButton
-            onClick={() => {
-              setSaveMenuOpen(!saveMenuOpen);
-              setAddPlayerMenu(false);
-            }}
-            id="raid-saves-btn"
-          >
-            Saves <SaveIcon />
-          </RaidHeaderButton>
-          <p className="raid-count">{raidCount[0]} / 25 </p>
-          <p className="role-count">
-            {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
-          </p>
-          <div className="btn-container">
-            <RaidHeaderButton onClick={handlePlayerMenuToggle}>
-              (Q) Add a Player <span id="plus-sign">+</span>
+        <RaidContainer className="raid-container">
+          <RaidContentHeader>
+            <RaidHeaderButton
+              onClick={() => {
+                setSaveMenuOpen(!saveMenuOpen);
+                setAddPlayerMenu(false);
+              }}
+              id="raid-saves-btn"
+            >
+              Saves <SaveIcon />
             </RaidHeaderButton>
-            <ResetIcon onClick={resetRaid} />
-          </div>
-        </RaidContentHeader>
-        {raidIsFull ? (
-          <div
-            className={
-              raidCount[0] >= 25 ? "raid-is-full-warning" : "raid-is-not-full"
-            }
-          >
-            Raid is full
-          </div>
-        ) : (
-          <div
-            className={raidCount[0] >= 25 ? "raid-is-full" : "raid-is-not-full"}
-          >
-            Raid is full
-          </div>
-        )}
-        {raid.players.length > 0 ? (
-          <Raid
-            raid={raid}
-            onDelete={deletePlayer}
-            focusName={focusName}
-            editName={editName}
-            editBuffs={playerBuffsEdit}
-            playerRoleEdit={playerRoleEdit}
-            setRaid={setRaid}
-            onDragEnd={onDragEnd}
-          />
-        ) : (
-          <NoPlayersText>No players in raid</NoPlayersText>
-        )}
-      </RaidContainer>
-      <UtilityContainer>
-        <ContentHeader>Utilities</ContentHeader>
-        <Utilities utilities={utilities}></Utilities>
-      </UtilityContainer>
-      <BuffContainer className="buff-container">
-        <ContentHeader>Buffs & Debuffs</ContentHeader>
-        <BuffCategories currentBuffs={buffs}></BuffCategories>
-      </BuffContainer>
-    </Main>
+            <p className="raid-count">{raidCount[0]} / 25 </p>
+            <p className="role-count">
+              {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
+            </p>
+            <div className="btn-container">
+              <RaidHeaderButton onClick={handlePlayerMenuToggle}>
+                (Q) Add a Player <span id="plus-sign">+</span>
+              </RaidHeaderButton>
+              <ResetIcon onClick={resetRaid} />
+            </div>
+          </RaidContentHeader>
+          {raidIsFull ? (
+            <div
+              className={
+                raidCount[0] >= 25 ? "raid-is-full-warning" : "raid-is-not-full"
+              }
+            >
+              Raid is full
+            </div>
+          ) : (
+            <div
+              className={
+                raidCount[0] >= 25 ? "raid-is-full" : "raid-is-not-full"
+              }
+            >
+              Raid is full
+            </div>
+          )}
+          {raid.players.length > 0 ? (
+            <Raid
+              raid={raid}
+              onDelete={deletePlayer}
+              focusName={focusName}
+              editName={editName}
+              editBuffs={playerBuffsEdit}
+              playerRoleEdit={playerRoleEdit}
+              setRaid={setRaid}
+              onDragEnd={onDragEnd}
+            />
+          ) : (
+            <NoPlayersText>No players in raid</NoPlayersText>
+          )}
+        </RaidContainer>
+        <UtilityContainer>
+          <ContentHeader>Utilities</ContentHeader>
+          <Utilities utilities={utilities}></Utilities>
+        </UtilityContainer>
+        <BuffContainer className="buff-container">
+          <ContentHeader>Buffs & Debuffs</ContentHeader>
+          <BuffCategories currentBuffs={buffs}></BuffCategories>
+        </BuffContainer>
+      </Main>
+    </>
   );
 };
 

@@ -19,14 +19,12 @@ export const Main = styled.main`
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 100vw;
-  min-height: 100%;
-  height: auto;
-  margin: auto;
-  margin-top: 20%;
+  margin-top: 5%;
   background-color: ${COLORS.fadedBackground};
 
   @media (min-width: 1200px) {
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 1.5fr;
@@ -1311,6 +1309,16 @@ export const StyledSaveMenu = styled.div`
       }
     }
   }
+`;
+export const Header = styled.h1`
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
 `;
 
 export const TinyContainer = styled.div`
