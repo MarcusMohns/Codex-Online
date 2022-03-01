@@ -270,6 +270,10 @@ export const GemTableContainer = styled.section`
   #uncommonCells {
     color: #29c714;
   }
+  #perfectCells {
+    color: #29c714;
+    font-weight: bold;
+  }
 
   #blueCells {
     color: ${COLORS.shaman};
