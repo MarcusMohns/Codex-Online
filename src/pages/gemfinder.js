@@ -201,6 +201,7 @@ const Gemfinder = () => {
             id="search-gem-input"
             onKeyUp={(e) => gemSearch(e.target.value)}
             placeholder="Search for gems..."
+            spellCheck="false"
           />
         </h2>
         <GemTableContainer>
