@@ -86,10 +86,13 @@ const Gemfinder = () => {
   };
 
   const gemSearch = (search) => {
-    const newArray = [...gemArray];
-    const newGems = newArray.filter((gem) => gem.name.includes(search));
-
-    setGems(newGems);
+    if (search) {
+      const newArray = [...gemArray];
+      let newGems = newArray.filter((gem) => gem.name.includes(search));
+      setGems(newGems);
+    } else {
+      setGems(gemArray);
+    }
   };
 
   const gemSorter = (gemsToSort, sortBy) => {
