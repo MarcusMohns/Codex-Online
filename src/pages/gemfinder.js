@@ -85,6 +85,13 @@ const Gemfinder = () => {
     setGems(newArray);
   };
 
+  const gemSearch = (search) => {
+    const newArray = [...gemArray];
+    const newGems = newArray.filter((gem) => gem.name.includes(search));
+
+    setGems(newGems);
+  };
+
   const gemSorter = (gemsToSort, sortBy) => {
     if (sortBy === "quality" || sortBy === "stats") {
       //  Sort by quality and stats in the same way we would just quality.
@@ -183,12 +190,19 @@ const Gemfinder = () => {
     <>
       <Header>Gem Finder - WOTLK Gems</Header>
       <Main>
-        <h2 className="header">FILTERS</h2>
+        <h2 className="header">FILTERS</h2>{" "}
         <CheckBoxContainer className="checkbox-container">
           <Checkboxes filters={filterNames} onChange={handleChange} />
         </CheckBoxContainer>
-        <h2 className="header">RESULTS</h2>
-
+        <h2 className="header">
+          RESULTS
+          <input
+            type="text"
+            id="search-gem-input"
+            onKeyUp={(e) => gemSearch(e.target.value)}
+            placeholder="Search for gems..."
+          />
+        </h2>
         <GemTableContainer>
           {gems.length > 0 ? (
             <GemTable gems={gems} onClick={handleClick} />

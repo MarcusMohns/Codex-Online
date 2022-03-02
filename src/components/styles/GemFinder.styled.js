@@ -29,9 +29,9 @@ export const Main = styled.main`
 
   .header {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 1rem;
     color: white;
     margin-top: 2rem;
@@ -40,6 +40,17 @@ export const Main = styled.main`
     @media screen and (max-width: 992px) {
       margin-left: 0px;
       align-items: center;
+    }
+
+    #search-gem-input {
+      margin-right: 1rem;
+      outline: none;
+      border: 1px solid transparent;
+      font-size: 1rem;
+      border-radius: 10px;
+      padding: 0.2rem;
+      background-color: ${COLORS.fadedBackground};
+      color: ${COLORS.offWhite};
     }
   }
 `;
