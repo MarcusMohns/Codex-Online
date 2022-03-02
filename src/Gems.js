@@ -701,7 +701,7 @@ const gemArray = [
     source: "Wintergrasp ",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Bloodstone.png",
+    image: "images/Autumns_Glow.png",
   },
   {
     name: "Lambent Dark Jade ",
