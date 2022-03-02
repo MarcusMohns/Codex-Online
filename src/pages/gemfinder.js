@@ -88,7 +88,9 @@ const Gemfinder = () => {
   const gemSearch = (search) => {
     if (search) {
       const newArray = [...gemArray];
-      let newGems = newArray.filter((gem) => gem.name.includes(search));
+      let newGems = newArray.filter((gem) =>
+        gem.name.toUpperCase().includes(search.toUpperCase())
+      );
       setGems(newGems);
     } else {
       setGems(gemArray);
