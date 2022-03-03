@@ -240,7 +240,7 @@ export const GemTableContainer = styled.section`
   tbody tr {
     color: ${COLORS.offWhite};
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       background: ${COLORS.fadedBlack};
     }
 
