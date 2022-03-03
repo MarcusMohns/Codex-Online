@@ -18,7 +18,7 @@ const Footer = () => {
       <div>Copyright</div>
       <div>Contact</div>
       <div>About</div>
-      <div>Connect</div>
+      <a href="https://discord.gg/JskSjDrrwh">Connect</a>
     </StyledFooter>
   );
 };
