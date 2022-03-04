@@ -368,7 +368,7 @@ const RaidAssembler = () => {
       count: savedCount,
     });
     let c = document.createElement("a");
-    c.download = `${raidCount[0]}/25 - Saved Raid`;
+    c.download = `${raidCount[0]}/25 - Saved Raid.txt`;
 
     const t = new Blob([data], {
       type: "text/plain",
@@ -590,20 +590,24 @@ const RaidAssembler = () => {
         <RaidContainer className="raid-container">
           <RaidContentHeader>
             <RaidHeaderButton
+              backgroundColor="#26a828"
               onClick={() => {
                 setSaveMenuOpen(!saveMenuOpen);
                 setAddPlayerMenu(false);
               }}
               id="raid-saves-btn"
             >
-              Saves <SaveIcon />
+              <SaveIcon /> Saves
             </RaidHeaderButton>
             <p className="raid-count">{raidCount[0]} / 25 </p>
             <p className="role-count">
               {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
             </p>
             <div className="btn-container">
-              <RaidHeaderButton onClick={handlePlayerMenuToggle}>
+              <RaidHeaderButton
+                onClick={handlePlayerMenuToggle}
+                backgroundColor="RGBA(39, 35, 175, 0.5)"
+              >
                 (Q) Add a Player <span id="plus-sign">+</span>
               </RaidHeaderButton>
               <ResetIcon onClick={resetRaid} />
