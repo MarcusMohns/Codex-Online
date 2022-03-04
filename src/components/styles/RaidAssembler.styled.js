@@ -112,7 +112,7 @@ export const SpecContainer = styled.section`
     grid-auto-flow: column;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: ${COLORS.background};
+    background-color: ${COLORS.fadedBlack};
     padding: 1px;
     border-radius: 5px;
   }
@@ -182,7 +182,7 @@ export const StyledSpecButton = styled.div`
 
     .specbutton-image {
       border-radius: 50%;
-      border: 2px solid grey;
+      border: 2px solid black;
       width: 1.3rem;
       height: 1.3rem;
     }
@@ -204,10 +204,10 @@ export const StyledSpecButton = styled.div`
   }
 
   @media (min-width: 1200px) {
+    padding: 0px 2px;
     margin: 1px;
     border-radius: 5px;
     font-size: 0.7rem;
-    padding: 2px;
     letter-spacing: 1px;
 
     .text-and-image-button-container {
@@ -423,9 +423,10 @@ export const StyledPlayer = styled.div`
     width: 100%;
     height: 100%;
 
-    &:active #player-info-icon ~ div {
+    &:hover #player-info-icon ~ div {
       display: flex;
     }
+
     #player-info-icon ~ div {
       display: none;
       &:hover {
@@ -1127,9 +1128,9 @@ export const RaidHeaderButton = styled.div`
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   align-items: center;
   justify-content: center;
-  background-color: ${COLORS.fadedGrey};
   color: ${COLORS.lightText};
-  border-radius: 3px;
+  background-color: ${(props) => props.backgroundColor};
+  border-radius: 10px;
   margin-right: 1rem;
   cursor: pointer;
   padding: 0.2rem 0.6rem;
@@ -1144,7 +1145,7 @@ export const RaidHeaderButton = styled.div`
   }
 
   &:hover {
-    background-color: ${COLORS.fadedBackground};
+    background-color: ${COLORS.fadedHighlight};
   }
 `;
 export const RaidGroupContainer = styled.div`
@@ -1412,6 +1413,7 @@ export const SettingsIcon = styled(RiSettings3Line)`
 `;
 export const SaveIcon = styled(RiSave3Fill)`
   font-size: 1.7em;
+  margin-right: 0.2rem;
 `;
 export const LoadIcon = styled(GiLoad)`
   font-size: 1.7em;
