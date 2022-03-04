@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import COLORS from "../../components";
-
+import { FaGem } from "@react-icons/all-files/fa/FaGem";
+import { BsFilter } from "@react-icons/all-files/bs/BsFilter";
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
@@ -36,6 +37,11 @@ export const Main = styled.main`
     color: white;
     margin-top: 2rem;
     width: 80%;
+
+    .header-text-icon-container {
+      display: flex;
+      align-items: center;
+    }
 
     @media screen and (max-width: 992px) {
       margin-left: 0px;
@@ -180,12 +186,13 @@ export const CheckBoxContainer = styled.section`
 
     .styled-checkmark:after {
       content: "";
-      width: 10px;
+      width: 11px;
       height: 6px;
-      border: 2px solid #dbdbec;
-      border-top: none;
-      border-right: none;
-      transform: rotate(-45deg);
+      border: 2px solid ${COLORS.offWhite};
+      border-bottom: none;
+      border-left: none;
+      margin-bottom: auto;
+      transform: rotate(130deg);
     }
 
     input {
@@ -258,7 +265,8 @@ export const GemTableContainer = styled.section`
     text-overflow: ellipsis;
     margin: 0;
     img {
-      width: 2.2rem;
+      width: 2.4rem;
+      height: 2.4rem;
       user-select: none;
       padding-left: 1px;
       border-radius: 10px;
@@ -372,6 +380,7 @@ export const GemTableContainer = styled.section`
       padding-bottom: 0px;
       img {
         width: 2rem;
+        height: 2rem;
       }
     }
     .gemColorHeader,
@@ -382,4 +391,13 @@ export const GemTableContainer = styled.section`
       border: none;
     }
   }
+`;
+
+export const GemIcon = styled(FaGem)`
+  font-size: 1.3em;
+  margin-right: 0.5rem;
+`;
+export const FilterIcon = styled(BsFilter)`
+  font-size: 1.5em;
+  margin-right: 0.1rem;
 `;

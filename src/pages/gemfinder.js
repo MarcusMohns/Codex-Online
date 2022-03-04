@@ -8,6 +8,8 @@ import {
   Main,
   GemTableContainer,
   CheckBoxContainer,
+  GemIcon,
+  FilterIcon,
 } from "../components/styles/GemFinder.styled";
 
 let currentFilters = [];
@@ -195,18 +197,25 @@ const Gemfinder = () => {
     <>
       <Header>Gem Finder - WOTLK Gems</Header>
       <Main>
-        <h2 className="header">FILTERS</h2>{" "}
+        <h2 className="header">
+          <div className="header-text-icon-container">
+            <FilterIcon /> FILTERS
+          </div>
+        </h2>
         <CheckBoxContainer className="checkbox-container">
           <Checkboxes filters={filterNames} onChange={handleChange} />
         </CheckBoxContainer>
         <h2 className="header">
-          RESULTS
+          <div className="header-text-icon-container">
+            <GemIcon /> RESULTS
+          </div>
           <input
             type="text"
             id="search-gem-input"
             onKeyUp={(e) => gemSearch(e.target.value)}
             placeholder="Search for gems..."
             spellCheck="false"
+            autoComplete="off"
           />
         </h2>
         <GemTableContainer>
