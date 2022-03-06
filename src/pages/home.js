@@ -7,28 +7,6 @@ import {
 } from "../components/styles/HomeStyled";
 import { Link } from "react-router-dom";
 
-const raidAssemblerImage = (
-  <img
-    src="/images/raid_assembler.png"
-    className="content-preview-image"
-    alt="plus sign"
-  />
-);
-const arenaPointCalcImage = (
-  <img
-    src="/images/arena_point_calc.png"
-    alt="shield"
-    className="content-preview-image"
-  />
-);
-const gemFinderImage = (
-  <img
-    src="/images/gemfinder.png"
-    alt="sword"
-    className="content-preview-image"
-  />
-);
-
 const Home = () => {
   return (
     <Main>
@@ -51,10 +29,14 @@ const Home = () => {
             Save your raid in the browser or locally to share with others
           </div>
           <Link to="/raidassembler" className="link-button">
-            Let's go!
+            Get started!
           </Link>
         </PagePreviewText>
-        {raidAssemblerImage}
+        <img
+          src="images/raid_assembler.png"
+          className="content-preview-image"
+          alt="raid-assembler-preview"
+        />
       </PagePreviewContainer>
       <PagePreviewContainer id="gem-finder-container">
         <PagePreviewText>
@@ -62,10 +44,14 @@ const Home = () => {
           Gem Finder consists of every non-meta gem in 3.3.5. Find a gem with
           the stats, quality or color that suit your needs
           <Link to="/gemfinder" className="link-button">
-            Let's go!
+            Get started!
           </Link>
         </PagePreviewText>
-        {gemFinderImage}
+        <img
+          src="images/gemfinder.png"
+          className="content-preview-image"
+          alt="raid-assembler-preview"
+        />
       </PagePreviewContainer>
       <PagePreviewContainer>
         <PagePreviewText>
@@ -74,10 +60,14 @@ const Home = () => {
           end of the reset or check how much rating you need for that upgrade
           you're looking at
           <Link to="/arenapointcalculator" className="link-button">
-            Let's go!
+            Get started!
           </Link>
         </PagePreviewText>
-        {arenaPointCalcImage}
+        <img
+          src="images/arena_point_calc.png"
+          className="content-preview-image"
+          alt="arena-point-calc-preview"
+        />
       </PagePreviewContainer>
     </Main>
   );
