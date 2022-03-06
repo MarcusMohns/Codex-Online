@@ -31,7 +31,7 @@ export const HomeSection = styled.section`
   background-color: ${COLORS.fadedBlack};
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-  background-image: url("/images/howling_fjord.png");
+  background-image: url("images/howling_fjord.png");
   background-repeat: no-repeat;
   background-position: top;
   position: absolute;
