@@ -10,6 +10,7 @@ import {
   CheckBoxContainer,
   GemIcon,
   FilterIcon,
+  SearchIcon,
 } from "../components/styles/GemFinder.styled";
 
 let currentFilters = [];
@@ -209,14 +210,18 @@ const Gemfinder = () => {
           <div className="header-text-icon-container">
             <GemIcon /> RESULTS
           </div>
-          <input
-            type="text"
-            id="search-gem-input"
-            onKeyUp={(e) => gemSearch(e.target.value)}
-            placeholder="Search for gems..."
-            spellCheck="false"
-            autoComplete="off"
-          />
+
+          <div className="header-text-icon-container">
+            <SearchIcon />
+            <input
+              type="text"
+              id="search-gem-input"
+              onKeyUp={(e) => gemSearch(e.target.value)}
+              placeholder="Search for gems..."
+              spellCheck="false"
+              autoComplete="off"
+            />
+          </div>
         </h2>
         <GemTableContainer>
           {gems.length > 0 ? (

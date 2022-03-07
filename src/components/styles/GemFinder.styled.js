@@ -2,6 +2,7 @@ import styled from "styled-components";
 import COLORS from "../../components";
 import { FaGem } from "@react-icons/all-files/fa/FaGem";
 import { BsFilter } from "@react-icons/all-files/bs/BsFilter";
+import { BsSearch } from "@react-icons/all-files/bs/BsSearch";
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
@@ -397,7 +398,13 @@ export const GemIcon = styled(FaGem)`
   font-size: 1.3em;
   margin-right: 0.5rem;
 `;
+
 export const FilterIcon = styled(BsFilter)`
   font-size: 1.5em;
   margin-right: 0.1rem;
+`;
+
+export const SearchIcon = styled(BsSearch)`
+  font-size: 1.2em;
+  margin-right: 0.5rem;
 `;
