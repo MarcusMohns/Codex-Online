@@ -68,7 +68,14 @@ export const Nav = styled.nav`
     display: none;
   }
 `;
-
+export const LogoLink = styled(Link)`
+  font-size: 1.5rem;
+  color: ${COLORS.offWhite};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+`;
 export const BarsNavLink = styled(Link)`
   padding: 0.6rem;
   text-decoration: none;
