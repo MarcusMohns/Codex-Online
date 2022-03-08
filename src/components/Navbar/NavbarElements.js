@@ -77,6 +77,7 @@ export const LogoLink = styled(Link)`
   text-decoration: none;
   position: relative;
   width: 100%;
+  letter-spacing: 1px;
 `;
 export const BarsNavLink = styled(Link)`
   padding: 0.6rem;
