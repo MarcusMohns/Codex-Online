@@ -24,7 +24,13 @@ export const Nav = styled.nav`
     position: sticky;
     justify-content: space-evenly;
     top: 0px;
+
     height: ${(props) => (props.shrunk ? `60px` : `100px`)};
+
+    .logo-text {
+      transition: 0.3s ease;
+      opacity: ${(props) => (props.shrunk ? `0%` : `100%`)};
+    }
   }
 
   .profile-menu {
