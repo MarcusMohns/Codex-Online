@@ -69,7 +69,7 @@ export const Nav = styled.nav`
   }
 `;
 export const LogoLink = styled(Link)`
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: ${COLORS.offWhite};
   display: flex;
   align-items: center;
