@@ -73,8 +73,10 @@ export const LogoLink = styled(Link)`
   color: ${COLORS.offWhite};
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   position: relative;
+  width: 100%;
 `;
 export const BarsNavLink = styled(Link)`
   padding: 0.6rem;
@@ -95,6 +97,7 @@ export const NavLink = styled(Link)`
   transition: all 0.2s ease-out;
   position: relative;
   user-select: none;
+  white-space: nowrap;
 
   &:after {
     background: none repeat scroll 0 0 transparent;
@@ -133,6 +136,7 @@ export const ProfileContainer = styled.div`
   top: 0;
   right: 0;
   color: white;
+  width: 100%;
   font-size: 1.8rem;
   transform: translate(-100%, 150%);
 
