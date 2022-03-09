@@ -332,6 +332,11 @@ const SpecArray = [
         name: "Aimed Shot",
         image: "images/Aimed_Shot.png",
       },
+      {
+        category: "Nature Resistance",
+        name: "Aspect of the Wild",
+        image: "images/Aspect_Of_The_Wild.png",
+      },
     ],
     utility: [
       {
@@ -341,10 +346,6 @@ const SpecArray = [
       {
         name: "Tranquilizing Shot",
         image: "images/Tranquilizing_Shot.png",
-      },
-      {
-        name: "Nature Resistance",
-        image: "images/Aspect_Of_The_Wild.png",
       },
     ],
   },
@@ -365,6 +366,11 @@ const SpecArray = [
         name: "Trueshot Aura",
         image: "images/Trueshot_Aura.png",
       },
+      {
+        category: "Nature Resistance",
+        name: "Aspect of the Wild",
+        image: "images/Aspect_Of_The_Wild.png",
+      },
     ],
     utility: [
       {
@@ -374,10 +380,6 @@ const SpecArray = [
       {
         name: "Tranquilizing Shot",
         image: "images/Tranquilizing_Shot.png",
-      },
-      {
-        name: "Nature Resistance",
-        image: "images/Aspect_Of_The_Wild.png",
       },
     ],
   },
@@ -398,6 +400,11 @@ const SpecArray = [
         name: "Aimed Shot",
         image: "images/Aimed_Shot.png",
       },
+      {
+        category: "Nature Resistance",
+        name: "Aspect of the Wild",
+        image: "images/Aspect_Of_The_Wild.png",
+      },
     ],
     utility: [
       {
@@ -411,10 +418,6 @@ const SpecArray = [
       {
         name: "Wyvern Sting",
         image: "images/Wyvern_Sting.png",
-      },
-      {
-        name: "Nature Resistance",
-        image: "images/Aspect_Of_The_Wild.png",
       },
     ],
   },
@@ -563,6 +566,21 @@ const SpecArray = [
         name: "Judgement of Wisdom",
         image: "images/Judgement_Of_Wisdom.png",
       },
+      {
+        category: "Fire Resistance",
+        name: "Fire Resistance Aura",
+        image: "images/Fire_Resistance_Aura.png",
+      },
+      {
+        category: "Frost Resistance",
+        name: "Frost Resistance Aura",
+        image: "images/Frost_Resistance_Aura.png",
+      },
+      {
+        category: "Shadow Resistance",
+        name: "Shadow Resistance Aura",
+        image: "images/Shadow_Resistance_Aura.png",
+      },
     ],
     utility: [
       {
@@ -600,18 +618,6 @@ const SpecArray = [
       {
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
-      },
-      {
-        name: "Fire Resistance",
-        image: "images/Fire_Resistance_Aura.png",
-      },
-      {
-        name: "Frost Resistance",
-        image: "images/Frost_Resistance_Aura.png",
-      },
-      {
-        name: "Shadow Resistance",
-        image: "images/Shadow_Resistance_Aura.png",
       },
     ],
   },
@@ -671,6 +677,21 @@ const SpecArray = [
         name: "Judgement of Wisdom",
         image: "images/Judgement_Of_Wisdom.png",
       },
+      {
+        category: "Fire Resistance",
+        name: "Fire Resistance Aura",
+        image: "images/Fire_Resistance_Aura.png",
+      },
+      {
+        category: "Frost Resistance",
+        name: "Frost Resistance Aura",
+        image: "images/Frost_Resistance_Aura.png",
+      },
+      {
+        category: "Shadow Resistance",
+        name: "Shadow Resistance Aura",
+        image: "images/Shadow_Resistance_Aura.png",
+      },
     ],
     utility: [
       {
@@ -708,18 +729,6 @@ const SpecArray = [
       {
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
-      },
-      {
-        name: "Fire Resistance",
-        image: "images/Fire_Resistance_Aura.png",
-      },
-      {
-        name: "Frost Resistance",
-        image: "images/Frost_Resistance_Aura.png",
-      },
-      {
-        name: "Shadow Resistance",
-        image: "images/Shadow_Resistance_Aura.png",
       },
     ],
   },
@@ -783,6 +792,21 @@ const SpecArray = [
         name: "Judgement of Wisdom",
         image: "images/Judgement_Of_Wisdom.png",
       },
+      {
+        category: "Fire Resistance",
+        name: "Fire Resistance Aura",
+        image: "images/Fire_Resistance_Aura.png",
+      },
+      {
+        category: "Frost Resistance",
+        name: "Frost Resistance Aura",
+        image: "images/Frost_Resistance_Aura.png",
+      },
+      {
+        category: "Shadow Resistance",
+        name: "Shadow Resistance Aura",
+        image: "images/Shadow_Resistance_Aura.png",
+      },
     ],
     utility: [
       {
@@ -821,18 +845,6 @@ const SpecArray = [
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
       },
-      {
-        name: "Fire Resistance",
-        image: "images/Fire_Resistance_Aura.png",
-      },
-      {
-        name: "Frost Resistance",
-        image: "images/Frost_Resistance_Aura.png",
-      },
-      {
-        name: "Shadow Resistance",
-        image: "images/Shadow_Resistance_Aura.png",
-      },
     ],
   },
   {
@@ -861,6 +873,11 @@ const SpecArray = [
         category: "Stamina",
         name: "Power Word: Fortitude",
         image: "images/Power_Word_Fortitude.png",
+      },
+      {
+        category: "Shadow Resistance",
+        name: "Shadow Protection",
+        image: "images/Prayer_Of_Shadow_Resistance.png",
       },
     ],
     utility: [
@@ -896,10 +913,6 @@ const SpecArray = [
         name: "Mind Control",
         image: "images/Mind_Control.png",
       },
-      {
-        name: "Shadow Resistance",
-        image: "images/Prayer_Of_Shadow_Resistance.png",
-      },
     ],
   },
   {
@@ -923,6 +936,11 @@ const SpecArray = [
         category: "Stamina",
         name: "Power Word: Fortitude",
         image: "images/Power_Word_Fortitude.png",
+      },
+      {
+        category: "Shadow Resistance",
+        name: "Shadow Protection",
+        image: "images/Prayer_Of_Shadow_Resistance.png",
       },
     ],
     utility: [
@@ -953,10 +971,6 @@ const SpecArray = [
       {
         name: "Mind Control",
         image: "images/Mind_Control.png",
-      },
-      {
-        name: "Shadow Resistance",
-        image: "images/Prayer_Of_Shadow_Resistance.png",
       },
     ],
   },
@@ -987,6 +1001,11 @@ const SpecArray = [
         name: "Power Word: Fortitude",
         image: "images/Power_Word_Fortitude.png",
       },
+      {
+        category: "Shadow Resistance",
+        name: "Shadow Protection",
+        image: "images/Prayer_Of_Shadow_Resistance.png",
+      },
     ],
     utility: [
       {
@@ -1016,10 +1035,6 @@ const SpecArray = [
       {
         name: "Mind Control",
         image: "images/Mind_Control.png",
-      },
-      {
-        name: "Shadow Resistance",
-        image: "images/Prayer_Of_Shadow_Resistance.png",
       },
     ],
   },
@@ -1197,6 +1212,21 @@ const SpecArray = [
         name: "Windfury Totem ",
         image: "images/Windfury.png",
       },
+      {
+        category: "Fire Resistance",
+        name: "Fire Resistance Totem",
+        image: "images/Fire_Resistance_Totem.png",
+      },
+      {
+        category: "Frost Resistance",
+        name: "Frost Resistance Totem",
+        image: "images/Frost_Resistance_Totem.png",
+      },
+      {
+        category: "Nature Resistance",
+        name: "Nature Resistance Totem",
+        image: "images/Nature_Resistance_Totem.png",
+      },
     ],
     utility: [
       {
@@ -1210,10 +1240,6 @@ const SpecArray = [
       {
         name: "Cleansing Totem",
         image: "images/Cleansing_Totem.png",
-      },
-      {
-        name: "Nature Resistance",
-        image: "images/Nature_Resistance_Totem.png",
       },
       {
         name: "Interrupt",
@@ -1268,6 +1294,21 @@ const SpecArray = [
         name: "Improved Windfury Totem ",
         image: "images/Windfury.png",
       },
+      {
+        category: "Fire Resistance",
+        name: "Fire Resistance Totem",
+        image: "images/Fire_Resistance_Totem.png",
+      },
+      {
+        category: "Frost Resistance",
+        name: "Frost Resistance Totem",
+        image: "images/Frost_Resistance_Totem.png",
+      },
+      {
+        category: "Nature Resistance",
+        name: "Nature Resistance Totem",
+        image: "images/Nature_Resistance_Totem.png",
+      },
     ],
     utility: [
       {
@@ -1281,10 +1322,6 @@ const SpecArray = [
       {
         name: "Cleansing Totem",
         image: "images/Cleansing_Totem.png",
-      },
-      {
-        name: "Nature Resistance",
-        image: "images/Nature_Resistance_Totem.png",
       },
       {
         name: "Interrupt",
@@ -1339,6 +1376,21 @@ const SpecArray = [
         name: "Windfury Totem ",
         image: "images/Windfury.png",
       },
+      {
+        category: "Fire Resistance",
+        name: "Fire Resistance Totem",
+        image: "images/Fire_Resistance_Totem.png",
+      },
+      {
+        category: "Frost Resistance",
+        name: "Frost Resistance Totem",
+        image: "images/Frost_Resistance_Totem.png",
+      },
+      {
+        category: "Nature Resistance",
+        name: "Nature Resistance Totem",
+        image: "images/Nature_Resistance_Totem.png",
+      },
     ],
     utility: [
       {
@@ -1356,10 +1408,6 @@ const SpecArray = [
       {
         name: "Cleansing Totem",
         image: "images/Cleansing_Totem.png",
-      },
-      {
-        name: "Nature Resistance",
-        image: "images/Nature_Resistance_Totem.png",
       },
       {
         name: "Interrupt",

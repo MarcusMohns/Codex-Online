@@ -916,6 +916,86 @@ const BuffArray = [
       </div>
     ),
   },
+  {
+    name: "Fire Resistance",
+    source: [
+      <div key={"fire-resistance-provided-by"}>
+        <span id="paladin">Paladins</span>
+        <span id="shaman">Shamans</span>
+      </div>,
+    ],
+    image: "images/Fire_Resistance_Aura.png",
+    text: (
+      <div>
+        <div className="spell-names">
+          Fire Resistance Aura, Fire Resistance Totem
+        </div>
+        <span className="buff">Increases</span> the fire resistance of{" "}
+        <span className="buff">party and raid members</span> by{" "}
+        <span className="buff-value">130</span>
+      </div>
+    ),
+  },
+  {
+    name: "Frost Resistance",
+    source: [
+      <div key={"Frost-resistance-provided-by"}>
+        <span id="paladin">Paladins</span>
+        <span id="shaman">Shamans</span>
+      </div>,
+    ],
+    image: "images/Frost_Resistance_Aura.png",
+    text: (
+      <div>
+        <div className="spell-names">
+          Frost Resistance Aura, Frost Resistance Totem
+        </div>
+        <span className="buff">Increases</span> the frost resistance of{" "}
+        <span className="buff">party and raid members</span> by{" "}
+        <span className="buff-value">130</span>
+      </div>
+    ),
+  },
+  {
+    name: "Shadow Resistance",
+    source: [
+      <div key={"Shadow-resistance-provided-by"}>
+        <span id="paladin">Paladins</span>
+        <span id="priest">Priests</span>
+      </div>,
+    ],
+    image: "images/Shadow_Resistance_Aura.png",
+    text: (
+      <div>
+        <div className="spell-names">
+          Shadow Resistance Aura, Shadow Protection
+        </div>
+        <span className="buff">Increases</span> the shadow resistance of{" "}
+        <span className="buff">party and raid members</span> by{" "}
+        <span className="buff-value">130</span>
+      </div>
+    ),
+  },
+  {
+    name: "Nature Resistance",
+    source: [
+      <div key={"Nature-resistance-provided-by"}>
+        <span id="shaman">Shamans</span>
+        <span id="hunter">Hunters</span>
+      </div>,
+    ],
+    image: "images/Nature_Resistance_Totem.png",
+    text: (
+      <div>
+        <div className="spell-names">
+          Nature Resistance Totem, Aspect of the Wild
+        </div>
+        <span className="buff">Increases</span> the nature resistance of{" "}
+        <span className="buff">party and raid members</span> by{" "}
+        <span className="buff-value">130</span>
+      </div>
+    ),
+  },
 ];
 
 export default BuffArray;
