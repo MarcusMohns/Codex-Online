@@ -169,6 +169,11 @@ const SpecArray = [
         name: "Improved Faerie Fire",
         image: "images/Faerie_Fire.png",
       },
+      {
+        category: "Melee Hit Reduction",
+        name: "Insect Swarm",
+        image: "images/Insect_Swarm.png",
+      },
     ],
     utility: [
       {
@@ -337,6 +342,11 @@ const SpecArray = [
         name: "Aspect of the Wild",
         image: "images/Aspect_Of_The_Wild.png",
       },
+      {
+        category: "Melee Hit Reduction",
+        name: "Scorpid Sting",
+        image: "images/Scorpid_Sting.png",
+      },
     ],
     utility: [
       {
@@ -371,6 +381,11 @@ const SpecArray = [
         name: "Aspect of the Wild",
         image: "images/Aspect_Of_The_Wild.png",
       },
+      {
+        category: "Melee Hit Reduction",
+        name: "Scorpid Sting",
+        image: "images/Scorpid_Sting.png",
+      },
     ],
     utility: [
       {
@@ -404,6 +419,11 @@ const SpecArray = [
         category: "Nature Resistance",
         name: "Aspect of the Wild",
         image: "images/Aspect_Of_The_Wild.png",
+      },
+      {
+        category: "Melee Hit Reduction",
+        name: "Scorpid Sting",
+        image: "images/Scorpid_Sting.png",
       },
     ],
     utility: [

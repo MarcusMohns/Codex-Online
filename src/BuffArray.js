@@ -917,6 +917,26 @@ const BuffArray = [
     ),
   },
   {
+    name: "Melee Hit Reduction",
+    source: [
+      <div key={"melee-hit-reduction-provided-by"}>
+        <span id="druid">Balance Druids,</span>
+        <span id="hunter">Hunters</span>
+      </div>,
+    ],
+    image: "images/Insect_Swarm.png",
+    text: (
+      <div>
+        <div className="spell-names">Insect Swarm, Scorpid Sting</div>
+        Reduces the <span className="debuff">enemy target's</span> chance to hit
+        with melee and ranged attacks by <span className="buff-value">3%</span>
+        <div className="fine-print">
+          Hunters using Scorpid sting will suffer a DPS loss.
+        </div>
+      </div>
+    ),
+  },
+  {
     name: "Fire Resistance",
     source: [
       <div key={"fire-resistance-provided-by"}>
