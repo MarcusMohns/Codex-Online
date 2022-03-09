@@ -20,7 +20,7 @@ const BuffArray = [
     ),
   },
   {
-    name: "Armor %",
+    name: "Reduced Phys Damage Taken",
     source: [
       <div key={"armor-percent-provided-by"}>
         <span id="priest">Disc Priests</span>

@@ -843,7 +843,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Armor %",
+        category: "Reduced Phys Damage Taken",
         name: "Inspiration",
         image: "images/Inspiration.png",
       },
@@ -910,7 +910,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Armor %",
+        category: "Reduced Phys Damage Taken",
         name: "Inspiration",
         image: "images/Inspiration.png",
       },
@@ -1330,7 +1330,7 @@ const SpecArray = [
         image: "images/Wrath_Of_Air_Totem.png",
       },
       {
-        category: "Armor %",
+        category: "Reduced Phys Damage Taken",
         name: "Ancestral Healing",
         image: "images/Ancestral_Healing.png",
       },
