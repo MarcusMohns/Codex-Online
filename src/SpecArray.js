@@ -531,7 +531,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Armor",
+        category: "Devotion Aura",
         name: "Devotion Aura",
         image: "images/Devotion_Aura.png",
       },
@@ -623,7 +623,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Armor",
+        category: "Devotion Aura",
         name: "Devotion Aura",
         image: "images/Devotion_Aura.png",
       },
@@ -731,7 +731,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Armor",
+        category: "Devotion Aura",
         name: "Devotion Aura",
         image: "images/Devotion_Aura.png",
       },
@@ -843,7 +843,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Reduced Phys Damage Taken",
+        category: "Phys Damage Reduction %",
         name: "Inspiration",
         image: "images/Inspiration.png",
       },
@@ -1153,7 +1153,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Armor",
+        category: "Stoneskin Totem",
         name: "Stoneskin Totem",
         image: "images/Stoneskin_Totem.png",
       },
@@ -1229,7 +1229,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Armor",
+        category: "Stoneskin Totem",
         name: "Stoneskin Totem",
         image: "images/Stoneskin_Totem.png",
       },
@@ -1300,7 +1300,7 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Armor",
+        category: "Stoneskin Totem",
         name: "Stoneskin Totem",
         image: "images/Stoneskin_Totem.png",
       },

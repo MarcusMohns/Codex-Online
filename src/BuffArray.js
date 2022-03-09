@@ -20,7 +20,7 @@ const BuffArray = [
     ),
   },
   {
-    name: "Reduced Phys Damage Taken",
+    name: "Phys Damage Reduction %",
     source: [
       <div key={"armor-percent-provided-by"}>
         <span id="priest">Disc Priests</span>
@@ -40,17 +40,17 @@ const BuffArray = [
     ),
   },
   {
-    name: "Armor",
+    name: "Devotion Aura",
     source: [
-      <div key={"armor-provided-by"}>
-        <span id="shaman">Shamans</span> <span id="paladin">Paladins</span>
+      <div key={"devotion-aura-provided-by"}>
+        <span id="paladin">Paladins</span>
       </div>,
     ],
     image: "images/Devotion_Aura.png",
     text: (
       <div>
         <div>
-          <div className="spell-names">Devotion Aura, Stoneskin Totem</div>
+          <div className="spell-names">Devotion Aura</div>
           <span className="buff">Increases</span> Armor of all{" "}
           <span className="buff">party and raid members</span> by x
         </div>
@@ -59,6 +59,27 @@ const BuffArray = [
         </div>
         <div>
           Improved Devotion Aura:<span className="buff-value">1807</span>
+        </div>
+        <div className="fine-print">
+          Devotion Aura and Stoneskin Totem stack with one another
+        </div>
+      </div>
+    ),
+  },
+  {
+    name: "Stoneskin Totem",
+    source: [
+      <div key={"stoneskin-totem-provided-by"}>
+        <span id="shaman">Shamans</span>
+      </div>,
+    ],
+    image: "images/Stoneskin_Totem.png",
+    text: (
+      <div>
+        <div>
+          <div className="spell-names">Stoneskin Totem</div>
+          <span className="buff">Increases</span> Armor of all{" "}
+          <span className="buff">party and raid members</span> by x
         </div>
         <div>
           Stoneskin Totem: <span className="buff-value">1150</span>
