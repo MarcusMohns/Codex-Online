@@ -332,11 +332,7 @@ const SpecArray = [
         name: "Ferocious Inspiration",
         image: "images/Ferocious_Inspiration.png",
       },
-      {
-        category: "Healing Reduction",
-        name: "Aimed Shot",
-        image: "images/Aimed_Shot.png",
-      },
+
       {
         category: "Nature Resistance",
         name: "Aspect of the Wild",
@@ -349,6 +345,10 @@ const SpecArray = [
       },
     ],
     utility: [
+      {
+        name: "Aimed Shot",
+        image: "images/Aimed_Shot.png",
+      },
       {
         name: "Misdirection",
         image: "images/Misdirection.png",
@@ -367,11 +367,6 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Healing Reduction",
-        name: "Aimed Shot",
-        image: "images/Aimed_Shot.png",
-      },
-      {
         category: "Attack Power %",
         name: "Trueshot Aura",
         image: "images/Trueshot_Aura.png",
@@ -388,6 +383,10 @@ const SpecArray = [
       },
     ],
     utility: [
+      {
+        name: "Aimed Shot",
+        image: "images/Aimed_Shot.png",
+      },
       {
         name: "Misdirection",
         image: "images/Misdirection.png",
@@ -410,11 +409,7 @@ const SpecArray = [
         name: "Hunting Party",
         image: "images/Replenishment.png",
       },
-      {
-        category: "Healing Reduction",
-        name: "Aimed Shot",
-        image: "images/Aimed_Shot.png",
-      },
+
       {
         category: "Nature Resistance",
         name: "Aspect of the Wild",
@@ -427,6 +422,10 @@ const SpecArray = [
       },
     ],
     utility: [
+      {
+        name: "Aimed Shot",
+        image: "images/Aimed_Shot.png",
+      },
       {
         name: "Misdirection",
         image: "images/Misdirection.png",
@@ -1066,11 +1065,6 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Healing Reduction",
-        name: "Wound Poison",
-        image: "images/Wound_Poison.png",
-      },
-      {
         category: "Armor Reduction (Major)",
         name: "Expose Armor",
         image: "images/Expose_Armor.png",
@@ -1082,6 +1076,10 @@ const SpecArray = [
       },
     ],
     utility: [
+      {
+        name: "Wound Poison",
+        image: "images/Wound_Poison.png",
+      },
       {
         name: "Tricks of the Trade",
         image: "images/Tricks_Of_The_Trade.png",
@@ -1108,11 +1106,6 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Healing Reduction",
-        name: "Wound Poison",
-        image: "images/Wound_Poison.png",
-      },
-      {
         category: "Armor Reduction (Major)",
         name: "Expose Armor",
         image: "images/Expose_Armor.png",
@@ -1124,6 +1117,10 @@ const SpecArray = [
       },
     ],
     utility: [
+      {
+        name: "Wound Poison",
+        image: "images/Wound_Poison.png",
+      },
       {
         name: "Tricks of the Trade",
         image: "images/Tricks_Of_The_Trade.png",
@@ -1154,13 +1151,12 @@ const SpecArray = [
         name: "Expose Armor",
         image: "images/Expose_Armor.png",
       },
+    ],
+    utility: [
       {
-        category: "Healing Reduction",
         name: "Wound Poison",
         image: "images/Wound_Poison.png",
       },
-    ],
-    utility: [
       {
         name: "Tricks of the Trade",
         image: "images/Tricks_Of_The_Trade.png",
@@ -1447,12 +1443,6 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Healing Reduction",
-        name: "Mortal Strike",
-        image: "images/Mortal_Strike.png",
-      },
-
-      {
         category: "Attack Power Reduction",
         name: "Demoralizing Shout",
         image: "images/Demoralizing_Shout.png",
@@ -1492,6 +1482,10 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Mortal Strike",
+        image: "images/Mortal_Strike.png",
+      },
+      {
         name: "Interrupt",
         image: "images/Kick.png",
       },
@@ -1513,11 +1507,7 @@ const SpecArray = [
         name: "Demoralizing Shout",
         image: "images/Demoralizing_Shout.png",
       },
-      {
-        category: "Healing Reduction",
-        name: "Furious Attacks",
-        image: "images/Furious_Attacks.png",
-      },
+
       {
         category: "Attack Power",
         name: "Battle Shout",
@@ -1547,6 +1537,10 @@ const SpecArray = [
       },
     ],
     utility: [
+      {
+        name: "Furious Attacks",
+        image: "images/Furious_Attacks.png",
+      },
       {
         name: "Interrupt",
         image: "images/Kick.png",
