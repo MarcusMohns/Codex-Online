@@ -14,12 +14,9 @@ const Home = () => {
       <PagePreviewContainer>
         <PagePreviewText>
           <PagePreviewHeader>Raid Assembler</PagePreviewHeader>
-          Organize 3.3.5 WOTLK Buffs, Debuffs and Utilities - Kill more bosses
-          with less effort!
-          <br />
-          The Raid Assembler helps you optimize your raids performance, manage
-          the players in your raid, monitor the raids buffs, utilities and roles
-          in, all at a glance
+          Organize 3.3.5 WOTLK Buffs, Debuffs and Utilities. The Raid Assembler
+          helps you optimize your raids performance, manage the players in your
+          raid, monitor the raids buffs, utilities and roles.
           <div className="step-container">
             <span className="step-number">1</span>
             Add players to your raid
