@@ -20,75 +20,21 @@ const BuffArray = [
     ),
   },
   {
-    name: "Phys Damage Reduction %",
+    name: "Stats 10%",
     source: [
-      <div key={"armor-percent-provided-by"}>
-        <span id="priest">Disc Priests</span>
-        <span id="priest">Holy Priests</span>
-        <span id="shaman">Restoration Shamans</span>
-      </div>,
-    ],
-
-    image: "images/Ancestral_Healing.png",
-    text: (
-      <div>
-        <div className="spell-names">Inspiration, Ancestral Healing </div>
-        Reduces the <span className="buff">friendly targets</span> physical
-        damage taken by <span className="buff-value">10%</span> for 15 seconds
-        after being scored by a critical heal.
-      </div>
-    ),
-  },
-  {
-    name: "Devotion Aura",
-    source: [
-      <div key={"devotion-aura-provided-by"}>
+      <div key={"stats-percent-provided-by"}>
         <span id="paladin">Paladins</span>
       </div>,
     ],
-    image: "images/Devotion_Aura.png",
+    image: "images/Greater_Blessing_Of_Kings.png",
     text: (
       <div>
-        <div>
-          <div className="spell-names">Devotion Aura</div>
-          <span className="buff">Increases</span> Armor of all{" "}
-          <span className="buff">party and raid members</span> by x
-        </div>
-        <div>
-          Devotion Aura:<span className="buff-value">1205</span>
-        </div>
-        <div>
-          Improved Devotion Aura:<span className="buff-value">1807</span>
-        </div>
+        <div className="spell-names"> Blessing of Kings</div>
+        <span className="buff">Increases</span> stats by{" "}
+        <span className="buff-value">10%</span>
         <div className="fine-print">
-          Devotion Aura and Stoneskin Totem stack with one another
-        </div>
-      </div>
-    ),
-  },
-  {
-    name: "Stoneskin Totem",
-    source: [
-      <div key={"stoneskin-totem-provided-by"}>
-        <span id="shaman">Shamans</span>
-      </div>,
-    ],
-    image: "images/Stoneskin_Totem.png",
-    text: (
-      <div>
-        <div>
-          <div className="spell-names">Stoneskin Totem</div>
-          <span className="buff">Increases</span> Armor of all{" "}
-          <span className="buff">party and raid members</span> by x
-        </div>
-        <div>
-          Stoneskin Totem: <span className="buff-value">1150</span>
-        </div>
-        <div>
-          Improved Stoneskin Totem: <span className="buff-value">1380</span>
-        </div>
-        <div className="fine-print">
-          Devotion Aura and Stoneskin Totem stack with one another
+          Alternatively, Drums of the Forgotten Kings provide 8% all stats and
+          can be bought off the auction house.
         </div>
       </div>
     ),
@@ -760,26 +706,7 @@ const BuffArray = [
       </div>
     ),
   },
-  {
-    name: "Stats 10%",
-    source: [
-      <div key={"stats-percent-provided-by"}>
-        <span id="paladin">Paladins</span>
-      </div>,
-    ],
-    image: "images/Greater_Blessing_Of_Kings.png",
-    text: (
-      <div>
-        <div className="spell-names"> Blessing of Kings</div>
-        <span className="buff">Increases</span> stats by{" "}
-        <span className="buff-value">10%</span>
-        <div className="fine-print">
-          Alternatively, Drums of the Forgotten Kings provide 8% all stats and
-          can be bought off the auction house.
-        </div>
-      </div>
-    ),
-  },
+
   {
     name: "Attack Speed Reduction",
     source: [
@@ -881,20 +808,76 @@ const BuffArray = [
     ),
   },
   {
-    name: "Health Restore",
+    name: "Phys Damage Reduction %",
     source: [
-      <div key={"health-restore-provided-by"}>
+      <div key={"armor-percent-provided-by"}>
+        <span id="priest">Disc Priests</span>
+        <span id="priest">Holy Priests</span>
+        <span id="shaman">Restoration Shamans</span>
+      </div>,
+    ],
+
+    image: "images/Ancestral_Healing.png",
+    text: (
+      <div>
+        <div className="spell-names">Inspiration, Ancestral Healing </div>
+        Reduces the <span className="buff">friendly targets</span> physical
+        damage taken by <span className="buff-value">10%</span> for 15 seconds
+        after being scored by a critical heal.
+      </div>
+    ),
+  },
+  {
+    name: "Devotion Aura",
+    source: [
+      <div key={"devotion-aura-provided-by"}>
         <span id="paladin">Paladins</span>
       </div>,
     ],
-    image: "images/Judgement_Of_Light.png",
+    image: "images/Devotion_Aura.png",
     text: (
       <div>
-        <div className="spell-names">Judgement of Light</div>
-        Judges an <span className="debuff">enemy target</span> for 20 seconds,
-        granting attacks made against the judged enemy a chance to heal{" "}
-        <span className="buff-value">2%</span> of the{" "}
-        <span className="buff">friendly targets'</span> health.
+        <div>
+          <div className="spell-names">Devotion Aura</div>
+          <span className="buff">Increases</span> Armor of all{" "}
+          <span className="buff">party and raid members</span> by x
+        </div>
+        <div>
+          Devotion Aura:<span className="buff-value">1205</span>
+        </div>
+        <div>
+          Improved Devotion Aura:<span className="buff-value">1807</span>
+        </div>
+        <div className="fine-print">
+          Devotion Aura and Stoneskin Totem stack with one another
+        </div>
+      </div>
+    ),
+  },
+  {
+    name: "Stoneskin Totem",
+    source: [
+      <div key={"stoneskin-totem-provided-by"}>
+        <span id="shaman">Shamans</span>
+      </div>,
+    ],
+    image: "images/Stoneskin_Totem.png",
+    text: (
+      <div>
+        <div>
+          <div className="spell-names">Stoneskin Totem</div>
+          <span className="buff">Increases</span> Armor of all{" "}
+          <span className="buff">party and raid members</span> by x
+        </div>
+        <div>
+          Stoneskin Totem: <span className="buff-value">1150</span>
+        </div>
+        <div>
+          Improved Stoneskin Totem: <span className="buff-value">1380</span>
+        </div>
+        <div className="fine-print">
+          Devotion Aura and Stoneskin Totem stack with one another
+        </div>
       </div>
     ),
   },
@@ -917,25 +900,24 @@ const BuffArray = [
     ),
   },
   {
-    name: "Melee Hit Reduction",
+    name: "Health Restore",
     source: [
-      <div key={"melee-hit-reduction-provided-by"}>
-        <span id="druid">Balance Druids,</span>
-        <span id="hunter">Hunters</span>
+      <div key={"health-restore-provided-by"}>
+        <span id="paladin">Paladins</span>
       </div>,
     ],
-    image: "images/Insect_Swarm.png",
+    image: "images/Judgement_Of_Light.png",
     text: (
       <div>
-        <div className="spell-names">Insect Swarm, Scorpid Sting</div>
-        Reduces the <span className="debuff">enemy target's</span> chance to hit
-        with melee and ranged attacks by <span className="buff-value">3%</span>
-        <div className="fine-print">
-          Hunters using Scorpid sting will suffer a DPS loss.
-        </div>
+        <div className="spell-names">Judgement of Light</div>
+        Judges an <span className="debuff">enemy target</span> for 20 seconds,
+        granting attacks made against the judged enemy a chance to heal{" "}
+        <span className="buff-value">2%</span> of the{" "}
+        <span className="buff">friendly targets'</span> health.
       </div>
     ),
   },
+
   {
     name: "Fire Resistance",
     source: [
