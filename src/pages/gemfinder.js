@@ -212,7 +212,7 @@ const Gemfinder = () => {
           </div>
 
           <div className="header-text-icon-container">
-            <SearchIcon />
+            <SearchIcon id="search-icon" />
             <input
               type="text"
               id="search-gem-input"

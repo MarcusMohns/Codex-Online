@@ -470,7 +470,6 @@ export const StyledPlayer = styled.div`
     border-radius: 3px;
     background-color: transparent;
     width: 95%;
-    box-sizing: border-box;
     caret-color: black;
     color: #fff;
     text-align: center;
@@ -478,6 +477,7 @@ export const StyledPlayer = styled.div`
       #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
     font-weight: 800;
     letter-spacing: 1px;
+    margin-bottom: 5px;
   }
 
   .placeholder {
