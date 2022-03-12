@@ -85,8 +85,9 @@ export const PagePreviewText = styled.div`
   color: ${COLORS.offWhite};
   flex-grow: 1;
   margin: 15px;
-  width: 100%;
+  width: 80%;
   text-align: center;
+  font-size: 0.9rem;
 
   .step-container {
     display: flex;
@@ -102,6 +103,8 @@ export const PagePreviewText = styled.div`
 
     @media (min-width: 900px) {
       flex-direction: row;
+      font-size: 1rem;
+      width: 100%;
     }
   }
   @media (min-width: 900px) {
