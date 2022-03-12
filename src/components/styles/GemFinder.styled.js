@@ -45,10 +45,6 @@ export const Main = styled.main`
 
       #search-icon {
         margin-left: auto;
-
-        @media screen and (max-width: 510px) {
-          display: none;
-        }
       }
     }
     @media screen and (max-width: 1500px) {
@@ -60,7 +56,6 @@ export const Main = styled.main`
     }
 
     #search-gem-input {
-      margin-right: 1rem;
       outline: none;
       border: 1px solid transparent;
       font-size: 1rem;
@@ -71,7 +66,6 @@ export const Main = styled.main`
 
       @media screen and (max-width: 510px) {
         width: 60%;
-        margin-left: auto;
       }
     }
   }
