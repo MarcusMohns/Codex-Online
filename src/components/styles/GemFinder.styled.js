@@ -42,6 +42,12 @@ export const Main = styled.main`
     .header-text-icon-container {
       display: flex;
       align-items: center;
+
+      #search-icon {
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
+      }
     }
 
     @media screen and (max-width: 992px) {
@@ -68,7 +74,6 @@ export const CheckBoxContainer = styled.section`
   align-items: center;
   justify-content: center;
   min-width: 100%;
-
   .categories-and-checkboxes {
     padding: 0.5rem;
     display: flex;
@@ -90,6 +95,7 @@ export const CheckBoxContainer = styled.section`
     }
   }
   .category-container {
+    box-sizing: border-box;
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -120,7 +126,6 @@ export const CheckBoxContainer = styled.section`
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     flex-wrap: wrap;
     height: 150px;
     margin-left: auto;
@@ -212,6 +217,12 @@ export const CheckBoxContainer = styled.section`
       width: 100%;
     }
   }
+  @media screen and (max-width: 510px) {
+    .checkboxes {
+      height: 150px;
+      flex-wrap: wrap;
+    }
+  }
 `;
 
 export const GemTableContainer = styled.section`
@@ -278,6 +289,9 @@ export const GemTableContainer = styled.section`
   }
   .gemQualityCell {
     letter-spacing: 0.5px;
+  }
+  .gemSourceCell {
+    color: ${COLORS.fadedHighlight};
   }
   #epicCells {
     color: #a335ee;
