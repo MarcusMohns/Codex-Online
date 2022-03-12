@@ -47,6 +47,7 @@ export const PagePreviewContainer = styled.div`
   min-height: 100%;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   background-color: ${COLORS.fadedBlack};
   z-index: 10;
 
@@ -79,15 +80,17 @@ export const PagePreviewContainer = styled.div`
 export const PagePreviewText = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   color: ${COLORS.offWhite};
   flex-grow: 1;
   margin: 15px;
   width: 100%;
+  text-align: center;
+
   .step-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: ${COLORS.goldHighlight};
@@ -95,6 +98,15 @@ export const PagePreviewText = styled.div`
     margin-top: 1rem;
     border-radius: 5px;
     font-size: 1.1rem;
+    text-align: center;
+
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+  }
+  @media (min-width: 900px) {
+    text-align: inherit;
+    align-items: start;
   }
   .step-number {
     display: flex;
