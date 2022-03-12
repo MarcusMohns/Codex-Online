@@ -41,7 +41,7 @@ const Home = () => {
           Gem Finder consists of every non-meta gem in 3.3.5. Find a gem with
           the stats, quality or color that suit your needs
           <Link to="/gemfinder" className="link-button">
-            Get started!
+            Find gems
           </Link>
         </PagePreviewText>
         <img
@@ -57,7 +57,7 @@ const Home = () => {
           end of the reset or check how much rating you need for that upgrade
           you're looking at
           <Link to="/arenapointcalculator" className="link-button">
-            Get started!
+            Let's go
           </Link>
         </PagePreviewText>
         <img
