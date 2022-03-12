@@ -8,15 +8,15 @@ export const Main = styled.main`
   background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
   max-width: 100vw;
+  width: auto;
   min-height: 40vw;
   height: auto;
   margin: auto;
   margin-top: 5%;
   opacity: 90%;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-  padding: 2rem;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 900px) {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -33,11 +33,16 @@ export const ArenaContainer = styled.section`
   align-items: center;
   background-color: ${COLORS.fadedBackground};
   border-radius: 5px;
-  padding: 0.8rem;
-  margin: 15px;
+
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   flex: 1 0 35%;
-
+  max-width: 100%;
+  margin: 1rem;
+  padding: 1rem;
+  @media (min-width: 1200px) {
+    padding: 2rem;
+    margin: 15px;
+  }
   h2 {
     display: flex;
     align-items: center;
@@ -56,6 +61,7 @@ export const ArenaContainer = styled.section`
     border-spacing: 0.5rem;
     border-radius: 5px;
     background-color: ${COLORS.fadedBlack};
+    max-width: 100%;
 
     .results {
       color: ${COLORS.goldHighlight};
@@ -80,7 +86,6 @@ export const ArenaContainer = styled.section`
   }
   td,
   th {
-    padding: 1rem;
     text-align: center;
     color: white;
   }
@@ -103,6 +108,16 @@ export const ArenaContainer = styled.section`
     table {
       padding: 1rem;
       box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.6);
+
+      th {
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+  @media (min-width: 500px) {
+    th {
+      padding: 1rem;
     }
   }
 `;
