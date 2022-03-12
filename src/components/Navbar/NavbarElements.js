@@ -14,6 +14,7 @@ export const Nav = styled.nav`
   transition: 0.5s ease;
   z-index: 500;
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
+  position: relative;
 
   .logo {
     width: 50px;
@@ -82,8 +83,12 @@ export const LogoLink = styled(Link)`
   justify-content: center;
   text-decoration: none;
   position: relative;
-  width: 100%;
   letter-spacing: 1px;
+  width: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 `;
 export const BarsNavLink = styled(Link)`
   padding: 0.6rem;
@@ -130,7 +135,7 @@ export const Bars = styled(FaBars)`
   top: 0;
   left: 0;
   color: white;
-  transform: translate(100%, 200%);
+  transform: translate(100%, 120%);
   font-size: 1.8rem;
   cursor: pointer;
   @media screen and (min-width: 768px) {
