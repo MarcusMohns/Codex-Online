@@ -44,12 +44,16 @@ export const Main = styled.main`
       align-items: center;
 
       #search-icon {
-        @media screen and (max-width: 992px) {
+        margin-left: auto;
+
+        @media screen and (max-width: 510px) {
           display: none;
         }
       }
     }
-
+    @media screen and (max-width: 1500px) {
+      width: 100%;
+    }
     @media screen and (max-width: 992px) {
       margin-left: 0px;
       align-items: center;
@@ -64,6 +68,11 @@ export const Main = styled.main`
       padding: 0.2rem;
       background-color: ${COLORS.fadedBackground};
       color: ${COLORS.offWhite};
+
+      @media screen and (max-width: 510px) {
+        width: 60%;
+        margin-left: auto;
+      }
     }
   }
 `;
@@ -121,6 +130,7 @@ export const CheckBoxContainer = styled.section`
     margin-bottom: 1rem;
     user-select: none;
     flex-wrap: wrap;
+    letter-spacing: 1px;
   }
   .checkboxes {
     width: 100%;
@@ -234,7 +244,8 @@ export const GemTableContainer = styled.section`
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  border-bottom: 1px solid grey;
+  border: 1px solid grey;
+  margin-bottom: 5rem;
 
   table {
     min-width: 100%;
@@ -356,6 +367,10 @@ export const GemTableContainer = styled.section`
     color: ${COLORS.offWhite};
     margin-top: 20px;
   }
+  @media screen and (max-width: 1500px) {
+    width: 100%;
+  }
+
   @media screen and (max-width: 992px) {
     height: 500px;
 
