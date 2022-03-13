@@ -1192,8 +1192,6 @@ export const StyledSaveMenu = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: max-content;
-    height: 400px;
     background-color: black;
     border: 1px solid grey;
     position: fixed;
@@ -1203,6 +1201,12 @@ export const StyledSaveMenu = styled.div`
     left: 0;
     right: 0;
     text-align: center;
+
+    @media (min-width: 1200px) {
+      width: max-content;
+      height: 400px;
+    }
+
     .save-menu-header {
       display: flex;
       align-items: center;
