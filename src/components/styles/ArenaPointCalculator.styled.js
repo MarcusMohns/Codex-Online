@@ -110,6 +110,9 @@ export const ArenaContainer = styled.section`
     }
   }
   @media (min-width: 1200px) {
+    th {
+      padding: 1rem;
+    }
     table {
       padding: 1rem;
       box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.6);
