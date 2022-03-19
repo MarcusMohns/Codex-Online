@@ -23,6 +23,7 @@ export const Nav = styled.nav`
 
   @media screen and (min-width: 768px) {
     position: sticky;
+    top: 0;
     justify-content: space-evenly;
     height: ${(props) => (props.shrunk ? `60px` : `100px`)};
 
