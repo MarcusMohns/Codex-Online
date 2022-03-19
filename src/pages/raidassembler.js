@@ -601,7 +601,27 @@ const RaidAssembler = () => {
             </RaidHeaderButton>
             <p className="raid-count">{raidCount[0]} / 25 </p>
             <p className="role-count">
-              {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
+              {raidCount[1]} Tanks
+              <img
+                id="class-img"
+                src="images/tank_icon.png"
+                alt="player in raid"
+                className="role-count-img"
+              />
+              | {raidCount[2]} Healers
+              <img
+                id="class-img"
+                src="images/healer_icon.png"
+                alt="player in raid"
+                className="role-count-img"
+              />
+              | {raidCount[3]} DPS
+              <img
+                id="class-img"
+                src="images/dps_icon.png"
+                alt="player in raid"
+                className="role-count-img"
+              />
             </p>
             <div className="btn-container">
               <RaidHeaderButton

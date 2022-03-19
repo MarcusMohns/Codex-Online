@@ -408,11 +408,16 @@ export const StyledPlayer = styled.div`
   margin: 2px;
   min-height: 70px;
   text-align: center;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
+  text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px,
+    rgb(0, 0, 0) -0.416147px 0.909297px 0px,
+    rgb(0, 0, 0) -0.989992px 0.14112px 0px,
+    rgb(0, 0, 0) -0.653644px -0.756802px 0px,
+    rgb(0, 0, 0) 0.283662px -0.958924px 0px,
+    rgb(0, 0, 0) 0.96017px -0.279415px 0px;
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 1px;
+
   .role-img {
     position: absolute;
     right: 2px;
@@ -473,11 +478,18 @@ export const StyledPlayer = styled.div`
     caret-color: black;
     color: #fff;
     text-align: center;
-    text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-      #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
-    font-weight: 800;
-    letter-spacing: 1px;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px,
+      rgb(0, 0, 0) 0.540302px 0.841471px 0px,
+      rgb(0, 0, 0) -0.416147px 0.909297px 0px,
+      rgb(0, 0, 0) -0.989992px 0.14112px 0px,
+      rgb(0, 0, 0) -0.653644px -0.756802px 0px,
+      rgb(0, 0, 0) 0.283662px -0.958924px 0px,
+      rgb(0, 0, 0) 0.96017px -0.279415px 0px;
     margin-bottom: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-family: "Raleway", sans-serif;
   }
 
   .placeholder {
@@ -1050,6 +1062,11 @@ export const RaidContentHeader = styled.div`
   @media (min-width: 600px) {
     .role-count {
       display: flex;
+      .role-count-img {
+        height: 18px;
+        width: 18px;
+        margin-right: 5px;
+      }
     }
   }
 `;
@@ -1061,7 +1078,7 @@ export const NoPlayersText = styled.p`
   justify-content: center;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
-  min-height: 407px;
+  min-height: 432px;
 `;
 
 export const PlayersContainer = styled.div`
@@ -1090,7 +1107,7 @@ export const GroupContainer = styled.div`
   background-color: transparent;
 
   @media (min-width: 1200px) {
-    min-height: 405px;
+    min-height: 430px;
     padding: 0 1px;
   }
 `;
