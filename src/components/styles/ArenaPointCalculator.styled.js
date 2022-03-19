@@ -120,4 +120,9 @@ export const ArenaContainer = styled.section`
       padding: 1rem;
     }
   }
+  @media (min-width: 300px) {
+    th {
+      padding: 0.3rem;
+    }
+  }
 `;
