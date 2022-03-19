@@ -14,8 +14,11 @@ export const Main = styled.main`
   box-shadow: 3px 5px 10px -2px rgba(255, 255, 255, 0.2);
 
   #gem-finder-container {
+    background-color: ${COLORS.fadedGrey};
+    margin: 15% 0;
     @media (min-width: 900px) {
       flex-direction: row-reverse;
+      margin: 0px;
     }
   }
 `;
@@ -50,6 +53,7 @@ export const PagePreviewContainer = styled.div`
   width: 100%;
   background-color: ${COLORS.fadedBlack};
   z-index: 10;
+  padding: 2rem;
 
   .content-preview-image {
     border-radius: 5px;
@@ -59,7 +63,6 @@ export const PagePreviewContainer = styled.div`
     opacity: 80%;
     max-width: 95%;
     max-height: 100%;
-    margin-bottom: 20px;
 
     @media (min-width: 900px) {
       width: 100%;
@@ -70,7 +73,6 @@ export const PagePreviewContainer = styled.div`
 
   @media (min-width: 900px) {
     flex-direction: row;
-    margin-bottom: 0px;
   }
   @media (min-width: 1200px) {
     padding: 2% 10rem;
@@ -90,7 +92,7 @@ export const PagePreviewText = styled.div`
   font-size: 0.9rem;
 
   .step-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -102,6 +104,7 @@ export const PagePreviewText = styled.div`
     text-align: center;
 
     @media (min-width: 900px) {
+      display: flex;
       flex-direction: row;
       font-size: 1rem;
       width: 100%;
