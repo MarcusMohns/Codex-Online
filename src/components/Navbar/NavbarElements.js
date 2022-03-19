@@ -24,8 +24,6 @@ export const Nav = styled.nav`
   @media screen and (min-width: 768px) {
     position: sticky;
     justify-content: space-evenly;
-    top: 0px;
-
     height: ${(props) => (props.shrunk ? `60px` : `100px`)};
 
     .logo-text {
