@@ -486,10 +486,10 @@ export const StyledPlayer = styled.div`
       rgb(0, 0, 0) 0.283662px -0.958924px 0px,
       rgb(0, 0, 0) 0.96017px -0.279415px 0px;
     margin-bottom: 5px;
-    font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 800;
     font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
   }
 
   .placeholder {
