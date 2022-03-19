@@ -104,6 +104,11 @@ export const ArenaContainer = styled.section`
     border-radius: 5px;
   }
 
+  @media (min-width: 400px) {
+    th {
+      padding: 0.4rem;
+    }
+  }
   @media (min-width: 1200px) {
     table {
       padding: 1rem;
@@ -113,16 +118,6 @@ export const ArenaContainer = styled.section`
         text-align: center;
         color: white;
       }
-    }
-  }
-  @media (min-width: 500px) {
-    th {
-      padding: 1rem;
-    }
-  }
-  @media (min-width: 300px) {
-    th {
-      padding: 0.3rem;
     }
   }
 `;
