@@ -54,6 +54,7 @@ export const PagePreviewContainer = styled.div`
   background-color: ${COLORS.fadedBlack};
   z-index: 10;
   padding: 2rem;
+  padding-bottom: 4rem;
 
   .content-preview-image {
     border-radius: 5px;
