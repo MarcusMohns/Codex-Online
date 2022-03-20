@@ -10,17 +10,18 @@ export const Header = styled.h1`
   color: white;
   width: 100%;
   height: 100%;
-  margin-top: 10%;
+  margin-top: 5%;
 `;
 
 const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: ${COLORS.fadedBackground};
+  background-color: ${COLORS.fadedBlack};
   max-width: 100vw;
   width: auto;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-family: sans-serif;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   color: white;
