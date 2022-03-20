@@ -76,7 +76,8 @@ export const PagePreviewContainer = styled.div`
     flex-direction: row;
   }
   @media (min-width: 1200px) {
-    padding: 2% 10rem;
+    padding: 4% 10rem;
+    padding-bottom: 2rem;
   }
 `;
 

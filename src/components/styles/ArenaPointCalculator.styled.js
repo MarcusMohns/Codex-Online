@@ -7,7 +7,7 @@ export const Main = styled.main`
   align-items: center;
   background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
-  max-width: 100vw;
+  max-width: 99vw;
   width: auto;
   min-height: 40vw;
   height: auto;
