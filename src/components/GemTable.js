@@ -27,7 +27,7 @@ const GemTable = ({ gems, onClick }) => {
           </th>
           <th>
             <div className="gemSourceHeader" onClick={onClick}>
-              Pattern Source <FaSort className="sortImage" alt="sort icon" />
+              Source <FaSort className="sortImage" alt="sort icon" />
             </div>
           </th>
         </tr>
