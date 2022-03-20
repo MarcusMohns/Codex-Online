@@ -1062,10 +1062,12 @@ export const RaidContentHeader = styled.div`
   @media (min-width: 600px) {
     .role-count {
       display: flex;
+      padding: 2px;
       .role-count-img {
         height: 18px;
         width: 18px;
         margin-right: 5px;
+        margin-left: 2px;
       }
     }
   }
