@@ -10,6 +10,7 @@ import Home from "./pages/home";
 import RaidAssembler from "./pages/raidassembler";
 import Arenapointcalculator from "./pages/arenapointcalculator";
 import gemfinder from "./pages/gemfinder";
+import Terms from "./pages/terms";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/raidassembler" component={RaidAssembler} />
         <Route path="/arenapointcalculator" component={Arenapointcalculator} />
         <Route path="/gemfinder" component={gemfinder} />
+        <Route path="/terms" component={Terms} />
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>

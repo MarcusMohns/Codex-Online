@@ -1,6 +1,7 @@
 import COLORS from "../components";
 import styled from "styled-components";
 import { RiDiscordFill } from "@react-icons/all-files/ri/RiDiscordFill";
+import { Link } from "react-router-dom";
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -33,10 +34,11 @@ const DiscordIcon = styled(RiDiscordFill)`
 const Footer = () => {
   return (
     <StyledFooter>
-      <div>Copyright</div>
       <div>Contact</div>
       <div>About</div>
-
+      <Link to="/terms" className="link-button">
+        Terms of Service
+      </Link>
       <a href="https://discord.gg/JskSjDrrwh" target="blank">
         <DiscordIcon />
         Connect
