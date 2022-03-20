@@ -165,7 +165,7 @@ const BuffArray = [
         <div className="spell-names">Trauma, Mangle</div>
         <span className="buff">Increases</span> the effectiveness of Bleed
         effects on the <span className="debuff">enemy target</span> by{" "}
-        <span className="buff-value">30%</span> additional damage.
+        <span className="buff-value">30%</span> additional damage
       </div>
     ),
   },
@@ -386,7 +386,7 @@ const BuffArray = [
     image: "images/Rampage.png",
     text: (
       <div>
-        <div className="spell-names">Rampage, Leader of the Pack:</div>
+        <div className="spell-names">Rampage, Leader of the Pack</div>
         <span className="buff">Increases</span> ranged and melee critical chance
         by <span className="buff-value">5%</span>
       </div>
@@ -495,7 +495,7 @@ const BuffArray = [
         <span className="buff">friendly targets</span> to{" "}
         <span className="buff">heal themselves</span> for{" "}
         <span className="buff-value">4%</span> of their total health when they
-        critically hit with a melee or ranged attack.
+        critically hit with a melee or ranged attack
         <div className="fine-print">May only occur every 6 seconds</div>
       </div>
     ),
@@ -652,7 +652,7 @@ const BuffArray = [
         </div>
         <div>
           Demonic Pact: <span className="buff-value">10%</span> of Warlocks
-          Spell Damage.
+          Spell Damage
         </div>
         <div className="fine-print">
           When the Warlock acquires enough Spell Power Demonic Pact will
@@ -712,6 +712,7 @@ const BuffArray = [
     source: [
       <div key={"attack-speed-reduction-provided-by"}>
         <span id="death-knight">Death Knights</span>
+        <span id="druid">Feral Druid</span>
         <span id="warrior">Warriors</span>
       </div>,
     ],
@@ -895,7 +896,7 @@ const BuffArray = [
         Judges an <span className="debuff">enemy target</span> for 20 seconds,
         granting attacks made against the judged enemy a chance to restore{" "}
         <span className="buff-value">2%</span> of the{" "}
-        <span className="buff">friendly targets'</span> mana.
+        <span className="buff">friendly targets'</span> mana
       </div>
     ),
   },
@@ -913,7 +914,7 @@ const BuffArray = [
         Judges an <span className="debuff">enemy target</span> for 20 seconds,
         granting attacks made against the judged enemy a chance to heal{" "}
         <span className="buff-value">2%</span> of the{" "}
-        <span className="buff">friendly targets'</span> health.
+        <span className="buff">friendly targets'</span> health
       </div>
     ),
   },
