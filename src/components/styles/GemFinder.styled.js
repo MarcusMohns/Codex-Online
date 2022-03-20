@@ -223,8 +223,12 @@ export const CheckBoxContainer = styled.section`
   }
   @media screen and (max-width: 510px) {
     .checkboxes {
-      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
       flex-wrap: wrap;
+      max-height: 200px;
     }
   }
 `;
@@ -240,7 +244,7 @@ export const GemTableContainer = styled.section`
   width: 80%;
   border: 1px solid grey;
   margin-bottom: 5rem;
-
+  padding-left: 20px; // to account for scrollbar (also 20px wide)
   table {
     min-width: 100%;
     border-collapse: separate;
