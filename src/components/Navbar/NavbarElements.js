@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   height: 100px;
-  transition: 0.5s ease;
+  transition: 0.4s ease;
   z-index: 500;
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
   position: relative;
