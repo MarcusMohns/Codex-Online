@@ -37,7 +37,7 @@ const Footer = () => {
       <div>Contact</div>
       <div>About</div>
       <Link to="/terms" className="link-button">
-        Terms of Service
+        Terms
       </Link>
       <a href="https://discord.gg/JskSjDrrwh" target="blank">
         <DiscordIcon />
