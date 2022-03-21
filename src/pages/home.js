@@ -16,14 +16,23 @@ const Home = () => {
           <PagePreviewHeader>Raid Assembler</PagePreviewHeader>
           Organize 3.3.5 WOTLK Buffs, Debuffs and Utilities. The Raid Assembler
           helps you optimize your raids performance, manage the players in your
-          raid, monitor the raids buffs, utilities and roles.
+          raid, monitor the raids buffs, utilities and roles and save your work
+          in the browser or locally in order to share with others!
           <div className="step-container">
-            <span className="step-number">1</span>
-            Add players to your raid
-            <span className="step-number">2</span>
-            Review composition, buffs, utilities and roles
-            <span className="step-number">3</span>
-            Save your raid in the browser or locally to share with others
+            <div className="a-step">
+              <span className="step-number">1</span>
+              Add players
+            </div>
+
+            <div className="a-step">
+              <span className="step-number">2</span>
+              Review composition
+            </div>
+
+            <div className="a-step">
+              <span className="step-number">3</span>
+              Save your raid
+            </div>
           </div>
           <Link to="/raidassembler" className="link-button">
             Get started!

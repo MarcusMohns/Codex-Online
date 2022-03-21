@@ -15,10 +15,11 @@ export const Main = styled.main`
 
   #gem-finder-container {
     background-color: ${COLORS.fadedGrey};
-    margin: 15% 0;
+
     @media (min-width: 1200px) {
       flex-direction: row-reverse;
       margin: 0px;
+      background-color: ${COLORS.fadedBlack};
     }
   }
 `;
@@ -28,10 +29,8 @@ export const HomeSection = styled.section`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  border-radius: 10px;
   width: 100%;
   height: 500px;
-  background-color: ${COLORS.fadedBlack};
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   background-image: url("images/howling_fjord.png");
@@ -64,7 +63,6 @@ export const PagePreviewContainer = styled.div`
     opacity: 80%;
     max-width: 95%;
     max-height: 100%;
-
     @media (min-width: 900px) {
       width: 100%;
       height: auto;
@@ -89,24 +87,30 @@ export const PagePreviewText = styled.div`
   margin: 15px;
   width: 80%;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.375rem;
+  letter-spacing: 0.0071428571em;
+  font-weight: 100;
 
   .step-container {
     display: none;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: ${COLORS.goldHighlight};
     background-color: ${COLORS.fadedBlack};
     margin-top: 1rem;
     border-radius: 5px;
-    font-size: 1.1rem;
     text-align: center;
+    letter-spacing: 0;
 
     @media (min-width: 900px) {
       display: flex;
       flex-direction: row;
-      font-size: 1rem;
+      font-size: 1.2rem;
       width: 100%;
     }
   }
@@ -114,6 +118,15 @@ export const PagePreviewText = styled.div`
     text-align: inherit;
     align-items: start;
   }
+  .a-step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
   .step-number {
     display: flex;
     align-items: center;
@@ -124,7 +137,7 @@ export const PagePreviewText = styled.div`
     font-size: 1.4rem;
     margin: 1rem;
     margin-right: 0.5rem;
-    border-radius: 100%;
+    border-radius: 50%;
     font-family: sans-serif;
     color: white;
     border: 2px solid ${COLORS.goldHighlight};
@@ -155,7 +168,7 @@ export const PagePreviewHeader = styled.h2`
   justify-content: center;
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
-  font-size: 22px;
+  font-size: 24px;
 
   @media (min-width: 900px) {
     align-items: start;
