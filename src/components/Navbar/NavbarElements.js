@@ -68,6 +68,7 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 10000;
     background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
   }
 
   .hideBarsMenu {
