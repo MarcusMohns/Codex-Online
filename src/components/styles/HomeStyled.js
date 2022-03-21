@@ -16,7 +16,7 @@ export const Main = styled.main`
   #gem-finder-container {
     background-color: ${COLORS.fadedGrey};
     margin: 15% 0;
-    @media (min-width: 900px) {
+    @media (min-width: 1200px) {
       flex-direction: row-reverse;
       margin: 0px;
     }
@@ -72,12 +72,10 @@ export const PagePreviewContainer = styled.div`
     }
   }
 
-  @media (min-width: 900px) {
-    flex-direction: row;
-  }
   @media (min-width: 1200px) {
     padding: 4% 10rem;
     padding-bottom: 2rem;
+    flex-direction: row;
   }
 `;
 
