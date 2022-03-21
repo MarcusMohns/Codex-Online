@@ -242,14 +242,13 @@ export const GemTableContainer = styled.section`
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  border: 1px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
   margin-bottom: 5rem;
   padding-left: 20px; // to account for scrollbar (also 20px wide)
   table {
     min-width: 100%;
     border-collapse: separate;
     text-align: center;
-    margin: 10px 0;
   }
   td {
     padding: 0.2rem;
@@ -269,7 +268,7 @@ export const GemTableContainer = styled.section`
     color: ${COLORS.offWhite};
 
     &:nth-child(odd) {
-      background: ${COLORS.fadedBlack};
+      background: #222;
     }
 
     &:hover {
@@ -286,11 +285,10 @@ export const GemTableContainer = styled.section`
     text-overflow: ellipsis;
     margin: 0;
     img {
-      width: 2.4rem;
-      height: 2.4rem;
+      width: 2rem;
+      height: 2rem;
       user-select: none;
       padding-left: 1px;
-      border-radius: 10px;
     }
   }
   .gemColorCell {
