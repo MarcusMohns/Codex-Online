@@ -2,7 +2,7 @@ import ClassTooltip from "./ClassTooltip";
 import { StyledSpecButton, InfoIcon } from "./styles/RaidAssembler.styled";
 const SpecButton = ({ text, image, onClick, color, buffs, utility }) => {
   return (
-    <StyledSpecButton color={color} onClick={onClick}>
+    <StyledSpecButton onClick={onClick}>
       <div className="text-and-image-button-container">
         <p className="specbutton-text">{text}</p>
         <img src={image} alt="spec icon" className="specbutton-image" />

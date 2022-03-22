@@ -113,6 +113,7 @@ export const SpecContainer = styled.section`
     grid-template-rows: repeat(3, 1fr);
     padding: 1px;
     border-radius: 5px;
+    width: 100%;
   }
 `;
 export const StyledSpecButton = styled.div`
@@ -123,9 +124,9 @@ export const StyledSpecButton = styled.div`
   font-size: 0.5rem;
   font-weight: bold;
   position: relative;
-  color: ${COLORS.lightText};
   color: white;
-  background: ${(props) => props.color};
+  background: ${COLORS.fadedGrey};
+  border: 3px inset black;
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
@@ -135,6 +136,7 @@ export const StyledSpecButton = styled.div`
     visibility: hidden;
   }
   &:hover {
+    background: ${COLORS.fadedHighlight};
     #info-image {
       visibility: visible;
     }
