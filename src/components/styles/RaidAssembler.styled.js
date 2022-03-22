@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { FaRegTimesCircle } from "@react-icons/all-files/fa/FaRegTimesCircle";
 import { FaRegCheckCircle } from "@react-icons/all-files/fa/FaRegCheckCircle";
-import { CgChevronLeftO } from "@react-icons/all-files/cg/CgChevronLeftO";
 import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
 import { GiLoad } from "@react-icons/all-files/gi/GiLoad";
 import { RiSettings3Line } from "@react-icons/all-files/ri/RiSettings3Line";
@@ -19,7 +18,6 @@ export const Main = styled.main`
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 5%;
   background-color: ${COLORS.fadedBackground};
 
   @media (min-width: 1200px) {
@@ -94,9 +92,8 @@ export const SpecContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100vw;
-  z-index: 2;
   border-top: 2px black;
+  background-color: ${COLORS.fadedBackground};
 
   @media screen and (min-width: 1200px) {
     box-sizing: border-box;
@@ -106,13 +103,14 @@ export const SpecContainer = styled.section`
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
+    margin-top: 5%;
+    padding: 1rem 2rem;
   }
   .spec-buttons {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: ${COLORS.fadedBlack};
     padding: 1px;
     border-radius: 5px;
   }
@@ -122,19 +120,31 @@ export const StyledSpecButton = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   font-weight: bold;
+  position: relative;
   color: ${COLORS.lightText};
   color: white;
   background: ${(props) => props.color};
-  border: 1.5px outset grey;
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
 
+  #info-image {
+    visibility: hidden;
+  }
+  &:hover {
+    #info-image {
+      visibility: visible;
+    }
+  }
+
   .class-tooltip-container {
     #info-image {
+      position: absolute;
+      left: 1px;
+      top: 1px;
       &:hover {
         transform: scale(1.2);
       }
@@ -233,6 +243,7 @@ export const StyledClassToolTip = styled.div`
     background: #000;
     border: 1px solid #777;
     box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
+    z-index: 3;
   }
 
   .tooltip-buff-and-utility-container {
@@ -1143,11 +1154,6 @@ export const RaidHeaderButton = styled.div`
   -webkit-user-select: none;
   white-space: nowrap;
 
-  #plus-sign {
-    margin-left: 5px;
-    font-size: 1.3rem;
-  }
-
   &:hover {
     background-color: ${COLORS.fadedHighlight};
   }
@@ -1381,14 +1387,6 @@ export const CheckCircle = styled(FaRegCheckCircle)`
   width: 1.5rem;
   height: 1.5rem;
   font-size: 1.5rem;
-`;
-
-export const ArrowLeft = styled(CgChevronLeftO)`
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  opacity: 50%;
-  z-index: 2;
 `;
 
 export const ResetIcon = styled(VscDebugRestart)`

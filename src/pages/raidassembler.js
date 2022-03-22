@@ -10,7 +10,6 @@ import {
   SpecContainer,
   RaidContainer,
   BuffContainer,
-  ArrowLeft,
   ResetIcon,
   RaidHeaderButton,
   UtilityContainer,
@@ -104,23 +103,6 @@ const RaidAssembler = () => {
   const [addPlayerMenu, setAddPlayerMenu] = useState(false);
   const [raidIsFull, setRaidIsFull] = useState(false);
   const [saveMenuOpen, setSaveMenuOpen] = useState(false);
-
-  const handlePlayerMenuToggle = (e) => {
-    if (e.type === "click") {
-      setAddPlayerMenu(!addPlayerMenu);
-    } else if (e.code === "KeyQ") {
-      try {
-        if (e.target.localName !== "input") {
-          // Trigger addplayermenu only if Q is not typed inside an input
-          setAddPlayerMenu(!addPlayerMenu);
-        }
-      } catch {
-        return;
-      }
-
-      // if user isn't typing inside an input
-    }
-  };
 
   const resetRaid = () => {
     setRaid(intitialRaidState);
@@ -548,17 +530,18 @@ const RaidAssembler = () => {
     setRaid(newRaid);
   };
 
-  useEffect(() => {
-    window.addEventListener("keydown", handlePlayerMenuToggle);
-    return function cleanup() {
-      window.removeEventListener("keydown", handlePlayerMenuToggle);
-    };
-  });
   return (
     <>
       <Header>
         Raid Assembler - Organize WOTLK 3.3.5 Buffs, Debuffs and Utilities
       </Header>
+      <SpecContainer className="spec-container">
+        <SpecButtons
+          className="spec-buttons"
+          specs={SpecArray}
+          onClick={addPlayer}
+        />
+      </SpecContainer>
       <Main>
         {saveMenuOpen && (
           <SaveMenu
@@ -572,20 +555,6 @@ const RaidAssembler = () => {
             setSaveMenuOpen={setSaveMenuOpen}
           />
         )}
-        <div
-          className={`${
-            addPlayerMenu ? "add-player-menu" : "hide-add-player-menu"
-          }`}
-        >
-          <ArrowLeft className="arrow-left" onClick={handlePlayerMenuToggle} />
-          <SpecContainer className="spec-container">
-            <SpecButtons
-              className="spec-buttons"
-              specs={SpecArray}
-              onClick={addPlayer}
-            />
-          </SpecContainer>
-        </div>
 
         <RaidContainer className="raid-container">
           <RaidContentHeader>
@@ -624,12 +593,6 @@ const RaidAssembler = () => {
               />
             </p>
             <div className="btn-container">
-              <RaidHeaderButton
-                onClick={handlePlayerMenuToggle}
-                backgroundColor="RGBA(39, 35, 175, 0.5)"
-              >
-                (Q) Add a Player <span id="plus-sign">+</span>
-              </RaidHeaderButton>
               <ResetIcon onClick={resetRaid} />
             </div>
           </RaidContentHeader>
