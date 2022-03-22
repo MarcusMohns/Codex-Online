@@ -47,8 +47,8 @@ const Home = () => {
       <PagePreviewContainer id="gem-finder-container">
         <PagePreviewText>
           <PagePreviewHeader>Gem Finder</PagePreviewHeader>
-          Gem Finder consists of every non-meta gem in 3.3.5. Find a gem with
-          the stats, quality or color that suit your needs
+          Gem Finder consists of every WOTLK gem in 3.3.5. Find a gem with the
+          stats, quality or color that suit your needs
           <Link to="/gemfinder" className="link-button">
             Find gems
           </Link>

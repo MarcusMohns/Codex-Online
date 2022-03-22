@@ -1,7 +1,7 @@
 const FilterNames = [
   {
     name: "Main Attributes",
-    content: ["Agility", "Intellect", "Spirit", "Stamina", "Strength"],
+    content: ["Agility", "Intellect", "Spirit", "Stamina", "Strength", "Stats"],
   },
 
   {
@@ -25,7 +25,15 @@ const FilterNames = [
 
   {
     name: "Colors",
-    content: ["Blue", "Red", "Yellow", "Orange", "Green", "Purple"],
+    content: [
+      "Blue",
+      "Red",
+      "Yellow",
+      "Orange",
+      "Green",
+      "Purple",
+      "Prismatic",
+    ],
   },
 
   {

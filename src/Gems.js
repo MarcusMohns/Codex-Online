@@ -2601,6 +2601,31 @@ const gemArray = [
     quality: "Meta",
     image: "images/Earthsiege_Diamond.png",
   },
+  // Prismatic
+  {
+    name: "Enchanted Pearl",
+    stats: "+4 Stats",
+    source: "Trainer",
+    color: "Prismatic",
+    quality: "Uncommon",
+    image: "images/Enchanted_Pearl.png",
+  },
+  {
+    name: "Enchanted Tear",
+    stats: "+6 Stats",
+    source: "Trainer",
+    color: "Prismatic",
+    quality: "Rare",
+    image: "images/Enchanted_Tear.png",
+  },
+  {
+    name: "Nightmare Tear",
+    stats: "+10 Stats",
+    source: "Timothy Jones",
+    color: "Prismatic",
+    quality: "Epic",
+    image: "images/Nightmare_Tear.png",
+  },
 ];
 
 export default gemArray;
