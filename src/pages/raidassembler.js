@@ -1,4 +1,4 @@
-import { useReducer, useState, useEffect } from "react";
+import { useReducer, useState } from "react";
 import SpecArray from "../SpecArray";
 import SpecButtons from "../components/SpecButtons";
 import BuffCategories from "../components/BuffCategories";
@@ -100,7 +100,6 @@ const RaidAssembler = () => {
   const [buffs, setBuffs] = useReducer(formReducer, {});
   const [utilities, setUtilities] = useReducer(formReducer, {});
   const [raidCount, setCount] = useState([0, 0, 0, 0]); // first value full raid count, 2nd value Tanks, 3rd value Healers, 4th value DPS.
-  const [addPlayerMenu, setAddPlayerMenu] = useState(false);
   const [raidIsFull, setRaidIsFull] = useState(false);
   const [saveMenuOpen, setSaveMenuOpen] = useState(false);
 
@@ -562,7 +561,6 @@ const RaidAssembler = () => {
               backgroundColor="#26a828"
               onClick={() => {
                 setSaveMenuOpen(!saveMenuOpen);
-                setAddPlayerMenu(false);
               }}
               id="raid-saves-btn"
             >
