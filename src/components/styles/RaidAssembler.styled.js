@@ -128,32 +128,13 @@ export const StyledSpecButton = styled.div`
   color: white;
   background: ${(props) => props.color};
   border: 1.5px outset grey;
-  transition: transform 0.1s;
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
 
-  &:hover {
-    transform: scale(95%);
-
-    .class-tooltip-container {
-      #info-image {
-        visibility: visible;
-      }
-    }
-  }
-
-  &:active {
-    transform: scale(90%);
-  }
   .class-tooltip-container {
     #info-image {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      visibility: hidden;
-
       &:hover {
         transform: scale(1.2);
       }
@@ -230,89 +211,93 @@ export const StyledSpecButton = styled.div`
 `;
 
 export const StyledClassToolTip = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 100%;
-  left: 0%;
-  box-sizing: border-box;
-  min-height: 100%;
-  border-radius: 0.5rem;
-  min-width: 100%;
-  width:auto;
-  padding: 0.5rem;
-  cursor: default;
-  background: #000;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0,1);
-
-
-  .class-tooltip-title {
-    font-size: 1.3rem;
-    text-align:center;
-    margin-bottom: 5px;
-    color:${(props) => props.color}
-  }
-  .class-tooltip-header {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    font-size:1.1rem;
-    padding:1px;
-    background-color: ${COLORS.primary};
-  }
-  .class-tooltip-category-name {
-    display:flex;
-    flex-direction:row;
-    font-size:.9rem;
-    text-align:center;
-  }
-
-  .class-tooltip-buff {
-    width:100%;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content: center;
-    text-align:center;
-    
-    
-  }
-  .class-tooltip-buff-content {
+  .tooltip {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    min-height: 200px;
+    height: auto;
+    min-width: 200px;
+    width: fit-content;
+    padding: 1rem;
+    color: #eeeeee;
+    border-radius: 5px;
+    background: #000;
+    border: 1px solid #777;
+    box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
+  }
+
+  .tooltip-buff-and-utility-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
-    width:100%;
-    height:100%;
-    margin-top:3px;
-    margin-bottom:3px;
-
-    .class-tooltip-image {
-      display:flex;
-      width: 1.2rem;
-      height:1.2rem;
-    }
-    .class-tooltip-buff-name {
-      font-weight:400;
-      color: ${COLORS.goldHighlight};
-
-    }
   }
+
+  .utility-tooltip-container {
+    padding: 1rem;
   }
-  .class-tooltip-utility-content {
+  .buffs-tooltip-container {
+    padding: 1rem;
+  }
+
+  .class-tooltip-title {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 1rem;
+    color: ${(props) => props.color};
+  }
+  .class-tooltip-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.1rem;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid grey;
+  }
+  .class-tooltip-category-name {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    padding: 0.1rem;
+    margin-top: 2px;
+  }
+
+  .class-tooltip-buff {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: ${COLORS.goldHighlight};
+    text-align: center;
+  }
+  .class-tooltip-spell-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 
     .class-tooltip-image {
-      width: 1.5rem;
-      height:1.5rem;
+      display: flex;
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+    .class-tooltip-buff-name {
+      font-weight: 400;
+      color: ${COLORS.goldHighlight};
     }
   }
 `;
