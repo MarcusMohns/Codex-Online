@@ -21,7 +21,7 @@ const ClassTooltip = ({ text, buffs, utility, color, image }) => {
                 <div className="class-tooltip-category-name">
                   {buff.category}
                 </div>
-                <div class="class-tooltip-buff">
+                <div className="class-tooltip-buff">
                   <h2 className="class-tooltip-buff-name">{buff.name}</h2>
                   <img
                     src={`${buff.image}`}
@@ -40,7 +40,7 @@ const ClassTooltip = ({ text, buffs, utility, color, image }) => {
                 key={`${text}-${spell.name}-${index}`}
                 className="class-tooltip-spell-content"
               >
-                <div class="class-tooltip-buff">
+                <div className="class-tooltip-buff">
                   <h2 className="class-tooltip-buff-name">{spell.name}</h2>
                   <img
                     src={spell.image}
