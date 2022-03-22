@@ -1,10 +1,15 @@
 import { StyledClassToolTip } from "./styles/RaidAssembler.styled";
 import { memo } from "react";
-const ClassTooltip = ({ text, buffs, utility, color }) => {
+const ClassTooltip = ({ text, buffs, utility, color, image }) => {
   return (
     <StyledClassToolTip color={color}>
       <div className="tooltip">
         <p className="class-tooltip-title">{text}</p>
+        <img
+          src={image}
+          alt="class specialization"
+          className="class-tooltip-spec-image"
+        />
         <div className="tooltip-buff-and-utility-container">
           <div className="buffs-tooltip-container">
             <h2 className="class-tooltip-header">Buffs</h2>
