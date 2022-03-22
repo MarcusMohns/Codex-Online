@@ -94,6 +94,20 @@ export const SpecContainer = styled.section`
   justify-content: center;
   border-top: 2px black;
   background-color: ${COLORS.fadedBackground};
+  margin-top: 2rem;
+
+  .spec-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 5px;
+    max-width: 100%;
+    width: 90%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+    margin: 2rem 0;
+    gap: 2px;
+  }
 
   @media screen and (min-width: 1200px) {
     box-sizing: border-box;
@@ -104,16 +118,12 @@ export const SpecContainer = styled.section`
     max-width: 100%;
     max-height: 100%;
     margin-top: 5%;
-    padding: 1rem 2rem;
-  }
-  .spec-buttons {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    padding: 1px;
-    border-radius: 5px;
-    width: 100%;
+    padding: 0rem 2rem;
+
+    .spec-buttons {
+      margin: 1rem 0;
+      width: 100%;
+    }
   }
 `;
 export const StyledSpecButton = styled.div`
@@ -123,10 +133,11 @@ export const StyledSpecButton = styled.div`
   align-items: center;
   font-size: 0.6rem;
   font-weight: bold;
+  line-height: 1;
   position: relative;
   color: ${(props) => props.color};
   background: ${COLORS.fadedGrey};
-  border: 2px inset black;
+  border: 1px outset ${COLORS.fadedGrey};
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
@@ -175,7 +186,7 @@ export const StyledSpecButton = styled.div`
 
     .specbutton-image {
       border-radius: 50%;
-      border: 2px solid black;
+      border: 1px solid black;
       width: 1.3rem;
       height: 1.3rem;
     }
@@ -199,7 +210,6 @@ export const StyledSpecButton = styled.div`
   @media (min-width: 1200px) {
     padding: 0px 2px;
     margin: 1px;
-    border-radius: 5px;
     font-size: 0.7rem;
     letter-spacing: 1px;
 
