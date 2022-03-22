@@ -343,12 +343,13 @@ const SpecArray = [
         name: "Scorpid Sting",
         image: "images/Scorpid_Sting.png",
       },
-    ],
-    utility: [
       {
+        category: "Healing Reduction",
         name: "Aimed Shot",
         image: "images/Aimed_Shot.png",
       },
+    ],
+    utility: [
       {
         name: "Misdirection",
         image: "images/Misdirection.png",
@@ -381,12 +382,13 @@ const SpecArray = [
         name: "Scorpid Sting",
         image: "images/Scorpid_Sting.png",
       },
-    ],
-    utility: [
       {
+        category: "Healing Reduction",
         name: "Aimed Shot",
         image: "images/Aimed_Shot.png",
       },
+    ],
+    utility: [
       {
         name: "Misdirection",
         image: "images/Misdirection.png",
@@ -420,12 +422,13 @@ const SpecArray = [
         name: "Scorpid Sting",
         image: "images/Scorpid_Sting.png",
       },
-    ],
-    utility: [
       {
+        category: "Healing Reduction",
         name: "Aimed Shot",
         image: "images/Aimed_Shot.png",
       },
+    ],
+    utility: [
       {
         name: "Misdirection",
         image: "images/Misdirection.png",
@@ -1074,12 +1077,13 @@ const SpecArray = [
         name: "Master Poisoner",
         image: "images/Master_Poisoner.png",
       },
-    ],
-    utility: [
       {
+        category: "Healing Reduction",
         name: "Wound Poison",
         image: "images/Wound_Poison.png",
       },
+    ],
+    utility: [
       {
         name: "Tricks of the Trade",
         image: "images/Tricks_Of_The_Trade.png",
@@ -1115,12 +1119,13 @@ const SpecArray = [
         name: "Savage Combat",
         image: "images/Savage_Combat.png",
       },
-    ],
-    utility: [
       {
+        category: "Healing Reduction",
         name: "Wound Poison",
         image: "images/Wound_Poison.png",
       },
+    ],
+    utility: [
       {
         name: "Tricks of the Trade",
         image: "images/Tricks_Of_The_Trade.png",
@@ -1151,12 +1156,13 @@ const SpecArray = [
         name: "Expose Armor",
         image: "images/Expose_Armor.png",
       },
-    ],
-    utility: [
       {
+        category: "Healing Reduction",
         name: "Wound Poison",
         image: "images/Wound_Poison.png",
       },
+    ],
+    utility: [
       {
         name: "Tricks of the Trade",
         image: "images/Tricks_Of_The_Trade.png",
@@ -1479,12 +1485,13 @@ const SpecArray = [
         name: "Thunderclap",
         image: "images/Thunderclap.png",
       },
-    ],
-    utility: [
       {
+        category: "Healing Reduction",
         name: "Mortal Strike",
         image: "images/Mortal_Strike.png",
       },
+    ],
+    utility: [
       {
         name: "Interrupt",
         image: "images/Kick.png",
@@ -1535,12 +1542,13 @@ const SpecArray = [
         name: "Thunderclap",
         image: "images/Thunderclap.png",
       },
+      {
+        category: "Healing Reduction",
+        name: "Mortal Strike",
+        image: "images/Mortal_Strike.png",
+      },
     ],
     utility: [
-      {
-        name: "Furious Attacks",
-        image: "images/Furious_Attacks.png",
-      },
       {
         name: "Interrupt",
         image: "images/Kick.png",

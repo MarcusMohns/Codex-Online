@@ -785,29 +785,48 @@ const BuffArray = [
       </div>
     ),
   },
-  // {
-  //   name: "Healing Reduction",
-  //   source: [
-  //     <div key={"healing-reduction-provided-by"}>
-  //       <span id="hunter">Hunters</span> <span id="warrior">Arms Warrior</span>
-  //       <span id="warrior">Fury Warrior</span> <span id="rogue">Rogues</span>
-  //     </div>,
-  //   ],
-  //   image: "images/Mortal_Strike.png",
-  //   text: (
-  //     <div>
-  //       <div className="spell-names">
-  //         {" "}
-  //         Aimed Shot, Mortal Strike, Furious Attacks, Wound Poison
-  //       </div>
-  //       <span className="debuff">Decreases enemy target</span> Healing Taken by{" "}
-  //       <span className="buff-value">50%</span>
-  //       <div className="fine-print">
-  //         Rogues using Wound Poison will suffer a steep DPS loss.
-  //       </div>
-  //     </div>
-  //   ),
-  // },
+  {
+    name: "Healing Reduction",
+    source: [
+      <div key={"healing-reduction-provided-by"}>
+        <span id="hunter">Hunters</span> <span id="warrior">Arms Warrior</span>
+        <span id="warrior">Fury Warrior</span> <span id="rogue">Rogues</span>
+      </div>,
+    ],
+    image: "images/Mortal_Strike.png",
+    text: (
+      <div>
+        <div className="spell-names">
+          {" "}
+          Aimed Shot, Mortal Strike, Furious Attacks, Wound Poison
+        </div>
+        <span className="debuff">Decreases enemy target</span> Healing Taken by{" "}
+        <span className="buff-value">50%</span>
+        <div className="fine-print">
+          Rogues using Wound Poison will suffer a steep DPS loss.
+        </div>
+      </div>
+    ),
+  },
+  {
+    name: "Melee Hit Reduction",
+    source: [
+      <div key={"melee-hit-reduction-provided-by"}>
+        <span id="druid">Balance Druids</span> <span id="hunter">Hunters</span>
+      </div>,
+    ],
+    image: "images/Insect_Swarm.png",
+    text: (
+      <div>
+        <div className="spell-names"> Insect Swarm, Scorpid Sting</div>
+        <span className="debuff">Decreases enemy targets</span> chance to hit
+        melee attacks by <span className="buff-value">3%</span>
+        <div className="fine-print">
+          Hunters using Scorpid Sting will suffer a steep DPS loss.
+        </div>
+      </div>
+    ),
+  },
   {
     name: "Phys Damage Reduction %",
     source: [
