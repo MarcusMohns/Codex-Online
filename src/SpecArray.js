@@ -1,7 +1,7 @@
 const SpecArray = [
   {
     text: "Blood Death Knight",
-    image: "images/dk_blood.png",
+    image: "images/Blood_Death_Knight.png",
     color: "rgb(196,30,58)",
     role: "tank",
     name: "",
@@ -48,7 +48,7 @@ const SpecArray = [
   },
   {
     text: "Unholy Death Knight",
-    image: "images/dk_unholy.png",
+    image: "images/Unholy_Death_Knight.png",
     color: "rgb(196,30,58)",
     role: "dps",
     name: "",
@@ -91,7 +91,7 @@ const SpecArray = [
   },
   {
     text: "Frost Death Knight",
-    image: "images/dk_frost.png",
+    image: "images/Frost_Death_Knight.png",
     color: "rgb(196,30,58)",
     role: "dps",
     name: "",
@@ -129,7 +129,7 @@ const SpecArray = [
   },
   {
     text: "Balance Druid",
-    image: "images/druid_balance.png",
+    image: "images/Balance_Druid.png",
     color: "rgb(255,124,10)",
     role: "dps",
     name: "",
@@ -204,7 +204,7 @@ const SpecArray = [
   },
   {
     text: "Feral Druid",
-    image: "images/druid_feral.png",
+    image: "images/Feral_Druid.png",
     color: "rgb(255,124,10)",
     role: "dps",
     name: "",
@@ -271,7 +271,7 @@ const SpecArray = [
   },
   {
     text: "Restoration Druid",
-    image: "images/druid_restoration.png",
+    image: "images/Restoration_Druid.png",
     color: "rgb(255,124,10)",
     role: "healer",
     name: "",
@@ -322,7 +322,7 @@ const SpecArray = [
   },
   {
     text: "Beast Mastery Hunter",
-    image: "images/hunter_beastmastery.png",
+    image: "images/Beast_Mastery_Hunter.png",
     color: "rgb(170,211,114)",
     role: "dps",
     name: "",
@@ -362,7 +362,7 @@ const SpecArray = [
   },
   {
     text: "Marksman Hunter",
-    image: "images/hunter_marksman.png",
+    image: "images/Marksman_Hunter.png",
     color: "rgb(170,211,114)",
     role: "dps",
     name: "",
@@ -401,7 +401,7 @@ const SpecArray = [
   },
   {
     text: "Survival Hunter",
-    image: "images/hunter_survival.png",
+    image: "images/Survival_Hunter.png",
     color: "rgb(170,211,114)",
     role: "dps",
     name: "",
@@ -445,7 +445,7 @@ const SpecArray = [
   },
   {
     text: "Arcane Mage",
-    image: "images/mage_arcane.png",
+    image: "images/Arcane_Intellect.png",
     color: "rgb(63,199,235)",
     role: "dps",
     name: "",
@@ -478,7 +478,7 @@ const SpecArray = [
   },
   {
     text: "Fire Mage",
-    image: "images/mage_fire.png",
+    image: "images/Fire_Mage.png",
     color: "rgb(63,199,235)",
     role: "dps",
     name: "",
@@ -511,7 +511,7 @@ const SpecArray = [
   },
   {
     text: "Frost Mage",
-    image: "images/mage_frost.png",
+    image: "images/Frost_Mage.png",
     color: "rgb(63,199,235)",
     role: "dps",
     name: "",
@@ -550,7 +550,7 @@ const SpecArray = [
 
   {
     text: "Holy Paladin",
-    image: "images/paladin_holy.png",
+    image: "images/Holy_Paladin.png",
     color: "rgb(244,140,186)",
     role: "healer",
     name: "",
@@ -645,7 +645,7 @@ const SpecArray = [
   },
   {
     text: "Protection Paladin",
-    image: "images/paladin_protection.png",
+    image: "images/Devotion_Aura.png",
     color: "rgb(244,140,186)",
     role: "tank",
     name: "",
@@ -756,7 +756,7 @@ const SpecArray = [
   },
   {
     text: "Retribution Paladin",
-    image: "images/paladin_retribution.png",
+    image: "images/Retribution_Paladin.png",
     color: "rgb(244,140,186)",
     role: "dps",
     name: "",
@@ -871,7 +871,7 @@ const SpecArray = [
   },
   {
     text: "Discipline Priest",
-    image: "images/priest_discipline.png",
+    image: "images/Power_Word_Fortitude.png",
     color: "rgb(255,255,255)",
     role: "healer",
     name: "",
@@ -939,7 +939,7 @@ const SpecArray = [
   },
   {
     text: "Holy Priest",
-    image: "images/priest_holy.png",
+    image: "images/Holy_Priest.png",
     color: "rgb(255,255,255)",
     role: "healer",
     name: "",
@@ -998,7 +998,7 @@ const SpecArray = [
   },
   {
     text: "Shadow Priest",
-    image: "images/priest_shadow.png",
+    image: "images/Shadow_Priest.png",
     color: "rgb(255,255,255)",
     role: "dps",
     name: "",
@@ -1062,7 +1062,7 @@ const SpecArray = [
   },
   {
     text: "Assassination Rogue",
-    image: "images/rogue_assassination.png",
+    image: "images/Assassination_Rogue.png",
     color: "rgb(255,244,104)",
     role: "dps",
     name: "",
@@ -1104,7 +1104,7 @@ const SpecArray = [
   },
   {
     text: "Combat Rogue",
-    image: "images/rogue_combat.png",
+    image: "images/Combat_Rogue.png",
     color: "rgb(255,244,104)",
     role: "dps",
     name: "",
@@ -1146,7 +1146,7 @@ const SpecArray = [
   },
   {
     text: "Subtlety Rogue",
-    image: "images/rogue_subtlety.png",
+    image: "images/Subtlety_Rogue.png",
     color: "rgb(255,244,104)",
     role: "dps",
     name: "",
@@ -1184,7 +1184,7 @@ const SpecArray = [
 
   {
     text: "Elemental Shaman",
-    image: "images/shaman_elemental.png",
+    image: "images/Elemental_Shaman.png",
     color: "rgb(0,112,221)",
     role: "dps",
     name: "",
@@ -1271,7 +1271,7 @@ const SpecArray = [
   },
   {
     text: "Enhancement Shaman",
-    image: "images/shaman_enhancement.png",
+    image: "images/Enhancement_Shaman.png",
     color: "rgb(0,112,221)",
     role: "dps",
     name: "",
@@ -1353,7 +1353,7 @@ const SpecArray = [
   },
   {
     text: "Restoration Shaman",
-    image: "images/shaman_restoration.png",
+    image: "images/Restoration_Shaman.png",
     color: "rgb(0,112,221)",
     role: "healer",
     name: "",
@@ -1443,7 +1443,7 @@ const SpecArray = [
   },
   {
     text: "Arms Warrior",
-    image: "images/warrior_arms.png",
+    image: "images/Mortal_Strike.png",
     color: "rgb(198,155,109)",
     role: "dps",
     name: "",
@@ -1504,7 +1504,7 @@ const SpecArray = [
   },
   {
     text: "Fury Warrior",
-    image: "images/warrior_fury.png",
+    image: "images/Fury_Warrior.png",
     color: "rgb(198,155,109)",
     role: "dps",
     name: "",
@@ -1562,7 +1562,7 @@ const SpecArray = [
 
   {
     text: "Protection Warrior",
-    image: "images/warrior_protection.png",
+    image: "images/Protection_Warrior.png",
     color: "rgb(198,155,109)",
     role: "tank",
     name: "",
@@ -1612,7 +1612,7 @@ const SpecArray = [
   },
   {
     text: "Affliction Warlock",
-    image: "images/warlock_affliction.png",
+    image: "images/Affliction_Warlock.png",
     color: "rgb(135,136,238)",
     role: "dps",
     name: "",
@@ -1657,7 +1657,7 @@ const SpecArray = [
   },
   {
     text: "Demonology Warlock",
-    image: "images/warlock_demonology.png",
+    image: "images/Demonology_Warlock.png",
     color: "rgb(135,136,238)",
     role: "dps",
     name: "",
@@ -1692,7 +1692,7 @@ const SpecArray = [
   },
   {
     text: "Destruction Warlock",
-    image: "images/warlock_destruction.png",
+    image: "images/Destruction_Warlock.png",
     color: "rgb(135,136,238)",
     role: "dps",
     name: "",
