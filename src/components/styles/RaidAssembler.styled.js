@@ -121,12 +121,12 @@ export const StyledSpecButton = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   font-weight: bold;
   position: relative;
-  color: white;
+  color: ${(props) => props.color};
   background: ${COLORS.fadedGrey};
-  border: 3px inset black;
+  border: 2px inset black;
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
@@ -1050,7 +1050,7 @@ export const RaidContentHeader = styled.div`
   }
 
   .role-count {
-    display: none;
+    align-self: center;
     margin-right: auto;
   }
 
@@ -1058,6 +1058,9 @@ export const RaidContentHeader = styled.div`
     height: 3rem;
   }
   @media (min-width: 600px) {
+    .btn-container {
+      margin-left: 9rem;
+    }
     .role-count {
       display: flex;
       padding: 2px;
