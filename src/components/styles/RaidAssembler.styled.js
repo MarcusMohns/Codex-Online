@@ -257,6 +257,11 @@ export const StyledClassToolTip = styled.div`
     box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
     z-index: 3;
   }
+  .class-tooltip-spec-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 5px;
+  }
 
   .tooltip-buff-and-utility-container {
     display: flex;
@@ -276,7 +281,6 @@ export const StyledClassToolTip = styled.div`
     font-size: 1.3rem;
     text-align: center;
     margin-bottom: 5px;
-    padding: 1rem;
     color: ${(props) => props.color};
   }
   .class-tooltip-header {

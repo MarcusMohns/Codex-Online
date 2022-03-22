@@ -14,6 +14,7 @@ const SpecButton = ({ text, image, onClick, color, buffs, utility }) => {
           text={text}
           utility={utility}
           color={color}
+          image={image}
         />
       </div>
     </StyledSpecButton>
