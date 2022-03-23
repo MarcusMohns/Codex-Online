@@ -2624,7 +2624,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Prismatic",
     quality: "Epic",
-    image: "images/Nightmare_Tear.png",
+    image: "images/Enchanted_Tear.png",
   },
 ];
 
