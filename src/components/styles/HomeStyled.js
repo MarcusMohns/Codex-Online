@@ -13,6 +13,12 @@ export const Main = styled.main`
   height: auto;
   box-shadow: 3px 5px 10px -2px rgba(255, 255, 255, 0.2);
 
+  #raid-assembler-container {
+    @media (min-width: 1200px) {
+      margin-top: 5%;
+    }
+  }
+
   #gem-finder-container {
     background-color: ${COLORS.fadedGrey};
 
@@ -52,8 +58,7 @@ export const PagePreviewContainer = styled.div`
   width: 100%;
   background-color: ${COLORS.fadedBlack};
   z-index: 10;
-  padding: 2rem;
-  padding-bottom: 4rem;
+  padding: 6rem 2rem;
 
   .content-preview-image {
     border-radius: 5px;
@@ -89,12 +94,10 @@ export const PagePreviewText = styled.div`
   text-align: center;
   font-size: 1.1rem;
   font-family: sans-serif;
-
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   line-height: 1.375rem;
   letter-spacing: 0.0071428571em;
-  font-weight: 100;
 
   .step-container {
     display: none;

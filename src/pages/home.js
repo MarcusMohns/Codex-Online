@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <Main>
       <HomeSection />
-      <PagePreviewContainer>
+      <PagePreviewContainer id="raid-assembler-container">
         <PagePreviewText>
           <PagePreviewHeader>Raid Assembler</PagePreviewHeader>
           Organize 3.3.5 WOTLK Buffs, Debuffs and Utilities. The Raid Assembler

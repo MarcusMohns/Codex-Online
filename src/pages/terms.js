@@ -10,7 +10,7 @@ export const Header = styled.h1`
   color: white;
   width: 100%;
   height: 100%;
-  margin-top: 5%;
+  margin-top: 10%;
 `;
 
 const Main = styled.main`
