@@ -254,6 +254,7 @@ export const StyledClassToolTip = styled.div`
     border: 1px solid #777;
     box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
     z-index: 3;
+    pointer-events: none;
   }
   .class-tooltip-spec-image {
     width: 3rem;
