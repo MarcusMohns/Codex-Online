@@ -4,29 +4,37 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/home";
-import RaidAssembler from "./pages/raidassembler";
-import Arenapointcalculator from "./pages/arenapointcalculator";
-import gemfinder from "./pages/gemfinder";
-import Terms from "./pages/terms";
+import { Loader } from "./components/Loader";
+
+const Home = lazy(() => import("./pages/home"));
+const RaidAssembler = lazy(() => import("./pages/raidassembler"));
+const Arenapointcalculator = lazy(() => import("./pages/arenapointcalculator"));
+const gemfinder = lazy(() => import("./pages/gemfinder"));
+const Terms = lazy(() => import("./pages/terms"));
 
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <Switch>
-        <Route path="/home" exact component={Home} />
-        <Route path="/raidassembler" component={RaidAssembler} />
-        <Route path="/arenapointcalculator" component={Arenapointcalculator} />
-        <Route path="/gemfinder" component={gemfinder} />
-        <Route path="/terms" component={Terms} />
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </Switch>
-      <Footer />
+      <Suspense fallback={<Loader />}>
+        <Switch>
+          <Route path="/home" exact component={Home} />
+          <Route path="/raidassembler" component={RaidAssembler} />
+          <Route
+            path="/arenapointcalculator"
+            component={Arenapointcalculator}
+          />
+          <Route path="/gemfinder" component={gemfinder} />
+          <Route path="/terms" component={Terms} />
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+        </Switch>
+        <Footer />
+      </Suspense>
     </Router>
   );
 };
