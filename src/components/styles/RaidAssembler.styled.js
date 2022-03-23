@@ -106,7 +106,6 @@ export const SpecContainer = styled.section`
     width: 90%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
     margin: 2rem 0;
-    gap: 2px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -136,18 +135,18 @@ export const StyledSpecButton = styled.div`
   line-height: 1;
   position: relative;
   color: ${(props) => props.color};
-  background: ${COLORS.fadedGrey};
-  border: 1px outset ${COLORS.fadedGrey};
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
-
+  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
   #info-image {
     visibility: hidden;
   }
   &:hover {
-    background: ${COLORS.fadedHighlight};
+    background: ${COLORS.fadedBackground};
     #info-image {
       visibility: visible;
     }
@@ -208,8 +207,7 @@ export const StyledSpecButton = styled.div`
   }
 
   @media (min-width: 1200px) {
-    padding: 0px 2px;
-    margin: 1px;
+    padding: 2px 3px;
     font-size: 0.7rem;
     letter-spacing: 1px;
 
@@ -1430,7 +1428,7 @@ export const EditIcon = styled(RiEdit2Line)`
 `;
 export const InfoIcon = styled(FcInfo)`
   color: black;
-  font-size: 1.7em;
+  font-size: 1.6em;
 `;
 export const SettingsIcon = styled(RiSettings3Line)`
   color: black;
