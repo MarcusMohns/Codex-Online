@@ -3,8 +3,8 @@
   "name": "Codex - WoW Tools",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "128x128",
+      "src": "images/favicon.png",
+      "sizes": "256x256",
       "type": "image/x-icon"
     }
   ],
