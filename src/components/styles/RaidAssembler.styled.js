@@ -828,19 +828,14 @@ export const StyledCategory = styled.div`
     margin-right: auto;
   }
   .tooltip {
-    display: none;
     position: relative;
     padding: 0px;
     left: 100%;
     z-index: 1;
   }
   .tooltip .tooltiptext {
-    position: absolute;
-    min-width: 200px;
-    min-height: 100%;
     visibility: hidden;
     box-sizing: border-box;
-    transform: translate(10%, -50%);
     background-color: ${COLORS.blackText};
     display: flex;
     flex-direction: column;
@@ -849,6 +844,27 @@ export const StyledCategory = styled.div`
     background: #000;
     border: 1px solid #777;
     box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
+    pointer-events: none;
+    position: fixed;
+    max-width: 65%;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 1200px) {
+      position: absolute;
+      min-width: 200px;
+      min-height: 100%;
+      transform: translate(10%, -50%);
+      margin-left: initial;
+      margin-right: initial;
+      top: initial;
+      left: initial;
+      right: initial;
+    }
+
     #death-knight {
       color: ${COLORS.deathKnight};
       display: block;
@@ -934,15 +950,17 @@ export const StyledCategory = styled.div`
       }
     }
   }
-  .tooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    margin-top: -5px;
-    border-width: 0.5rem;
-    border-style: solid;
-    border-color: transparent #000 transparent transparent;
+  @media (min-width: 1200px) {
+    .tooltip .tooltiptext::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      margin-top: -5px;
+      border-width: 0.5rem;
+      border-style: solid;
+      border-color: transparent #000 transparent transparent;
+    }
   }
   &:hover {
     .tooltiptext {
