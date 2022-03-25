@@ -22,7 +22,7 @@ export const Main = styled.main`
     justify-content: center;
     max-width: 100vw;
     min-width: 75vw;
-    padding: 3rem;
+    padding: 3rem 10%;
   }
 `;
 
