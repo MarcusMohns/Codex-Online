@@ -1083,6 +1083,7 @@ export const RaidContentHeader = styled.div`
   .role-count {
     align-self: center;
     margin-right: auto;
+    text-align: center;
   }
 
   @media (min-width: 1200px) {
