@@ -1035,10 +1035,6 @@ export const StyledUtility = styled.div`
     border-radius: 20%;
     margin-left: 0.5rem;
   }
-  p {
-    opacity: 0%;
-    color: ${COLORS.darktext};
-  }
 `;
 
 export const ContentHeader = styled.div`
@@ -1370,6 +1366,54 @@ export const StyledSaveMenu = styled.div`
     }
   }
 `;
+
+export const StyledRaidCooldowns = styled.div`
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+  height: auto;
+  width: 100vw;
+  left: 0;
+  top: 0%;
+  z-index: 3;
+
+  .cooldown-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    border: 1px solid grey;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 500px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+  }
+  .cooldown-panel > div {
+    min-height: 0px;
+  }
+  .cooldown-panel > div > div {
+    user-select: text;
+  }
+  .cooldown-header {
+    color: ${COLORS.offWhite};
+    width: 100%;
+    padding: 3rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  img {
+    user-select: none;
+  }
+`;
+
 export const Header = styled.h1`
   font-size: 1.5rem;
   display: flex;
