@@ -935,6 +935,10 @@ const SpecArray = [
         name: "Mind Control",
         image: "images/Mind_Control.png",
       },
+      {
+        name: "Power Infusion",
+        image: "images/Power_Infusion.png",
+      },
     ],
   },
   {
@@ -1267,6 +1271,10 @@ const SpecArray = [
         name: "Interrupt",
         image: "images/Kick.png",
       },
+      {
+        name: "Bloodlust/Heroism",
+        image: "images/Bloodlust.png",
+      },
     ],
   },
   {
@@ -1348,6 +1356,10 @@ const SpecArray = [
       {
         name: "Interrupt",
         image: "images/Kick.png",
+      },
+      {
+        name: "Bloodlust/Heroism",
+        image: "images/Bloodlust.png",
       },
     ],
   },
@@ -1438,6 +1450,10 @@ const SpecArray = [
       {
         name: "Mana Tide Totem",
         image: "images/Mana_Tide_Totem.png",
+      },
+      {
+        name: "Bloodlust/Heroism",
+        image: "images/Bloodlust.png",
       },
     ],
   },
