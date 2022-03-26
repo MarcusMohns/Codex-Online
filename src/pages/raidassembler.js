@@ -3,8 +3,9 @@ import SpecArray from "../SpecArray";
 import SpecButtons from "../components/SpecButtons";
 import BuffCategories from "../components/BuffCategories";
 import Utilities from "../components/Utilities";
+import SaveMenu from "../components/SaveMenu";
+import RaidCooldowns from "../components/RaidCooldowns";
 import Raid from "../components/Raid";
-import { lazy, Suspense } from "react";
 import {
   Main,
   SpecContainer,
@@ -19,9 +20,6 @@ import {
   SaveIcon,
   Header,
 } from "../components/styles/RaidAssembler.styled";
-
-const SaveMenu = lazy(() => import("../components/SaveMenu"));
-const RaidCooldowns = lazy(() => import("../components/RaidCooldowns"));
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -546,27 +544,25 @@ const RaidAssembler = () => {
         />
       </SpecContainer>
       <Main>
-        <Suspense fallback={<div> Loading... </div>}>
-          {saveMenuOpen && (
-            <SaveMenu
-              saveOnClick={saveOnClick}
-              loadOnClick={loadOnClick}
-              editSaveOnChange={editSaveOnChange}
-              deleteSaveOnClick={deleteSaveOnClick}
-              saveOnClickToFile={saveOnClickToFile}
-              loadOnClickToFile={loadOnClickToFile}
-              saveMenuOpen={saveMenuOpen}
-              setSaveMenuOpen={setSaveMenuOpen}
-            />
-          )}
-          {raidCooldownsOpen && (
-            <RaidCooldowns
-              raidCooldownsOpen={raidCooldownsOpen}
-              setRaidCooldownsOpen={setRaidCooldownsOpen}
-              utilities={utilities}
-            />
-          )}
-        </Suspense>
+        {saveMenuOpen && (
+          <SaveMenu
+            saveOnClick={saveOnClick}
+            loadOnClick={loadOnClick}
+            editSaveOnChange={editSaveOnChange}
+            deleteSaveOnClick={deleteSaveOnClick}
+            saveOnClickToFile={saveOnClickToFile}
+            loadOnClickToFile={loadOnClickToFile}
+            saveMenuOpen={saveMenuOpen}
+            setSaveMenuOpen={setSaveMenuOpen}
+          />
+        )}
+        {raidCooldownsOpen && (
+          <RaidCooldowns
+            raidCooldownsOpen={raidCooldownsOpen}
+            setRaidCooldownsOpen={setRaidCooldownsOpen}
+            utilities={utilities}
+          />
+        )}
 
         <RaidContainer className="raid-container">
           <RaidContentHeader>
@@ -579,14 +575,7 @@ const RaidAssembler = () => {
             >
               <SaveIcon /> Saves
             </RaidHeaderButton>
-            <RaidHeaderButton
-              backgroundColor="#26a828"
-              onClick={() => {
-                setRaidCooldownsOpen(!raidCooldownsOpen);
-              }}
-            >
-              <SaveIcon /> Saves
-            </RaidHeaderButton>
+
             <p className="raid-count">{raidCount[0]} / 25 </p>
             <p className="role-count">
               {raidCount[1]} Tanks
@@ -648,7 +637,17 @@ const RaidAssembler = () => {
           )}
         </RaidContainer>
         <UtilityContainer>
-          <ContentHeader>Utilities</ContentHeader>
+          <ContentHeader>
+            Utilities
+            <RaidHeaderButton
+              backgroundColor="#26a828"
+              onClick={() => {
+                setRaidCooldownsOpen(!raidCooldownsOpen);
+              }}
+            >
+              Raid Cooldowns
+            </RaidHeaderButton>
+          </ContentHeader>
           <Utilities utilities={utilities} />
         </UtilityContainer>
         <BuffContainer className="buff-container">
