@@ -4,7 +4,7 @@ import SpecButtons from "../components/SpecButtons";
 import BuffCategories from "../components/BuffCategories";
 import Utilities from "../components/Utilities";
 import Raid from "../components/Raid";
-import SaveMenu from "../components/SaveMenu";
+import { lazy, Suspense } from "react";
 import {
   Main,
   SpecContainer,
@@ -19,6 +19,9 @@ import {
   SaveIcon,
   Header,
 } from "../components/styles/RaidAssembler.styled";
+
+const SaveMenu = lazy(() => import("../components/SaveMenu"));
+const RaidCooldowns = lazy(() => import("../components/RaidCooldowns"));
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -102,6 +105,7 @@ const RaidAssembler = () => {
   const [raidCount, setCount] = useState([0, 0, 0, 0]); // first value full raid count, 2nd value Tanks, 3rd value Healers, 4th value DPS.
   const [raidIsFull, setRaidIsFull] = useState(false);
   const [saveMenuOpen, setSaveMenuOpen] = useState(false);
+  const [raidCooldownsOpen, setRaidCooldownsOpen] = useState(false);
 
   const resetRaid = () => {
     setRaid(intitialRaidState);
@@ -542,18 +546,27 @@ const RaidAssembler = () => {
         />
       </SpecContainer>
       <Main>
-        {saveMenuOpen && (
-          <SaveMenu
-            saveOnClick={saveOnClick}
-            loadOnClick={loadOnClick}
-            editSaveOnChange={editSaveOnChange}
-            deleteSaveOnClick={deleteSaveOnClick}
-            saveOnClickToFile={saveOnClickToFile}
-            loadOnClickToFile={loadOnClickToFile}
-            saveMenuOpen={saveMenuOpen}
-            setSaveMenuOpen={setSaveMenuOpen}
-          />
-        )}
+        <Suspense fallback={<div> Loading... </div>}>
+          {saveMenuOpen && (
+            <SaveMenu
+              saveOnClick={saveOnClick}
+              loadOnClick={loadOnClick}
+              editSaveOnChange={editSaveOnChange}
+              deleteSaveOnClick={deleteSaveOnClick}
+              saveOnClickToFile={saveOnClickToFile}
+              loadOnClickToFile={loadOnClickToFile}
+              saveMenuOpen={saveMenuOpen}
+              setSaveMenuOpen={setSaveMenuOpen}
+            />
+          )}
+          {raidCooldownsOpen && (
+            <RaidCooldowns
+              raidCooldownsOpen={raidCooldownsOpen}
+              setRaidCooldownsOpen={setRaidCooldownsOpen}
+              utilities={utilities}
+            />
+          )}
+        </Suspense>
 
         <RaidContainer className="raid-container">
           <RaidContentHeader>
@@ -563,6 +576,14 @@ const RaidAssembler = () => {
                 setSaveMenuOpen(!saveMenuOpen);
               }}
               id="raid-saves-btn"
+            >
+              <SaveIcon /> Saves
+            </RaidHeaderButton>
+            <RaidHeaderButton
+              backgroundColor="#26a828"
+              onClick={() => {
+                setRaidCooldownsOpen(!raidCooldownsOpen);
+              }}
             >
               <SaveIcon /> Saves
             </RaidHeaderButton>
@@ -628,7 +649,7 @@ const RaidAssembler = () => {
         </RaidContainer>
         <UtilityContainer>
           <ContentHeader>Utilities</ContentHeader>
-          <Utilities utilities={utilities}></Utilities>
+          <Utilities utilities={utilities} />
         </UtilityContainer>
         <BuffContainer className="buff-container">
           <ContentHeader>Buffs & Debuffs</ContentHeader>
