@@ -3,11 +3,11 @@ import Utility from "./Utility";
 import { memo } from "react";
 
 const Utilities = ({ utilities }) => {
-  utilities = Object.values(utilities);
+  const allUtilities = Object.values(utilities);
   let currentUtils = [];
   const existsAlready = [];
 
-  for (let playerUtility of utilities) {
+  for (let playerUtility of allUtilities) {
     for (let aUtility of playerUtility) {
       if (!existsAlready.includes(aUtility.name)) {
         existsAlready.push(aUtility.name);
@@ -27,8 +27,11 @@ const Utilities = ({ utilities }) => {
   }
   return (
     <StyledUtilities>
-      {currentUtils.map((utility) => (
-        <Utility key={utility.name + utility.count} utility={utility} />
+      {currentUtils.map((utility, index) => (
+        <Utility
+          key={(utility.name + utility.count, index)}
+          utility={utility}
+        />
       ))}
     </StyledUtilities>
   );
