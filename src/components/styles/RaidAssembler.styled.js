@@ -917,6 +917,7 @@ export const StyledCategory = styled.div`
     }
     img {
       width: 32px;
+      height: 32px;
       padding: 5px;
     }
     h3 {
