@@ -10,6 +10,10 @@ import { RiEdit2Line } from "@react-icons/all-files/ri/RiEdit2Line";
 import { RiSave3Fill } from "@react-icons/all-files/ri/RiSave3Fill";
 import { RiDownload2Fill } from "@react-icons/all-files/ri/RiDownload2Fill";
 import { RiUpload2Fill } from "@react-icons/all-files/ri/RiUpload2Fill";
+import { CgDrop } from "@react-icons/all-files/cg/CgDrop";
+import { FaRegClock } from "@react-icons/all-files/fa/FaRegClock";
+import { GiElectric } from "@react-icons/all-files/gi/GiElectric";
+import { MdTrendingUp } from "@react-icons/all-files/md/MdTrendingUp";
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -1031,6 +1035,7 @@ export const StyledUtility = styled.div`
   animation-name: FadeIn;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+
   img {
     width: 25px;
     border-radius: 20%;
@@ -1388,7 +1393,7 @@ export const StyledRaidCooldowns = styled.div`
     position: fixed;
     margin-left: auto;
     margin-right: auto;
-    top: 40%;
+    top: 25%;
     left: 0;
     right: 0;
     text-align: center;
@@ -1396,19 +1401,34 @@ export const StyledRaidCooldowns = styled.div`
     min-height: 400px;
     height: auto;
     border-radius: 5px;
+    padding: 1rem;
   }
   .cooldown-panel > div {
     min-height: 0px;
   }
   .cooldown-panel > div > div {
     user-select: text;
+    background-color: ${COLORS.fadedGrey};
+    color: ${COLORS.offWhite};
   }
   .cooldown-header {
     color: ${COLORS.offWhite};
     width: 100%;
-    padding: 3rem;
+    padding: 1rem;
     font-weight: bold;
     font-size: 1.3rem;
+  }
+  .cooldown-subheader {
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+    align-items: center;
+    width: 100%;
+    color: ${COLORS.offWhite};
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
   }
   img {
     user-select: none;
@@ -1511,4 +1531,20 @@ export const DownloadIcon = styled(RiDownload2Fill)`
 `;
 export const UploadIcon = styled(RiUpload2Fill)`
   font-size: 1.3em;
+`;
+export const ManaIcon = styled(CgDrop)`
+  font-size: 1.3em;
+  color: teal;
+`;
+export const CooldownIcon = styled(FaRegClock)`
+  font-size: 1.1em;
+  margin-right: 3px;
+  margin-left: 3px;
+`;
+export const PowerUpIcon = styled(GiElectric)`
+  font-size: 1.1em;
+`;
+export const CombatResIcon = styled(MdTrendingUp)`
+  font-size: 1.1em;
+  margin-right: 2px;
 `;
