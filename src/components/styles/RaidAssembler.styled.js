@@ -14,6 +14,7 @@ import { CgDrop } from "@react-icons/all-files/cg/CgDrop";
 import { FaRegClock } from "@react-icons/all-files/fa/FaRegClock";
 import { GiElectric } from "@react-icons/all-files/gi/GiElectric";
 import { MdTrendingUp } from "@react-icons/all-files/md/MdTrendingUp";
+import { RiFilePaper2Line } from "@react-icons/all-files/ri/RiFilePaper2Line";
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -1055,6 +1056,12 @@ export const ContentHeader = styled.div`
   box-shadow: 0 2px 6px -1px #000;
   user-select: none;
 `;
+export const ContentTitle = styled.h2`
+  display: flex;
+  align-items: center;
+  color: ${COLORS.offWhite};
+  margin-right: 50%;
+`;
 export const RaidContentHeader = styled.div`
   display: flex;
   align-items: center;
@@ -1192,6 +1199,33 @@ export const RaidHeaderButton = styled.div`
   user-select: none;
   -webkit-user-select: none;
   white-space: nowrap;
+
+  &:hover {
+    background-color: ${COLORS.fadedHighlight};
+  }
+`;
+
+export const UtilityHeaderButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
+  align-items: center;
+  justify-content: center;
+  color: ${COLORS.lightText};
+  background-color: ${COLORS.greyText};
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-right: auto;
+  margin-left: 5px;
 
   &:hover {
     background-color: ${COLORS.fadedHighlight};
@@ -1387,7 +1421,7 @@ export const StyledRaidCooldowns = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: black;
     border: 1px solid grey;
     position: fixed;
@@ -1427,8 +1461,9 @@ export const StyledRaidCooldowns = styled.div`
     color: ${COLORS.offWhite};
     padding: 1rem;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
+    box-sizing: border-box;
   }
   img {
     user-select: none;
@@ -1547,4 +1582,8 @@ export const PowerUpIcon = styled(GiElectric)`
 export const CombatResIcon = styled(MdTrendingUp)`
   font-size: 1.1em;
   margin-right: 2px;
+`;
+export const RaidCooldownIcon = styled(RiFilePaper2Line)`
+  font-size: 1.4em;
+  margin-right: 5px;
 `;

@@ -19,6 +19,9 @@ import {
   NoPlayersText,
   SaveIcon,
   Header,
+  UtilityHeaderButton,
+  RaidCooldownIcon,
+  ContentTitle,
 } from "../components/styles/RaidAssembler.styled";
 
 const { v4: uuidv4 } = require("uuid");
@@ -638,15 +641,16 @@ const RaidAssembler = () => {
         </RaidContainer>
         <UtilityContainer>
           <ContentHeader>
-            Utilities
-            <RaidHeaderButton
+            <UtilityHeaderButton
               backgroundColor="#26a828"
               onClick={() => {
                 setRaidCooldownsOpen(!raidCooldownsOpen);
               }}
             >
+              <RaidCooldownIcon />
               Raid Cooldowns
-            </RaidHeaderButton>
+            </UtilityHeaderButton>
+            <ContentTitle>Utilities</ContentTitle>
           </ContentHeader>
           <Utilities utilities={utilities} />
         </UtilityContainer>
