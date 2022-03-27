@@ -1060,7 +1060,7 @@ export const ContentTitle = styled.h2`
   display: flex;
   align-items: center;
   color: ${COLORS.offWhite};
-  margin-right: 50%;
+  margin-left: 50%;
 `;
 export const RaidContentHeader = styled.div`
   display: flex;
@@ -1224,8 +1224,8 @@ export const UtilityHeaderButton = styled.div`
   white-space: nowrap;
   font-weight: 500;
   letter-spacing: 1px;
-  margin-right: auto;
-  margin-left: 5px;
+  margin-left: auto;
+  margin-right: 5px;
 
   &:hover {
     background-color: ${COLORS.fadedHighlight};

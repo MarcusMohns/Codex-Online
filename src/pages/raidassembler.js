@@ -641,6 +641,7 @@ const RaidAssembler = () => {
         </RaidContainer>
         <UtilityContainer>
           <ContentHeader>
+            <ContentTitle>Utilities</ContentTitle>
             <UtilityHeaderButton
               backgroundColor="#26a828"
               onClick={() => {
@@ -650,7 +651,6 @@ const RaidAssembler = () => {
               <RaidCooldownIcon />
               Raid Cooldowns
             </UtilityHeaderButton>
-            <ContentTitle>Utilities</ContentTitle>
           </ContentHeader>
           <Utilities utilities={utilities} />
         </UtilityContainer>
