@@ -59,12 +59,12 @@ const RaidCooldowns = ({
         <Utilities utilities={ourRaidCooldowns} />
         <h3 className="cooldown-subheader">
           <ManaIcon />
-          Mana Cooldowns
+          Mana Restore
         </h3>
         <Utilities utilities={ourManaCooldowns} />
         <h3 className="cooldown-subheader">
           <PowerUpIcon />
-          Powerup Cooldowns
+          Powerups
         </h3>
         <Utilities utilities={ourPowerUpCooldowns} />
         <h3 className="cooldown-subheader">
