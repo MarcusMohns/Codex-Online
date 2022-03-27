@@ -570,7 +570,6 @@ const RaidAssembler = () => {
         <RaidContainer className="raid-container">
           <RaidContentHeader>
             <RaidHeaderButton
-              backgroundColor="#26a828"
               onClick={() => {
                 setSaveMenuOpen(!saveMenuOpen);
               }}
@@ -643,13 +642,12 @@ const RaidAssembler = () => {
           <ContentHeader>
             <ContentTitle>Utilities</ContentTitle>
             <UtilityHeaderButton
-              backgroundColor="#26a828"
               onClick={() => {
                 setRaidCooldownsOpen(!raidCooldownsOpen);
               }}
             >
               <RaidCooldownIcon />
-              Raid Cooldowns
+              Cooldowns
             </UtilityHeaderButton>
           </ContentHeader>
           <Utilities utilities={utilities} />

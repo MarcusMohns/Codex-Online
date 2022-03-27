@@ -1185,12 +1185,10 @@ export const RaidHeaderButton = styled.div`
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   align-items: center;
   justify-content: center;
   color: ${COLORS.lightText};
-  background-color: ${(props) => props.backgroundColor};
+  background-color: #26a828;
   border-radius: 10px;
   margin-right: 1rem;
   cursor: pointer;
@@ -1199,9 +1197,11 @@ export const RaidHeaderButton = styled.div`
   user-select: none;
   -webkit-user-select: none;
   white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: 1px;
 
   &:hover {
-    background-color: ${COLORS.fadedHighlight};
+    background-color: #65a827;
   }
 `;
 
@@ -1214,7 +1214,7 @@ export const UtilityHeaderButton = styled.div`
   align-items: center;
   justify-content: center;
   color: ${COLORS.lightText};
-  background-color: ${COLORS.greyText};
+  background-color: #222;
   border-radius: 5px;
   cursor: pointer;
   padding: 0.2rem 0.6rem;
@@ -1228,7 +1228,7 @@ export const UtilityHeaderButton = styled.div`
   margin-right: 5px;
 
   &:hover {
-    background-color: ${COLORS.fadedHighlight};
+    background-color: ${COLORS.greyText};
   }
 `;
 export const RaidGroupContainer = styled.div`
@@ -1431,11 +1431,15 @@ export const StyledRaidCooldowns = styled.div`
     left: 0;
     right: 0;
     text-align: center;
-    width: 500px;
+    width: 80%;
     min-height: 400px;
     height: auto;
     border-radius: 5px;
     padding: 1rem;
+
+    @media (min-width: 800px) {
+      width: 500px;
+    }
   }
   .cooldown-panel > div {
     min-height: 0px;
