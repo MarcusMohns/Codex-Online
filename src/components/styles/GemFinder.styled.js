@@ -315,6 +315,10 @@ export const GemTableContainer = styled.section`
     color: #29c714;
     font-weight: bold;
   }
+  #metaCells {
+    color: teal;
+    font-weight: 700;
+  }
 
   #blueCells {
     color: ${COLORS.shaman};
@@ -333,6 +337,10 @@ export const GemTableContainer = styled.section`
   }
   #purpleCells {
     color: ${COLORS.warlock};
+  }
+
+  #prismaticCells {
+    color: #c0c0c0;
   }
   .gemStatsHeader,
   .gemSourceHeader,
