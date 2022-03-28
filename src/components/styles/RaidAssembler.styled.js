@@ -1086,7 +1086,6 @@ export const RaidContentHeader = styled.div`
     margin-right: auto;
     justify-self: flex-start;
     font-size: 1.4rem;
-    font-weight: bold;
   }
 
   .role-count {
@@ -1185,10 +1184,12 @@ export const RaidHeaderButton = styled.div`
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
+    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   align-items: center;
   justify-content: center;
   color: ${COLORS.lightText};
-  background-color: #26a828;
+  background-color: #1f8421;
   border-radius: 10px;
   margin-right: 1rem;
   cursor: pointer;
