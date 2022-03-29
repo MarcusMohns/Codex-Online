@@ -14,6 +14,7 @@ export const Main = styled.main`
   box-shadow: 3px 5px 10px -2px rgba(255, 255, 255, 0.2);
 
   #raid-assembler-container {
+    box-shadow: none;
     @media (min-width: 1200px) {
       margin-top: 5%;
     }
@@ -59,7 +60,7 @@ export const PagePreviewContainer = styled.div`
   background-color: ${COLORS.fadedBlack};
   z-index: 10;
   padding: 6rem 2rem;
-
+  box-shadow: 3px 5px 10px -2px rgb(0 0 0 / 60%);
   .content-preview-image {
     border-radius: 5px;
     background-color: ${COLORS.fadedBlack};
