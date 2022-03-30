@@ -1475,6 +1475,42 @@ export const StyledRaidCooldowns = styled.div`
   }
 `;
 
+export const StyledPlayerIndex = styled.div`
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+  height: auto;
+  width: 100vw;
+  left: 0;
+  top: 0%;
+  z-index: 3;
+
+  .player-index-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid grey;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 80%;
+    min-height: 400px;
+    height: auto;
+    border-radius: 5px;
+    padding: 1rem;
+
+    @media (min-width: 800px) {
+      width: 500px;
+    }
+  }
+`;
+
 export const Header = styled.h1`
   font-size: 1.5rem;
   display: flex;

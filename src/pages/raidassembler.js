@@ -5,6 +5,7 @@ import BuffCategories from "../components/BuffCategories";
 import Utilities from "../components/Utilities";
 import SaveMenu from "../components/SaveMenu";
 import RaidCooldowns from "../components/RaidCooldowns";
+import PlayersIndex from "../components/PlayersIndex";
 import Raid from "../components/Raid";
 import {
   Main,
@@ -107,6 +108,7 @@ const RaidAssembler = () => {
   const [raidIsFull, setRaidIsFull] = useState(false);
   const [saveMenuOpen, setSaveMenuOpen] = useState(false);
   const [raidCooldownsOpen, setRaidCooldownsOpen] = useState(false);
+  const [playersIndexOpen, setPlayersIndexOpen] = useState(false);
 
   const resetRaid = () => {
     setRaid(intitialRaidState);
@@ -566,6 +568,13 @@ const RaidAssembler = () => {
             utilities={utilities}
           />
         )}
+        {playersIndexOpen && (
+          <PlayersIndex
+            playersIndexOpen={playersIndexOpen}
+            setPlayersIndexOpen={setPlayersIndexOpen}
+            utilities={utilities}
+          />
+        )}
 
         <RaidContainer className="raid-container">
           <RaidContentHeader>
@@ -577,6 +586,15 @@ const RaidAssembler = () => {
             >
               <SaveIcon /> Saves
             </RaidHeaderButton>
+
+            <UtilityHeaderButton
+              onClick={() => {
+                setPlayersIndexOpen(!playersIndexOpen);
+              }}
+            >
+              <RaidCooldownIcon />
+              Hey
+            </UtilityHeaderButton>
 
             <p className="raid-count">{raidCount[0]} / 25 </p>
             <p className="role-count">
