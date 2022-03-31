@@ -233,7 +233,7 @@ const RaidAssembler = () => {
 
     const newRaid = { ...raid };
     const newPlayers = newRaid.players.map((gamer) => {
-      return player.id === gamer.id && newPlayer;
+      return player.id === gamer.id ? newPlayer : gamer;
     });
     // set raid.players
 
