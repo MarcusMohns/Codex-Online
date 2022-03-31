@@ -1505,6 +1505,10 @@ export const StyledPlayerIndex = styled.div`
     border-radius: 5px;
     padding: 1rem;
 
+    .index-player-name {
+      color: white;
+    }
+
     @media (min-width: 800px) {
       width: 500px;
     }

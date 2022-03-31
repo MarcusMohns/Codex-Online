@@ -572,7 +572,7 @@ const RaidAssembler = () => {
           <PlayersIndex
             playersIndexOpen={playersIndexOpen}
             setPlayersIndexOpen={setPlayersIndexOpen}
-            utilities={utilities}
+            players={raid.players}
           />
         )}
 
