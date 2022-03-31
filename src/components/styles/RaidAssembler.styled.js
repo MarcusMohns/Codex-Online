@@ -1504,15 +1504,47 @@ export const StyledPlayerIndex = styled.div`
     height: auto;
     border-radius: 5px;
     padding: 1rem;
-
-    .index-player-name {
-      color: white;
+    .player-index-role-container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
 
+    .player-index-subheader {
+      display: flex;
+      align-self: flex-start;
+      justify-self: flex-start;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      color: ${COLORS.offWhite};
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      box-sizing: border-box;
+    }
+    .player-index-players {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      min-height: 100%;
+      height: auto;
+      min-width: 100%;
+      max-width: 100%;
+    }
     @media (min-width: 800px) {
       width: 500px;
     }
   }
+`;
+export const StyledIndexPlayerName = styled.div`
+  color: ${(props) => props.color};
 `;
 
 export const Header = styled.h1`
