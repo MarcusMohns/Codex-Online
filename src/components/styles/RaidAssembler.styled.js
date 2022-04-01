@@ -18,6 +18,7 @@ import { RiFilePaper2Line } from "@react-icons/all-files/ri/RiFilePaper2Line";
 import { GiBroadsword } from "@react-icons/all-files/gi/GiBroadsword";
 import { FiShield } from "@react-icons/all-files/fi/FiShield";
 import { TiPlusOutline } from "@react-icons/all-files/ti/TiPlusOutline";
+import { CgCopy } from "@react-icons/all-files/cg/CgCopy";
 
 import COLORS from "../../components";
 
@@ -1558,6 +1559,57 @@ export const StyledPlayerIndex = styled.div`
       margin: 0px 5px;
     }
 
+    .copy-to-clipboard {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid black;
+      cursor: pointer;
+      user-select: none;
+      background-color: ${COLORS.fadedGrey};
+      border-radius: 5px;
+      margin-top: 10px;
+
+      &:hover {
+        border: 1px solid white;
+      }
+    }
+    .tooltip {
+      position: relative;
+      align-self: flex-end;
+      display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+      width: 100px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -50px;
+      opacity: 0;
+    }
+
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
     @media (min-width: 800px) {
       width: 500px;
     }
@@ -1695,4 +1747,9 @@ export const TankIcon = styled(FiShield)`
 export const HealerIcon = styled(TiPlusOutline)`
   font-size: 1.4em;
   margin-right: 5px;
+`;
+export const CopyIcon = styled(CgCopy)`
+  font-size: 1.4em;
+  margin-right: 5px;
+  color: white;
 `;
