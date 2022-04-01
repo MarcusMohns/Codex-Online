@@ -15,6 +15,10 @@ import { FaRegClock } from "@react-icons/all-files/fa/FaRegClock";
 import { GiElectric } from "@react-icons/all-files/gi/GiElectric";
 import { MdTrendingUp } from "@react-icons/all-files/md/MdTrendingUp";
 import { RiFilePaper2Line } from "@react-icons/all-files/ri/RiFilePaper2Line";
+import { GiBroadsword } from "@react-icons/all-files/gi/GiBroadsword";
+import { FiShield } from "@react-icons/all-files/fi/FiShield";
+import { TiPlusOutline } from "@react-icons/all-files/ti/TiPlusOutline";
+
 import COLORS from "../../components";
 
 export const Main = styled.main`
@@ -1083,7 +1087,8 @@ export const RaidContentHeader = styled.div`
     margin-left: 5px;
   }
   .raid-count {
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: 2rem;
     justify-self: flex-start;
     font-size: 1.4rem;
   }
@@ -1227,6 +1232,8 @@ export const UtilityHeaderButton = styled.div`
   letter-spacing: 1px;
   margin-left: auto;
   margin-right: 5px;
+  margin-left: ${(props) => props.marginLeft};
+  margin-right: ${(props) => props.marginRight};
 
   &:hover {
     background-color: ${COLORS.greyText};
@@ -1504,6 +1511,15 @@ export const StyledPlayerIndex = styled.div`
     height: auto;
     border-radius: 5px;
     padding: 1rem;
+
+    .player-index-header {
+      color: ${COLORS.offWhite};
+      width: 100%;
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
     .player-index-role-container {
       display: flex;
       width: 100%;
@@ -1538,6 +1554,10 @@ export const StyledPlayerIndex = styled.div`
       min-width: 100%;
       max-width: 100%;
     }
+    .index-player-name {
+      margin: 0px 5px;
+    }
+
     @media (min-width: 800px) {
       width: 500px;
     }
@@ -1661,6 +1681,18 @@ export const CombatResIcon = styled(MdTrendingUp)`
   margin-right: 2px;
 `;
 export const RaidCooldownIcon = styled(RiFilePaper2Line)`
+  font-size: 1.4em;
+  margin-right: 5px;
+`;
+export const DpsIcon = styled(GiBroadsword)`
+  font-size: 1.4em;
+  margin-right: 5px;
+`;
+export const TankIcon = styled(FiShield)`
+  font-size: 1.4em;
+  margin-right: 5px;
+`;
+export const HealerIcon = styled(TiPlusOutline)`
   font-size: 1.4em;
   margin-right: 5px;
 `;

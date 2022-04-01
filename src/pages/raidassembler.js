@@ -591,34 +591,16 @@ const RaidAssembler = () => {
               onClick={() => {
                 setPlayersIndexOpen(!playersIndexOpen);
               }}
+              marginLeft="0px"
+              marginRight="none"
             >
               <RaidCooldownIcon />
-              Hey
+              Index
             </UtilityHeaderButton>
 
             <p className="raid-count">{raidCount[0]} / 25 </p>
             <p className="role-count">
-              {raidCount[1]} Tanks
-              <img
-                id="class-img"
-                src="images/tank_icon.png"
-                alt="player in raid"
-                className="role-count-img"
-              />
-              | {raidCount[2]} Healers
-              <img
-                id="class-img"
-                src="images/healer_icon.png"
-                alt="player in raid"
-                className="role-count-img"
-              />
-              | {raidCount[3]} DPS
-              <img
-                id="class-img"
-                src="images/dps_icon.png"
-                alt="player in raid"
-                className="role-count-img"
-              />
+              {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
             </p>
             <div className="btn-container">
               <ResetIcon onClick={resetRaid} />
