@@ -1571,7 +1571,6 @@ export const StyledPlayerIndex = styled.div`
       user-select: none;
       background-color: ${COLORS.fadedGrey};
       border-radius: 5px;
-      margin-top: 10px;
 
       &:hover {
         border: 1px solid white;
@@ -1581,6 +1580,7 @@ export const StyledPlayerIndex = styled.div`
       position: relative;
       align-self: flex-end;
       display: inline-block;
+      margin-top: 10px;
     }
 
     .tooltip .tooltiptext {
