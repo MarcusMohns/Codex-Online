@@ -1089,15 +1089,18 @@ export const RaidContentHeader = styled.div`
   }
   .raid-count {
     margin-left: auto;
-    margin-right: 2rem;
     justify-self: flex-start;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: auto;
   }
 
   .role-count {
+    display: flex;
     align-self: center;
     margin-right: auto;
     text-align: center;
+    font-size: 0.8rem;
   }
 
   @media (min-width: 1200px) {
@@ -1107,9 +1110,15 @@ export const RaidContentHeader = styled.div`
     .btn-container {
       margin-left: 9rem;
     }
+    .raid-count {
+      margin-left: auto;
+      justify-self: flex-start;
+      font-size: 1.4rem;
+    }
     .role-count {
       display: flex;
       padding: 2px;
+      font-size: 1rem;
       .role-count-img {
         height: 18px;
         width: 18px;
@@ -1214,7 +1223,7 @@ export const RaidHeaderButton = styled.div`
 
 export const UtilityHeaderButton = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   cursor: pointer;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
@@ -1229,6 +1238,7 @@ export const UtilityHeaderButton = styled.div`
   user-select: none;
   -webkit-user-select: none;
   white-space: nowrap;
+  font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 1px;
   margin-left: auto;
@@ -1238,6 +1248,11 @@ export const UtilityHeaderButton = styled.div`
 
   &:hover {
     background-color: ${COLORS.greyText};
+  }
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    font-size: 1rem;
   }
 `;
 export const RaidGroupContainer = styled.div`
