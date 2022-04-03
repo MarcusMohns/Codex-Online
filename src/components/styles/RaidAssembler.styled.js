@@ -1100,13 +1100,13 @@ export const RaidContentHeader = styled.div`
     align-self: center;
     margin-right: auto;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   @media (min-width: 1200px) {
     height: 3rem;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     .btn-container {
       margin-left: 9rem;
     }
