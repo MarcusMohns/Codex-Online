@@ -44,6 +44,7 @@ export const ArenaContainer = styled.section`
     margin: 15px;
   }
   h2 {
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -80,6 +81,7 @@ export const ArenaContainer = styled.section`
           user-select: none;
           text-align: center;
           vertical-align: center;
+          font-size: 0.8rem;
         }
       }
     }
@@ -116,6 +118,14 @@ export const ArenaContainer = styled.section`
     table {
       padding: 1rem;
       box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.6);
+
+      thead {
+        tr {
+          th {
+            font-size: 1rem;
+          }
+        }
+      }
 
       th {
         text-align: center;
