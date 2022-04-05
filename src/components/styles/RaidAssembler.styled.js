@@ -1205,7 +1205,7 @@ export const RaidHeaderButton = styled.div`
   justify-content: center;
   color: ${COLORS.lightText};
   background-color: #1f8421;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-right: 1rem;
   cursor: pointer;
   padding: 0.2rem 0.6rem;
@@ -1215,9 +1215,11 @@ export const RaidHeaderButton = styled.div`
   white-space: nowrap;
   font-weight: 500;
   letter-spacing: 1px;
+  transform: translateY(0);
+  transition: transform 150ms;
 
   &:hover {
-    background-color: #65a827;
+    transform: translateY(-2px);
   }
 `;
 
@@ -1235,19 +1237,23 @@ export const UtilityHeaderButton = styled.div`
   cursor: pointer;
   padding: 0.2rem 0.6rem;
   text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
   user-select: none;
   -webkit-user-select: none;
   white-space: nowrap;
   font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 1px;
   margin-left: auto;
   margin-right: 5px;
+
+  transform: translateY(0);
+  transition: transform 150ms;
+
   margin-left: ${(props) => props.marginLeft};
   margin-right: ${(props) => props.marginRight};
 
   &:hover {
-    background-color: ${COLORS.greyText};
+    transform: translateY(-2px);
   }
 
   @media (min-width: 600px) {
@@ -1719,7 +1725,7 @@ export const SettingsIcon = styled(RiSettings3Line)`
   font-size: 1.6em;
 `;
 export const SaveIcon = styled(RiSave3Fill)`
-  font-size: 1.7em;
+  font-size: 1.5em;
   margin-right: 0.2rem;
 `;
 export const LoadIcon = styled(GiLoad)`
