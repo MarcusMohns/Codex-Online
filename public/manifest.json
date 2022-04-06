@@ -1,6 +1,6 @@
 {
   "short_name": "Codex",
-  "name": "Codex - WoW Tools",
+  "name": "Codex",
   "icons": [
     {
       "src": "images/icon.png",
@@ -12,5 +12,5 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "description": "Compilation of WoW 3.3.5 Tools and Utilities."
+  "description": "Codex is a compilation of tools and utilities developed for the popular video game World of Warcraft (patch 3.3.5)."
 }
