@@ -242,7 +242,7 @@ export const GemTableContainer = styled.section`
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  box-shadow: 0 1px 2px -2px black;
   margin-bottom: 5rem;
   padding-left: 20px; // to account for scrollbar (also 20px wide)
   table {
@@ -255,7 +255,7 @@ export const GemTableContainer = styled.section`
   }
 
   th {
-    background-color: ${COLORS.blackText};
+    background-color: #222;
     color: ${COLORS.offWhite};
     padding: 1rem;
     user-select: none;
