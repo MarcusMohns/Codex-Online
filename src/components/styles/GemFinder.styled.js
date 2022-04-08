@@ -85,8 +85,8 @@ export const CheckBoxContainer = styled.section`
     align-items: flex-start;
     justify-content: center;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     @media screen and (max-width: 992px) {
       padding: 0px;
@@ -95,6 +95,7 @@ export const CheckBoxContainer = styled.section`
       flex-direction: column;
       align-items: center;
       padding: 0;
+      box-shadow: none;
     }
   }
   .category-container {
