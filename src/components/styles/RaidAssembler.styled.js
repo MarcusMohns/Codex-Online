@@ -1065,7 +1065,7 @@ export const ContentTitle = styled.h2`
   display: flex;
   align-items: center;
   color: ${COLORS.offWhite};
-  margin-left: 50%;
+  margin-left: 47%;
 `;
 export const RaidContentHeader = styled.div`
   display: flex;
