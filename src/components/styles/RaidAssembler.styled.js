@@ -30,7 +30,7 @@ export const Main = styled.main`
   justify-content: flex-start;
   background-color: ${COLORS.fadedBackground};
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     height: 100%;
     width: 100%;
     display: grid;
@@ -63,7 +63,7 @@ export const Main = styled.main`
       transition: transform 400ms;
       transform: rotate(-90deg);
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1300px) {
         transform: rotate(-90deg) translate(0%);
       }
     }
@@ -89,7 +89,7 @@ export const Main = styled.main`
       align-self: center;
       opacity: 100%;
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1300px) {
         color: ${COLORS.offWhite};
       }
     }
@@ -118,7 +118,7 @@ export const SpecContainer = styled.section`
     margin: 2rem 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1300px) {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -216,7 +216,7 @@ export const StyledSpecButton = styled.div`
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     padding: 2px 3px;
     font-size: 0.7rem;
     letter-spacing: 1px;
@@ -595,7 +595,7 @@ export const StyledPlayer = styled.div`
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     font-size: 0.8rem;
     padding: 0rem;
   }
@@ -745,7 +745,7 @@ export const StyledBuffCategories = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 0px;
@@ -762,7 +762,7 @@ export const CategoryContainer = styled.div`
   margin-bottom: 2px;
   border: 3px solid black;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     flex-direction: row;
     margin-bottom: 0px;
     border: none;
@@ -779,6 +779,8 @@ export const StyledBuff = styled.div`
   background-color: ${COLORS.highlight};
   border-radius: 5px;
   margin: 1px;
+  overflow: hidden;
+  max-height: 25px;
   img {
     width: 25px;
     height: 25px;
@@ -863,7 +865,7 @@ export const StyledCategory = styled.div`
     margin-left: auto;
     margin-right: auto;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       position: absolute;
       min-width: 200px;
       min-height: 100%;
@@ -961,7 +963,7 @@ export const StyledCategory = styled.div`
       }
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     .tooltip .tooltiptext::after {
       content: " ";
       position: absolute;
@@ -978,7 +980,7 @@ export const StyledCategory = styled.div`
       visibility: visible;
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     flex-direction: row;
     width: 250px;
     padding: 0.4rem;
@@ -1006,7 +1008,7 @@ export const UtilityContainer = styled.section`
   height: auto;
   overflow: hidden;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     grid-area: Utils;
     margin-bottom: 0px;
     padding: 0rem;
@@ -1103,7 +1105,7 @@ export const RaidContentHeader = styled.div`
     font-size: 0.9rem;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     height: 3rem;
   }
   @media (min-width: 700px) {
@@ -1164,7 +1166,7 @@ export const GroupContainer = styled.div`
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   background-color: transparent;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     min-height: 430px;
     padding: 0 1px;
   }
@@ -1269,7 +1271,7 @@ export const RaidGroupContainer = styled.div`
   text-align: center;
   width: 99%;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     animation-name: revealGroups;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -1315,7 +1317,7 @@ export const StyledSaveMenu = styled.div`
     right: 0;
     text-align: center;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       width: max-content;
       height: 400px;
     }
