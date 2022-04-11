@@ -113,7 +113,7 @@ export const SpecContainer = styled.section`
     grid-template-rows: repeat(3, 1fr);
     border-radius: 5px;
     max-width: 100%;
-    width: 90%;
+    width: 98%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
     margin: 2rem 0;
   }
