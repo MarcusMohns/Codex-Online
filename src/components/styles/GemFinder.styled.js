@@ -243,9 +243,10 @@ export const GemTableContainer = styled.section`
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  box-shadow: 0 1px 2px -2px black;
+  box-shadow: 0 2px 5px -3px black;
   margin-bottom: 5rem;
   padding-left: 20px; // to account for scrollbar (also 20px wide)
+
   table {
     min-width: 100%;
     border-collapse: separate;
