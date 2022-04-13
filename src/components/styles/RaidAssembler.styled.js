@@ -745,7 +745,8 @@ export const StyledBuffCategories = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  @media (min-width: 1300px) {
+
+  @media (min-width: 1550px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 0px;
