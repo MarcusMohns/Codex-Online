@@ -1317,6 +1317,7 @@ export const StyledSaveMenu = styled.div`
     left: 0;
     right: 0;
     text-align: center;
+    width: 90%;
 
     @media (min-width: 1300px) {
       width: max-content;
@@ -1340,13 +1341,17 @@ export const StyledSaveMenu = styled.div`
       align-items: center;
       justify-content: space-around;
       color: white;
-      width: 100%;
+      width: 90%;
+      @media (min-width: 1300px) {
+        width: 100%;
+      }
       .save-menu-footer-buttons {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
         padding: 5px;
+        margin: 15px 0px;
         border-radius: 2px;
         cursor: pointer;
         user-select: none;
