@@ -113,7 +113,7 @@ export const SpecContainer = styled.section`
     grid-template-rows: repeat(3, 1fr);
     border-radius: 5px;
     max-width: 100%;
-    width: 98%;
+    width: 96%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
     margin: 2rem 0;
   }
@@ -1355,6 +1355,11 @@ export const StyledSaveMenu = styled.div`
         border-radius: 2px;
         cursor: pointer;
         user-select: none;
+        font-size: 0.9rem;
+
+        @media (min-width: 1300px) {
+          font-size: 1rem;
+        }
       }
       #save-to-disk-button {
         background-color: ${COLORS.primary};
@@ -1474,6 +1479,7 @@ export const StyledRaidCooldowns = styled.div`
     height: auto;
     border-radius: 5px;
     padding: 1rem;
+    box-sizing: border-box;
 
     @media (min-width: 800px) {
       width: 500px;
