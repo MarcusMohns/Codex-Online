@@ -796,7 +796,7 @@ export const StyledBuff = styled.div`
     opacity: 0%;
     animation-name: FadeIn;
     animation-duration: 0.5s;
-    color: ${COLORS.blackText};
+    color: black;
     animation-fill-mode: forwards;
   }
   @keyframes FadeIn {
@@ -849,7 +849,7 @@ export const StyledCategory = styled.div`
   .tooltip .tooltiptext {
     visibility: hidden;
     box-sizing: border-box;
-    background-color: ${COLORS.blackText};
+    background-color: black;
     display: flex;
     flex-direction: column;
     color: #eeeeee;
