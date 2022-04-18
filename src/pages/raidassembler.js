@@ -411,7 +411,9 @@ const RaidAssembler = () => {
 
     // handles the displayed name of the save
     const date = new Date();
-    const curDate = `${date.getDay()}/${date.getMonth()}-${date.getFullYear()}`;
+    const curDate = `${date.getDate()}/${
+      date.getMonth() + 1
+    }-${date.getFullYear()}`;
     let newSaveName = "";
     saveNameInput.value === "EMPTY"
       ? (newSaveName = `(${raidCount[0]}/25) - ${curDate}`)
