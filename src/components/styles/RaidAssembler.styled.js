@@ -35,7 +35,7 @@ export const Main = styled.main`
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-rows: 0.3fr 1.7fr;
     gap: 10px 10px;
     grid-template-areas:
       "Raid Utils"
