@@ -152,6 +152,7 @@ export const StyledSpecButton = styled.div`
   box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
+
   #info-image {
     visibility: hidden;
   }
@@ -160,6 +161,9 @@ export const StyledSpecButton = styled.div`
     #info-image {
       visibility: visible;
     }
+  }
+  &:active {
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 1);
   }
 
   .class-tooltip-container {
