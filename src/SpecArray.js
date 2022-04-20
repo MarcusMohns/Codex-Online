@@ -1389,6 +1389,10 @@ const SpecArray = [
         name: "Hex",
         image: "images/Hex.png",
       },
+      {
+        name: "Purge",
+        image: "images/Purge.png",
+      },
     ],
   },
   {
@@ -1478,6 +1482,10 @@ const SpecArray = [
       {
         name: "Hex",
         image: "images/Hex.png",
+      },
+      {
+        name: "Purge",
+        image: "images/Purge.png",
       },
     ],
   },
@@ -1576,6 +1584,10 @@ const SpecArray = [
       {
         name: "Hex",
         image: "images/Hex.png",
+      },
+      {
+        name: "Purge",
+        image: "images/Purge.png",
       },
     ],
   },
