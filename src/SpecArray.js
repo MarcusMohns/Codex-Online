@@ -202,6 +202,10 @@ const SpecArray = [
         name: "Remove Curse",
         image: "images/Remove_Curse.png",
       },
+      {
+        name: "Cyclone",
+        image: "images/Cyclone.png",
+      },
     ],
   },
   {
@@ -269,6 +273,10 @@ const SpecArray = [
         name: "Remove Curse",
         image: "images/Remove_Curse.png",
       },
+      {
+        name: "Cyclone",
+        image: "images/Cyclone.png",
+      },
     ],
   },
   {
@@ -320,6 +328,10 @@ const SpecArray = [
         name: "Remove Curse",
         image: "images/Remove_Curse.png",
       },
+      {
+        name: "Cyclone",
+        image: "images/Cyclone.png",
+      },
     ],
   },
   {
@@ -360,6 +372,14 @@ const SpecArray = [
         name: "Tranquilizing Shot",
         image: "images/Tranquilizing_Shot.png",
       },
+      {
+        name: "Frost Trap",
+        image: "images/Frost_Nova.png",
+      },
+      {
+        name: "Freezing Trap",
+        image: "images/Chains_Of_ice.png",
+      },
     ],
   },
   {
@@ -398,6 +418,14 @@ const SpecArray = [
       {
         name: "Tranquilizing Shot",
         image: "images/Tranquilizing_Shot.png",
+      },
+      {
+        name: "Frost Trap",
+        image: "images/Frost_Nova.png",
+      },
+      {
+        name: "Freezing Trap",
+        image: "images/Chains_Of_ice.png",
       },
     ],
   },
@@ -443,6 +471,14 @@ const SpecArray = [
         name: "Wyvern Sting",
         image: "images/Wyvern_Sting.png",
       },
+      {
+        name: "Frost Trap",
+        image: "images/Frost_Nova.png",
+      },
+      {
+        name: "Freezing Trap",
+        image: "images/Chains_Of_ice.png",
+      },
     ],
   },
   {
@@ -476,6 +512,14 @@ const SpecArray = [
         name: "Remove Curse",
         image: "images/Remove_Curse.png",
       },
+      {
+        name: "Frost Nova",
+        image: "images/Frost_Nova.png",
+      },
+      {
+        name: "Polymorph",
+        image: "images/Polymorph.png",
+      },
     ],
   },
   {
@@ -508,6 +552,14 @@ const SpecArray = [
       {
         name: "Remove Curse",
         image: "images/Remove_Curse.png",
+      },
+      {
+        name: "Frost Nova",
+        image: "images/Frost_Nova.png",
+      },
+      {
+        name: "Polymorph",
+        image: "images/Polymorph.png",
       },
     ],
   },
@@ -546,6 +598,14 @@ const SpecArray = [
       {
         name: "Remove Curse",
         image: "images/Remove_Curse.png",
+      },
+      {
+        name: "Frost Nova",
+        image: "images/Frost_Nova.png",
+      },
+      {
+        name: "Polymorph",
+        image: "images/Polymorph.png",
       },
     ],
   },
@@ -642,6 +702,10 @@ const SpecArray = [
       {
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
+      },
+      {
+        name: "Hammer of Justice",
+        image: "images/Hammer_Of_Justice.png",
       },
     ],
   },
@@ -753,6 +817,10 @@ const SpecArray = [
       {
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
+      },
+      {
+        name: "Hammer of Justice",
+        image: "images/Hammer_Of_Justice.png",
       },
     ],
   },
@@ -869,6 +937,10 @@ const SpecArray = [
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
       },
+      {
+        name: "Hammer of Justice",
+        image: "images/Hammer_Of_Justice.png",
+      },
     ],
   },
   {
@@ -941,6 +1013,10 @@ const SpecArray = [
         name: "Power Infusion",
         image: "images/Power_Infusion.png",
       },
+      {
+        name: "Psychic Scream",
+        image: "images/Psychic_Scream.png",
+      },
     ],
   },
   {
@@ -999,6 +1075,10 @@ const SpecArray = [
       {
         name: "Mind Control",
         image: "images/Mind_Control.png",
+      },
+      {
+        name: "Psychic Scream",
+        image: "images/Psychic_Scream.png",
       },
     ],
   },
@@ -1064,6 +1144,10 @@ const SpecArray = [
         name: "Mind Control",
         image: "images/Mind_Control.png",
       },
+      {
+        name: "Psychic Scream",
+        image: "images/Psychic_Scream.png",
+      },
     ],
   },
   {
@@ -1105,6 +1189,14 @@ const SpecArray = [
       {
         name: "Mind-numbing Poison",
         image: "images/Crypt_Fever.png",
+      },
+      {
+        name: "Blind",
+        image: "images/Blind.png",
+      },
+      {
+        name: "Dismantle",
+        image: "images/Dismantle.png",
       },
     ],
   },
@@ -1148,6 +1240,14 @@ const SpecArray = [
         name: "Mind-numbing Poison",
         image: "images/Crypt_Fever.png",
       },
+      {
+        name: "Blind",
+        image: "images/Blind.png",
+      },
+      {
+        name: "Dismantle",
+        image: "images/Dismantle.png",
+      },
     ],
   },
   {
@@ -1184,6 +1284,14 @@ const SpecArray = [
       {
         name: "Mind-numbing Poison",
         image: "images/Crypt_Fever.png",
+      },
+      {
+        name: "Blind",
+        image: "images/Blind.png",
+      },
+      {
+        name: "Dismantle",
+        image: "images/Dismantle.png",
       },
     ],
   },
@@ -1277,6 +1385,10 @@ const SpecArray = [
         name: "Bloodlust/Heroism",
         image: "images/Bloodlust.png",
       },
+      {
+        name: "Hex",
+        image: "images/Hex.png",
+      },
     ],
   },
   {
@@ -1362,6 +1474,10 @@ const SpecArray = [
       {
         name: "Bloodlust/Heroism",
         image: "images/Bloodlust.png",
+      },
+      {
+        name: "Hex",
+        image: "images/Hex.png",
       },
     ],
   },
@@ -1457,6 +1573,10 @@ const SpecArray = [
         name: "Bloodlust/Heroism",
         image: "images/Bloodlust.png",
       },
+      {
+        name: "Hex",
+        image: "images/Hex.png",
+      },
     ],
   },
   {
@@ -1518,6 +1638,14 @@ const SpecArray = [
         name: "Shattering Throw",
         image: "images/Shattering_Throw.png",
       },
+      {
+        name: "Intimidating Shout",
+        image: "images/Intimidating_Shout.png",
+      },
+      {
+        name: "Disarm",
+        image: "images/Disarm.png",
+      },
     ],
   },
   {
@@ -1575,6 +1703,14 @@ const SpecArray = [
         name: "Shattering Throw",
         image: "images/Shattering_Throw.png",
       },
+      {
+        name: "Intimidating Shout",
+        image: "images/Intimidating_Shout.png",
+      },
+      {
+        name: "Disarm",
+        image: "images/Disarm.png",
+      },
     ],
   },
 
@@ -1626,6 +1762,14 @@ const SpecArray = [
         name: "Shattering Throw",
         image: "images/Shattering_Throw.png",
       },
+      {
+        name: "Intimidating Shout",
+        image: "images/Intimidating_Shout.png",
+      },
+      {
+        name: "Disarm",
+        image: "images/Disarm.png",
+      },
     ],
   },
   {
@@ -1671,6 +1815,10 @@ const SpecArray = [
         name: "Felhunter's Devour Magic",
         image: "images/Devour_Magic.png",
       },
+      {
+        name: "Fear",
+        image: "images/Fear.png",
+      },
     ],
   },
   {
@@ -1706,7 +1854,12 @@ const SpecArray = [
         image: "images/Shadow_Bolt.png",
       },
     ],
-    utility: [],
+    utility: [
+      {
+        name: "Fear",
+        image: "images/Fear.png",
+      },
+    ],
   },
   {
     text: "Destruction Warlock",
@@ -1741,7 +1894,12 @@ const SpecArray = [
         image: "images/Replenishment.png",
       },
     ],
-    utility: [],
+    utility: [
+      {
+        name: "Fear",
+        image: "images/Fear.png",
+      },
+    ],
   },
 ];
 
