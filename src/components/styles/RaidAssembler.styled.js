@@ -13,12 +13,13 @@ import { RiUpload2Fill } from "@react-icons/all-files/ri/RiUpload2Fill";
 import { CgDrop } from "@react-icons/all-files/cg/CgDrop";
 import { FaRegClock } from "@react-icons/all-files/fa/FaRegClock";
 import { GiElectric } from "@react-icons/all-files/gi/GiElectric";
-import { MdTrendingUp } from "@react-icons/all-files/md/MdTrendingUp";
+import { FiActivity } from "@react-icons/all-files/fi/FiActivity";
 import { RiFilePaper2Line } from "@react-icons/all-files/ri/RiFilePaper2Line";
 import { GiBroadsword } from "@react-icons/all-files/gi/GiBroadsword";
 import { FiShield } from "@react-icons/all-files/fi/FiShield";
 import { TiPlusOutline } from "@react-icons/all-files/ti/TiPlusOutline";
 import { CgCopy } from "@react-icons/all-files/cg/CgCopy";
+import { FiShuffle } from "@react-icons/all-files/fi/FiShuffle";
 
 import COLORS from "../../components";
 
@@ -1002,17 +1003,17 @@ export const StyledCategory = styled.div`
 
 export const UtilityContainer = styled.section`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+
   box-sizing: border-box;
   flex-wrap: wrap;
   background-color: ${COLORS.fadedBackground};
-  padding: 1rem;
   min-height: 100%;
-  min-width: 100%;
   height: auto;
-  overflow: hidden;
-
+  padding: 1rem;
   @media (min-width: 1300px) {
     grid-area: Utils;
     margin-bottom: 0px;
@@ -1021,15 +1022,22 @@ export const UtilityContainer = styled.section`
 `;
 
 export const StyledUtilities = styled.div`
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  min-height: 100%;
-  height: auto;
+  justify-content: center;
   min-width: 100%;
   max-width: 100%;
+  min-height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-left: 20px;
+
+  @media (min-width: 1300px) {
+    max-height: 420px;
+  }
 `;
 
 export const StyledUtility = styled.div`
@@ -1474,7 +1482,7 @@ export const StyledRaidCooldowns = styled.div`
     position: fixed;
     margin-left: auto;
     margin-right: auto;
-    top: 25%;
+    top: 15%;
     left: 0;
     right: 0;
     text-align: center;
@@ -1767,12 +1775,16 @@ export const CooldownIcon = styled(FaRegClock)`
 export const PowerUpIcon = styled(GiElectric)`
   font-size: 1.1em;
 `;
-export const CombatResIcon = styled(MdTrendingUp)`
+export const CombatResIcon = styled(FiActivity)`
   font-size: 1.1em;
   margin-right: 2px;
 `;
 export const RaidCooldownIcon = styled(RiFilePaper2Line)`
   font-size: 1.4em;
+  margin-right: 5px;
+`;
+export const MisdirectionCooldownIcon = styled(FiShuffle)`
+  font-size: 1.1em;
   margin-right: 5px;
 `;
 export const DpsIcon = styled(GiBroadsword)`

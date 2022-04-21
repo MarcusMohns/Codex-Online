@@ -5,6 +5,7 @@ import {
   StyledRaidCooldowns,
   PowerUpIcon,
   CombatResIcon,
+  MisdirectionCooldownIcon,
 } from "./styles/RaidAssembler.styled";
 import Utilities from "./Utilities";
 
@@ -22,26 +23,30 @@ const RaidCooldowns = ({
     "Divine Hymn",
     "Pain Suppression",
   ];
-  const ManaCooldowns = ["Mana Tide Totem", "Hymn of Hope", "Innervate"];
-  const CombatResCooldowns = ["Rebirth"];
-  const PowerUpCooldowns = ["Hysteria", "Power Infusion", "Bloodlust/Heroism"];
+  const manaCooldowns = ["Mana Tide Totem", "Hymn of Hope", "Innervate"];
+  const combatResCooldowns = ["Rebirth"];
+  const powerUpCooldowns = ["Hysteria", "Power Infusion", "Bloodlust/Heroism"];
+  const misdirectCooldowns = ["Misdirection", "Tricks of the Trade"];
   const raidUtilities = Object.values(utilities);
 
   const ourRaidCooldowns = [];
   const ourManaCooldowns = [];
   const ourBattleResCooldowns = [];
   const ourPowerUpCooldowns = [];
+  const ourMisdirectCooldowns = [];
 
   for (let ourUtilities of raidUtilities) {
     for (let utility of ourUtilities) {
       if (raidCooldowns.includes(utility.name)) {
         ourRaidCooldowns.push([utility]);
-      } else if (ManaCooldowns.includes(utility.name)) {
+      } else if (manaCooldowns.includes(utility.name)) {
         ourManaCooldowns.push([utility]);
-      } else if (CombatResCooldowns.includes(utility.name)) {
+      } else if (combatResCooldowns.includes(utility.name)) {
         ourBattleResCooldowns.push([utility]);
-      } else if (PowerUpCooldowns.includes(utility.name)) {
+      } else if (powerUpCooldowns.includes(utility.name)) {
         ourPowerUpCooldowns.push([utility]);
+      } else if (misdirectCooldowns.includes(utility.name)) {
+        ourMisdirectCooldowns.push([utility]);
       }
     }
   }
@@ -72,6 +77,11 @@ const RaidCooldowns = ({
           Combat Ressurections
         </h3>
         <Utilities utilities={ourBattleResCooldowns} />
+        <h3 className="cooldown-subheader">
+          <MisdirectionCooldownIcon />
+          Misdirection Effects
+        </h3>
+        <Utilities utilities={ourMisdirectCooldowns} />
       </div>
     </StyledRaidCooldowns>
   );
