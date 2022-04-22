@@ -1036,7 +1036,7 @@ export const StyledUtilities = styled.div`
   padding-left: 20px;
 
   @media (min-width: 1300px) {
-    max-height: 420px;
+    max-height: 430px;
   }
 `;
 
