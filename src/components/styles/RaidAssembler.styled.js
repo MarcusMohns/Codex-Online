@@ -1007,7 +1007,7 @@ export const UtilityContainer = styled.section`
   align-items: flex-start;
   justify-content: center;
   align-content: flex-start;
-
+  width: 100%;
   box-sizing: border-box;
   flex-wrap: wrap;
   background-color: ${COLORS.fadedBackground};
