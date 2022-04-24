@@ -71,7 +71,7 @@ const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
         : tanksText.push(`${player.name}`);
     }
   }
-  const clipBoardText = `Tanks: ${tanksText}\nHealers: ${healersText}\nDPS:${dpsText}`;
+  const clipBoardText = `Tanks: ${tanksText}\nHealers: ${healersText}\nDPS: ${dpsText}`;
 
   return (
     <StyledPlayerIndex onClick={() => setPlayersIndexOpen(!playersIndexOpen)}>
