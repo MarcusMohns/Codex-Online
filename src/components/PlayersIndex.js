@@ -41,8 +41,8 @@ const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
         </StyledIndexPlayerName>
       );
       player.name === ""
-        ? dpsText.push(` ${player.text}`)
-        : dpsText.push(` ${player.name}`);
+        ? dpsText.push(`${player.text}`)
+        : dpsText.push(`${player.name}`);
     } else if (player.role === "healer") {
       healers.push(
         <StyledIndexPlayerName
@@ -50,12 +50,12 @@ const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
           className="index-player-name"
           color={player.color}
         >
-          {player.name === "" ? player.text : player.name}{" "}
+          {player.name === "" ? player.text : player.name}
         </StyledIndexPlayerName>
       );
       player.name === ""
-        ? healersText.push(` ${player.text}`)
-        : healersText.push(` ${player.name}`);
+        ? healersText.push(`${player.text}`)
+        : healersText.push(`${player.name}`);
     } else if (player.role === "tank") {
       tanks.push(
         <StyledIndexPlayerName
@@ -63,15 +63,15 @@ const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
           className="index-player-name"
           color={player.color}
         >
-          {player.name === "" ? player.text : player.name}{" "}
+          {player.name === "" ? player.text : player.name}
         </StyledIndexPlayerName>
       );
       player.name === ""
-        ? tanksText.push(` ${player.text}`)
-        : tanksText.push(` ${player.name}`);
+        ? tanksText.push(`${player.text}`)
+        : tanksText.push(`${player.name}`);
     }
   }
-  const clipBoardText = `Tanks: ${tanksText} \n Healers: ${healersText} \n DPS:${dpsText}`;
+  const clipBoardText = `Tanks: ${tanksText}\nHealers: ${healersText}\nDPS:${dpsText}`;
 
   return (
     <StyledPlayerIndex onClick={() => setPlayersIndexOpen(!playersIndexOpen)}>
