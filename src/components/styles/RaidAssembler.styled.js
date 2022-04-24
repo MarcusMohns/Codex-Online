@@ -467,7 +467,6 @@ export const StyledPlayer = styled.div`
     #player-info-icon {
       position: absolute;
       left: 2px;
-      bottom: 1px;
       visibility: hidden;
       cursor: pointer;
       &:hover {
@@ -597,6 +596,10 @@ export const StyledPlayer = styled.div`
       height: 20px;
       border-radius: 35%;
       margin-bottom: 2px;
+    }
+
+    #player-info-icon {
+      bottom: 1px;
     }
   }
 
