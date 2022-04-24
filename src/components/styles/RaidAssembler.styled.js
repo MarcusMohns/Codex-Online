@@ -615,7 +615,6 @@ export const StyledPlayerCheckboxes = styled.div`
   min-height: 100%;
   border-radius: 0.5rem;
   min-width: 100%;
-  max-width: 100%;
   padding: 0.5rem;
   flex-direction: column;
   align-items: center;
@@ -625,6 +624,7 @@ export const StyledPlayerCheckboxes = styled.div`
   background: #000;
   border: 1px solid #777;
   box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
+  overflow: hidden;
 
   .player-checkbox-header {
     font-size: 1.1rem;
@@ -660,20 +660,18 @@ export const StyledPlayerCheckboxes = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin-bottom: 5px;
     padding: 3px;
-    width: 90%;
+    width: 100%;
     border: 1px solid transparent;
 
     &:hover {
       border: 1px solid grey;
-      transform: scale(1.1);
     }
   }
   .player-checkbox {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1rem;
+    height: 1rem;
   }
   .image-and-name-label {
     display: flex;
@@ -683,8 +681,8 @@ export const StyledPlayerCheckboxes = styled.div`
     color: ${COLORS.goldHighlight};
   }
   .player-checkbox-image {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 80%;
   }
 
