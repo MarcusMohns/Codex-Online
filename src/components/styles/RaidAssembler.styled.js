@@ -333,8 +333,9 @@ export const StyledClassToolTip = styled.div`
 
     .class-tooltip-image {
       display: flex;
-      width: 1.2rem;
-      height: 1.2rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 5px;
     }
     .class-tooltip-buff-name {
       font-weight: 400;
