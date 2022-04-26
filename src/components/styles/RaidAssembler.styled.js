@@ -272,8 +272,8 @@ export const StyledClassToolTip = styled.div`
     pointer-events: none;
   }
   .class-tooltip-spec-image {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 5px;
   }
 
