@@ -8,10 +8,11 @@ const StyledFooter = styled.footer`
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  height: 75px;
+  height: 85px;
   background-color: ${COLORS.fadedGrey};
   box-shadow: 0 0 0.2rem ${COLORS.fadedGrey};
   color: grey;
+  border-top: 1px solid #222;
 
   a {
     display: flex;

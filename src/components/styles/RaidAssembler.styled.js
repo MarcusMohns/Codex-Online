@@ -43,7 +43,6 @@ export const Main = styled.main`
       "Buffs Buffs";
     padding: 2rem;
     padding-bottom: 10rem;
-    box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   }
   .add-player-menu {
     display: flex;

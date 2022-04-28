@@ -14,7 +14,6 @@ export const Main = styled.main`
   margin: auto;
   margin-top: 5%;
   opacity: 90%;
-  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
 
   @media (min-width: 900px) {
     flex-direction: row;
@@ -33,7 +32,6 @@ export const ArenaContainer = styled.section`
   align-items: center;
   background-color: ${COLORS.fadedBackground};
   border-radius: 5px;
-
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   flex: 1 0 35%;
   max-width: 100%;
