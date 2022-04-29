@@ -12,5 +12,6 @@
   "display": "standalone",
   "theme_color": "rgba(38, 72, 116, 1)",
   "background_color": "#222",
-  "description": "Codex is a compilation of tools and utilities developed for the popular video game World of Warcraft (patch 3.3.5)."
+  "description": "Codex is a compilation of tools and utilities developed for the popular video game World of Warcraft (patch 3.3.5).",
+  "version": "1.0.0"
 }
