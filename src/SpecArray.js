@@ -1831,6 +1831,10 @@ const SpecArray = [
         name: "Fear",
         image: "images/Fear.png",
       },
+      {
+        name: "Create Soulstone",
+        image: "images/Create_Soulstone.png",
+      },
     ],
   },
   {
@@ -1871,6 +1875,10 @@ const SpecArray = [
         name: "Fear",
         image: "images/Fear.png",
       },
+      {
+        name: "Create Soulstone",
+        image: "images/Create_Soulstone.png",
+      },
     ],
   },
   {
@@ -1910,6 +1918,10 @@ const SpecArray = [
       {
         name: "Fear",
         image: "images/Fear.png",
+      },
+      {
+        name: "Create Soulstone",
+        image: "images/Create_Soulstone.png",
       },
     ],
   },
