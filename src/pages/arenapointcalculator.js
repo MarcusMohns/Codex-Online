@@ -92,7 +92,7 @@ function Arenapointcalculator() {
 
   return (
     <>
-      <Header>Arena Point Calculator - 3.3.5 WOTLK </Header>
+      <Header>Arena Point Calculator - WOTLK </Header>
       <SubHeader>
         Make sure that the team has played at least 10 games and that you have
         played 30% of the total week team games at the reset. Otherwise you will

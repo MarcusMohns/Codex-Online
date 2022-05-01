@@ -3,7 +3,7 @@ import GemTable from "../components/GemTable";
 import gemArray from "../Gems";
 import Checkboxes from "../components/Checkboxes";
 import filterNames from "../FilterNames";
-import { Header } from "../components/styles/RaidAssembler.styled";
+import { Header, SubHeader } from "../components/styles/RaidAssembler.styled";
 import {
   Main,
   GemTableContainer,
@@ -196,7 +196,10 @@ const Gemfinder = () => {
 
   return (
     <>
-      <Header>Gem Finder - WOTLK Gems</Header>
+      <Header>Gem Finder</Header>
+      <SubHeader>
+        Find a gem! All gems found here are from 3.3.5 WOTLK
+      </SubHeader>
       <Main>
         <h2 className="header">
           <div className="header-text-icon-container">

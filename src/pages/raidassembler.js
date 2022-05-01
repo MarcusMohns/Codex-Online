@@ -23,6 +23,7 @@ import {
   UtilityHeaderButton,
   RaidCooldownIcon,
   ContentTitle,
+  SubHeader,
 } from "../components/styles/RaidAssembler.styled";
 
 const { v4: uuidv4 } = require("uuid");
@@ -540,9 +541,11 @@ const RaidAssembler = () => {
 
   return (
     <>
-      <Header>
-        Raid Assembler - Organize WOTLK 3.3.5 Buffs, Debuffs and Utilities
-      </Header>
+      <Header>Raid Assembler</Header>
+      <SubHeader>
+        Assemble and organize your raid! All spells and values are from 3.3.5
+        WOTLK
+      </SubHeader>
       <SpecContainer className="spec-container">
         <SpecButtons
           className="spec-buttons"
