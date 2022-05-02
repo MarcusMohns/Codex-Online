@@ -94,9 +94,10 @@ function Arenapointcalculator() {
     <>
       <Header>Arena Point Calculator - WOTLK </Header>
       <SubHeader>
-        Make sure that the team has played at least 10 games and that you have
-        played 30% of the total week team games at the reset. Otherwise you will
-        not receive the calculated points. You will recieve points from the team
+        All points and values are based on the 3.3.5 WOTLK formula. Make sure
+        that the team has played at least 10 games and that you have played 30%
+        of the total week team games at the reset. Otherwise you will not
+        receive the calculated points. You will recieve points from the team
         that provides the most amount of points.
       </SubHeader>
       <Main>
