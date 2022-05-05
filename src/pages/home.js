@@ -66,7 +66,7 @@ const Home = () => {
           end of the reset or check how much rating you need for that upgrade
           you're looking at
           <Link to="/arenapointcalculator" className="link-button">
-            Let's go
+            Calculate points
           </Link>
         </PagePreviewText>
         <img
