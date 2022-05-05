@@ -305,6 +305,7 @@ export const StyledClassToolTip = styled.div`
     padding-bottom: 3px;
     margin-bottom: 5px;
     border-bottom: 1px solid grey;
+    font-weight: 500;
   }
   .class-tooltip-category-name {
     display: flex;
@@ -329,6 +330,7 @@ export const StyledClassToolTip = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
+    font-weight: 500;
 
     .class-tooltip-image {
       display: flex;
