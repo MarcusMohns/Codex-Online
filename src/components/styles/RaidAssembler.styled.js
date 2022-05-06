@@ -337,6 +337,7 @@ export const StyledClassToolTip = styled.div`
       width: 1.1rem;
       height: 1.1rem;
       border-radius: 5px;
+      margin-right: 5px;
     }
     .class-tooltip-buff-name {
       font-weight: 400;
