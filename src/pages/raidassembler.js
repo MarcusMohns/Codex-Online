@@ -312,9 +312,6 @@ const RaidAssembler = () => {
     }
 
     setRaid({ ...raid, players: newPlayers, groups: newGroups });
-
-    // setRaid({ ...raid, players: newPlayers });
-    // addBuff(player.id, player);
   };
 
   const addUtility = (id, player) => {
@@ -416,8 +413,10 @@ const RaidAssembler = () => {
       date.getMonth() + 1
     }-${date.getFullYear()}`;
     let newSaveName = "";
+
     saveNameInput.value === "EMPTY"
-      ? (newSaveName = `(${raidCount[0]}/25) - ${curDate}`)
+      ? // Only overwrite the save name when 'EMPTY' otherwise edited save name will be deleted on save.
+        (newSaveName = `(${raidCount[0]}/25) - ${curDate}`)
       : (newSaveName = saveNameInput.value);
 
     const saveOne = JSON.stringify({
