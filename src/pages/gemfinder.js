@@ -170,7 +170,6 @@ const Gemfinder = () => {
     }
 
     if (sortBy === "source") {
-      /// FIX SO IT SORTS BY SOURCE
       gemsToSort.sort(function (a, b) {
         if (a.source < b.source) {
           return sort.gemSource ? 1 : -1;
