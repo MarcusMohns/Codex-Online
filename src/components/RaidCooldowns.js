@@ -24,7 +24,7 @@ const RaidCooldowns = ({
     "Pain Suppression",
   ];
   const manaCooldowns = ["Mana Tide Totem", "Hymn of Hope", "Innervate"];
-  const combatResCooldowns = ["Rebirth"];
+  const combatResCooldowns = ["Rebirth", "Create Soulstone"];
   const powerUpCooldowns = ["Hysteria", "Power Infusion", "Bloodlust/Heroism"];
   const misdirectCooldowns = ["Misdirection", "Tricks of the Trade"];
   const raidUtilities = Object.values(utilities);
