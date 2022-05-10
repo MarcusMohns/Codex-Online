@@ -9,7 +9,7 @@ const StyledFooter = styled.footer`
   align-items: center;
   justify-content: space-evenly;
   height: 85px;
-  background-color: ${COLORS.fadedGrey};
+  background-color: #222;
   box-shadow: 0 0 0.2rem ${COLORS.fadedGrey};
   color: grey;
   border-top: 1px solid #222;
