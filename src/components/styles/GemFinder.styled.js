@@ -201,7 +201,7 @@ export const CheckBoxContainer = styled.section`
       border: 2px solid ${COLORS.offWhite};
       border-bottom: none;
       border-left: none;
-      margin-bottom: auto;
+      margin-bottom: 3px;
       transform: rotate(130deg);
     }
 
@@ -242,7 +242,7 @@ export const GemTableContainer = styled.section`
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  box-shadow: 0 2px 5px -3px black;
+  border-bottom: 3px solid black;
   margin-bottom: 5rem;
   padding-left: 20px; // to account for scrollbar (also 20px wide)
 
