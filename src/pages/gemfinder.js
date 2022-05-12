@@ -28,7 +28,7 @@ const Gemfinder = () => {
   const handleChange = (e) => {
     if (e.target.checked) {
       // Add a filter
-      currentFilters.push(e.target.value);
+      currentFilters = [...currentFilters, e.target.value];
     } else if (!e.target.checked) {
       // Remove a filter
       currentFilters = currentFilters.filter(
