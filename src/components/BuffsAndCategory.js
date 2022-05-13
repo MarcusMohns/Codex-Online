@@ -18,12 +18,15 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
 
           if (!exists_already.includes(buff.buffName)) {
             // if buff is not already displayed
-            exists_already.push(buff.buffName);
-            newBuffs.push({
-              name: buff.buffName,
-              image: buff.buffImg,
-              count: 1,
-            });
+            exists_already = [...exists_already, buff.buffName];
+            newBuffs = [
+              ...newBuffs,
+              {
+                name: buff.buffName,
+                image: buff.buffImg,
+                count: 1,
+              },
+            ];
           } else {
             // if it is displayed add +1 to the count.
             for (let newBuff of newBuffs) {
