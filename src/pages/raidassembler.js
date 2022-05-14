@@ -124,7 +124,7 @@ const RaidAssembler = () => {
     for (let group of Object.entries(sortedGroup)) {
       if (group[1].playerIds.length < 5) {
         // if group isnt full (5/5) add our player.
-        group[1].playerIds.push(player);
+        group[1].playerIds = [...group[1].playerIds, player];
         return sortedGroup;
       }
     }
