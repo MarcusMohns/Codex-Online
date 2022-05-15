@@ -5,17 +5,20 @@ import { memo } from "react";
 const Utilities = ({ utilities }) => {
   const allUtilities = Object.values(utilities);
   let currentUtils = [];
-  const existsAlready = [];
+  let existsAlready = [];
 
   for (let playerUtility of allUtilities) {
     for (let aUtility of playerUtility) {
       if (!existsAlready.includes(aUtility.name)) {
-        existsAlready.push(aUtility.name);
-        currentUtils.push({
-          name: aUtility.name,
-          image: aUtility.image,
-          count: 1,
-        });
+        existsAlready = [...existsAlready, aUtility.name];
+        currentUtils = [
+          ...currentUtils,
+          {
+            name: aUtility.name,
+            image: aUtility.image,
+            count: 1,
+          },
+        ];
       } else {
         for (let util of currentUtils) {
           if (util.name === aUtility.name) {
