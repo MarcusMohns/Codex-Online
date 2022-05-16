@@ -29,24 +29,24 @@ const RaidCooldowns = ({
   const misdirectCooldowns = ["Misdirection", "Tricks of the Trade"];
   const raidUtilities = Object.values(utilities);
 
-  const ourRaidCooldowns = [];
-  const ourManaCooldowns = [];
-  const ourBattleResCooldowns = [];
-  const ourPowerUpCooldowns = [];
-  const ourMisdirectCooldowns = [];
+  let ourRaidCooldowns = [];
+  let ourManaCooldowns = [];
+  let ourCombatResCooldowns = [];
+  let ourPowerUpCooldowns = [];
+  let ourMisdirectCooldowns = [];
 
   for (let ourUtilities of raidUtilities) {
     for (let utility of ourUtilities) {
       if (raidCooldowns.includes(utility.name)) {
-        ourRaidCooldowns.push([utility]);
+        ourRaidCooldowns = [...ourRaidCooldowns, [utility]];
       } else if (manaCooldowns.includes(utility.name)) {
-        ourManaCooldowns.push([utility]);
+        ourManaCooldowns = [...ourManaCooldowns, [utility]];
       } else if (combatResCooldowns.includes(utility.name)) {
-        ourBattleResCooldowns.push([utility]);
+        ourCombatResCooldowns = [...ourCombatResCooldowns, [utility]];
       } else if (powerUpCooldowns.includes(utility.name)) {
-        ourPowerUpCooldowns.push([utility]);
+        ourPowerUpCooldowns = [...ourPowerUpCooldowns, [utility]];
       } else if (misdirectCooldowns.includes(utility.name)) {
-        ourMisdirectCooldowns.push([utility]);
+        ourMisdirectCooldowns = [...ourMisdirectCooldowns, [utility]];
       }
     }
   }
@@ -76,7 +76,7 @@ const RaidCooldowns = ({
           <CombatResIcon />
           Combat Ressurections
         </h3>
-        <Utilities utilities={ourBattleResCooldowns} />
+        <Utilities utilities={ourCombatResCooldowns} />
         <h3 className="cooldown-subheader">
           <MisdirectionCooldownIcon />
           Misdirection Effects
