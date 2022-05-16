@@ -759,17 +759,11 @@ export const StyledBuff = styled.div`
     animation-fill-mode: forwards;
   }
   @keyframes FadeIn {
-    0% {
-      opacity: 0%;
+    from {
+      opacity: 0;
     }
-    50% {
-      opacity: 50%;
-    }
-    75% {
-      opacity: 75%;
-    }
-    100% {
-      opacity: 100%;
+    to {
+      opacity: 1;
     }
   }
 `;
