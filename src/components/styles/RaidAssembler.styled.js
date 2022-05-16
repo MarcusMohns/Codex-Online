@@ -44,56 +44,6 @@ export const Main = styled.main`
     padding: 2rem;
     padding-bottom: 10rem;
   }
-  .add-player-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    min-width: 100%;
-    bottom: 0px;
-    left: 0%;
-    z-index: 2;
-    transition: transform 150ms;
-
-    .arrow-left {
-      position: absolute;
-      bottom: 100%;
-      opacity: 100%;
-      transition: transform 400ms;
-      transform: rotate(-90deg);
-
-      @media screen and (min-width: 1300px) {
-        transform: rotate(-90deg) translate(0%);
-      }
-    }
-  }
-  .hide-add-player-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    min-width: 100%;
-    bottom: 0px;
-    left: 0%;
-    z-index: 2;
-    transition: transform 150ms;
-    transform: translateY(100%);
-
-    .arrow-left {
-      position: absolute;
-      bottom: 100%;
-      transition: transform 400ms;
-      transform: rotate(90deg);
-      align-self: center;
-      opacity: 100%;
-
-      @media screen and (min-width: 1300px) {
-        color: ${COLORS.offWhite};
-      }
-    }
-  }
 `;
 
 export const SpecContainer = styled.section`
