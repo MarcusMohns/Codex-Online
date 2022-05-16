@@ -47,6 +47,20 @@ export const HomeSection = styled.section`
   position: absolute;
   top: 10%;
   z-index: -1;
+
+  opacity: 0%;
+  animation-name: FadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+
+  @keyframes FadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const PagePreviewContainer = styled.div`
