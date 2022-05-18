@@ -18,57 +18,60 @@ const CopyToClipBoard = (textToCopy) => {
 };
 
 const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
-  const tanks = [];
-  const healers = [];
-  const dps = [];
+  let tanks = [];
+  let healers = [];
+  let dps = [];
 
-  const tanksText = [];
-  const healersText = [];
-  const dpsText = [];
+  let tanksText = [];
+  let healersText = [];
+  let dpsText = [];
 
   //  tanksText,healersText,dpsText is for formatting to clipboard
 
   for (let player of players) {
     // sort players into their different roles
     if (player.role === "dps") {
-      dps.push(
+      dps = [
+        ...dps,
         <StyledIndexPlayerName
           key={player.id}
           className="index-player-name"
           color={player.color}
         >
           {player.name === "" ? player.text : player.name}
-        </StyledIndexPlayerName>
-      );
+        </StyledIndexPlayerName>,
+      ];
       player.name === ""
-        ? dpsText.push(`${player.text}`)
-        : dpsText.push(`${player.name}`);
+        ? (dpsText = [...dpsText, `${player.text}`])
+        : (dpsText = [...dpsText, `${player.name}`]);
     } else if (player.role === "healer") {
-      healers.push(
+      healers = [
+        ...healers,
         <StyledIndexPlayerName
           key={player.id}
           className="index-player-name"
           color={player.color}
         >
           {player.name === "" ? player.text : player.name}
-        </StyledIndexPlayerName>
-      );
+        </StyledIndexPlayerName>,
+      ];
       player.name === ""
-        ? healersText.push(`${player.text}`)
-        : healersText.push(`${player.name}`);
+        ? (healersText = [...healersText, `${player.text}`])
+        : (healersText = [...healersText, `${player.name}`]);
     } else if (player.role === "tank") {
-      tanks.push(
+      tanks = [
+        ...tanks,
         <StyledIndexPlayerName
           key={player.id}
           className="index-player-name"
           color={player.color}
         >
           {player.name === "" ? player.text : player.name}
-        </StyledIndexPlayerName>
-      );
+        </StyledIndexPlayerName>,
+      ];
       player.name === ""
-        ? tanksText.push(`${player.text}`)
-        : tanksText.push(`${player.name}`);
+        ? (tanksText = [...tanksText, `${player.text}`])
+        : (tanksText = [...tanksText, `${player.name}`]);
     }
   }
   const clipBoardText = `Tanks: ${tanksText}\nHealers: ${healersText}\nDPS: ${dpsText}`;
