@@ -82,11 +82,13 @@ export const PagePreviewContainer = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
     opacity: 80%;
+    width: 400px;
+    height: 225px;
     max-width: 95%;
     max-height: 100%;
     @media (min-width: 900px) {
-      width: 100%;
-      height: auto;
+      width: 700px;
+      height: 394px;
       margin: 15px;
     }
   }
