@@ -41,7 +41,7 @@ export const HomeSection = styled.section`
   height: 500px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-  background-image: url("images/grizzly_hills.avif");
+  background-image: url("images/grizzly_hills.webp");
   background-repeat: no-repeat;
   background-position: top;
   position: absolute;
