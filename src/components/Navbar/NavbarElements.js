@@ -17,8 +17,8 @@ export const Nav = styled.nav`
   position: relative;
 
   .logo {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
   }
 
   @media screen and (min-width: 768px) {
@@ -77,7 +77,7 @@ export const Nav = styled.nav`
   }
 `;
 export const LogoLink = styled(Link)`
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: ${COLORS.offWhite};
   display: flex;
   align-items: center;
