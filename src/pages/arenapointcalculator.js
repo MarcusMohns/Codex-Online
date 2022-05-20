@@ -115,9 +115,11 @@ function Arenapointcalculator() {
               </thead>
               <tbody>
                 <tr>
-                  <th className="bracket-col">2v2</th>
+                  <th className="bracket-col">
+                    <label htmlFor="twos">2v2</label>
+                  </th>
                   <td>
-                    <input type="number" name="twos" />
+                    <input type="number" name="twos" id="twos" />
                   </td>
                   <td className="results" id="twosResults">
                     {formData.twos}
@@ -125,9 +127,11 @@ function Arenapointcalculator() {
                 </tr>
 
                 <tr>
-                  <th className="bracket-col">3v3</th>
+                  <th className="bracket-col">
+                    <label htmlFor="threes">3v3</label>
+                  </th>
                   <td>
-                    <input type="number" name="threes" />
+                    <input type="number" name="threes" id="threes" />
                   </td>
                   <td className="results" id="threesResults">
                     {formData.threes}
@@ -135,9 +139,11 @@ function Arenapointcalculator() {
                 </tr>
 
                 <tr>
-                  <th className="bracket-col">5v5</th>
+                  <th className="bracket-col">
+                    <label htmlFor="fives">5v5</label>
+                  </th>
                   <td>
-                    <input type="number" name="fives" />
+                    <input type="number" name="fives" id="fives" />
                   </td>
                   <td className="results" id="fivesResults">
                     {formData.fives}
@@ -157,7 +163,9 @@ function Arenapointcalculator() {
             <table>
               <thead>
                 <tr>
-                  <th>Points needed</th>
+                  <th>
+                    <label htmlFor="pointsNeeded">Points needed</label>
+                  </th>
                   <th>Bracket</th>
                   <th>Arena Rating Needed</th>
                 </tr>
@@ -173,7 +181,11 @@ function Arenapointcalculator() {
 
                 <tr>
                   <td>
-                    <input type="number" name="threes" />
+                    <input
+                      type="number"
+                      name="pointsNeeded"
+                      id="pointsNeeded"
+                    />
                   </td>
                   <th className="bracket-col">3v3</th>
                   <td className="results" id="threesRatingRequired">
