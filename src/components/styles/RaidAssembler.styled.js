@@ -219,6 +219,10 @@ export const StyledClassToolTip = styled.div`
     box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
     z-index: 3;
     pointer-events: none;
+
+    animation-name: FadeIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
   }
   .class-tooltip-spec-image {
     width: 2.5rem;
