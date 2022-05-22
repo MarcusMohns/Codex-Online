@@ -81,7 +81,7 @@ Player.defaultProps = {
   player: {
     color: "red",
     text: "missing player",
-    image: "images/hunter_beastmastery.png",
+    image: "images/Beast_Mastery_Hunter.webp",
     name: "",
   },
 };
