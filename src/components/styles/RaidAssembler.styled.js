@@ -1678,7 +1678,7 @@ export const ResetIcon = styled(VscDebugRestart)`
   font-size: 2rem;
   cursor: pointer;
   color: white;
-  transition: transform 400ms;
+  transition: transform 200ms;
   display: flex;
   border-radius: 50%;
   &:hover {
