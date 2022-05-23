@@ -6,6 +6,12 @@
       "src": "images/icon.png",
       "sizes": "48x48",
       "type": "image/png"
+    },
+    {
+      "src": "images/big-icon.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
   "start_url": ".",
