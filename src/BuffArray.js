@@ -186,7 +186,7 @@ const BuffArray = [
           Heart of the Crusader, Master Poisoner, Totem of Wrath{" "}
         </div>
         <span className="buff"> Increases</span> the critical strike chance on
-        the <span className="debuff">enemy target</span>by{" "}
+        the <span className="debuff">enemy target </span>by{" "}
         <span className="buff-value">3%</span>
       </div>
     ),
