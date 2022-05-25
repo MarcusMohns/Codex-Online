@@ -74,7 +74,7 @@ export const PagePreviewContainer = styled.div`
   width: 100%;
   background-color: ${COLORS.fadedBlack};
   z-index: 10;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   box-shadow: 3px 5px 10px -2px rgb(0 0 0 / 60%);
   .content-preview-image {
     border-radius: 5px;
@@ -92,7 +92,12 @@ export const PagePreviewContainer = styled.div`
       margin: 15px;
     }
   }
-
+  @media (min-width: 500px) {
+    padding: 2rem 2rem;
+  }
+  @media (min-width: 760px) {
+    padding: 6rem 2rem;
+  }
   @media (min-width: 1200px) {
     padding: 4% 10rem;
     padding-bottom: 2rem;
