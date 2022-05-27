@@ -7,13 +7,11 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
   max-width: 100vw;
   width: auto;
   margin: auto;
-  padding: 2rem 4rem;
-  margin-top: 5%;
+  padding: 0rem 4rem;
   font-size: 1rem;
   @media screen and (max-width: 1200px) {
     flex-direction: column;
@@ -242,7 +240,7 @@ export const GemTableContainer = styled.section`
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  border-bottom: 3px solid black;
+  border-bottom: 1px solid black;
   margin-bottom: 5rem;
   padding-left: 20px; // to account for scrollbar (also 20px wide)
 

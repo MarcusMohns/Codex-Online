@@ -196,9 +196,7 @@ const Gemfinder = () => {
   return (
     <>
       <Header>Gem Finder</Header>
-      <SubHeader>
-        Find a gem! All gems found here are from 3.3.5 WOTLK
-      </SubHeader>
+      <SubHeader>Find a gem! All gems in 3.3.5 WOTLK</SubHeader>
       <Main>
         <h2 className="header">
           <div className="header-text-icon-container">
