@@ -5,14 +5,12 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${COLORS.fadedBackground};
   box-sizing: border-box;
   max-width: 99vw;
   width: auto;
   min-height: 40vw;
   height: auto;
   margin: auto;
-  margin-top: 5%;
   opacity: 90%;
 
   @media (min-width: 900px) {
