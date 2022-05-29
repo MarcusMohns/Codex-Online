@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
   background-color: #222;
   box-shadow: 0 0 0.2rem ${COLORS.fadedGrey};
   color: grey;
-  border-top: 1px solid #222;
+  border-top: 1px solid ${COLORS.fadedBlack};
 
   a {
     display: flex;
