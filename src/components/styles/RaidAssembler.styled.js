@@ -757,9 +757,13 @@ export const StyledBuff = styled.div`
   padding: 0.2rem;
   background-color: ${COLORS.highlight};
   border-radius: 5px;
-  margin: 1px;
+  margin: 7px;
   overflow: hidden;
   max-height: 25px;
+
+  @media (min-width: 1300px) {
+    margin: 1px;
+  }
 
   img {
     width: 25px;
