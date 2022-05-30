@@ -723,13 +723,28 @@ export const CategoryContainer = styled.div`
   text-align: center;
   height: 100%;
   width: 100%;
-  margin-bottom: 2px;
-  border: 3px solid black;
+  border: 2px inset black;
+  margin-bottom: 5px;
+
+  img {
+    margin-left: 8px;
+  }
+
+  svg {
+    margin-right: 8px;
+  }
 
   @media (min-width: 1300px) {
     flex-direction: row;
     margin-bottom: 0px;
     border: none;
+
+    img {
+      margin-left: 0px;
+    }
+    svg {
+      margin-right: 0px;
+    }
   }
 `;
 
@@ -745,6 +760,7 @@ export const StyledBuff = styled.div`
   margin: 1px;
   overflow: hidden;
   max-height: 25px;
+
   img {
     width: 25px;
     height: 25px;
