@@ -35,7 +35,6 @@ const DiscordIcon = styled(RiDiscordFill)`
 const Footer = () => {
   return (
     <StyledFooter>
-      <div>Contact</div>
       <div>About</div>
       <Link to="/terms" className="link-button">
         Terms
