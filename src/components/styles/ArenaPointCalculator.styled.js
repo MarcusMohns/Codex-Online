@@ -31,7 +31,6 @@ export const ArenaContainer = styled.section`
   background-color: ${COLORS.fadedBackground};
   border-radius: 5px;
   box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-  flex: 1 0 35%;
   max-width: 100%;
   margin: 1rem;
   padding: 1rem;
