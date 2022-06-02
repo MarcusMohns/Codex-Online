@@ -36,6 +36,9 @@ const Footer = () => {
   return (
     <StyledFooter>
       <div>About</div>
+      <a href="mailto: warcraftcodex@gmail.com" target="blank">
+        Contact
+      </a>
       <Link to="/terms" className="link-button">
         Terms
       </Link>

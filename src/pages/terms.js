@@ -74,9 +74,9 @@ const Terms = () => {
         <p>
           If you do not agree with (or cannot comply with) Agreements, then you
           may not use the Service, but please let us know by emailing at{" "}
-          <b>temp@lol.com</b> so we can try to find a solution. These Terms
-          apply to all visitors, users and others who wish to access or use
-          Service.
+          <b>warcraftcodex@gmail.com</b> so we can try to find a solution. These
+          Terms apply to all visitors, users and others who wish to access or
+          use Service.
         </p>
         <p className="sub-title">
           2. <b>Terms</b>
@@ -195,10 +195,10 @@ const Terms = () => {
           If you are a copyright owner, or authorized on behalf of one, and you
           believe that the copyrighted work has been copied in a way that
           constitutes copyright infringement, please submit your claim via email
-          to temp@lol.com, with the subject line: “Copyright Infringement” and
-          include in your claim a detailed description of the alleged
-          Infringement as detailed below, under “DMCA Notice and Procedure for
-          Copyright Infringement Claims”
+          to warcraftcodex@gmail.com, with the subject line: “Copyright
+          Infringement” and include in your claim a detailed description of the
+          alleged Infringement as detailed below, under “DMCA Notice and
+          Procedure for Copyright Infringement Claims”
         </p>
         <p>
           You may be held accountable for damages (including costs and
@@ -239,18 +239,21 @@ const Terms = () => {
           information in your notice is accurate and that you are the copyright
           owner or authorized to act on the copyright owner’s behalf.
         </p>
-        <p>You can contact our Copyright Agent via email at temp@lol.com.</p>
+        <p>
+          You can contact our Copyright Agent via email at
+          warcraftcodex@gmail.com.
+        </p>
         <p className="sub-title">
           8. <b>Error Reporting and Feedback</b>
         </p>
         <p>
-          You may provide us either directly at temp@lol.com or via third party
-          sites and tools with information and feedback concerning errors,
-          suggestions for improvements, ideas, problems, complaints, and other
-          matters related to our Service (“Feedback”). You acknowledge and agree
-          that: (i) you shall not retain, acquire or assert any intellectual
-          property right or other right, title or interest in or to the
-          Feedback; (ii) Codex may have development ideas similar to the
+          You may provide us either directly at warcraftcodex@gmail.com or via
+          third party sites and tools with information and feedback concerning
+          errors, suggestions for improvements, ideas, problems, complaints, and
+          other matters related to our Service (“Feedback”). You acknowledge and
+          agree that: (i) you shall not retain, acquire or assert any
+          intellectual property right or other right, title or interest in or to
+          the Feedback; (ii) Codex may have development ideas similar to the
           Feedback; (iii) Feedback does not contain confidential information or
           proprietary information from you or any third party; and (iv) Codex is
           not under any obligation of confidentiality with respect to the
@@ -391,7 +394,7 @@ const Terms = () => {
         </p>
         <p>
           Please send your feedback, comments, requests for technical support by
-          email: <b>temp@lol.com</b>.
+          email: <b>warcraftcodex@gmail.com</b>.
         </p>
         <br />
         <p>Last updated: 2022-03-20</p>
