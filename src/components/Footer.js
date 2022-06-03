@@ -13,6 +13,7 @@ const StyledFooter = styled.footer`
   box-shadow: 0 0 0.2rem ${COLORS.fadedGrey};
   color: grey;
   border-top: 1px solid ${COLORS.fadedBlack};
+  font-size: 0.9rem;
 
   a {
     display: flex;
@@ -37,7 +38,7 @@ const Footer = () => {
     <StyledFooter>
       <div>About</div>
       <a href="mailto: warcraftcodex@gmail.com" target="blank">
-        Contact
+        Contact us
       </a>
       <Link to="/terms" className="link-button">
         Terms
