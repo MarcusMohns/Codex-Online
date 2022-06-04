@@ -30,6 +30,7 @@ export const Main = styled.main`
   align-items: flex-start;
   justify-content: flex-start;
   background-color: ${COLORS.fadedBackground};
+  border-bottom: 1px solid black;
 
   @media (min-width: 1300px) {
     height: 100%;
