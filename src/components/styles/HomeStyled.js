@@ -11,7 +11,6 @@ export const Main = styled.main`
   min-width: 100%;
   min-height: 80%;
   height: auto;
-  box-shadow: 3px 5px 10px -2px rgba(255, 255, 255, 0.2);
   background-color: ${COLORS.fadedBackground};
 
   #raid-assembler-container {
