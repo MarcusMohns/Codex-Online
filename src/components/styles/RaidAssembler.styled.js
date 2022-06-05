@@ -43,7 +43,6 @@ export const Main = styled.main`
       "Raid Utils"
       "Buffs Buffs";
     padding: 2rem;
-    padding-bottom: 10rem;
   }
 `;
 
