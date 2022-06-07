@@ -17,8 +17,8 @@ export const Nav = styled.nav`
   position: relative;
 
   .logo {
-    width: ${(props) => (props.shrunk ? `48px` : `56px`)};
-    height: ${(props) => (props.shrunk ? `48px` : `56px`)};
+    width: 48px;
+    height: 48px;
   }
 
   @media screen and (min-width: 768px) {
