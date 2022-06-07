@@ -51,7 +51,7 @@ const Navbar = () => {
     <Nav shrunk={isShrunk}>
       <LogoLink to="/home">
         <img src={"images/icon.png"} alt="logo" className="logo" />
-        <div className="logo-text">CODEX</div>
+        <div className="logo-text">Codex</div>
       </LogoLink>
 
       <Bars onClick={handleNavBarToggle} />
