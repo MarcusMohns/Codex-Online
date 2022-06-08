@@ -117,7 +117,7 @@ export const NavLink = styled(Link)`
     bottom: 0;
     content: "";
     display: block;
-    height: 1px;
+    height: 2px;
     left: 50%;
     position: absolute;
     background: ${COLORS.fadedOffWhite};
