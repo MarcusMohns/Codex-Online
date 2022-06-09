@@ -122,7 +122,6 @@ export const NavLink = styled(Link)`
     position: absolute;
     background: ${COLORS.fadedOffWhite};
     transition: width 0.2s ease 0s, left 0.2s ease 0s;
-    box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
     width: 0;
   }
   &:hover:after,
