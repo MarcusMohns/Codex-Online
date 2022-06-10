@@ -61,7 +61,6 @@ export const SpecContainer = styled.section`
     grid-auto-flow: column;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    border-radius: 5px;
     max-width: 100%;
     width: 96%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
