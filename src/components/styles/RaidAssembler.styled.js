@@ -1147,7 +1147,6 @@ export const GroupContainer = styled.div`
   flex: 1 0 20%;
   min-height: 400px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   background-color: transparent;
 
   @media (min-width: 1300px) {
