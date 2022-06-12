@@ -1087,7 +1087,7 @@ export const RaidContentHeader = styled.div`
     margin-right: auto;
     text-align: center;
     font-size: 0.9rem;
-
+    font-weight: 600;
     font-family: sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
