@@ -604,7 +604,7 @@ const RaidAssembler = () => {
 
             <p className="raid-count">{raidCount[0]} / 25 </p>
             <p className="role-count">
-              {raidCount[1]} Tanks | {raidCount[2]} Healers | {raidCount[3]} DPS
+              {raidCount[1]} Tanks - {raidCount[2]} Healers - {raidCount[3]} DPS
             </p>
             <div className="btn-container">
               <ResetIcon onClick={resetRaid} />

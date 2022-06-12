@@ -1087,6 +1087,14 @@ export const RaidContentHeader = styled.div`
     margin-right: auto;
     text-align: center;
     font-size: 0.9rem;
+
+    font-family: sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-letter-spacing: 0.0071428571em;
+    -moz-letter-spacing: 0.0071428571em;
+    -ms-letter-spacing: 0.0071428571em;
+    letter-spacing: 0.0071428571em;
   }
 
   @media (min-width: 1300px) {
@@ -1105,6 +1113,7 @@ export const RaidContentHeader = styled.div`
       display: flex;
       padding: 2px;
       font-size: 1rem;
+
       .role-count-img {
         height: 18px;
         width: 18px;
