@@ -39,7 +39,7 @@ export const ArenaContainer = styled.section`
     margin: 15px;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -117,7 +117,7 @@ export const ArenaContainer = styled.section`
       thead {
         tr {
           th {
-            font-size: 1rem;
+            font-size: 0.9rem;
           }
         }
       }
