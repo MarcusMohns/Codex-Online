@@ -540,7 +540,7 @@ const RaidAssembler = () => {
 
   return (
     <>
-      <Header>Raid Helper</Header>
+      <Header>Raid Assembler</Header>
       <SubHeader>
         Assemble and organize your raid! All spells and values are from 3.3.5
         WOTLK
