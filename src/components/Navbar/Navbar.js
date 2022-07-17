@@ -60,7 +60,7 @@ const Navbar = () => {
         onClick={handleNavBarToggle}
       >
         <BarsNavLink to="/home">Home</BarsNavLink>
-        <BarsNavLink to="/raidassembler">Raid Assembler</BarsNavLink>
+        <BarsNavLink to="/raidhelper">Raid Helper</BarsNavLink>
         <BarsNavLink to="/gemfinder">Gem Finder</BarsNavLink>
         <BarsNavLink to="/arenapointcalculator">
           Arena Point Calculator
@@ -68,7 +68,7 @@ const Navbar = () => {
       </div>
       <NavMenu>
         <NavLink to="/home">Home</NavLink>
-        <NavLink to="/raidassembler">Raid Assembler</NavLink>
+        <NavLink to="/raidhelper">Raid Helper</NavLink>
         <NavLink to="/gemfinder">Gem Finder</NavLink>
         <NavLink to="/arenapointcalculator">Arena Point Calculator</NavLink>
       </NavMenu>

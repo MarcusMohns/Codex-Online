@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import { Loader } from "./components/Loader";
 
 const Home = lazy(() => import("./pages/home"));
-const RaidAssembler = lazy(() => import("./pages/raidassembler"));
+const RaidHelper = lazy(() => import("./pages/raidhelper"));
 const Arenapointcalculator = lazy(() => import("./pages/arenapointcalculator"));
 const gemfinder = lazy(() => import("./pages/gemfinder"));
 const Terms = lazy(() => import("./pages/terms"));
@@ -22,7 +22,7 @@ const App = () => {
       <Suspense fallback={<Loader />}>
         <Switch>
           <Route path="/home" exact component={Home} />
-          <Route path="/raidassembler" component={RaidAssembler} />
+          <Route path="/raidhelper" component={RaidHelper} />
           <Route
             path="/arenapointcalculator"
             component={Arenapointcalculator}

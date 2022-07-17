@@ -13,8 +13,8 @@ const Home = () => {
       <HomeSection />
       <PagePreviewContainer id="raid-assembler-container">
         <PagePreviewText>
-          <PagePreviewHeader>Raid Assembler</PagePreviewHeader>
-          Organize 3.3.5 WOTLK Buffs, Debuffs and Utilities. The Raid Assembler
+          <PagePreviewHeader>Raid Helper</PagePreviewHeader>
+          Organize 3.3.5 WOTLK Buffs, Debuffs and Utilities. The Raid Helper
           helps you optimize your raids performance, manage the players in your
           raid, monitor the raids buffs, utilities and roles and save your work
           in the browser or locally in order to share with others!
@@ -34,7 +34,7 @@ const Home = () => {
               Save your raid
             </div>
           </div>
-          <Link to="/raidassembler" className="link-button">
+          <Link to="/raidhelper" className="link-button">
             Get started!
           </Link>
         </PagePreviewText>

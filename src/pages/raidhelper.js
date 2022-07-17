@@ -69,7 +69,7 @@ const formReducer = (state, action) => {
   // run for every buff the new player posseses
 };
 
-const RaidAssembler = () => {
+const RaidHelper = () => {
   const intitialRaidState = {
     players: [],
     groups: {
@@ -540,7 +540,7 @@ const RaidAssembler = () => {
 
   return (
     <>
-      <Header>Raid Assembler</Header>
+      <Header>Raid Helper</Header>
       <SubHeader>
         Assemble and organize your raid! All spells and values are from 3.3.5
         WOTLK
@@ -665,4 +665,4 @@ const RaidAssembler = () => {
   );
 };
 
-export default RaidAssembler;
+export default RaidHelper;
