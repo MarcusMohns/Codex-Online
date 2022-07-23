@@ -40,25 +40,38 @@ const ratingRequried = (pointsNeeded, percentage) => {
 };
 
 const pointsRewarded = (bracketName, rating) => {
-  let points = 0;
-  if (bracketName === "twos") {
-    if (rating > 1500)
-      points =
-        0.76 * (1511.26 / (1 + 1639.29 * Math.pow(2.71828, -0.00412 * rating)));
-    else points = 261;
-  } else if (bracketName === "threes") {
-    if (rating > 1500)
-      points =
-        0.88 * (1511.26 / (1 + 1639.29 * Math.pow(2.71828, -0.00412 * rating)));
-    else points = 302;
-  } else if (bracketName === "fives") {
-    if (rating > 1500)
-      points = 1511.26 / (1 + 1639.29 * Math.pow(2.71828, -0.00412 * rating));
-    else points = 344;
-  } else console.error("Unexpected bracket name");
-
-  return Math.floor(points);
+  if (rating && rating >= 151) {
+    const pointsCalc = 123 * Math.pow(2.71828, -0.00412 * rating) + 1;
+    let points = 1022 / pointsCalc + 580;
+    if (bracketName === "twos") {
+      points *= 0.76;
+    }
+    if (bracketName === "threes") {
+      points *= 0.88;
+    }
+    return Math.round(points);
+  } else {
+    return "Unknown";
+  }
 };
+// let points = 0;
+// if (bracketName === "twos") {
+//   if (rating > 1500)
+//     points =
+//       0.76 * (1511.26 / (1 + 1639.29 * Math.pow(2.71828, -0.00412 * rating)));
+//   else points = 261;
+// } else if (bracketName === "threes") {
+//   if (rating > 1500)
+//     points =
+//       0.88 * (1511.26 / (1 + 1639.29 * Math.pow(2.71828, -0.00412 * rating)));
+//   else points = 302;
+// } else if (bracketName === "fives") {
+//   if (rating > 1500)
+//     points = 1511.26 / (1 + 1639.29 * Math.pow(2.71828, -0.00412 * rating));
+//   else points = 344;
+// } else console.error("Unexpected bracket name");
+
+// return Math.floor(points);
 
 function Arenapointcalculator() {
   const [formData, setFormData] = useReducer(formReducer, {});
