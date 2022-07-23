@@ -16,7 +16,7 @@ const StyledErrorDiv = styled.div`
     text-decoration: none;
     color: ${(props) => props.color};
     border-bottom: 1px solid black;
-    margin-left: 5px;
+    margin-left: 2px;
   }
 
   p {
