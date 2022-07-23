@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { FiAlertOctagon } from "@react-icons/all-files/fi/FiAlertOctagon";
 
 const StyledErrorDiv = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   color: ${(props) => props.color};
   font-size: 1.1rem;
   background: ${(props) => props.background};
   margin: 30px 10%;
   height: ${(props) => props.height};
+  text-align: center;
 
   a {
     text-decoration: none;
@@ -17,13 +18,26 @@ const StyledErrorDiv = styled.div`
     border-bottom: 1px solid black;
     margin-left: 5px;
   }
+
+  p {
+    margin-right: 15px;
+    width: 100%;
+  }
+`;
+const AlertIcon = styled(FiAlertOctagon)`
+  display: flex;
+  color: ${(props) => props.color};
+  font-size: 1.6em;
+  margin-left: 15px;
 `;
 
 function ErrorDiv({ text, background, color, height, postLink }) {
   return (
     <StyledErrorDiv background={background} height={height} color={color}>
-      {text}
-      {postLink}
+      <AlertIcon />
+      <p>
+        {text} {postLink}
+      </p>
     </StyledErrorDiv>
   );
 }
