@@ -4,6 +4,7 @@ import {
 } from "../components/styles/ArenaPointCalculator.styled";
 import { Header, SubHeader } from "../components/styles/RaidAssembler.styled";
 import React, { useReducer } from "react";
+import ErrorDiv from "../components/ErrorDiv";
 
 const formReducer = (state, event) => {
   return {
@@ -97,6 +98,10 @@ function Arenapointcalculator() {
         All points and values are based on the 3.3.5 WOTLK formula. You will
         recieve points from the team that provides the most amount of points.
       </SubHeader>
+      <ErrorDiv
+        text="Updated using formula provided by reddit user Finalbelle - https://www.reddit.com/r/classicwow/comments/us1cg5/tbc_arena_calculator_formula_updated_for_s4/ "
+        background="#4BB543"
+      />
       <Main>
         <ArenaContainer>
           <h2>Arena Points Rewarded</h2>
