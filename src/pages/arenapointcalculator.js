@@ -18,29 +18,58 @@ const handleSelect = (event) => {
 };
 
 const ratingRequried = (pointsNeeded, percentage) => {
-  let theRatingRequired = 0;
   if (
-    // in 3.3.5 you are rewarded a baseline amount of points if you are 1500 or below
-    (pointsNeeded <= 261 && percentage === 0.76) ||
-    // 261 is the min points recieved in 2v2
-    (pointsNeeded <= 302 && percentage === 0.88) ||
-    // 302 is the min points recieved in 3v3
-    (pointsNeeded <= 344 && percentage === 1)
-    // 344 is the min points recieved in 5v5
-  )
-    return theRatingRequired;
-  else
-    theRatingRequired = Math.ceil(
-      Math.log(
-        1511.26 / ((1639.28 * pointsNeeded) / percentage) - 1 / 1639.28
-      ) / -0.00412
-    );
+    (pointsNeeded < 448 && percentage === 0.76) ||
+    (pointsNeeded < 518 && percentage === 0.88) ||
+    (pointsNeeded < 589 && percentage === 1)
+  ) {
+    return "Any";
+    // If pointsNeeded is sufficiently low, no rating is required, only games played.
+  } else if (pointsNeeded === "1602") {
+    return "Not Possible";
+    // An input of 1602 returns a result of Infinity in the 5s bracket for some reason...
+  }
 
-  return theRatingRequired ? theRatingRequired : "Not possible";
+  const pointsMod = parseInt(pointsNeeded) / percentage;
+  let theRatingRequired = 0;
+
+  theRatingRequired = Math.ceil(
+    (1 / -0.00412) *
+      (Math.log((1022 / (pointsMod - 580) - 1) / 123) / Math.log(2.71828))
+  );
+
+  if (theRatingRequired && theRatingRequired >= 150) {
+    return theRatingRequired;
+  } else if (theRatingRequired < 150) {
+    return "Unknown (<150)";
+  } else {
+    return "Not Possible";
+  }
+
+  // old 3.3.5 calc
+  // let theRatingRequired = 0;
+  // if (
+  //   // in 3.3.5 you are rewarded a baseline amount of points if you are 1500 or below
+  //   (pointsNeeded <= 261 && percentage === 0.76) ||
+  //   // 261 is the min points recieved in 2v2
+  //   (pointsNeeded <= 302 && percentage === 0.88) ||
+  //   // 302 is the min points recieved in 3v3
+  //   (pointsNeeded <= 344 && percentage === 1)
+  //   // 344 is the min points recieved in 5v5
+  // )
+  //   return theRatingRequired;
+  // else
+  //   theRatingRequired = Math.ceil(
+  //     Math.log(
+  //       1511.26 / ((1639.28 * pointsNeeded) / percentage) - 1 / 1639.28
+  //     ) / -0.00412
+  //   );
+
+  // return theRatingRequired ? theRatingRequired : "Not possible";
 };
 
 const pointsRewarded = (bracketName, rating) => {
-  if (rating && rating >= 151) {
+  if (rating && rating >= 150) {
     const pointsCalc = 123 * Math.pow(2.71828, -0.00412 * rating) + 1;
     let points = 1022 / pointsCalc + 580;
     if (bracketName === "twos") {
@@ -54,6 +83,7 @@ const pointsRewarded = (bracketName, rating) => {
     return "Unknown";
   }
 };
+// old 3.3.5 calc
 // let points = 0;
 // if (bracketName === "twos") {
 //   if (rating > 1500)
