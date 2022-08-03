@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import COLORS from "../components";
 
-export const Header = styled.h1`
+const Header = styled.h1`
   font-size: 1.8rem;
   display: flex;
   align-items: center;
