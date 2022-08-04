@@ -14,6 +14,7 @@ const RaidHelper = lazy(() => import("./pages/raidhelper"));
 const Arenapointcalculator = lazy(() => import("./pages/arenapointcalculator"));
 const gemfinder = lazy(() => import("./pages/gemfinder"));
 const Terms = lazy(() => import("./pages/terms"));
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
+          <Route path="*" component={PageNotFound} />
         </Switch>
         <Footer />
       </Suspense>
