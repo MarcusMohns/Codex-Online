@@ -29,7 +29,6 @@ export const Main = styled.main`
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: ${COLORS.fadedBackground};
   border-bottom: 1px solid black;
 
   @media (min-width: 1300px) {
@@ -53,7 +52,6 @@ export const SpecContainer = styled.section`
   align-items: center;
   justify-content: center;
   border-top: 2px black;
-  background-color: ${COLORS.fadedBackground};
   margin-top: 2rem;
 
   .spec-buttons {
@@ -65,6 +63,7 @@ export const SpecContainer = styled.section`
     width: 96%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
     margin: 2rem 0;
+    background-color: ${COLORS.fadedPrimary};
   }
 
   @media screen and (min-width: 1300px) {
@@ -75,7 +74,6 @@ export const SpecContainer = styled.section`
     justify-content: center;
     max-width: 100%;
     max-height: 100%;
-    margin-top: 5%;
     padding: 0rem 2rem;
 
     .spec-buttons {
@@ -305,7 +303,6 @@ export const RaidContainer = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: transparent;
   min-width: 100%;
   max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
