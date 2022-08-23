@@ -63,7 +63,7 @@ export const SpecContainer = styled.section`
     width: 96%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
     margin: 2rem 0;
-    background-color: ${COLORS.fadedPrimary};
+    background-color: ${COLORS.halfFadedPrimary};
   }
 
   @media screen and (min-width: 1300px) {
