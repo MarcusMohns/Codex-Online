@@ -78,14 +78,17 @@ export const Nav = styled.nav`
 `;
 export const LogoLink = styled(Link)`
   font-size: 1.5rem;
-  color: ${COLORS.offWhite};
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   position: relative;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   width: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 200;
 
   @media screen and (min-width: 768px) {
     width: 100%;
@@ -99,18 +102,21 @@ export const BarsNavLink = styled(Link)`
 `;
 
 export const NavLink = styled(Link)`
-  color: ${COLORS.offWhite};
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   margin: 0 1rem;
   height: 100%;
-  padding: 7px 0;
+  padding: 5px 0;
   cursor: pointer;
   transition: all 0.2s ease-out;
   position: relative;
   user-select: none;
   white-space: nowrap;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.5px;
 
   &:after {
     background: none repeat scroll 0 0 transparent;
