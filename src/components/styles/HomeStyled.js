@@ -175,12 +175,13 @@ export const PagePreviewText = styled.div`
     font-size: 16px;
     color: #fff;
     padding: 15px 30px;
-    border: 1px solid ${COLORS.goldHighlight};
+    border: 2px solid transparent;
+
     cursor: pointer;
     margin-top: 1rem;
     text-decoration: none;
     &:hover {
-      background: ${COLORS.fadedPrimary};
+      border: 2px solid ${COLORS.primary};
     }
   }
 `;
