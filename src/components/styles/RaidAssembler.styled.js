@@ -29,7 +29,6 @@ export const Main = styled.main`
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
-  border-bottom: 1px solid black;
 
   @media (min-width: 1300px) {
     height: 100%;
@@ -382,7 +381,7 @@ export const StyledPlayer = styled.div`
   justify-content: flex-start;
   color: #fff;
   background: ${(props) => props.background};
-  border: 2px solid black;
+  border: 1px solid black;
   cursor: pointer;
   margin: 2px;
   min-height: 70px;

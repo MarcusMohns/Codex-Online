@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
   box-shadow: 0 0 0.2rem ${COLORS.fadedGrey};
   color: grey;
   font-size: 0.9rem;
-  margin-top: auto;
+  margin-top: 8rem;
 
   a {
     display: flex;
