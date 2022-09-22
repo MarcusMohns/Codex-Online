@@ -170,7 +170,7 @@ export const PagePreviewText = styled.div`
 
   .link-button {
     display: inline-block;
-    background: ${COLORS.fadedBlack};
+    background: ${COLORS.fadedGrey};
     border-radius: 5px;
     font-size: 16px;
     color: #fff;

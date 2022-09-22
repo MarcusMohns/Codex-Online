@@ -1295,8 +1295,8 @@ export const StyledSaveMenu = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: black;
-    border: 1px solid grey;
+    background-color: ${COLORS.fadedBlack};
+    border: 1px solid ${COLORS.primary};
     position: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -1305,6 +1305,7 @@ export const StyledSaveMenu = styled.div`
     right: 0;
     text-align: center;
     width: 90%;
+    border-radius: 5px;
 
     @media (min-width: 1300px) {
       width: max-content;
