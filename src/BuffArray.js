@@ -8,14 +8,25 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Strength_Of_Earth_Totem.png",
+
     text: (
       <div>
         <div className="spell-names">
           Horn of Winter, Strength of Earth Totem
         </div>
         <span className="buff">Increases</span> Strength and Agility by{" "}
-        <span>155</span> for all{" "}
+        <span>x</span> for all{" "}
         <span className="buff">party and raid members</span>
+        <div>
+          Horn of Winter: <span className="buff-value">155</span>
+        </div>
+        <div>
+          Strength of Earth Totem: <span className="buff-value">155</span>
+        </div>
+        <div>
+          Improved Strength of Earth Totem:{" "}
+          <span className="buff-value">178</span>
+        </div>
       </div>
     ),
   },
@@ -364,11 +375,11 @@ const BuffArray = [
         </div>
 
         <div>
-          Blessing of Wisdom: <span className="buff-value">92</span>
+          Blessing of Wisdom: <span className="buff-value">91</span>
         </div>
 
         <div>
-          Improved Blessing of Wisdom <span className="buff-value">110</span>
+          Improved Blessing of Wisdom <span className="buff-value">109</span>
         </div>
 
         <div>
