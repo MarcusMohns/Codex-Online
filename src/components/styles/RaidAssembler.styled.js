@@ -1295,12 +1295,12 @@ export const StyledSaveMenu = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: ${COLORS.fadedBlack};
-    border: 1px solid ${COLORS.primary};
+    background-color: black;
+    border: 1px solid grey;
     position: fixed;
     margin-left: auto;
     margin-right: auto;
-    top: 40%;
+    top: 35%;
     left: 0;
     right: 0;
     text-align: center;
@@ -1319,7 +1319,7 @@ export const StyledSaveMenu = styled.div`
       width: 100%;
       height: 3rem;
       color: white;
-      background-color: ${COLORS.primary};
+      font-size: 1.2rem;
     }
 
     .save-menu-footer {
