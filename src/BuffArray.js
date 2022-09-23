@@ -29,9 +29,15 @@ const BuffArray = [
     image: "images/Greater_Blessing_Of_Kings.png",
     text: (
       <div>
-        <div className="spell-names"> Blessing of Kings</div>
+        <div className="spell-names">
+          Blessing of Kings, Blessing of Sanctuary
+        </div>
         <span className="buff">Increases</span> stats by{" "}
         <span className="buff-value">10%</span>
+        <div className="fine-print">
+          Blessing of Sanctuary <span className="debuff">only</span> affects
+          Strength and Stamina{" "}
+        </div>
         <div className="fine-print">
           Alternatively, Drums of the Forgotten Kings provide 8% all stats and
           can be bought off the auction house.
@@ -598,7 +604,8 @@ const BuffArray = [
     text: (
       <div>
         <div className="spell-names">Wrath of Air Totem</div>
-        <span className="buff">Increases</span> spell haste by 5% for all{" "}
+        <span className="buff">Increases</span> spell haste by{" "}
+        <span className="buff-value">5%</span> for all{" "}
         <span className="buff">party and raid members</span>{" "}
       </div>
     ),
