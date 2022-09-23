@@ -921,7 +921,9 @@ export const StyledCategory = styled.div`
           color: green;
         }
         .buff-value {
-          font-weight: 800;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: white;
         }
         .spell-names {
           border-top: 1px solid white;
