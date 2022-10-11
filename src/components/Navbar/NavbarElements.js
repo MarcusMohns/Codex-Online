@@ -77,7 +77,7 @@ export const Nav = styled.nav`
   }
 `;
 export const LogoLink = styled(Link)`
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fff;
   display: flex;
   align-items: center;
@@ -109,6 +109,7 @@ export const NavLink = styled(Link)`
   margin: 0 1rem;
   height: 100%;
   padding: 5px 0;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.2s ease-out;
   position: relative;
