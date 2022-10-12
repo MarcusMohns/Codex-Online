@@ -123,7 +123,7 @@ export const NavLink = styled(Link)`
     bottom: 0;
     content: "";
     display: block;
-    height: 2px;
+    height: 3px;
     left: 50%;
     position: absolute;
     background: ${COLORS.fadedOffWhite};
