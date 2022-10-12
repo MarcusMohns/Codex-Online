@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 75px;
   transition: 0.4s ease;
   z-index: 500;
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.35);
@@ -26,7 +26,7 @@ export const Nav = styled.nav`
     width: 100%;
     top: 0;
     justify-content: space-evenly;
-    height: ${(props) => (props.shrunk ? `60px` : `100px`)};
+    height: ${(props) => (props.shrunk ? `60px` : `75px`)};
 
     .logo-text {
       transition: 0.3s ease;
