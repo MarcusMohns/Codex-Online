@@ -1,6 +1,5 @@
 import {
   Main,
-  HomeSection,
   PagePreviewText,
   PagePreviewContainer,
   PagePreviewHeader,
@@ -10,7 +9,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <Main>
-      <HomeSection />
       <PagePreviewContainer id="raid-assembler-container">
         <PagePreviewText>
           <PagePreviewHeader>Raid Helper</PagePreviewHeader>

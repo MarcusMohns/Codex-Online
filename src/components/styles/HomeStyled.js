@@ -14,9 +14,31 @@ export const Main = styled.main`
   background-color: ${COLORS.fadedBackground};
 
   #raid-assembler-container {
-    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
+    background-color: ${COLORS.fadedBlack};
+    background-image: url("images/grizzly_hills.webp");
+    animation-name: FadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    @keyframes FadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
     @media (min-width: 1200px) {
-      margin-top: 5%;
+      margin-top: 0%;
+      padding-top: 10rem;
+      flex-direction: row;
     }
   }
 
@@ -27,37 +49,6 @@ export const Main = styled.main`
       flex-direction: row-reverse;
       margin: 0px;
       background-color: ${COLORS.fadedBlack};
-    }
-  }
-`;
-
-export const HomeSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 500px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-  background-image: url("images/grizzly_hills.webp");
-  background-repeat: no-repeat;
-  background-position: top;
-  position: absolute;
-  top: 10%;
-  z-index: -1;
-
-  opacity: 0%;
-  animation-name: FadeIn;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-
-  @keyframes FadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
     }
   }
 `;
@@ -85,7 +76,8 @@ export const PagePreviewContainer = styled.div`
     height: 225px;
     max-width: 95%;
     max-height: 100%;
-    @media (min-width: 900px) {
+
+    @media (min-width: 1400px) {
       width: 700px;
       height: 394px;
       margin: 15px;
