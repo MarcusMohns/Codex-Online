@@ -117,7 +117,6 @@ export const NavLink = styled(Link)`
   white-space: nowrap;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.5px;
 
   &:after {
     background: none repeat scroll 0 0 transparent;
