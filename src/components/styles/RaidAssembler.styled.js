@@ -1394,7 +1394,8 @@ export const StyledSaveMenu = styled.div`
       .save-buttons {
         border: none;
         color: white;
-        padding: 5px;
+        padding: 6px;
+        border-radius: 2px;
         background-color: ${COLORS.primary};
         cursor: pointer;
         user-select: none;
