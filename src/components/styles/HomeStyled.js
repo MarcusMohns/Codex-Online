@@ -22,6 +22,7 @@ export const Main = styled.main`
     box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
     background-color: ${COLORS.fadedBlack};
     background-image: url("images/grizzly_hills.webp");
+    background-repeat: no-repeat;
     animation-name: FadeIn;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
