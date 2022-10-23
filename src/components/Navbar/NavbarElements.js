@@ -109,7 +109,7 @@ export const NavLink = styled(Link)`
   margin: 0 1rem;
   height: 100%;
   padding: 5px 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.2s ease-out;
   position: relative;
