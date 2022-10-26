@@ -3,7 +3,7 @@ import {
   PagePreviewText,
   PagePreviewContainer,
   PagePreviewHeader,
-} from "../components/styles/HomeStyled";
+} from "../components/styles/Home.styled";
 import { Link } from "react-router-dom";
 
 const Home = () => {
