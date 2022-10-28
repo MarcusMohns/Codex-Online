@@ -1,7 +1,23 @@
 import React from "react";
 
-const pveOrPvP = () => {
-  return <div>pveOrPvP</div>;
+const PveOrPvp = ({ nextStep, handleChange, values }) => {
+  const next = (e) => {
+    e.preventDefault();
+    nextStep();
+  };
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: "500px",
+      }}
+    >
+      <h1>PveOrPvp</h1>
+      <input onClick={next} type="button" value="Button" />
+    </div>
+  );
 };
 
-export default pveOrPvP;
+export default PveOrPvp;
