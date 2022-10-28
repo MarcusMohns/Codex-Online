@@ -1,14 +1,24 @@
 import React from "react";
 import { Main } from "../components/styles/HitCapHelper.styled";
-import { Header } from "../components/styles/RaidAssembler.styled";
+import { useState } from "react";
 
-const hitcaphelper = () => {
+const HitCapHelper = () => {
+  const state = {
+    step: 1,
+    email: "",
+    email: "",
+    email: "",
+    email: "",
+    email: "",
+  };
+
+  const [stepState, setStepState] = useState(state);
+
   return (
     <>
-      <Header>Hit Cap Helper</Header>
       <Main>What</Main>;
     </>
   );
 };
 
-export default hitcaphelper;
+export default HitCapHelper;
