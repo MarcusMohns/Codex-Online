@@ -13,6 +13,8 @@ export const Main = styled.main`
   margin: auto;
   padding: 0rem 4rem;
   font-size: 1rem;
+  margin-top: 7%;
+
   @media screen and (max-width: 1200px) {
     flex-direction: column;
     box-shadow: none;

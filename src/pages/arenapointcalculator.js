@@ -136,7 +136,7 @@ function Arenapointcalculator() {
 
   return (
     <>
-      <Header>Arena Point Calculator</Header>
+      <Header>3.3.5 Arena Point Calculator</Header>
       <SubHeader>
         All points and values are based on the 3.3.5 WOTLK formula. You will
         recieve points from the team that provides the most amount of points.

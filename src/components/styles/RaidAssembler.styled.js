@@ -51,7 +51,7 @@ export const SpecContainer = styled.section`
   align-items: center;
   justify-content: center;
   border-top: 2px black;
-  margin-top: 7%;
+  margin-top: 9%;
 
   .spec-buttons {
     display: grid;
