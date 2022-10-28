@@ -5,14 +5,27 @@ import { useState } from "react";
 const HitCapHelper = () => {
   const state = {
     step: 1,
-    email: "",
-    email: "",
-    email: "",
-    email: "",
-    email: "",
+    pveOrPvp: "",
+    classAndSpec: "",
+    talentPoints: "",
+    raidBuffsPresent: "",
   };
 
   const [stepState, setStepState] = useState(state);
+
+  const prevStep = () => {
+    const { step } = state;
+    setStepState({ step: step - 1 });
+  };
+
+  const nextStep = () => {
+    const { step } = state;
+    setStepState({ step: step + 1 });
+  };
+
+  const handleChange = (input) => (e) => {
+    setStepState({ [input]: e.target.value });
+  };
 
   return (
     <>
