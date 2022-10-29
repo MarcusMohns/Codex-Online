@@ -8,17 +8,17 @@ import TalentPoints from "../components/hitcaphelper/TalentPoints";
 import Result from "../components/hitcaphelper/Result";
 
 const HitCapHelper = () => {
-  const state = [
-    { step: 1 },
-    { pveOrPvp: "" },
-    { classAndSpec: "" },
-    { talentPoints: "" },
-    { raidBuffsPresent: "" },
-    { result: "" },
-  ];
+  const state = {
+    step: 1,
+    classAndSpec: "",
+    pveOrPvp: "",
+    talentPoints: "",
+    raidBuffsPresent: "",
+    result: "",
+  };
 
   const [stepState, setStepState] = useState(state);
-  const { step } = stepState[0];
+  const { step } = stepState;
   const { pveOrPvp, classAndSpec, talentPoints, raidBuffsPresent } = state;
   const values = { pveOrPvp, classAndSpec, talentPoints, raidBuffsPresent };
 
@@ -27,12 +27,11 @@ const HitCapHelper = () => {
   };
 
   const nextStep = () => {
-    setStepState([{ step: stepState[0].step + 1 }, ...stepState]);
-    console.log(stepState[0].step);
+    setStepState({ ...stepState, step: step + 1 });
   };
 
   const handleChange = (input) => (e) => {
-    setStepState({ [input]: e.target.value });
+    setStepState({ ...stepState, [input]: e.target.value });
   };
 
   switch (step) {
@@ -82,6 +81,7 @@ const HitCapHelper = () => {
       );
     // never forget the default case, otherwise VS code would be mad!
     default:
+      console.log(step);
     // do nothing
   }
 };

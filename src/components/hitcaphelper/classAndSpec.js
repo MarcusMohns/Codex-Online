@@ -13,9 +13,18 @@ const ClassAndSpec = ({ nextStep, handleChange, values }) => {
         alignItems: "center",
         justifyContent: "center",
         marginTop: "500px",
+        backgroundColor: "white",
       }}
     >
       <h1>classAndSpec</h1>
+      <label>
+        Email
+        <input
+          type="text"
+          placeholder="Class and Spec! :)"
+          onChange={handleChange("classAndSpec")}
+        />
+      </label>
       <input onClick={next} type="button" value="Button" />
     </div>
   );
