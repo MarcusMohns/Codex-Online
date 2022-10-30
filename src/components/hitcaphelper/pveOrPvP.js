@@ -6,15 +6,27 @@ const PveOrPvp = ({ nextStep, handleChange, values }) => {
     nextStep();
   };
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: "500px",
-      }}
-    >
-      <h1>PveOrPvp</h1>
+    <div>
+      <label htmlFor={"pvp"} key={"pvp"}>
+        <input
+          type="radio"
+          onChange={handleChange("pveOrPvp")}
+          id={"pvp"}
+          name="pveOrPvp"
+          value={"pvp"}
+        />
+        {/* <img src={spec.image} alt="spec" /> */}
+      </label>
+      <label htmlFor={"pve"} key={"pve"}>
+        <input
+          type="radio"
+          onChange={handleChange("pveOrPvp")}
+          id={"pve"}
+          name="pveOrPvp"
+          value={"pve"}
+        />
+        {/* <img src={spec.image} alt="spec" /> */}
+      </label>
       <input onClick={next} type="button" value="Button" />
     </div>
   );

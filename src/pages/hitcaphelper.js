@@ -6,6 +6,7 @@ import PveOrPvp from "../components/hitcaphelper/PveOrPvp";
 import RaidBuffsPresent from "../components/hitcaphelper/RaidBuffsPresent";
 import TalentPoints from "../components/hitcaphelper/TalentPoints";
 import Result from "../components/hitcaphelper/Result";
+import SpecArray from "../SpecArray";
 
 const HitCapHelper = () => {
   const state = {
@@ -32,25 +33,31 @@ const HitCapHelper = () => {
 
   const handleChange = (input) => (e) => {
     setStepState({ ...stepState, [input]: e.target.value });
+    console.log(stepState);
   };
 
   switch (step) {
     case 1:
       return (
-        <ClassAndSpec
-          nextStep={nextStep}
-          handleChange={handleChange}
-          values={values}
-        />
+        <Main>
+          <ClassAndSpec
+            nextStep={nextStep}
+            handleChange={handleChange}
+            values={values}
+            SpecArray={SpecArray}
+          />
+        </Main>
       );
     case 2:
       return (
-        <PveOrPvp
-          prevStep={prevStep}
-          nextStep={nextStep}
-          handleChange={handleChange}
-          values={values}
-        />
+        <Main>
+          <PveOrPvp
+            prevStep={prevStep}
+            nextStep={nextStep}
+            handleChange={handleChange}
+            values={values}
+          />
+        </Main>
       );
     case 3:
       return (
