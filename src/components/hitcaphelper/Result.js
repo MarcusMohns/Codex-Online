@@ -1,6 +1,10 @@
 import React from "react";
 
-const Result = ({ nextStep, handleChange, values }) => {
+const Result = ({ prevStep, handleChange, values }) => {
+  const previous = (e) => {
+    e.preventDefault();
+    prevStep();
+  };
   return (
     <div
       style={{
@@ -11,6 +15,7 @@ const Result = ({ nextStep, handleChange, values }) => {
       }}
     >
       <h1>Result</h1>
+      <input onClick={previous} type="button" value="previous" />
     </div>
   );
 };

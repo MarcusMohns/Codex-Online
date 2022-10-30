@@ -1,10 +1,16 @@
 import React from "react";
 
-const PveOrPvp = ({ nextStep, handleChange, values }) => {
+const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {
     e.preventDefault();
     nextStep();
   };
+
+  const previous = (e) => {
+    e.preventDefault();
+    prevStep();
+  };
+
   return (
     <div>
       <label htmlFor={"pvp"} key={"pvp"}>
@@ -27,7 +33,8 @@ const PveOrPvp = ({ nextStep, handleChange, values }) => {
         />
         {/* <img src={spec.image} alt="spec" /> */}
       </label>
-      <input onClick={next} type="button" value="Button" />
+      <input onClick={previous} type="button" value="previous" />
+      <input onClick={next} type="button" value="next" />
     </div>
   );
 };
