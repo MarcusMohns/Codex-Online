@@ -7,7 +7,12 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
 
   const renderRadioButtons = (specs) => {
     return specs.map((spec) => (
-      <label htmlFor={spec.text} key={spec.text}>
+      <label
+        htmlFor={spec.text}
+        key={spec.text}
+        className="input-radio-and-image"
+      >
+        <img src={spec.image} alt="spec" />
         <input
           type="radio"
           onChange={handleChange("classAndSpec")}
@@ -15,17 +20,17 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
           name="classAndSpec"
           value={spec.text}
         />
-        <img src={spec.image} alt="spec" />
       </label>
     ));
   };
 
   return (
-    <div>
-      <h1>classAndSpec</h1>
-      {renderRadioButtons(SpecArray)}
-      <input onClick={next} type="button" value="Button" />
-    </div>
+    <>
+      <div className="radio-input-container">
+        {renderRadioButtons(SpecArray)}
+      </div>
+      <input onClick={next} type="button" value="Next" />
+    </>
   );
 };
 

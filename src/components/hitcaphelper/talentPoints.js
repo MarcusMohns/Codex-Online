@@ -10,14 +10,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     prevStep();
   };
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: "500px",
-      }}
-    >
+    <div>
       <h1>TalentPoints</h1>
       <input onClick={previous} type="button" value="previous" />
       <input onClick={next} type="button" value="next" />

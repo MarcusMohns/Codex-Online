@@ -13,6 +13,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
 
   return (
     <div>
+      <h1>Pvp or Pve?</h1>
       <label htmlFor={"pvp"} key={"pvp"}>
         <input
           type="radio"

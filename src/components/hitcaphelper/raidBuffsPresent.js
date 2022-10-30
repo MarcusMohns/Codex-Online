@@ -11,15 +11,8 @@ const RaidBuffsPresent = ({ nextStep, prevStep, handleChange, values }) => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: "500px",
-      }}
-    >
-      <h1>RaidBuffsPresent</h1>
+    <div>
+      <h1>Pvp or Pve?</h1>
       <input onClick={previous} type="button" value="previous" />
       <input onClick={next} type="button" value="next" />
     </div>

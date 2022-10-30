@@ -61,30 +61,36 @@ const HitCapHelper = () => {
       );
     case 3:
       return (
-        <RaidBuffsPresent
-          prevStep={prevStep}
-          nextStep={nextStep}
-          handleChange={handleChange}
-          values={values}
-        />
+        <Main>
+          <RaidBuffsPresent
+            prevStep={prevStep}
+            nextStep={nextStep}
+            handleChange={handleChange}
+            values={values}
+          />
+        </Main>
       );
     case 4:
       return (
-        <TalentPoints
-          prevStep={prevStep}
-          nextStep={nextStep}
-          handleChange={handleChange}
-          values={values}
-        />
+        <Main>
+          <TalentPoints
+            prevStep={prevStep}
+            nextStep={nextStep}
+            handleChange={handleChange}
+            values={values}
+          />
+        </Main>
       );
     case 5:
       return (
-        <Result
-          prevStep={prevStep}
-          nextStep={nextStep}
-          handleChange={handleChange}
-          values={values}
-        />
+        <Main>
+          <Result
+            prevStep={prevStep}
+            nextStep={nextStep}
+            handleChange={handleChange}
+            values={values}
+          />
+        </Main>
       );
     // never forget the default case, otherwise VS code would be mad!
     default:

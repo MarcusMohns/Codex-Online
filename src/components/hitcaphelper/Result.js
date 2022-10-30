@@ -6,14 +6,7 @@ const Result = ({ prevStep, handleChange, values }) => {
     prevStep();
   };
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: "500px",
-      }}
-    >
+    <div>
       <h1>Result</h1>
       <input onClick={previous} type="button" value="previous" />
     </div>

@@ -6,11 +6,28 @@ export const Main = styled.main`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  max-width: 100vw;
   min-height: 500px;
   padding: 0rem 4rem;
   font-size: 1rem;
   color: white;
+  margin-top: 7%;
+
+  .radio-input-container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .input-radio-and-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
 
   @media screen and (max-width: 1200px) {
     flex-direction: column;
