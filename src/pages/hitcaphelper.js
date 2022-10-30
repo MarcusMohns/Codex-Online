@@ -24,16 +24,16 @@ const HitCapHelper = () => {
   const values = { pveOrPvp, classAndSpec, talentPoints, raidBuffsPresent };
 
   const prevStep = () => {
-    setStepState({ step: step - 1 });
+    setStepState({ ...stepState, step: step - 1 });
   };
 
   const nextStep = () => {
     setStepState({ ...stepState, step: step + 1 });
+    console.log(stepState);
   };
 
   const handleChange = (input) => (e) => {
     setStepState({ ...stepState, [input]: e.target.value });
-    console.log(stepState);
   };
 
   switch (step) {
