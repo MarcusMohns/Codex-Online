@@ -12,7 +12,27 @@ const RaidBuffsPresent = ({ nextStep, prevStep, handleChange, values }) => {
 
   return (
     <div>
-      <h1>Pvp or Pve?</h1>
+      <h1>Raidbuffs availible?</h1>
+      <label htmlFor={"sp-hit-buff"} key={"sp-hit-buff"}>
+        <input
+          type="radio"
+          onChange={handleChange("raidBuffsPresent")}
+          id={"sp-hit-buff"}
+          name="raidBuffsPresent"
+          value={"sp-hit-buff"}
+        />
+        {/* <img src={spec.image} alt="spec" /> */}
+      </label>
+      <label htmlFor={"boomy-hit-buff"} key={"boomy-hit-buff"}>
+        <input
+          type="radio"
+          onChange={handleChange("raidBuffsPresent")}
+          id={"boomy-hit-buff"}
+          name="raidBuffsPresent"
+          value={"boomy-hit-buff"}
+        />
+        {/* <img src={spec.image} alt="spec" /> */}
+      </label>
       <input onClick={previous} type="button" value="previous" />
       <input onClick={next} type="button" value="next" />
     </div>
