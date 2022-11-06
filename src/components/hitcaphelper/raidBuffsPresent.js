@@ -21,6 +21,7 @@ const RaidBuffsPresent = ({ nextStep, prevStep, handleChange, values }) => {
           name="raidBuffsPresent"
           value={"sp-hit-buff"}
         />
+        Shadow Priest?
         {/* <img src={spec.image} alt="spec" /> */}
       </label>
       <label htmlFor={"boomy-hit-buff"} key={"boomy-hit-buff"}>
@@ -32,6 +33,7 @@ const RaidBuffsPresent = ({ nextStep, prevStep, handleChange, values }) => {
           value={"boomy-hit-buff"}
         />
         {/* <img src={spec.image} alt="spec" /> */}
+        Boomkin?
       </label>
       <input onClick={previous} type="button" value="previous" />
       <input onClick={next} type="button" value="next" />
