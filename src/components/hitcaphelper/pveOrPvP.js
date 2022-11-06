@@ -22,6 +22,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           name="pveOrPvp"
           value={"pvp"}
         />
+        pvp
         {/* <img src={spec.image} alt="spec" /> */}
       </label>
       <label htmlFor={"pve"} key={"pve"}>
@@ -32,6 +33,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           name="pveOrPvp"
           value={"pve"}
         />
+        pve
         {/* <img src={spec.image} alt="spec" /> */}
       </label>
       <input onClick={previous} type="button" value="previous" />
