@@ -16,6 +16,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       return <div>Shadow Priest</div>;
     case "Holy Priest":
       return <div>Shadow Priest</div>;
+    case "Arcane Mage":
+      return <div>Arcane Mage</div>;
     default:
       return (
         <div>
