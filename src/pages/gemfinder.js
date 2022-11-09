@@ -160,7 +160,6 @@ const Gemfinder = () => {
 
         return 0;
       });
-      console.log(sort);
 
       setSort((sort) => ({
         ...sort,

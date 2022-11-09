@@ -1,7 +1,6 @@
 import React from "react";
 
 const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
-  console.log(values);
   const next = (e) => {
     e.preventDefault();
     nextStep();
@@ -16,9 +15,11 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       return <div>Shadow Priest</div>;
     case "Holy Priest":
       return <div>Shadow Priest</div>;
-    case "Arcane Mage":
-      return <div>Arcane Mage</div>;
+    case values.classAndSpec.includes("Mage"):
+      return <div>Mage</div>;
+
     default:
+      console.log(values.classAndSpec.includes("Mage"));
       return (
         <div>
           <h1>TalentPoints</h1>

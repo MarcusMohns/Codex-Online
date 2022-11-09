@@ -29,7 +29,6 @@ const HitCapHelper = () => {
 
   const nextStep = () => {
     setStepState({ ...stepState, step: step + 1 });
-    console.log(stepState);
   };
 
   const handleChange = (input) => (e) => {
@@ -94,7 +93,6 @@ const HitCapHelper = () => {
       );
     // never forget the default case, otherwise VS code would be mad!
     default:
-      console.log(step);
     // do nothing
   }
 };
