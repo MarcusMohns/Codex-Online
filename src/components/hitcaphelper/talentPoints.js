@@ -14,12 +14,13 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Shadow Priest":
       return <div>Shadow Priest</div>;
     case "Holy Priest":
-      return <div>Shadow Priest</div>;
-    case values.classAndSpec.includes("Mage"):
+      return <div>Holy Priest</div>;
+    case "Arcane Mage":
+    case "Frost Mage":
+    case "Fire Mage":
       return <div>Mage</div>;
 
     default:
-      console.log(values.classAndSpec.includes("Mage"));
       return (
         <div>
           <h1>TalentPoints</h1>
