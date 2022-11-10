@@ -19,6 +19,10 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Frost Mage":
     case "Fire Mage":
       return <div>Mage</div>;
+    case "Survival Hunter":
+    case "Marksman Hunter":
+    case "Beastmastery Hunter":
+      return <div>Hunter</div>;
 
     default:
       return (
