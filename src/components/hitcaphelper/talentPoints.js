@@ -15,6 +15,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       return <div>Shadow Priest</div>;
     case "Holy Priest":
       return <div>Holy Priest</div>;
+    case "Discipline Priest":
+      return <div>Discipline Priest</div>;
     case "Arcane Mage":
     case "Frost Mage":
     case "Fire Mage":
@@ -22,6 +24,15 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Survival Hunter":
     case "Marksman Hunter":
     case "Beastmastery Hunter":
+      return <div>Hunter</div>;
+
+    case "Elemental Shaman":
+      return <div>Hunter</div>;
+
+    case "Enhancement Shaman":
+      return <div>Hunter</div>;
+
+    case "Restoration Shaman":
       return <div>Hunter</div>;
 
     default:
