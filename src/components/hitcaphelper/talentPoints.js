@@ -27,13 +27,13 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       return <div>Hunter</div>;
 
     case "Elemental Shaman":
-      return <div>Hunter</div>;
+      return <div>Elemental Shaman</div>;
 
     case "Enhancement Shaman":
-      return <div>Hunter</div>;
+      return <div>Enhancement Shaman</div>;
 
     case "Restoration Shaman":
-      return <div>Hunter</div>;
+      return <div>Restoration Shaman</div>;
 
     default:
       return (
