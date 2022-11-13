@@ -34,6 +34,10 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
 
     case "Restoration Shaman":
       return <div>Restoration Shaman</div>;
+    case "Assassination Rogue":
+    case "Subtlety Rogue":
+    case "Combat Rogue":
+      return <div>Rogue</div>;
 
     default:
       return (
