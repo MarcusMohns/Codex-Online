@@ -11,34 +11,55 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   };
 
   switch (values.classAndSpec) {
-    case "Shadow Priest":
-      return <div>Shadow Priest</div>;
-    case "Holy Priest":
-      return <div>Holy Priest</div>;
-    case "Discipline Priest":
-      return <div>Discipline Priest</div>;
-    case "Arcane Mage":
-    case "Frost Mage":
-    case "Fire Mage":
-      return <div>Mage</div>;
-    case "Survival Hunter":
-    case "Marksman Hunter":
-    case "Beastmastery Hunter":
-      return <div>Hunter</div>;
-    case "Elemental Shaman":
-      return <div>Elemental Shaman</div>;
-    case "Enhancement Shaman":
-      return <div>Enhancement Shaman</div>;
-    case "Restoration Shaman":
-      return <div>Restoration Shaman</div>;
-    case "Assassination Rogue":
-    case "Subtlety Rogue":
-    case "Combat Rogue":
-      return <div>Rogue</div>;
+    case "Blood Death Knight":
+    case "Unholy Death Knight":
+    case "Frost Death Knight":
+      return <div>Death Knight</div>;
+
     case "Balance Druid":
     case "Feral Druid":
     case "Restoration Druid":
       return <div>Druid</div>;
+
+    case "Beast Mastery Hunter":
+    case "Marksman Hunter":
+    case "Survival Hunter":
+      return <div>Hunter</div>;
+
+    case "Arcane Mage":
+    case "Fire Mage":
+    case "Frost Mage":
+      return <div>Mage</div>;
+
+    case "Holy Paladin":
+    case "Protection Paladin":
+    case "Retribution Paladin":
+      return <div>Paladin</div>;
+
+    case "Discipline Priest":
+    case "Holy Priest":
+    case "Shadow Priest":
+      return <div>Priest</div>;
+
+    case "Assassination Rogue":
+    case "Combat Rogue":
+    case "Subtlety Rogue":
+      return <div>Rogue</div>;
+
+    case "Elemental Shaman":
+    case "Enhancement Shaman":
+    case "Restoration Shaman":
+      return <div>Shaman</div>;
+
+    case "Arms Warrior":
+    case "Fury Warrior":
+    case "Protection Warrior":
+      return <div>Warrior</div>;
+
+    case "Affliction Warlock":
+    case "Demonology Warlock":
+    case "Destruction Warlock":
+      return <div>Warrior</div>;
 
     default:
       return (
