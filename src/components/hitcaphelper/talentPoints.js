@@ -14,32 +14,47 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Blood Death Knight":
     case "Unholy Death Knight":
     case "Frost Death Knight":
-      return <div>Death Knight</div>;
+      return <div>DK - Nerves of Cold Steel</div>;
 
     case "Balance Druid":
-    case "Feral Druid":
-    case "Restoration Druid":
-      return <div>Druid</div>;
+      // case "Feral Druid":
+      // case "Restoration Druid":
+      // Doesnt have hit talents (i think)^
+      return (
+        <div>
+          Druid
+          <div>Balance - Balance of Power (0/2) 2% hit per point (spells)</div>
+        </div>
+      );
 
     case "Beast Mastery Hunter":
     case "Marksman Hunter":
     case "Survival Hunter":
-      return <div>Hunter</div>;
+      return <div>Hunter - Focused Aim (0/3) 1% hit per point </div>;
 
     case "Arcane Mage":
     case "Fire Mage":
     case "Frost Mage":
-      return <div>Mage</div>;
+      return (
+        <div>
+          Mage - Arcane focus (0/3) 1% hit per point (spells){" "}
+          <div>Precision (0/3) 1% hit per point (spells)</div>
+        </div>
+      );
 
-    case "Holy Paladin":
-    case "Protection Paladin":
-    case "Retribution Paladin":
-      return <div>Paladin</div>;
+    // case "Holy Paladin":
+    // case "Protection Paladin":
+    // case "Retribution Paladin":
+    //   return <div>Paladin</div>;
+    // No talents for hit that i can see
 
-    case "Discipline Priest":
-    case "Holy Priest":
+    // case "Discipline Priest":
+    // case "Holy Priest":
+    // no hit talents i think
     case "Shadow Priest":
-      return <div>Priest</div>;
+      return (
+        <div>Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)</div>
+      );
 
     case "Assassination Rogue":
     case "Combat Rogue":
