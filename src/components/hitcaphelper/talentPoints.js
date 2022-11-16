@@ -59,22 +59,36 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Assassination Rogue":
     case "Combat Rogue":
     case "Subtlety Rogue":
-      return <div>Rogue</div>;
+      return <div>Rogue - Precision (0/5) - 1% hit poison and attacks</div>;
 
     case "Elemental Shaman":
     case "Enhancement Shaman":
     case "Restoration Shaman":
-      return <div>Shaman</div>;
+      return (
+        <div>
+          Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and
+          frost spells
+          <div>
+            Enhancement - Dual Wield Spec - (0/3) - 2% chance to hit with dual
+            wield
+          </div>
+        </div>
+      );
+    case "Affliction Warlock":
+    case "Demonology Warlock":
+    case "Destruction Warlock":
+      return (
+        <div>Warlock - Suppression (0/3) - 1% chance to hit with spells</div>
+      );
 
     case "Arms Warrior":
     case "Fury Warrior":
     case "Protection Warrior":
-      return <div>Warrior</div>;
-
-    case "Affliction Warlock":
-    case "Demonology Warlock":
-    case "Destruction Warlock":
-      return <div>Warrior</div>;
+      return (
+        <div>
+          Warrior - Precision (0/3) - 1% chance to hit with melee weapons
+        </div>
+      );
 
     default:
       return (
