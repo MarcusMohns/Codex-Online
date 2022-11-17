@@ -14,7 +14,9 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Blood Death Knight":
     case "Unholy Death Knight":
     case "Frost Death Knight":
-      return <div>DK - Nerves of Cold Steel</div>;
+      return (
+        <div>DK - Nerves of Cold Steel (0/3) 1% per point (dual wield)</div>
+      );
 
     case "Balance Druid":
       // case "Feral Druid":
