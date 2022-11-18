@@ -10,63 +10,59 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     prevStep();
   };
 
+  let content;
+
   switch (values.classAndSpec) {
     case "Blood Death Knight":
     case "Unholy Death Knight":
     case "Frost Death Knight":
-      return (
+      content = (
         <div>DK - Nerves of Cold Steel (0/3) 1% per point (dual wield)</div>
       );
+      break;
 
     case "Balance Druid":
-      // case "Feral Druid":
-      // case "Restoration Druid":
-      // Doesnt have hit talents (i think)^
-      return (
+      content = (
         <div>
           Druid
           <div>Balance - Balance of Power (0/2) 2% hit per point (spells)</div>
         </div>
       );
+      break;
 
     case "Beast Mastery Hunter":
     case "Marksman Hunter":
     case "Survival Hunter":
-      return <div>Hunter - Focused Aim (0/3) 1% hit per point </div>;
+      content = <div>Hunter - Focused Aim (0/3) 1% hit per point </div>;
+      break;
 
     case "Arcane Mage":
     case "Fire Mage":
     case "Frost Mage":
-      return (
+      content = (
         <div>
           Mage - Arcane focus (0/3) 1% hit per point (spells){" "}
           <div>Precision (0/3) 1% hit per point (spells)</div>
         </div>
       );
+      break;
 
-    // case "Holy Paladin":
-    // case "Protection Paladin":
-    // case "Retribution Paladin":
-    //   return <div>Paladin</div>;
-    // No talents for hit that i can see
-
-    // case "Discipline Priest":
-    // case "Holy Priest":
-    // no hit talents i think
     case "Shadow Priest":
-      return (
+      content = (
         <div>Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)</div>
       );
+      break;
 
     case "Assassination Rogue":
     case "Combat Rogue":
     case "Subtlety Rogue":
-      return <div>Rogue - Precision (0/5) - 1% hit poison and attacks</div>;
+      content = <div>Rogue - Precision (0/5) - 1% hit poison and attacks</div>;
+      break;
 
     case "Elemental Shaman":
     case "Enhancement Shaman":
     case "Restoration Shaman":
-      return (
+      content = (
         <div>
           Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and
           frost spells
@@ -76,31 +72,36 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
           </div>
         </div>
       );
+      break;
+
     case "Affliction Warlock":
     case "Demonology Warlock":
     case "Destruction Warlock":
-      return (
+      content = (
         <div>Warlock - Suppression (0/3) - 1% chance to hit with spells</div>
       );
+      break;
 
     case "Arms Warrior":
     case "Fury Warrior":
     case "Protection Warrior":
-      return (
+      content = (
         <div>
           Warrior - Precision (0/3) - 1% chance to hit with melee weapons
         </div>
       );
-
+      break;
     default:
-      return (
-        <div>
-          <h1>TalentPoints</h1>
-          <input onClick={previous} type="button" value="previous" />
-          <input onClick={next} type="button" value="next" />
-        </div>
-      );
+      content = <div>No class picked</div>;
   }
+
+  return (
+    <div>
+      {content}
+      <input onClick={previous} type="button" value="previous" />
+      <input onClick={next} type="button" value="next" />
+    </div>
+  );
 };
 
 export default TalentPoints;
