@@ -24,8 +24,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Balance Druid":
       content = (
         <div>
-          Druid
-          <div>Balance - Balance of Power (0/2) 2% hit per point (spells)</div>
+          Druid Balance - Balance of Power (0/2) 2% hit per point (spells)
         </div>
       );
       break;
@@ -41,8 +40,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Frost Mage":
       content = (
         <div>
-          Mage - Arcane focus (0/3) 1% hit per point (spells){" "}
-          <div>Precision (0/3) 1% hit per point (spells)</div>
+          <p> Mage - Arcane focus (0/3) 1% hit per point (spells)</p>
+          <p>Precision (0/3) 1% hit per point (spells)</p>
         </div>
       );
       break;
@@ -64,12 +63,14 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Restoration Shaman":
       content = (
         <div>
-          Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and
-          frost spells
-          <div>
+          <p>
+            Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and
+            frost spells
+          </p>
+          <p>
             Enhancement - Dual Wield Spec - (0/3) - 2% chance to hit with dual
             wield
-          </div>
+          </p>
         </div>
       );
       break;
