@@ -11,6 +11,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   };
 
   let content;
+  let value = 0;
 
   switch (values.classAndSpec) {
     case "Blood Death Knight":
