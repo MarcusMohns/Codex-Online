@@ -1,4 +1,5 @@
 import React from "react";
+import Talent from "./components/Talent";
 
 const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {
@@ -18,85 +19,94 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Unholy Death Knight":
     case "Frost Death Knight":
       content = (
-        <div>DK - Nerves of Cold Steel (0/3) 1% per point (dual wield)</div>
+        <Talent text="Nerves of Cold Steel" image="" />
+        // DK - Nerves of Cold Steel (0/3) 1% per point (dual wield)
       );
       break;
 
     case "Balance Druid":
       content = (
-        <div>
-          Druid Balance - Balance of Power (0/2) 2% hit per point (spells)
-        </div>
+        <Talent text="Balance of Power" image="" />
+        // Druid Balance - Balance of Power (0/2) 2% hit per point (spells)
       );
       break;
 
     case "Beast Mastery Hunter":
     case "Marksman Hunter":
     case "Survival Hunter":
-      content = <div>Hunter - Focused Aim (0/3) 1% hit per point </div>;
+      <Talent text="Focused Aim" image="" />;
       break;
+    // content = <div>Hunter - Focused Aim (0/3) 1% hit per point </div>;
 
     case "Arcane Mage":
     case "Fire Mage":
     case "Frost Mage":
       content = (
         <div>
-          <p> Mage - Arcane focus (0/3) 1% hit per point (spells)</p>
-          <p>Precision (0/3) 1% hit per point (spells)</p>
+          <Talent text="Arcane Focus" image="" />
+          <Talent text="Precision" image="" />
         </div>
       );
+      // <div>
+      //   <p> Mage - Arcane focus (0/3) 1% hit per point (spells)</p>
+      //   <p>Precision (0/3) 1% hit per point (spells)</p>
+      // </div>
       break;
 
     case "Shadow Priest":
-      content = (
-        <div>Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)</div>
-      );
+      content = <Talent text="Shadow Focus" image="" />;
+      // <div>Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)</div>
       break;
 
     case "Assassination Rogue":
     case "Combat Rogue":
     case "Subtlety Rogue":
-      content = <div>Rogue - Precision (0/5) - 1% hit poison and attacks</div>;
+      content = <Talent text="Precision" image="" />;
       break;
+    // content = <div>Rogue - Precision (0/5) - 1% hit poison and attacks</div>;
 
     case "Elemental Shaman":
     case "Enhancement Shaman":
     case "Restoration Shaman":
       content = (
         <div>
-          <p>
-            Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and
-            frost spells
-          </p>
-          <p>
-            Enhancement - Dual Wield Spec - (0/3) - 2% chance to hit with dual
-            wield
-          </p>
+          <Talent text="Elemental Precision" image="" />
+          <Talent text="Dual Wield Specialization" image="" />
         </div>
       );
+      // <div>
+      //   <p>
+      //     Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and
+      //     frost spells
+      //   </p>
+      //   <p>
+      //     Enhancement - Dual Wield Spec - (0/3) - 2% chance to hit with dual
+      //     wield
+      //   </p>
+      // </div>
       break;
 
     case "Affliction Warlock":
     case "Demonology Warlock":
     case "Destruction Warlock":
-      content = (
-        <div>Warlock - Suppression (0/3) - 1% chance to hit with spells</div>
-      );
+      content = <Talent text="Suppression" image="" />;
       break;
+    // content = (
+    //   <div>Warlock - Suppression (0/3) - 1% chance to hit with spells</div>
+    // );
 
     case "Arms Warrior":
     case "Fury Warrior":
     case "Protection Warrior":
-      content = (
-        <div>
-          Warrior - Precision (0/3) - 1% chance to hit with melee weapons
-        </div>
-      );
+      content = content = <Talent text="Precision" image="" />;
+      // <div>
+      //   Warrior - Precision (0/3) - 1% chance to hit with melee weapons
+      // </div>
       break;
     default:
       content = <div>No class picked</div>;
   }
-
+  console.log(content);
   return (
     <div>
       {content}
@@ -105,5 +115,4 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     </div>
   );
 };
-
 export default TalentPoints;
