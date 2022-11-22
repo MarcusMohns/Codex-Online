@@ -36,7 +36,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Survival Hunter":
       <Talent text="Focused Aim" image="" />;
       break;
-    // content = <div>Hunter - Focused Aim (0/3) 1% hit per point </div>;
+    // Hunter - Focused Aim (0/3) 1% hit per point;
 
     case "Arcane Mage":
     case "Fire Mage":
@@ -47,10 +47,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
           <Talent text="Precision" image="" />
         </div>
       );
-      // <div>
       //   <p> Mage - Arcane focus (0/3) 1% hit per point (spells)</p>
       //   <p>Precision (0/3) 1% hit per point (spells)</p>
-      // </div>
       break;
 
     case "Shadow Priest":
@@ -63,7 +61,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Subtlety Rogue":
       content = <Talent text="Precision" image="" />;
       break;
-    // content = <div>Rogue - Precision (0/5) - 1% hit poison and attacks</div>;
+    // Rogue - Precision (0/5) - 1% hit poison and attacks;
 
     case "Elemental Shaman":
     case "Enhancement Shaman":
