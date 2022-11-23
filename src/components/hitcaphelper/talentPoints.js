@@ -53,7 +53,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
 
     case "Shadow Priest":
       content = <Talent text="Shadow Focus" image="" />;
-      // <div>Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)</div>
+      // Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)
       break;
 
     case "Assassination Rogue":
@@ -72,16 +72,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
           <Talent text="Dual Wield Specialization" image="" />
         </div>
       );
-      // <div>
-      //   <p>
-      //     Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and
-      //     frost spells
-      //   </p>
-      //   <p>
-      //     Enhancement - Dual Wield Spec - (0/3) - 2% chance to hit with dual
-      //     wield
-      //   </p>
-      // </div>
+      //     Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and frost spells
+      //     Enhancement - Dual Wield Spec - (0/3) - 2% chance to hit with dual wield
       break;
 
     case "Affliction Warlock":
@@ -89,17 +81,13 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Destruction Warlock":
       content = <Talent text="Suppression" image="" />;
       break;
-    // content = (
-    //   <div>Warlock - Suppression (0/3) - 1% chance to hit with spells</div>
-    // );
+    //  Warlock - Suppression (0/3) - 1% chance to hit with spells
 
     case "Arms Warrior":
     case "Fury Warrior":
     case "Protection Warrior":
       content = content = <Talent text="Precision" image="" />;
-      // <div>
       //   Warrior - Precision (0/3) - 1% chance to hit with melee weapons
-      // </div>
       break;
     default:
       content = <div>No class picked</div>;
