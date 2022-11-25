@@ -43,8 +43,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Frost Mage":
       content = (
         <div>
-          <Talent text="Arcane Focus" image="" />
-          <Talent text="Precision" image="" />
+          <Talent text="Arcane Focus" image="" max="3" />
+          <Talent text="Precision" image="" max="3" />
         </div>
       );
       //   <p> Mage - Arcane focus (0/3) 1% hit per point (spells)</p>
@@ -52,14 +52,14 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       break;
 
     case "Shadow Priest":
-      content = <Talent text="Shadow Focus" image="" />;
+      content = <Talent text="Shadow Focus" image="" max="3" />;
       // Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)
       break;
 
     case "Assassination Rogue":
     case "Combat Rogue":
     case "Subtlety Rogue":
-      content = <Talent text="Precision" image="" />;
+      content = <Talent text="Precision" image="" max="5" />;
       break;
     // Rogue - Precision (0/5) - 1% hit poison and attacks;
 
@@ -68,8 +68,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Restoration Shaman":
       content = (
         <div>
-          <Talent text="Elemental Precision" image="" />
-          <Talent text="Dual Wield Specialization" image="" />
+          <Talent text="Elemental Precision" image="" max="3" />
+          <Talent text="Dual Wield Specialization" image="" max="3" />
         </div>
       );
       //     Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and frost spells
@@ -79,14 +79,14 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Affliction Warlock":
     case "Demonology Warlock":
     case "Destruction Warlock":
-      content = <Talent text="Suppression" image="" />;
+      content = <Talent text="Suppression" image="" max="3" />;
       break;
     //  Warlock - Suppression (0/3) - 1% chance to hit with spells
 
     case "Arms Warrior":
     case "Fury Warrior":
     case "Protection Warrior":
-      content = content = <Talent text="Precision" image="" />;
+      content = content = <Talent text="Precision" image="" max="3" />;
       //   Warrior - Precision (0/3) - 1% chance to hit with melee weapons
       break;
     default:

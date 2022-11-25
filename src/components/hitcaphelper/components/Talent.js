@@ -9,11 +9,13 @@ const StyledTalent = styled.div`
   cursor: pointer;
 `;
 
-const Talent = ({ image, text }) => {
+const Talent = ({ image, text, max }) => {
   return (
     <StyledTalent>
       {image}
-      {text}
+
+      <label for={text}>{text}:</label>
+      <input type="number" id={text} name={text} min="1" max={max}></input>
     </StyledTalent>
   );
 };
