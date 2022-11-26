@@ -1,6 +1,7 @@
 import React from "react";
 
 const Result = ({ prevStep, handleChange, values }) => {
+  console.log(values);
   const previous = (e) => {
     e.preventDefault();
     prevStep();

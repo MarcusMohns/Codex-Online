@@ -33,6 +33,7 @@ const HitCapHelper = () => {
 
   const handleChange = (input) => (e) => {
     setStepState({ ...stepState, [input]: e.target.value });
+    console.log(values);
   };
 
   switch (step) {
