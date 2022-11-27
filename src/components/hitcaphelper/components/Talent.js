@@ -22,7 +22,7 @@ const Talent = ({ image, text, max, handleChange, talentPoints }) => {
         max={max}
         step="1"
       ></input>
-      <span>{talentPoints}</span>
+      <span>{talentPoints ? talentPoints : 0}</span>
     </StyledTalent>
   );
 };
