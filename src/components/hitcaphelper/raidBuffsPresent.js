@@ -1,9 +1,15 @@
 import React from "react";
 
-const RaidBuffsPresent = ({ nextStep, prevStep, handleChange, values }) => {
+const RaidBuffsPresent = ({
+  nextStep,
+  prevStep,
+  handleChange,
+  values,
+  hitTalentClasses,
+}) => {
   const next = (e) => {
     e.preventDefault();
-    nextStep();
+    hitTalentClasses.includes(values.classAndSpec) ? nextStep() : nextStep(2);
   };
   const previous = (e) => {
     e.preventDefault();

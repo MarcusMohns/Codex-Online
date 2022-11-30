@@ -1,10 +1,9 @@
 import React from "react";
 
-const Result = ({ prevStep, values }) => {
-  console.log(values);
+const Result = ({ prevStep, values, hitTalentClasses }) => {
   const previous = (e) => {
     e.preventDefault();
-    prevStep();
+    hitTalentClasses.includes(values.classAndSpec) ? prevStep() : prevStep(2);
   };
   const ourValues = Object.entries(values).map(([key, value]) => {
     return <div key={key}>{value}</div>;

@@ -159,8 +159,9 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       //   Warrior - Precision (0/3) - 1% chance to hit with melee weapons
       break;
     default:
-      content = <div>No class picked</div>;
+      content = 0;
   }
+
   return (
     <div>
       {content}

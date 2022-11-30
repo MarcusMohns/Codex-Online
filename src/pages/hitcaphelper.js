@@ -23,18 +23,48 @@ const HitCapHelper = () => {
   const { pveOrPvp, classAndSpec, talentPoints, raidBuffsPresent } = stepState;
   const values = { pveOrPvp, classAndSpec, talentPoints, raidBuffsPresent };
 
-  const prevStep = () => {
-    setStepState({ ...stepState, step: step - 1 });
+  const prevStep = (numOfSteps) => {
+    numOfSteps
+      ? setStepState({ ...stepState, step: step - numOfSteps })
+      : setStepState({ ...stepState, step: step - 1 });
   };
 
-  const nextStep = () => {
-    setStepState({ ...stepState, step: step + 1 });
+  const nextStep = (numOfSteps) => {
+    numOfSteps
+      ? setStepState({ ...stepState, step: step + numOfSteps })
+      : setStepState({ ...stepState, step: step + 1 });
   };
 
   const handleChange = (input) => (e) => {
     setStepState({ ...stepState, [input]: e.target.value });
     console.log(values);
   };
+
+  const hitTalentClasses = [
+    "Blood Death Knight",
+    "Unholy Death Knight",
+    "Frost Death Knight",
+    "Enhancement Shaman",
+    "Balance Druid",
+    "Elemental Shaman",
+    "Restoration Shaman",
+    "Beast Mastery Hunter",
+    "Marksman Hunter",
+    "Survival Hunter",
+    "Arcane Mage",
+    "Fire Mage",
+    "Frost Mage",
+    "Assassination Rogue",
+    "Combat Rogue",
+    "Subtlety Rogue",
+    "Shadow Priest",
+    "Affliction Warlock",
+    "Demonology Warlock",
+    "Destruction Warlock",
+    "Arms Warrior",
+    "Fury Warrior",
+    "Protection Warrior",
+  ];
 
   switch (step) {
     case 1:
@@ -67,6 +97,7 @@ const HitCapHelper = () => {
             nextStep={nextStep}
             handleChange={handleChange}
             values={values}
+            hitTalentClasses={hitTalentClasses}
           />
         </Main>
       );
@@ -89,10 +120,10 @@ const HitCapHelper = () => {
             nextStep={nextStep}
             handleChange={handleChange}
             values={values}
+            hitTalentClasses={hitTalentClasses}
           />
         </Main>
       );
-    // never forget the default case, otherwise VS code would be mad!
     default:
     // do nothing
   }
