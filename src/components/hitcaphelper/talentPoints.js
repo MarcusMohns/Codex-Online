@@ -22,6 +22,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         <Talent
           text="Nerves of Cold Steel"
           image=""
+          max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
         />
@@ -34,6 +35,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         <Talent
           text="Balance of Power"
           image=""
+          max="2"
           handleChange={handleChange}
           talentPoints={talentPoints}
         />
@@ -47,6 +49,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       <Talent
         text="Focused Aim"
         image=""
+        max="3"
         handleChange={handleChange}
         talentPoints={talentPoints}
       />;
