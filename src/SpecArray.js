@@ -483,7 +483,7 @@ const SpecArray = [
   },
   {
     text: "Arcane Mage",
-    image: "images/Arcane_Intellect.png",
+    image: "images/Arcane_Mage.webp",
     color: COLORS.mage,
     role: "dps",
     name: "",
@@ -711,7 +711,7 @@ const SpecArray = [
   },
   {
     text: "Protection Paladin",
-    image: "images/Devotion_Aura.png",
+    image: "images/Protection_Paladin.webp",
     color: COLORS.paladin,
     role: "tank",
     name: "",
@@ -951,7 +951,7 @@ const SpecArray = [
   },
   {
     text: "Discipline Priest",
-    image: "images/Power_Word_Fortitude.png",
+    image: "images/Discipline_Priest.webp",
     color: COLORS.priest,
     role: "healer",
     name: "",
@@ -1599,7 +1599,7 @@ const SpecArray = [
   },
   {
     text: "Arms Warrior",
-    image: "images/Mortal_Strike.png",
+    image: "images/Arms_Warrior.webp",
     color: COLORS.warrior,
     role: "dps",
     name: "",
