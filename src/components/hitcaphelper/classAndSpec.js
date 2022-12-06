@@ -54,6 +54,11 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
       <div className="radio-input-container">
         {renderRadioButtons(SpecArray)}
       </div>
+      {values.classAndSpec ? (
+        <div>{values.classAndSpec}</div>
+      ) : (
+        <div>None selected</div>
+      )}
       <input onClick={next} type="button" value="Next" />
     </>
   );
