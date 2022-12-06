@@ -29,7 +29,7 @@ const StyledRadioBtn = ({ text, image, name, handleChange }) => {
     <RadioBtn htmlFor={text} className="input-radio-and-image">
       <input
         type="radio"
-        onChange={handleChange({ name })}
+        onChange={handleChange(name)}
         id={text}
         name={name}
         value={text}
