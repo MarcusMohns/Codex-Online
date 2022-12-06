@@ -9,7 +9,13 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
 
   const renderRadioButtons = (specs) => {
     return specs.map((spec) => (
-      <StyledRadioBtn spec={spec} handleChange={handleChange} key={spec.text} />
+      <StyledRadioBtn
+        text={spec.text}
+        image={spec.image}
+        name="classAndSpec"
+        handleChange={handleChange}
+        key={spec.text}
+      />
     ));
   };
 

@@ -24,17 +24,17 @@ const RadioBtn = styled.label`
   }
 `;
 
-const StyledRadioBtn = ({ spec, handleChange }) => {
+const StyledRadioBtn = ({ text, image, name, handleChange }) => {
   return (
-    <RadioBtn htmlFor={spec.text} className="input-radio-and-image">
+    <RadioBtn htmlFor={text} className="input-radio-and-image">
       <input
         type="radio"
-        onChange={handleChange("classAndSpec")}
-        id={spec.text}
-        name="classAndSpec"
-        value={spec.text}
+        onChange={handleChange({ name })}
+        id={text}
+        name={name}
+        value={text}
       />
-      <img src={spec.image} alt="spec" />
+      <img src={image} alt="spec" />
     </RadioBtn>
   );
 };
