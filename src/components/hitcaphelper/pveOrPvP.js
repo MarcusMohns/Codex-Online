@@ -17,14 +17,14 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
       <h1>Pvp or Pve?</h1>
       <StyledRadioBtn
         text={"pvp"}
-        image={"image"}
-        name="pveOrPvp"
+        image={"images/Greater_Blessing_Of_Wisdom.png"}
+        name="pveOrpvp"
         handleChange={handleChange}
       />
       pvp
       <StyledRadioBtn
         text={"pve"}
-        image={"image"}
+        image={"images/Greater_Blessing_Of_Might.png"}
         name="pveOrpvp"
         handleChange={handleChange}
       />
