@@ -1,5 +1,5 @@
 import React from "react";
-import StyledRadioBtn from "./components/StyledRadioBtn";
+import StyledInputBtn from "./components/StyledInputBtn";
 
 const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
   const next = (e) => {
@@ -9,12 +9,13 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
 
   const renderRadioButtons = (specs) => {
     return specs.map((spec) => (
-      <StyledRadioBtn
+      <StyledInputBtn
         text={spec.text}
         image={spec.image}
         name="classAndSpec"
         handleChange={handleChange}
         key={spec.text}
+        type={"radio"}
       />
     ));
   };

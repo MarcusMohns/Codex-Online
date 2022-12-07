@@ -1,4 +1,5 @@
 import React from "react";
+import StyledInputBtn from "./components/StyledInputBtn";
 
 const RaidBuffsPresent = ({
   nextStep,
@@ -19,28 +20,21 @@ const RaidBuffsPresent = ({
   return (
     <div>
       <h1>Raidbuffs availible?</h1>
-      <label htmlFor={"sp-hit-buff"} key={"sp-hit-buff"}>
-        <input
-          type="radio"
-          onChange={handleChange("raidBuffsPresent")}
-          id={"sp-hit-buff"}
-          name="raidBuffsPresent"
-          value={"sp-hit-buff"}
-        />
-        Shadow Priest?
-        {/* <img src={spec.image} alt="spec" /> */}
-      </label>
-      <label htmlFor={"boomy-hit-buff"} key={"boomy-hit-buff"}>
-        <input
-          type="radio"
-          onChange={handleChange("raidBuffsPresent")}
-          id={"boomy-hit-buff"}
-          name="raidBuffsPresent"
-          value={"boomy-hit-buff"}
-        />
-        {/* <img src={spec.image} alt="spec" /> */}
-        Boomkin?
-      </label>
+      <StyledInputBtn
+        text={"sp-hit-buff"}
+        image={"images/Shadow_Priest.webp"}
+        name="raidBuffsPresent"
+        handleChange={handleChange}
+        type={"checkbox"}
+      />
+      <StyledInputBtn
+        text={"boomy-hit-buff"}
+        image={"images/Balance_Druid.webp"}
+        name="raidBuffsPresent"
+        handleChange={handleChange}
+        type={"checkbox"}
+      />
+
       <input onClick={previous} type="button" value="previous" />
       <input onClick={next} type="button" value="next" />
     </div>

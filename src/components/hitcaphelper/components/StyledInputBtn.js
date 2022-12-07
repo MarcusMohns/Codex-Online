@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const RadioBtn = styled.label`
-  input[type="radio"] {
+const InputBtn = styled.label`
+  input {
     display: none;
 
     &:checked {
@@ -24,18 +24,18 @@ const RadioBtn = styled.label`
   }
 `;
 
-const StyledRadioBtn = ({ text, image, name, handleChange }) => {
+const StyledRadioBtn = ({ text, image, name, handleChange, type }) => {
   return (
-    <RadioBtn htmlFor={text} className="input-radio-and-image">
+    <InputBtn htmlFor={text} className="input-radio-and-image">
       <input
-        type="radio"
+        type={type}
         onChange={handleChange(name)}
         id={text}
         name={name}
         value={text}
       />
       <img src={image} alt="spec" />
-    </RadioBtn>
+    </InputBtn>
   );
 };
 
