@@ -23,14 +23,14 @@ const RaidBuffsPresent = ({
       <StyledInputBtn
         text={"sp-hit-buff"}
         image={"images/Shadow_Priest.webp"}
-        name="raidBuffsPresent"
+        name="spBuff"
         handleChange={handleChange}
         type={"checkbox"}
       />
       <StyledInputBtn
         text={"boomy-hit-buff"}
         image={"images/Balance_Druid.webp"}
-        name="raidBuffsPresent"
+        name="boomyBuff"
         handleChange={handleChange}
         type={"checkbox"}
       />
