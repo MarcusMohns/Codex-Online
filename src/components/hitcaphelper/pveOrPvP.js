@@ -18,7 +18,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
       <StyledInputBtn
         text={"pvp"}
         image={"images/Greater_Blessing_Of_Wisdom.png"}
-        name="pveOrpvp"
+        name="pveOrPvp"
         handleChange={handleChange}
         type={"radio"}
       />
@@ -26,7 +26,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
       <StyledInputBtn
         text={"pve"}
         image={"images/Greater_Blessing_Of_Might.png"}
-        name="pveOrpvp"
+        name="pveOrPvp"
         handleChange={handleChange}
         type={"radio"}
       />
