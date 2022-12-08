@@ -1,5 +1,6 @@
 import React from "react";
 import StyledInputBtn from "./components/StyledInputBtn";
+import RadioContainer from "./components/RadioContainer";
 
 const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {
@@ -13,8 +14,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   };
 
   return (
-    <div>
-      <h1>Pvp or Pve?</h1>
+    <RadioContainer>
       <StyledInputBtn
         text={"pvp"}
         image={"images/pvp.webp"}
@@ -22,7 +22,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
         handleChange={handleChange}
         type={"radio"}
       />
-      pvp
+
       <StyledInputBtn
         text={"pve"}
         image={"images/pve.webp"}
@@ -30,10 +30,10 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
         handleChange={handleChange}
         type={"radio"}
       />
-      pve
+
       <input onClick={previous} type="button" value="previous" />
       <input onClick={next} type="button" value="next" />
-    </div>
+    </RadioContainer>
   );
 };
 
