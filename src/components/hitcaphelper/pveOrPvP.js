@@ -14,26 +14,28 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   };
 
   return (
-    <RadioContainer>
-      <StyledInputBtn
-        text={"pvp"}
-        image={"images/pvp.webp"}
-        name="pveOrPvp"
-        handleChange={handleChange}
-        type={"radio"}
-      />
+    <div>
+      <RadioContainer>
+        <StyledInputBtn
+          text={"pvp"}
+          image={"images/pvp.webp"}
+          name="pveOrPvp"
+          handleChange={handleChange}
+          type={"radio"}
+        />
 
-      <StyledInputBtn
-        text={"pve"}
-        image={"images/pve.webp"}
-        name="pveOrPvp"
-        handleChange={handleChange}
-        type={"radio"}
-      />
+        <StyledInputBtn
+          text={"pve"}
+          image={"images/pve.webp"}
+          name="pveOrPvp"
+          handleChange={handleChange}
+          type={"radio"}
+        />
+      </RadioContainer>
 
       <input onClick={previous} type="button" value="previous" />
       <input onClick={next} type="button" value="next" />
-    </RadioContainer>
+    </div>
   );
 };
 
