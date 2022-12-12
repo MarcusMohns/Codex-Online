@@ -7,7 +7,6 @@ const InputBtn = styled.label`
 
     &:checked {
       ~ img {
-        border: 2px solid grey;
         transform: scale(1.1);
         opacity: 1;
       }
@@ -15,7 +14,7 @@ const InputBtn = styled.label`
   }
 
   img {
-    opacity: 60%;
+    opacity: 50%;
     border: 2px solid transparent;
     border-radius: 15px;
     &:hover {
