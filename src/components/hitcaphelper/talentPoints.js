@@ -1,5 +1,6 @@
 import React from "react";
 import Talent from "./components/Talent";
+import StyledNextPrevButton from "./components/StyledNextPrevButton";
 
 const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {
@@ -46,13 +47,15 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
     case "Beast Mastery Hunter":
     case "Marksman Hunter":
     case "Survival Hunter":
-      <Talent
-        text="Focused Aim"
-        image=""
-        max="3"
-        handleChange={handleChange}
-        talentPoints={talentPoints}
-      />;
+      content = (
+        <Talent
+          text="Focused Aim"
+          image=""
+          max="5"
+          handleChange={handleChange}
+          talentPoints={talentPoints}
+        />
+      );
       break;
     // Hunter - Focused Aim (0/3) 1% hit per point;
 
@@ -168,8 +171,12 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   return (
     <div>
       {content}
-      <input onClick={previous} type="button" value="previous" />
-      <input onClick={next} type="button" value="next" />
+      <StyledNextPrevButton onClick={previous}>
+        Previous<span id="previous-arrow">←</span>
+      </StyledNextPrevButton>
+      <StyledNextPrevButton onClick={next}>
+        Next <span id="next-arrow">→</span>
+      </StyledNextPrevButton>
     </div>
   );
 };
