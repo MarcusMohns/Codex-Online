@@ -1,6 +1,7 @@
 import React from "react";
 import RadioContainer from "./components/RadioContainer";
 import StyledInputBtn from "./components/StyledInputBtn";
+import StyledNextPrevButton from "./components/StyledNextPrevButton";
 
 const RaidBuffsPresent = ({
   nextStep,
@@ -37,8 +38,12 @@ const RaidBuffsPresent = ({
           type={"checkbox"}
         />
       </RadioContainer>
-      <input onClick={previous} type="button" value="previous" />
-      <input onClick={next} type="button" value="next" />
+      <StyledNextPrevButton onClick={previous}>
+        Previous<span id="previous-arrow">←</span>
+      </StyledNextPrevButton>
+      <StyledNextPrevButton onClick={next}>
+        Next <span id="next-arrow">→</span>
+      </StyledNextPrevButton>
     </div>
   );
 };

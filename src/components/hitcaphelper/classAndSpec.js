@@ -1,5 +1,6 @@
 import React from "react";
 import StyledInputBtn from "./components/StyledInputBtn";
+import StyledNextPrevButton from "./components/StyledNextPrevButton";
 
 const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
   const next = (e) => {
@@ -30,7 +31,10 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
       ) : (
         <div>None selected</div>
       )}
-      <input onClick={next} type="button" value="Next" />
+
+      <StyledNextPrevButton onClick={next}>
+        Next <span id="next-arrow">→</span>
+      </StyledNextPrevButton>
     </>
   );
 };

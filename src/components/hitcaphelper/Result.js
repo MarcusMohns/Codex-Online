@@ -1,4 +1,5 @@
 import React from "react";
+import StyledNextPrevButton from "./components/StyledNextPrevButton";
 
 const Result = ({ prevStep, values, hitTalentClasses }) => {
   const previous = (e) => {
@@ -13,7 +14,9 @@ const Result = ({ prevStep, values, hitTalentClasses }) => {
     <div>
       {ourValues}
       <h1>Result</h1>
-      <input onClick={previous} type="button" value="previous" />
+      <StyledNextPrevButton onClick={previous}>
+        Previous<span id="previous-arrow">←</span>
+      </StyledNextPrevButton>
     </div>
   );
 };
