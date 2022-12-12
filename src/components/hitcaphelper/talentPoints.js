@@ -1,6 +1,7 @@
 import React from "react";
 import Talent from "./components/Talent";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
+import { MainContentContainer } from "./components/ContentContainers";
 
 const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {
@@ -169,15 +170,17 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   }
 
   return (
-    <div>
+    <MainContentContainer>
       {content}
-      <StyledNextPrevButton onClick={previous}>
-        Previous<span id="previous-arrow">←</span>
-      </StyledNextPrevButton>
-      <StyledNextPrevButton onClick={next}>
-        Next <span id="next-arrow">→</span>
-      </StyledNextPrevButton>
-    </div>
+      <div>
+        <StyledNextPrevButton onClick={previous}>
+          Previous<span id="previous-arrow">←</span>
+        </StyledNextPrevButton>
+        <StyledNextPrevButton onClick={next}>
+          Next <span id="next-arrow">→</span>
+        </StyledNextPrevButton>
+      </div>
+    </MainContentContainer>
   );
 };
 export default TalentPoints;

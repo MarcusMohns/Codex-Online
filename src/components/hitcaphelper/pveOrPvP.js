@@ -1,7 +1,8 @@
 import React from "react";
 import StyledInputBtn from "./components/StyledInputBtn";
-import RadioContainer from "./components/RadioContainer";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
+import { RadioContainer } from "./components/ContentContainers";
+import { MainContentContainer } from "./components/ContentContainers";
 
 const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {
@@ -15,7 +16,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   };
 
   return (
-    <div>
+    <MainContentContainer>
       <RadioContainer>
         <StyledInputBtn
           text={"pvp"}
@@ -33,14 +34,15 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           type={"radio"}
         />
       </RadioContainer>
-
-      <StyledNextPrevButton onClick={previous}>
-        Previous<span id="previous-arrow">←</span>
-      </StyledNextPrevButton>
-      <StyledNextPrevButton onClick={next}>
-        Next <span id="next-arrow">→</span>
-      </StyledNextPrevButton>
-    </div>
+      <div>
+        <StyledNextPrevButton onClick={previous}>
+          Previous<span id="previous-arrow">←</span>
+        </StyledNextPrevButton>
+        <StyledNextPrevButton onClick={next}>
+          Next <span id="next-arrow">→</span>
+        </StyledNextPrevButton>
+      </div>
+    </MainContentContainer>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
-import RadioContainer from "./components/RadioContainer";
+import { RadioContainer } from "./components/ContentContainers";
+import { MainContentContainer } from "./components/ContentContainers";
 import StyledInputBtn from "./components/StyledInputBtn";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
 
@@ -20,7 +21,7 @@ const RaidBuffsPresent = ({
   };
 
   return (
-    <div>
+    <MainContentContainer>
       <h1>Raidbuffs availible?</h1>
       <RadioContainer>
         <StyledInputBtn
@@ -38,13 +39,15 @@ const RaidBuffsPresent = ({
           type={"checkbox"}
         />
       </RadioContainer>
-      <StyledNextPrevButton onClick={previous}>
-        Previous<span id="previous-arrow">←</span>
-      </StyledNextPrevButton>
-      <StyledNextPrevButton onClick={next}>
-        Next <span id="next-arrow">→</span>
-      </StyledNextPrevButton>
-    </div>
+      <div>
+        <StyledNextPrevButton onClick={previous}>
+          Previous<span id="previous-arrow">←</span>
+        </StyledNextPrevButton>
+        <StyledNextPrevButton onClick={next}>
+          Next <span id="next-arrow">→</span>
+        </StyledNextPrevButton>
+      </div>
+    </MainContentContainer>
   );
 };
 
