@@ -17,6 +17,7 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
         handleChange={handleChange}
         key={spec.text}
         type={"radio"}
+        checked={values.classAndSpec === spec.text ? true : false}
       />
     ));
   };

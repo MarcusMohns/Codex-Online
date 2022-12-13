@@ -24,6 +24,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           name="pveOrPvp"
           handleChange={handleChange}
           type={"radio"}
+          checked={values.pveOrPvp === "pvp" ? true : false}
         />
 
         <StyledInputBtn
@@ -32,6 +33,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           name="pveOrPvp"
           handleChange={handleChange}
           type={"radio"}
+          checked={values.pveOrPvp === "pve" ? true : false}
         />
       </RadioContainer>
       <div>
