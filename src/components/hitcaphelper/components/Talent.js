@@ -17,6 +17,7 @@ const Talent = ({ image, text, max, handleChange, talentPoints }) => {
       {text}
       <input
         type="range"
+        name="talent"
         onChange={handleChange("talentPoints")}
         min="0"
         max={max}

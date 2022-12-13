@@ -19,7 +19,6 @@ const RaidBuffsPresent = ({
     e.preventDefault();
     prevStep();
   };
-
   return (
     <MainContentContainer>
       <h1>Raidbuffs availible?</h1>
@@ -30,6 +29,7 @@ const RaidBuffsPresent = ({
           name="spBuff"
           handleChange={handleChange}
           type={"checkbox"}
+          checked={values.spBuff ? true : false}
         />
         <StyledInputBtn
           text={"boomy-hit-buff"}
@@ -37,6 +37,7 @@ const RaidBuffsPresent = ({
           name="boomyBuff"
           handleChange={handleChange}
           type={"checkbox"}
+          checked={values.boomyBuff ? true : false}
         />
       </RadioContainer>
       <div>
@@ -47,6 +48,13 @@ const RaidBuffsPresent = ({
           Next <span id="next-arrow">→</span>
         </StyledNextPrevButton>
       </div>
+
+      {values.boomyBuff ? (
+        <div>{values.boomyBuff}</div>
+      ) : (
+        <div>None selected</div>
+      )}
+      {values.spBuff ? <div>{values.spBuff}</div> : <div>None selected</div>}
     </MainContentContainer>
   );
 };

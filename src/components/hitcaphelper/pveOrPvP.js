@@ -42,6 +42,12 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           Next <span id="next-arrow">→</span>
         </StyledNextPrevButton>
       </div>
+
+      {values.pveOrPvp ? (
+        <div>{values.pveOrPvp}</div>
+      ) : (
+        <div>None selected</div>
+      )}
     </MainContentContainer>
   );
 };
