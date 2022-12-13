@@ -34,12 +34,16 @@ const HitCapHelper = () => {
     numOfSteps
       ? setStepState({ ...stepState, step: step + numOfSteps })
       : setStepState({ ...stepState, step: step + 1 });
-
-    console.log(stepState);
   };
 
   const handleChange = (input) => (e) => {
-    setStepState({ ...stepState, [input]: e.target.value });
+    if (e.target.type === "checkbox") {
+      e.target.checked
+        ? setStepState({ ...stepState, [input]: e.target.value })
+        : setStepState({ ...stepState, [input]: "" });
+    } else {
+      setStepState({ ...stepState, [input]: e.target.value });
+    }
   };
 
   const hitTalentClasses = [
