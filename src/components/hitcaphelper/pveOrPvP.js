@@ -18,23 +18,28 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   return (
     <MainContentContainer>
       <RadioContainer>
-        <StyledInputBtn
-          text={"pvp"}
-          image={"images/pvp.webp"}
-          name="pveOrPvp"
-          handleChange={handleChange}
-          type={"radio"}
-          checked={values.pveOrPvp === "pvp" ? true : false}
-        />
-
-        <StyledInputBtn
-          text={"pve"}
-          image={"images/pve.webp"}
-          name="pveOrPvp"
-          handleChange={handleChange}
-          type={"radio"}
-          checked={values.pveOrPvp === "pve" ? true : false}
-        />
+        <div className="pvp-or-pve-container">
+          PvP
+          <StyledInputBtn
+            text={"pvp"}
+            image={"images/pvp.webp"}
+            name="pveOrPvp"
+            handleChange={handleChange}
+            type={"radio"}
+            checked={values.pveOrPvp === "pvp" ? true : false}
+          />
+        </div>
+        <div className="pvp-or-pve-container">
+          PvE
+          <StyledInputBtn
+            text={"pve"}
+            image={"images/pve.webp"}
+            name="pveOrPvp"
+            handleChange={handleChange}
+            type={"radio"}
+            checked={values.pveOrPvp === "pve" ? true : false}
+          />
+        </div>
       </RadioContainer>
       <div>
         <StyledNextPrevButton onClick={previous}>
@@ -46,7 +51,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
       </div>
 
       {values.pveOrPvp ? (
-        <div>{values.pveOrPvp}</div>
+        <div>Selected: {values.pveOrPvp}</div>
       ) : (
         <div>None selected</div>
       )}
