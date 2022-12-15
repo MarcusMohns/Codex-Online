@@ -19,7 +19,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
     <MainContentContainer>
       <RadioContainer>
         <div className="pvp-or-pve-container">
-          PvP
+          <label> PvP</label>
           <StyledInputBtn
             text={"pvp"}
             image={"images/pvp.webp"}
@@ -30,7 +30,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           />
         </div>
         <div className="pvp-or-pve-container">
-          PvE
+          <label> PvE</label>
           <StyledInputBtn
             text={"pve"}
             image={"images/pve.webp"}

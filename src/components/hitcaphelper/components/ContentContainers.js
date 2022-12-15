@@ -11,6 +11,13 @@ export const RadioContainer = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  .raidbuffs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const MainContentContainer = styled.div`

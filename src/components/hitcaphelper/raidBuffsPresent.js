@@ -23,22 +23,28 @@ const RaidBuffsPresent = ({
     <MainContentContainer>
       <h1>Raidbuffs availible?</h1>
       <RadioContainer>
-        <StyledInputBtn
-          text={"sp-hit-buff"}
-          image={"images/Shadow_Priest.webp"}
-          name="spBuff"
-          handleChange={handleChange}
-          type={"checkbox"}
-          checked={values.spBuff ? true : false}
-        />
-        <StyledInputBtn
-          text={"boomy-hit-buff"}
-          image={"images/Balance_Druid.webp"}
-          name="boomyBuff"
-          handleChange={handleChange}
-          type={"checkbox"}
-          checked={values.boomyBuff ? true : false}
-        />
+        <div className="raidbuffs-container">
+          <label> Shadow Priest</label>
+          <StyledInputBtn
+            text={"sp-hit-buff"}
+            image={"images/Shadow_Priest.webp"}
+            name="spBuff"
+            handleChange={handleChange}
+            type={"checkbox"}
+            checked={values.spBuff ? true : false}
+          />
+        </div>
+        <div className="raidbuffs-container">
+          <label> Boomkin </label>
+          <StyledInputBtn
+            text={"boomy-hit-buff"}
+            image={"images/Balance_Druid.webp"}
+            name="boomyBuff"
+            handleChange={handleChange}
+            type={"checkbox"}
+            checked={values.boomyBuff ? true : false}
+          />
+        </div>
       </RadioContainer>
       <div>
         <StyledNextPrevButton onClick={previous}>
