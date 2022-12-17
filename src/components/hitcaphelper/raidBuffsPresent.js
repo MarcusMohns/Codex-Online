@@ -1,10 +1,12 @@
 import React from "react";
-import { RadioContainer } from "./components/ContentContainers";
-import { MainContentContainer } from "./components/ContentContainers";
+import {
+  RadioContainer,
+  SmallContentContainer,
+  MainContentContainer,
+} from "./components/ContentContainers";
 import StyledInputBtn from "./components/StyledInputBtn";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
-import { CheckCircle } from "../styles/RaidAssembler.styled";
-import { CrossIcon } from "../styles/RaidAssembler.styled";
+import { CheckCircle, CrossIcon } from "../styles/RaidAssembler.styled";
 
 const RaidBuffsPresent = ({
   nextStep,
@@ -56,12 +58,18 @@ const RaidBuffsPresent = ({
           Next <span id="next-arrow">→</span>
         </StyledNextPrevButton>
       </div>
-      <p>
-        Shadow Priest Buff {values.spBuff ? <CheckCircle /> : <CrossIcon />}
-      </p>
-      <p>
-        Balance Druid Buff {values.boomyBuff ? <CheckCircle /> : <CrossIcon />}
-      </p>
+      <SmallContentContainer>
+        <span>
+          <span className="priest">Shadow Priest</span> Buff
+        </span>
+        {values.spBuff ? <CheckCircle /> : <CrossIcon />}
+      </SmallContentContainer>
+      <SmallContentContainer>
+        <span>
+          <span className="druid">Balance Druid</span> Buff
+        </span>
+        {values.boomyBuff ? <CheckCircle /> : <CrossIcon />}
+      </SmallContentContainer>
     </MainContentContainer>
   );
 };
