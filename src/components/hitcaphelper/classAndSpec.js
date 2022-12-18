@@ -1,6 +1,10 @@
 import React from "react";
 import StyledInputBtn from "./components/StyledInputBtn";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
+import {
+  MainContentContainer,
+  StyledCapHeader,
+} from "./components/ContentContainers";
 
 const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
   const next = (e) => {
@@ -23,7 +27,8 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
   };
 
   return (
-    <>
+    <MainContentContainer>
+      <StyledCapHeader>Select your class</StyledCapHeader>
       <div className="radio-input-container">
         {renderRadioButtons(SpecArray)}
       </div>
@@ -36,7 +41,7 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
       <StyledNextPrevButton onClick={next}>
         Next <span id="next-arrow">→</span>
       </StyledNextPrevButton>
-    </>
+    </MainContentContainer>
   );
 };
 

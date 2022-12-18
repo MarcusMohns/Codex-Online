@@ -50,3 +50,12 @@ export const SmallContentContainer = styled.div`
     margin-left: 5px;
   }
 `;
+
+export const StyledCapHeader = styled.h1`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  margin-bottom: 3rem;
+`;
