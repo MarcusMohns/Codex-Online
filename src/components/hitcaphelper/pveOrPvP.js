@@ -1,8 +1,11 @@
 import React from "react";
 import StyledInputBtn from "./components/StyledInputBtn";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
-import { RadioContainer } from "./components/ContentContainers";
-import { MainContentContainer } from "./components/ContentContainers";
+import {
+  MainContentContainer,
+  StyledCapHeader,
+  RadioContainer,
+} from "./components/ContentContainers";
 
 const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {
@@ -17,9 +20,10 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
 
   return (
     <MainContentContainer>
+      <StyledCapHeader>Are you intending to PvE or PvP?</StyledCapHeader>
       <RadioContainer>
         <div className="pvp-or-pve-container">
-          <label> PvP</label>
+          <label>PVP</label>
           <StyledInputBtn
             text={"pvp"}
             image={"images/pvp.webp"}
@@ -30,7 +34,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           />
         </div>
         <div className="pvp-or-pve-container">
-          <label> PvE</label>
+          <label>PVP</label>
           <StyledInputBtn
             text={"pve"}
             image={"images/pve.webp"}

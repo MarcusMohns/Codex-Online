@@ -3,6 +3,8 @@ import {
   RadioContainer,
   SmallContentContainer,
   MainContentContainer,
+  StyledCapHeader,
+  ButtonContainer,
 } from "./components/ContentContainers";
 import StyledInputBtn from "./components/StyledInputBtn";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
@@ -25,7 +27,9 @@ const RaidBuffsPresent = ({
   };
   return (
     <MainContentContainer>
-      <h1>Raidbuffs availible?</h1>
+      <StyledCapHeader>
+        Will you have a Shadow Priest and/or Balance druid in your party?{" "}
+      </StyledCapHeader>
       <RadioContainer>
         <div className="raidbuffs-container">
           <label> Shadow Priest</label>
@@ -50,14 +54,14 @@ const RaidBuffsPresent = ({
           />
         </div>
       </RadioContainer>
-      <div>
+      <ButtonContainer>
         <StyledNextPrevButton onClick={previous}>
           Previous<span id="previous-arrow">←</span>
         </StyledNextPrevButton>
         <StyledNextPrevButton onClick={next}>
           Next <span id="next-arrow">→</span>
         </StyledNextPrevButton>
-      </div>
+      </ButtonContainer>
       <SmallContentContainer>
         <span>
           <span className="priest">Shadow Priest</span> Buff

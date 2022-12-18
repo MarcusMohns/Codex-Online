@@ -11,6 +11,7 @@ export const Main = styled.main`
   font-size: 1rem;
   color: white;
   margin-top: 7%;
+  min-height: 60vh;
 
   .radio-input-container {
     display: grid;
