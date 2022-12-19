@@ -11,6 +11,8 @@ export const RadioContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0rem 1rem;
+    padding-top: 3rem;
   }
 
   .raidbuffs-container {
@@ -18,7 +20,7 @@ export const RadioContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
     padding-top: 3rem;
   }
 `;

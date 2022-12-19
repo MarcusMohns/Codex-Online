@@ -66,7 +66,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       content = (
         <div>
           <Talent
-            text="Arcane Focus/Precision"
+            text="Arcane Focus+Precision"
             image=""
             max="6"
             handleChange={handleChange}
