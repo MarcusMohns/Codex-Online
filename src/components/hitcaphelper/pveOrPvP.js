@@ -5,6 +5,7 @@ import {
   MainContentContainer,
   StyledCapHeader,
   RadioContainer,
+  SmallContentContainer,
 } from "./components/ContentContainers";
 
 const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
@@ -55,9 +56,11 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
       </div>
 
       {values.pveOrPvp ? (
-        <div>Selected: {values.pveOrPvp}</div>
+        <SmallContentContainer>
+          Selected: {values.pveOrPvp}
+        </SmallContentContainer>
       ) : (
-        <div>None selected</div>
+        <SmallContentContainer>None selected</SmallContentContainer>
       )}
     </MainContentContainer>
   );

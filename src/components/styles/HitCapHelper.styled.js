@@ -20,6 +20,7 @@ export const Main = styled.main`
     justify-content: center;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    padding-bottom: 1rem;
   }
 
   .input-radio-and-image {

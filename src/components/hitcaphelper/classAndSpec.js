@@ -4,6 +4,7 @@ import StyledNextPrevButton from "./components/StyledNextPrevButton";
 import {
   MainContentContainer,
   StyledCapHeader,
+  SmallContentContainer,
 } from "./components/ContentContainers";
 
 const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
@@ -33,9 +34,11 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
         {renderRadioButtons(SpecArray)}
       </div>
       {values.classAndSpec ? (
-        <div>{values.classAndSpec}</div>
+        <SmallContentContainer>
+          Selected: {values.classAndSpec}
+        </SmallContentContainer>
       ) : (
-        <div>None selected</div>
+        <SmallContentContainer>None selected</SmallContentContainer>
       )}
 
       <StyledNextPrevButton onClick={next}>
