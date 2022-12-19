@@ -4,7 +4,9 @@ import styled from "styled-components";
 const InputBtn = styled.label`
   input {
     display: none;
-
+    ~ img {
+      transition: transform 0.3s;
+    }
     &:checked {
       ~ img {
         transform: scale(1.1);
