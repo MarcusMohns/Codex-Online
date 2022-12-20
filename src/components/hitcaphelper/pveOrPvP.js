@@ -60,7 +60,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           Selected: {values.pveOrPvp}
         </SmallContentContainer>
       ) : (
-        <SmallContentContainer>None selected</SmallContentContainer>
+        <SmallContentContainer>Selected: None</SmallContentContainer>
       )}
     </MainContentContainer>
   );

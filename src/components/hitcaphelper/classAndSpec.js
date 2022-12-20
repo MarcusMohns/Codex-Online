@@ -38,7 +38,7 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
           Selected: {values.classAndSpec}
         </SmallContentContainer>
       ) : (
-        <SmallContentContainer>None selected</SmallContentContainer>
+        <SmallContentContainer>Selected: None</SmallContentContainer>
       )}
 
       <StyledNextPrevButton onClick={next}>
