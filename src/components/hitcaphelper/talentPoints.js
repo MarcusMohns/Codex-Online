@@ -23,7 +23,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       content = (
         <Talent
           text="Nerves of Cold Steel"
-          image=""
+          image="images/nerves_of_cold_steel.webp"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -36,7 +36,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       content = (
         <Talent
           text="Balance of Power"
-          image=""
+          image="images/balance_of_power.webp"
           max="2"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -51,7 +51,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       content = (
         <Talent
           text="Focused Aim"
-          image=""
+          image="images/focused_aim.webp"
           max="5"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -67,7 +67,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         <div>
           <Talent
             text="Arcane Focus+Precision"
-            image=""
+            image="images/arcane_focus_precision.webp"
             max="6"
             handleChange={handleChange}
             talentPoints={talentPoints}
@@ -82,7 +82,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       content = (
         <Talent
           text="Shadow Focus"
-          image=""
+          image="images/shadow_focus.webp"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -97,7 +97,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       content = (
         <Talent
           text="Precision"
-          image=""
+          image="images/precision.webp"
           max="5"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -112,7 +112,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         <div>
           <Talent
             text="Elemental Precision"
-            image=""
+            image="images/elemental_precision.webp"
             max="3"
             handleChange={handleChange}
             talentPoints={talentPoints}
@@ -126,7 +126,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         <div>
           <Talent
             text="Dual Wield Specialization"
-            image=""
+            image="images/dual_wield_specialization.webp"
             max="3"
             handleChange={handleChange}
             talentPoints={talentPoints}
@@ -142,7 +142,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       content = (
         <Talent
           text="Suppression"
-          image=""
+          image="images/suppresion.webp"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -157,7 +157,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       content = (
         <Talent
           text="Precision"
-          image=""
+          image="images/precision.webp"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}

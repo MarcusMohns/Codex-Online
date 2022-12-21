@@ -13,7 +13,7 @@ const StyledTalent = styled.div`
 const Talent = ({ image, text, max, handleChange, talentPoints }) => {
   return (
     <StyledTalent>
-      {image}
+      <img src={image} alt="talent" />
       {text}
       <input
         type="range"
