@@ -1,7 +1,10 @@
 import React from "react";
 import Talent from "./components/Talent";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
-import { MainContentContainer } from "./components/ContentContainers";
+import {
+  MainContentContainer,
+  StyledCapHeader,
+} from "./components/ContentContainers";
 
 const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {
@@ -15,6 +18,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
 
   const { talentPoints } = values;
   let content;
+  let name;
 
   switch (values.classAndSpec) {
     case "Blood Death Knight":
@@ -30,6 +34,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         />
         // DK - Nerves of Cold Steel (0/3) 1% per point (dual wield)
       );
+
+      name = "Nerves of Cold Steel";
       break;
 
     case "Balance Druid":
@@ -43,6 +49,8 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         />
         // Druid Balance - Balance of Power (0/2) 2% hit per point (spells)
       );
+
+      name = "Balance of Power";
       break;
 
     case "Beast Mastery Hunter":
@@ -57,6 +65,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
           talentPoints={talentPoints}
         />
       );
+      name = "Focused Aim";
       break;
     // Hunter - Focused Aim (0/3) 1% hit per point;
 
@@ -76,6 +85,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
       );
       //   <p> Mage - Arcane focus (0/3) 1% hit per point (spells)</p>
       //   <p>Precision (0/3) 1% hit per point (spells)</p>
+      name = "Arcane Focus+Precision";
       break;
 
     case "Shadow Priest":
@@ -89,6 +99,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         />
       );
       // Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)
+      name = "Shadow Focus";
       break;
 
     case "Assassination Rogue":
@@ -103,6 +114,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
           talentPoints={talentPoints}
         />
       );
+      name = "Precision";
       break;
     // Rogue - Precision (0/5) - 1% hit poison and attacks;
 
@@ -120,6 +132,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         </div>
       );
       //     Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and frost spells
+      name = "Elemental Precision";
       break;
     case "Enhancement Shaman":
       content = (
@@ -134,6 +147,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         </div>
       );
       //     Enhancement - Dual Wield Spec - (0/3) - 2% chance to hit with dual wield
+      name = "Dual Wield Specialization";
       break;
 
     case "Affliction Warlock":
@@ -148,6 +162,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
           talentPoints={talentPoints}
         />
       );
+      name = "Suppression";
       break;
     //  Warlock - Suppression (0/3) - 1% chance to hit with spells
 
@@ -164,6 +179,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         />
       );
       //   Warrior - Precision (0/3) - 1% chance to hit with melee weapons
+      name = "Precision";
       break;
     default:
       content = 0;
@@ -171,6 +187,9 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
 
   return (
     <MainContentContainer>
+      <StyledCapHeader>
+        How many points have you have in {name}?
+      </StyledCapHeader>
       {content}
       <div>
         <StyledNextPrevButton onClick={previous}>
