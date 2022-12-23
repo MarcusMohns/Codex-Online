@@ -62,7 +62,6 @@ export const StyledCapHeader = styled.h1`
   justify-items: center;
   flex-direction: row;
   align-content: center;
-  margin-bottom: 2rem;
   letter-spacing: 1px;
   font-size: 1.3rem;
   text-align: center;
