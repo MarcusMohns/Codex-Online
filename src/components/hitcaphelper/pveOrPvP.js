@@ -6,6 +6,7 @@ import {
   StyledCapHeader,
   RadioContainer,
   SmallContentContainer,
+  ButtonContainer,
 } from "./components/ContentContainers";
 
 const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
@@ -46,14 +47,14 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           />
         </div>
       </RadioContainer>
-      <div>
+      <ButtonContainer>
         <StyledNextPrevButton onClick={previous}>
           Previous<span id="previous-arrow">←</span>
         </StyledNextPrevButton>
         <StyledNextPrevButton onClick={next}>
           Next <span id="next-arrow">→</span>
         </StyledNextPrevButton>
-      </div>
+      </ButtonContainer>
 
       {values.pveOrPvp ? (
         <SmallContentContainer>

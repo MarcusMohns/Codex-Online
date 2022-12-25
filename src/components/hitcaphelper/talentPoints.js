@@ -4,6 +4,7 @@ import StyledNextPrevButton from "./components/StyledNextPrevButton";
 import {
   MainContentContainer,
   StyledCapHeader,
+  ButtonContainer,
 } from "./components/ContentContainers";
 
 const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
@@ -191,14 +192,14 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
         How many points have you have in {name}?
       </StyledCapHeader>
       {content}
-      <div>
+      <ButtonContainer>
         <StyledNextPrevButton onClick={previous}>
           Previous<span id="previous-arrow">←</span>
         </StyledNextPrevButton>
         <StyledNextPrevButton onClick={next}>
           Next <span id="next-arrow">→</span>
         </StyledNextPrevButton>
-      </div>
+      </ButtonContainer>
     </MainContentContainer>
   );
 };
