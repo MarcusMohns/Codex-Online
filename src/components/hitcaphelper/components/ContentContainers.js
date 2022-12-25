@@ -5,6 +5,14 @@ import styled from "styled-components";
 export const RadioContainer = styled.div`
   display: flex;
   flex-direction: row;
+  margin: 0;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid grey;
+
+  label {
+    cursor: pointer;
+  }
 
   .pvp-or-pve-container {
     display: flex;
@@ -12,7 +20,6 @@ export const RadioContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0rem 1rem;
-    padding-top: 3rem;
   }
 
   .raidbuffs-container {
@@ -21,7 +28,6 @@ export const RadioContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0rem 1rem;
-    padding-top: 3rem;
   }
 `;
 
@@ -33,6 +39,10 @@ export const MainContentContainer = styled.div`
   align-content: center;
   width: 100%;
   height: auto;
+
+  .radio-input-container {
+    margin-top: 2rem;
+  }
 `;
 
 export const SmallContentContainer = styled.div`
@@ -65,6 +75,7 @@ export const StyledCapHeader = styled.h1`
   letter-spacing: 1px;
   font-size: 1.3rem;
   text-align: center;
+  font-family: Sans-serif;
 
   .druid {
     color: ${COLORS.druid};

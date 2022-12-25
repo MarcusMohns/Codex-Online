@@ -189,7 +189,7 @@ const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
   return (
     <MainContentContainer>
       <StyledCapHeader>
-        How many points have you have in {name}?
+        How many talent points do you have in {name}?
       </StyledCapHeader>
       {content}
       <ButtonContainer>

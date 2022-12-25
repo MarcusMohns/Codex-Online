@@ -29,7 +29,7 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
 
   return (
     <MainContentContainer>
-      <StyledCapHeader>Select your class</StyledCapHeader>
+      <StyledCapHeader>Select a class</StyledCapHeader>
       <div className="radio-input-container">
         {renderRadioButtons(SpecArray)}
       </div>
