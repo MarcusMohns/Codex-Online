@@ -6,8 +6,14 @@ const StyledTalent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   margin: 0;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid grey;
+
+  input {
+    cursor: pointer;
+  }
 `;
 
 const Talent = ({ image, text, max, handleChange, talentPoints }) => {
