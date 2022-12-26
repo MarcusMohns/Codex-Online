@@ -9,7 +9,6 @@ const StyledTalent = styled.div`
   margin: 0;
   margin-top: 2rem;
   padding: 1rem;
-  border: 1px solid grey;
 
   input {
     cursor: pointer;

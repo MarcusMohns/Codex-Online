@@ -8,8 +8,6 @@ export const RadioContainer = styled.div`
   margin: 0;
   margin-top: 2rem;
   padding: 1rem;
-  border: 1px solid grey;
-
   label {
     cursor: pointer;
   }
@@ -37,8 +35,8 @@ export const MainContentContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  width: 100%;
   height: auto;
+  padding: 3rem;
 
   .radio-input-container {
     margin-top: 2rem;
