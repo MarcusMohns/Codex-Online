@@ -7,7 +7,7 @@ const Result = ({ prevStep, values, hitTalentClasses }) => {
     hitTalentClasses.includes(values.classAndSpec) ? prevStep() : prevStep(2);
   };
 
-  const { pveOrPvp, classAndSpec, talentPoints, raidHitBuff } = values;
+  const { pveOrPvp, classAndSpec, talentPoints = 0, raidHitBuff = 0 } = values;
 
   // const ourValues = Object.entries(values).map(([key, value]) => {
   //   return <div key={key}>{value}</div>;
@@ -33,28 +33,40 @@ const Result = ({ prevStep, values, hitTalentClasses }) => {
   const pvpSpellCap = 4;
   const pvePhysCap = 8;
   const pvpPhysCap = 5;
-  let cap = 0;
 
-  switch (values) {
-    case pveOrPvp === "pve" && casters.includes(classAndSpec):
-      cap = pveSpellCap;
-      break;
-    case pveOrPvp === "pvp" && casters.includes(classAndSpec):
-      cap = pvpSpellCap;
-      break;
-    case pveOrPvp === "pve" && !casters.includes(classAndSpec):
-      cap = pvePhysCap;
-      break;
-    case pveOrPvp === "pvp" && !casters.includes(classAndSpec):
-      cap = pvpPhysCap;
-      break;
-    default:
-      break;
-  }
+  const cap = () => {
+    if (casters.includes(classAndSpec)) {
+      if (pveOrPvp === "pve") {
+        // if the selected class is a caster in PvE
+        return pveSpellCap;
+      }
+      if (pveOrPvp === "pvp") {
+        // if the selected class is a caster in PvP
+        return pvpSpellCap;
+      }
+    }
+    if (!casters.includes(classAndSpec)) {
+      if (pveOrPvp === "pve") {
+        // if the selected class is a melee in PvE
+        return pvePhysCap;
+      }
+      if (pveOrPvp === "pvp") {
+        // if the selected class is a melee in PvP
+        return pvpPhysCap;
+      }
+    }
+  };
+  const target = cap();
+
+  const result = casters.includes(classAndSpec) ? (
+    <div>{target - talentPoints - raidHitBuff} </div>
+  ) : (
+    <div>{target - talentPoints} </div>
+  );
 
   return (
     <div>
-      {/* {ourValues} */}
+      {result}
       <h1>Result</h1>
       <StyledNextPrevButton onClick={previous}>
         Previous<span id="previous-arrow">←</span>
