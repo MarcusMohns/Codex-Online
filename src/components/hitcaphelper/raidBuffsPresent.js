@@ -28,29 +28,18 @@ const RaidBuffsPresent = ({
   return (
     <MainContentContainer>
       <StyledCapHeader>
-        Will you have a Shadow Priest and/or Balance druid in your party?{" "}
+        Will you have a Shadow Priest or Balance Druid in your party?
       </StyledCapHeader>
       <RadioContainer>
         <div className="raidbuffs-container">
-          <label> Shadow Priest</label>
+          <label> Misery / Imp Fearie Fire</label>
           <StyledInputBtn
-            text={"sp-hit-buff"}
-            image={"images/Shadow_Priest.webp"}
-            name="spBuff"
+            text={"raid-hit-buff"}
+            image={"images/raidHitBuff.webp"}
+            name="raidHitbuff"
             handleChange={handleChange}
             type={"checkbox"}
-            checked={values.spBuff ? true : false}
-          />
-        </div>
-        <div className="raidbuffs-container">
-          <label> Boomkin </label>
-          <StyledInputBtn
-            text={"boomy-hit-buff"}
-            image={"images/Balance_Druid.webp"}
-            name="boomyBuff"
-            handleChange={handleChange}
-            type={"checkbox"}
-            checked={values.boomyBuff ? true : false}
+            checked={values.raidHitbuff ? true : false}
           />
         </div>
       </RadioContainer>
@@ -64,15 +53,9 @@ const RaidBuffsPresent = ({
       </ButtonContainer>
       <SmallContentContainer>
         <span>
-          <span className="priest">Shadow Priest</span> Buff
+          <span className="priest">Misery / Imp. Fearie Fire</span> Buff
         </span>
-        {values.spBuff ? <CheckCircle /> : <CrossIcon />}
-      </SmallContentContainer>
-      <SmallContentContainer>
-        <span>
-          <span className="druid">Balance Druid</span> Buff
-        </span>
-        {values.boomyBuff ? <CheckCircle /> : <CrossIcon />}
+        {values.raidHitbuff ? <CheckCircle /> : <CrossIcon />}
       </SmallContentContainer>
     </MainContentContainer>
   );
