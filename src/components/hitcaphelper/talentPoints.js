@@ -7,14 +7,20 @@ import {
   ButtonContainer,
 } from "./components/ContentContainers";
 
-const TalentPoints = ({ nextStep, prevStep, handleChange, values }) => {
+const TalentPoints = ({
+  nextStep,
+  prevStep,
+  handleChange,
+  values,
+  casters,
+}) => {
   const next = (e) => {
     e.preventDefault();
     nextStep();
   };
   const previous = (e) => {
     e.preventDefault();
-    prevStep();
+    casters.includes(values.classAndSpec) ? prevStep() : prevStep(2);
   };
 
   const { talentPoints } = values;

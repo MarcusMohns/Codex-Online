@@ -9,10 +9,24 @@ import {
   ButtonContainer,
 } from "./components/ContentContainers";
 
-const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
+const PveOrPvp = ({
+  nextStep,
+  prevStep,
+  handleChange,
+  values,
+  hitTalentClasses,
+  casters,
+}) => {
   const next = (e) => {
     e.preventDefault();
-    nextStep();
+
+    if (casters.includes(values.classAndSpec)) {
+      nextStep();
+    } else {
+      hitTalentClasses.includes(values.classAndSpec)
+        ? nextStep(2)
+        : nextStep(3);
+    }
   };
 
   const previous = (e) => {

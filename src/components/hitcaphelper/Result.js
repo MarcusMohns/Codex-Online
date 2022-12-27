@@ -1,10 +1,15 @@
 import React from "react";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
 
-const Result = ({ prevStep, values, hitTalentClasses }) => {
+const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
   const previous = (e) => {
     e.preventDefault();
-    hitTalentClasses.includes(values.classAndSpec) ? prevStep() : prevStep(2);
+
+    if (hitTalentClasses.includes(values.classAndSpec)) {
+      prevStep();
+    } else {
+      casters.includes(values.classAndSpec) ? prevStep(2) : prevStep(3);
+    }
   };
 
   const { pveOrPvp, classAndSpec, talentPoints = 0, raidHitBuff = 0 } = values;
@@ -12,22 +17,6 @@ const Result = ({ prevStep, values, hitTalentClasses }) => {
   // const ourValues = Object.entries(values).map(([key, value]) => {
   //   return <div key={key}>{value}</div>;
   // });
-
-  const casters = [
-    "Balance Druid",
-    "Arcane Mage",
-    "Fire Mage",
-    "Frost Mage",
-    "Shadow Priest",
-    "ELemental Shaman",
-    "Affliction Warlock",
-    "Demonology Warlock",
-    "Destruction Warlock",
-    "Discipline Priest",
-    "Restoration Druid",
-    "Restoration Shaman",
-    "Holy Priest",
-  ];
 
   const pveSpellCap = 17;
   const pvpSpellCap = 4;

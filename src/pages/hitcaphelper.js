@@ -71,6 +71,22 @@ const HitCapHelper = () => {
     "Protection Warrior",
   ];
 
+  const casters = [
+    "Balance Druid",
+    "Arcane Mage",
+    "Fire Mage",
+    "Frost Mage",
+    "Shadow Priest",
+    "ELemental Shaman",
+    "Affliction Warlock",
+    "Demonology Warlock",
+    "Destruction Warlock",
+    "Discipline Priest",
+    "Restoration Druid",
+    "Restoration Shaman",
+    "Holy Priest",
+  ];
+
   switch (step) {
     case 1:
       return (
@@ -91,6 +107,8 @@ const HitCapHelper = () => {
             nextStep={nextStep}
             handleChange={handleChange}
             values={values}
+            hitTalentClasses={hitTalentClasses}
+            casters={casters}
           />
         </Main>
       );
@@ -114,6 +132,7 @@ const HitCapHelper = () => {
             nextStep={nextStep}
             handleChange={handleChange}
             values={values}
+            casters={casters}
           />
         </Main>
       );
@@ -126,6 +145,7 @@ const HitCapHelper = () => {
             handleChange={handleChange}
             values={values}
             hitTalentClasses={hitTalentClasses}
+            casters={casters}
           />
         </Main>
       );
