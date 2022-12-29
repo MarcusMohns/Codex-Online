@@ -23,7 +23,7 @@ const RaidBuffsPresent = ({
   };
   const previous = (e) => {
     e.preventDefault();
-    prevStep();
+    prevStep(1, "raidHitbuff");
   };
   return (
     <MainContentContainer>

@@ -23,10 +23,12 @@ const HitCapHelper = () => {
   const { pveOrPvp, classAndSpec, talentPoints, raidHitbuff } = stepState;
   const values = { pveOrPvp, classAndSpec, talentPoints, raidHitbuff };
 
-  const prevStep = (numOfSteps) => {
-    numOfSteps
-      ? setStepState({ ...stepState, step: step - numOfSteps })
-      : setStepState({ ...stepState, step: step - 1 });
+  const prevStep = (numOfSteps, stepPage) => {
+    if (stepPage) {
+      setStepState({ ...stepState, [stepPage]: "", step: step - numOfSteps });
+    } else {
+      setStepState({ ...stepState, step: step - numOfSteps });
+    }
   };
 
   const nextStep = (numOfSteps) => {
@@ -43,6 +45,7 @@ const HitCapHelper = () => {
     } else {
       setStepState({ ...stepState, [input]: e.target.value });
     }
+    console.log(stepState);
   };
 
   const hitTalentClasses = [

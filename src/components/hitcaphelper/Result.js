@@ -6,17 +6,13 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
     e.preventDefault();
 
     if (hitTalentClasses.includes(values.classAndSpec)) {
-      prevStep();
+      prevStep(1);
     } else {
       casters.includes(values.classAndSpec) ? prevStep(2) : prevStep(3);
     }
   };
 
   const { pveOrPvp, classAndSpec, talentPoints = 0, raidHitBuff = 0 } = values;
-
-  // const ourValues = Object.entries(values).map(([key, value]) => {
-  //   return <div key={key}>{value}</div>;
-  // });
 
   const pveSpellCap = 17;
   const pvpSpellCap = 4;
