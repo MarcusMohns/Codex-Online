@@ -32,8 +32,9 @@ const RaidBuffsPresent = ({
       </StyledCapHeader>
       <RadioContainer>
         <div className="raidbuffs-container">
-          <label> Misery / Imp Fearie Fire</label>
+          <label htmlFor="3"> Misery / Imp Fearie Fire</label>
           <StyledInputBtn
+            id="hitbuff"
             text={3}
             image={"images/raidHitBuff.webp"}
             name="raidHitBuff"

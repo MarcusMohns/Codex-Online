@@ -165,7 +165,7 @@ const TalentPoints = ({
       content = (
         <Talent
           text="Suppression"
-          image="images/suppresion.webp"
+          image="images/suppression.webp"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
