@@ -31,7 +31,7 @@ const PveOrPvp = ({
 
   const previous = (e) => {
     e.preventDefault();
-    prevStep();
+    prevStep(1, "pveOrPvp");
   };
 
   return (
@@ -39,7 +39,7 @@ const PveOrPvp = ({
       <StyledCapHeader>Are you intending to PvE or PvP?</StyledCapHeader>
       <RadioContainer>
         <div className="pvp-or-pve-container">
-          <label>PVP</label>
+          <label>PvP</label>
           <StyledInputBtn
             text={"pvp"}
             image={"images/pvp.webp"}
@@ -50,7 +50,7 @@ const PveOrPvp = ({
           />
         </div>
         <div className="pvp-or-pve-container">
-          <label>PVP</label>
+          <label>PvE</label>
           <StyledInputBtn
             text={"pve"}
             image={"images/pve.webp"}
@@ -72,7 +72,7 @@ const PveOrPvp = ({
 
       {values.pveOrPvp ? (
         <SmallContentContainer>
-          Selected: {values.pveOrPvp}
+          Selected: {values.pveOrPvp === "pve" ? "PvE" : "PvP"}
         </SmallContentContainer>
       ) : (
         <SmallContentContainer>Selected: None</SmallContentContainer>
