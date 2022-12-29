@@ -23,7 +23,7 @@ const RaidBuffsPresent = ({
   };
   const previous = (e) => {
     e.preventDefault();
-    prevStep(1, "raidHitbuff");
+    prevStep(1, "raidHitBuff");
   };
   return (
     <MainContentContainer>
@@ -36,10 +36,10 @@ const RaidBuffsPresent = ({
           <StyledInputBtn
             text={3}
             image={"images/raidHitBuff.webp"}
-            name="raidHitbuff"
+            name="raidHitBuff"
             handleChange={handleChange}
             type={"checkbox"}
-            checked={values.raidHitbuff ? true : false}
+            checked={values.raidHitBuff ? true : false}
           />
         </div>
       </RadioContainer>
@@ -55,7 +55,7 @@ const RaidBuffsPresent = ({
         <span>
           <span className="priest">Misery / Imp. Fearie Fire</span> Buff
         </span>
-        {values.raidHitbuff ? <CheckCircle /> : <CrossIcon />}
+        {values.raidHitBuff ? <CheckCircle /> : <CrossIcon />}
       </SmallContentContainer>
     </MainContentContainer>
   );

@@ -27,12 +27,14 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
       }
       if (pveOrPvp === "pvp") {
         // if the selected class is a caster in PvP
+
         return pvpSpellCap;
       }
     }
     if (!casters.includes(classAndSpec)) {
       if (pveOrPvp === "pve") {
         // if the selected class is a melee in PvE
+
         return pvePhysCap;
       }
       if (pveOrPvp === "pvp") {
@@ -40,7 +42,9 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
         return pvpPhysCap;
       }
     }
+    return 0;
   };
+
   const target = cap();
 
   const result = casters.includes(classAndSpec) ? (
