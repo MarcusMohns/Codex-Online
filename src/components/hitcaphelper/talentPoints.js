@@ -69,7 +69,7 @@ const TalentPoints = ({
         <Talent
           text="Focused Aim"
           image="images/focused_aim.webp"
-          max="5"
+          max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
         />
