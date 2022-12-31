@@ -41,7 +41,12 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
         <SmallContentContainer>Selected: None</SmallContentContainer>
       )}
 
-      <StyledNextPrevButton onClick={next}>
+      <StyledNextPrevButton
+        onClick={next}
+        disabled={values.classAndSpec ? "" : "disabled"}
+        pointerEvents={values.classAndSpec ? "auto" : "none"}
+        opacity={values.classAndSpec ? "100%" : "50%"}
+      >
         Next <span id="next-arrow">→</span>
       </StyledNextPrevButton>
     </MainContentContainer>

@@ -19,6 +19,9 @@ const StyledNextPrevButton = styled.button`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: all 0.1s;
+  pointer-events: ${(props) => props.pointerEvents};
+  opacity: ${(props) => props.opacity};
 
   #next-arrow {
     font-size: 1.1rem;

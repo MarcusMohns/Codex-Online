@@ -65,7 +65,12 @@ const PveOrPvp = ({
         <StyledNextPrevButton onClick={previous}>
           Previous<span id="previous-arrow">←</span>
         </StyledNextPrevButton>
-        <StyledNextPrevButton onClick={next}>
+        <StyledNextPrevButton
+          onClick={next}
+          disabled={values.pveOrPvp ? "" : "disabled"}
+          pointerEvents={values.pveOrPvp ? "auto" : "none"}
+          opacity={values.pveOrPvp ? "100%" : "50%"}
+        >
           Next <span id="next-arrow">→</span>
         </StyledNextPrevButton>
       </ButtonContainer>
