@@ -21,7 +21,7 @@ const TalentPoints = ({
   const previous = (e) => {
     e.preventDefault();
     casters.includes(values.classAndSpec)
-      ? prevStep(1)
+      ? prevStep(1, "talentPoints")
       : prevStep(2, "talentPoints");
   };
 
