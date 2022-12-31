@@ -44,18 +44,28 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
     }
     return 0;
   };
+  const result = () => {
+    const target = cap();
 
-  const target = cap();
+    if (!pveOrPvp) {
+      return <div>Please select PvE or PvP</div>;
+    }
+    if (!classAndSpec) {
+      return <div>Please select a class and specialization</div>;
+    }
 
-  const result = casters.includes(classAndSpec) ? (
-    <div>{target - talentPoints - raidHitBuff} </div>
-  ) : (
-    <div>{target - talentPoints} </div>
-  );
+    if (casters.includes(classAndSpec)) {
+      return <div>{target - talentPoints - raidHitBuff} </div>;
+    } else {
+      return <div>{target - talentPoints} </div>;
+    }
+  };
+
+  const content = result();
 
   return (
     <div>
-      {result}
+      {content}
       <h1>Result</h1>
       <StyledNextPrevButton onClick={previous}>
         Previous<span id="previous-arrow">←</span>
