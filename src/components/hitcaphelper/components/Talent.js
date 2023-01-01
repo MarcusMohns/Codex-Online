@@ -13,6 +13,18 @@ const StyledTalent = styled.div`
   input {
     cursor: pointer;
   }
+
+  .points-status {
+    font-family: Sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+  }
+
+  img {
+    padding-bottom: 0.6rem;
+  }
 `;
 
 const Talent = ({
@@ -36,7 +48,10 @@ const Talent = ({
         step="1"
         defaultValue={talentPoints ? talentPoints : 0}
       ></input>
-      <span>{talentPoints ? talentPoints : 0}</span>
+      <span></span>
+      <span className="points-status">
+        {talentPoints ? `${talentPoints / multiplier} / ${max}` : `0 / ${max}`}
+      </span>
     </StyledTalent>
   );
 };
