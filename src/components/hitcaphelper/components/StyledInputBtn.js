@@ -5,18 +5,17 @@ const InputBtn = styled.label`
   input {
     display: none;
     ~ img {
-      transition: transform 0.3s;
+      transition: opacity 0.1s;
     }
     &:checked {
       ~ img {
-        transform: scale(1.1);
         opacity: 1;
       }
     }
   }
 
   img {
-    opacity: 50%;
+    opacity: 35%;
     border: 2px solid transparent;
     border-radius: 15px;
     &:hover {
