@@ -37,11 +37,13 @@ const HitCapHelper = () => {
       : setStepState({ ...stepState, step: step + 1 });
   };
 
-  const handleChange = (input) => (e) => {
+  const handleChange = (input, multiplier) => (e) => {
     if (e.target.type === "checkbox") {
       e.target.checked
         ? setStepState({ ...stepState, [input]: e.target.value })
         : setStepState({ ...stepState, [input]: "" });
+    } else if (e.target.type === "range") {
+      setStepState({ ...stepState, [input]: e.target.value * multiplier });
     } else {
       setStepState({ ...stepState, [input]: e.target.value });
     }

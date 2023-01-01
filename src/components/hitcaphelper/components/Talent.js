@@ -15,7 +15,14 @@ const StyledTalent = styled.div`
   }
 `;
 
-const Talent = ({ image, text, max, handleChange, talentPoints }) => {
+const Talent = ({
+  image,
+  text,
+  max,
+  handleChange,
+  talentPoints,
+  multiplier,
+}) => {
   return (
     <StyledTalent>
       <img src={image} alt="talent" />
@@ -23,7 +30,7 @@ const Talent = ({ image, text, max, handleChange, talentPoints }) => {
       <input
         type="range"
         name="talent"
-        onChange={handleChange("talentPoints")}
+        onChange={handleChange("talentPoints", multiplier)}
         min="0"
         max={max}
         step="1"

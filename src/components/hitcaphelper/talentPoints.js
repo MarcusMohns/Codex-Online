@@ -40,6 +40,7 @@ const TalentPoints = ({
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
+          multiplier="1"
         />
         // DK - Nerves of Cold Steel (0/3) 1% per point (dual wield)
       );
@@ -55,6 +56,7 @@ const TalentPoints = ({
           max="2"
           handleChange={handleChange}
           talentPoints={talentPoints}
+          multiplier="2"
         />
         // Druid Balance - Balance of Power (0/2) 2% hit per point (spells)
       );
@@ -72,6 +74,7 @@ const TalentPoints = ({
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
+          multiplier="1"
         />
       );
       name = "Focused Aim";
@@ -89,6 +92,7 @@ const TalentPoints = ({
             max="6"
             handleChange={handleChange}
             talentPoints={talentPoints}
+            multiplier="1"
           />
         </div>
       );
@@ -105,6 +109,7 @@ const TalentPoints = ({
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
+          multiplier="1"
         />
       );
       // Priest - Shadow Focus (0/3) 1% hit per point (shadow spells)
@@ -121,6 +126,7 @@ const TalentPoints = ({
           max="5"
           handleChange={handleChange}
           talentPoints={talentPoints}
+          multiplier="1"
         />
       );
       name = "Precision";
@@ -137,6 +143,7 @@ const TalentPoints = ({
             max="3"
             handleChange={handleChange}
             talentPoints={talentPoints}
+            multiplier="1"
           />
         </div>
       );
@@ -152,6 +159,7 @@ const TalentPoints = ({
             max="3"
             handleChange={handleChange}
             talentPoints={talentPoints}
+            multiplier="2"
           />
         </div>
       );
@@ -169,6 +177,7 @@ const TalentPoints = ({
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
+          multiplier="1"
         />
       );
       name = "Suppression";
@@ -185,6 +194,7 @@ const TalentPoints = ({
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
+          multiplier="1"
         />
       );
       //   Warrior - Precision (0/3) - 1% chance to hit with melee weapons
