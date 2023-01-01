@@ -73,7 +73,7 @@ export const StyledCapHeader = styled.h1`
   letter-spacing: 1px;
   font-size: 1.3rem;
   text-align: center;
-  font-family: Sans-serif;
+  font-family: sans-serif;
 
   .druid {
     color: ${COLORS.druid};
