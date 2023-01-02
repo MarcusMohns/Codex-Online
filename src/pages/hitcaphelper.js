@@ -7,12 +7,14 @@ import RaidBuffsPresent from "../components/hitcaphelper/RaidBuffsPresent";
 import TalentPoints from "../components/hitcaphelper/TalentPoints";
 import Result from "../components/hitcaphelper/Result";
 import SpecArray from "../SpecArray";
+import Draenei from "../components/hitcaphelper/Draenei";
 
 const HitCapHelper = () => {
   const state = {
     step: 1,
     classAndSpec: "",
     pveOrPvp: "",
+    draenei: "",
     talentPoints: "",
     raidHitBuff: "",
     result: "",
@@ -20,8 +22,9 @@ const HitCapHelper = () => {
 
   const [stepState, setStepState] = useState(state);
   const { step } = stepState;
-  const { pveOrPvp, classAndSpec, talentPoints, raidHitBuff } = stepState;
-  const values = { pveOrPvp, classAndSpec, talentPoints, raidHitBuff };
+  const { pveOrPvp, classAndSpec, draenei, talentPoints, raidHitBuff } =
+    stepState;
+  const values = { pveOrPvp, classAndSpec, draenei, talentPoints, raidHitBuff };
 
   const prevStep = (numOfSteps, stepPage) => {
     if (stepPage) {
@@ -111,12 +114,23 @@ const HitCapHelper = () => {
             nextStep={nextStep}
             handleChange={handleChange}
             values={values}
+          />
+        </Main>
+      );
+    case 3:
+      return (
+        <Main>
+          <Draenei
+            prevStep={prevStep}
+            nextStep={nextStep}
+            handleChange={handleChange}
+            values={values}
             hitTalentClasses={hitTalentClasses}
             casters={casters}
           />
         </Main>
       );
-    case 3:
+    case 4:
       return (
         <Main>
           <RaidBuffsPresent
@@ -128,7 +142,7 @@ const HitCapHelper = () => {
           />
         </Main>
       );
-    case 4:
+    case 5:
       return (
         <Main>
           <TalentPoints
@@ -140,7 +154,7 @@ const HitCapHelper = () => {
           />
         </Main>
       );
-    case 5:
+    case 6:
       return (
         <Main>
           <Result

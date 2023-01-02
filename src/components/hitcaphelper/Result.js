@@ -12,7 +12,13 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
       casters.includes(values.classAndSpec) ? prevStep(2) : prevStep(3);
     }
   };
-  const { pveOrPvp, classAndSpec, talentPoints = 0, raidHitBuff = 0 } = values;
+  const {
+    pveOrPvp,
+    classAndSpec,
+    talentPoints = 0,
+    raidHitBuff = 0,
+    draenei = 0,
+  } = values;
   const pveSpellCap = 17;
   const pvpSpellCap = 4;
   const pvePhysCap = 8;
@@ -51,9 +57,9 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
     }
 
     if (casters.includes(classAndSpec)) {
-      return target - talentPoints - raidHitBuff;
+      return target - talentPoints - raidHitBuff - draenei;
     } else {
-      return target - talentPoints;
+      return target - talentPoints - draenei;
     }
   };
 
