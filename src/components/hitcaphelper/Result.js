@@ -1,5 +1,6 @@
 import React from "react";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
+import { MainContentContainer } from "./components/ContentContainers";
 
 const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
   const previous = (e) => {
@@ -45,30 +46,33 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
   const result = () => {
     const target = cap();
 
-    if (!pveOrPvp) {
-      return <div>Please select PvE or PvP</div>;
-    }
-    if (!classAndSpec) {
-      return <div>Please select a class and specialization</div>;
+    if (!pveOrPvp || !classAndSpec) {
+      return;
     }
 
     if (casters.includes(classAndSpec)) {
-      return <div>{target - talentPoints - raidHitBuff} </div>;
+      return target - talentPoints - raidHitBuff;
     } else {
-      return <div>{target - talentPoints} </div>;
+      return target - talentPoints;
     }
   };
 
-  const content = result();
+  const hit = result();
+  const hitInInt = casters.includes(classAndSpec)
+    ? Math.ceil(hit * 26.23)
+    : Math.ceil(hit * 32.79);
 
   return (
-    <div>
-      {content}
-      <h1>Result</h1>
+    <MainContentContainer>
+      <div>
+        {hit > 0
+          ? `You need ${hit}% (${hitInInt} points) hit on your character sheet`
+          : "You are capped"}
+      </div>
       <StyledNextPrevButton onClick={previous}>
         Previous<span id="previous-arrow">←</span>
       </StyledNextPrevButton>
-    </div>
+    </MainContentContainer>
   );
 };
 
