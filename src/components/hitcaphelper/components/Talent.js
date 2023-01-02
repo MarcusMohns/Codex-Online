@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledTalent = styled.div`
+  min-height: 42px;
   display: flex;
   flex-direction: column;
   justify-content: center;
