@@ -28,7 +28,7 @@ const RaidBuffsPresent = ({
   return (
     <MainContentContainer>
       <StyledCapHeader>
-        Will you have a Shadow Priest or Balance Druid in your party?
+        Will you have a Shadow Priest or Balance Druid in your raid?
       </StyledCapHeader>
       <RadioContainer>
         <div className="raidbuffs-container">
