@@ -72,7 +72,7 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
     <MainContentContainer>
       <div>
         {hit > 0
-          ? `You need ${hit}% (${hitInInt} points) hit on your character sheet`
+          ? `You need ${hit}% hit (${hitInInt} hit rating) on your character sheet`
           : "You are capped"}
       </div>
       <StyledNextPrevButton onClick={previous}>
