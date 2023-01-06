@@ -44,11 +44,6 @@ export const MainContentContainer = styled.div`
 
   .character-sheet-img {
     border-radius: 5px;
-
-    @media screen and (max-width: 992px) {
-      width: 80%;
-      height: 80%;
-    }
   }
 
   #death-knight {
@@ -90,6 +85,13 @@ export const MainContentContainer = styled.div`
   #warlock {
     color: ${COLORS.warlock};
     display: block;
+  }
+
+  @media screen and (max-width: 992px) {
+    .character-sheet-img {
+      width: 80%;
+      height: 80%;
+    }
   }
 `;
 

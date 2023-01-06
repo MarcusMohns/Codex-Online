@@ -12,6 +12,7 @@ export const Main = styled.main`
   color: white;
   margin-top: 7%;
   min-height: 60vh;
+  overflow: hidden;
 
   .radio-input-container {
     display: grid;
@@ -29,6 +30,19 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
+
+    @media screen and (max-width: 992px) {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    @media screen and (max-width: 650px) {
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
   }
 
   @media screen and (max-width: 1200px) {
