@@ -1,6 +1,10 @@
 import React from "react";
 import StyledNextPrevButton from "./components/StyledNextPrevButton";
-import { MainContentContainer } from "./components/ContentContainers";
+import {
+  MainContentContainer,
+  ResultsContainer,
+  StyledCapHeader,
+} from "./components/ContentContainers";
 
 const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
   const previous = (e) => {
@@ -70,11 +74,18 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
 
   return (
     <MainContentContainer>
-      <div>
+      <StyledCapHeader>Result:</StyledCapHeader>
+      <ResultsContainer>
         {hit >= 0
           ? `You need ${hit}% hit (${hitInInt} hit rating) on your character sheet`
           : "You are capped"}
-      </div>
+      </ResultsContainer>
+
+      <img
+        src="images/character_sheet.png"
+        className="character-sheet-img"
+        alt="character sheet"
+      />
       <StyledNextPrevButton onClick={previous}>
         Previous<span id="previous-arrow">←</span>
       </StyledNextPrevButton>

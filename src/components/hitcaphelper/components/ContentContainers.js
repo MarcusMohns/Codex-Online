@@ -41,6 +41,10 @@ export const MainContentContainer = styled.div`
   .radio-input-container {
     margin-top: 2rem;
   }
+
+  .character-sheet-img {
+    border-radius: 5px;
+  }
 `;
 
 export const SmallContentContainer = styled.div`
@@ -81,6 +85,15 @@ export const StyledCapHeader = styled.h1`
   .priest {
     color: ${COLORS.priest};
   }
+`;
+
+export const ResultsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 2rem;
+  font-family: sans-serif;
 `;
 
 export const ButtonContainer = styled.div`
