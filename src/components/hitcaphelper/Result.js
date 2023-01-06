@@ -5,6 +5,7 @@ import {
   ResultsContainer,
   StyledCapHeader,
 } from "./components/ContentContainers";
+import { CheckCircle, CrossIcon } from "../styles/RaidAssembler.styled";
 
 const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
   const previous = (e) => {
@@ -72,15 +73,124 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
     ? Math.ceil(hit * 26.23)
     : Math.ceil(hit * 32.79);
 
+  const resultTable = (
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>Class and Spec</span>
+          </th>
+          <div>
+            <th>
+              <span>
+                PvE or PvP{" "}
+                <img
+                  src="images/pve.webp"
+                  className="results-pve-icon"
+                  alt="pve"
+                />
+                <img
+                  src="images/pvp.webp"
+                  className="results-pvp-icon"
+                  alt="pvp"
+                />
+              </span>
+            </th>
+          </div>
+          <th>
+            <span>
+              Draenei{" "}
+              <img
+                src="images/heroic_presence.webp"
+                className="draenei-icon"
+                alt="draenei"
+              />
+            </span>
+          </th>
+          <th>
+            <span>Talent Points</span>
+          </th>
+          <th>
+            <span>
+              Raid Spell Hit Buff{" "}
+              <img
+                src="images/raidHitBuff.webp"
+                alt="raid hit buff"
+                className="raid-hit-buff-icon"
+              />
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            id={classAndSpec
+              .substring(classAndSpec.indexOf(" ") + 1)
+              .toLowerCase()}
+          >
+            {classAndSpec}
+          </td>
+          <td>
+            {pveOrPvp === "pvp" ? (
+              <span>
+                PvE{" "}
+                <img
+                  src="images/pve.webp"
+                  className="results-pve-icon"
+                  alt="pve"
+                />
+              </span>
+            ) : (
+              <span>
+                PvP{" "}
+                <img
+                  src="images/pvp.webp"
+                  className="results-pvp-icon"
+                  alt="pvp"
+                />
+              </span>
+            )}
+          </td>
+          <td>
+            {draenei ? (
+              <span>
+                Yes <CheckCircle />
+              </span>
+            ) : (
+              <span>
+                No <CrossIcon />
+              </span>
+            )}
+          </td>
+          <td>{talentPoints ? `${talentPoints}%` : "0%"}</td>
+          <td>
+            {raidHitBuff ? (
+              <span>
+                Yes <CheckCircle />
+              </span>
+            ) : (
+              <span>
+                No <CrossIcon />
+              </span>
+            )}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  );
+
   return (
     <MainContentContainer>
-      <StyledCapHeader>Result:</StyledCapHeader>
+      <StyledCapHeader>Result</StyledCapHeader>
       <ResultsContainer>
-        {hit > 0
-          ? `You need ${hit}% hit (${hitInInt} hit rating) on your character sheet`
-          : "You are capped"}
+        {resultTable}
+        <div>
+          {hit > 0
+            ? `You need ${hit}% hit (${hitInInt} hit rating) on your character sheet`
+            : "You are capped"}
+        </div>
       </ResultsContainer>
-
       <img
         src="images/character_sheet.png"
         className="character-sheet-img"

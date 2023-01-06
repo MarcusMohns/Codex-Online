@@ -44,6 +44,52 @@ export const MainContentContainer = styled.div`
 
   .character-sheet-img {
     border-radius: 5px;
+
+    @media screen and (max-width: 992px) {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  #death-knight {
+    color: ${COLORS.deathKnight};
+    display: block;
+  }
+  #druid {
+    color: ${COLORS.druid};
+    display: block;
+  }
+  #hunter {
+    color: ${COLORS.hunter};
+    display: block;
+  }
+  #mage {
+    color: ${COLORS.mage};
+    display: block;
+  }
+  #paladin {
+    color: ${COLORS.paladin};
+    display: block;
+  }
+  #priest {
+    color: ${COLORS.priest};
+    display: block;
+  }
+  #rogue {
+    color: ${COLORS.rogue};
+    display: block;
+  }
+  #shaman {
+    color: ${COLORS.shaman};
+    display: block;
+  }
+  #warrior {
+    color: ${COLORS.warrior};
+    display: block;
+  }
+  #warlock {
+    color: ${COLORS.warlock};
+    display: block;
   }
 `;
 
@@ -89,11 +135,80 @@ export const StyledCapHeader = styled.h1`
 
 export const ResultsContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   justify-items: center;
   padding: 2rem;
   font-family: sans-serif;
+
+  table {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  td {
+    padding: 0.2rem;
+    svg {
+      margin-left: 2px;
+    }
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+    }
+    .results-pve-icon,
+    .results-pvp-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  th {
+    background-color: #222;
+    color: ${COLORS.offWhite};
+    padding: 1rem;
+    img {
+      margin-left: 2px;
+    }
+    .pve-or-pvp-icon,
+    .draenei-icon,
+    .results-pve-icon,
+    .results-pvp-icon {
+      width: 24px;
+      height: 24px;
+    }
+    .raid-hit-buff-icon {
+      height: 24px;
+      width: 48px;
+    }
+
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+    }
+    @media screen and (max-width: 992px) {
+      padding: 0.5rem;
+    }
+  }
+
+  tbody tr {
+    background: #222;
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 1500px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 992px) {
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const ButtonContainer = styled.div`
