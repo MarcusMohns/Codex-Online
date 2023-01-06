@@ -80,23 +80,21 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
           <th>
             <span>Class and Spec</span>
           </th>
-          <div>
-            <th>
-              <span>
-                PvE or PvP{" "}
-                <img
-                  src="images/pve.webp"
-                  className="results-pve-icon"
-                  alt="pve"
-                />
-                <img
-                  src="images/pvp.webp"
-                  className="results-pvp-icon"
-                  alt="pvp"
-                />
-              </span>
-            </th>
-          </div>
+          <th>
+            <span>
+              PvE or PvP{" "}
+              <img
+                src="images/pve.webp"
+                className="results-pve-icon"
+                alt="pve"
+              />
+              <img
+                src="images/pvp.webp"
+                className="results-pvp-icon"
+                alt="pvp"
+              />
+            </span>
+          </th>
           <th>
             <span>
               Draenei{" "}
@@ -132,7 +130,7 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
             {classAndSpec}
           </td>
           <td>
-            {pveOrPvp === "pvp" ? (
+            {pveOrPvp === "pve" ? (
               <span>
                 PvE{" "}
                 <img
