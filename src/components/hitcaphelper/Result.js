@@ -76,7 +76,7 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
     <MainContentContainer>
       <StyledCapHeader>Result:</StyledCapHeader>
       <ResultsContainer>
-        {hit >= 0
+        {hit > 0
           ? `You need ${hit}% hit (${hitInInt} hit rating) on your character sheet`
           : "You are capped"}
       </ResultsContainer>
