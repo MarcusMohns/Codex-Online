@@ -193,9 +193,15 @@ export const ResultsContainer = styled.div`
       justify-content: center;
       justify-items: center;
     }
+
     @media screen and (max-width: 992px) {
       padding: 0.5rem;
     }
+  }
+
+  .bold-result {
+    font-size: 1.1rem;
+    color: ${COLORS.goldHighlight};
   }
 
   tbody tr {
@@ -212,6 +218,8 @@ export const ResultsContainer = styled.div`
     }
   }
 `;
+
+export const ResultsDivContainer = styled.div``;
 
 export const ButtonContainer = styled.div`
   display: flex;

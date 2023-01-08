@@ -178,15 +178,24 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
     </table>
   );
 
+  // ? `You need ${hit}% hit (${hitInInt} hit rating) on your character sheet`
+  // : "You are capped"}
+
   return (
     <MainContentContainer>
       <StyledCapHeader>Result</StyledCapHeader>
       <ResultsContainer>
         {resultTable}
         <div>
-          {hit > 0
-            ? `You need ${hit}% hit (${hitInInt} hit rating) on your character sheet`
-            : "You are capped"}
+          {hit > 0 ? (
+            <div>
+              You need <span className="bold-result">{hit}% hit</span> (
+              <span className="bold-result">{hitInInt} hit rating</span>) on
+              your character sheet
+            </div>
+          ) : (
+            "You are capped"
+          )}
         </div>
       </ResultsContainer>
       <img
