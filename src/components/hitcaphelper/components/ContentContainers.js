@@ -219,8 +219,6 @@ export const ResultsContainer = styled.div`
   }
 `;
 
-export const ResultsDivContainer = styled.div``;
-
 export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
