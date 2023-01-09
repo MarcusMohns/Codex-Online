@@ -8,9 +8,10 @@ const StyledErrorDiv = styled.div`
   color: ${(props) => props.color};
   font-size: 1.1rem;
   background: ${(props) => props.background};
-  margin: 30px 10%;
   height: ${(props) => props.height};
   text-align: center;
+  width: 75%;
+  margin: 30px auto;
 
   a {
     text-decoration: none;

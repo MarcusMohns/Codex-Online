@@ -19,7 +19,7 @@ export const Main = styled.main`
     justify-content: center;
     max-width: 100vw;
     min-width: 75vw;
-    padding: 3rem 10%;
+    padding: 0 10%;
   }
 `;
 
@@ -28,9 +28,7 @@ export const ArenaContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${COLORS.fadedBackground};
   border-radius: 5px;
-  box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
   max-width: 100%;
   margin: 1rem;
   padding: 1rem;
@@ -45,7 +43,7 @@ export const ArenaContainer = styled.section`
     justify-content: space-around;
     height: 3rem;
     width: 100%;
-    background-color: ${COLORS.primary};
+    background-color: ${COLORS.fadedPrimary};
     color: ${COLORS.offWhite};
     margin-bottom: 1rem;
     box-shadow: 0 2px 6px -1px #000;
@@ -61,7 +59,7 @@ export const ArenaContainer = styled.section`
 
     .results {
       color: ${COLORS.goldHighlight};
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       height: 100%;
       border-radius: 5px;
     }
@@ -69,7 +67,7 @@ export const ArenaContainer = styled.section`
     thead {
       tr {
         th {
-          background-color: ${COLORS.primary};
+          background-color: ${COLORS.fadedBackground};
           color: ${COLORS.offWhite};
           box-shadow: 0 2px 6px -1px #000;
           border-radius: 5px;
