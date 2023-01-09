@@ -1,13 +1,21 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Main } from "../components/styles/HitCapHelper.styled";
 import { useState } from "react";
-import ClassAndSpec from "../components/hitcaphelper/ClassAndSpec";
-import PveOrPvp from "../components/hitcaphelper/PveOrPvp";
-import RaidBuffsPresent from "../components/hitcaphelper/RaidBuffsPresent";
-import TalentPoints from "../components/hitcaphelper/TalentPoints";
 import Result from "../components/hitcaphelper/Result";
 import SpecArray from "../SpecArray";
-import Draenei from "../components/hitcaphelper/Draenei";
+import { Loader } from "../components/Loader";
+
+const ClassAndSpec = lazy(() =>
+  import("../components/hitcaphelper/ClassAndSpec")
+);
+const PveOrPvp = lazy(() => import("../components/hitcaphelper/PveOrPvp"));
+const RaidBuffsPresent = lazy(() =>
+  import("../components/hitcaphelper/RaidBuffsPresent")
+);
+const TalentPoints = lazy(() =>
+  import("../components/hitcaphelper/TalentPoints")
+);
+const Draenei = lazy(() => import("../components/hitcaphelper/Draenei"));
 
 const HitCapHelper = () => {
   const state = {
@@ -98,73 +106,85 @@ const HitCapHelper = () => {
     case 1:
       return (
         <Main>
-          <ClassAndSpec
-            nextStep={nextStep}
-            handleChange={handleChange}
-            values={values}
-            SpecArray={SpecArray}
-          />
+          <Suspense fallback={<Loader />}>
+            <ClassAndSpec
+              nextStep={nextStep}
+              handleChange={handleChange}
+              values={values}
+              SpecArray={SpecArray}
+            />
+          </Suspense>
         </Main>
       );
     case 2:
       return (
         <Main>
-          <PveOrPvp
-            prevStep={prevStep}
-            nextStep={nextStep}
-            handleChange={handleChange}
-            values={values}
-          />
+          <Suspense fallback={<Loader />}>
+            <PveOrPvp
+              prevStep={prevStep}
+              nextStep={nextStep}
+              handleChange={handleChange}
+              values={values}
+            />
+          </Suspense>
         </Main>
       );
     case 3:
       return (
         <Main>
-          <Draenei
-            prevStep={prevStep}
-            nextStep={nextStep}
-            handleChange={handleChange}
-            values={values}
-            hitTalentClasses={hitTalentClasses}
-            casters={casters}
-          />
+          <Suspense fallback={<Loader />}>
+            <Draenei
+              prevStep={prevStep}
+              nextStep={nextStep}
+              handleChange={handleChange}
+              values={values}
+              hitTalentClasses={hitTalentClasses}
+              casters={casters}
+            />
+          </Suspense>
         </Main>
       );
     case 4:
       return (
         <Main>
-          <RaidBuffsPresent
-            prevStep={prevStep}
-            nextStep={nextStep}
-            handleChange={handleChange}
-            values={values}
-            hitTalentClasses={hitTalentClasses}
-          />
+          <Suspense fallback={<Loader />}>
+            <RaidBuffsPresent
+              prevStep={prevStep}
+              nextStep={nextStep}
+              handleChange={handleChange}
+              values={values}
+              hitTalentClasses={hitTalentClasses}
+            />
+          </Suspense>
         </Main>
       );
     case 5:
       return (
         <Main>
-          <TalentPoints
-            prevStep={prevStep}
-            nextStep={nextStep}
-            handleChange={handleChange}
-            values={values}
-            casters={casters}
-          />
+          <Suspense fallback={<Loader />}>
+            <TalentPoints
+              prevStep={prevStep}
+              nextStep={nextStep}
+              handleChange={handleChange}
+              values={values}
+              casters={casters}
+            />
+          </Suspense>
         </Main>
       );
     case 6:
       return (
         <Main>
-          <Result
-            prevStep={prevStep}
-            nextStep={nextStep}
-            handleChange={handleChange}
-            values={values}
-            hitTalentClasses={hitTalentClasses}
-            casters={casters}
-          />
+          <Suspense fallback={<Loader />}>
+            <Result
+              prevStep={prevStep}
+              nextStep={nextStep}
+              handleChange={handleChange}
+              values={values}
+              hitTalentClasses={hitTalentClasses}
+              casters={casters}
+            />
+          </Suspense>
         </Main>
       );
     default:
