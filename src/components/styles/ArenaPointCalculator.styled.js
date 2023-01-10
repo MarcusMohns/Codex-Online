@@ -32,9 +32,11 @@ export const ArenaContainer = styled.section`
   max-width: 100%;
   margin: 1rem;
   padding: 1rem;
+  background-color: ${COLORS.fadedBackground};
   @media (min-width: 1200px) {
     padding: 2rem;
-    margin: 15px;
+    margin: 0rem;
+    border-radius: 0px;
   }
   h2 {
     font-size: 1.1rem;
