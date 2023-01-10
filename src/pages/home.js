@@ -73,6 +73,20 @@ const Home = () => {
           alt="arena-point-calc-preview"
         />
       </PagePreviewContainer>
+      <PagePreviewContainer id="hit-cap-container">
+        <PagePreviewText>
+          <PagePreviewHeader>Hit Cap Helper</PagePreviewHeader>
+          Find out exactly how much hit you need for PvE or PvP to get capped
+          <Link to="/hitcaphelper" className="link-button">
+            Find your hit
+          </Link>
+        </PagePreviewText>
+        <img
+          src="images/hit_cap_helper.png"
+          className="content-preview-image"
+          alt="arena-point-calc-preview"
+        />
+      </PagePreviewContainer>
     </Main>
   );
 };

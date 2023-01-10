@@ -52,6 +52,16 @@ export const Main = styled.main`
       background-color: ${COLORS.fadedBlack};
     }
   }
+  #hit-cap-container {
+    background-color: ${COLORS.fadedGrey};
+    box-shadow: none;
+
+    @media (min-width: 1200px) {
+      flex-direction: row-reverse;
+      margin: 0px;
+      background-color: ${COLORS.fadedBlack};
+    }
+  }
 `;
 
 export const PagePreviewContainer = styled.div`
