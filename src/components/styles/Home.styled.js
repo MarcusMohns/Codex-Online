@@ -124,6 +124,10 @@ export const PagePreviewText = styled.div`
   line-height: 1.375rem;
   letter-spacing: 0.0071428571em;
 
+  .highlight {
+    color: ${COLORS.goldHighlight};
+  }
+
   .step-container {
     display: none;
     align-items: center;

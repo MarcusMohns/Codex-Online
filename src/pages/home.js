@@ -12,10 +12,18 @@ const Home = () => {
       <PagePreviewContainer id="raid-assembler-container">
         <PagePreviewText>
           <PagePreviewHeader>Raid Helper</PagePreviewHeader>
-          Organize 3.3.5 WOTLK Buffs, Debuffs and Utilities. The Raid Helper
-          helps you optimize your raids performance, manage the players in your
-          raid, monitor the raids buffs, utilities and roles and save your work
-          in the browser or locally in order to share with others!
+          <div>
+            Organize WotLK{" "}
+            <span className="highlight">Buffs, Debuffs and Utilities</span>. The
+            Raid Helper helps you optimize your raids performance by giving you
+            a full <span className="highlight">overview</span> of the{" "}
+            <span className="highlight">players</span> in{" "}
+            <span className="highlight">your raid</span>, the
+            <span className="highlight"> raid buffs </span> and their different{" "}
+            <span className="highlight">utilities, cooldowns and roles</span>.
+            Additionally, feel free save your raid composition in the browser or
+            locally in order to share with others!
+          </div>
           <div className="step-container">
             <div className="a-step">
               <span className="step-number">1</span>
@@ -45,8 +53,11 @@ const Home = () => {
       <PagePreviewContainer id="gem-finder-container">
         <PagePreviewText>
           <PagePreviewHeader>Gem Finder</PagePreviewHeader>
-          Gem Finder consists of every WOTLK gem in 3.3.5. Find a gem with the
-          stats, quality or color that suit your needs
+          <div>
+            Find<span className="highlight"> any gem </span>in 3.3.5 WotLK with
+            the <span className="highlight">stats, quality or color </span> that
+            suit your needs
+          </div>
           <Link to="/gemfinder" className="link-button">
             Find gems
           </Link>
@@ -60,9 +71,12 @@ const Home = () => {
       <PagePreviewContainer>
         <PagePreviewText>
           <PagePreviewHeader>Arena Point Calculator</PagePreviewHeader>
-          Updated for 3.3.5. Calculate how many points you will receive at the
-          end of the reset or check how much rating you need for that upgrade
-          you're looking at
+          <div>
+            Calculate how many <span className="highlight">points </span>
+            you will <span className="highlight">recieve </span> at the end of
+            the reset or check how much rating you need for that upgrade you're
+            looking at
+          </div>
           <Link to="/arenapointcalculator" className="link-button">
             Calculate points
           </Link>
@@ -76,7 +90,12 @@ const Home = () => {
       <PagePreviewContainer id="hit-cap-container">
         <PagePreviewText>
           <PagePreviewHeader>Hit Cap Helper</PagePreviewHeader>
-          Find out exactly how much hit you need for PvE or PvP to get capped
+          <div>
+            Smoothly <span className="highlight">find out</span> exactly how
+            much <span className="highlight">hit</span> you need on your{" "}
+            <span className="highlight">character sheet</span> by inputting your
+            hit talents and access to raid and draenei buffs
+          </div>
           <Link to="/hitcaphelper" className="link-button">
             Find your hit
           </Link>
