@@ -17,9 +17,9 @@ const Home = () => {
             <span className="highlight">Buffs, Debuffs and Utilities</span>. The
             Raid Helper helps you optimize your raids performance by giving you
             a full <span className="highlight">overview</span> of the{" "}
-            <span className="highlight">players</span> in{" "}
-            <span className="highlight">your raid</span>, the
-            <span className="highlight"> raid buffs </span> and their different{" "}
+            <span className="highlight">raid buffs</span>, the{" "}
+            <span className="highlight">players</span> in your raid and their
+            different{" "}
             <span className="highlight">utilities, cooldowns and roles</span>.
             Additionally, feel free save your raid composition in the browser or
             locally in order to share with others!
