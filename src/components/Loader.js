@@ -2,8 +2,13 @@ import styled from "styled-components";
 import COLORS from "../components";
 
 export const Loader = styled.div`
-  margin: auto;
-  margin-top: 25vw;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
   border: 16px solid ${COLORS.fadedGrey};
   border-top: 16px solid ${COLORS.primary};
   border-radius: 50%;
@@ -18,8 +23,5 @@ export const Loader = styled.div`
     100% {
       transform: rotate(360deg);
     }
-  }
-
-  @media (min-width: 900px) {
   }
 `;
