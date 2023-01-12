@@ -4,9 +4,9 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
   justify-content: center;
   box-sizing: border-box;
-  min-height: 500px;
   padding: 0rem 4rem;
   font-size: 1rem;
   color: white;
