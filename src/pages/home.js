@@ -63,7 +63,7 @@ const Home = () => {
           </Link>
         </PagePreviewText>
         <img
-          src="images/gemfinder.png"
+          src="images/gem_finder.png"
           className="content-preview-image"
           alt="raid-assembler-preview"
         />
@@ -82,7 +82,7 @@ const Home = () => {
           </Link>
         </PagePreviewText>
         <img
-          src="images/arena_point_calc.png"
+          src="images/arena_point_calculator.png"
           className="content-preview-image"
           alt="arena-point-calc-preview"
         />
