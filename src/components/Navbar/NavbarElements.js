@@ -21,7 +21,7 @@ export const Nav = styled.nav`
     height: 48px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 876px) {
     position: fixed;
     width: 100%;
     top: 0;
@@ -90,7 +90,7 @@ export const LogoLink = styled(Link)`
   -webkit-font-smoothing: antialiased;
   font-weight: 200;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 876px) {
     width: 100%;
   }
 `;
@@ -141,10 +141,10 @@ export const Bars = styled(FaBars)`
   top: 0;
   left: 0;
   color: white;
-  transform: translate(100%, 120%);
+  transform: translate(100%, 100%);
   font-size: 1.8rem;
   cursor: pointer;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 876px) {
     display: none;
   }
 `;
@@ -158,7 +158,7 @@ export const ProfileContainer = styled.div`
   font-size: 1.8rem;
   transform: translate(-100%, 150%);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 876px) {
     position: static;
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@ export const ProfileImage = styled(CgProfile)`
 export const NavMenu = styled.div`
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 876px) {
     display: flex;
     align-items: center;
     margin-right: -24px;
