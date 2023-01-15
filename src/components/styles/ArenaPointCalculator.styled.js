@@ -12,27 +12,38 @@ export const Main = styled.main`
   height: auto;
   margin: auto;
   opacity: 90%;
+  font-size: 1rem;
+  margin-top: 7%;
 
   @media (min-width: 900px) {
-    flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
     max-width: 100vw;
     min-width: 75vw;
-    padding: 0 10%;
   }
 `;
 
-export const ArenaContainer = styled.section`
+export const ArenaSection = styled.section`
+  @media (min-width: 900px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+`;
+
+export const ArenaContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-items: center;
   border-radius: 5px;
   max-width: 100%;
   margin: 1rem;
   padding: 1rem;
   background-color: ${COLORS.fadedBackground};
+
   @media (min-width: 1200px) {
     padding: 2rem;
     margin: 0rem;

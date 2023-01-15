@@ -1,8 +1,8 @@
 import {
   ArenaContainer,
+  ArenaSection,
   Main,
 } from "../components/styles/ArenaPointCalculator.styled";
-import { Header, SubHeader } from "../components/styles/RaidAssembler.styled";
 import React, { useReducer } from "react";
 import AlertDiv from "../components/AlertDiv";
 
@@ -135,13 +135,7 @@ function Arenapointcalculator() {
   };
 
   return (
-    <>
-      <Header>3.3.5 Arena Point Calculator</Header>
-      <SubHeader>
-        All points and values are based on the 3.3.5 WOTLK formula. You will
-        recieve points from the team that provides the most amount of points.
-      </SubHeader>
-
+    <Main>
       <AlertDiv
         text="Calculator updated using formula provided by reddit user Finalbelle - Find the original post"
         postLink={
@@ -164,7 +158,7 @@ function Arenapointcalculator() {
         height="45px"
         color="white"
       />
-      <Main>
+      <ArenaSection>
         <ArenaContainer>
           <h2>Arena Points Rewarded</h2>
           <form
@@ -271,8 +265,8 @@ function Arenapointcalculator() {
             </table>
           </form>
         </ArenaContainer>
-      </Main>
-    </>
+      </ArenaSection>
+    </Main>
   );
 }
 export default Arenapointcalculator;

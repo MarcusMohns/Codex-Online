@@ -11,7 +11,7 @@ const StyledErrorDiv = styled.div`
   height: ${(props) => props.height};
   text-align: center;
   width: 75%;
-  margin: 30px auto;
+  margin: 10px auto;
 
   a {
     text-decoration: none;
