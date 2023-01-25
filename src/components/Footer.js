@@ -9,13 +9,13 @@ const StyledFooter = styled.footer`
   align-items: center;
   justify-content: space-evenly;
   height: 120px;
+  width: 100%;
   background-color: #222;
   box-shadow: 0 0 0.2rem ${COLORS.fadedGrey};
   border-top: 1px solid #34343a;
   color: grey;
   font-size: 0.9rem;
-  margin-top: 8rem;
-
+  margin-top: 10rem;
   a {
     display: flex;
     align-items: center;
