@@ -36,7 +36,6 @@ export const MainContentContainer = styled.div`
   flex-direction: column;
   align-content: center;
   height: auto;
-  padding: 3rem;
 
   .radio-input-container {
     margin-top: 2rem;
@@ -88,6 +87,8 @@ export const MainContentContainer = styled.div`
   }
 
   @media screen and (max-width: 992px) {
+    padding: 3rem;
+
     .character-sheet-img {
       width: 80%;
       height: 80%;
