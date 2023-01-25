@@ -48,6 +48,18 @@ const HitCapHelper = () => {
       : setStepState({ ...stepState, step: step + 1 });
   };
 
+  const resetStep = () => {
+    setStepState({
+      step: 1,
+      classAndSpec: "",
+      pveOrPvp: "",
+      draenei: "",
+      talentPoints: "",
+      raidHitBuff: "",
+      result: "",
+    });
+  };
+
   const handleChange = (input, multiplier) => (e) => {
     if (e.target.type === "checkbox") {
       e.target.checked
@@ -179,6 +191,7 @@ const HitCapHelper = () => {
             <Result
               prevStep={prevStep}
               nextStep={nextStep}
+              resetStep={resetStep}
               handleChange={handleChange}
               values={values}
               hitTalentClasses={hitTalentClasses}

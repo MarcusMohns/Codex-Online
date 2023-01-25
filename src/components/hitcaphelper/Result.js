@@ -4,10 +4,11 @@ import {
   MainContentContainer,
   ResultsContainer,
   StyledCapHeader,
+  ButtonContainer,
 } from "./components/ContentContainers";
 import { CheckCircle, CrossIcon } from "../styles/RaidAssembler.styled";
 
-const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
+const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
   const previous = (e) => {
     e.preventDefault();
 
@@ -203,9 +204,15 @@ const Result = ({ prevStep, values, hitTalentClasses, casters }) => {
         className="character-sheet-img"
         alt="character sheet"
       />
-      <StyledNextPrevButton onClick={previous}>
-        Previous<span id="previous-arrow">←</span>
-      </StyledNextPrevButton>
+
+      <ButtonContainer>
+        <StyledNextPrevButton onClick={previous}>
+          Previous<span id="previous-arrow">←</span>
+        </StyledNextPrevButton>
+        <StyledNextPrevButton onClick={resetStep}>
+          Reset <span id="next-arrow">&#8635;</span>
+        </StyledNextPrevButton>
+      </ButtonContainer>
     </MainContentContainer>
   );
 };
