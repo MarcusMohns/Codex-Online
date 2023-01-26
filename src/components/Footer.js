@@ -1,4 +1,3 @@
-import COLORS from "../components";
 import styled from "styled-components";
 import { RiDiscordFill } from "@react-icons/all-files/ri/RiDiscordFill";
 import { Link } from "react-router-dom";
@@ -7,12 +6,11 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 120px;
   width: 100%;
   background-color: #222;
-  box-shadow: 0 0 0.2rem ${COLORS.fadedGrey};
-  border-top: 1px solid #34343a;
+  border-top: 2px solid #34343a;
   color: grey;
   font-size: 0.9rem;
   margin-top: 10rem;
