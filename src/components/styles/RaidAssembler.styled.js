@@ -148,6 +148,7 @@ export const StyledSpecButton = styled.div`
       border: 1px solid black;
       width: 1.3rem;
       height: 1.3rem;
+      animation: fadeIn 1s;
     }
   }
   @media (min-width: 765px) {

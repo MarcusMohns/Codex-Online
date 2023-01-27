@@ -31,6 +31,11 @@ export const Main = styled.main`
     justify-content: center;
     padding: 0.5rem;
 
+    opacity: 0%;
+    animation-name: FadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
     @media screen and (max-width: 992px) {
       img {
         width: 40px;
@@ -52,5 +57,14 @@ export const Main = styled.main`
     font-size: 0.9rem;
     max-width: 90vw;
     min-width: 100%;
+  }
+
+  @keyframes FadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `;
