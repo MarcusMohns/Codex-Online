@@ -72,7 +72,8 @@ const Home = () => {
         <PagePreviewText>
           <PagePreviewHeader>Arena Point Calculator</PagePreviewHeader>
           <div>
-            Calculate how many <span className="highlight">points </span>
+            <span className="highlight">Calculate</span> how many{" "}
+            <span className="highlight">points </span>
             you will <span className="highlight">recieve </span> at the end of
             the reset or check how much rating you need for that upgrade you're
             looking at
