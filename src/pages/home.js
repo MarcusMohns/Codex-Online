@@ -21,8 +21,9 @@ const Home = () => {
             <span className="highlight">players</span> in your raid and their
             different{" "}
             <span className="highlight">utilities, cooldowns and roles</span>.
-            Additionally, feel free save your raid composition in the browser or
-            locally in order to share with others!
+            Additionally, feel free to <span className="highlight">save</span>{" "}
+            your raid composition in the browser or locally and share it with
+            others!
           </div>
           <div className="step-container">
             <div className="a-step">
