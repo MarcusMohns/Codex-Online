@@ -75,7 +75,7 @@ const Home = () => {
           <div>
             <span className="highlight">Calculate</span> how many{" "}
             <span className="highlight">points </span>
-            you will <span className="highlight">recieve </span> at the end of
+            you will <span className="highlight">receive </span> at the end of
             the reset or check how much rating you need for that upgrade you're
             looking at
           </div>
