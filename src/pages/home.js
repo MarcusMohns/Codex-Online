@@ -55,9 +55,9 @@ const Home = () => {
         <PagePreviewText>
           <PagePreviewHeader>Gem Finder</PagePreviewHeader>
           <div>
-            Find<span className="highlight"> any gem </span>in 3.3.5 WotLK with
-            the <span className="highlight">stats, quality or color </span> that
-            suit your needs
+            Find<span className="highlight"> any gem </span>in WotLK with the{" "}
+            <span className="highlight">stats, quality</span> or{" "}
+            <span className="highlight">color</span> that suit your needs
           </div>
           <Link to="/gemfinder" className="link-button">
             Find gems

@@ -37,7 +37,9 @@ const PageNotFound = () => {
         <div className="error-image-container">
           <img src="images/page-not-found-error.png" alt="404 Error" />
         </div>
-        <p className="not-found-error-text">Couldnt find that page, sorry :(</p>
+        <p className="not-found-error-text">
+          Couldn't find that page, sorry :(
+        </p>
       </Main>
     </>
   );
