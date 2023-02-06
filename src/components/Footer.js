@@ -28,14 +28,14 @@ const StyledFooter = styled.footer`
   }
 
   .buymeacoffee-btn {
-    height: 45px;
-    width: 163px;
+    height: 35px;
+    width: 133px;
   }
 
   @media screen and (min-width: 992px) {
     .buymeacoffee-btn {
-      height: 60px;
-      width: 217px;
+      height: 45px;
+      width: 163px;
     }
   }
 `;
