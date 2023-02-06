@@ -1079,6 +1079,10 @@ const SpecArray = [
         image: "images/Divine_Hymn.png",
       },
       {
+        name: "Guardian Spirit",
+        image: "images/Holy_Priest.webp",
+      },
+      {
         name: "Mind Control",
         image: "images/Mind_Control.png",
       },

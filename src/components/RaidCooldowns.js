@@ -22,6 +22,7 @@ const RaidCooldowns = ({
     "Aura Mastery",
     "Divine Hymn",
     "Pain Suppression",
+    "Guardian Spirit",
   ];
   const manaCooldowns = ["Mana Tide Totem", "Hymn of Hope", "Innervate"];
   const combatResCooldowns = ["Rebirth", "Create Soulstone"];
