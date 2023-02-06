@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const InputBtn = styled.label`
-  min-height: 42px;
+  height: 42px;
   input {
     display: none;
     ~ img {

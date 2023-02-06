@@ -1,6 +1,5 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import { Main } from "../components/styles/HitCapHelper.styled";
-import { useState } from "react";
 import Result from "../components/hitcaphelper/Result";
 import SpecArray from "../SpecArray";
 import { Loader } from "../components/Loader";

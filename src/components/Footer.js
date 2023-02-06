@@ -26,6 +26,18 @@ const StyledFooter = styled.footer`
       text-decoration: underline;
     }
   }
+
+  .buymeacoffee-btn {
+    height: 45px;
+    width: 163px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .buymeacoffee-btn {
+      height: 60px;
+      width: 217px;
+    }
+  }
 `;
 
 const DiscordIcon = styled(RiDiscordFill)`
@@ -36,6 +48,14 @@ const Footer = () => {
   return (
     <StyledFooter>
       <div>About</div>
+      <a href="https://www.buymeacoffee.com/Wowcodex">
+        <img
+          src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
+          alt="Buy Me A Coffee"
+          className="buymeacoffee-btn"
+        />
+      </a>
+
       <a href="mailto: warcraftcodex@gmail.com" target="blank">
         Contact us
       </a>
