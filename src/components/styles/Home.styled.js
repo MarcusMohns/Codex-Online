@@ -44,7 +44,7 @@ export const Main = styled.main`
   }
 
   #gem-finder-container {
-    background-color: ${COLORS.fadedGrey};
+    background-color: #3d3d3d;
 
     @media (min-width: 1200px) {
       flex-direction: row-reverse;
@@ -53,7 +53,7 @@ export const Main = styled.main`
     }
   }
   #hit-cap-container {
-    background-color: ${COLORS.fadedGrey};
+    background-color: #3d3d3d;
     box-shadow: none;
 
     @media (min-width: 1200px) {
