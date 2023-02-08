@@ -8,7 +8,7 @@ const StyledErrorDiv = styled.div`
   color: ${(props) => props.color};
   font-size: 1.1rem;
   background: ${(props) => props.background};
-  height: ${(props) => props.height};
+  height: ${(props) => `${props.height + 10}px`};
   text-align: center;
   width: 75%;
   margin: 10px auto;
@@ -21,15 +21,19 @@ const StyledErrorDiv = styled.div`
   }
 
   p {
-    margin-right: 15px;
     width: 100%;
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 992px) {
+    height: ${(props) => `${props.height}px`};
   }
 `;
 const AlertIcon = styled(FiAlertOctagon)`
   display: flex;
   color: ${(props) => props.color};
   font-size: 1.6em;
-  margin-left: 15px;
+  margin: 0 8px;
 `;
 
 function ErrorDiv({ text, background, color, height, postLink }) {
