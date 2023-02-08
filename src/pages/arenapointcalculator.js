@@ -137,7 +137,7 @@ function Arenapointcalculator() {
   return (
     <Main>
       <AlertDiv
-        text="Calculator updated using formula provided by reddit user Finalbelle - Find the original post"
+        text="Calculator updated using formula provided by reddit user Finalbelle and is up to date (v. 3.4.1) - Find the original post"
         postLink={
           <a
             href="https://www.reddit.com/r/classicwow/comments/us1cg5/tbc_arena_calculator_formula_updated_for_s4/"
@@ -148,7 +148,7 @@ function Arenapointcalculator() {
           </a>
         }
         background="#4BB543"
-        height="80px"
+        height={80}
         color="#3a3a3a"
       />
       <AlertDiv
