@@ -452,11 +452,6 @@ const SpecArray = [
         name: "Scorpid Sting",
         image: "images/Scorpid_Sting.png",
       },
-      {
-        category: "Healing Reduction",
-        name: "Aimed Shot",
-        image: "images/Aimed_Shot.png",
-      },
     ],
     utility: [
       {
