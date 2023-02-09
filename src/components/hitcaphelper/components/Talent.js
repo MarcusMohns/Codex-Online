@@ -10,6 +10,18 @@ const StyledTalent = styled.div`
   margin: 0;
   margin-top: 2rem;
   padding: 1rem;
+  animation: 0.3s linear 0s fade-in;
+
+  @keyframes fade-in {
+    0% {
+      filter: blur(2px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
 
   input {
     cursor: pointer;

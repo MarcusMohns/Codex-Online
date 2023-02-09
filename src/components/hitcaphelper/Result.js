@@ -198,12 +198,12 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
             "You are capped"
           )}
         </div>
+        <img
+          src="images/character_sheet.png"
+          className="character-sheet-img"
+          alt="character sheet"
+        />
       </ResultsContainer>
-      <img
-        src="images/character_sheet.png"
-        className="character-sheet-img"
-        alt="character sheet"
-      />
 
       <ButtonContainer>
         <StyledNextPrevButton onClick={previous}>

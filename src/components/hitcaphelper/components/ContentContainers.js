@@ -8,6 +8,19 @@ export const RadioContainer = styled.div`
   margin: 0;
   margin-top: 2rem;
   padding: 1rem;
+  animation: 0.5s linear 0s fade-in;
+
+  @keyframes fade-in {
+    0% {
+      filter: blur(2px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
   label {
     cursor: pointer;
   }
@@ -142,8 +155,22 @@ export const ResultsContainer = styled.div`
   align-items: center;
   justify-content: center;
   justify-items: center;
-  padding: 2rem;
+  padding: 1rem;
   font-family: sans-serif;
+  animation: 0.3s linear 0s fade-in;
+
+  .character-sheet-img {
+    margin-top: 1rem;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   table {
     text-align: center;
