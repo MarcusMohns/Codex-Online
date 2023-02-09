@@ -8,7 +8,7 @@ export const RadioContainer = styled.div`
   margin: 0;
   margin-top: 2rem;
   padding: 1rem;
-  animation: 0.5s linear 0s fade-in;
+  animation: 0.4s linear 0s fade-in;
 
   @keyframes fade-in {
     0% {
