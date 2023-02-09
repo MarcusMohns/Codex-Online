@@ -437,12 +437,6 @@ const SpecArray = [
     name: "",
     buffs: [
       {
-        category: "Replenishment",
-        name: "Hunting Party",
-        image: "images/Replenishment.png",
-      },
-
-      {
         category: "Nature Resistance",
         name: "Aspect of the Wild",
         image: "images/Aspect_Of_The_Wild.png",
