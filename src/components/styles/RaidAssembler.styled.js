@@ -264,6 +264,7 @@ export const StyledClassToolTip = styled.div`
     font-size: 0.8rem;
     padding: 0.1rem;
     margin-top: 2px;
+    text-decoration: underline;
   }
 
   .class-tooltip-buff {
