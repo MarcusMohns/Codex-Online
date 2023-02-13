@@ -14,6 +14,7 @@ const StyledFooter = styled.footer`
   color: grey;
   font-size: 0.9rem;
   margin-top: 10rem;
+  flex-wrap: wrap;
   a {
     display: flex;
     align-items: center;
@@ -21,6 +22,7 @@ const StyledFooter = styled.footer`
     font-style: normal;
     text-decoration: none;
     color: white;
+    margin: 5px;
 
     &:hover {
       text-decoration: underline;
