@@ -19,6 +19,9 @@ const InputBtn = styled.label`
     opacity: 35%;
     border: 2px solid transparent;
     border-radius: 15px;
+    width: 56px;
+    height: 56px;
+
     &:hover {
       opacity: 1;
     }
