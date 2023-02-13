@@ -68,11 +68,13 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
       return target - talentPoints - draenei;
     }
   };
-
   const hit = result();
-  const hitInInt = casters.includes(classAndSpec)
-    ? Math.ceil(hit * 26.23)
-    : Math.ceil(hit * 32.79);
+
+  const hitInInt = (hitInput) => {
+    return casters.includes(classAndSpec)
+      ? Math.ceil(hit * 26.23)
+      : Math.ceil(hit * 32.79);
+  };
 
   const resultTable = (
     <table>
@@ -179,9 +181,6 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
     </table>
   );
 
-  // ? `You need ${hit}% hit (${hitInInt} hit rating) on your character sheet`
-  // : "You are capped"}
-
   return (
     <MainContentContainer>
       <StyledCapHeader>Result</StyledCapHeader>
@@ -189,13 +188,20 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
         {resultTable}
         <div>
           {hit > 0 ? (
-            <div>
+            <div className="results-text">
               You need <span className="bold-result">{hit}% hit</span> (
-              <span className="bold-result">{hitInInt} hit rating</span>) on
-              your character sheet
+              <span className="bold-result">{hitInInt(hit)} hit rating</span>)
+              on your character sheet
             </div>
           ) : (
-            "You are capped"
+            <div className="results-text">
+              You are <span className="bold-result">hit capped</span> at{" "}
+              {cap() + Math.abs(hit)}%!
+              <div>
+                You need {cap()}% hit, you have an additional {Math.abs(hit)}% (
+                {Math.abs(hitInInt(hit))} rating)
+              </div>
+            </div>
           )}
         </div>
         <img
