@@ -166,6 +166,7 @@ export const StyledCapHeader = styled.h1`
   font-size: 1.3rem;
   text-align: center;
   font-family: sans-serif;
+  padding: 1rem;
 
   .druid {
     color: ${COLORS.druid};
@@ -184,6 +185,11 @@ export const ResultsContainer = styled.div`
   padding: 1rem;
   font-family: sans-serif;
   animation: 0.3s linear 0s fade-in;
+
+  .results-text {
+    padding: 1rem;
+    text-align: center;
+  }
 
   .character-sheet-img {
     margin-top: 1rem;
