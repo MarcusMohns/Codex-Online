@@ -521,7 +521,6 @@ const BuffArray = [
     name: "Replenishment",
     source: [
       <div key={"replenishment-provided-by"}>
-        <span id="hunter">Survival Hunter</span>
         <span id="mage">Frost Mage</span>
         <span id="paladin">Retribution Paladin</span>
         <span id="priest">Shadow Priest</span>
@@ -532,8 +531,8 @@ const BuffArray = [
     text: (
       <div>
         <div className="spell-names">
-          Hunting Party, Enduring Winter, Judgements of the Wise,Vampiric Touch,
-          Improved Soul Leech.
+          Enduring Winter, Judgements of the Wise,Vampiric Touch, Improved Soul
+          Leech.
         </div>
         <span className="buff">Increases</span> the mana regeneration equal to
         3% of maximum mana per 5 sec for 15 seconds.
@@ -1033,6 +1032,9 @@ const BuffArray = [
         <span className="buff">Increases</span> the nature resistance of{" "}
         <span className="buff">party and raid members</span> by{" "}
         <span className="buff-value">130</span>
+        <div className="fine-print">
+          Hunters using Aspect of the Wild will suffer a DPS loss.
+        </div>
       </div>
     ),
   },
