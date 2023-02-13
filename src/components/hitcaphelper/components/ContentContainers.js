@@ -31,6 +31,12 @@ export const RadioContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0rem 1rem;
+
+    img {
+      width: 56px;
+      height: 56px;
+      margin-top: 1rem;
+    }
   }
 
   .raidbuffs-container {
@@ -39,6 +45,26 @@ export const RadioContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0rem 1rem;
+
+    img {
+      width: 112px;
+      height: 56px;
+      margin-top: 1rem;
+    }
+  }
+
+  .draenei-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem;
+
+    img {
+      width: 56px;
+      height: 56px;
+      margin-top: 1rem;
+    }
   }
 `;
 
