@@ -207,6 +207,12 @@ const SpecArray = [
         image: "images/Cyclone.png",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Tranquility",
+        image: "images/Tranquility.png",
+      },
+    ],
   },
   {
     text: "Feral Druid",
@@ -278,6 +284,12 @@ const SpecArray = [
         image: "images/Cyclone.png",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Tranquility",
+        image: "images/Tranquility.png",
+      },
+    ],
   },
   {
     text: "Restoration Druid",
@@ -331,6 +343,12 @@ const SpecArray = [
       {
         name: "Cyclone",
         image: "images/Cyclone.png",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Tranquility",
+        image: "images/Tranquility.png",
       },
     ],
   },
@@ -1148,6 +1166,12 @@ const SpecArray = [
         image: "images/Psychic_Scream.png",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Vampiric Embrace",
+        image: "images/Vampiric_Embrace.png",
+      },
+    ],
   },
   {
     text: "Assassination Rogue",
@@ -1393,6 +1417,20 @@ const SpecArray = [
         image: "images/Purge.png",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Healing Stream Totem",
+        image: "images/Healing_Stream_Totem.png",
+      },
+      {
+        name: "Cleansing Totem",
+        image: "images/Cleansing_Totem.png",
+      },
+      {
+        name: "Tremor Totem",
+        image: "images/Tremor_Totem.png",
+      },
+    ],
   },
   {
     text: "Enhancement Shaman",
@@ -1485,6 +1523,20 @@ const SpecArray = [
       {
         name: "Purge",
         image: "images/Purge.png",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Healing Stream Totem",
+        image: "images/Healing_Stream_Totem.png",
+      },
+      {
+        name: "Cleansing Totem",
+        image: "images/Cleansing_Totem.png",
+      },
+      {
+        name: "Tremor Totem",
+        image: "images/Tremor_Totem.png",
       },
     ],
   },
@@ -1587,6 +1639,24 @@ const SpecArray = [
       {
         name: "Purge",
         image: "images/Purge.png",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Healing Stream Totem",
+        image: "images/Healing_Stream_Totem.png",
+      },
+      {
+        name: "Cleansing Totem",
+        image: "images/Cleansing_Totem.png",
+      },
+      {
+        name: "Tremor Totem",
+        image: "images/Tremor_Totem.png",
+      },
+      {
+        name: "Mana Tide Totem",
+        image: "images/Mana_Tide_Totem.png",
       },
     ],
   },
