@@ -754,7 +754,7 @@ const SpecArray = [
       },
       {
         category: "Stats 10%",
-        name: "Blessing of Sanctuary",
+        name: "Blessing of Sanctuary*",
         image: "images/Greater_Blessing_Of_Sanctuary.png",
         checked: true,
       },
