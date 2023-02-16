@@ -1131,7 +1131,7 @@ export const NoPlayersText = styled.p`
   justify-content: center;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
-  min-height: 432px;
+  min-height: 442px;
 `;
 
 export const PlayersContainer = styled.div`
@@ -1154,12 +1154,12 @@ export const GroupContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   flex: 1 0 20%;
-  min-height: 400px;
+  min-height: 450px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: transparent;
 
   @media (min-width: 1300px) {
-    min-height: 430px;
+    min-height: 440px;
     padding: 0 1px;
   }
 `;
