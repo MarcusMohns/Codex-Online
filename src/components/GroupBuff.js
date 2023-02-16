@@ -8,8 +8,15 @@ const StyledGroupBuff = styled.div`
   flex-wrap: wrap;
 
   img {
-    width: 28px;
-    height: 28px;
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: 1200px) {
+    img {
+      width: 28px;
+      height: 28px;
+    }
   }
 `;
 
