@@ -5,6 +5,7 @@ import {
   GroupContainer,
   GroupTitle,
 } from "./styles/RaidAssembler.styled";
+import GroupBuff from "./GroupBuff";
 
 const Group = ({
   dropId,
@@ -42,6 +43,7 @@ const Group = ({
           </PlayersContainer>
         )}
       </Droppable>
+      <GroupBuff group={group} />
     </GroupContainer>
   );
 };

@@ -1,0 +1,41 @@
+import styled from "styled-components";
+
+const StyledGroupBuff = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+`;
+
+const GroupBuff = ({ group }) => {
+  let currentBuffs = [];
+  let groupBuffs = [];
+
+  for (let playerInGroup of group.playerIds) {
+    if (playerInGroup.groupBuffs !== undefined) {
+      for (let groupBuff of playerInGroup.groupBuffs) {
+        if (
+          !currentBuffs.includes(groupBuff.name) ||
+          ["Mana Tide Totem", "Tranquility"].includes(groupBuff.name)
+        ) {
+          currentBuffs.push(groupBuff.name);
+          groupBuffs.push(
+            <div key={`group-buff-${playerInGroup.id}-${groupBuff.name}`}>
+              <img src={groupBuff.image} alt="group buff" />
+            </div>
+          );
+        }
+      }
+    }
+  }
+
+  return <StyledGroupBuff>{groupBuffs}</StyledGroupBuff>;
+};
+
+export default GroupBuff;
