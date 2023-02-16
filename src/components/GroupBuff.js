@@ -33,9 +33,13 @@ const GroupBuff = ({ group }) => {
         ) {
           currentBuffs.push(groupBuff.name);
           groupBuffs.push(
-            <div key={`group-buff-${playerInGroup.id}-${groupBuff.name}`}>
+            <a
+              href={groupBuff.link}
+              key={`group-buff-${playerInGroup.id}-${groupBuff.name}`}
+              data-wowhead={`item=${groupBuff.spellId}`}
+            >
               <img src={groupBuff.image} alt="group buff" />
-            </div>
+            </a>
           );
         }
       }

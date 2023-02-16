@@ -211,6 +211,8 @@ const SpecArray = [
       {
         name: "Tranquility",
         image: "images/Tranquility.png",
+        link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
+        spellId: "48447",
       },
     ],
   },
@@ -288,6 +290,8 @@ const SpecArray = [
       {
         name: "Tranquility",
         image: "images/Tranquility.png",
+        link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
+        spellId: "48447",
       },
     ],
   },
@@ -349,6 +353,8 @@ const SpecArray = [
       {
         name: "Tranquility",
         image: "images/Tranquility.png",
+        link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
+        spellId: "48447",
       },
     ],
   },
@@ -1170,6 +1176,8 @@ const SpecArray = [
       {
         name: "Vampiric Embrace",
         image: "images/Vampiric_Embrace.png",
+        link: "https://www.wowhead.com/wotlk/spell=15286/vampiric-embrace",
+        spellId: "15286",
       },
     ],
   },
@@ -1421,14 +1429,20 @@ const SpecArray = [
       {
         name: "Healing Stream Totem",
         image: "images/Healing_Stream_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
+        spellId: "58757",
       },
       {
         name: "Cleansing Totem",
         image: "images/Cleansing_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
+        spellId: "8170",
       },
       {
         name: "Tremor Totem",
         image: "images/Tremor_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
+        spellId: "8143",
       },
     ],
   },
@@ -1529,14 +1543,20 @@ const SpecArray = [
       {
         name: "Healing Stream Totem",
         image: "images/Healing_Stream_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
+        spellId: "58757",
       },
       {
         name: "Cleansing Totem",
         image: "images/Cleansing_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
+        spellId: "8170",
       },
       {
         name: "Tremor Totem",
         image: "images/Tremor_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
+        spellId: "8143",
       },
     ],
   },
@@ -1645,18 +1665,26 @@ const SpecArray = [
       {
         name: "Healing Stream Totem",
         image: "images/Healing_Stream_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
+        spellId: "58757",
       },
       {
         name: "Cleansing Totem",
         image: "images/Cleansing_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
+        spellId: "8170",
       },
       {
         name: "Tremor Totem",
         image: "images/Tremor_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
+        spellId: "8143",
       },
       {
         name: "Mana Tide Totem",
         image: "images/Mana_Tide_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=16190/mana-tide-totem",
+        spellId: "16190",
       },
     ],
   },
