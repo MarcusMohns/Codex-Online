@@ -196,10 +196,10 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
           ) : (
             <div className="results-text">
               You are <span className="bold-result">hit capped</span> at{" "}
-              {cap() + Math.abs(hit)}%!
+              {cap() + Math.abs(hit)}%
               <div>
-                You need {cap()}% hit, you have an additional {Math.abs(hit)}% (
-                {Math.abs(hitInInt(hit))} rating)
+                Your cap is {cap()}% hit - You are {Math.abs(hit)}% (
+                {Math.abs(hitInInt(hit))} rating) over hit cap
               </div>
             </div>
           )}
