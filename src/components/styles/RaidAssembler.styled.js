@@ -1011,7 +1011,7 @@ export const StyledUtilities = styled.div`
   }
 `;
 
-export const StyledUtility = styled.div`
+export const StyledUtility = styled.a`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
