@@ -1027,11 +1027,20 @@ export const StyledUtility = styled.a`
   animation-name: FadeIn;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 0.0071428571em;
+  min-height: 100%;
+  text-decoration: none; /* no underline */
 
   img {
     width: 25px;
     border-radius: 20%;
     margin-left: 0.5rem;
+  }
+
+  &:hover {
+    color: inherit;
   }
 `;
 

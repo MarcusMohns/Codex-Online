@@ -317,6 +317,8 @@ const RaidHelper = () => {
       let newUtility = {
         name: utility.name,
         image: utility.image,
+        link: utility.link,
+        spellId: utility.spellId,
       };
       setUtilities({ type: "add", name: id, value: newUtility });
     }
