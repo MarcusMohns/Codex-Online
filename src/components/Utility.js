@@ -1,12 +1,13 @@
 import { StyledUtility } from "./styles/RaidAssembler.styled";
 
 const Utility = ({ utility }) => {
-  console.log(utility);
   return (
     <StyledUtility
       key={utility.name}
       href={utility.link}
       data-wowhead={`item-${utility.id}`}
+      target="_blank"
+      rel="noopener"
     >
       {utility.count}x {utility.name}
       <img src={utility.image} alt="utility spell, e.g misdirection" />
