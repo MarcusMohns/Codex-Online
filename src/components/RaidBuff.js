@@ -9,7 +9,7 @@ const RaidBuff = ({ text }) => {
   return <div>{allBuffs}</div>;
 };
 
-Checkbox.defaultProps = {
+RaidBuff.defaultProps = {
   RaidBuff: "missing buff",
 };
 
