@@ -144,7 +144,7 @@ export const StyledSpecButton = styled.div`
     }
 
     .specbutton-image {
-      border-radius: 50%;
+      border-radius: 10px;
       border: 1px solid black;
       width: 1.3rem;
       height: 1.3rem;
