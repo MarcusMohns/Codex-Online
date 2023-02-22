@@ -5,7 +5,7 @@ const Utility = ({ utility }) => {
     <StyledUtility
       key={utility.name}
       href={utility.link}
-      data-wowhead={`item-${utility.id}`}
+      data-wowhead={`item-${utility.spellId}`}
       target="_blank"
       rel="noopener"
     >
