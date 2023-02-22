@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 120px;
   width: 100%;
   background-color: #222;
@@ -22,7 +22,6 @@ const StyledFooter = styled.footer`
     font-style: normal;
     text-decoration: none;
     color: white;
-    margin: 5px;
 
     &:hover {
       text-decoration: underline;
@@ -30,14 +29,14 @@ const StyledFooter = styled.footer`
   }
 
   .buymeacoffee-btn {
-    height: 35px;
-    width: 133px;
+    width: 136.25px;
+    height: 38.25px;
   }
 
   @media screen and (min-width: 992px) {
     .buymeacoffee-btn {
-      height: 45px;
-      width: 163px;
+      width: 181.66px;
+      height: 51px;
     }
   }
 `;

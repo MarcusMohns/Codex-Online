@@ -129,8 +129,8 @@ export const MainContentContainer = styled.div`
     padding: 3rem;
 
     .character-sheet-img {
-      width: 80%;
-      height: 80%;
+      width: 419px;
+      height: 552px;
     }
   }
 `;
