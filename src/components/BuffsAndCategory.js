@@ -6,16 +6,15 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
   let newBuffs = [];
   let exists_already = [];
   let categoryColor = "pink";
-  let AllBuffsInRaid = Object.values(currentBuffs);
+  let allBuffsInRaid = Object.values(currentBuffs);
 
-  if (AllBuffsInRaid.length > 0) {
-    for (let aPlayersBuffs of AllBuffsInRaid) {
+  if (allBuffsInRaid.length > 0) {
+    for (let aPlayersBuffs of allBuffsInRaid) {
       // iterate over state
       for (let buff of aPlayersBuffs) {
         if (buff.buffCategory === category.name) {
           // If buff matches category being created
           categoryColor = "#72e263";
-
           if (!exists_already.includes(buff.buffName)) {
             // if buff is not already displayed
             exists_already = [...exists_already, buff.buffName];
@@ -24,6 +23,8 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
               {
                 name: buff.buffName,
                 image: buff.buffImg,
+                link: buff.buffLink,
+                spellId: buff.buffSpellId,
                 count: 1,
               },
             ];
@@ -54,6 +55,8 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
           count={buff.count}
           name={buff.name}
           image={buff.image}
+          link={buff.link}
+          spellId={buff.spellId}
           key={(buff.count, buff.name)}
         />
       ))}

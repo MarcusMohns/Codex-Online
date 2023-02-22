@@ -220,6 +220,8 @@ const RaidHelper = () => {
         buffCategory: buff.category,
         buffName: buff.name,
         buffImg: buff.image,
+        buffLink: buff.link,
+        buffSpellId: buff.spellId,
       };
       setBuffs({ type: "add", name: id, value: newBuff });
     }
@@ -265,6 +267,8 @@ const RaidHelper = () => {
       buffCategory: buff.category,
       buffName: buff.name,
       buffImg: buff.image,
+      buffLink: buff.link,
+      buffSpellId: buff.spellId,
     };
 
     if (e.target.checked) {
