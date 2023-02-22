@@ -521,6 +521,7 @@ const BuffArray = [
     name: "Replenishment",
     source: [
       <div key={"replenishment-provided-by"}>
+        <span id="hunter">Survival Hunter</span>
         <span id="mage">Frost Mage</span>
         <span id="paladin">Retribution Paladin</span>
         <span id="priest">Shadow Priest</span>
@@ -531,8 +532,8 @@ const BuffArray = [
     text: (
       <div>
         <div className="spell-names">
-          Enduring Winter, Judgements of the Wise,Vampiric Touch, Improved Soul
-          Leech.
+          Hunting Party, Enduring Winter, Judgements of the Wise,Vampiric Touch,
+          Improved Soul Leech.
         </div>
         <span className="buff">Increases</span> the mana regeneration equal to
         3% of maximum mana per 5 sec for 15 seconds.
