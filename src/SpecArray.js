@@ -1012,14 +1012,6 @@ const SpecArray = [
         checked: true,
       },
       {
-        category: "Stats 10%",
-        name: "Blessing of Sanctuary*",
-        image: "images/Greater_Blessing_Of_Sanctuary.png",
-        link: "https://www.wowhead.com/wotlk/spell=25899/greater-blessing-of-sanctuary",
-        spellId: "25899",
-        checked: true,
-      },
-      {
         category: "Crit Strike %",
         name: "Heart of the Crusader",
         image: "images/Heart_Of_The_Crusader.png",
