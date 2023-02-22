@@ -745,7 +745,7 @@ export const CategoryContainer = styled.div`
   }
 `;
 
-export const StyledBuff = styled.div`
+export const StyledBuff = styled.a`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -757,6 +757,9 @@ export const StyledBuff = styled.div`
   margin: 7px;
   overflow: hidden;
   max-height: 25px;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.0071428571em;
+  text-decoration: none;
 
   @media (min-width: 1300px) {
     margin: 1px;
@@ -1031,7 +1034,7 @@ export const StyledUtility = styled.a`
   box-sizing: border-box;
   letter-spacing: 0.0071428571em;
   min-height: 100%;
-  text-decoration: none; /* no underline */
+  text-decoration: none;
 
   img {
     width: 25px;
@@ -1039,7 +1042,19 @@ export const StyledUtility = styled.a`
     margin-left: 0.5rem;
   }
 
+  &:link {
+    color: inherit;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+
   &:hover {
+    color: inherit;
+  }
+
+  &:active {
     color: inherit;
   }
 `;
@@ -1490,7 +1505,7 @@ export const StyledRaidCooldowns = styled.div`
   .cooldown-panel > div {
     min-height: 0px;
   }
-  .cooldown-panel > div > div {
+  .cooldown-panel > div > a {
     user-select: text;
     background-color: ${COLORS.fadedGrey};
     color: ${COLORS.offWhite};
