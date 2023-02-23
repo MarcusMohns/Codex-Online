@@ -9,7 +9,7 @@ const SpecButtons = ({ specs, onClick }) => {
         <SpecButton
           key={spec.text}
           text={spec.text}
-          image={spec.image}
+          image={spec.icon}
           onClick={() => onClick(spec)}
           color={spec.color}
           buffs={spec.buffs}
