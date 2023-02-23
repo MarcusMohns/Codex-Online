@@ -2,7 +2,7 @@ import { NavLink as Link } from "react-router-dom";
 import { CgProfile } from "@react-icons/all-files/cg/CgProfile";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import styled from "styled-components";
-import COLORS from "../../components";
+import COLORS from "../../colors";
 
 export const Nav = styled.nav`
   background: ${COLORS.primary};

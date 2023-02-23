@@ -9,11 +9,13 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
 import { Loader } from "./components/Loader";
 
-const Home = lazy(() => import("./pages/home"));
-const RaidHelper = lazy(() => import("./pages/raidhelper"));
-const Arenapointcalculator = lazy(() => import("./pages/arenapointcalculator"));
-const HitCapHelper = lazy(() => import("./pages/hitcaphelper"));
-const gemfinder = lazy(() => import("./pages/gemfinder"));
+const Home = lazy(() => import("./pages/home/home"));
+const RaidHelper = lazy(() => import("./pages/raidhelper/raidhelper"));
+const Arenapointcalculator = lazy(() =>
+  import("./pages/arenapointcalculator/ArenaPointCalculator")
+);
+const HitCapHelper = lazy(() => import("./pages/hitcaphelper/hitcaphelper"));
+const gemfinder = lazy(() => import("./pages/gemfinder/gemfinder"));
 const Terms = lazy(() => import("./pages/terms"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import COLORS from "../components";
+import COLORS from "../colors";
 
 export const Loader = styled.div`
   position: absolute;

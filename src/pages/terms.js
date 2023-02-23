@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import COLORS from "../components";
+import COLORS from "../colors";
 
 const Header = styled.h1`
   font-size: 1.8rem;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Header } from "../components/styles/RaidAssembler.styled";
+import { Header } from "./raidhelper/styles/RaidHelper.styled";
 
 const Main = styled.main`
   display: flex;
