@@ -1037,6 +1037,7 @@ export const StyledUtility = styled.a`
 
   img {
     width: 25px;
+    height: 25px;
     border-radius: 20%;
     margin-left: 0.5rem;
   }

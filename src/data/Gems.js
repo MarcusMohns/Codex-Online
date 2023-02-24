@@ -5,7 +5,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Accurate Huge Citrine",
@@ -13,7 +13,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Accurate Monarch Topaz",
@@ -21,7 +21,7 @@ const gemArray = [
     source: "Storm Peaks mammoths",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Balanced Dreadstone",
@@ -29,7 +29,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Balanced Shadow Crystal",
@@ -37,7 +37,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Balanced Twilight Opal",
@@ -45,7 +45,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Bold Bloodstone",
@@ -53,7 +53,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Uncommon",
-    image: "images/Bloodstone.png",
+    image: "images/gems/Bloodstone.png",
   },
   {
     name: "Bold Cardinal Ruby",
@@ -61,7 +61,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Bold Scarlet Ruby",
@@ -69,7 +69,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Red",
     quality: "Rare",
-    image: "images/Scarlet_Ruby.png",
+    image: "images/gems/Scarlet_Ruby.png",
   },
   {
     name: "Bold Stormjewel",
@@ -77,7 +77,7 @@ const gemArray = [
     source: "Bag of Fishing Treasures",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Bright Bloodstone",
@@ -85,7 +85,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Uncommon",
-    image: "images/Bloodstone.png",
+    image: "images/gems/Bloodstone.png",
   },
   {
     name: "Bright Cardinal Ruby",
@@ -93,7 +93,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Bright Scarlet Ruby",
@@ -101,7 +101,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Rare",
-    image: "images/Scarlet_Ruby.png",
+    image: "images/gems/Scarlet_Ruby.png",
   },
   {
     name: "Brilliant Autumn's Glow",
@@ -109,7 +109,7 @@ const gemArray = [
     source: "Trainer",
     color: "Yellow",
     quality: "Rare",
-    image: "images/Autumns_Glow.png",
+    image: "images/gems/Autumns_Glow.png",
   },
   {
     name: "Brilliant King's Amber",
@@ -117,7 +117,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Kings_Amber.png",
+    image: "images/gems/Kings_Amber.png",
   },
   {
     name: "Brilliant Stormjewel",
@@ -125,7 +125,7 @@ const gemArray = [
     source: "Bag of Fishing Treasures",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Kings_Amber.png",
+    image: "images/gems/Kings_Amber.png",
   },
   {
     name: "Brilliant Sun Crystal",
@@ -133,7 +133,7 @@ const gemArray = [
     source: "Trainer",
     color: "Yellow",
     quality: "Uncommon",
-    image: "images/Sun_Crystal.png",
+    image: "images/gems/Sun_Crystal.png",
   },
   {
     name: "Champion's Ametrine",
@@ -141,7 +141,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Champion's Huge Citrine",
@@ -149,7 +149,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Champion's Monarch Topaz",
@@ -157,7 +157,7 @@ const gemArray = [
     source: "World Drop",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Dazzling Dark Jade",
@@ -165,7 +165,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Dazzling Eye of Zul",
@@ -173,7 +173,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Dazzling Forest Emerald",
@@ -181,7 +181,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Deadly Ametrine",
@@ -189,7 +189,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Deadly Huge Citrine",
@@ -197,7 +197,7 @@ const gemArray = [
     source: "Knights of the Ebon Blade",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Deadly Monarch Topaz",
@@ -205,7 +205,7 @@ const gemArray = [
     source: "Keristrasza",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Defender's Dreadstone",
@@ -213,7 +213,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Defender's Shadow Crystal",
@@ -221,7 +221,7 @@ const gemArray = [
     source: "Kalu'ak",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Defender's Twilight Opal",
@@ -229,7 +229,7 @@ const gemArray = [
     source: "Storm Peaks iron dwarves",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Deft Ametrine",
@@ -237,7 +237,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Deft Huge Citrine",
@@ -245,7 +245,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Deft Monarch Topaz",
@@ -253,7 +253,7 @@ const gemArray = [
     source: "Sjonnir the Ironshaper",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Delicate Bloodstone",
@@ -261,7 +261,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Uncommon",
-    image: "images/Bloodstone.png",
+    image: "images/gems/Bloodstone.png",
   },
   {
     name: "Delicate Cardinal Ruby",
@@ -269,7 +269,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Delicate Scarlet Ruby",
@@ -277,7 +277,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Red",
     quality: "Rare",
-    image: "images/Scarlet_Ruby.png",
+    image: "images/gems/Scarlet_Ruby.png",
   },
   {
     name: "Delicate Stormjewel",
@@ -285,7 +285,7 @@ const gemArray = [
     source: "Bag of Fishing Treasures",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Durable Ametrine",
@@ -293,7 +293,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Durable Huge Citrine",
@@ -301,7 +301,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Durable Monarch Topaz",
@@ -309,7 +309,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Empowered Ametrine",
@@ -317,7 +317,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Empowered Huge Citrine",
@@ -325,7 +325,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Empowered Monarch Topaz",
@@ -333,7 +333,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Enduring Dark Jade",
@@ -341,7 +341,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Enduring Eye of Zul",
@@ -349,7 +349,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Enduring Forest Emerald",
@@ -357,7 +357,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Energized Dark Jade",
@@ -365,7 +365,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Energized Eye of Zul",
@@ -373,7 +373,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Energized Forest Emerald",
@@ -381,7 +381,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Etched Ametrine",
@@ -389,7 +389,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Etched Huge Citrine",
@@ -397,7 +397,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Etched Monarch Topaz",
@@ -405,7 +405,7 @@ const gemArray = [
     source: "World Drop",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Fierce Ametrine",
@@ -413,7 +413,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Fierce Huge Citrine",
@@ -421,7 +421,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Fierce Monarch Topaz",
@@ -429,7 +429,7 @@ const gemArray = [
     source: "Ingvar the Plunderer",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Flashing Bloodstone",
@@ -437,7 +437,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Uncommon",
-    image: "images/Bloodstone.png",
+    image: "images/gems/Bloodstone.png",
   },
   {
     name: "Flashing Cardinal Ruby",
@@ -445,7 +445,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Flashing Scarlet Ruby",
@@ -453,7 +453,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Red",
     quality: "Rare",
-    image: "images/Scarlet_Ruby.png",
+    image: "images/gems/Scarlet_Ruby.png",
   },
   {
     name: "Forceful Dark Jade",
@@ -461,7 +461,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Forceful Eye of Zul",
@@ -469,7 +469,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Forceful Forest Emerald",
@@ -477,7 +477,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Fractured Bloodstone",
@@ -485,7 +485,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Uncommon",
-    image: "images/Bloodstone.png",
+    image: "images/gems/Bloodstone.png",
   },
   {
     name: "Fractured Cardinal Ruby",
@@ -493,7 +493,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Fractured Scarlet Ruby",
@@ -501,7 +501,7 @@ const gemArray = [
     source: "Nascent Val'kyr",
     color: "Red",
     quality: "Rare",
-    image: "images/Scarlet_Ruby.png",
+    image: "images/gems/Scarlet_Ruby.png",
   },
   {
     name: "Glimmering Ametrine",
@@ -509,7 +509,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Glimmering Huge Citrine",
@@ -517,7 +517,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Glimmering Monarch Topaz",
@@ -525,7 +525,7 @@ const gemArray = [
     source: "Wyrmrest Accord",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Glinting Ametrine",
@@ -533,7 +533,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Glinting Huge Citrine",
@@ -541,7 +541,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Glinting Monarch Topaz",
@@ -549,7 +549,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Glowing Dreadstone",
@@ -557,7 +557,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Glowing Shadow Crystal",
@@ -565,7 +565,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Glowing Twilight Opal",
@@ -573,7 +573,7 @@ const gemArray = [
     source: "Knights of the Ebon Blade",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Guardian's Dreadstone",
@@ -581,7 +581,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Guardian's Shadow Crystal",
@@ -589,7 +589,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Guardian's Twilight Opal",
@@ -597,7 +597,7 @@ const gemArray = [
     source: "Argent Crusade",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Infused Dreadstone",
@@ -605,7 +605,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Infused Shadow Crystal",
@@ -613,7 +613,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Infused Twilight Opal",
@@ -621,7 +621,7 @@ const gemArray = [
     source: "Anub'arak",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Inscribed Ametrine",
@@ -629,7 +629,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Inscribed Huge Citrine",
@@ -637,7 +637,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Inscribed Monarch Topaz",
@@ -645,7 +645,7 @@ const gemArray = [
     source: "World Drop",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Intricate Dark Jade",
@@ -653,7 +653,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Intricate Eye of Zul",
@@ -661,7 +661,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Intricate Forest Emerald",
@@ -669,7 +669,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Jagged Dark Jade",
@@ -677,7 +677,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Jagged Eye of Zul",
@@ -685,7 +685,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Jagged Forest Emerald",
@@ -693,7 +693,7 @@ const gemArray = [
     source: "Frenzyheart",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Kharmaa's Grace",
@@ -701,7 +701,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Autumns_Glow.png",
+    image: "images/gems/Autumns_Glow.png",
   },
   {
     name: "Lambent Dark Jade",
@@ -709,7 +709,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Lambent Eye of Zul",
@@ -717,7 +717,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Lambent Forest Emerald",
@@ -725,7 +725,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Lucent Ametrine",
@@ -733,7 +733,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Lucent Huge Citrine",
@@ -741,7 +741,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Lucent Monarch Topaz",
@@ -749,7 +749,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Luminous Ametrine",
@@ -757,7 +757,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Luminous Huge Citrine",
@@ -765,7 +765,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Luminous Monarch Topaz",
@@ -773,7 +773,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Lustrous Chalcedony",
@@ -781,7 +781,7 @@ const gemArray = [
     source: "Trainer",
     color: "Blue",
     quality: "Uncommon",
-    image: "images/Chalcedony.png",
+    image: "images/gems/Chalcedony.png",
   },
   {
     name: "Lustrous Majestic Zircon",
@@ -789,7 +789,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Blue",
     quality: "Epic",
-    image: "images/Majestic_Zircon.png",
+    image: "images/gems/Majestic_Zircon.png",
   },
   {
     name: "Lustrous Sky Sapphire",
@@ -797,7 +797,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Blue",
     quality: "Rare",
-    image: "images/Sky_Sapphire.png",
+    image: "images/gems/Sky_Sapphire.png",
   },
   {
     name: "Misty Dark Jade",
@@ -805,7 +805,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Misty Eye of Zul",
@@ -813,7 +813,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Misty Forest Emerald",
@@ -821,7 +821,7 @@ const gemArray = [
     source: "World Drop",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Mysterious Dreadstone",
@@ -829,7 +829,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Mysterious Shadow Crystal",
@@ -837,7 +837,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Mysterious Twilight Opal",
@@ -845,7 +845,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Mystic Autumn's Glow",
@@ -853,7 +853,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Yellow",
     quality: "Rare",
-    image: "images/Autumns_Glow.png",
+    image: "images/gems/Autumns_Glow.png",
   },
   {
     name: "Mystic King's Amber",
@@ -861,7 +861,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Kings_Amber.png",
+    image: "images/gems/Kings_Amber.png",
   },
   {
     name: "Mystic Sun Crystal",
@@ -869,7 +869,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Yellow",
     quality: "Uncommon",
-    image: "images/Sun_Crystal.png",
+    image: "images/gems/Sun_Crystal.png",
   },
   {
     name: "Opaque Dark Jade",
@@ -877,7 +877,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Opaque Eye of Zul",
@@ -885,7 +885,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Opaque Forest Emerald",
@@ -893,7 +893,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Perfect Accurate Huge Citrine",
@@ -901,7 +901,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Balanced Shadow Crystal",
@@ -909,7 +909,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Bold Bloodstone",
@@ -917,7 +917,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Red",
     quality: "Perfect",
-    image: "images/Perfect_Bloodstone.png",
+    image: "images/gems/Perfect_Bloodstone.png",
   },
   {
     name: "Perfect Bright Bloodstone",
@@ -925,7 +925,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Red",
     quality: "Perfect",
-    image: "images/Perfect_Bloodstone.png",
+    image: "images/gems/Perfect_Bloodstone.png",
   },
   {
     name: "Perfect Brilliant Sun Crystal",
@@ -933,7 +933,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Yellow",
     quality: "Perfect",
-    image: "images/Perfect_Sun_Crystal.png",
+    image: "images/gems/Perfect_Sun_Crystal.png",
   },
   {
     name: "Perfect Champion's Huge Citrine",
@@ -941,7 +941,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Dazzling Dark Jade",
@@ -949,7 +949,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Deadly Huge Citrine",
@@ -957,7 +957,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Defender's Shadow Crystal",
@@ -965,7 +965,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Deft Huge Citrine",
@@ -973,7 +973,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Delicate Bloodstone",
@@ -981,7 +981,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Red",
     quality: "Perfect",
-    image: "images/Perfect_Bloodstone.png",
+    image: "images/gems/Perfect_Bloodstone.png",
   },
   {
     name: "Perfect Durable Huge Citrine",
@@ -989,7 +989,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Empowered Huge Citrine",
@@ -997,7 +997,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Enduring Dark Jade",
@@ -1005,7 +1005,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Energized Dark Jade",
@@ -1013,7 +1013,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Etched Huge Citrine",
@@ -1021,7 +1021,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Fierce Huge Citrine",
@@ -1029,7 +1029,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Flashing Bloodstone",
@@ -1037,7 +1037,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Red",
     quality: "Perfect",
-    image: "images/Perfect_Bloodstone.png",
+    image: "images/gems/Perfect_Bloodstone.png",
   },
   {
     name: "Perfect Forceful Dark Jade",
@@ -1045,7 +1045,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Fractured Bloodstone",
@@ -1053,7 +1053,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Red",
     quality: "Perfect",
-    image: "images/Perfect_Bloodstone.png",
+    image: "images/gems/Perfect_Bloodstone.png",
   },
   {
     name: "Perfect Glimmering Huge Citrine",
@@ -1061,7 +1061,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Glinting Huge Citrine",
@@ -1069,7 +1069,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Glowing Shadow Crystal",
@@ -1077,7 +1077,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Guardian's Shadow Crystal",
@@ -1085,7 +1085,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Infused Shadow Crystal",
@@ -1093,7 +1093,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Inscribed Huge Citrine",
@@ -1101,7 +1101,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Intricate Dark Jade",
@@ -1109,7 +1109,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Jagged Dark Jade",
@@ -1117,7 +1117,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Lambent Dark Jade",
@@ -1125,7 +1125,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Lucent Huge Citrine",
@@ -1133,7 +1133,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Luminous Huge Citrine",
@@ -1141,7 +1141,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Lustrous Chalcedony",
@@ -1149,7 +1149,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Blue",
     quality: "Perfect",
-    image: "images/Perfect_Chalcedony.png",
+    image: "images/gems/Perfect_Chalcedony.png",
   },
   {
     name: "Perfect Misty Dark Jade",
@@ -1157,7 +1157,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Mysterious Shadow Crystal",
@@ -1165,7 +1165,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Mystic Sun Crystal",
@@ -1173,7 +1173,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Yellow",
     quality: "Perfect",
-    image: "images/Perfect_Sun_Crystal.png",
+    image: "images/gems/Perfect_Sun_Crystal.png",
   },
   {
     name: "Perfect Opaque Dark Jade",
@@ -1181,7 +1181,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Potent Huge Citrine",
@@ -1189,7 +1189,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Precise Bloodstone",
@@ -1197,7 +1197,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Red",
     quality: "Perfect",
-    image: "images/Perfect_Bloodstone.png",
+    image: "images/gems/Perfect_Bloodstone.png",
   },
   {
     name: "Perfect Pristine Huge Citrine",
@@ -1205,7 +1205,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Puissant Shadow Crystal",
@@ -1213,7 +1213,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Purified Shadow Crystal",
@@ -1221,7 +1221,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Quick Sun Crystal",
@@ -1229,7 +1229,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Yellow",
     quality: "Perfect",
-    image: "images/Perfect_Sun_Crystal.png",
+    image: "images/gems/Perfect_Sun_Crystal.png",
   },
   {
     name: "Perfect Radiant Dark Jade",
@@ -1237,7 +1237,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Reckless Huge Citrine",
@@ -1245,7 +1245,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Regal Shadow Crystal",
@@ -1253,7 +1253,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Resolute Huge Citrine",
@@ -1261,7 +1261,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Resplendent Huge Citrine",
@@ -1269,7 +1269,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Rigid Sun Crystal",
@@ -1277,7 +1277,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Yellow",
     quality: "Perfect",
-    image: "images/Perfect_Sun_Crystal.png",
+    image: "images/gems/Perfect_Sun_Crystal.png",
   },
   {
     name: "Perfect Royal Shadow Crystal",
@@ -1285,7 +1285,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Runed Bloodstone",
@@ -1293,7 +1293,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Red",
     quality: "Perfect",
-    image: "images/Perfect_Bloodstone.png",
+    image: "images/gems/Perfect_Bloodstone.png",
   },
   {
     name: "Perfect Seer's Dark Jade",
@@ -1301,7 +1301,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Shattered Dark Jade",
@@ -1309,7 +1309,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Shifting Shadow Crystal",
@@ -1317,7 +1317,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Shining Dark Jade",
@@ -1325,7 +1325,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Smooth Sun Crystal",
@@ -1333,7 +1333,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Yellow",
     quality: "Perfect",
-    image: "images/Perfect_Sun_Crystal.png",
+    image: "images/gems/Perfect_Sun_Crystal.png",
   },
   {
     name: "Perfect Solid Chalcedony",
@@ -1341,7 +1341,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Blue",
     quality: "Perfect",
-    image: "images/Perfect_Chalcedony.png",
+    image: "images/gems/Perfect_Chalcedony.png",
   },
   {
     name: "Perfect Sovereign Shadow Crystal",
@@ -1349,7 +1349,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Sparkling Chalcedony",
@@ -1357,7 +1357,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Blue",
     quality: "Perfect",
-    image: "images/Perfect_Chalcedony.png",
+    image: "images/gems/Perfect_Chalcedony.png",
   },
   {
     name: "Perfect Stalwart Huge Citrine",
@@ -1365,7 +1365,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Stark Huge Citrine",
@@ -1373,7 +1373,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Steady Dark Jade",
@@ -1381,7 +1381,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Stormy Chalcedony",
@@ -1389,7 +1389,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Blue",
     quality: "Perfect",
-    image: "images/Perfect_Chalcedony.png",
+    image: "images/gems/Perfect_Chalcedony.png",
   },
   {
     name: "Perfect Subtle Bloodstone",
@@ -1397,7 +1397,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Red",
     quality: "Perfect",
-    image: "images/Perfect_Bloodstone.png",
+    image: "images/gems/Perfect_Bloodstone.png",
   },
   {
     name: "Perfect Sundered Dark Jade",
@@ -1405,7 +1405,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Tense Dark Jade",
@@ -1413,7 +1413,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Tenuous Shadow Crystal",
@@ -1421,7 +1421,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Purple",
     quality: "Perfect",
-    image: "images/Perfect_Shadow_Crystal.png",
+    image: "images/gems/Perfect_Shadow_Crystal.png",
   },
   {
     name: "Perfect Thick Sun Crystal",
@@ -1429,7 +1429,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Yellow",
     quality: "Perfect",
-    image: "images/Perfect_Sun_Crystal.png",
+    image: "images/gems/Perfect_Sun_Crystal.png",
   },
   {
     name: "Perfect Timeless Dark Jade",
@@ -1437,7 +1437,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Turbid Dark Jade",
@@ -1445,7 +1445,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Veiled Huge Citrine",
@@ -1453,7 +1453,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Perfect Vivid Dark Jade",
@@ -1461,7 +1461,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Green",
     quality: "Perfect",
-    image: "images/Perfect_Dark_Jade.png",
+    image: "images/gems/Perfect_Dark_Jade.png",
   },
   {
     name: "Perfect Wicked Huge Citrine",
@@ -1469,7 +1469,7 @@ const gemArray = [
     source: "Gem Perfection",
     color: "Orange",
     quality: "Perfect",
-    image: "images/Perfect_Huge_Citrine.png",
+    image: "images/gems/Perfect_Huge_Citrine.png",
   },
   {
     name: "Potent Ametrine",
@@ -1477,7 +1477,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Potent Huge Citrine",
@@ -1485,7 +1485,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Potent Monarch Topaz",
@@ -1493,7 +1493,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Precise Bloodstone",
@@ -1501,7 +1501,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Uncommon",
-    image: "images/Bloodstone.png",
+    image: "images/gems/Bloodstone.png",
   },
   {
     name: "Precise Cardinal Ruby",
@@ -1509,7 +1509,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Precise Scarlet Ruby",
@@ -1517,7 +1517,7 @@ const gemArray = [
     source: "Herald Volazj",
     color: "Red",
     quality: "Rare",
-    image: "images/Scarlet_Ruby.png",
+    image: "images/gems/Scarlet_Ruby.png",
   },
   {
     name: "Pristine Ametrine",
@@ -1525,7 +1525,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Pristine Huge Citrine",
@@ -1533,7 +1533,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Pristine Monarch Topaz",
@@ -1541,7 +1541,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Puissant Dreadstone",
@@ -1549,7 +1549,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Puissant Shadow Crystal",
@@ -1557,7 +1557,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Puissant Twilight Opal",
@@ -1565,7 +1565,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Purified Dreadstone",
@@ -1573,7 +1573,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Purified Shadow Crystal",
@@ -1581,7 +1581,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Purified Twilight Opal",
@@ -1589,7 +1589,7 @@ const gemArray = [
     source: "World Drop",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Quick Autumn's Glow",
@@ -1597,7 +1597,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Yellow",
     quality: "Rare",
-    image: "images/Autumns_Glow.png",
+    image: "images/gems/Autumns_Glow.png",
   },
   {
     name: "Quick King's Amber",
@@ -1605,7 +1605,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Kings_Amber.png",
+    image: "images/gems/Kings_Amber.png",
   },
   {
     name: "Quick Sun Crystal",
@@ -1613,7 +1613,7 @@ const gemArray = [
     source: "Trainer",
     color: "Yellow",
     quality: "Uncommon",
-    image: "images/Sun_Crystal.png",
+    image: "images/gems/Sun_Crystal.png",
   },
   {
     name: "Radiant Dark Jade",
@@ -1621,7 +1621,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Radiant Eye of Zul",
@@ -1629,7 +1629,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Radiant Forest Emerald",
@@ -1637,7 +1637,7 @@ const gemArray = [
     source: "Storm Peaks harpies",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Reckless Ametrine",
@@ -1645,7 +1645,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Reckless Huge Citrine",
@@ -1653,7 +1653,7 @@ const gemArray = [
     source: "Frenzyheart",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Reckless Monarch Topaz",
@@ -1661,7 +1661,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Regal Dreadstone",
@@ -1669,7 +1669,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Regal Shadow Crystal",
@@ -1677,7 +1677,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Regal Twilight Opal",
@@ -1685,7 +1685,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Resolute Ametrine",
@@ -1693,7 +1693,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Resolute Huge Citrine",
@@ -1701,7 +1701,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Resolute Monarch Topaz",
@@ -1709,7 +1709,7 @@ const gemArray = [
     source: "World Drop",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Resplendent Ametrine",
@@ -1717,7 +1717,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Resplendent Huge Citrine",
@@ -1725,7 +1725,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Resplendent Monarch Topaz",
@@ -1733,7 +1733,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Rigid Autumn's Glow",
@@ -1741,7 +1741,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Yellow",
     quality: "Rare",
-    image: "images/Autumns_Glow.png",
+    image: "images/gems/Autumns_Glow.png",
   },
   {
     name: "Rigid King's Amber",
@@ -1749,7 +1749,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Kings_Amber.png",
+    image: "images/gems/Kings_Amber.png",
   },
   {
     name: "Rigid Stormjewel",
@@ -1757,7 +1757,7 @@ const gemArray = [
     source: "Bag of Fishing Treasures",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Kings_Amber.png",
+    image: "images/gems/Kings_Amber.png",
   },
   {
     name: "Rigid Sun Crystal",
@@ -1765,7 +1765,7 @@ const gemArray = [
     source: "Trainer",
     color: "Yellow",
     quality: "Uncommon",
-    image: "images/Sun_Crystal.png",
+    image: "images/gems/Sun_Crystal.png",
   },
   {
     name: "Royal Dreadstone",
@@ -1773,7 +1773,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Royal Shadow Crystal",
@@ -1781,7 +1781,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Royal Twilight Opal",
@@ -1789,7 +1789,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Runed Bloodstone",
@@ -1797,7 +1797,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Uncommon",
-    image: "images/Bloodstone.png",
+    image: "images/gems/Bloodstone.png",
   },
   {
     name: "Runed Cardinal Ruby",
@@ -1805,7 +1805,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Runed Scarlet Ruby",
@@ -1813,7 +1813,7 @@ const gemArray = [
     source: "Kirin Tor",
     color: "Red",
     quality: "Rare",
-    image: "images/Scarlet_Ruby.png",
+    image: "images/gems/Scarlet_Ruby.png",
   },
   {
     name: "Runed Stormjewel",
@@ -1821,7 +1821,7 @@ const gemArray = [
     source: "Bag of Fishing Treasures",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Seer's Dark Jade",
@@ -1829,7 +1829,7 @@ const gemArray = [
     source: "Kalu'ak",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Seer's Eye of Zul",
@@ -1837,7 +1837,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Seer's Forest Emerald",
@@ -1845,7 +1845,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Shattered Dark Jade",
@@ -1853,7 +1853,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Shattered Eye of Zul",
@@ -1861,7 +1861,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Shattered Forest Emerald",
@@ -1869,7 +1869,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Shifting Dreadstone",
@@ -1877,7 +1877,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Shifting Shadow Crystal",
@@ -1885,7 +1885,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Shifting Twilight Opal",
@@ -1893,7 +1893,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Shining Dark Jade",
@@ -1901,7 +1901,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Shining Eye of Zul",
@@ -1909,7 +1909,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Shining Forest Emerald",
@@ -1917,7 +1917,7 @@ const gemArray = [
     source: "World Drop",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Smooth Autumn's Glow",
@@ -1925,7 +1925,7 @@ const gemArray = [
     source: "Sons of Hodir",
     color: "Yellow",
     quality: "Rare",
-    image: "images/Autumns_Glow.png",
+    image: "images/gems/Autumns_Glow.png",
   },
   {
     name: "Smooth King's Amber",
@@ -1933,7 +1933,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Kings_Amber.png",
+    image: "images/gems/Kings_Amber.png",
   },
   {
     name: "Smooth Sun Crystal",
@@ -1941,7 +1941,7 @@ const gemArray = [
     source: "Trainer",
     color: "Yellow",
     quality: "Uncommon",
-    image: "images/Sun_Crystal.png",
+    image: "images/gems/Sun_Crystal.png",
   },
   {
     name: "Solid Chalcedony",
@@ -1949,7 +1949,7 @@ const gemArray = [
     source: "Trainer",
     color: "Blue",
     quality: "Uncommon",
-    image: "images/Chalcedony.png",
+    image: "images/gems/Chalcedony.png",
   },
   {
     name: "Solid Majestic Zircon",
@@ -1957,7 +1957,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Blue",
     quality: "Epic",
-    image: "images/Majestic_Zircon.png",
+    image: "images/gems/Majestic_Zircon.png",
   },
   {
     name: "Solid Sky Sapphire",
@@ -1965,7 +1965,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Blue",
     quality: "Rare",
-    image: "images/Sky_Sapphire.png",
+    image: "images/gems/Sky_Sapphire.png",
   },
   {
     name: "Solid Stormjewel",
@@ -1973,7 +1973,7 @@ const gemArray = [
     source: "Bag of Fishing Treasures",
     color: "Blue",
     quality: "Epic",
-    image: "images/Majestic_Zircon.png",
+    image: "images/gems/Majestic_Zircon.png",
   },
   {
     name: "Sovereign Dreadstone",
@@ -1981,7 +1981,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Sovereign Shadow Crystal",
@@ -1989,7 +1989,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Sovereign Twilight Opal",
@@ -1997,7 +1997,7 @@ const gemArray = [
     source: "World Drop",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Sparkling Chalcedony",
@@ -2005,7 +2005,7 @@ const gemArray = [
     source: "Trainer",
     color: "Blue",
     quality: "Uncommon",
-    image: "images/Chalcedony.png",
+    image: "images/gems/Chalcedony.png",
   },
   {
     name: "Sparkling Majestic Zircon",
@@ -2013,7 +2013,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Blue",
     quality: "Epic",
-    image: "images/Majestic_Zircon.png",
+    image: "images/gems/Majestic_Zircon.png",
   },
   {
     name: "Sparkling Sky Sapphire",
@@ -2021,7 +2021,7 @@ const gemArray = [
     source: "Trainer",
     color: "Blue",
     quality: "Rare",
-    image: "images/Sky_Sapphire.png",
+    image: "images/gems/Sky_Sapphire.png",
   },
   {
     name: "Sparkling Stormjewel",
@@ -2029,7 +2029,7 @@ const gemArray = [
     source: "Bag of Fishing Treasures",
     color: "Blue",
     quality: "Epic",
-    image: "images/Majestic_Zircon.png",
+    image: "images/gems/Majestic_Zircon.png",
   },
   {
     name: "Stalwart Ametrine",
@@ -2037,7 +2037,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Stalwart Huge Citrine",
@@ -2045,7 +2045,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Stalwart Monarch Topaz",
@@ -2053,7 +2053,7 @@ const gemArray = [
     source: "World Drop",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Stark Ametrine",
@@ -2061,7 +2061,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Stark Huge Citrine",
@@ -2069,7 +2069,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Stark Monarch Topaz",
@@ -2077,7 +2077,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Steady Dark Jade",
@@ -2085,7 +2085,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Steady Eye of Zul",
@@ -2093,7 +2093,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Steady Forest Emerald",
@@ -2101,7 +2101,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Stormy Chalcedony",
@@ -2109,7 +2109,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Blue",
     quality: "Uncommon",
-    image: "images/Chalcedony.png",
+    image: "images/gems/Chalcedony.png",
   },
   {
     name: "Stormy Majestic Zircon",
@@ -2117,7 +2117,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Blue",
     quality: "Epic",
-    image: "images/Majestic_Zircon.png",
+    image: "images/gems/Majestic_Zircon.png",
   },
   {
     name: "Stormy Sky Sapphire",
@@ -2125,7 +2125,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Blue",
     quality: "Rare",
-    image: "images/Sky_Sapphire.png",
+    image: "images/gems/Sky_Sapphire.png",
   },
   {
     name: "Subtle Bloodstone",
@@ -2133,7 +2133,7 @@ const gemArray = [
     source: "Trainer",
     color: "Red",
     quality: "Uncommon",
-    image: "images/Bloodstone.png",
+    image: "images/gems/Bloodstone.png",
   },
   {
     name: "Subtle Cardinal Ruby",
@@ -2141,7 +2141,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Red",
     quality: "Epic",
-    image: "images/Cardinal_Ruby.png",
+    image: "images/gems/Cardinal_Ruby.png",
   },
   {
     name: "Subtle Scarlet Ruby",
@@ -2149,7 +2149,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Red",
     quality: "Rare",
-    image: "images/Scarlet_Ruby.png",
+    image: "images/gems/Scarlet_Ruby.png",
   },
   {
     name: "Sundered Dark Jade",
@@ -2157,7 +2157,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Sundered Eye of Zul",
@@ -2165,7 +2165,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Sundered Forest Emerald",
@@ -2173,7 +2173,7 @@ const gemArray = [
     source: "Oracles",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Tense Dark Jade",
@@ -2181,7 +2181,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Tense Eye of Zul",
@@ -2189,7 +2189,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Tense Forest Emerald",
@@ -2197,7 +2197,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Tenuous Dreadstone",
@@ -2205,7 +2205,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Purple",
     quality: "Epic",
-    image: "images/Dreadstone.png",
+    image: "images/gems/Dreadstone.png",
   },
   {
     name: "Tenuous Shadow Crystal",
@@ -2213,7 +2213,7 @@ const gemArray = [
     source: "Trainer",
     color: "Purple",
     quality: "Uncommon",
-    image: "images/Shadow_Crystal.png",
+    image: "images/gems/Shadow_Crystal.png",
   },
   {
     name: "Tenuous Twilight Opal",
@@ -2221,7 +2221,7 @@ const gemArray = [
     source: "World Drop",
     color: "Purple",
     quality: "Rare",
-    image: "images/Twilight_Opal.png",
+    image: "images/gems/Twilight_Opal.png",
   },
   {
     name: "Thick Autumn's Glow",
@@ -2229,7 +2229,7 @@ const gemArray = [
     source: "Cyanigosa",
     color: "Yellow",
     quality: "Rare",
-    image: "images/Autumns_Glow.png",
+    image: "images/gems/Autumns_Glow.png",
   },
   {
     name: "Thick King's Amber",
@@ -2237,7 +2237,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Yellow",
     quality: "Epic",
-    image: "images/Kings_Amber.png",
+    image: "images/gems/Kings_Amber.png",
   },
   {
     name: "Thick Sun Crystal",
@@ -2245,7 +2245,7 @@ const gemArray = [
     source: "Trainer",
     color: "Yellow",
     quality: "Uncommon",
-    image: "images/Sun_Crystal.png",
+    image: "images/gems/Sun_Crystal.png",
   },
   {
     name: "Timeless Dark Jade",
@@ -2253,7 +2253,7 @@ const gemArray = [
     source: "Trainer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Timeless Eye of Zul",
@@ -2261,7 +2261,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Timeless Forest Emerald",
@@ -2269,7 +2269,7 @@ const gemArray = [
     source: "The Prophet Tharon'ja",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Turbid Dark Jade",
@@ -2277,7 +2277,7 @@ const gemArray = [
     source: "(A)Captain O'Neal (H)Lady Palanseer",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Turbid Eye of Zul",
@@ -2285,7 +2285,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Turbid Forest Emerald",
@@ -2293,7 +2293,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Veiled Ametrine",
@@ -2301,7 +2301,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Veiled Huge Citrine",
@@ -2309,7 +2309,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Veiled Monarch Topaz",
@@ -2317,7 +2317,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   {
     name: "Vivid Dark Jade",
@@ -2325,7 +2325,7 @@ const gemArray = [
     source: "Oracles",
     color: "Green",
     quality: "Uncommon",
-    image: "images/Dark_Jade.png",
+    image: "images/gems/Dark_Jade.png",
   },
   {
     name: "Vivid Eye of Zul",
@@ -2333,7 +2333,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Green",
     quality: "Epic",
-    image: "images/Eye_of_Zul.png",
+    image: "images/gems/Eye_of_Zul.png",
   },
   {
     name: "Vivid Forest Emerald",
@@ -2341,7 +2341,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "Green",
     quality: "Rare",
-    image: "images/Forest_Emerald.png",
+    image: "images/gems/Forest_Emerald.png",
   },
   {
     name: "Wicked Ametrine",
@@ -2349,7 +2349,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Orange",
     quality: "Epic",
-    image: "images/Ametrine.png",
+    image: "images/gems/Ametrine.png",
   },
   {
     name: "Wicked Huge Citrine",
@@ -2357,7 +2357,7 @@ const gemArray = [
     source: "Trainer",
     color: "Orange",
     quality: "Uncommon",
-    image: "images/Huge_Citrine.png",
+    image: "images/gems/Huge_Citrine.png",
   },
   {
     name: "Wicked Monarch Topaz",
@@ -2365,7 +2365,7 @@ const gemArray = [
     source: "Knights of the Ebon Blade",
     color: "Orange",
     quality: "Rare",
-    image: "images/Monarch_Topaz.png",
+    image: "images/gems/Monarch_Topaz.png",
   },
   // Meta gems
 
@@ -2375,7 +2375,7 @@ const gemArray = [
     source: "World Drop",
     color: "1 Red 1 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Chaotic Skyflare Diamond",
@@ -2383,7 +2383,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "2 Red",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Effulgent Skyflare Diamond",
@@ -2391,7 +2391,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "2 Blue 1 Red",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Ember Skyflare Diamond",
@@ -2399,7 +2399,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "3 Red",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Enigmatic Skyflare Diamond",
@@ -2407,7 +2407,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Red 1 Yellow",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Forlorn Skyflare Diamond",
@@ -2415,7 +2415,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Impassive Skyflare Diamond",
@@ -2423,7 +2423,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Red 1 Blue",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Revitalizing Skyflare Diamond",
@@ -2431,7 +2431,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "2 Red",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Swift Skyflare Diamond",
@@ -2439,7 +2439,7 @@ const gemArray = [
     source: "Trainer",
     color: "2 Yellow 1 Red",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Thundering Skyflare Diamond",
@@ -2447,7 +2447,7 @@ const gemArray = [
     source: "World Drop",
     color: "1 Red 1 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Tireless Skyflare Diamond",
@@ -2455,7 +2455,7 @@ const gemArray = [
     source: "Trainer",
     color: "1 Red 1 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Swift Starflare Diamond",
@@ -2463,7 +2463,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Yellow 1 Red",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Tireless Starflare Diamond",
@@ -2471,7 +2471,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "1 Red 1 Blue 1 Yellow",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Enigmatic Starflare Diamond",
@@ -2479,7 +2479,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Red 1 Blue",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Impassive Starflare Diamond",
@@ -2487,7 +2487,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Blue 1 Red",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Forlorn Starflare Diamond",
@@ -2495,7 +2495,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Skyflare_Diamond.png",
+    image: "images/gems/Skyflare_Diamond.png",
   },
   {
     name: "Persistent Earthshatter Diamond",
@@ -2503,7 +2503,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "3 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Powerful Earthshatter Diamond",
@@ -2511,7 +2511,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Blue 1 Yellow",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Trenchant Earthshatter Diamond",
@@ -2519,7 +2519,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "1 Red 1 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Austere Earthsiege Diamond",
@@ -2527,7 +2527,7 @@ const gemArray = [
     source: "Wintergrasp",
     color: "2 Blue 1 Red",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Persistent Earthsiege Diamond",
@@ -2535,7 +2535,7 @@ const gemArray = [
     source: "Trainer",
     color: "2 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Trenchant Earthsiege Diamond",
@@ -2543,7 +2543,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "1 Red 1 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Invigorating Earthsiege Diamond",
@@ -2551,7 +2551,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "2 Blue 1 Red",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Beaming Earthsiege Diamond",
@@ -2559,7 +2559,7 @@ const gemArray = [
     source: "World Drop",
     color: "2 Red 1 Yellow",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Bracing Earthsiege Diamond",
@@ -2567,7 +2567,7 @@ const gemArray = [
     source: "Ley-Guardian Eregos",
     color: "2 Red 1 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Eternal Earthsiege Diamond",
@@ -2575,7 +2575,7 @@ const gemArray = [
     source: "Loken",
     color: "2 Red 1 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Powerful Earthsiege Diamond",
@@ -2583,7 +2583,7 @@ const gemArray = [
     source: "Trainer",
     color: "3 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Relentless Earthsiege Diamond",
@@ -2591,7 +2591,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "1 Red 1 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   {
     name: "Insightful Earthsiege Diamond",
@@ -2599,7 +2599,7 @@ const gemArray = [
     source: "Tiffany Cartier",
     color: "1 Red 1 Yellow 1 Blue",
     quality: "Meta",
-    image: "images/Earthsiege_Diamond.png",
+    image: "images/gems/Earthsiege_Diamond.png",
   },
   // Prismatic
   {
@@ -2608,7 +2608,7 @@ const gemArray = [
     source: "Trainer",
     color: "Prismatic",
     quality: "Uncommon",
-    image: "images/Enchanted_Pearl.png",
+    image: "images/gems/Enchanted_Pearl.png",
   },
   {
     name: "Enchanted Tear",
@@ -2616,7 +2616,7 @@ const gemArray = [
     source: "Trainer",
     color: "Prismatic",
     quality: "Rare",
-    image: "images/Enchanted_Tear.png",
+    image: "images/gems/Enchanted_Tear.png",
   },
   {
     name: "Nightmare Tear",
@@ -2624,7 +2624,7 @@ const gemArray = [
     source: "Timothy Jones",
     color: "Prismatic",
     quality: "Epic",
-    image: "images/Enchanted_Tear.png",
+    image: "images/gems/Enchanted_Tear.png",
   },
 ];
 
