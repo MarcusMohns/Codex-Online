@@ -545,8 +545,8 @@ export const StyledPlayer = styled.div`
     }
     #class-img {
       display: flex;
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
       border-radius: 35%;
       margin-bottom: 2px;
     }
