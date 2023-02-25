@@ -9,8 +9,7 @@ const Raid = ({
   onDragEnd,
   focusName,
   editName,
-  editBuffs,
-  playerRoleEdit,
+  handlePlayerOptions,
 }) => {
   return (
     <RaidGroupContainer>
@@ -30,8 +29,7 @@ const Raid = ({
               onDelete={onDelete}
               focusName={focusName}
               editName={editName}
-              editBuffs={editBuffs}
-              playerRoleEdit={playerRoleEdit}
+              handlePlayerOptions={handlePlayerOptions}
             />
           );
         })}

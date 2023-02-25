@@ -1,6 +1,5 @@
 import { memo } from "react";
 import { Draggable } from "react-beautiful-dnd";
-import PlayerCheckboxes from "./PlayerCheckboxes";
 import RaidRole from "./RaidRole";
 import {
   StyledPlayer,
@@ -10,7 +9,6 @@ import {
   PlayerNameContainer,
   SettingsIcon,
 } from "../styles/RaidHelper.styled";
-import COLORS from "../../../colors";
 
 const Player = ({
   player,
@@ -18,8 +16,7 @@ const Player = ({
   focusName,
   editName,
   index,
-  editBuffs,
-  playerRoleEdit,
+  handlePlayerOptions,
 }) => {
   return (
     <Draggable draggableId={player.id} index={index}>
@@ -56,20 +53,11 @@ const Player = ({
             </label>
             <img id="class-img" src={player.icon} alt="player in raid" />
             <RaidRole player={player} />
-            {/* If warrior or paladin add the checkboxes to check what buffs they provide */}
-            {(player.color === COLORS.paladin ||
-              player.color === COLORS.warrior ||
-              player.text === "Feral Druid" ||
-              player.text === "Blood Death Knight") && (
-              <div className="player-tooltip-container">
-                <SettingsIcon id="player-info-icon" />
-                <PlayerCheckboxes
-                  player={player}
-                  editBuffs={editBuffs}
-                  playerRoleEdit={playerRoleEdit}
-                />
-              </div>
-            )}
+
+            <SettingsIcon
+              onClick={() => handlePlayerOptions(player)}
+              id="player-info-icon"
+            />
           </PlayerNameContainer>
         </StyledPlayer>
       )}

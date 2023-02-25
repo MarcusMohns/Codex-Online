@@ -23,6 +23,7 @@ import {
   RaidCooldownIcon,
   ContentTitle,
 } from "./styles/RaidHelper.styled";
+import PlayerOptions from "./components/PlayerOptions";
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -108,6 +109,18 @@ const RaidHelper = () => {
   const [saveMenuOpen, setSaveMenuOpen] = useState(false);
   const [raidCooldownsOpen, setRaidCooldownsOpen] = useState(false);
   const [playersIndexOpen, setPlayersIndexOpen] = useState(false);
+  const [playerOptionsOpen, setPlayerOptionsOpen] = useState(false);
+  const [player, setPlayer] = useState({
+    id: "6439cdb9-19a2-44d4-90fc-3ebab48382fe",
+    text: "Retribution Paladin",
+    image: "images/Retribution_Paladin.webp",
+    icon: "images/classicons/Retribution_Paladin.webp",
+    color: "rgb(244,140,186)",
+    role: "dps",
+    name: "",
+    buffs: [],
+    utility: [],
+  });
 
   const resetRaid = () => {
     setRaid(intitialRaidState);
@@ -226,6 +239,16 @@ const RaidHelper = () => {
       setBuffs({ type: "add", name: id, value: newBuff });
     }
   };
+
+  const handlePlayerOptions = (player) => {
+    try {
+      setPlayer(player);
+      setPlayerOptionsOpen(!playerOptionsOpen);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   const playerRoleEdit = async (player, e) => {
     let newRole = "dps";
     e.target.checked && (newRole = "tank");
@@ -564,6 +587,16 @@ const RaidHelper = () => {
             setSaveMenuOpen={setSaveMenuOpen}
           />
         )}
+        {playerOptionsOpen && (
+          <PlayerOptions
+            playerOptionsOpen={playerOptionsOpen}
+            setPlayerOptionsOpen={setPlayerOptionsOpen}
+            player={player}
+            editName={editName}
+            editBuffs={playerBuffsEdit}
+            playerRoleEdit={playerRoleEdit}
+          />
+        )}
         {raidCooldownsOpen && (
           <RaidCooldowns
             raidCooldownsOpen={raidCooldownsOpen}
@@ -589,7 +622,6 @@ const RaidHelper = () => {
             >
               <SaveIcon /> Saves
             </RaidHeaderButton>
-
             <UtilityHeaderButton
               onClick={() => {
                 setPlayersIndexOpen(!playersIndexOpen);
@@ -636,6 +668,7 @@ const RaidHelper = () => {
               playerRoleEdit={playerRoleEdit}
               setRaid={setRaid}
               onDragEnd={onDragEnd}
+              handlePlayerOptions={handlePlayerOptions}
             />
           ) : (
             <NoPlayersText>No players in raid</NoPlayersText>

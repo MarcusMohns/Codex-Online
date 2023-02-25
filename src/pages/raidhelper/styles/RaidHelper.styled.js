@@ -402,29 +402,13 @@ export const StyledPlayer = styled.div`
     right: 2px;
     bottom: 0;
   }
-  .player-tooltip-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    &:hover #player-info-icon ~ div {
-      display: flex;
-    }
-
-    #player-info-icon ~ div {
-      display: none;
-      &:hover {
-        display: flex;
-      }
-    }
-    #player-info-icon {
-      position: absolute;
-      left: 2px;
-      visibility: hidden;
-      cursor: pointer;
-      &:hover {
-        transform: scale(1.2);
-      }
+  #player-info-icon {
+    position: absolute;
+    left: 2px;
+    visibility: hidden;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
     }
   }
 
@@ -563,26 +547,8 @@ export const StyledPlayer = styled.div`
 `;
 
 export const StyledPlayerCheckboxes = styled.div`
-  display: flex;
-  position: absolute;
-  bottom: -100%;
-  left: 0%;
-  box-sizing: border-box;
-  min-height: 100%;
-  border-radius: 0.5rem;
-  min-width: 100%;
-  padding: 0.5rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: default;
-  overflow: hidden;
-  background: #000;
-  border: 1px solid #777;
-  box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
-  overflow: hidden;
-
   .player-checkbox-header {
+    color: #222
     font-size: 1.1rem;
     font-weight: bold;
     padding: 2px;
@@ -613,21 +579,8 @@ export const StyledPlayerCheckboxes = styled.div`
   }
 
   .player-checkbox-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5px;
-    padding: 3px;
-    width: 100%;
-    border: 1px solid transparent;
-
-    &:hover {
-      border: 1px solid grey;
-    }
   }
   .player-checkbox {
-    width: 1rem;
-    height: 1rem;
   }
   .image-and-name-label {
     display: flex;
@@ -637,9 +590,6 @@ export const StyledPlayerCheckboxes = styled.div`
     color: ${COLORS.goldHighlight};
   }
   .player-checkbox-image {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 80%;
   }
 
   .toggle-role {
@@ -1296,6 +1246,40 @@ export const RaidGroupContainer = styled.div`
   @keyframes revealGroups {
     0% {
       opacity: 0%;
+    }
+  }
+`;
+
+export const StyledPlayerOptions = styled.div`
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+  height: auto;
+  width: 100vw;
+  left: 0;
+  top: 0%;
+  z-index: 3;
+
+  .options-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    border: 1px solid grey;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top: 35%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 90%;
+    border-radius: 5px;
+
+    @media (min-width: 1300px) {
+      width: max-content;
+      height: 400px;
     }
   }
 `;

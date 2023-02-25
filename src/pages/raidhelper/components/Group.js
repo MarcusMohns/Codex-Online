@@ -14,8 +14,7 @@ const Group = ({
   onDelete,
   focusName,
   editName,
-  editBuffs,
-  playerRoleEdit,
+  handlePlayerOptions,
 }) => {
   return (
     <GroupContainer>
@@ -35,8 +34,7 @@ const Group = ({
                 editName={editName}
                 player={player}
                 index={index}
-                editBuffs={editBuffs}
-                playerRoleEdit={playerRoleEdit}
+                handlePlayerOptions={handlePlayerOptions}
               />
             ))}
             {provided.placeholder}
