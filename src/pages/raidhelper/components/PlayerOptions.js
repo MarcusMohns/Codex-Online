@@ -12,9 +12,17 @@ const PlayerOptions = ({
 }) => {
   return (
     <StyledPlayerOptions
+      color={player.color}
       onClick={() => setPlayerOptionsOpen(!playerOptionsOpen)}
     >
       <div className="options-menu" onClick={(e) => e.stopPropagation()}>
+        <div className="options-header">
+          <span className="options-class-color">
+            {player.name === "" ? player.text : player.name}s'
+          </span>{" "}
+          Options
+        </div>
+
         <PlayerCheckboxes
           className="options-menu"
           onClick={(e) => e.stopPropagation()}

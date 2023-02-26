@@ -547,18 +547,19 @@ export const StyledPlayer = styled.div`
 `;
 
 export const StyledPlayerCheckboxes = styled.div`
+  color: #fff;
+
   .player-checkbox-header {
-    color: #222
     font-size: 1.1rem;
-    font-weight: bold;
     padding: 2px;
     margin-bottom: 1rem;
     width: 100%;
     height: 100%;
+  }
 
-    .checkbox-header-player-text {
-      color: ${(props) => props.color};
-    }
+  .player-checkbox-container {
+    background-color: ${COLORS.fadedGrey};
+    color: ${COLORS.offWhite};
   }
 
   .role-toggler-container {
@@ -566,6 +567,15 @@ export const StyledPlayerCheckboxes = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    user-select: none;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: ${COLORS.fadedGrey};
+    color: ${COLORS.offWhite};
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+
     .role-select-label {
       display: flex;
       flex-direction: column;
@@ -578,8 +588,6 @@ export const StyledPlayerCheckboxes = styled.div`
     }
   }
 
-  .player-checkbox-container {
-  }
   .player-checkbox {
   }
   .image-and-name-label {
@@ -1259,6 +1267,17 @@ export const StyledPlayerOptions = styled.div`
   left: 0;
   top: 0%;
   z-index: 3;
+
+  .options-header {
+    color: ${COLORS.offWhite};
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .options-class-color {
+    color: ${(props) => props.color};
+  }
 
   .options-menu {
     display: flex;
