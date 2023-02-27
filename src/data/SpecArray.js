@@ -630,6 +630,13 @@ const SpecArray = [
         name: "Hunting Party",
         image: "images/Replenishment.png",
       },
+      {
+        category: "Healing Reduction",
+        name: "Aimed Shot",
+        image: "images/Aimed_Shot.png",
+        link: "https://www.wowhead.com/wotlk/spell=48871/aimed-shot",
+        spellId: "48871",
+      },
     ],
     utility: [
       {
