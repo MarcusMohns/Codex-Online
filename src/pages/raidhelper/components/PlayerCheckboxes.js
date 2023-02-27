@@ -32,7 +32,8 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
         player.text === "Fury Warrior" ||
         player.text === "Protection Paladin" ||
         player.text === "Retribution Paladin" ||
-        player.text === "Holy Paladin") && (
+        player.text === "Holy Paladin" ||
+        player.text === "Survival Hunter") && (
         <StyledPlayerCheckboxes>
           {player.name === "" ? (
             <h2 className="player-checkbox-header">
@@ -54,16 +55,18 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
                 buff.name === "Blessing of Wisdom" ||
                 buff.name === "Blessing of Sanctuary" ||
                 buff.name === "Commanding Shout" ||
-                buff.name === "Battle Shout") && (
+                buff.name === "Battle Shout" ||
+                buff.name === "Aimed Shot" ||
+                buff.name === "Hunting Party") && (
                 <div
                   key={`${buff.name}-${player.id}-checkbox`}
                   className="player-checkbox-container"
                 >
-                  <div className="image-and-name-label">{buff.name}</div>
                   <label
                     className="image-and-name-label"
                     htmlFor={`${buff.name}-${player.id}`}
                   >
+                    <p className="player-checkbox-text">{buff.name}</p>
                     <input
                       type="checkbox"
                       id={`${buff.name}-${player.id}`}
