@@ -562,6 +562,10 @@ export const StyledPlayerCheckboxes = styled.div`
     color: ${COLORS.offWhite};
   }
 
+  .player-checkbox-text {
+    user-select: none;
+  }
+
   .role-toggler-container {
     display: flex;
     flex-direction: row;

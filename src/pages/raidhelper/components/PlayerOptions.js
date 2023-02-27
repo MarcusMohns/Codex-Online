@@ -17,10 +17,10 @@ const PlayerOptions = ({
     >
       <div className="options-menu" onClick={(e) => e.stopPropagation()}>
         <div className="options-header">
+          Options for{" "}
           <span className="options-class-color">
-            {player.name === "" ? player.text : player.name}s'
-          </span>{" "}
-          Options
+            {player.name === "" ? player.text : player.name}
+          </span>
         </div>
 
         <PlayerCheckboxes
