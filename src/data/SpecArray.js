@@ -1839,6 +1839,8 @@ const SpecArray = [
         image: "images/Mana_Spring_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58774/mana-spring-totem",
         spellId: "58774",
+        type: "Water",
+        checked: true,
       },
       {
         category: "Spell Crit %",
@@ -1853,6 +1855,8 @@ const SpecArray = [
         image: "images/Wrath_Of_Air_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
         spellId: "3738",
+        type: "Air",
+        checked: true,
       },
       {
         category: "Spell Power",
@@ -1880,7 +1884,9 @@ const SpecArray = [
         name: "Fire Resistance Totem",
         image: "images/Fire_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58739/fire-resistance-totem",
+        type: "Water",
         spellId: "58739",
+        checked: true,
       },
       {
         category: "Frost Resistance",
@@ -1895,6 +1901,8 @@ const SpecArray = [
         image: "images/Nature_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58749/nature-resistance-totem",
         spellId: "58749",
+        type: "Air",
+        checked: true,
       },
     ],
     utility: [
@@ -1997,6 +2005,8 @@ const SpecArray = [
         image: "images/Mana_Spring_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58774/mana-spring-totem",
         spellId: "58774",
+        type: "Water",
+        checked: true,
       },
       {
         category: "Attack Power %",
@@ -2011,6 +2021,8 @@ const SpecArray = [
         image: "images/Wrath_Of_Air_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
         spellId: "3738",
+        type: "Air",
+        checked: true,
       },
       {
         category: "Spell Power",
@@ -2031,7 +2043,9 @@ const SpecArray = [
         name: "Fire Resistance Totem",
         image: "images/Fire_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58739/fire-resistance-totem",
+        type: "Water",
         spellId: "58739",
+        checked: true,
       },
       {
         category: "Frost Resistance",
@@ -2046,6 +2060,8 @@ const SpecArray = [
         image: "images/Nature_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58749/nature-resistance-totem",
         spellId: "58749",
+        type: "Air",
+        checked: true,
       },
     ],
     utility: [
@@ -2148,6 +2164,8 @@ const SpecArray = [
         image: "images/Mana_Spring_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58774/mana-spring-totem",
         spellId: "58774",
+        type: "Water",
+        checked: true,
       },
       {
         category: "Spell Haste",
@@ -2155,6 +2173,8 @@ const SpecArray = [
         image: "images/Wrath_Of_Air_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
         spellId: "3738",
+        type: "Air",
+        checked: true,
       },
       {
         category: "Spell Power",
@@ -2182,7 +2202,9 @@ const SpecArray = [
         name: "Fire Resistance Totem",
         image: "images/Fire_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58739/fire-resistance-totem",
+        type: "Water",
         spellId: "58739",
+        checked: true,
       },
       {
         category: "Frost Resistance",
@@ -2197,6 +2219,8 @@ const SpecArray = [
         image: "images/Nature_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58749/nature-resistance-totem",
         spellId: "58749",
+        type: "Air",
+        checked: true,
       },
     ],
     utility: [

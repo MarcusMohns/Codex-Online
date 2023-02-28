@@ -37,6 +37,9 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
         player.text === "Protection Paladin" ||
         player.text === "Retribution Paladin" ||
         player.text === "Holy Paladin" ||
+        player.text === "Elemental Shaman" ||
+        player.text === "Enhancement Shaman" ||
+        player.text === "Restoration Shaman" ||
         player.text === "Survival Hunter") && (
         <StyledPlayerCheckboxes>
           <h2 className="player-options-subheader">
@@ -53,11 +56,16 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
                   buff.name === "Commanding Shout" ||
                   buff.name === "Battle Shout" ||
                   buff.name === "Aimed Shot" ||
+                  buff.name === "Wrath of Air Totem" ||
+                  buff.name === "Nature Resistance Totem" ||
+                  buff.name === "Fire Resistance Totem" ||
+                  buff.name === "Mana Spring Totem" ||
                   buff.name === "Hunting Party") && (
                   <div
                     key={`${buff.name}-${player.id}-checkbox`}
                     className="player-checkbox-container"
                   >
+                    {buff.type}
                     <label
                       className="player-checkbox"
                       htmlFor={`${buff.name}-${player.id}`}
