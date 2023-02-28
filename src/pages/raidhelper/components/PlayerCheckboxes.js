@@ -48,41 +48,44 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
               will bring
             </h2>
           )}
-          {player.buffs.map(
-            (buff) =>
-              (buff.name === "Blessing of Kings" ||
-                buff.name === "Blessing of Might" ||
-                buff.name === "Blessing of Wisdom" ||
-                buff.name === "Blessing of Sanctuary" ||
-                buff.name === "Commanding Shout" ||
-                buff.name === "Battle Shout" ||
-                buff.name === "Aimed Shot" ||
-                buff.name === "Hunting Party") && (
-                <div
-                  key={`${buff.name}-${player.id}-checkbox`}
-                  className="player-checkbox-container"
-                >
-                  <label
-                    className="image-and-name-label"
-                    htmlFor={`${buff.name}-${player.id}`}
+          <div className="checkboxes-container">
+            {player.buffs.map(
+              (buff) =>
+                (buff.name === "Blessing of Kings" ||
+                  buff.name === "Blessing of Might" ||
+                  buff.name === "Blessing of Wisdom" ||
+                  buff.name === "Blessing of Sanctuary" ||
+                  buff.name === "Commanding Shout" ||
+                  buff.name === "Battle Shout" ||
+                  buff.name === "Aimed Shot" ||
+                  buff.name === "Hunting Party") && (
+                  <div
+                    key={`${buff.name}-${player.id}-checkbox`}
+                    className="player-checkbox-container"
                   >
-                    <p className="player-checkbox-text">{buff.name}</p>
-                    <input
-                      type="checkbox"
-                      id={`${buff.name}-${player.id}`}
-                      className="player-checkbox"
-                      defaultChecked={buff.checked}
-                      onClick={(e) => editBuffs(player, buff, e)}
-                    />
-                    <img
-                      src={buff.image}
-                      alt="buff"
-                      className="player-checkbox-image"
-                    />
-                  </label>
-                </div>
-              )
-          )}
+                    <label
+                      className="image-and-name-label"
+                      htmlFor={`${buff.name}-${player.id}`}
+                    >
+                      <input
+                        type="checkbox"
+                        id={`${buff.name}-${player.id}`}
+                        className="player-checkbox"
+                        defaultChecked={buff.checked}
+                        onClick={(e) => editBuffs(player, buff, e)}
+                      />
+                      <p className="player-checkbox-text">{buff.name}</p>
+
+                      <img
+                        src={buff.image}
+                        alt="buff"
+                        className="player-checkbox-image"
+                      />
+                    </label>
+                  </div>
+                )
+            )}
+          </div>
         </StyledPlayerCheckboxes>
       )}
     </div>

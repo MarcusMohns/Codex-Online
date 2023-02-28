@@ -548,18 +548,42 @@ export const StyledPlayer = styled.div`
 
 export const StyledPlayerCheckboxes = styled.div`
   color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
+  .checkboxes-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden scroll;
+  }
   .player-checkbox-header {
     font-size: 1.1rem;
     padding: 2px;
     margin-bottom: 1rem;
-    width: 100%;
-    height: 100%;
   }
 
   .player-checkbox-container {
     background-color: ${COLORS.fadedGrey};
     color: ${COLORS.offWhite};
+    margin: 5px;
+    justify-content: space-between;
+    width: fit-content;
+    user-select: none;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 5px;
   }
 
   .player-checkbox-text {
@@ -599,9 +623,12 @@ export const StyledPlayerCheckboxes = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: ${COLORS.goldHighlight};
   }
   .player-checkbox-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 20%;
+    margin-left: 0.5rem;
   }
 
   .toggle-role {
@@ -1303,6 +1330,7 @@ export const StyledPlayerOptions = styled.div`
     @media (min-width: 1300px) {
       width: max-content;
       height: 400px;
+      width: 600px;
     }
   }
 `;
