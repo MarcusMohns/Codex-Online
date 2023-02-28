@@ -496,6 +496,7 @@ const SpecArray = [
         image: "images/Aspect_Of_The_Wild.png",
         link: "https://www.wowhead.com/wotlk/spell=49071/aspect-of-the-wild",
         spellId: "49071",
+        checked: true,
       },
       {
         category: "Melee Hit Reduction",
@@ -560,6 +561,7 @@ const SpecArray = [
         image: "images/Aspect_Of_The_Wild.png",
         link: "https://www.wowhead.com/wotlk/spell=49071/aspect-of-the-wild",
         spellId: "49071",
+        checked: true,
       },
       {
         category: "Melee Hit Reduction",
@@ -617,6 +619,7 @@ const SpecArray = [
         image: "images/Aspect_Of_The_Wild.png",
         link: "https://www.wowhead.com/wotlk/spell=49071/aspect-of-the-wild",
         spellId: "49071",
+        checked: true,
       },
       {
         category: "Melee Hit Reduction",
@@ -629,6 +632,9 @@ const SpecArray = [
         category: "Replenishment",
         name: "Hunting Party",
         image: "images/Replenishment.png",
+        link: "https://www.wowhead.com/wotlk/spell=53292/hunting-party",
+        spellId: "53292",
+        checked: true,
       },
       {
         category: "Healing Reduction",
@@ -636,6 +642,7 @@ const SpecArray = [
         image: "images/Aimed_Shot.png",
         link: "https://www.wowhead.com/wotlk/spell=48871/aimed-shot",
         spellId: "48871",
+        checked: true,
       },
     ],
     utility: [
