@@ -1,4 +1,7 @@
-import { StyledPlayerCheckboxes } from "../styles/RaidHelper.styled";
+import {
+  StyledPlayerCheckboxes,
+  BuffUpIcon,
+} from "../styles/RaidHelper.styled";
 
 const tankIcon = (
   <img src="images/Tank_icon.png" alt="shield" className="role-icon" />
@@ -9,21 +12,22 @@ const dpsIcon = (
 
 const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
   return (
-    <div>
+    <>
       {(player.text === "Feral Druid" ||
         player.text === "Blood Death Knight") && (
         <StyledPlayerCheckboxes>
-          <div className="options-header"></div>
-          Select role:
-          <div className="role-toggler-container">
-            <label className="role-select-label">DPS{dpsIcon}</label>
-            <input
-              type="checkbox"
-              className="toggle-role"
-              defaultChecked={player.role === "tank" ? true : false}
-              onClick={(e) => playerRoleEdit(player, e)}
-            />
-            <label className="role-select-label">Tank{tankIcon}</label>
+          <h2 className="player-options-subheader">Role Select</h2>
+          <div className="option-container">
+            <div className="role-toggler-container">
+              <label className="role-select-label">DPS{dpsIcon}</label>
+              <input
+                type="checkbox"
+                className="toggle-role"
+                defaultChecked={player.role === "tank" ? true : false}
+                onClick={(e) => playerRoleEdit(player, e)}
+              />
+              <label className="role-select-label">Tank{tankIcon}</label>
+            </div>
           </div>
         </StyledPlayerCheckboxes>
       )}
@@ -35,20 +39,11 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
         player.text === "Holy Paladin" ||
         player.text === "Survival Hunter") && (
         <StyledPlayerCheckboxes>
-          {player.name === "" ? (
-            <h2 className="player-checkbox-header">
-              Select what buffs this{" "}
-              <span className="checkbox-header-player-text">{player.text}</span>{" "}
-              will bring
-            </h2>
-          ) : (
-            <h2 className="player-checkbox-header">
-              Select what buffs{" "}
-              <span className="checkbox-header-player-text">{player.name}</span>{" "}
-              will bring
-            </h2>
-          )}
-          <div className="checkboxes-container">
+          <h2 className="player-options-subheader">
+            <BuffUpIcon />
+            Buff Select
+          </h2>
+          <div className="option-container">
             {player.buffs.map(
               (buff) =>
                 (buff.name === "Blessing of Kings" ||
@@ -90,7 +85,7 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
           </div>
         </StyledPlayerCheckboxes>
       )}
-    </div>
+    </>
   );
 };
 

@@ -20,6 +20,8 @@ import { FiShield } from "@react-icons/all-files/fi/FiShield";
 import { TiPlusOutline } from "@react-icons/all-files/ti/TiPlusOutline";
 import { CgCopy } from "@react-icons/all-files/cg/CgCopy";
 import { FiShuffle } from "@react-icons/all-files/fi/FiShuffle";
+import { AiOutlineStock } from "@react-icons/all-files/ai/AiOutlineStock";
+
 import COLORS from "../../../colors";
 
 export const Main = styled.main`
@@ -548,13 +550,13 @@ export const StyledPlayer = styled.div`
 
 export const StyledPlayerCheckboxes = styled.div`
   color: #fff;
-  padding: 1rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 
-  .checkboxes-container {
+  .option-container {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -563,15 +565,14 @@ export const StyledPlayerCheckboxes = styled.div`
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
     overflow: hidden scroll;
+    align-self: center;
   }
-  .player-checkbox-header {
+  .player-options-subheader {
+    display: flex;
+    align-items: center;
     font-size: 1.1rem;
-    padding: 2px;
-    margin-bottom: 1rem;
+    margin: 1rem;
   }
 
   .player-checkbox-container {
@@ -1364,16 +1365,22 @@ export const StyledPlayerOptions = styled.div`
   z-index: 3;
 
   .options-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: ${COLORS.offWhite};
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 0rem;
     font-weight: bold;
     font-size: 1.3rem;
   }
   .options-class-color {
     color: ${(props) => props.color};
+    margin-left: 5px;
   }
-
+  .options-class-image {
+    margin-left: 5px;
+  }
   .options-menu {
     display: flex;
     flex-direction: column;
@@ -1390,10 +1397,10 @@ export const StyledPlayerOptions = styled.div`
     text-align: center;
     width: 90%;
     border-radius: 5px;
+    padding: 1rem 0rem;
 
     @media (min-width: 1300px) {
       width: max-content;
-      height: 400px;
       width: 600px;
     }
   }
@@ -1841,6 +1848,10 @@ export const SettingsIcon = styled(RiSettings3Line)`
   color: black;
   font-size: 1.6em;
 `;
+export const WhiteSettingsIcon = styled(RiSettings3Line)`
+  color: white;
+  font-size: 1.6em;
+`;
 export const SaveIcon = styled(RiSave3Fill)`
   font-size: 1.5em;
   margin-right: 0.2rem;
@@ -1865,6 +1876,9 @@ export const CooldownIcon = styled(FaRegClock)`
 `;
 export const PowerUpIcon = styled(GiElectric)`
   font-size: 1.1em;
+`;
+export const BuffUpIcon = styled(AiOutlineStock)`
+  font-size: 1.5em;
 `;
 export const CombatResIcon = styled(FiActivity)`
   font-size: 1.1em;
