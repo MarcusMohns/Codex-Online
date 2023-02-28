@@ -64,17 +64,19 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
                     className="player-checkbox-container"
                   >
                     <label
-                      className="image-and-name-label"
+                      className="player-checkbox"
                       htmlFor={`${buff.name}-${player.id}`}
                     >
+                      <div className="player-checkbox-text">{buff.name}</div>
+
                       <input
                         type="checkbox"
                         id={`${buff.name}-${player.id}`}
-                        className="player-checkbox"
+                        className="player-checkbox-input"
                         defaultChecked={buff.checked}
                         onClick={(e) => editBuffs(player, buff, e)}
                       />
-                      <p className="player-checkbox-text">{buff.name}</p>
+                      <span className="styled-player-checkmark"></span>
 
                       <img
                         src={buff.image}

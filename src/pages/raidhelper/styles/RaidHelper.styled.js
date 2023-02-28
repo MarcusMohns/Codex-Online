@@ -617,13 +617,77 @@ export const StyledPlayerCheckboxes = styled.div`
   }
 
   .player-checkbox {
-  }
-  .image-and-name-label {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    position: relative;
     justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+
+    .player-checkbox-text {
+      user-select: none;
+      color: ${COLORS.offWhite};
+      font-size: 0.8rem;
+      margin-right: auto;
+      margin-left: 1rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    input[type="checkbox"] {
+      visibility: hidden;
+      display: none;
+    }
+    .styled-player-checkmark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      height: 1.1rem;
+      width: 1.1rem;
+      padding: 0;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: ${COLORS.fadedBackground};
+    }
+
+    &:hover input ~ .styled-player-checkmark {
+      border: 1px solid grey;
+      background-color: ${COLORS.fadedBackground};
+    }
+    &:active input ~ .styled-player-checkmark {
+      background-color: ${COLORS.fadedBlack};
+    }
+    input:checked ~ .styled-player-checkmark {
+      background-color: ${COLORS.fadedGrey};
+    }
+    .styled-player-checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    input:checked ~ .styled-player-checkmark:after {
+      display: block;
+    }
+
+    .styled-player-checkmark:after {
+      content: "";
+      width: 9px;
+      height: 6px;
+      border: 2px solid ${COLORS.offWhite};
+      border-bottom: none;
+      border-left: none;
+      margin-bottom: 3px;
+      transform: rotate(130deg);
+    }
+    input {
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
   }
+
   .player-checkbox-image {
     width: 25px;
     height: 25px;
