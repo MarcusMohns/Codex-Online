@@ -10,7 +10,12 @@ const dpsIcon = (
   <img src="images/DPS_icon.png" alt="sword" className="role-icon" />
 );
 
-const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
+const PlayerCheckboxes = ({
+  player,
+  editBuffs,
+  playerRoleEdit,
+  handleDraenei,
+}) => {
   return (
     <>
       {(player.text === "Feral Druid" ||
@@ -93,6 +98,20 @@ const PlayerCheckboxes = ({ player, editBuffs, playerRoleEdit }) => {
           </div>
         </StyledPlayerCheckboxes>
       )}
+
+      <StyledPlayerCheckboxes>
+        <h2 className="player-options-subheader">Role Select</h2>
+        <div className="option-container">
+          <input
+            type="checkbox"
+            defaultChecked={player.groupBuffs[0].draenei}
+            onClick={(e) => handleDraenei(player, e)}
+          />
+          <label className="role-select-label">
+            Tank{tankIcon} {player.groupBuffs[0].draenei ? "DRAENEI1!" : "Not"}
+          </label>
+        </div>
+      </StyledPlayerCheckboxes>
     </>
   );
 };

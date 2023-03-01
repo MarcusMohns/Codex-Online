@@ -64,6 +64,15 @@ const SpecArray = [
         spellId: "45524",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
   {
     text: "Unholy Death Knight",
@@ -122,6 +131,15 @@ const SpecArray = [
         spellId: "45524",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
   {
     text: "Frost Death Knight",
@@ -171,6 +189,15 @@ const SpecArray = [
         image: "images/Chains_Of_Ice.png",
         link: "https://www.wowhead.com/wotlk/spell=45524/chains-of-ice",
         spellId: "45524",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
       },
     ],
   },
@@ -539,6 +566,15 @@ const SpecArray = [
         spellId: "14311",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
   {
     text: "Marksman Hunter",
@@ -602,6 +638,15 @@ const SpecArray = [
         image: "images/Chains_Of_ice.png",
         link: "https://www.wowhead.com/wotlk/spell=14311/freezing-trap",
         spellId: "14311",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
       },
     ],
   },
@@ -677,6 +722,15 @@ const SpecArray = [
         spellId: "14311",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
   {
     text: "Arcane Mage",
@@ -733,6 +787,15 @@ const SpecArray = [
         spellId: "65801",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
   {
     text: "Fire Mage",
@@ -787,6 +850,15 @@ const SpecArray = [
         image: "images/Polymorph.png",
         link: "https://www.wowhead.com/wotlk/spell=65801/polymorph",
         spellId: "65801",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
       },
     ],
   },
@@ -850,6 +922,15 @@ const SpecArray = [
         image: "images/Polymorph.png",
         link: "https://www.wowhead.com/wotlk/spell=65801/polymorph",
         spellId: "65801",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
       },
     ],
   },
@@ -988,6 +1069,15 @@ const SpecArray = [
         image: "images/Hammer_Of_Justice.png",
         link: "https://www.wowhead.com/wotlk/spell=10308/hammer-of-justice",
         spellId: "10308",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
       },
     ],
   },
@@ -1148,6 +1238,15 @@ const SpecArray = [
         image: "images/Hammer_Of_Justice.png",
         link: "https://www.wowhead.com/wotlk/spell=10308/hammer-of-justice",
         spellId: "10308",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
       },
     ],
   },
@@ -1316,6 +1415,15 @@ const SpecArray = [
         spellId: "10308",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
   {
     text: "Discipline Priest",
@@ -1417,6 +1525,15 @@ const SpecArray = [
         spellId: "10890",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
   {
     text: "Holy Priest",
@@ -1503,6 +1620,15 @@ const SpecArray = [
         image: "images/Psychic_Scream.png",
         link: "https://www.wowhead.com/wotlk/spell=10890/psychic-scream",
         spellId: "10890",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
       },
     ],
   },
@@ -1594,7 +1720,15 @@ const SpecArray = [
         spellId: "10890",
       },
     ],
+
     groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
       {
         name: "Vampiric Embrace",
         image: "images/Vampiric_Embrace.png",
@@ -1951,6 +2085,13 @@ const SpecArray = [
     ],
     groupBuffs: [
       {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+      {
         name: "Healing Stream Totem",
         image: "images/Healing_Stream_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
@@ -2109,6 +2250,13 @@ const SpecArray = [
       },
     ],
     groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
       {
         name: "Healing Stream Totem",
         image: "images/Healing_Stream_Totem.png",
@@ -2281,6 +2429,13 @@ const SpecArray = [
     ],
     groupBuffs: [
       {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+      {
         name: "Healing Stream Totem",
         image: "images/Healing_Stream_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
@@ -2399,6 +2554,15 @@ const SpecArray = [
         spellId: "676",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
   {
     text: "Fury Warrior",
@@ -2479,6 +2643,15 @@ const SpecArray = [
         spellId: "676",
       },
     ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
+      },
+    ],
   },
 
   {
@@ -2557,6 +2730,15 @@ const SpecArray = [
         image: "images/Disarm.png",
         link: "https://www.wowhead.com/wotlk/spell=676/disarm",
         spellId: "676",
+      },
+    ],
+    groupBuffs: [
+      {
+        name: "Heroic Presence",
+        image: "images/spellicons/heroic_presence.webp",
+        link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
+        spellId: "6562",
+        draenei: false,
       },
     ],
   },

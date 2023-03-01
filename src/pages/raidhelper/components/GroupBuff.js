@@ -29,7 +29,8 @@ const GroupBuff = ({ group }) => {
       for (let groupBuff of playerInGroup.groupBuffs) {
         if (
           !currentBuffs.includes(groupBuff.name) ||
-          ["Mana Tide Totem", "Tranquility"].includes(groupBuff.name)
+          ["Mana Tide Totem", "Tranquility"].includes(groupBuff.name) ||
+          (groupBuff.name === "Heroic Presence" && groupBuff.draenei)
         ) {
           currentBuffs.push(groupBuff.name);
           groupBuffs.push(

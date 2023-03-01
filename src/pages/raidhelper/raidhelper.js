@@ -120,6 +120,7 @@ const RaidHelper = () => {
     name: "",
     buffs: [],
     utility: [],
+    playerBuffs: [],
   });
 
   const resetRaid = () => {
@@ -240,6 +241,26 @@ const RaidHelper = () => {
     }
   };
 
+  const handleDraenei = (player, e) => {
+    let newBuffs = [...player.groupBuffs];
+
+    if (e.target.checked) {
+      newBuffs[0].draenei = true;
+    } else if (!e.target.checked) {
+      newBuffs[0].draenei = false;
+    }
+    const newPlayer = { ...player, newBuffs };
+
+    const newRaid = { ...raid };
+    const newPlayers = newRaid.players.map((gamer) => {
+      return player.id === gamer.id ? newPlayer : gamer;
+    });
+
+    console.log(newBuffs);
+
+    setRaid({ ...raid, players: newPlayers });
+  };
+
   const handlePlayerOptions = (player) => {
     try {
       setPlayer(player);
@@ -249,7 +270,7 @@ const RaidHelper = () => {
     }
   };
 
-  const playerRoleEdit = async (player, e) => {
+  const playerRoleEdit = (player, e) => {
     let newRole = "dps";
     e.target.checked && (newRole = "tank");
     const newPlayer = { ...player, role: newRole };
@@ -595,6 +616,7 @@ const RaidHelper = () => {
             editName={editName}
             editBuffs={playerBuffsEdit}
             playerRoleEdit={playerRoleEdit}
+            handleDraenei={handleDraenei}
           />
         )}
         {raidCooldownsOpen && (

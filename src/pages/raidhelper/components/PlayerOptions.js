@@ -12,6 +12,7 @@ const PlayerOptions = ({
   editName,
   editBuffs,
   playerRoleEdit,
+  handleDraenei,
 }) => {
   return (
     <StyledPlayerOptions
@@ -38,6 +39,7 @@ const PlayerOptions = ({
           player={player}
           editBuffs={editBuffs}
           playerRoleEdit={playerRoleEdit}
+          handleDraenei={handleDraenei}
         />
       </div>
     </StyledPlayerOptions>
