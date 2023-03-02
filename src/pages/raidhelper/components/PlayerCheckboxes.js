@@ -29,7 +29,7 @@ const PlayerCheckboxes = ({
                 type="checkbox"
                 className="toggle-role"
                 defaultChecked={player.role === "tank" ? true : false}
-                onClick={(e) => playerRoleEdit(player, e)}
+                onChange={(e) => playerRoleEdit(player, e)}
               />
               <label className="role-select-label">Tank{tankIcon}</label>
             </div>
@@ -98,20 +98,52 @@ const PlayerCheckboxes = ({
           </div>
         </StyledPlayerCheckboxes>
       )}
-
-      <StyledPlayerCheckboxes>
-        <h2 className="player-options-subheader">Role Select</h2>
-        <div className="option-container">
-          <input
-            type="checkbox"
-            defaultChecked={player.groupBuffs[0].draenei}
-            onClick={(e) => handleDraenei(player, e)}
-          />
-          <label className="role-select-label">
-            Tank{tankIcon} {player.groupBuffs[0].draenei ? "DRAENEI1!" : "Not"}
-          </label>
-        </div>
-      </StyledPlayerCheckboxes>
+      {(player.text === "Survival Hunter" ||
+        player.text === "Marksman Hunter" ||
+        player.text === "Beastmastery Hunter" ||
+        player.text === "Frost Death Knight" ||
+        player.text === "Unholy Death Knight" ||
+        player.text === "Blood Death Knight" ||
+        player.text === "Frost Mage" ||
+        player.text === "Fire Mage" ||
+        player.text === "Arcane Mage" ||
+        player.text === "Holy Paladin" ||
+        player.text === "Protection Paladin" ||
+        player.text === "Retribution Paladin" ||
+        player.text === "Holy Priest" ||
+        player.text === "Discipline Priest" ||
+        player.text === "Shadow Priest" ||
+        player.text === "Elemental Shaman" ||
+        player.text === "Restoration Shaman" ||
+        player.text === "Enhancement Shaman" ||
+        player.text === "Protection  Warrior" ||
+        player.text === "Fury Warrior" ||
+        player.text === "Arms Warrior") && (
+        <StyledPlayerCheckboxes>
+          <h2 className="player-options-subheader">Draenei Check</h2>
+          <div className="option-container">
+            <div className="player-checkbox-container">
+              <label className="player-checkbox">
+                <div className="player-checkbox-text">
+                  {player.groupBuffs[0].name}
+                </div>
+                <input
+                  type="checkbox"
+                  className="player-draenei-checkbox-input"
+                  defaultChecked={player.groupBuffs[0].draenei}
+                  onChange={(e) => handleDraenei(player, e)}
+                />
+                <span className="styled-player-checkmark"></span>
+                <img
+                  src={player.groupBuffs[0].image}
+                  alt="draenei buff"
+                  className="player-checkbox-image"
+                />
+              </label>
+            </div>
+          </div>
+        </StyledPlayerCheckboxes>
+      )}
     </>
   );
 };
