@@ -6,6 +6,7 @@ import Utilities from "./components/Utilities";
 import SaveMenu from "./components/SaveMenu";
 import RaidCooldowns from "./components/RaidCooldowns";
 import PlayersIndex from "./components/PlayersIndex";
+import PlayerOptions from "./components/PlayerOptions";
 import Raid from "./components/Raid";
 import {
   Main,
@@ -23,7 +24,6 @@ import {
   RaidCooldownIcon,
   ContentTitle,
 } from "./styles/RaidHelper.styled";
-import PlayerOptions from "./components/PlayerOptions";
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -110,7 +110,7 @@ const RaidHelper = () => {
   const [raidCooldownsOpen, setRaidCooldownsOpen] = useState(false);
   const [playersIndexOpen, setPlayersIndexOpen] = useState(false);
   const [playerOptionsOpen, setPlayerOptionsOpen] = useState(false);
-  const [player, setPlayer] = useState({
+  const [aPlayer, setAPlayer] = useState({
     id: "6439cdb9-19a2-44d4-90fc-3ebab48382fe",
     text: "Retribution Paladin",
     image: "images/Retribution_Paladin.webp",
@@ -243,7 +243,6 @@ const RaidHelper = () => {
 
   const handleDraenei = (player, e) => {
     let newBuffs = [...player.groupBuffs];
-
     if (e.target.checked) {
       newBuffs[0].draenei = true;
     } else if (!e.target.checked) {
@@ -256,17 +255,22 @@ const RaidHelper = () => {
       return player.id === gamer.id ? newPlayer : gamer;
     });
 
-    console.log(newBuffs);
+    const newGroups = JSON.parse(JSON.stringify(raid.groups));
+    for (let group in newGroups) {
+      for (let gamer of newGroups[group].playerIds) {
+        player.id === gamer.id && (gamer.groupBuffs = newBuffs);
+      }
+    }
 
-    setRaid({ ...raid, players: newPlayers });
+    setRaid({ ...raid, players: newPlayers, groups: newGroups });
   };
 
   const handlePlayerOptions = (player) => {
     try {
-      setPlayer(player);
+      setAPlayer(player);
       setPlayerOptionsOpen(!playerOptionsOpen);
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
   };
 
@@ -288,6 +292,7 @@ const RaidHelper = () => {
         player.id === gamer.id && (gamer.role = newRole);
       }
     }
+
     setRaid({ ...raid, players: newPlayers, groups: newGroups });
 
     let count = [...raidCount];
@@ -302,7 +307,7 @@ const RaidHelper = () => {
     } else {
       console.error("error in playerRoleEdit when updating raid count");
     }
-    setCount(count);
+    // setCount(count);
   };
   const playerBuffsEdit = (player, buff, e) => {
     const playerArray = [...raid.players];
@@ -612,7 +617,7 @@ const RaidHelper = () => {
           <PlayerOptions
             playerOptionsOpen={playerOptionsOpen}
             setPlayerOptionsOpen={setPlayerOptionsOpen}
-            player={player}
+            player={aPlayer}
             editName={editName}
             editBuffs={playerBuffsEdit}
             playerRoleEdit={playerRoleEdit}
