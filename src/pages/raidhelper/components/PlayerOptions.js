@@ -35,7 +35,6 @@ const PlayerOptions = ({
 
         <PlayerCheckboxes
           className="options-menu"
-          onClick={(e) => e.stopPropagation()}
           player={player}
           editBuffs={editBuffs}
           playerRoleEdit={playerRoleEdit}
