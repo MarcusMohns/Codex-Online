@@ -3,6 +3,10 @@ import {
   BuffUpIcon,
 } from "../styles/RaidHelper.styled";
 
+import { SpecsThatCanTankAndps } from "../../../data/PlayersWithOptions";
+import { OptionalBuffClasses } from "../../../data/PlayersWithOptions";
+import { OptionalBuffs } from "../../../data/PlayersWithOptions";
+import { DraeneiClasses } from "../../../data/PlayersWithOptions";
 const tankIcon = (
   <img src="images/Tank_icon.png" alt="shield" className="role-icon" />
 );
@@ -18,8 +22,7 @@ const PlayerCheckboxes = ({
 }) => {
   return (
     <>
-      {(player.text === "Feral Druid" ||
-        player.text === "Blood Death Knight") && (
+      {SpecsThatCanTankAndps.includes(player.text) && (
         <StyledPlayerCheckboxes>
           <h2 className="player-options-subheader">Role Select</h2>
           <div className="option-container">
@@ -36,16 +39,7 @@ const PlayerCheckboxes = ({
           </div>
         </StyledPlayerCheckboxes>
       )}
-      {(player.text === "Arms Warrior" ||
-        player.text === "Protection Warrior" ||
-        player.text === "Fury Warrior" ||
-        player.text === "Protection Paladin" ||
-        player.text === "Retribution Paladin" ||
-        player.text === "Holy Paladin" ||
-        player.text === "Elemental Shaman" ||
-        player.text === "Enhancement Shaman" ||
-        player.text === "Restoration Shaman" ||
-        player.text === "Survival Hunter") && (
+      {OptionalBuffClasses.includes(player.text) && (
         <StyledPlayerCheckboxes>
           <h2 className="player-options-subheader">
             <BuffUpIcon />
@@ -54,18 +48,7 @@ const PlayerCheckboxes = ({
           <div className="option-container">
             {player.buffs.map(
               (buff) =>
-                (buff.name === "Blessing of Kings" ||
-                  buff.name === "Blessing of Might" ||
-                  buff.name === "Blessing of Wisdom" ||
-                  buff.name === "Blessing of Sanctuary" ||
-                  buff.name === "Commanding Shout" ||
-                  buff.name === "Battle Shout" ||
-                  buff.name === "Aimed Shot" ||
-                  buff.name === "Wrath of Air Totem" ||
-                  buff.name === "Nature Resistance Totem" ||
-                  buff.name === "Fire Resistance Totem" ||
-                  buff.name === "Mana Spring Totem" ||
-                  buff.name === "Hunting Party") && (
+                OptionalBuffs.includes(buff.name) && (
                   <div
                     key={`${buff.name}-${player.id}-checkbox`}
                     className="player-checkbox-container"
@@ -98,27 +81,7 @@ const PlayerCheckboxes = ({
           </div>
         </StyledPlayerCheckboxes>
       )}
-      {(player.text === "Survival Hunter" ||
-        player.text === "Marksman Hunter" ||
-        player.text === "Beastmastery Hunter" ||
-        player.text === "Frost Death Knight" ||
-        player.text === "Unholy Death Knight" ||
-        player.text === "Blood Death Knight" ||
-        player.text === "Frost Mage" ||
-        player.text === "Fire Mage" ||
-        player.text === "Arcane Mage" ||
-        player.text === "Holy Paladin" ||
-        player.text === "Protection Paladin" ||
-        player.text === "Retribution Paladin" ||
-        player.text === "Holy Priest" ||
-        player.text === "Discipline Priest" ||
-        player.text === "Shadow Priest" ||
-        player.text === "Elemental Shaman" ||
-        player.text === "Restoration Shaman" ||
-        player.text === "Enhancement Shaman" ||
-        player.text === "Protection  Warrior" ||
-        player.text === "Fury Warrior" ||
-        player.text === "Arms Warrior") && (
+      {DraeneiClasses.includes(player.text) && (
         <StyledPlayerCheckboxes>
           <h2 className="player-options-subheader">Draenei Check</h2>
           <div className="option-container">

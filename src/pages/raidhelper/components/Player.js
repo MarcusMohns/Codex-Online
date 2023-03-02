@@ -9,6 +9,7 @@ import {
   PlayerNameContainer,
   SettingsIcon,
 } from "../styles/RaidHelper.styled";
+import { PlayersWithOptions } from "../../../data/PlayersWithOptions";
 
 const Player = ({
   player,
@@ -53,11 +54,12 @@ const Player = ({
             </label>
             <img id="class-img" src={player.icon} alt="player in raid" />
             <RaidRole player={player} />
-
-            <SettingsIcon
-              onClick={() => handlePlayerOptions(player)}
-              id="player-info-icon"
-            />
+            {PlayersWithOptions.includes(player.text) && (
+              <SettingsIcon
+                onClick={() => handlePlayerOptions(player)}
+                id="player-info-icon"
+              />
+            )}
           </PlayerNameContainer>
         </StyledPlayer>
       )}
