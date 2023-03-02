@@ -808,7 +808,7 @@ const BuffArray = [
     source: [
       <div key={"healing-reduction-provided-by"}>
         <span id="hunter">Hunters</span> <span id="warrior">Arms Warrior</span>
-        <span id="warrior">Fury Warrior</span> <span id="rogue">Rogues</span>
+        <span id="rogue">Rogues</span>
       </div>,
     ],
     image: "images/Mortal_Strike.png",
@@ -816,7 +816,7 @@ const BuffArray = [
       <div>
         <div className="spell-names">
           {" "}
-          Aimed Shot, Mortal Strike, Furious Attacks, Wound Poison
+          Aimed Shot, Mortal Strike, Wound Poison
         </div>
         <span className="debuff">Decreases enemy target</span> Healing Taken by{" "}
         <span className="buff-value">50%</span>
