@@ -87,6 +87,7 @@ const RaidHelper = () => {
     setCount([0, 0, 0, 0]);
     setBuffs({ type: "reset" });
     setUtilities({ type: "reset" });
+    setAPlayer(initialPlayerState);
   };
 
   const groupSort = (groups, player) => {
@@ -201,7 +202,7 @@ const RaidHelper = () => {
   };
 
   const handleDraenei = (player, e) => {
-    let newBuffs = [...player.groupBuffs];
+    const newBuffs = JSON.parse(JSON.stringify(player.groupBuffs));
     if (e.target.checked) {
       newBuffs[0].draenei = true;
     } else if (!e.target.checked) {
