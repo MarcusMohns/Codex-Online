@@ -266,7 +266,7 @@ const RaidHelper = () => {
     } else {
       console.error("error in playerRoleEdit when updating raid count");
     }
-    // setCount(count);
+    setCount(count);
   };
   const playerBuffsEdit = (player, buff, e) => {
     const playerArray = [...raid.players];
