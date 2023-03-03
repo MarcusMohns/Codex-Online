@@ -1431,9 +1431,7 @@ export const StyledPlayerOptions = styled.div`
     margin-left: 5px;
   }
   .options-close-window-icn {
-    /* &:hover { */
     cursor: pointer;
-    /* } */
   }
 `;
 
@@ -1475,18 +1473,24 @@ export const StyledSaveMenu = styled.div`
 
     @media (min-width: 1300px) {
       width: 600px;
-      height: 500px;
+      height: 450px;
     }
 
     .save-menu-header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
       color: ${COLORS.offWhite};
       background-color: #222;
       width: 100%;
-      padding: 1rem 0rem;
+      padding: 1rem;
       font-weight: bold;
       font-size: 1.3rem;
+
+      .save-menu-close-window-icn {
+        cursor: pointer;
+      }
     }
 
     .save-menu-footer {

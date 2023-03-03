@@ -42,7 +42,15 @@ const SaveMenu = ({
   return (
     <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
       <div className="save-menu" onClick={(e) => e.stopPropagation()}>
-        <h2 className="save-menu-header">Save Menu</h2>
+        <h2 className="save-menu-header">
+          Save Menu
+          <div
+            className="save-menu-close-window-icn"
+            onClick={() => setSaveMenuOpen(!saveMenuOpen)}
+          >
+            x
+          </div>
+        </h2>
         <span className="saved-tooltip">SAVED</span>
 
         {saves.map((aSave, index) => (
