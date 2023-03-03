@@ -8,8 +8,10 @@ import RaidCooldowns from "./components/RaidCooldowns";
 import PlayersIndex from "./components/PlayersIndex";
 import PlayerOptions from "./components/PlayerOptions";
 import Raid from "./components/Raid";
-import { intitialRaidState } from "../../data/InitialStates";
-import { initialPlayerState } from "../../data/InitialStates";
+import {
+  intitialRaidState,
+  initialPlayerState,
+} from "../../data/InitialStates";
 import {
   Main,
   SpecContainer,
@@ -578,7 +580,6 @@ const RaidHelper = () => {
             playerOptionsOpen={playerOptionsOpen}
             setPlayerOptionsOpen={setPlayerOptionsOpen}
             player={aPlayer}
-            editName={editName}
             editBuffs={playerBuffsEdit}
             playerRoleEdit={playerRoleEdit}
             handleDraenei={handleDraenei}

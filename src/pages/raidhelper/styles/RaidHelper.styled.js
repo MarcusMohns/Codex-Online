@@ -1910,10 +1910,7 @@ export const SettingsIcon = styled(RiSettings3Line)`
   font-size: 1.6em;
   margin-right: auto;
 `;
-export const WhiteSettingsIcon = styled(RiSettings3Line)`
-  color: white;
-  font-size: 1.6em;
-`;
+
 export const SaveIcon = styled(RiSave3Fill)`
   font-size: 1.5em;
   margin-right: 0.2rem;

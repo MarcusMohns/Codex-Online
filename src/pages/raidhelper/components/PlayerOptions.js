@@ -1,15 +1,11 @@
 import React from "react";
-import {
-  StyledPlayerOptions,
-  WhiteSettingsIcon,
-} from "../styles/RaidHelper.styled";
+import { StyledPlayerOptions } from "../styles/RaidHelper.styled";
 import PlayerCheckboxes from "./PlayerCheckboxes";
 
 const PlayerOptions = ({
   playerOptionsOpen,
   setPlayerOptionsOpen,
   player,
-  editName,
   editBuffs,
   playerRoleEdit,
   handleDraenei,
@@ -21,7 +17,6 @@ const PlayerOptions = ({
     >
       <div className="options-menu" onClick={(e) => e.stopPropagation()}>
         <div className="options-header">
-          {/* <WhiteSettingsIcon /> */}
           <div className="options-header-text">Options</div>
           <p className="options-player-info">
             <span className="options-class-color">
