@@ -1398,10 +1398,22 @@ export const StyledPlayerOptions = styled.div`
     width: 90%;
     border-radius: 5px;
     padding: 1rem 0rem;
+    animation-name: revealMenu;
+    animation-duration: 0.3s;
 
     @media (min-width: 1300px) {
       width: max-content;
       width: 600px;
+    }
+
+    @keyframes revealMenu {
+      0% {
+        transform: translateY(-15%);
+        opacity: 0%;
+      }
+
+      100% {
+      }
     }
   }
 `;
@@ -1440,6 +1452,8 @@ export const StyledSaveMenu = styled.div`
     text-align: center;
     width: 90%;
     border-radius: 5px;
+    animation-name: revealMenu;
+    animation-duration: 0.3s;
 
     @media (min-width: 1300px) {
       width: max-content;
@@ -1603,6 +1617,8 @@ export const StyledRaidCooldowns = styled.div`
     border-radius: 5px;
     padding: 1rem;
     box-sizing: border-box;
+    animation-name: revealMenu;
+    animation-duration: 0.3s;
 
     @media (min-width: 800px) {
       width: 500px;
@@ -1670,6 +1686,8 @@ export const StyledPlayerIndex = styled.div`
     height: auto;
     border-radius: 5px;
     padding: 1rem;
+    animation-name: revealMenu;
+    animation-duration: 0.3s;
 
     .player-index-header {
       color: ${COLORS.offWhite};
