@@ -57,32 +57,42 @@ const RaidCooldowns = ({
       onClick={() => setRaidCooldownsOpen(!raidCooldownsOpen)}
     >
       <div className="cooldown-panel" onClick={(e) => e.stopPropagation()}>
-        <h2 className="cooldown-header">Raid Cooldowns</h2>
-        <h3 className="cooldown-subheader">
-          <CooldownIcon />
-          Damage Reduction & Healing
-        </h3>
-        <Utilities utilities={ourRaidCooldowns} />
-        <h3 className="cooldown-subheader">
-          <ManaIcon />
-          Mana Restore
-        </h3>
-        <Utilities utilities={ourManaCooldowns} />
-        <h3 className="cooldown-subheader">
-          <PowerUpIcon />
-          Powerups
-        </h3>
-        <Utilities utilities={ourPowerUpCooldowns} />
-        <h3 className="cooldown-subheader">
-          <CombatResIcon />
-          Combat Ressurections
-        </h3>
-        <Utilities utilities={ourCombatResCooldowns} />
-        <h3 className="cooldown-subheader">
-          <MisdirectionCooldownIcon />
-          Misdirection Effects
-        </h3>
-        <Utilities utilities={ourMisdirectCooldowns} />
+        <h2 className="cooldown-header">
+          Raid Cooldowns
+          <div
+            className="cooldown-close-window-icn"
+            onClick={() => setRaidCooldownsOpen(!raidCooldownsOpen)}
+          >
+            x
+          </div>
+        </h2>
+        <div className="cooldown-main-content">
+          <h3 className="cooldown-subheader">
+            <CooldownIcon />
+            Damage Reduction & Healing
+          </h3>
+          <Utilities utilities={ourRaidCooldowns} />
+          <h3 className="cooldown-subheader">
+            <ManaIcon />
+            Mana Restore
+          </h3>
+          <Utilities utilities={ourManaCooldowns} />
+          <h3 className="cooldown-subheader">
+            <PowerUpIcon />
+            Powerups
+          </h3>
+          <Utilities utilities={ourPowerUpCooldowns} />
+          <h3 className="cooldown-subheader">
+            <CombatResIcon />
+            Combat Ressurections
+          </h3>
+          <Utilities utilities={ourCombatResCooldowns} />
+          <h3 className="cooldown-subheader">
+            <MisdirectionCooldownIcon />
+            Misdirection Effects
+          </h3>
+          <Utilities utilities={ourMisdirectCooldowns} />
+        </div>
       </div>
     </StyledRaidCooldowns>
   );

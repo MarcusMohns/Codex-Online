@@ -1637,7 +1637,6 @@ export const StyledRaidCooldowns = styled.div`
     min-height: 400px;
     height: auto;
     border-radius: 20px;
-    padding: 1rem;
     box-sizing: border-box;
     animation-name: revealMenu;
     animation-duration: 0.3s;
@@ -1646,20 +1645,34 @@ export const StyledRaidCooldowns = styled.div`
       width: 500px;
     }
   }
+
+  .cooldown-main-content {
+    padding: 1rem;
+  }
+
   .cooldown-panel > div {
     min-height: 0px;
   }
-  .cooldown-panel > div > a {
+  .cooldown-panel > div > div > a {
     user-select: text;
     background-color: ${COLORS.fadedGrey};
     color: ${COLORS.offWhite};
   }
   .cooldown-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
     color: ${COLORS.offWhite};
+    background-color: #222;
     width: 100%;
     padding: 1rem;
     font-weight: bold;
     font-size: 1.3rem;
+
+    .cooldown-close-window-icn {
+      cursor: pointer;
+    }
   }
   .cooldown-subheader {
     display: flex;
@@ -1703,19 +1716,26 @@ export const StyledPlayerIndex = styled.div`
     right: 0;
     text-align: center;
     width: 80%;
-    min-height: 400px;
     height: auto;
     border-radius: 20px;
-    padding: 1rem;
     animation-name: revealMenu;
     animation-duration: 0.3s;
 
     .player-index-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
       color: ${COLORS.offWhite};
+      background-color: #222;
       width: 100%;
       padding: 1rem;
       font-weight: bold;
       font-size: 1.3rem;
+
+      .player-index-close-window-icn {
+        cursor: pointer;
+      }
     }
 
     .player-index-role-container {
@@ -1725,6 +1745,7 @@ export const StyledPlayerIndex = styled.div`
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      padding: 0.2rem;
     }
 
     .player-index-subheader {
@@ -1768,6 +1789,7 @@ export const StyledPlayerIndex = styled.div`
       user-select: none;
       background-color: ${COLORS.fadedGrey};
       border-radius: 5px;
+      margin: 10px;
 
       &:hover {
         border: 1px solid white;

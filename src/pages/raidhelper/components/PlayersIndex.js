@@ -79,34 +79,44 @@ const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
   return (
     <StyledPlayerIndex onClick={() => setPlayersIndexOpen(!playersIndexOpen)}>
       <div className="player-index-panel" onClick={(e) => e.stopPropagation()}>
-        <h2 className="player-index-header">Player Index</h2>
-        <div className="player-index-role-container">
-          <h2 className="player-index-subheader">
-            <TankIcon /> Tanks
+        <div className="player-index-main-container">
+          <h2 className="player-index-header">
+            Player Index
+            <div
+              className="player-index-close-window-icn"
+              onClick={() => setPlayersIndexOpen(!playersIndexOpen)}
+            >
+              x
+            </div>
           </h2>
-          <div className="player-index-players">{tanks}</div>
-        </div>
-        <div className="player-index-role-container">
-          <h2 className="player-index-subheader">
-            <HealerIcon /> Healers
-          </h2>
-          <div className="player-index-players">{healers}</div>
-        </div>
-        <div className="player-index-role-container">
-          <h2 className="player-index-subheader">
-            <DpsIcon /> DPS
-          </h2>
-          <div className="player-index-players">{dps}</div>
-        </div>
+          <div className="player-index-role-container">
+            <h2 className="player-index-subheader">
+              <TankIcon /> Tanks
+            </h2>
+            <div className="player-index-players">{tanks}</div>
+          </div>
+          <div className="player-index-role-container">
+            <h2 className="player-index-subheader">
+              <HealerIcon /> Healers
+            </h2>
+            <div className="player-index-players">{healers}</div>
+          </div>
+          <div className="player-index-role-container">
+            <h2 className="player-index-subheader">
+              <DpsIcon /> DPS
+            </h2>
+            <div className="player-index-players">{dps}</div>
+          </div>
 
-        <div className="tooltip">
-          <div
-            className="copy-to-clipboard"
-            onClick={() => CopyToClipBoard(clipBoardText)}
-          >
-            <CopyIcon id="index-player-copy-icon" />
-            <span className="tooltiptext">Copied!</span>
-            Copy
+          <div className="tooltip">
+            <div
+              className="copy-to-clipboard"
+              onClick={() => CopyToClipBoard(clipBoardText)}
+            >
+              <CopyIcon id="index-player-copy-icon" />
+              <span className="tooltiptext">Copied!</span>
+              Copy
+            </div>
           </div>
         </div>
       </div>

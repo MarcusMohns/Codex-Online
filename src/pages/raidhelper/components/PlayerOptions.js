@@ -34,12 +34,12 @@ const PlayerOptions = ({
             />
           </p>
           <div className="options-close-window-btn">
-            <p
+            <div
               className="options-close-window-icn"
               onClick={() => setPlayerOptionsOpen(!playerOptionsOpen)}
             >
               x
-            </p>
+            </div>
           </div>
         </div>
         <PlayerCheckboxes
