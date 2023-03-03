@@ -75,4 +75,5 @@ export const DraeneiClasses = [
   "Protection  Warrior",
   "Fury Warrior",
   "Arms Warrior",
+  "Protection Warrior",
 ];
