@@ -30,7 +30,6 @@ export const Main = styled.main`
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
-
   @media (min-width: 1300px) {
     height: 100%;
     width: 100%;
@@ -53,7 +52,6 @@ export const SpecContainer = styled.section`
   justify-content: center;
   border-top: 2px black;
   margin-top: 9%;
-
   .spec-buttons {
     display: grid;
     grid-auto-flow: column;
@@ -65,7 +63,6 @@ export const SpecContainer = styled.section`
     margin: 2rem 0;
     background-color: ${COLORS.halfFadedPrimary};
   }
-
   @media screen and (min-width: 1300px) {
     box-sizing: border-box;
     display: flex;
@@ -75,7 +72,6 @@ export const SpecContainer = styled.section`
     max-width: 100%;
     max-height: 100%;
     padding: 0rem 2rem;
-
     .spec-buttons {
       margin: 1rem 0;
       width: 100%;
@@ -99,7 +95,6 @@ export const StyledSpecButton = styled.div`
   box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
-
   #info-image {
     visibility: hidden;
   }
@@ -112,7 +107,6 @@ export const StyledSpecButton = styled.div`
   &:active {
     box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 1);
   }
-
   .class-tooltip-container {
     #info-image {
       position: absolute;
@@ -122,7 +116,6 @@ export const StyledSpecButton = styled.div`
         transform: scale(1.2);
       }
     }
-
     &:hover #info-image ~ div {
       display: flex;
     }
@@ -130,7 +123,6 @@ export const StyledSpecButton = styled.div`
       display: none;
     }
   }
-
   .text-and-image-button-container {
     display: flex;
     flex-direction: row;
@@ -139,11 +131,9 @@ export const StyledSpecButton = styled.div`
     width: 100%;
     text-align: center;
     padding: 0.4rem;
-
     .specbutton-text {
       display: none;
     }
-
     .specbutton-image {
       border-radius: 10px;
       border: 1px solid black;
@@ -155,7 +145,6 @@ export const StyledSpecButton = styled.div`
   @media (min-width: 765px) {
     .text-and-image-button-container {
       padding: 0.7rem;
-
       .specbutton-text {
         display: flex;
         text-align: center;
@@ -167,21 +156,17 @@ export const StyledSpecButton = styled.div`
       }
     }
   }
-
   @media (min-width: 1300px) {
     padding: 2px 3px;
     font-size: 0.8rem;
     letter-spacing: 1px;
-
     .text-and-image-button-container {
       padding: 0.7rem;
-
       .specbutton-text {
         display: flex;
         margin-left: auto;
         transition: transform 300ms ease;
       }
-
       .specbutton-image {
         display: flex;
         margin-left: auto;
@@ -217,7 +202,6 @@ export const StyledClassToolTip = styled.div`
     box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
     z-index: 3;
     pointer-events: none;
-
     animation-name: FadeIn;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
@@ -227,21 +211,18 @@ export const StyledClassToolTip = styled.div`
     height: 2.5rem;
     border-radius: 5px;
   }
-
   .tooltip-buff-and-utility-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
   }
-
   .utility-tooltip-container {
     padding: 1rem;
   }
   .buffs-tooltip-container {
     padding: 1rem;
   }
-
   .class-tooltip-title {
     font-size: 1.3rem;
     text-align: center;
@@ -267,7 +248,6 @@ export const StyledClassToolTip = styled.div`
     margin-top: 2px;
     text-decoration: underline;
   }
-
   .class-tooltip-buff {
     width: 100%;
     display: flex;
@@ -284,7 +264,6 @@ export const StyledClassToolTip = styled.div`
     width: 100%;
     height: 100%;
     font-weight: 500;
-
     .class-tooltip-image {
       display: flex;
       width: 1.1rem;
@@ -308,9 +287,7 @@ export const RaidContainer = styled.section`
   min-width: 100%;
   max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-
   }
-
   .raid-is-not-full {
     position:relative;
     user-select:none;
@@ -322,7 +299,6 @@ export const RaidContainer = styled.section`
     color: ${COLORS.lightText};
     transition: opacity 0.3s;
     opacity:0%;
-
   }
   .raid-is-full {
     user-select:none;
@@ -336,7 +312,6 @@ export const RaidContainer = styled.section`
     width: 100%;
     transition: opacity 0.3s ease;
     opacity:100%;
-
   }
   .raid-is-full-warning {
     user-select:none;
@@ -364,8 +339,6 @@ export const RaidContainer = styled.section`
   @media (min-width: 576px) {
     grid-area: Raid;
     padding-bottom:5px;
-
-
     .no-players-text {
       margin: auto;
       display: flex;
@@ -398,7 +371,6 @@ export const StyledPlayer = styled.div`
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 1px;
-
   .role-img {
     position: absolute;
     right: 2px;
@@ -413,7 +385,6 @@ export const StyledPlayer = styled.div`
       transform: scale(1.2);
     }
   }
-
   .player-name {
     position: relative;
     display: flex;
@@ -423,7 +394,6 @@ export const StyledPlayer = styled.div`
     font-size: 0.8rem;
     pointer-events: none;
   }
-
   .player-name input {
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -455,7 +425,6 @@ export const StyledPlayer = styled.div`
     font-family: "Raleway", sans-serif;
     font-size: 0.8rem;
   }
-
   .placeholder {
     position: absolute;
     top: 2px;
@@ -469,7 +438,6 @@ export const StyledPlayer = styled.div`
     transition: top 0.3s ease, top 0.3s ease, top 0.3s ease, font-size 0.3s ease,
       opacity 0.3s ease;
   }
-
   .player-name input:focus + .placeholder {
     top: -20px;
     font-size: 10px;
@@ -477,14 +445,11 @@ export const StyledPlayer = styled.div`
   .player-name input + .placeholder {
     ${(props) => props.hasText && "top: -20px; font-size: 10px; color: white;"};
   }
-
   /* box-shadow: $/{(props) =>
   / props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
-
   #class-img {
     display: none;
   }
-
   #edit-player-icon {
     display: flex;
     margin-left: 2px;
@@ -506,7 +471,6 @@ export const StyledPlayer = styled.div`
   }
   &:hover {
     transform: translateY(-0.1em); // change it to something btr
-
     #edit-player-icon {
       visibility: visible;
     }
@@ -517,7 +481,6 @@ export const StyledPlayer = styled.div`
       visibility: visible;
     }
   }
-
   @media (min-width: 576px) {
     .player-name input:focus + .placeholder {
       top: -20px;
@@ -536,12 +499,10 @@ export const StyledPlayer = styled.div`
       border-radius: 35%;
       margin-bottom: 2px;
     }
-
     #player-info-icon {
       bottom: 1px;
     }
   }
-
   @media (min-width: 1300px) {
     font-size: 0.8rem;
     padding: 0rem;
@@ -556,7 +517,6 @@ export const StyledPlayerCheckboxes = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 1rem;
-
   .option-container {
     box-sizing: border-box;
     display: flex;
@@ -575,7 +535,6 @@ export const StyledPlayerCheckboxes = styled.div`
     font-size: 1.1rem;
     margin: 1rem;
   }
-
   .player-checkbox-container {
     background-color: ${COLORS.fadedGrey};
     color: ${COLORS.offWhite};
@@ -587,11 +546,9 @@ export const StyledPlayerCheckboxes = styled.div`
     padding: 0.5rem;
     border-radius: 5px;
   }
-
   .player-checkbox-text {
     user-select: none;
   }
-
   .role-toggler-container {
     display: flex;
     flex-direction: row;
@@ -605,7 +562,6 @@ export const StyledPlayerCheckboxes = styled.div`
     color: ${COLORS.offWhite};
     font-family: "Raleway", sans-serif;
     box-sizing: border-box;
-
     .role-select-label {
       display: flex;
       flex-direction: column;
@@ -617,7 +573,6 @@ export const StyledPlayerCheckboxes = styled.div`
       height: 20px;
     }
   }
-
   .player-checkbox {
     display: flex;
     position: relative;
@@ -625,7 +580,6 @@ export const StyledPlayerCheckboxes = styled.div`
     align-items: center;
     cursor: pointer;
     padding: 0.5rem;
-
     .player-checkbox-text {
       user-select: none;
       color: ${COLORS.offWhite};
@@ -653,7 +607,6 @@ export const StyledPlayerCheckboxes = styled.div`
       cursor: pointer;
       background-color: ${COLORS.fadedBackground};
     }
-
     &:hover input ~ .styled-player-checkmark {
       border: 1px solid grey;
       background-color: ${COLORS.fadedBackground};
@@ -672,7 +625,6 @@ export const StyledPlayerCheckboxes = styled.div`
     input:checked ~ .styled-player-checkmark:after {
       display: block;
     }
-
     .styled-player-checkmark:after {
       content: "";
       width: 9px;
@@ -689,14 +641,12 @@ export const StyledPlayerCheckboxes = styled.div`
       }
     }
   }
-
   .player-checkbox-image {
     width: 25px;
     height: 25px;
     border-radius: 20%;
     margin-left: 0.5rem;
   }
-
   .toggle-role {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -713,7 +663,6 @@ export const StyledPlayerCheckboxes = styled.div`
     background-color: ${COLORS.deathKnight};
     transition: background-color ease 0.3s;
   }
-
   .toggle-role:before {
     content: "";
     display: block;
@@ -730,11 +679,9 @@ export const StyledPlayerCheckboxes = styled.div`
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
   }
-
   .toggle-role:checked {
     background-color: ${COLORS.primary};
   }
-
   .toggle-role:checked:before {
     left: 26px;
   }
@@ -759,7 +706,6 @@ export const StyledBuffCategories = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-
   @media (min-width: 1550px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -776,20 +722,16 @@ export const CategoryContainer = styled.div`
   width: 100%;
   border: 2px inset black;
   margin-bottom: 5px;
-
   img {
     margin-left: 8px;
   }
-
   svg {
     margin-right: 8px;
   }
-
   @media (min-width: 1300px) {
     flex-direction: row;
     margin-bottom: 0px;
     border: none;
-
     img {
       margin-left: 0px;
     }
@@ -814,11 +756,9 @@ export const StyledBuff = styled.a`
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.0071428571em;
   text-decoration: none;
-
   @media (min-width: 1300px) {
     margin: 1px;
   }
-
   img {
     width: 25px;
     height: 25px;
@@ -896,7 +836,6 @@ export const StyledCategory = styled.div`
     right: 0;
     margin-left: auto;
     margin-right: auto;
-
     @media (min-width: 1300px) {
       position: absolute;
       min-width: 200px;
@@ -908,7 +847,6 @@ export const StyledCategory = styled.div`
       left: initial;
       right: initial;
     }
-
     #death-knight {
       color: ${COLORS.deathKnight};
       display: block;
@@ -1018,11 +956,9 @@ export const StyledCategory = styled.div`
     flex-direction: row;
     width: 250px;
     padding: 0.4rem;
-
     .tooltip {
       display: initial;
     }
-
     .category-name-text {
       padding: 0rem;
     }
@@ -1062,7 +998,6 @@ export const StyledUtilities = styled.div`
   overflow: scroll;
   overflow-x: hidden;
   padding-left: 20px;
-
   @media (min-width: 1300px) {
     max-height: 430px;
   }
@@ -1089,26 +1024,21 @@ export const StyledUtility = styled.a`
   letter-spacing: 0.0071428571em;
   min-height: 100%;
   text-decoration: none;
-
   img {
     width: 25px;
     height: 25px;
     border-radius: 20%;
     margin-left: 0.5rem;
   }
-
   &:link {
     color: inherit;
   }
-
   &:visited {
     color: inherit;
   }
-
   &:hover {
     color: inherit;
   }
-
   &:active {
     color: inherit;
   }
@@ -1144,7 +1074,6 @@ export const RaidContentHeader = styled.div`
   color: ${COLORS.offWhite};
   box-shadow: 0 2px 6px -1px #000;
   user-select: none;
-
   .btn-container {
     display: flex;
     justify-self: flex-end;
@@ -1160,7 +1089,6 @@ export const RaidContentHeader = styled.div`
     margin-right: auto;
     font-family: sans-serif;
   }
-
   .role-count {
     display: flex;
     align-self: center;
@@ -1175,7 +1103,6 @@ export const RaidContentHeader = styled.div`
     -ms-letter-spacing: 0.0071428571em;
     letter-spacing: 0.0071428571em;
   }
-
   @media (min-width: 1300px) {
     height: 3rem;
   }
@@ -1192,7 +1119,6 @@ export const RaidContentHeader = styled.div`
       display: flex;
       padding: 2px;
       font-size: 1rem;
-
       .role-count-img {
         height: 18px;
         width: 18px;
@@ -1236,7 +1162,6 @@ export const GroupContainer = styled.div`
   min-height: 450px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: transparent;
-
   @media (min-width: 1300px) {
     min-height: 440px;
     padding: 0 1px;
@@ -1257,12 +1182,10 @@ export const GroupTitle = styled.div`
   -o-animation-fill-mode: forwards; /* Not implemented yet */
   -ms-animation-fill-mode: forwards; /* IE 10+ */
   animation-fill-mode: forwards;
-
   @keyframes reveal {
     0% {
       opacity: 0%;
     }
-
     100% {
       transform: translateY(15%);
     }
@@ -1290,7 +1213,6 @@ export const RaidHeaderButton = styled.div`
   letter-spacing: 1px;
   transform: translateY(0);
   transition: transform 150ms;
-
   &:hover {
     transform: translateY(-2px);
   }
@@ -1318,17 +1240,13 @@ export const UtilityHeaderButton = styled.div`
   font-size: 0.7rem;
   margin-left: auto;
   margin-right: 5px;
-
   transform: translateY(0);
   transition: transform 150ms;
-
   margin-left: ${(props) => props.marginLeft};
   margin-right: ${(props) => props.marginRight};
-
   &:hover {
     transform: translateY(-2px);
   }
-
   @media (min-width: 600px) {
     flex-direction: row;
     font-size: 1rem;
@@ -1341,13 +1259,11 @@ export const RaidGroupContainer = styled.div`
   align-items: baseline;
   text-align: center;
   width: 99%;
-
   @media (min-width: 1300px) {
     animation-name: revealGroups;
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
-
   @keyframes revealGroups {
     0% {
       opacity: 0%;
@@ -1364,7 +1280,6 @@ export const StyledPlayerOptions = styled.div`
   left: 0;
   top: 0%;
   z-index: 3;
-
   .options-menu {
     display: flex;
     flex-direction: column;
@@ -1374,7 +1289,7 @@ export const StyledPlayerOptions = styled.div`
     position: fixed;
     margin-left: auto;
     margin-right: auto;
-    top: 35%;
+    top: 25%;
     left: 0;
     right: 0;
     text-align: center;
@@ -1382,22 +1297,18 @@ export const StyledPlayerOptions = styled.div`
     border-radius: 10px;
     animation-name: revealMenu;
     animation-duration: 0.3s;
-
     @media (min-width: 1300px) {
       width: 600px;
     }
-
     @keyframes revealMenu {
       0% {
         transform: translateY(-15%);
         opacity: 0%;
       }
-
       100% {
       }
     }
   }
-
   .options-header {
     display: flex;
     align-items: center;
@@ -1444,7 +1355,6 @@ export const StyledSaveMenu = styled.div`
   left: 0;
   top: 0%;
   z-index: 3;
-
   .saved-tooltip {
     width: 100%;
     opacity: 0%;
@@ -1452,7 +1362,6 @@ export const StyledSaveMenu = styled.div`
     user-select: none;
     margin-top: 10px;
   }
-
   .save-menu {
     display: flex;
     flex-direction: column;
@@ -1470,12 +1379,10 @@ export const StyledSaveMenu = styled.div`
     border-radius: 20px;
     animation-name: revealMenu;
     animation-duration: 0.3s;
-
     @media (min-width: 1300px) {
       width: 600px;
       height: 450px;
     }
-
     .save-menu-header {
       display: flex;
       align-items: center;
@@ -1487,12 +1394,10 @@ export const StyledSaveMenu = styled.div`
       padding: 1rem;
       font-weight: bold;
       font-size: 1.3rem;
-
       .save-menu-close-window-icn {
         cursor: pointer;
       }
     }
-
     .save-menu-footer {
       flex-grow: 1;
       display: flex;
@@ -1515,7 +1420,6 @@ export const StyledSaveMenu = styled.div`
         cursor: pointer;
         user-select: none;
         font-size: 0.9rem;
-
         @media (min-width: 1300px) {
           font-size: 1rem;
         }
@@ -1532,13 +1436,11 @@ export const StyledSaveMenu = styled.div`
           background-color: ${COLORS.fadedPrimary};
         }
       }
-
       #delete-all-saves-button {
         background-color: ${COLORS.deathKnight};
         &:hover {
           background-color: ${COLORS.fadedRed};
         }
-
         #delete-icon {
           color: white;
         }
@@ -1554,7 +1456,6 @@ export const StyledSaveMenu = styled.div`
       margin-top: 1rem;
       border: 1px solid grey;
       padding: 5px;
-
       .save-slot-number {
         color: grey;
         margin-right: 5px;
@@ -1640,16 +1541,14 @@ export const StyledRaidCooldowns = styled.div`
     box-sizing: border-box;
     animation-name: revealMenu;
     animation-duration: 0.3s;
-
     @media (min-width: 800px) {
       width: 500px;
     }
   }
-
   .cooldown-main-content {
     padding: 1rem;
+    width: 100%;
   }
-
   .cooldown-panel > div {
     min-height: 0px;
   }
@@ -1669,7 +1568,6 @@ export const StyledRaidCooldowns = styled.div`
     padding: 1rem;
     font-weight: bold;
     font-size: 1.3rem;
-
     .cooldown-close-window-icn {
       cursor: pointer;
     }
@@ -1701,7 +1599,6 @@ export const StyledPlayerIndex = styled.div`
   left: 0;
   top: 0%;
   z-index: 3;
-
   .player-index-panel {
     display: flex;
     flex-direction: column;
@@ -1721,6 +1618,14 @@ export const StyledPlayerIndex = styled.div`
     animation-name: revealMenu;
     animation-duration: 0.3s;
 
+    .player-index-main-container {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     .player-index-header {
       display: flex;
       align-items: center;
@@ -1732,12 +1637,10 @@ export const StyledPlayerIndex = styled.div`
       padding: 1rem;
       font-weight: bold;
       font-size: 1.3rem;
-
       .player-index-close-window-icn {
         cursor: pointer;
       }
     }
-
     .player-index-role-container {
       display: flex;
       width: 100%;
@@ -1747,7 +1650,6 @@ export const StyledPlayerIndex = styled.div`
       align-items: center;
       padding: 0.2rem;
     }
-
     .player-index-subheader {
       display: flex;
       align-self: flex-start;
@@ -1776,7 +1678,6 @@ export const StyledPlayerIndex = styled.div`
     .index-player-name {
       margin: 0px 5px;
     }
-
     .copy-to-clipboard {
       display: flex;
       align-items: center;
@@ -1790,7 +1691,7 @@ export const StyledPlayerIndex = styled.div`
       background-color: ${COLORS.fadedGrey};
       border-radius: 5px;
       margin: 10px;
-
+      justify-self: flex-end;
       &:hover {
         border: 1px solid white;
       }
@@ -1801,7 +1702,6 @@ export const StyledPlayerIndex = styled.div`
       display: inline-block;
       margin-top: 10px;
     }
-
     .tooltip .tooltiptext {
       width: 100px;
       background-color: #555;
@@ -1809,7 +1709,6 @@ export const StyledPlayerIndex = styled.div`
       text-align: center;
       padding: 5px 0;
       border-radius: 6px;
-
       position: absolute;
       z-index: 1;
       bottom: 125%;
@@ -1817,7 +1716,6 @@ export const StyledPlayerIndex = styled.div`
       margin-left: -50px;
       opacity: 0;
     }
-
     .tooltip .tooltiptext::after {
       content: "";
       position: absolute;
@@ -1828,7 +1726,6 @@ export const StyledPlayerIndex = styled.div`
       border-style: solid;
       border-color: #555 transparent transparent transparent;
     }
-
     @media (min-width: 800px) {
       width: 500px;
     }
@@ -1910,7 +1807,10 @@ export const SettingsIcon = styled(RiSettings3Line)`
   font-size: 1.6em;
   margin-right: auto;
 `;
-
+export const WhiteSettingsIcon = styled(RiSettings3Line)`
+  color: white;
+  font-size: 1.6em;
+`;
 export const SaveIcon = styled(RiSave3Fill)`
   font-size: 1.5em;
   margin-right: 0.2rem;
