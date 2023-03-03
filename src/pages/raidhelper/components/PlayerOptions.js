@@ -21,20 +21,29 @@ const PlayerOptions = ({
     >
       <div className="options-menu" onClick={(e) => e.stopPropagation()}>
         <div className="options-header">
-          <WhiteSettingsIcon />
-          Options for
-          <span className="options-class-color">
-            {player.name === "" ? player.text : player.name}
-          </span>
-          <img
-            src={player.icon}
-            alt="class icon"
-            className="options-class-image"
-          />
+          {/* <WhiteSettingsIcon /> */}
+          <div className="options-header-text">Options</div>
+          <p className="options-player-info">
+            <span className="options-class-color">
+              {player.name === "" ? player.text : player.name}
+            </span>
+            <img
+              src={player.icon}
+              alt="class icon"
+              className="options-class-image"
+            />
+          </p>
+          <div className="options-close-window-btn">
+            <p
+              className="options-close-window-icn"
+              onClick={() => setPlayerOptionsOpen(!playerOptionsOpen)}
+            >
+              x
+            </p>
+          </div>
         </div>
-
         <PlayerCheckboxes
-          className="options-menu"
+          className="player-checkboxes-menu"
           player={player}
           editBuffs={editBuffs}
           playerRoleEdit={playerRoleEdit}

@@ -555,6 +555,7 @@ export const StyledPlayerCheckboxes = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  padding: 1rem;
 
   .option-container {
     box-sizing: border-box;
@@ -1364,30 +1365,12 @@ export const StyledPlayerOptions = styled.div`
   top: 0%;
   z-index: 3;
 
-  .options-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: ${COLORS.offWhite};
-    width: 100%;
-    padding: 1rem 0rem;
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  .options-class-color {
-    color: ${(props) => props.color};
-    margin-left: 5px;
-  }
-  .options-class-image {
-    margin-left: 5px;
-  }
   .options-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     background-color: black;
-    border: 1px solid grey;
     position: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -1396,13 +1379,11 @@ export const StyledPlayerOptions = styled.div`
     right: 0;
     text-align: center;
     width: 90%;
-    border-radius: 5px;
-    padding: 1rem 0rem;
+    border-radius: 10px;
     animation-name: revealMenu;
     animation-duration: 0.3s;
 
     @media (min-width: 1300px) {
-      width: max-content;
       width: 600px;
     }
 
@@ -1415,6 +1396,44 @@ export const StyledPlayerOptions = styled.div`
       100% {
       }
     }
+  }
+
+  .options-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: ${COLORS.offWhite};
+    background-color: #222;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .options-header-text {
+    width: 80px;
+    margin-left: 7px;
+  }
+  .options-player-info {
+    display: flex;
+    align-items: center;
+  }
+  .options-close-window-btn {
+    display: flex;
+    width: 80px;
+    margin-right: 10px;
+    justify-content: flex-end;
+  }
+  .options-class-color {
+    color: ${(props) => props.color};
+    margin-left: 5px;
+  }
+  .options-class-image {
+    margin-left: 5px;
+  }
+  .options-close-window-icn {
+    /* &:hover { */
+    cursor: pointer;
+    /* } */
   }
 `;
 
@@ -1442,7 +1461,6 @@ export const StyledSaveMenu = styled.div`
     align-items: center;
     justify-content: flex-start;
     background-color: black;
-    border: 1px solid grey;
     position: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -1451,23 +1469,24 @@ export const StyledSaveMenu = styled.div`
     right: 0;
     text-align: center;
     width: 90%;
-    border-radius: 5px;
+    border-radius: 20px;
     animation-name: revealMenu;
     animation-duration: 0.3s;
 
     @media (min-width: 1300px) {
-      width: max-content;
-      height: 400px;
+      width: 600px;
+      height: 500px;
     }
 
     .save-menu-header {
       display: flex;
       align-items: center;
-      justify-content: center;
+      color: ${COLORS.offWhite};
+      background-color: #222;
       width: 100%;
-      height: 3rem;
-      color: white;
-      font-size: 1.2rem;
+      padding: 1rem 0rem;
+      font-weight: bold;
+      font-size: 1.3rem;
     }
 
     .save-menu-footer {
@@ -1603,7 +1622,6 @@ export const StyledRaidCooldowns = styled.div`
     align-items: center;
     justify-content: center;
     background-color: black;
-    border: 1px solid grey;
     position: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -1614,7 +1632,7 @@ export const StyledRaidCooldowns = styled.div`
     width: 80%;
     min-height: 400px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 1rem;
     box-sizing: border-box;
     animation-name: revealMenu;
@@ -1673,7 +1691,6 @@ export const StyledPlayerIndex = styled.div`
     align-items: center;
     justify-content: center;
     background-color: black;
-    border: 1px solid grey;
     position: fixed;
     margin-left: auto;
     margin-right: auto;
@@ -1684,7 +1701,7 @@ export const StyledPlayerIndex = styled.div`
     width: 80%;
     min-height: 400px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 1rem;
     animation-name: revealMenu;
     animation-duration: 0.3s;
@@ -1865,6 +1882,7 @@ export const InfoIcon = styled(FcInfo)`
 export const SettingsIcon = styled(RiSettings3Line)`
   color: black;
   font-size: 1.6em;
+  margin-right: auto;
 `;
 export const WhiteSettingsIcon = styled(RiSettings3Line)`
   color: white;
