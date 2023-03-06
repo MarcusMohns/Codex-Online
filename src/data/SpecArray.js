@@ -1073,17 +1073,17 @@ const SpecArray = [
     ],
     groupBuffs: [
       {
-        name: "Divine Sacrifice",
-        image: "images/Divine_Sacrifice.png",
-        link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
-        spellId: "64205",
-      },
-      {
         name: "Heroic Presence",
         image: "images/spellicons/heroic_presence.webp",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
+      },
+      {
+        name: "Divine Sacrifice",
+        image: "images/Divine_Sacrifice.png",
+        link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
+        spellId: "64205",
       },
     ],
   },
