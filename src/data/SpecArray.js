@@ -1029,10 +1029,10 @@ const SpecArray = [
         spellId: "66116",
       },
       {
-        name: "Divine Sacrifice",
+        name: "Divine Guardian",
         image: "images/Divine_Sacrifice.png",
-        link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
-        spellId: "64205",
+        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
+        spellId: "53530",
       },
       {
         name: "Hand of Sacrifice",
@@ -1072,6 +1072,12 @@ const SpecArray = [
       },
     ],
     groupBuffs: [
+      {
+        name: "Divine Sacrifice",
+        image: "images/Divine_Sacrifice.png",
+        link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
+        spellId: "64205",
+      },
       {
         name: "Heroic Presence",
         image: "images/spellicons/heroic_presence.webp",
@@ -1198,10 +1204,10 @@ const SpecArray = [
         spellId: "66116",
       },
       {
-        name: "Divine Sacrifice",
+        name: "Divine Guardian",
         image: "images/Divine_Sacrifice.png",
-        link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
-        spellId: "64205",
+        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
+        spellId: "53530",
       },
       {
         name: "Hand of Sacrifice",
@@ -1247,6 +1253,12 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
+      },
+      {
+        name: "Divine Sacrifice",
+        image: "images/Divine_Sacrifice.png",
+        link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
+        spellId: "64205",
       },
     ],
   },
@@ -1373,16 +1385,16 @@ const SpecArray = [
         spellId: "66116",
       },
       {
-        name: "Divine Sacrifice",
-        image: "images/Divine_Sacrifice.png",
-        link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
-        spellId: "64205",
-      },
-      {
         name: "Hand of Sacrifice",
         image: "images/Hand_Of_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=6940/hand-of-sacrifice",
         spellId: "6940",
+      },
+      {
+        name: "Divine Guardian",
+        image: "images/Divine_Sacrifice.png",
+        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
+        spellId: "53530",
       },
       {
         name: "Hand of Protection",
@@ -1422,6 +1434,12 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
+      },
+      {
+        name: "Divine Sacrifice",
+        image: "images/Divine_Sacrifice.png",
+        link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
+        spellId: "64205",
       },
     ],
   },
