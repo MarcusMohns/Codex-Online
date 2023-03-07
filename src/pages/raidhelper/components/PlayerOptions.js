@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledPlayerOptions } from "../styles/RaidHelper.styled";
-import PlayerCheckboxes from "./PlayerCheckboxes";
+import PlayerOptionsCheckboxes from "./PlayerOptionsCheckboxes";
 
 const PlayerOptions = ({
   playerOptionsOpen,
@@ -37,7 +37,7 @@ const PlayerOptions = ({
             </div>
           </div>
         </div>
-        <PlayerCheckboxes
+        <PlayerOptionsCheckboxes
           className="player-checkboxes-menu"
           player={player}
           editBuffs={editBuffs}
