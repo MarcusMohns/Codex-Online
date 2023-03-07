@@ -517,6 +517,13 @@ export const StyledPlayerCheckboxes = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 1rem;
+  .totem-element-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
   .option-container {
     box-sizing: border-box;
     display: flex;
@@ -1289,7 +1296,8 @@ export const StyledPlayerOptions = styled.div`
     position: fixed;
     margin-left: auto;
     margin-right: auto;
-    top: 25%;
+    margin: auto;
+    top: 20%;
     left: 0;
     right: 0;
     text-align: center;
@@ -1297,6 +1305,7 @@ export const StyledPlayerOptions = styled.div`
     border-radius: 10px;
     animation-name: revealMenu;
     animation-duration: 0.3s;
+
     @media (min-width: 1300px) {
       width: 600px;
     }
@@ -1371,7 +1380,7 @@ export const StyledSaveMenu = styled.div`
     position: fixed;
     margin-left: auto;
     margin-right: auto;
-    top: 35%;
+    top: 20%;
     left: 0;
     right: 0;
     text-align: center;
