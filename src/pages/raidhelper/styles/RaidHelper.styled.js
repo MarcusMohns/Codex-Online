@@ -158,7 +158,7 @@ export const StyledSpecButton = styled.div`
   }
   @media (min-width: 1300px) {
     padding: 2px 3px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 1px;
     .text-and-image-button-container {
       padding: 0.7rem;
