@@ -7,6 +7,8 @@ import { SpecsThatCanTankAndps } from "../../../data/PlayersWithOptions";
 import { OptionalBuffClasses } from "../../../data/PlayersWithOptions";
 import { OptionalBuffs } from "../../../data/PlayersWithOptions";
 import { DraeneiClasses } from "../../../data/PlayersWithOptions";
+import { Auras } from "../../../data/PlayersWithOptions";
+
 const tankIcon = (
   <img src="images/Tank_icon.png" alt="shield" className="role-icon" />
 );
@@ -49,6 +51,50 @@ const PlayerCheckboxes = ({
             {player.buffs.map(
               (buff) =>
                 OptionalBuffs.includes(buff.name) && (
+                  <div
+                    key={`${buff.name}-${player.id}-checkbox`}
+                    className="player-checkbox-container"
+                  >
+                    {buff.type}
+                    <label
+                      className="player-checkbox"
+                      htmlFor={`${buff.name}-${player.id}`}
+                    >
+                      <div className="player-checkbox-text">{buff.name}</div>
+
+                      <input
+                        type="checkbox"
+                        id={`${buff.name}-${player.id}`}
+                        className="player-checkbox-input"
+                        defaultChecked={buff.checked}
+                        onClick={(e) => editBuffs(player, buff, e)}
+                      />
+                      <span className="styled-player-checkmark"></span>
+
+                      <img
+                        src={buff.image}
+                        alt="buff"
+                        className="player-checkbox-image"
+                      />
+                    </label>
+                  </div>
+                )
+            )}
+          </div>
+        </StyledPlayerCheckboxes>
+      )}
+      {["Protection Paladin", "Retribution Paladin", "Holy Paladin"].includes(
+        player.text
+      ) && (
+        <StyledPlayerCheckboxes>
+          <h2 className="player-options-subheader">
+            <BuffUpIcon />
+            Aura Select
+          </h2>
+          <div className="option-container">
+            {player.buffs.map(
+              (buff) =>
+                Auras.includes(buff.name) && (
                   <div
                     key={`${buff.name}-${player.id}-checkbox`}
                     className="player-checkbox-container"

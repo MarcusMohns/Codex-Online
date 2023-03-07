@@ -948,6 +948,7 @@ const SpecArray = [
         image: "images/Devotion_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48942/devotion-aura",
         spellId: "48942",
+        checked: true,
       },
       {
         category: "Attack Power",
@@ -993,6 +994,7 @@ const SpecArray = [
         image: "images/Fire_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48947/fire-resistance-aura",
         spellId: "48947",
+        checked: true,
       },
       {
         category: "Frost Resistance",
@@ -1000,6 +1002,7 @@ const SpecArray = [
         image: "images/Frost_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48945/frost-resistance-aura",
         spellId: "48945",
+        checked: true,
       },
       {
         category: "Shadow Resistance",
@@ -1007,6 +1010,7 @@ const SpecArray = [
         image: "images/Shadow_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48943/shadow-resistance-aura",
         spellId: "48943",
+        checked: true,
       },
     ],
     utility: [
@@ -1101,6 +1105,7 @@ const SpecArray = [
         image: "images/Devotion_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48942/devotion-aura",
         spellId: "48942",
+        checked: true,
       },
       {
         category: "Attack Power",
@@ -1168,6 +1173,7 @@ const SpecArray = [
         image: "images/Fire_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48947/fire-resistance-aura",
         spellId: "48947",
+        checked: true,
       },
       {
         category: "Frost Resistance",
@@ -1175,6 +1181,7 @@ const SpecArray = [
         image: "images/Frost_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48945/frost-resistance-aura",
         spellId: "48945",
+        checked: true,
       },
       {
         category: "Shadow Resistance",
@@ -1182,6 +1189,7 @@ const SpecArray = [
         image: "images/Shadow_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48943/shadow-resistance-aura",
         spellId: "48943",
+        checked: true,
       },
     ],
     utility: [
@@ -1276,6 +1284,7 @@ const SpecArray = [
         image: "images/Devotion_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48942/devotion-aura",
         spellId: "48942",
+        checked: true,
       },
       {
         category: "Attack Power",
@@ -1349,6 +1358,7 @@ const SpecArray = [
         image: "images/Fire_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48947/fire-resistance-aura",
         spellId: "48947",
+        checked: true,
       },
       {
         category: "Frost Resistance",
@@ -1356,6 +1366,7 @@ const SpecArray = [
         image: "images/Frost_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48945/frost-resistance-aura",
         spellId: "48945",
+        checked: true,
       },
       {
         category: "Shadow Resistance",
@@ -1363,6 +1374,7 @@ const SpecArray = [
         image: "images/Shadow_Resistance_Aura.png",
         link: "https://www.wowhead.com/wotlk/spell=48943/shadow-resistance-aura",
         spellId: "48943",
+        checked: true,
       },
     ],
     utility: [

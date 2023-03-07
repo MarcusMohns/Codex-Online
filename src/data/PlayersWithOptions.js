@@ -77,3 +77,10 @@ export const DraeneiClasses = [
   "Arms Warrior",
   "Protection Warrior",
 ];
+
+export const Auras = [
+  "Devotion Aura",
+  "Fire Resistance Aura",
+  "Frost Resistance Aura",
+  "Shadow Resistance Aura",
+];
