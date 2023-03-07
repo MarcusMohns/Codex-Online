@@ -1982,6 +1982,7 @@ const SpecArray = [
         image: "images/Stoneskin_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58753/stoneskin-totem",
         spellId: "58753",
+        checked: true,
       },
       {
         category: "Agility and Strength",
@@ -1989,6 +1990,7 @@ const SpecArray = [
         image: "images/Strength_Of_Earth_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58643/strength-of-earth-totem",
         spellId: "58643",
+        checked: true,
       },
       {
         category: "Bloodlust/Heroism",
@@ -2003,7 +2005,6 @@ const SpecArray = [
         image: "images/Mana_Spring_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58774/mana-spring-totem",
         spellId: "58774",
-        type: "Water",
         checked: true,
       },
       {
@@ -2019,7 +2020,6 @@ const SpecArray = [
         image: "images/Wrath_Of_Air_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
         spellId: "3738",
-        type: "Air",
         checked: true,
       },
       {
@@ -2028,6 +2028,7 @@ const SpecArray = [
         image: "images/Totem_Of_Wrath.png",
         link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
         spellId: "3738",
+        checked: true,
       },
       {
         category: "Crit Strike %",
@@ -2035,6 +2036,7 @@ const SpecArray = [
         image: "images/Totem_Of_Wrath.png",
         link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
         spellId: "3738",
+        checked: true,
       },
       {
         category: "Melee Haste",
@@ -2042,13 +2044,13 @@ const SpecArray = [
         image: "images/Windfury.png",
         link: "https://www.wowhead.com/wotlk/spell=65990/windfury-totem",
         spellId: "65990",
+        checked: true,
       },
       {
         category: "Fire Resistance",
         name: "Fire Resistance Totem",
         image: "images/Fire_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58739/fire-resistance-totem",
-        type: "Water",
         spellId: "58739",
         checked: true,
       },
@@ -2058,6 +2060,7 @@ const SpecArray = [
         image: "images/Frost_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58745/frost-resistance-totem",
         spellId: "58745",
+        checked: true,
       },
       {
         category: "Nature Resistance",
@@ -2065,7 +2068,6 @@ const SpecArray = [
         image: "images/Nature_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58749/nature-resistance-totem",
         spellId: "58749",
-        type: "Air",
         checked: true,
       },
     ],
@@ -2155,6 +2157,7 @@ const SpecArray = [
         image: "images/Stoneskin_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58753/stoneskin-totem",
         spellId: "58753",
+        checked: true,
       },
       {
         category: "Agility and Strength",
@@ -2162,6 +2165,7 @@ const SpecArray = [
         image: "images/Strength_Of_Earth_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58643/strength-of-earth-totem",
         spellId: "58643",
+        checked: true,
       },
       {
         category: "Bloodlust/Heroism",
@@ -2176,7 +2180,6 @@ const SpecArray = [
         image: "images/Mana_Spring_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58774/mana-spring-totem",
         spellId: "58774",
-        type: "Water",
         checked: true,
       },
       {
@@ -2192,7 +2195,6 @@ const SpecArray = [
         image: "images/Wrath_Of_Air_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
         spellId: "3738",
-        type: "Air",
         checked: true,
       },
       {
@@ -2201,6 +2203,7 @@ const SpecArray = [
         image: "images/Flametongue_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58656/flametongue-totem",
         spellId: "58656",
+        checked: true,
       },
       {
         category: "Melee Haste",
@@ -2208,13 +2211,13 @@ const SpecArray = [
         image: "images/Windfury.png",
         link: "https://www.wowhead.com/wotlk/spell=65990/windfury-totem",
         spellId: "65990",
+        checked: true,
       },
       {
         category: "Fire Resistance",
         name: "Fire Resistance Totem",
         image: "images/Fire_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58739/fire-resistance-totem",
-        type: "Water",
         spellId: "58739",
         checked: true,
       },
@@ -2224,6 +2227,7 @@ const SpecArray = [
         image: "images/Frost_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58745/frost-resistance-totem",
         spellId: "58745",
+        checked: true,
       },
       {
         category: "Nature Resistance",
@@ -2231,7 +2235,6 @@ const SpecArray = [
         image: "images/Nature_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58749/nature-resistance-totem",
         spellId: "58749",
-        type: "Air",
         checked: true,
       },
     ],
@@ -2321,6 +2324,7 @@ const SpecArray = [
         image: "images/Stoneskin_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58753/stoneskin-totem",
         spellId: "58753",
+        checked: true,
       },
       {
         category: "Agility and Strength",
@@ -2328,6 +2332,7 @@ const SpecArray = [
         image: "images/Strength_Of_Earth_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58643/strength-of-earth-totem",
         spellId: "58643",
+        checked: true,
       },
       {
         category: "Bloodlust/Heroism",
@@ -2342,7 +2347,6 @@ const SpecArray = [
         image: "images/Mana_Spring_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58774/mana-spring-totem",
         spellId: "58774",
-        type: "Water",
         checked: true,
       },
       {
@@ -2351,7 +2355,6 @@ const SpecArray = [
         image: "images/Wrath_Of_Air_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
         spellId: "3738",
-        type: "Air",
         checked: true,
       },
       {
@@ -2360,6 +2363,7 @@ const SpecArray = [
         image: "images/Flametongue_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58656/flametongue-totem",
         spellId: "58656",
+        checked: true,
       },
       {
         category: "Reduced Phys Damage Taken",
@@ -2374,13 +2378,13 @@ const SpecArray = [
         image: "images/Windfury.png",
         link: "https://www.wowhead.com/wotlk/spell=65990/windfury-totem",
         spellId: "65990",
+        checked: true,
       },
       {
         category: "Fire Resistance",
         name: "Fire Resistance Totem",
         image: "images/Fire_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58739/fire-resistance-totem",
-        type: "Water",
         spellId: "58739",
         checked: true,
       },
@@ -2390,6 +2394,7 @@ const SpecArray = [
         image: "images/Frost_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58745/frost-resistance-totem",
         spellId: "58745",
+        checked: true,
       },
       {
         category: "Nature Resistance",
@@ -2397,7 +2402,6 @@ const SpecArray = [
         image: "images/Nature_Resistance_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58749/nature-resistance-totem",
         spellId: "58749",
-        type: "Air",
         checked: true,
       },
     ],

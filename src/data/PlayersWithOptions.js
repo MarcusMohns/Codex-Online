@@ -30,9 +30,6 @@ export const OptionalBuffClasses = [
   "Protection Paladin",
   "Retribution Paladin",
   "Holy Paladin",
-  "Elemental Shaman",
-  "Enhancement Shaman",
-  "Restoration Shaman",
   "Survival Hunter",
 ];
 
@@ -44,15 +41,21 @@ export const OptionalBuffs = [
   "Commanding Shout",
   "Battle Shout",
   "Aimed Shot",
-  "Wrath of Air Totem",
-  "Nature Resistance Totem",
-  "Fire Resistance Totem",
-  "Mana Spring Totem",
   "Hunting Party",
 ];
 
 export const SpecsThatCanTankAndps = ["Feral Druid", "Blood Death Knight"];
 
+export const ClassesWithAuras = [
+  "Holy Paladin",
+  "Retribution Paladin",
+  "Protection Paladin",
+];
+export const ClassesWithTotems = [
+  "Restoration Shaman",
+  "Enhancement Shaman",
+  "Elemental Shaman",
+];
 export const DraeneiClasses = [
   "Survival Hunter",
   "Marksman Hunter",
@@ -84,3 +87,10 @@ export const Auras = [
   "Frost Resistance Aura",
   "Shadow Resistance Aura",
 ];
+
+export const Totems = {
+  water: ["Mana Spring Totem", "Fire Resistance Totem"],
+  fire: ["Flametongue Totem", "Frost Resistance Totem", "Totem of Wrath"],
+  air: ["Windfury Totem", "Wrath of Air Totem", "Nature Resistance Totem"],
+  earth: ["Strength of Earth Totem", "Stoneskin Totem"],
+};
