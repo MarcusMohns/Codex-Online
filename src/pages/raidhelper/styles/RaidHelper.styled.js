@@ -516,6 +516,7 @@ export const StyledPlayerCheckboxes = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  box-sizing: border-box;
   padding: 1rem;
   .totem-element-container {
     display: flex;
@@ -1287,6 +1288,7 @@ export const StyledPlayerOptions = styled.div`
   left: 0;
   top: 0%;
   z-index: 3;
+
   .options-menu {
     display: flex;
     flex-direction: column;
@@ -1305,9 +1307,13 @@ export const StyledPlayerOptions = styled.div`
     border-radius: 10px;
     animation-name: revealMenu;
     animation-duration: 0.3s;
+    overflow-y: scroll;
+    max-height: 500px;
 
     @media (min-width: 1300px) {
       width: 600px;
+      max-height: inherit;
+      overflow-y: auto;
     }
     @keyframes revealMenu {
       0% {
@@ -1550,11 +1556,18 @@ export const StyledRaidCooldowns = styled.div`
     box-sizing: border-box;
     animation-name: revealMenu;
     animation-duration: 0.3s;
+
+    overflow-y: scroll;
+    max-height: 500px;
+
     @media (min-width: 800px) {
       width: 500px;
+      max-height: inherit;
+      overflow-y: auto;
     }
   }
   .cooldown-main-content {
+    box-sizing: border-box;
     padding: 1rem;
     width: 100%;
   }
