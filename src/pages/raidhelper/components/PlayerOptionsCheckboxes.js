@@ -107,7 +107,7 @@ const PlayerOptionsCheckboxes = ({
         ];
       } else if (
         Totems.fire.includes(buff.name) &&
-        buff.category !== "Spell Power"
+        buff.category !== "Crit Strike %"
       ) {
         fire.push(
           <PlayerOptionsCheckbox
