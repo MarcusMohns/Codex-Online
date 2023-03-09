@@ -28,6 +28,7 @@ import {
   RaidCooldownIcon,
   ContentTitle,
 } from "./styles/RaidHelper.styled";
+import { BeastMasteryBuffs } from "../../data/PlayersWithOptions";
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -199,7 +200,17 @@ const RaidHelper = () => {
         buffLink: buff.link,
         buffSpellId: buff.spellId,
       };
-      setBuffs({ type: "add", name: id, value: newBuff });
+
+      if (
+        player.text === "Beast Mastery Hunter" &&
+        BeastMasteryBuffs.includes(buff.name)
+      ) {
+        if (buff.checked) {
+          setBuffs({ type: "add", name: id, value: newBuff });
+        }
+      } else {
+        setBuffs({ type: "add", name: id, value: newBuff });
+      }
     }
   };
 

@@ -4,7 +4,9 @@ const OptionsCheckbox = ({ buff, player, editBuffs }) => {
   return (
     <div className="player-checkbox-container">
       <label className="player-checkbox" htmlFor={`${buff.name}-${player.id}`}>
-        <div className="player-checkbox-text">{buff.name}</div>
+        <div className="player-checkbox-text">
+          {buff.name} {buff.type ? `(${buff.type})` : ""}
+        </div>
 
         <input
           type="checkbox"
