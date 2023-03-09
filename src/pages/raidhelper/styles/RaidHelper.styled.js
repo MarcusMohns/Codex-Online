@@ -20,7 +20,6 @@ import { FiShield } from "@react-icons/all-files/fi/FiShield";
 import { TiPlusOutline } from "@react-icons/all-files/ti/TiPlusOutline";
 import { CgCopy } from "@react-icons/all-files/cg/CgCopy";
 import { FiShuffle } from "@react-icons/all-files/fi/FiShuffle";
-import { AiOutlineStock } from "@react-icons/all-files/ai/AiOutlineStock";
 
 import COLORS from "../../../colors";
 
@@ -1858,9 +1857,7 @@ export const CooldownIcon = styled(FaRegClock)`
 export const PowerUpIcon = styled(GiElectric)`
   font-size: 1.1em;
 `;
-export const BuffUpIcon = styled(AiOutlineStock)`
-  font-size: 1.5em;
-`;
+
 export const CombatResIcon = styled(FiActivity)`
   font-size: 1.1em;
   margin-right: 2px;

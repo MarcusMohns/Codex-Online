@@ -1,7 +1,4 @@
-import {
-  StyledPlayerCheckboxes,
-  BuffUpIcon,
-} from "../styles/RaidHelper.styled";
+import { StyledPlayerCheckboxes } from "../styles/RaidHelper.styled";
 
 import PlayerOptionsCheckbox from "../components/PlayerOptionsCheckbox";
 
@@ -190,10 +187,7 @@ const PlayerOptionsCheckboxes = ({
       )}
       {OptionalBuffClasses.includes(player.text) && (
         <StyledPlayerCheckboxes>
-          <h2 className="player-options-subheader">
-            <BuffUpIcon />
-            Buff Select
-          </h2>
+          <h2 className="player-options-subheader">Buff Select</h2>
           <div className="option-container">
             {player.buffs.map(
               (buff) =>
