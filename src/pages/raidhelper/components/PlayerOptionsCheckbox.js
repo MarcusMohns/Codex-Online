@@ -16,7 +16,14 @@ const OptionsCheckbox = ({ buff, player, editBuffs }) => {
           onClick={(e) => editBuffs(player, buff, e)}
         />
         <span className="styled-player-checkmark"></span>
-        <img src={buff.image} alt="buff" className="player-checkbox-image" />
+        <a
+          href={buff.link}
+          data-wowhead={`item-${buff.spellId}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={buff.image} alt="buff" className="player-checkbox-image" />
+        </a>
       </label>
     </div>
   );

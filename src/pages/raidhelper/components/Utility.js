@@ -7,7 +7,7 @@ const Utility = ({ utility }) => {
       href={utility.link}
       data-wowhead={`item-${utility.spellId}`}
       target="_blank"
-      rel="noopener"
+      rel="noreferrer"
     >
       {utility.count}x {utility.name}
       <img src={utility.image} alt="utility spell, e.g misdirection" />

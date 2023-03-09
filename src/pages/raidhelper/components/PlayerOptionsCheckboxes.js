@@ -286,11 +286,18 @@ const PlayerOptionsCheckboxes = ({
                   onChange={(e) => handleDraenei(player, e)}
                 />
                 <span className="styled-player-checkmark"></span>
-                <img
-                  src={player.groupBuffs[0].image}
-                  alt="draenei buff"
-                  className="player-checkbox-image"
-                />
+                <a
+                  href={player.groupBuffs[0].link}
+                  data-wowhead={`item-${player.groupBuffs[0].spellId}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={player.groupBuffs[0].image}
+                    alt="draenei buff"
+                    className="player-checkbox-image"
+                  />
+                </a>
               </label>
             </div>
           </div>
