@@ -14,6 +14,7 @@ import {
   ClassesWithAuras,
   ClassesWithTotems,
   Totems,
+  BeastMasteryBuffs,
 } from "../../../data/PlayersWithOptions";
 
 const tankIcon = (
@@ -199,6 +200,24 @@ const PlayerOptionsCheckboxes = ({
         <StyledPlayerCheckboxes>
           <h2 className="player-options-subheader">Totem Select</h2>
           <div className="option-container">{ourTotems(player, editBuffs)}</div>
+        </StyledPlayerCheckboxes>
+      )}
+      {player.text === "Beast Mastery Hunter" && (
+        <StyledPlayerCheckboxes>
+          <h2 className="player-options-subheader">Pet Select</h2>
+          <div className="option-container">
+            {player.buffs.map(
+              (buff) =>
+                BeastMasteryBuffs.includes(buff.name) && (
+                  <PlayerOptionsCheckbox
+                    buff={buff}
+                    player={player}
+                    editBuffs={editBuffs}
+                    key={`${buff.name}-${player.id}-${buff.category}-checkbox`}
+                  />
+                )
+            )}
+          </div>
         </StyledPlayerCheckboxes>
       )}
       {DraeneiClasses.includes(player.text) && (

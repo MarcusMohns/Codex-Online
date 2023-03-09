@@ -44,6 +44,8 @@ export const OptionalBuffs = [
   "Hunting Party",
 ];
 
+export const BeastMasteryBuffs = ["Sting", "Stampede", "Acid Spit"];
+
 export const SpecsThatCanTankAndps = ["Feral Druid", "Blood Death Knight"];
 
 export const ClassesWithAuras = [
