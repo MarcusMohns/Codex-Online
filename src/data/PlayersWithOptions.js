@@ -21,6 +21,9 @@ export const PlayersWithOptions = [
   "Holy Priest",
   "Discipline Priest",
   "Shadow Priest",
+  "Demonology Warlock",
+  "Affliction Warlock",
+  "Destruction Warlock",
 ];
 
 export const OptionalBuffClasses = [
@@ -44,6 +47,13 @@ export const OptionalBuffs = [
   "Hunting Party",
 ];
 
+export const Warlocks = [
+  "Demonology Warlock",
+  "Affliction Warlock",
+  "Destruction Warlock",
+];
+
+export const WarlockBuffs = ["Fel Intelligence", "Blood Pact"];
 export const BeastMasteryBuffs = ["Sting", "Stampede", "Acid Spit"];
 
 export const SpecsThatCanTankAndps = ["Feral Druid", "Blood Death Knight"];

@@ -15,6 +15,8 @@ import {
   ClassesWithTotems,
   Totems,
   BeastMasteryBuffs,
+  WarlockBuffs,
+  Warlocks,
 } from "../../../data/PlayersWithOptions";
 
 const tankIcon = (
@@ -49,10 +51,36 @@ const PlayerOptionsCheckboxes = ({
         spellId: "3738",
         checked: true,
       };
-      for (let i = 0; i < 2; i++) {
-        await editBuffs(player, spBuff, e);
-        await editBuffs(player, critBuff, e);
-      }
+      await editBuffs(player, spBuff, e);
+      await editBuffs(player, critBuff, e);
+    } else {
+      editBuffs(player, buff, e);
+    }
+  };
+
+  const editWarlockBuffs = async (player, buff, e) => {
+    if (buff.name === "Fel Intelligence") {
+      let intBuff = {
+        category: "Intellect",
+        name: "Fel Intelligence",
+        image: "images/Fel_Intelligence.png",
+        link: "https://www.wowhead.com/wotlk/spell=57567/fel-intelligence",
+        spellId: "57567",
+        checked: player.text === "Affliction Warlock" ? true : false,
+        type: "Fel Hunter",
+      };
+
+      let spiritBuff = {
+        category: "Spirit",
+        name: "Fel Intelligence",
+        image: "images/Fel_Intelligence.png",
+        link: "https://www.wowhead.com/wotlk/spell=57567/fel-intelligence",
+        spellId: "57567",
+        checked: player.text === "Affliction Warlock" ? true : false,
+        type: "Fel Hunter",
+      };
+      await editBuffs(player, intBuff, e);
+      await editBuffs(player, spiritBuff, e);
     } else {
       editBuffs(player, buff, e);
     }
@@ -77,7 +105,10 @@ const PlayerOptionsCheckboxes = ({
             editBuffs={editBuffs}
           />,
         ];
-      } else if (Totems.fire.includes(buff.name)) {
+      } else if (
+        Totems.fire.includes(buff.name) &&
+        buff.category !== "Spell Power"
+      ) {
         fire.push(
           <PlayerOptionsCheckbox
             key={`${buff.name}-${player.id}-${buff.category}-checkbox`}
@@ -213,6 +244,25 @@ const PlayerOptionsCheckboxes = ({
                     buff={buff}
                     player={player}
                     editBuffs={editBuffs}
+                    key={`${buff.name}-${player.id}-${buff.category}-checkbox`}
+                  />
+                )
+            )}
+          </div>
+        </StyledPlayerCheckboxes>
+      )}
+      {Warlocks.includes(player.text) && (
+        <StyledPlayerCheckboxes>
+          <h2 className="player-options-subheader">Pet Select</h2>
+          <div className="option-container">
+            {player.buffs.map(
+              (buff) =>
+                WarlockBuffs.includes(buff.name) &&
+                buff.category !== "Spirit" && (
+                  <PlayerOptionsCheckbox
+                    buff={buff}
+                    player={player}
+                    editBuffs={editWarlockBuffs}
                     key={`${buff.name}-${player.id}-${buff.category}-checkbox`}
                   />
                 )
