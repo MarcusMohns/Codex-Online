@@ -184,6 +184,67 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
     </table>
   );
 
+  const additionalHitTable = (
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <span>Race/Spec</span>
+          </th>
+          <th>
+            <span>Spells</span>
+          </th>
+          <th>
+            <span>Melee</span>
+          </th>
+          <th>
+            <span>Ranged</span>
+          </th>
+          <th>
+            <span>Nature Spells</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Blood Elf</td>
+          <td>
+            <span>2% (53 hit rating)</span>
+          </td>
+          <td>
+            <span>0%</span>
+          </td>
+          <td>
+            <span>0%</span>
+          </td>
+          <td>
+            <span>0%</span>
+          </td>
+        </tr>
+        <tr>
+          <td>Night Elf</td>
+          <td>0%</td>
+          <td>2% (66 hit rating)</td>
+          <td>2% (66 hit rating)</td>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <td>Retribution Paladin</td>
+          <td>4% (105 hit rating)</td>
+          <td>0%</td>
+          <td>4% (132 hit rating)</td>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <td>Sublety Rogue</td>
+          <td>4% (105 hit rating)</td>
+          <td>0%</td>
+          <td>4% (132 hit rating)</td>
+          <td>0%</td>
+        </tr>
+      </tbody>
+    </table>
+  );
   return (
     <MainContentContainer>
       <StyledCapHeader>Result</StyledCapHeader>
@@ -206,6 +267,31 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               </div>
             </div>
           )}
+          {additionalHitTable}
+          <div className="results-text">
+            <p>
+              You need an additional 2% spell hit (53 hit rating) to hit Blood
+              Elves with spells
+            </p>
+            <p>
+              You need an additional 2% melee hit (66 hit rating) to hit Night
+              Elves with Melee and Ranged attacks
+            </p>
+            <p>
+              You need an additional 2% spell hit (53 hit rating) to hit Night
+              Elves with Nature spells
+            </p>
+            <p>
+              You need an additional 4% spell hit (105 hit rating) or 2% melee
+              hit (132 hit rating) to hit Retribution Paladins with Spells and
+              Ranged attacks
+            </p>
+            <p>
+              You need an additional 4% spell hit (105 hit rating) or 2% melee
+              hit (132 hit rating) to hit Sublety Rogues with Spells and Ranged
+              attacks
+            </p>
+          </div>
         </div>
         <img
           src="images/character_sheet.png"
