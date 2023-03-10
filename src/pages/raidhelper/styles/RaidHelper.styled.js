@@ -359,7 +359,7 @@ export const StyledPlayer = styled.div`
   border: 1px solid black;
   cursor: pointer;
   margin: 2px;
-  min-height: 70px;
+  min-height: 69px;
   text-align: center;
   text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px,
     rgb(0, 0, 0) -0.416147px 0.909297px 0px,
@@ -1165,10 +1165,10 @@ export const GroupContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex: 1 0 20%;
+  flex: 1 0 19%;
   min-height: 450px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: transparent;
+  background-color: #222;
+  margin: 2px;
   @media (min-width: 1300px) {
     min-height: 440px;
     padding: 0 1px;
