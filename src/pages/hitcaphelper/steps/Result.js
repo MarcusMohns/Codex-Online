@@ -268,30 +268,6 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
             </div>
           )}
           {additionalHitTable}
-          <div className="results-text">
-            <p>
-              You need an additional 2% spell hit (53 hit rating) to hit Blood
-              Elves with spells
-            </p>
-            <p>
-              You need an additional 2% melee hit (66 hit rating) to hit Night
-              Elves with Melee and Ranged attacks
-            </p>
-            <p>
-              You need an additional 2% spell hit (53 hit rating) to hit Night
-              Elves with Nature spells
-            </p>
-            <p>
-              You need an additional 4% spell hit (105 hit rating) or 2% melee
-              hit (132 hit rating) to hit Retribution Paladins with Spells and
-              Ranged attacks
-            </p>
-            <p>
-              You need an additional 4% spell hit (105 hit rating) or 2% melee
-              hit (132 hit rating) to hit Sublety Rogues with Spells and Ranged
-              attacks
-            </p>
-          </div>
         </div>
         <img
           src="images/character_sheet.png"
