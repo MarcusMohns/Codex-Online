@@ -155,6 +155,22 @@ export const SmallContentContainer = styled.div`
   }
 `;
 
+export const AdditionalHitContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 1rem;
+  color: #bfc0c0;
+
+  h2 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+`;
+
 export const StyledCapHeader = styled.h1`
   display: flex;
   align-items: center;

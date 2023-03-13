@@ -5,6 +5,7 @@ import {
   ResultsContainer,
   StyledCapHeader,
   ButtonContainer,
+  AdditionalHitContainer,
 } from "../components/ContentContainers";
 import {
   CheckCircle,
@@ -185,7 +186,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
   );
 
   const additionalHitTable = (
-    <table>
+    <table className="additional-hit-table">
       <thead>
         <tr>
           <th>
@@ -226,7 +227,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
           <td>0%</td>
           <td>2% (66 hit rating)</td>
           <td>2% (66 hit rating)</td>
-          <td>0%</td>
+          <td>2% (53 hit rating)</td>
         </tr>
         <tr>
           <td>Retribution Paladin</td>
@@ -267,13 +268,18 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               </div>
             </div>
           )}
-          {additionalHitTable}
         </div>
         <img
           src="images/character_sheet.png"
           className="character-sheet-img"
           alt="character sheet"
         />
+        <AdditionalHitContainer>
+          <h2>
+            Amount of additional hit needed vs some classes and specializations
+          </h2>
+          {additionalHitTable}
+        </AdditionalHitContainer>
       </ResultsContainer>
 
       <ButtonContainer>
