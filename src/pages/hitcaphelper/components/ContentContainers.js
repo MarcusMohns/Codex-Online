@@ -205,6 +205,10 @@ export const ResultsContainer = styled.div`
   .results-text {
     padding: 1rem;
     text-align: center;
+
+    div {
+      margin: 5px;
+    }
   }
 
   .character-sheet-img {
