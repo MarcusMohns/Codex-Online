@@ -8,7 +8,7 @@ import {
   OptionalBuffClasses,
   OptionalBuffs,
   DraeneiClasses,
-  ClassesWithAuras,
+  Paladins,
   ClassesWithTotems,
   Totems,
   BeastMasteryBuffs,
@@ -28,6 +28,7 @@ const PlayerOptionsCheckboxes = ({
   editBuffs,
   playerRoleEdit,
   handleDraenei,
+  handleDivineSacrifice,
 }) => {
   const editBuffState = async (player, buff, e) => {
     if (buff.name === "Totem of Wrath") {
@@ -165,7 +166,6 @@ const PlayerOptionsCheckboxes = ({
     ];
     return TotemsAndCategories;
   };
-
   return (
     <>
       {SpecsThatCanTankAndps.includes(player.text) && (
@@ -203,7 +203,7 @@ const PlayerOptionsCheckboxes = ({
           </div>
         </StyledPlayerCheckboxes>
       )}
-      {ClassesWithAuras.includes(player.text) && (
+      {Paladins.includes(player.text) && (
         <StyledPlayerCheckboxes>
           <h2 className="player-options-subheader">Aura Select</h2>
           <div className="option-container">
@@ -216,6 +216,55 @@ const PlayerOptionsCheckboxes = ({
                     editBuffs={editBuffs}
                     key={`${buff.name}-${player.id}-${buff.category}-checkbox`}
                   />
+                )
+            )}
+          </div>
+        </StyledPlayerCheckboxes>
+      )}
+      {Paladins.includes(player.text) && (
+        <StyledPlayerCheckboxes key="whatever?">
+          <h2 className="player-options-subheader">Utility Select</h2>
+          <div className="option-container">
+            {player.utility.map(
+              (utility) =>
+                ["Divine Guardian"].includes(utility.name) && (
+                  <div
+                    className="player-checkbox-container"
+                    key={`${utility.name}-${player.id}-${utility.category}-checkbox`}
+                  >
+                    <label
+                      className="player-checkbox"
+                      htmlFor={`${utility.name}-${player.id}`}
+                    >
+                      <div className="player-checkbox-text">
+                        {utility.name} {utility.type ? `(${utility.type})` : ""}
+                      </div>
+
+                      <input
+                        type="checkbox"
+                        id={`${utility.name}-${player.id}`}
+                        className="player-checkbox-input"
+                        defaultChecked={utility.checked}
+                        onClick={(e) =>
+                          handleDivineSacrifice(player, utility, e)
+                        }
+                        key="whatever?"
+                      />
+                      <span className="styled-player-checkmark"></span>
+                      <a
+                        href={utility.link}
+                        data-wowhead={`item-${utility.spellId}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src={utility.image}
+                          alt="utility"
+                          className="player-checkbox-image"
+                        />
+                      </a>
+                    </label>
+                  </div>
                 )
             )}
           </div>

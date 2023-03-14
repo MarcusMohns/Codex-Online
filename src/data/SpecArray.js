@@ -1043,6 +1043,13 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Divine Guardian",
+        image: "images/Divine_Sacrifice.png",
+        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
+        spellId: "53530",
+        checked: true,
+      },
+      {
         name: "Dispel Disease",
         image: "images/Dispel_Disease.png",
         link: "https://www.wowhead.com/wotlk/spell=66116/cleanse",
@@ -1060,12 +1067,7 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=66116/cleanse",
         spellId: "66116",
       },
-      {
-        name: "Divine Guardian",
-        image: "images/Divine_Sacrifice.png",
-        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
-        spellId: "53530",
-      },
+
       {
         name: "Hand of Sacrifice",
         image: "images/Hand_Of_Sacrifice.png",
@@ -1116,6 +1118,7 @@ const SpecArray = [
         image: "images/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
+        checked: true,
       },
     ],
   },
@@ -1222,6 +1225,13 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Divine Guardian",
+        image: "images/Divine_Sacrifice.png",
+        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
+        spellId: "53530",
+        checked: true,
+      },
+      {
         name: "Dispel Disease",
         image: "images/Dispel_Disease.png",
         link: "https://www.wowhead.com/wotlk/spell=66116/cleanse",
@@ -1239,12 +1249,7 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=66116/cleanse",
         spellId: "66116",
       },
-      {
-        name: "Divine Guardian",
-        image: "images/Divine_Sacrifice.png",
-        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
-        spellId: "53530",
-      },
+
       {
         name: "Hand of Sacrifice",
         image: "images/Hand_Of_Sacrifice.png",
@@ -1295,6 +1300,7 @@ const SpecArray = [
         image: "images/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
+        checked: true,
       },
     ],
   },
@@ -1407,6 +1413,13 @@ const SpecArray = [
     ],
     utility: [
       {
+        name: "Divine Guardian",
+        image: "images/Divine_Sacrifice.png",
+        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
+        spellId: "53530",
+        checked: false,
+      },
+      {
         name: "Dispel Disease",
         image: "images/Dispel_Disease.png",
         link: "https://www.wowhead.com/wotlk/spell=66116/cleanse",
@@ -1430,12 +1443,7 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=6940/hand-of-sacrifice",
         spellId: "6940",
       },
-      {
-        name: "Divine Guardian",
-        image: "images/Divine_Sacrifice.png",
-        link: "https://www.wowhead.com/wotlk/spell=53530/divine-guardian",
-        spellId: "53530",
-      },
+
       {
         name: "Hand of Protection",
         image: "images/Hand_Of_Protection.png",
@@ -1480,6 +1488,7 @@ const SpecArray = [
         image: "images/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
+        checked: false,
       },
     ],
   },

@@ -44,6 +44,22 @@ const GroupBuff = ({ group }) => {
             );
           }
         } else if (
+          groupBuff.name === "Divine Sacrifice" &&
+          !currentBuffs.includes(groupBuff.name)
+        ) {
+          if (groupBuff.checked) {
+            currentBuffs.push(groupBuff.name);
+            groupBuffs.push(
+              <a
+                href={groupBuff.link}
+                key={`group-buff-${playerInGroup.id}-${groupBuff.name}`}
+                data-wowhead={`item=${groupBuff.spellId}`}
+              >
+                <img src={groupBuff.image} alt="group buff" />
+              </a>
+            );
+          }
+        } else if (
           !currentBuffs.includes(groupBuff.name) ||
           ["Mana Tide Totem", "Tranquility"].includes(groupBuff.name)
         ) {

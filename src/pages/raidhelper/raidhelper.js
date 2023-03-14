@@ -30,6 +30,7 @@ import {
 } from "./styles/RaidHelper.styled";
 import {
   BeastMasteryBuffs,
+  Paladins,
   WarlockBuffs,
   Warlocks,
 } from "../../data/PlayersWithOptions";
@@ -53,6 +54,7 @@ const formReducer = (state, action) => {
           [action.name]: [action.value],
         };
       }
+
     case "delete":
       const newState = Object.entries(state).filter(
         (item) => item[0] !== action.id
@@ -66,7 +68,20 @@ const formReducer = (state, action) => {
       const editedState = state[action.id].filter(
         (item) => item.buffName !== action.value.buffName
       );
+
       return { ...state, [action.id]: editedState };
+
+    case "addEntry":
+      const addEntryState = JSON.parse(JSON.stringify(state[action.id]));
+      addEntryState.push(action.value);
+
+      return { ...state, [action.id]: addEntryState };
+
+    case "removeEntry":
+      const removeEntryState = state[action.id].filter(
+        (utility) => utility.name !== action.value.name
+      );
+      return { ...state, [action.id]: removeEntryState };
 
     case "reset":
       return {};
@@ -232,7 +247,7 @@ const RaidHelper = () => {
     } else if (!e.target.checked) {
       newBuffs[0].draenei = false;
     }
-    const newPlayer = { ...player, newBuffs };
+    const newPlayer = { ...player, groupBuffs: newBuffs };
 
     const newRaid = { ...raid };
     const newPlayers = newRaid.players.map((gamer) => {
@@ -245,7 +260,43 @@ const RaidHelper = () => {
         player.id === gamer.id && (gamer.groupBuffs = newBuffs);
       }
     }
+    setRaid({ ...raid, players: newPlayers, groups: newGroups });
+  };
 
+  const handleDivineSacrifice = (player, utility, e) => {
+    const newUtility = JSON.parse(JSON.stringify(utility));
+    const newPlayerUtility = JSON.parse(JSON.stringify(player.utility));
+    const newBuffs = JSON.parse(JSON.stringify(player.groupBuffs));
+    if (e.target.checked) {
+      newBuffs[1].checked = true;
+      newPlayerUtility[0].checked = true;
+      setUtilities({ type: "addEntry", id: player.id, value: newUtility });
+    } else if (!e.target.checked) {
+      newBuffs[1].checked = false;
+      newPlayerUtility[0].checked = false;
+      setUtilities({ type: "removeEntry", id: player.id, value: newUtility });
+    }
+
+    const newPlayer = {
+      ...player,
+      groupBuffs: newBuffs,
+      utility: newPlayerUtility,
+    };
+
+    const newRaid = { ...raid };
+    const newPlayers = newRaid.players.map((gamer) => {
+      return player.id === gamer.id ? newPlayer : gamer;
+    });
+
+    const newGroups = JSON.parse(JSON.stringify(raid.groups));
+    for (let group in newGroups) {
+      for (let gamer of newGroups[group].playerIds) {
+        if (player.id === gamer.id) {
+          gamer.groupBuffs = newBuffs;
+          gamer.utility = newPlayerUtility;
+        }
+      }
+    }
     setRaid({ ...raid, players: newPlayers, groups: newGroups });
   };
 
@@ -351,13 +402,17 @@ const RaidHelper = () => {
 
   const addUtility = (id, player) => {
     for (let utility of player.utility) {
-      let newUtility = {
-        name: utility.name,
-        image: utility.image,
-        link: utility.link,
-        spellId: utility.spellId,
-      };
-      setUtilities({ type: "add", name: id, value: newUtility });
+      if (Paladins.includes(player.text)) {
+        if (utility.name === "Divine Guardian") {
+          if (utility.checked) {
+            setUtilities({ type: "add", name: id, value: utility });
+          }
+        } else {
+          setUtilities({ type: "add", name: id, value: utility });
+        }
+      } else {
+        setUtilities({ type: "add", name: id, value: utility });
+      }
     }
   };
   const deleteSaveOnClick = (saveName) => {
@@ -605,6 +660,7 @@ const RaidHelper = () => {
             editBuffs={playerBuffsEdit}
             playerRoleEdit={playerRoleEdit}
             handleDraenei={handleDraenei}
+            handleDivineSacrifice={handleDivineSacrifice}
           />
         )}
         {raidCooldownsOpen && (

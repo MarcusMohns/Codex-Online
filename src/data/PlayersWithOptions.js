@@ -58,7 +58,7 @@ export const BeastMasteryBuffs = ["Sting", "Stampede", "Acid Spit"];
 
 export const SpecsThatCanTankAndps = ["Feral Druid", "Blood Death Knight"];
 
-export const ClassesWithAuras = [
+export const Paladins = [
   "Holy Paladin",
   "Retribution Paladin",
   "Protection Paladin",
