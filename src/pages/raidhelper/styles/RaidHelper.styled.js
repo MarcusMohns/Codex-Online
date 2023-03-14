@@ -1311,7 +1311,7 @@ export const StyledPlayerOptions = styled.div`
 
     @media (min-width: 1300px) {
       width: 600px;
-      max-height: inherit;
+      max-height: 650px;
       overflow-y: auto;
     }
     @keyframes revealMenu {
