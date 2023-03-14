@@ -43,10 +43,7 @@ const GroupBuff = ({ group }) => {
               </a>
             );
           }
-        } else if (
-          groupBuff.name === "Divine Sacrifice" &&
-          !currentBuffs.includes(groupBuff.name)
-        ) {
+        } else if (groupBuff.name === "Divine Sacrifice") {
           if (groupBuff.checked) {
             currentBuffs.push(groupBuff.name);
             groupBuffs.push(

@@ -222,7 +222,7 @@ const PlayerOptionsCheckboxes = ({
         </StyledPlayerCheckboxes>
       )}
       {Paladins.includes(player.text) && (
-        <StyledPlayerCheckboxes key="whatever?">
+        <StyledPlayerCheckboxes>
           <h2 className="player-options-subheader">Utility Select</h2>
           <div className="option-container">
             {player.utility.map(
@@ -237,7 +237,8 @@ const PlayerOptionsCheckboxes = ({
                       htmlFor={`${utility.name}-${player.id}`}
                     >
                       <div className="player-checkbox-text">
-                        {utility.name} {utility.type ? `(${utility.type})` : ""}
+                        {utility.name}/Sacrifice{" "}
+                        {utility.type ? `(${utility.type})` : ""}
                       </div>
 
                       <input
@@ -248,7 +249,6 @@ const PlayerOptionsCheckboxes = ({
                         onClick={(e) =>
                           handleDivineSacrifice(player, utility, e)
                         }
-                        key="whatever?"
                       />
                       <span className="styled-player-checkmark"></span>
                       <a
