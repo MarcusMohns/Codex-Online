@@ -8,6 +8,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Strength_Of_Earth_Totem.png",
+    icon: "images/spellicons/Strength_Of_Earth_Totem.png",
 
     text: (
       <div>
@@ -38,6 +39,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Greater_Blessing_Of_Kings.png",
+    icon: "images/spellicons/Greater_Blessing_Of_Kings.png",
     text: (
       <div>
         <div className="spell-names">
@@ -65,6 +67,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Sunder_Armor.png",
+    icon: "images/spellicons/Sunder_Armor.png",
     text: (
       <div>
         <div className="spell-names">Sunder Armor, Expose Armor</div>
@@ -87,6 +90,7 @@ const BuffArray = [
     ],
 
     image: "images/Faerie_Fire.png",
+    icon: "images/spellicons/Faerie_Fire.png",
     text: (
       <div>
         <div className="spell-names">Faerie Fire, Curse of Weakness</div>
@@ -110,6 +114,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Trueshot_Aura.png",
+    icon: "images/spellicons/Trueshot_Aura.png",
     text: (
       <div>
         <div className="spell-names">
@@ -130,6 +135,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Battle_Shout.png",
+    icon: "images/spellicons/Battle_Shout.png",
     text: (
       <div>
         <div className="spell-names">Blessing of Might, Battle Shout</div>
@@ -159,6 +165,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Bloodlust.png",
+    icon: "images/spellicons/Bloodlust.png",
     text: (
       <div>
         <div className="spell-names">Bloodlust,Heroism</div>
@@ -177,6 +184,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Trauma.png",
+    icon: "images/spellicons/Trauma.png",
     text: (
       <div>
         <div className="spell-names">Trauma, Mangle</div>
@@ -197,6 +205,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Totem_Of_Wrath.png",
+    icon: "images/spellicons/Totem_Of_Wrath.png",
     text: (
       <div>
         <div className="spell-names">
@@ -218,6 +227,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Sanctified_Retribution.png",
+    icon: "images/spellicons/Sanctified_Retribution.png",
     text: (
       <div>
         <div className="spell-names">
@@ -238,6 +248,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Renewed_Hope.png",
+    icon: "images/spellicons/Renewed_Hope.png",
     text: (
       <div>
         <div className="spell-names">Renewed Hope, Blessing of Sanctuary</div>
@@ -255,6 +266,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Crypt_Fever.png",
+    icon: "images/spellicons/Crypt_Fever.png",
     text: (
       <div>
         <div className="spell-names">Ebon Plaguebringer</div>
@@ -274,6 +286,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Moonkin_Form.png",
+    icon: "images/spellicons/Moonkin_Form.png",
     text: (
       <div>
         <div className="spell-names">
@@ -295,6 +308,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Improved_Tree_Form.png",
+    icon: "images/spellicons/Improved_Tree_Form.png",
     text: (
       <div>
         <div className="spell-names">Tree of Life, Improved Devotion Aura</div>
@@ -313,6 +327,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Commanding_Shout.png",
+    icon: "images/spellicons/Commanding_Shout.png",
     text: (
       <div>
         <div className="spell-names">Commanding Shout, Blood Pact</div>
@@ -343,6 +358,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Arcane_Intellect.png",
+    icon: "images/spellicons/Arcane_Intellect.png",
     text: (
       <div>
         <div className="spell-names">Arcane Intellect, Fel Intelligence</div>
@@ -367,6 +383,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Greater_Blessing_Of_Wisdom.png",
+    icon: "images/spellicons/Greater_Blessing_Of_Wisdom.png",
     text: (
       <div>
         <div className="spell-names">Blessing of Wisdom, Mana Spring Totem</div>
@@ -401,6 +418,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Rampage.png",
+    icon: "images/spellicons/Rampage.png",
     text: (
       <div>
         <div className="spell-names">Rampage, Leader of the Pack</div>
@@ -421,6 +439,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Icy_Talons.png",
+    icon: "images/spellicons/Icy_Talons.png",
     text: (
       <div>
         <div className="spell-names">
@@ -453,6 +472,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Mark_Of_The_Wild.png",
+    icon: "images/spellicons/Mark_Of_The_Wild.png",
     text: (
       <div>
         <div>
@@ -487,6 +507,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Blood_Frenzy.png",
+    icon: "images/spellicons/Blood_Frenzy.png",
     text: (
       <div>
         <div className="spell-names">Savage Combat, Blood Frenzy</div>
@@ -505,6 +526,7 @@ const BuffArray = [
     ],
 
     image: "images/Leader_Of_The_Pack.png",
+    icon: "images/spellicons/Leader_Of_The_Pack.png",
     text: (
       <div>
         <div className="spell-names">Improved Leader of the Pack</div>
@@ -529,6 +551,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Replenishment.png",
+    icon: "images/spellicons/Replenishment.png",
     text: (
       <div>
         <div className="spell-names">
@@ -551,6 +574,7 @@ const BuffArray = [
     ],
 
     image: "images/Elemental_Oath.png",
+    icon: "images/spellicons/Elemental_Oath.png",
     text: (
       <div>
         <div className="spell-names">Moonkin Aura, Elemental Oath</div>
@@ -572,6 +596,7 @@ const BuffArray = [
     ],
 
     image: "images/Improved_Scorch.png",
+    icon: "images/spellicons/Improved_Scorch.png",
     text: (
       <div>
         <div className="spell-names">
@@ -593,6 +618,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Earth_And_Moon.png",
+    icon: "images/spellicons/Earth_And_Moon.png",
     text: (
       <div>
         <div className="spell-names">
@@ -612,6 +638,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Wrath_Of_Air_Totem.png",
+    icon: "images/spellicons/Wrath_Of_Air_Totem.png",
     text: (
       <div>
         <div className="spell-names">Wrath of Air Totem</div>
@@ -631,6 +658,7 @@ const BuffArray = [
     ],
 
     image: "images/Misery.png",
+    icon: "images/spellicons/Misery.png",
     text: (
       <div>
         <div className="spell-names">Improved Faerie Fire, Misery</div>
@@ -651,6 +679,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Demonic_Pact.png",
+    icon: "images/spellicons/Demonic_Pact.png",
     text: (
       <div>
         <div className="spell-names">
@@ -690,6 +719,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Divine_Spirit.png",
+    icon: "images/spellicons/Divine_Spirit.png",
     text: (
       <div>
         <div className="spell-names">Divine Spirit, Fel Intelligence</div>
@@ -716,6 +746,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Power_Word_Fortitude.png",
+    icon: "images/spellicons/Power_Word_Fortitude.png",
     text: (
       <div>
         <div className="spell-names">Power Word: Fortitude</div>
@@ -735,6 +766,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Icy_Touch.png",
+    icon: "images/spellicons/Icy_Touch.png",
     text: (
       <div>
         <div className="spell-names">
@@ -771,6 +803,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Demoralizing_Shout.png",
+    icon: "images/spellicons/Demoralizing_Shout.png",
     text: (
       <div>
         <div className="spell-names">
@@ -812,6 +845,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Mortal_Strike.png",
+    icon: "images/spellicons/Mortal_Strike.png",
     text: (
       <div>
         <div className="spell-names">
@@ -834,6 +868,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Insect_Swarm.png",
+    icon: "images/spellicons/Insect_Swarm.png",
     text: (
       <div>
         <div className="spell-names"> Insect Swarm, Scorpid Sting</div>
@@ -856,6 +891,7 @@ const BuffArray = [
     ],
 
     image: "images/Ancestral_Healing.png",
+    icon: "images/spellicons/Ancestral_Healing.png",
     text: (
       <div>
         <div className="spell-names">Inspiration, Ancestral Healing </div>
@@ -873,6 +909,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Devotion_Aura.png",
+    icon: "images/spellicons/Devotion_Aura.png",
     text: (
       <div>
         <div>
@@ -900,6 +937,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Stoneskin_Totem.png",
+    icon: "images/spellicons/Stoneskin_Totem.png",
     text: (
       <div>
         <div>
@@ -927,6 +965,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Judgement_Of_Wisdom.png",
+    icon: "images/spellicons/Judgement_Of_Wisdom.png",
     text: (
       <div>
         <div className="spell-names">Judgement of Wisdom</div>
@@ -945,6 +984,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Judgement_Of_Light.png",
+    icon: "images/spellicons/Judgement_Of_Light.png",
     text: (
       <div>
         <div className="spell-names">Judgement of Light</div>
@@ -965,6 +1005,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Fire_Resistance_Aura.png",
+    icon: "images/spellicons/Fire_Resistance_Aura.png",
     text: (
       <div>
         <div className="spell-names">
@@ -985,6 +1026,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Frost_Resistance_Aura.png",
+    icon: "images/spellicons/Frost_Resistance_Aura.png",
     text: (
       <div>
         <div className="spell-names">
@@ -1005,6 +1047,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Shadow_Resistance_Aura.png",
+    icon: "images/spellicons/Shadow_Resistance_Aura.png",
     text: (
       <div>
         <div className="spell-names">
@@ -1025,6 +1068,7 @@ const BuffArray = [
       </div>,
     ],
     image: "images/Nature_Resistance_Totem.png",
+    icon: "images/spellicons/Nature_Resistance_Totem.png",
     text: (
       <div>
         <div className="spell-names">

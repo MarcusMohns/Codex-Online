@@ -7,11 +7,11 @@ import {
 
 import Tooltip from "./Tooltip";
 
-const Category = ({ category, categoryColor, name, image }) => {
+const Category = ({ category, categoryColor, name, image, icon }) => {
   return (
     <StyledCategory color={categoryColor}>
       <Tooltip category={category} />
-      <img src={image} className="category-image" alt={`${name}`} />
+      <img src={icon} className="category-image" alt={`${name}`} />
       <p className="category-name-text">{name}</p>
       {categoryColor === "#72e263" ? <CheckCircle /> : <CrossIcon />}
     </StyledCategory>

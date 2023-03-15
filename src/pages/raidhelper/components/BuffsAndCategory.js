@@ -23,6 +23,7 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
               {
                 name: buff.buffName,
                 image: buff.buffImg,
+                icon: buff.buffIcon,
                 link: buff.buffLink,
                 spellId: buff.buffSpellId,
                 count: 1,
@@ -49,12 +50,14 @@ const BuffsAndCategory = ({ category, currentBuffs }) => {
         categoryColor={categoryColor}
         name={category.name}
         image={category.image}
+        icon={category.icon}
       />
       {newBuffs.map((buff) => (
         <Buff
           count={buff.count}
           name={buff.name}
           image={buff.image}
+          icon={buff.icon}
           link={buff.link}
           spellId={buff.spellId}
           key={(buff.count, buff.name)}

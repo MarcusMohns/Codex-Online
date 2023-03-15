@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { StyledBuff } from "../styles/RaidHelper.styled";
 
-const Buff = ({ count, name, image, link, spellId }) => {
+const Buff = ({ count, name, image, icon, link, spellId }) => {
   return (
     <StyledBuff
       key={name}
@@ -14,7 +14,7 @@ const Buff = ({ count, name, image, link, spellId }) => {
         {" "}
         {count}x {name}
       </p>
-      <img src={image} alt="buff icon" />
+      <img src={icon} alt="buff icon" />
     </StyledBuff>
   );
 };

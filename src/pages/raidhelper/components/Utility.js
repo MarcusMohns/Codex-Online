@@ -10,7 +10,7 @@ const Utility = ({ utility }) => {
       rel="noreferrer"
     >
       {utility.count}x {utility.name}
-      <img src={utility.image} alt="utility spell, e.g misdirection" />
+      <img src={utility.icon} alt="utility spell, e.g misdirection" />
     </StyledUtility>
   );
 };

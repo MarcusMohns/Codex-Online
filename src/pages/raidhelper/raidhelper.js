@@ -216,6 +216,7 @@ const RaidHelper = () => {
         buffCategory: buff.category,
         buffName: buff.name,
         buffImg: buff.image,
+        buffIcon: buff.icon,
         buffLink: buff.link,
         buffSpellId: buff.spellId,
       };
@@ -351,6 +352,7 @@ const RaidHelper = () => {
       buffCategory: buff.category,
       buffName: buff.name,
       buffImg: buff.image,
+      buffIcon: buff.icon,
       buffLink: buff.link,
       buffSpellId: buff.spellId,
     };

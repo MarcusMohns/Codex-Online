@@ -1032,8 +1032,8 @@ export const StyledUtility = styled.a`
   min-height: 100%;
   text-decoration: none;
   img {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
     border-radius: 20%;
     margin-left: 0.5rem;
   }

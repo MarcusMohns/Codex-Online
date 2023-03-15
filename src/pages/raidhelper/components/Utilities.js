@@ -16,6 +16,7 @@ const Utilities = ({ utilities }) => {
           {
             name: aUtility.name,
             image: aUtility.image,
+            icon: aUtility.icon,
             link: aUtility.link,
             spellId: aUtility.spellId,
             count: 1,
