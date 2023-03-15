@@ -378,6 +378,7 @@ export const StyledPlayer = styled.div`
   #player-info-icon {
     position: absolute;
     left: 2px;
+    bottom: 1px;
     visibility: hidden;
     cursor: pointer;
     &:hover {
@@ -497,9 +498,6 @@ export const StyledPlayer = styled.div`
       height: 22px;
       border-radius: 35%;
       margin-bottom: 2px;
-    }
-    #player-info-icon {
-      bottom: 1px;
     }
   }
   @media (min-width: 1300px) {
