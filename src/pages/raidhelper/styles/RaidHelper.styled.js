@@ -1170,7 +1170,7 @@ export const GroupContainer = styled.div`
   background-color: #222;
   margin: 2px;
   @media (min-width: 1300px) {
-    min-height: 440px;
+    min-height: 470px;
     padding: 0 1px;
   }
 `;
