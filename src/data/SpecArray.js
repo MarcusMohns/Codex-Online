@@ -2428,6 +2428,13 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=8012/purge",
         spellId: "8012",
       },
+      {
+        name: "Tremor Totem",
+        image: "images/groupbuffs/Tremor_Totem.png",
+        icon: "images/spellicons/Tremor_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
+        spellId: "8143",
+      },
     ],
     groupBuffs: [
       {
@@ -2616,6 +2623,13 @@ const SpecArray = [
         icon: "images/spellicons/Purge.png",
         link: "https://www.wowhead.com/wotlk/spell=8012/purge",
         spellId: "8012",
+      },
+      {
+        name: "Tremor Totem",
+        image: "images/groupbuffs/Tremor_Totem.png",
+        icon: "images/spellicons/Tremor_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
+        spellId: "8143",
       },
     ],
     groupBuffs: [
@@ -2819,6 +2833,13 @@ const SpecArray = [
         icon: "images/spellicons/Purge.png",
         link: "https://www.wowhead.com/wotlk/spell=8012/purge",
         spellId: "8012",
+      },
+      {
+        name: "Tremor Totem",
+        image: "images/groupbuffs/Tremor_Totem.png",
+        icon: "images/spellicons/Tremor_Totem.png",
+        link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
+        spellId: "8143",
       },
     ],
     groupBuffs: [
