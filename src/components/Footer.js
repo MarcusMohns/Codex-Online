@@ -27,6 +27,11 @@ const StyledFooter = styled.footer`
       text-decoration: underline;
     }
   }
+
+  .buy-me-a-coffee-btn {
+    width: 136px;
+    height: 38px;
+  }
 `;
 
 const DiscordIcon = styled(RiDiscordFill)`
@@ -42,7 +47,11 @@ const Footer = () => {
         href="https://www.buymeacoffee.com/Wowcodex"
         className="small-coffee-btn"
       >
-        <img src="images/small-coffee.png" alt="Buy Me A Coffee" />
+        <img
+          src="images/small-coffee.png"
+          alt="Buy Me A Coffee"
+          className="buy-me-a-coffee-btn"
+        />
       </a>
 
       <a href="mailto: warcraftcodex@gmail.com" target="blank">
