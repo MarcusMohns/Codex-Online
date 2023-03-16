@@ -1887,7 +1887,7 @@ const SpecArray = [
       {
         name: "Guardian Spirit",
         image: "images/Holy_Priest.webp",
-        icon: "images/spellicons/Holy_Priest.webp",
+        icon: "images/classicons/Holy_Priest.webp",
         link: "https://www.wowhead.com/wotlk/spell=47788/guardian-spirit",
         spellId: "47788",
       },
