@@ -1107,6 +1107,14 @@ export const RaidContentHeader = styled.div`
     -moz-letter-spacing: 0.0071428571em;
     -ms-letter-spacing: 0.0071428571em;
     letter-spacing: 0.0071428571em;
+
+    p {
+      background-color: ${COLORS.veryFadedBlack};
+      margin: 0px 3px;
+      padding: 4px;
+      border-radius: 2px;
+      font-weight: bold;
+    }
   }
   @media (min-width: 1300px) {
     height: 3rem;
