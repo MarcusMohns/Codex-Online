@@ -701,10 +701,12 @@ const RaidHelper = () => {
               Index
             </UtilityHeaderButton>
 
-            <p className="raid-count">{raidCount[0]} / 25 </p>
-            <p className="role-count">
-              {raidCount[1]} Tanks - {raidCount[2]} Healers - {raidCount[3]} DPS
-            </p>
+            <div className="raid-count">{raidCount[0]} / 25 </div>
+            <div className="role-count">
+              <p> {raidCount[1]} Tanks </p>
+              <p> {raidCount[2]} Healers </p>
+              <p> {raidCount[3]} DPS</p>
+            </div>
             <div className="btn-container">
               <ResetIcon onClick={resetRaid} />
             </div>
