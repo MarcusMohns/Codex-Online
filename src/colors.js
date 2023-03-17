@@ -1,5 +1,6 @@
 const COLORS = {
   fadedBlack: "rgba(0, 0, 0, 0.5)",
+  veryFadedBlack: "rgba(0, 0, 0, 0.4)",
   greyText: "rgba(102, 102, 102, 1)",
   lightText: "#CEDDEC",
   offWhite: "rgba(248, 248, 255, 1)",
