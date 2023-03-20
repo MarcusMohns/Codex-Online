@@ -16,7 +16,7 @@ const RaidCooldowns = ({
 }) => {
   const raidCooldowns = [
     "Tranquility",
-    "Divine Sacrifice",
+    "Divine Guardian",
     "Hand of Sacrifice",
     "Hand of Protection",
     "Aura Mastery",
