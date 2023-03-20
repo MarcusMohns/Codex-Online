@@ -106,3 +106,5 @@ export const Totems = {
   air: ["Windfury Totem", "Wrath of Air Totem", "Nature Resistance Totem"],
   earth: ["Strength of Earth Totem", "Stoneskin Totem"],
 };
+
+export const PaladinUtility = ["Aura Mastery", "Divine Guardian"];

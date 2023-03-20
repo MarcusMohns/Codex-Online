@@ -1180,6 +1180,14 @@ const SpecArray = [
         checked: true,
       },
       {
+        name: "Aura Mastery",
+        image: "images/Aura_Mastery.png",
+        icon: "images/spellicons/Aura_Mastery.png",
+        link: "https://www.wowhead.com/wotlk/spell=31821/aura-mastery",
+        spellId: "31821",
+        checked: true,
+      },
+      {
         name: "Dispel Disease",
         image: "images/Dispel_Disease.png",
         icon: "images/spellicons/Dispel_Disease.png",
@@ -1222,13 +1230,7 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=66115/hand-of-freedom",
         spellId: "66115",
       },
-      {
-        name: "Aura Mastery",
-        image: "images/Aura_Mastery.png",
-        icon: "images/spellicons/Aura_Mastery.png",
-        link: "https://www.wowhead.com/wotlk/spell=31821/aura-mastery",
-        spellId: "31821",
-      },
+
       {
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
@@ -1386,6 +1388,14 @@ const SpecArray = [
         checked: true,
       },
       {
+        name: "Aura Mastery",
+        image: "images/Aura_Mastery.png",
+        icon: "images/spellicons/Aura_Mastery.png",
+        link: "https://www.wowhead.com/wotlk/spell=31821/aura-mastery",
+        spellId: "31821",
+        checked: false,
+      },
+      {
         name: "Dispel Disease",
         image: "images/Dispel_Disease.png",
         icon: "images/spellicons/Dispel_Disease.png",
@@ -1428,13 +1438,7 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=66115/hand-of-freedom",
         spellId: "66115",
       },
-      {
-        name: "Aura Mastery",
-        image: "images/Aura_Mastery.png",
-        icon: "images/spellicons/Aura_Mastery.png",
-        link: "https://www.wowhead.com/wotlk/spell=31821/aura-mastery",
-        spellId: "31821",
-      },
+
       {
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",
@@ -1599,6 +1603,14 @@ const SpecArray = [
         checked: false,
       },
       {
+        name: "Aura Mastery",
+        image: "images/Aura_Mastery.png",
+        icon: "images/spellicons/Aura_Mastery.png",
+        link: "https://www.wowhead.com/wotlk/spell=31821/aura-mastery",
+        spellId: "31821",
+        checked: true,
+      },
+      {
         name: "Dispel Disease",
         image: "images/Dispel_Disease.png",
         icon: "images/spellicons/Dispel_Disease.png",
@@ -1641,13 +1653,7 @@ const SpecArray = [
         link: "https://www.wowhead.com/wotlk/spell=66115/hand-of-freedom",
         spellId: "66115",
       },
-      {
-        name: "Aura Mastery",
-        image: "images/Aura_Mastery.png",
-        icon: "images/spellicons/Aura_Mastery.png",
-        link: "https://www.wowhead.com/wotlk/spell=31821/aura-mastery",
-        spellId: "31821",
-      },
+
       {
         name: "Divine Intervention",
         image: "images/Divine_Intervention.png",

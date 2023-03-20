@@ -9,6 +9,7 @@ const PlayerOptions = ({
   editBuffs,
   playerRoleEdit,
   handleDraenei,
+  handleUtility,
   handleDivineSacrifice,
 }) => {
   return (
@@ -44,6 +45,7 @@ const PlayerOptions = ({
           editBuffs={editBuffs}
           playerRoleEdit={playerRoleEdit}
           handleDraenei={handleDraenei}
+          handleUtility={handleUtility}
           handleDivineSacrifice={handleDivineSacrifice}
         />
       </div>

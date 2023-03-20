@@ -14,6 +14,7 @@ import {
   BeastMasteryBuffs,
   WarlockBuffs,
   Warlocks,
+  PaladinUtility,
 } from "../../../data/PlayersWithOptions";
 
 const tankIcon = (
@@ -29,6 +30,7 @@ const PlayerOptionsCheckboxes = ({
   playerRoleEdit,
   handleDraenei,
   handleDivineSacrifice,
+  handleUtility,
 }) => {
   const editBuffState = async (player, buff, e) => {
     if (buff.name === "Totem of Wrath") {
@@ -227,7 +229,8 @@ const PlayerOptionsCheckboxes = ({
           <div className="option-container">
             {player.utility.map(
               (utility) =>
-                ["Divine Guardian"].includes(utility.name) && (
+                PaladinUtility.includes(utility.name) &&
+                (utility.name === "Divine Guardian" ? (
                   <div
                     className="player-checkbox-container"
                     key={`${utility.name}-${player.id}-${utility.category}-checkbox`}
@@ -237,8 +240,9 @@ const PlayerOptionsCheckboxes = ({
                       htmlFor={`${utility.name}-${player.id}`}
                     >
                       <div className="player-checkbox-text">
-                        {utility.name}/Sacrifice{" "}
-                        {utility.type ? `(${utility.type})` : ""}
+                        {utility.name === "Divine Guardian"
+                          ? `${utility.name}/Sacrifice`
+                          : utility.name}
                       </div>
 
                       <input
@@ -265,7 +269,40 @@ const PlayerOptionsCheckboxes = ({
                       </a>
                     </label>
                   </div>
-                )
+                ) : (
+                  <div
+                    className="player-checkbox-container"
+                    key={`${utility.name}-${player.id}-${utility.category}-checkbox`}
+                  >
+                    <label
+                      className="player-checkbox"
+                      htmlFor={`${utility.name}-${player.id}`}
+                    >
+                      <div className="player-checkbox-text">{utility.name}</div>
+
+                      <input
+                        type="checkbox"
+                        id={`${utility.name}-${player.id}`}
+                        className="player-checkbox-input"
+                        defaultChecked={utility.checked}
+                        onClick={(e) => handleUtility(player, utility, e)}
+                      />
+                      <span className="styled-player-checkmark"></span>
+                      <a
+                        href={utility.link}
+                        data-wowhead={`item-${utility.spellId}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <img
+                          src={utility.image}
+                          alt="utility"
+                          className="player-checkbox-image"
+                        />
+                      </a>
+                    </label>
+                  </div>
+                ))
             )}
           </div>
         </StyledPlayerCheckboxes>
