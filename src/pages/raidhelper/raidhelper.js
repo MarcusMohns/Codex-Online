@@ -243,13 +243,14 @@ const RaidHelper = () => {
   };
 
   const handleDraenei = (player, e) => {
-    const newBuffs = JSON.parse(JSON.stringify(player.groupBuffs));
+    const statePlayer = raid.players.find((gamer) => player.id === gamer.id);
+    const newBuffs = JSON.parse(JSON.stringify(statePlayer.groupBuffs));
     if (e.target.checked) {
       newBuffs[0].draenei = true;
     } else if (!e.target.checked) {
       newBuffs[0].draenei = false;
     }
-    const newPlayer = { ...player, groupBuffs: newBuffs };
+    const newPlayer = { ...statePlayer, groupBuffs: newBuffs };
 
     const newRaid = { ...raid };
     const newPlayers = newRaid.players.map((gamer) => {
