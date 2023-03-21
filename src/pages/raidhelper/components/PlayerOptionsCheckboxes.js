@@ -29,7 +29,6 @@ const PlayerOptionsCheckboxes = ({
   editBuffs,
   playerRoleEdit,
   handleDraenei,
-  handleDivineSacrifice,
   handleUtility,
 }) => {
   const editBuffState = async (player, buff, e) => {
@@ -252,9 +251,7 @@ const PlayerOptionsCheckboxes = ({
                         id={`${utility.name}-${player.id}`}
                         className="player-checkbox-input"
                         defaultChecked={utility.checked}
-                        onClick={(e) =>
-                          handleDivineSacrifice(player, utility, e)
-                        }
+                        onClick={(e) => handleUtility(player, utility, e)}
                       />
                       <span className="styled-player-checkmark"></span>
                       <a

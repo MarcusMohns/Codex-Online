@@ -243,6 +243,8 @@ const RaidHelper = () => {
   };
 
   const handleDraenei = (player, e) => {
+    // CLEANUP IN ISLE THIS AND HANDLE DSAC BCEAUSE IT LOOKS LIKE A DUMPSTERFIRE THANKS =)
+
     const statePlayer = raid.players.find((gamer) => player.id === gamer.id);
     const newBuffs = JSON.parse(JSON.stringify(statePlayer.groupBuffs));
     if (e.target.checked) {
@@ -268,55 +270,30 @@ const RaidHelper = () => {
 
   const handleUtility = (player, utility, e) => {
     const statePlayer = raid.players.find((gamer) => player.id === gamer.id);
-
-    const newUtility = JSON.parse(JSON.stringify(utility));
-    const newPlayerUtility = JSON.parse(JSON.stringify(statePlayer.utility));
-    if (e.target.checked) {
-      newPlayerUtility[1].checked = true;
-      newUtility.checked = true;
-      setUtilities({ type: "addEntry", id: player.id, value: newUtility });
-      setRaid({ raid });
-    } else if (!e.target.checked) {
-      newPlayerUtility[1].checked = false;
-      newUtility.checked = false;
-      setUtilities({ type: "removeEntry", id: player.id, value: newUtility });
-    }
-
-    const newPlayer = {
-      ...statePlayer,
-      utility: newPlayerUtility,
-    };
-
-    const newRaid = { ...raid };
-    const newPlayers = newRaid.players.map((gamer) => {
-      return player.id === gamer.id ? newPlayer : gamer;
-    });
-
-    const newGroups = JSON.parse(JSON.stringify(raid.groups));
-    for (let group in newGroups) {
-      for (let gamer of newGroups[group].playerIds) {
-        if (player.id === gamer.id) {
-          gamer.utility = newPlayerUtility;
-        }
-      }
-    }
-    setRaid({ ...raid, players: newPlayers, groups: newGroups });
-  };
-
-  const handleDivineSacrifice = (player, utility, e) => {
-    const statePlayer = raid.players.find((gamer) => player.id === gamer.id);
-
     const newUtility = JSON.parse(JSON.stringify(utility));
     const newPlayerUtility = JSON.parse(JSON.stringify(statePlayer.utility));
     const newBuffs = JSON.parse(JSON.stringify(statePlayer.groupBuffs));
-    if (e.target.checked) {
-      newBuffs[1].checked = true;
-      newPlayerUtility[0].checked = true;
-      setUtilities({ type: "addEntry", id: player.id, value: newUtility });
-    } else if (!e.target.checked) {
-      newBuffs[1].checked = false;
-      newPlayerUtility[0].checked = false;
-      setUtilities({ type: "removeEntry", id: player.id, value: newUtility });
+
+    if (utility.name === "Divine Guardian") {
+      if (e.target.checked) {
+        newBuffs[1].checked = true;
+        newPlayerUtility[0].checked = true;
+        setUtilities({ type: "addEntry", id: player.id, value: newUtility });
+      } else if (!e.target.checked) {
+        newBuffs[1].checked = false;
+        newPlayerUtility[0].checked = false;
+        setUtilities({ type: "removeEntry", id: player.id, value: newUtility });
+      }
+    } else {
+      if (e.target.checked) {
+        newPlayerUtility[1].checked = true;
+        newUtility.checked = true;
+        setUtilities({ type: "addEntry", id: player.id, value: newUtility });
+      } else if (!e.target.checked) {
+        newPlayerUtility[1].checked = false;
+        newUtility.checked = false;
+        setUtilities({ type: "removeEntry", id: player.id, value: newUtility });
+      }
     }
     const newPlayer = {
       ...statePlayer,
@@ -325,6 +302,7 @@ const RaidHelper = () => {
     };
 
     const newRaid = { ...raid };
+
     const newPlayers = newRaid.players.map((gamer) => {
       return player.id === gamer.id ? newPlayer : gamer;
     });
@@ -703,7 +681,6 @@ const RaidHelper = () => {
             playerRoleEdit={playerRoleEdit}
             handleDraenei={handleDraenei}
             handleUtility={handleUtility}
-            handleDivineSacrifice={handleDivineSacrifice}
           />
         )}
         {raidCooldownsOpen && (
