@@ -243,8 +243,6 @@ const RaidHelper = () => {
   };
 
   const handleDraenei = (player, e) => {
-    // CLEANUP IN ISLE THIS AND HANDLE DSAC BCEAUSE IT LOOKS LIKE A DUMPSTERFIRE THANKS =)
-
     const statePlayer = raid.players.find((gamer) => player.id === gamer.id);
     const newBuffs = JSON.parse(JSON.stringify(statePlayer.groupBuffs));
     if (e.target.checked) {
