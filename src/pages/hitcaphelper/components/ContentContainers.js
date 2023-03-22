@@ -76,6 +76,11 @@ export const MainContentContainer = styled.div`
   align-content: center;
   height: auto;
 
+  .character-sheet-img {
+    width: 419px;
+    height: 552px;
+  }
+
   .radio-input-container {
     margin-top: 2rem;
   }
@@ -127,11 +132,6 @@ export const MainContentContainer = styled.div`
 
   @media screen and (max-width: 992px) {
     padding: 3rem;
-
-    .character-sheet-img {
-      width: 419px;
-      height: 552px;
-    }
   }
 `;
 
@@ -168,6 +168,7 @@ export const AdditionalHitContainer = styled.div`
     padding: 1rem;
     font-size: 1.2rem;
     margin-top: 20px;
+    text-align: center;
   }
 `;
 
@@ -201,6 +202,9 @@ export const ResultsContainer = styled.div`
   padding: 1rem;
   font-family: sans-serif;
   animation: 0.3s linear 0s fade-in;
+  img {
+    border-radius: 5px;
+  }
 
   .results-text {
     padding: 1rem;
@@ -242,6 +246,7 @@ export const ResultsContainer = styled.div`
     }
     .results-pve-icon,
     .results-pvp-icon {
+      margin-left: 5px;
       width: 24px;
       height: 24px;
     }

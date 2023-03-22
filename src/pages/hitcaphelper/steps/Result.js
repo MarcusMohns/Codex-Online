@@ -140,7 +140,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
           <td>
             {pveOrPvp === "pve" ? (
               <span>
-                PvE{" "}
+                PvE
                 <img
                   src="images/pve.webp"
                   className="results-pve-icon"
@@ -149,7 +149,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               </span>
             ) : (
               <span>
-                PvP{" "}
+                PvP
                 <img
                   src="images/pvp.webp"
                   className="results-pvp-icon"
