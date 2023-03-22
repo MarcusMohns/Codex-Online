@@ -1149,7 +1149,7 @@ export const NoPlayersText = styled.p`
   justify-content: center;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
-  min-height: 442px;
+  min-height: 474px;
 `;
 
 export const PlayersContainer = styled.div`
