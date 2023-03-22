@@ -218,6 +218,21 @@ export const ResultsContainer = styled.div`
   .character-sheet-img {
     margin-top: 1rem;
   }
+  .additional-hit-blood-elf {
+    color: pink;
+  }
+  .additional-hit-night-elf {
+    color: green;
+  }
+  .additional-hit-retribution-paladin {
+    color: ${COLORS.paladin};
+  }
+  .additional-hit-subtlety-rogue {
+    color: ${COLORS.rogue};
+  }
+  .additional-hit-undead {
+    color: red;
+  }
 
   @keyframes fade-in {
     0% {
@@ -298,6 +313,9 @@ export const ResultsContainer = styled.div`
   }
 
   @media screen and (max-width: 992px) {
+    .specific-hit-rating {
+      display: none;
+    }
     img {
       display: none;
     }
