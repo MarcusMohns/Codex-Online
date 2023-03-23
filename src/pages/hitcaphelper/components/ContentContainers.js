@@ -215,6 +215,11 @@ export const ResultsContainer = styled.div`
     }
   }
 
+  .specific-hit-rating,
+  .amount-of-hit {
+    font-weight: 700;
+  }
+
   .character-sheet-img {
     margin-top: 1rem;
   }

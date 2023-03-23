@@ -246,25 +246,30 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
         <tr>
           <td className="additional-hit-blood-elf">Blood Elf</td>
           <td>
-            2% <span className="specific-hit-rating">(53 hit rating)</span>
+            <span className="amount-of-hit">2%</span>{" "}
+            <span className="specific-hit-rating">(53 hit rating)</span>
           </td>
           <td>0%</td>
           <td>0%</td>
           <td>
-            2% <span className="specific-hit-rating">(53 hit rating)</span>
+            <span className="amount-of-hit">2%</span>{" "}
+            <span className="specific-hit-rating">(53 hit rating)</span>
           </td>
           <td>
-            2%<span className="specific-hit-rating">(53 hit rating)</span>
+            <span className="amount-of-hit">2%</span>
+            <span className="specific-hit-rating">(53 hit rating)</span>
           </td>
         </tr>
         <tr>
           <td className="additional-hit-night-elf">Night Elf</td>
           <td>0%</td>
           <td>
-            2% <span className="specific-hit-rating">(66 hit rating)</span>
+            <span className="amount-of-hit">2%</span>{" "}
+            <span className="specific-hit-rating">(66 hit rating)</span>
           </td>
           <td>
-            2% <span className="specific-hit-rating">(66 hit rating)</span>
+            <span className="amount-of-hit">2%</span>{" "}
+            <span className="specific-hit-rating">(66 hit rating)</span>
           </td>
           <td>0%</td>
           <td>0%</td>
@@ -274,33 +279,41 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
             Retribution Paladin
           </td>
           <td>
-            4% <span className="specific-hit-rating">(105 hit rating)</span>
+            <span className="amount-of-hit">4%</span>{" "}
+            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
           <td>0%</td>
           <td>
-            4% <span className="specific-hit-rating">(132 hit rating)</span>
+            <span className="amount-of-hit">4%</span>{" "}
+            <span className="specific-hit-rating">(132 hit rating)</span>
           </td>
           <td>
-            4% <span className="specific-hit-rating">(105 hit rating)</span>
+            <span className="amount-of-hit">4%</span>
+            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
           <td>
-            4% <span className="specific-hit-rating">(105 hit rating)</span>
+            <span className="amount-of-hit">4%</span>{" "}
+            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
         </tr>
         <tr>
           <td className="additional-hit-subtlety-rogue">Sublety Rogue</td>
           <td>
-            4% <span className="specific-hit-rating">(105 hit rating)</span>
+            <span className="amount-of-hit">4%</span>{" "}
+            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
           <td>0%</td>
           <td>
-            4% <span className="specific-hit-rating">(132 hit rating)</span>
+            <span className="amount-of-hit">4%</span>{" "}
+            <span className="specific-hit-rating">(132 hit rating)</span>
           </td>
           <td>
-            4% <span className="specific-hit-rating">(105 hit rating)</span>
+            <span className="amount-of-hit">4%</span>{" "}
+            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
           <td>
-            4% <span className="specific-hit-rating">(105 hit rating)</span>
+            <span className="amount-of-hit">4%</span>{" "}
+            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
         </tr>
         <tr>
@@ -310,7 +323,8 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
           <td>0%</td>
           <td>0%</td>
           <td>
-            2% <span className="specific-hit-rating">(53 hit rating)</span>
+            <span className="amount-of-hit">2%</span>{" "}
+            <span className="specific-hit-rating">(53 hit rating)</span>
           </td>
         </tr>
       </tbody>
@@ -325,8 +339,11 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
         <div>
           {hit > 0 ? (
             <div className="results-text">
-              You need <span className="bold-result">{hit}% hit</span> (
-              <span className="bold-result">{hitInInt(hit)} hit rating</span>)
+              You need <span className="bold-result">{hit}% hit</span>
+              <span className="bold-result">
+                {" "}
+                ({hitInInt(hit)} hit rating)
+              </span>{" "}
               on your character sheet
             </div>
           ) : (
