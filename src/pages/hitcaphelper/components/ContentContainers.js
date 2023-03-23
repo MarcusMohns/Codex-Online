@@ -207,8 +207,13 @@ export const ResultsContainer = styled.div`
   }
 
   .results-text {
+    font-size: 1.1rem;
     padding: 1rem;
     text-align: center;
+
+    .sub-text {
+      font-size: 1rem;
+    }
 
     div {
       margin: 5px;
@@ -305,7 +310,7 @@ export const ResultsContainer = styled.div`
   }
 
   .bold-result {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: ${COLORS.goldHighlight};
   }
 

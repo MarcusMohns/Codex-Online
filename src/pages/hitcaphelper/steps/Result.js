@@ -3,7 +3,6 @@ import StyledNextPrevButton from "../components/StyledNextPrevButton";
 import {
   MainContentContainer,
   ResultsContainer,
-  StyledCapHeader,
   ButtonContainer,
   AdditionalHitContainer,
 } from "../components/ContentContainers";
@@ -74,7 +73,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
   };
   const hit = result();
 
-  const hitInInt = (hitInput) => {
+  const hitInInt = () => {
     return casters.includes(classAndSpec)
       ? Math.ceil(hit * 26.23)
       : Math.ceil(hit * 32.79);
@@ -333,16 +332,14 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
 
   return (
     <MainContentContainer>
-      <StyledCapHeader>Result</StyledCapHeader>
       <ResultsContainer>
         {resultTable}
         <div>
           {hit > 0 ? (
             <div className="results-text">
-              You need <span className="bold-result">{hit}% hit</span>
+              You need{" "}
               <span className="bold-result">
-                {" "}
-                ({hitInInt(hit)} hit rating)
+                {hit}% hit ({hitInInt(hit)} hit rating)
               </span>{" "}
               on your character sheet
             </div>
@@ -350,9 +347,9 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
             <div className="results-text">
               You are <span className="bold-result">hit capped</span> at{" "}
               {cap() + Math.abs(hit)}%
-              <div>
-                Your cap is {cap()}% hit - You are {Math.abs(hit)}% (
-                {Math.abs(hitInInt(hit))} rating) over hit cap
+              <div className="sub-text">
+                The cap is {cap()}% hit. You are {Math.abs(hit)}% (
+                {Math.abs(hitInInt(hit))} hit rating) over hit cap
               </div>
             </div>
           )}
