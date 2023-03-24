@@ -725,7 +725,7 @@ export const CategoryContainer = styled.div`
   text-align: center;
   height: 100%;
   width: 100%;
-  border: 2px inset black;
+  border: 2px solid grey;
   margin-bottom: 5px;
   img {
     margin-left: 8px;
