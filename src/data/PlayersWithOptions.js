@@ -34,6 +34,7 @@ export const OptionalBuffClasses = [
   "Retribution Paladin",
   "Holy Paladin",
   "Survival Hunter",
+  "Blood Death Knight",
 ];
 
 export const OptionalBuffs = [
@@ -45,6 +46,7 @@ export const OptionalBuffs = [
   "Battle Shout",
   "Aimed Shot",
   "Hunting Party",
+  "Improved Icy Talons",
 ];
 
 export const Warlocks = [
@@ -56,7 +58,11 @@ export const Warlocks = [
 export const WarlockBuffs = ["Fel Intelligence", "Blood Pact"];
 export const BeastMasteryBuffs = ["Sting", "Stampede", "Acid Spit"];
 
-export const SpecsThatCanTankAndps = ["Feral Druid", "Blood Death Knight"];
+export const SpecsThatCanTankAndps = [
+  "Feral Druid",
+  "Blood Death Knight",
+  "Frost Death Knight",
+];
 
 export const Paladins = [
   "Holy Paladin",

@@ -40,6 +40,7 @@ const SpecArray = [
         icon: "images/spellicons/Icy_Talons.png",
         link: "https://www.wowhead.com/wotlk/spell=55610/improved-icy-talons",
         spellId: "55610",
+        checked: true,
       },
     ],
     utility: [
