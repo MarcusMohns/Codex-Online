@@ -143,15 +143,13 @@ export const StyledSpecButton = styled.div`
   }
   @media (min-width: 765px) {
     .text-and-image-button-container {
+      flex-direction: column;
       padding: 0.7rem;
       .specbutton-text {
         display: flex;
         text-align: center;
         margin-left: initial;
         transition: transform 300ms ease;
-      }
-      .specbutton-image {
-        display: none;
       }
     }
   }
@@ -160,6 +158,7 @@ export const StyledSpecButton = styled.div`
     font-size: 0.7rem;
     letter-spacing: 1px;
     .text-and-image-button-container {
+      flex-direction: row;
       padding: 0.7rem;
       .specbutton-text {
         display: flex;
