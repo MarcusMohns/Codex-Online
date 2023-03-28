@@ -354,7 +354,7 @@ export const StyledPlayer = styled.div`
   align-items: center;
   justify-content: flex-start;
   color: #fff;
-  background: ${(props) => props.background};
+  background-color: ${(props) => props.background};
   border: 1px solid black;
   cursor: pointer;
   margin: 2px;
@@ -959,6 +959,7 @@ export const StyledCategory = styled.div`
   @media (min-width: 1300px) {
     flex-direction: row;
     width: 250px;
+    min-width: 250px;
     padding: 0.4rem;
     .tooltip {
       display: initial;
