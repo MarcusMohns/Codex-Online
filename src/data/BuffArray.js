@@ -371,6 +371,39 @@ const BuffArray = {
         </div>
       ),
     },
+
+    {
+      name: "Attack Power",
+      source: [
+        <div key={"attack-power-provided-by"}>
+          <span id="paladin">Paladins</span>
+          <span id="warrior">Warriors</span>
+        </div>,
+      ],
+      image: "images/Battle_Shout.png",
+      icon: "images/spellicons/Battle_Shout.png",
+      type: "physical",
+      text: (
+        <div>
+          <div className="spell-names">Blessing of Might, Battle Shout</div>
+          <div>
+            <span className="buff">Increases</span> Attack Power by x
+          </div>
+          <div>
+            Battle Shout:<span className="buff-value"> 548</span>
+          </div>
+          <div>
+            Improved Battle Shout:<span className="buff-value"> 695</span>
+          </div>
+          <div>
+            Blessing of Might: <span className="buff-value"> 550</span>
+          </div>
+          <div>
+            Improved Blessing of Might:<span className="buff-value"> 687</span>
+          </div>
+        </div>
+      ),
+    },
     {
       name: "Attack Power %",
       source: [
@@ -415,36 +448,26 @@ const BuffArray = {
         </div>
       ),
     },
-
     {
-      name: "Attack Power",
+      name: "Improved Leader of the Pack",
       source: [
-        <div key={"attack-power-provided-by"}>
-          <span id="paladin">Paladins</span>
-          <span id="warrior">Warriors</span>
+        <div key={"imp-leader-of-the-pack"}>
+          <span id="druid">Feral Druid</span>
         </div>,
       ],
-      image: "images/Battle_Shout.png",
-      icon: "images/spellicons/Battle_Shout.png",
+
+      image: "images/Leader_Of_The_Pack.png",
+      icon: "images/spellicons/Leader_Of_The_Pack.png",
       type: "physical",
       text: (
         <div>
-          <div className="spell-names">Blessing of Might, Battle Shout</div>
-          <div>
-            <span className="buff">Increases</span> Attack Power by x
-          </div>
-          <div>
-            Battle Shout:<span className="buff-value"> 548</span>
-          </div>
-          <div>
-            Improved Battle Shout:<span className="buff-value"> 695</span>
-          </div>
-          <div>
-            Blessing of Might: <span className="buff-value"> 550</span>
-          </div>
-          <div>
-            Improved Blessing of Might:<span className="buff-value"> 687</span>
-          </div>
+          <div className="spell-names">Improved Leader of the Pack</div>
+          Leader of the pack also causes{" "}
+          <span className="buff">friendly targets</span> to{" "}
+          <span className="buff">heal themselves</span> for{" "}
+          <span className="buff-value">4%</span> of their total health when they
+          critically hit with a melee or ranged attack
+          <div className="fine-print">May only occur every 6 seconds</div>
         </div>
       ),
     },
@@ -525,30 +548,6 @@ const BuffArray = {
         </div>
       ),
     },
-
-    {
-      name: "Improved Leader of the Pack",
-      source: [
-        <div key={"imp-leader-of-the-pack"}>
-          <span id="druid">Feral Druid</span>
-        </div>,
-      ],
-
-      image: "images/Leader_Of_The_Pack.png",
-      icon: "images/spellicons/Leader_Of_The_Pack.png",
-      type: "physical",
-      text: (
-        <div>
-          <div className="spell-names">Improved Leader of the Pack</div>
-          Leader of the pack also causes{" "}
-          <span className="buff">friendly targets</span> to{" "}
-          <span className="buff">heal themselves</span> for{" "}
-          <span className="buff-value">4%</span> of their total health when they
-          critically hit with a melee or ranged attack
-          <div className="fine-print">May only occur every 6 seconds</div>
-        </div>
-      ),
-    },
   ],
 
   buffs: [
@@ -576,6 +575,91 @@ const BuffArray = {
           <div className="fine-print">
             Alternatively, Drums of the Forgotten Kings provide 8% all stats and
             can be bought off the auction house.
+          </div>
+        </div>
+      ),
+    },
+    {
+      name: "Mark of the Wild",
+      source: [
+        <div key={"motw-provided-by"}>
+          <span id="druid">Druids</span>
+        </div>,
+      ],
+      image: "images/Mark_Of_The_Wild.png",
+      icon: "images/spellicons/Mark_Of_The_Wild.png",
+      type: "both",
+      text: (
+        <div>
+          <div>
+            <div className="spell-names">Mark of the Wild</div>
+            <div>Motw:</div>
+            <span className="buff">Increases</span> Armor by{" "}
+            <span className="buff-value">750</span>, all attributes by{" "}
+            <span className="buff-value">36</span> and all resistances by{" "}
+            <span className="buff-value">54</span>
+          </div>
+
+          <div>
+            <div>Improved Motw:</div>
+            <span className="buff">Increases</span> Armor by{" "}
+            <span className="buff-value">1050</span>, all attributes by{" "}
+            <span className="buff-value">51</span> and all resistances by{" "}
+            <span className="buff-value">75</span>
+          </div>
+          <div className="fine-print">
+            Alternatively, Drums of the Wild provide the same stats as the
+            unupgraded Motw and can be bought off the auction house.
+          </div>
+        </div>
+      ),
+    },
+    {
+      name: "Stamina",
+      source: [
+        <div key={"stamina-provided-by"}>
+          <span id="priest">Priests</span>
+        </div>,
+      ],
+      image: "images/Power_Word_Fortitude.png",
+      icon: "images/spellicons/Power_Word_Fortitude.png",
+      type: "both",
+      text: (
+        <div>
+          <div className="spell-names">Power Word: Fortitude</div>
+          <span className="buff">Increases</span> Stamina by{" "}
+          <span className="buff-value">165</span>
+        </div>
+      ),
+    },
+    {
+      name: "Health",
+      source: [
+        <div key={"health-provided-by"}>
+          <span id="warlock">Destruction Warlock</span>
+          <span id="warrior">Warriors</span>
+        </div>,
+      ],
+      image: "images/Commanding_Shout.png",
+      icon: "images/spellicons/Commanding_Shout.png",
+      type: "both",
+      text: (
+        <div>
+          <div className="spell-names">Commanding Shout, Blood Pact</div>
+          <div>
+            Maximum health <span className="buff">increased</span> by x.
+          </div>
+          <div>
+            Commanding Shout: <span className="buff-value">2255</span>
+          </div>
+          <div>
+            Improved Commanding Shout: <span className="buff-value">2818</span>
+          </div>
+          <div>
+            Blood Pact: <span className="buff-value">1330</span>
+          </div>
+          <div>
+            Improved Blood Pact: <span className="buff-value">1729</span>
           </div>
         </div>
       ),
@@ -665,7 +749,6 @@ const BuffArray = {
         </div>
       ),
     },
-
     {
       name: "Haste %",
       source: [
@@ -688,7 +771,6 @@ const BuffArray = {
         </div>
       ),
     },
-
     {
       name: "Healing Recieved %",
       source: [
@@ -711,93 +793,6 @@ const BuffArray = {
         </div>
       ),
     },
-
-    {
-      name: "Health",
-      source: [
-        <div key={"health-provided-by"}>
-          <span id="warlock">Destruction Warlock</span>
-          <span id="warrior">Warriors</span>
-        </div>,
-      ],
-      image: "images/Commanding_Shout.png",
-      icon: "images/spellicons/Commanding_Shout.png",
-      type: "both",
-      text: (
-        <div>
-          <div className="spell-names">Commanding Shout, Blood Pact</div>
-          <div>
-            Maximum health <span className="buff">increased</span> by x.
-          </div>
-          <div>
-            Commanding Shout: <span className="buff-value">2255</span>
-          </div>
-          <div>
-            Improved Commanding Shout: <span className="buff-value">2818</span>
-          </div>
-          <div>
-            Blood Pact: <span className="buff-value">1330</span>
-          </div>
-          <div>
-            Improved Blood Pact: <span className="buff-value">1729</span>
-          </div>
-        </div>
-      ),
-    },
-    {
-      name: "Mark of the Wild",
-      source: [
-        <div key={"motw-provided-by"}>
-          <span id="druid">Druids</span>
-        </div>,
-      ],
-      image: "images/Mark_Of_The_Wild.png",
-      icon: "images/spellicons/Mark_Of_The_Wild.png",
-      type: "both",
-      text: (
-        <div>
-          <div>
-            <div className="spell-names">Mark of the Wild</div>
-            <div>Motw:</div>
-            <span className="buff">Increases</span> Armor by{" "}
-            <span className="buff-value">750</span>, all attributes by{" "}
-            <span className="buff-value">36</span> and all resistances by{" "}
-            <span className="buff-value">54</span>
-          </div>
-
-          <div>
-            <div>Improved Motw:</div>
-            <span className="buff">Increases</span> Armor by{" "}
-            <span className="buff-value">1050</span>, all attributes by{" "}
-            <span className="buff-value">51</span> and all resistances by{" "}
-            <span className="buff-value">75</span>
-          </div>
-          <div className="fine-print">
-            Alternatively, Drums of the Wild provide the same stats as the
-            unupgraded Motw and can be bought off the auction house.
-          </div>
-        </div>
-      ),
-    },
-    {
-      name: "Stamina",
-      source: [
-        <div key={"stamina-provided-by"}>
-          <span id="priest">Priests</span>
-        </div>,
-      ],
-      image: "images/Power_Word_Fortitude.png",
-      icon: "images/spellicons/Power_Word_Fortitude.png",
-      type: "both",
-      text: (
-        <div>
-          <div className="spell-names">Power Word: Fortitude</div>
-          <span className="buff">Increases</span> Stamina by{" "}
-          <span className="buff-value">165</span>
-        </div>
-      ),
-    },
-
     {
       name: "Attack Speed Reduction",
       source: [
