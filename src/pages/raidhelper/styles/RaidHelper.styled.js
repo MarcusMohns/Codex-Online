@@ -706,6 +706,27 @@ export const BuffContainer = styled.section`
   margin-top: 20px;
 `;
 
+export const BuffsDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .type-header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: ${COLORS.offWhite};
+    padding: 1rem;
+    padding-left: 0rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  #phys-buffs {
+    margin-top: auto;
+  }
+`;
+
 export const StyledBuffCategories = styled.div`
   width: 100%;
   display: flex;
@@ -722,7 +743,7 @@ export const CategoryContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   border: 2px solid grey;
   margin-bottom: 5px;
