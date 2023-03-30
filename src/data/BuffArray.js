@@ -1,26 +1,6 @@
 const BuffArray = {
   casterBuffs: [
     {
-      name: "Disease Damage",
-      source: [
-        <div key={"disease-damage-provided-by"}>
-          <span id="death-knight">Unholy Death Knight</span>
-        </div>,
-      ],
-      image: "images/Crypt_Fever.png",
-      icon: "images/spellicons/Crypt_Fever.png",
-      type: "magical",
-      text: (
-        <div>
-          <div className="spell-names">Ebon Plaguebringer</div>
-          <span className="buff">Increases</span> disease damage taken by the{" "}
-          <span className="debuff">enemy target</span> by{" "}
-          <span className="buff-value">30%</span>
-        </div>
-      ),
-    },
-
-    {
       name: "Intellect",
       source: [
         <div key={"intellect-provided-by"}>
@@ -749,6 +729,26 @@ const BuffArray = {
         </div>
       ),
     },
+    {
+      name: "Disease Damage",
+      source: [
+        <div key={"disease-damage-provided-by"}>
+          <span id="death-knight">Unholy Death Knight</span>
+        </div>,
+      ],
+      image: "images/Crypt_Fever.png",
+      icon: "images/spellicons/Crypt_Fever.png",
+      type: "magical",
+      text: (
+        <div>
+          <div className="spell-names">Ebon Plaguebringer</div>
+          <span className="buff">Increases</span> disease damage taken by the{" "}
+          <span className="debuff">enemy target</span> by{" "}
+          <span className="buff-value">30%</span>
+        </div>
+      ),
+    },
+
     {
       name: "Haste %",
       source: [
