@@ -7,7 +7,7 @@ const BuffCategories = ({ currentBuffs }) => {
   return (
     <StyledBuffCategories>
       <BuffsDiv>
-        <h2 className="type-header">Buffs & Debuffs</h2>
+        <h2 className="type-header">Caster & Melee</h2>
         {BuffArray.buffs.map((category) => (
           <BuffsAndCategory
             key={category.name}
@@ -18,7 +18,7 @@ const BuffCategories = ({ currentBuffs }) => {
         ))}
       </BuffsDiv>
       <BuffsDiv>
-        <h2 className="type-header">Caster Buffs</h2>
+        <h2 className="type-header">Caster </h2>
         {BuffArray.casterBuffs.map((category) => (
           <BuffsAndCategory
             key={category.name}
@@ -28,7 +28,7 @@ const BuffCategories = ({ currentBuffs }) => {
           />
         ))}
         <h2 className="type-header" id="phys-buffs">
-          Melee Buffs
+          Melee
         </h2>
         {BuffArray.physicalBuffs.map((category) => (
           <BuffsAndCategory
