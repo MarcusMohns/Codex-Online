@@ -127,9 +127,11 @@ export const StyledSpecButton = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     width: 100%;
     text-align: center;
     padding: 0.4rem;
+    font-size: 0.7rem;
     .specbutton-text {
       display: none;
     }
@@ -141,8 +143,9 @@ export const StyledSpecButton = styled.div`
       animation: fadeIn 1s;
     }
   }
-  @media (min-width: 765px) {
+  @media (min-width: 820px) {
     .text-and-image-button-container {
+      height: 100%;
       flex-direction: column;
       padding: 0.7rem;
       .specbutton-text {
@@ -150,6 +153,9 @@ export const StyledSpecButton = styled.div`
         text-align: center;
         margin-left: initial;
         transition: transform 300ms ease;
+      }
+      .specbutton-image {
+        margin-top: 5px;
       }
     }
   }
@@ -170,6 +176,7 @@ export const StyledSpecButton = styled.div`
         margin-left: auto;
         width: 1.4rem;
         height: 1.4rem;
+        margin-top: 0px;
       }
     }
   }
@@ -1107,52 +1114,48 @@ export const RaidContentHeader = styled.div`
   #raid-saves-btn {
     margin-left: 5px;
   }
-  .raid-count {
-    margin-left: auto;
-    justify-self: flex-start;
-    font-size: 0.9rem;
-    margin-left: 1rem;
-    margin-right: auto;
-    font-family: sans-serif;
-  }
+
+  .raid-count,
   .role-count {
     display: flex;
-    align-self: center;
-    margin-right: auto;
-    text-align: center;
+    align-items: center;
     font-size: 0.9rem;
     font-family: sans-serif;
+    margin-right: auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    -webkit-letter-spacing: 0.0071428571em;
-    -moz-letter-spacing: 0.0071428571em;
-    -ms-letter-spacing: 0.0071428571em;
-    letter-spacing: 0.0071428571em;
+    border: 1px solid #fff;
+  }
+  .raid-count {
+    margin-left: auto;
+    margin-left: 1rem;
+    padding: 0.4rem;
+    font-weight: 700;
+  }
+  .role-count {
+    padding: 0 0.5rem;
+    font-weight: bold;
 
     p {
-      background-color: ${COLORS.veryFadedBlack};
       margin: 0px 3px;
       padding: 4px;
       border-radius: 2px;
       font-weight: bold;
     }
   }
+
   @media (min-width: 1300px) {
     height: 3rem;
   }
   @media (min-width: 700px) {
-    .btn-container {
-      margin-left: 9rem;
-    }
     .raid-count {
       margin-left: auto;
       justify-self: flex-start;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
     .role-count {
       display: flex;
       padding: 2px;
-      font-size: 1rem;
       .role-count-img {
         height: 18px;
         width: 18px;
@@ -1260,6 +1263,7 @@ export const UtilityHeaderButton = styled.div`
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   color: ${COLORS.lightText};
   background-color: #222;
   border-radius: 5px;
@@ -1284,6 +1288,12 @@ export const UtilityHeaderButton = styled.div`
   @media (min-width: 600px) {
     flex-direction: row;
     font-size: 1rem;
+    padding: 0.5rem;
+  }
+  @media (min-width: 1300px) {
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
   }
 `;
 export const RaidGroupContainer = styled.div`

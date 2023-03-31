@@ -719,8 +719,16 @@ const RaidHelper = () => {
 
             <div className="raid-count">{raidCount[0]} / 25 </div>
             <div className="role-count">
-              <p> {raidCount[1]} Tanks </p>
-              <p> {raidCount[2]} Healers </p>
+              <p>
+                {raidCount[1] > 1
+                  ? `${raidCount[1]} Tanks`
+                  : `${raidCount[1]} Tank `}
+              </p>
+              <p>
+                {raidCount[1] > 1
+                  ? `${raidCount[2]} Healers`
+                  : `${raidCount[2]} Healer `}
+              </p>
               <p> {raidCount[3]} DPS</p>
             </div>
             <div className="btn-container">
