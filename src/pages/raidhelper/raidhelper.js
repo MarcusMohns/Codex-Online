@@ -176,11 +176,7 @@ const RaidHelper = () => {
     nameTextObject.value = "";
 
     nameTextObject.addEventListener("keydown", function confirmEdit(e) {
-      if (e.key === "Enter") {
-        nameTextObject.blur();
-        nameTextObject.removeEventListener("keydown", confirmEdit);
-      }
-      if (e.key === "Escape") {
+      if (e.key === "Enter" || e.key === "Escape") {
         nameTextObject.blur();
         nameTextObject.removeEventListener("keydown", confirmEdit);
       }
