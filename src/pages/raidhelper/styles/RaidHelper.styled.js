@@ -20,7 +20,6 @@ import { FiShield } from "@react-icons/all-files/fi/FiShield";
 import { TiPlusOutline } from "@react-icons/all-files/ti/TiPlusOutline";
 import { CgCopy } from "@react-icons/all-files/cg/CgCopy";
 import { FiShuffle } from "@react-icons/all-files/fi/FiShuffle";
-
 import COLORS from "../../../colors";
 
 export const Main = styled.main`
@@ -30,9 +29,9 @@ export const Main = styled.main`
   align-items: flex-start;
   justify-content: flex-start;
   @media (min-width: 1300px) {
+    display: grid;
     height: 100%;
     width: 100%;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.3fr 1.7fr;
     gap: 10px 10px;
@@ -44,32 +43,29 @@ export const Main = styled.main`
 `;
 
 export const SpecContainer = styled.section`
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 2px black;
   margin-top: 9%;
+  box-sizing: border-box;
+  border-top: 2px black;
   .spec-buttons {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    max-width: 100%;
     width: 96%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
     margin: 2rem 0;
     background-color: ${COLORS.halfFadedPrimary};
   }
   @media screen and (min-width: 1300px) {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    max-height: 100%;
+    box-sizing: border-box;
     padding: 0rem 2rem;
     .spec-buttons {
       margin: 1rem 0;
@@ -82,10 +78,10 @@ export const StyledSpecButton = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   font-size: 0.6rem;
   font-weight: bold;
   line-height: 1;
-  position: relative;
   color: ${(props) => props.color};
   cursor: pointer;
   user-select: none;
@@ -200,11 +196,10 @@ export const StyledClassToolTip = styled.div`
     min-width: 200px;
     width: fit-content;
     padding: 1rem;
-    color: #eeeeee;
-    border-radius: 5px;
+    color: #eee;
     background: #000;
+    border-radius: 5px;
     border: 1px solid #777;
-    box-shadow: 0 0 0.3125rem rgb(0 0 0 / 80%);
     z-index: 3;
     pointer-events: none;
     animation-name: FadeIn;
@@ -222,12 +217,11 @@ export const StyledClassToolTip = styled.div`
     align-items: flex-start;
     justify-content: center;
   }
-  .utility-tooltip-container {
-    padding: 1rem;
-  }
+  .utility-tooltip-container,
   .buffs-tooltip-container {
     padding: 1rem;
   }
+
   .class-tooltip-title {
     font-size: 1.3rem;
     text-align: center;
@@ -284,69 +278,71 @@ export const StyledClassToolTip = styled.div`
 `;
 
 export const RaidContainer = styled.section`
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   min-width: 100%;
   max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+  .raid-is-not-full,
+  .raid-is-full,
+  .raid-is-full-warning {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: ${COLORS.lightText};
+    width: 100%;
   }
   .raid-is-not-full {
-    position:relative;
-    user-select:none;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: green;
-    color: ${COLORS.lightText};
+    position: relative;
     transition: opacity 0.3s;
-    opacity:0%;
+    opacity: 0%;
   }
   .raid-is-full {
-    user-select:none;
     box-sizing: border-box;
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: green;
-    color: ${COLORS.lightText};
-    width: 100%;
     transition: opacity 0.3s ease;
-    opacity:100%;
+    opacity: 100%;
   }
   .raid-is-full-warning {
-    user-select:none;
     box-sizing: border-box;
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: green;
-    color: ${COLORS.lightText};
-    width: 100%;
     transition: opacity 0.3s ease;
-    opacity:100%;
+    opacity: 100%;
     animation-name: shake;
     animation-duration: 0.5s;
   }
   @keyframes shake {
-  0% { transform: translateX(3px);}
-  20% { transform: translateX(-3px);}
-  40% { transform: translateX(3px);}
-  60% { transform: translateX(-3px);}
-  80% { transform: translateX(3px);}
-  100% { transform: translateX(-3px); }
-}
+    0% {
+      transform: translateX(3px);
+    }
+    20% {
+      transform: translateX(-3px);
+    }
+    40% {
+      transform: translateX(3px);
+    }
+    60% {
+      transform: translateX(-3px);
+    }
+    80% {
+      transform: translateX(3px);
+    }
+    100% {
+      transform: translateX(-3px);
+    }
+  }
   @media (min-width: 576px) {
     grid-area: Raid;
-    padding-bottom:5px;
+    padding-bottom: 5px;
     .no-players-text {
-      margin: auto;
       display: flex;
+      margin: auto;
       color: ${COLORS.lightText};
       font-size: 1.3rem;
     }
@@ -354,12 +350,12 @@ export const RaidContainer = styled.section`
 `;
 
 export const StyledPlayer = styled.div`
-  position: relative;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  box-sizing: border-box;
   color: #fff;
   background-color: ${(props) => props.background};
   border: 1px solid black;
@@ -392,23 +388,23 @@ export const StyledPlayer = styled.div`
     }
   }
   .player-name {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
     font-size: 0.8rem;
     pointer-events: none;
   }
   .player-name input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     -webkit-appearance: none;
     -ms-appearance: none;
     -moz-appearance: none;
     appearance: none;
     outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: none;
     user-select: none;
     pointer-events: none;
@@ -432,11 +428,11 @@ export const StyledPlayer = styled.div`
     font-size: 0.8rem;
   }
   .placeholder {
-    position: absolute;
-    top: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 2px;
     border: none;
     user-select: none;
     pointer-events: none;
@@ -451,8 +447,7 @@ export const StyledPlayer = styled.div`
   .player-name input + .placeholder {
     ${(props) => props.hasText && "top: -20px; font-size: 10px; color: white;"};
   }
-  /* box-shadow: $/{(props) =>
-  / props.isDragging ? "rgba(255, 255, 255, 0.5) 0px 3px 8px" : "none"}; */
+
   #class-img {
     display: none;
   }
@@ -476,13 +471,9 @@ export const StyledPlayer = styled.div`
     }
   }
   &:hover {
-    transform: translateY(-0.1em); // change it to something btr
-    #edit-player-icon {
-      visibility: visible;
-    }
-    #delete-player-icon {
-      visibility: visible;
-    }
+    transform: translateY(-0.1em);
+    #edit-player-icon,
+    #delete-player-icon,
     #player-info-icon {
       visibility: visible;
     }
@@ -699,11 +690,12 @@ export const StyledPlayerCheckboxes = styled.div`
 `;
 
 export const BuffContainer = styled.section`
+  display: flex;
+  flex-direction: column;
   grid-area: Buffs;
   box-sizing: border-box;
   background-color: ${COLORS.fadedBackground};
-  display: flex;
-  flex-direction: column;
+
   align-items: top;
   justify-content: top;
   width: 100%;
@@ -735,9 +727,9 @@ export const BuffsDiv = styled.div`
 `;
 
 export const StyledBuffCategories = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
   @media (min-width: 1550px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -750,7 +742,6 @@ export const CategoryContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  /* height: 100%; */
   width: 100%;
   border: 2px solid grey;
   margin-bottom: 5px;
@@ -850,11 +841,11 @@ export const StyledCategory = styled.div`
     z-index: 1;
   }
   .tooltip .tooltiptext {
+    display: flex;
+    flex-direction: column;
     visibility: hidden;
     box-sizing: border-box;
     background-color: black;
-    display: flex;
-    flex-direction: column;
     color: #eeeeee;
     border-radius: 5px;
     background: #000;
@@ -920,12 +911,12 @@ export const StyledCategory = styled.div`
       display: block;
     }
     .title {
-      box-sizing: border-box;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      border-radius: 5px;
       align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      border-radius: 5px;
       width: 100%;
       height: fit-content;
     }
@@ -1019,12 +1010,12 @@ export const UtilityContainer = styled.section`
 `;
 
 export const StyledUtilities = styled.div`
-  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
   min-width: 100%;
   max-width: 100%;
   min-height: 100%;
@@ -1063,15 +1054,9 @@ export const StyledUtility = styled.a`
     border-radius: 20%;
     margin-left: 0.5rem;
   }
-  &:link {
-    color: inherit;
-  }
-  &:visited {
-    color: inherit;
-  }
-  &:hover {
-    color: inherit;
-  }
+  &:link,
+  &:visited,
+  &:hover,
   &:active {
     color: inherit;
   }
@@ -1120,25 +1105,28 @@ export const RaidContentHeader = styled.div`
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 0.9rem;
+    flex-direction: column;
     font-family: sans-serif;
-    margin-right: auto;
+    margin: auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    border: 1px solid #fff;
+    font-weight: bold;
+    font-size: 0.7rem;
   }
   .raid-count {
+    align-content: center;
     padding: 0.4rem;
     font-weight: 700;
     margin-right: 5px;
+    font-size: 1rem;
   }
   .role-count {
-    padding: 0 0.5rem;
-    font-weight: bold;
+    /* flex-wrap: nowrap; */
 
     p {
       display: flex;
       align-items: center;
+      justify-content: center;
       margin: 0px 3px;
       padding: 4px;
       border-radius: 2px;
@@ -1146,19 +1134,23 @@ export const RaidContentHeader = styled.div`
     }
   }
 
-  @media (min-width: 1300px) {
-    height: 3rem;
-  }
   @media (min-width: 700px) {
+    .raid-count,
+    .role-count {
+      display: flex;
+      flex-direction: row;
+      border: 1px solid #fff;
+    }
     .raid-count {
+      padding: 0 0.5rem;
       margin-right: auto;
-
       margin-left: auto;
       justify-self: flex-start;
       font-size: 1.2rem;
+      padding: 4px;
     }
     .role-count {
-      display: flex;
+      font-size: 0.9rem;
       padding: 2px;
       .role-count-img {
         height: 18px;
@@ -1168,13 +1160,17 @@ export const RaidContentHeader = styled.div`
       }
     }
   }
+
+  @media (min-width: 1300px) {
+    height: 3rem;
+  }
 `;
 
 export const NoPlayersText = styled.p`
-  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
   color: ${COLORS.lightText};
   font-size: 1.3rem;
   min-height: 474px;
@@ -1193,12 +1189,11 @@ export const PlayersContainer = styled.div`
 `;
 
 export const GroupContainer = styled.div`
-  user-select: none;
-  box-sizing: border-box;
-  margin-top: 2px;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  user-select: none;
+  box-sizing: border-box;
   flex: 1 0 19%;
   min-height: 450px;
   background-color: #222;
@@ -1215,7 +1210,6 @@ export const GroupTitle = styled.div`
   padding: 5px;
   color: ${COLORS.offWhite};
   border: none;
-  font-size: 1rem;
   animation-name: reveal;
   animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
@@ -1235,11 +1229,11 @@ export const GroupTitle = styled.div`
 export const RaidHeaderButton = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
-  align-items: center;
-  justify-content: center;
   color: ${COLORS.lightText};
   background-color: #1f8421;
   border-radius: 5px;
@@ -1248,7 +1242,6 @@ export const RaidHeaderButton = styled.div`
   padding: 0.2rem 0.6rem;
   text-align: center;
   user-select: none;
-  -webkit-user-select: none;
   white-space: nowrap;
   font-weight: 500;
   letter-spacing: 1px;
@@ -1262,17 +1255,16 @@ export const RaidHeaderButton = styled.div`
 export const UtilityHeaderButton = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
-  align-items: center;
-  justify-content: center;
   box-sizing: border-box;
   color: ${COLORS.lightText};
   background-color: #222;
   border-radius: 5px;
-  cursor: pointer;
-  padding: 0.2rem 0.6rem;
+  padding: 0.5rem;
   text-align: center;
   font-weight: 500;
   letter-spacing: 1px;
@@ -1282,22 +1274,21 @@ export const UtilityHeaderButton = styled.div`
   font-size: 0.7rem;
   margin-left: auto;
   margin-right: 5px;
-  transform: translateY(0);
-  transition: transform 150ms;
   margin-left: ${(props) => props.marginLeft};
   margin-right: ${(props) => props.marginRight};
+  transform: translateY(0);
+  transition: transform 150ms;
+
   &:hover {
     transform: translateY(-2px);
   }
   @media (min-width: 600px) {
     flex-direction: row;
     font-size: 1rem;
-    padding: 0.5rem;
   }
   @media (min-width: 1300px) {
     flex-direction: row;
     font-size: 1rem;
-    padding: 0.2rem 0.6rem;
   }
 `;
 export const RaidGroupContainer = styled.div`
@@ -1336,8 +1327,6 @@ export const StyledPlayerOptions = styled.div`
     justify-content: flex-start;
     background-color: black;
     position: fixed;
-    margin-left: auto;
-    margin-right: auto;
     margin: auto;
     top: 20%;
     left: 0;
@@ -1424,8 +1413,7 @@ export const StyledSaveMenu = styled.div`
     justify-content: flex-start;
     background-color: black;
     position: fixed;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     top: 20%;
     left: 0;
     right: 0;
@@ -1454,23 +1442,20 @@ export const StyledSaveMenu = styled.div`
       }
     }
     .save-menu-footer {
-      flex-grow: 1;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
+      flex-grow: 1;
       color: white;
-      width: 90%;
-      @media (min-width: 1300px) {
-        width: 100%;
-      }
+      width: 100%;
+
       .save-menu-footer-buttons {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: auto;
         padding: 5px;
-        margin: 15px 0px;
+        margin: 15px 2px;
         border-radius: 2px;
         cursor: pointer;
         user-select: none;
@@ -1515,7 +1500,7 @@ export const StyledSaveMenu = styled.div`
         color: grey;
         margin-right: 5px;
         width: 3.5rem;
-      }
+      } // heres where we are! =)
       .save-buttons {
         border: none;
         color: white;
@@ -1528,8 +1513,7 @@ export const StyledSaveMenu = styled.div`
           background-color: ${COLORS.fadedPrimary};
         }
       }
-      #save-button {
-      }
+
       #load-button {
         margin-left: 7px;
       }
@@ -1590,13 +1574,11 @@ export const StyledRaidCooldowns = styled.div`
     right: 0;
     text-align: center;
     width: 80%;
-    min-height: 400px;
     height: auto;
     border-radius: 20px;
     box-sizing: border-box;
     animation-name: revealMenu;
     animation-duration: 0.3s;
-
     overflow-y: scroll;
     max-height: 500px;
 
@@ -1819,8 +1801,8 @@ export const TinyContainer = styled.div`
   justify-content: space-between;
 `;
 export const PlayerNameContainer = styled.div`
-  width: 100%;
   display: flex;
+  width: 100%;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
@@ -1841,11 +1823,11 @@ export const CheckCircle = styled(FaRegCheckCircle)`
 `;
 
 export const ResetIcon = styled(VscDebugRestart)`
+  display: flex;
   font-size: 2rem;
   cursor: pointer;
   color: white;
   transition: transform 200ms;
-  display: flex;
   border-radius: 50%;
   &:hover {
     transform: scale(1.2);
@@ -1898,7 +1880,6 @@ export const CooldownIcon = styled(FaRegClock)`
 export const PowerUpIcon = styled(GiElectric)`
   font-size: 1.1em;
 `;
-
 export const CombatResIcon = styled(FiActivity)`
   font-size: 1.1em;
   margin-right: 2px;
