@@ -1254,7 +1254,7 @@ export const RaidHeaderButton = styled.div`
 
 export const UtilityHeaderButton = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -1271,7 +1271,7 @@ export const UtilityHeaderButton = styled.div`
   user-select: none;
   -webkit-user-select: none;
   white-space: nowrap;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-left: auto;
   margin-right: 5px;
   margin-left: ${(props) => props.marginLeft};
@@ -1283,11 +1283,6 @@ export const UtilityHeaderButton = styled.div`
     transform: translateY(-2px);
   }
   @media (min-width: 600px) {
-    flex-direction: row;
-    font-size: 1rem;
-  }
-  @media (min-width: 1300px) {
-    flex-direction: row;
     font-size: 1rem;
   }
 `;
