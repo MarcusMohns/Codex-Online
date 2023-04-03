@@ -1119,6 +1119,7 @@ export const RaidContentHeader = styled.div`
   .role-count {
     display: flex;
     align-items: center;
+    text-align: center;
     font-size: 0.9rem;
     font-family: sans-serif;
     margin-right: auto;
@@ -1127,16 +1128,17 @@ export const RaidContentHeader = styled.div`
     border: 1px solid #fff;
   }
   .raid-count {
-    margin-left: auto;
-    margin-left: 1rem;
     padding: 0.4rem;
     font-weight: 700;
+    margin-right: 5px;
   }
   .role-count {
     padding: 0 0.5rem;
     font-weight: bold;
 
     p {
+      display: flex;
+      align-items: center;
       margin: 0px 3px;
       padding: 4px;
       border-radius: 2px;
@@ -1149,6 +1151,8 @@ export const RaidContentHeader = styled.div`
   }
   @media (min-width: 700px) {
     .raid-count {
+      margin-right: auto;
+
       margin-left: auto;
       justify-self: flex-start;
       font-size: 1.2rem;
