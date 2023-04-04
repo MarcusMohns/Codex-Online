@@ -5,7 +5,7 @@ import {
   MainContentContainer,
   StyledCapHeader,
   ButtonContainer,
-} from "../components/ContentContainers";
+} from "../styles/HitCapHelper.styled";
 
 const TalentPoints = ({
   nextStep,

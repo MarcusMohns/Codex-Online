@@ -7,7 +7,7 @@ import {
   RadioContainer,
   SmallContentContainer,
   ButtonContainer,
-} from "../components/ContentContainers";
+} from "../styles/HitCapHelper.styled";
 
 const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
   const next = (e) => {

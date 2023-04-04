@@ -94,6 +94,7 @@ export const PagePreviewContainer = styled.div`
       margin: 15px;
     }
   }
+
   @media (min-width: 500px) {
     padding: 2rem 2rem;
   }
@@ -154,7 +155,6 @@ export const PagePreviewText = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
     padding: 0 1rem;
   }

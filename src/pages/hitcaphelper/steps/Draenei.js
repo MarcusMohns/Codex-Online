@@ -5,8 +5,8 @@ import {
   MainContentContainer,
   RadioContainer,
   SmallContentContainer,
-} from "../components/ContentContainers";
-import { StyledCapHeader } from "../components/ContentContainers";
+  StyledCapHeader,
+} from "../styles/HitCapHelper.styled";
 import StyledInputBtn from "../components/StyledInputBtn";
 import {
   CheckCircle,

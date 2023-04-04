@@ -5,7 +5,7 @@ import {
   MainContentContainer,
   StyledCapHeader,
   SmallContentContainer,
-} from "../components/ContentContainers";
+} from "../styles/HitCapHelper.styled";
 
 const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
   const next = (e) => {

@@ -5,7 +5,7 @@ import {
   ResultsContainer,
   ButtonContainer,
   AdditionalHitContainer,
-} from "../components/ContentContainers";
+} from "../styles/HitCapHelper.styled";
 import {
   CheckCircle,
   CrossIcon,
