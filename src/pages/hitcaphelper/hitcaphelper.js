@@ -2,6 +2,8 @@ import React, { lazy, Suspense, useState } from "react";
 import { Main } from "./styles/HitCapHelper.styled";
 import SpecArray from "../../data/SpecArray";
 import { Loader } from "../../components/Loader";
+import { casters, hitTalentClasses } from "../../data/PlayersWithOptions";
+
 const ClassAndSpec = lazy(() => import("./steps/ClassAndSpec"));
 const PveOrPvp = lazy(() => import("./steps/PveOrPvp"));
 const Result = lazy(() => import("./steps/Result"));
@@ -63,48 +65,6 @@ const HitCapHelper = () => {
       setStepState({ ...stepState, [input]: e.target.value });
     }
   };
-
-  const hitTalentClasses = [
-    "Blood Death Knight",
-    "Unholy Death Knight",
-    "Frost Death Knight",
-    "Enhancement Shaman",
-    "Balance Druid",
-    "Elemental Shaman",
-    "Restoration Shaman",
-    "Beast Mastery Hunter",
-    "Marksman Hunter",
-    "Survival Hunter",
-    "Arcane Mage",
-    "Fire Mage",
-    "Frost Mage",
-    "Assassination Rogue",
-    "Combat Rogue",
-    "Subtlety Rogue",
-    "Shadow Priest",
-    "Affliction Warlock",
-    "Demonology Warlock",
-    "Destruction Warlock",
-    "Arms Warrior",
-    "Fury Warrior",
-    "Protection Warrior",
-  ];
-
-  const casters = [
-    "Balance Druid",
-    "Arcane Mage",
-    "Fire Mage",
-    "Frost Mage",
-    "Shadow Priest",
-    "ELemental Shaman",
-    "Affliction Warlock",
-    "Demonology Warlock",
-    "Destruction Warlock",
-    "Discipline Priest",
-    "Restoration Druid",
-    "Restoration Shaman",
-    "Holy Priest",
-  ];
 
   switch (step) {
     case 1:

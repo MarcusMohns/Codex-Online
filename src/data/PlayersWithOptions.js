@@ -114,3 +114,45 @@ export const Totems = {
 };
 
 export const PaladinUtility = ["Aura Mastery", "Divine Guardian"];
+
+export const hitTalentClasses = [
+  "Blood Death Knight",
+  "Unholy Death Knight",
+  "Frost Death Knight",
+  "Enhancement Shaman",
+  "Balance Druid",
+  "Elemental Shaman",
+  "Restoration Shaman",
+  "Beast Mastery Hunter",
+  "Marksman Hunter",
+  "Survival Hunter",
+  "Arcane Mage",
+  "Fire Mage",
+  "Frost Mage",
+  "Assassination Rogue",
+  "Combat Rogue",
+  "Subtlety Rogue",
+  "Shadow Priest",
+  "Affliction Warlock",
+  "Demonology Warlock",
+  "Destruction Warlock",
+  "Arms Warrior",
+  "Fury Warrior",
+  "Protection Warrior",
+];
+
+export const casters = [
+  "Balance Druid",
+  "Arcane Mage",
+  "Fire Mage",
+  "Frost Mage",
+  "Shadow Priest",
+  "ELemental Shaman",
+  "Affliction Warlock",
+  "Demonology Warlock",
+  "Destruction Warlock",
+  "Discipline Priest",
+  "Restoration Druid",
+  "Restoration Shaman",
+  "Holy Priest",
+];

@@ -34,8 +34,8 @@ export const Main = styled.main`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
-    color: white;
     margin-top: 2rem;
+    color: white;
     width: 80%;
 
     .header-text-icon-container {
@@ -80,9 +80,9 @@ export const CheckBoxContainer = styled.section`
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
     align-items: flex-start;
     justify-content: center;
+    box-sizing: border-box;
     border-radius: 5px;
     width: 80%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -93,15 +93,14 @@ export const CheckBoxContainer = styled.section`
     @media screen and (max-width: 510px) {
       flex-direction: column;
       align-items: center;
-      padding: 0;
       box-shadow: none;
     }
   }
   .category-container {
-    box-sizing: border-box;
-    margin: 0.5rem;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    margin: 0.5rem;
     padding: 0.5rem;
     background-color: ${COLORS.fadedBlack};
     border-radius: 5px;

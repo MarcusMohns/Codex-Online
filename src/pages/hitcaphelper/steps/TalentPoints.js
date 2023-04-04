@@ -96,8 +96,8 @@ const TalentPoints = ({
           />
         </div>
       );
-      //   <p> Mage - Arcane focus (0/3) 1% hit per point (spells)</p>
-      //   <p>Precision (0/3) 1% hit per point (spells)</p>
+      //    Mage - Arcane focus (0/3) 1% hit per point (spells)
+      //   Precision (0/3) 1% hit per point (spells)
       name = "Arcane Focus+Precision";
       break;
 

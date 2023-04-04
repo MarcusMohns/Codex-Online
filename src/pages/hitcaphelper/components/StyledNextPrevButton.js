@@ -23,23 +23,20 @@ const StyledNextPrevButton = styled.button`
   pointer-events: ${(props) => props.pointerEvents};
   opacity: ${(props) => props.opacity};
 
-  #next-arrow {
+  #next-arrow,
+  #previous-arrow {
     font-size: 1.1rem;
     position: absolute;
     opacity: 0;
-    transform: translateX(60px);
     -webkit-transition: all 0.25s cubic-bezier(0.14, 0.59, 1, 1.01);
     transition: all 0.15s cubic-bezier(0.14, 0.59, 1, 1.01);
     padding-bottom: 1px;
   }
   #previous-arrow {
-    font-size: 1.1rem;
-    position: absolute;
-    opacity: 0;
     transform: translateX(-60px);
-    -webkit-transition: all 0.25s cubic-bezier(0.14, 0.59, 1, 1.01);
-    transition: all 0.15s cubic-bezier(0.14, 0.59, 1, 1.01);
-    padding-bottom: 1px;
+  }
+  #next-arrow {
+    transform: translateX(60px);
   }
 
   &:hover {
