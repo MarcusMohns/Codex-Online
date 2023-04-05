@@ -85,16 +85,14 @@ const TalentPoints = ({
     case "Fire Mage":
     case "Frost Mage":
       content = (
-        <div>
-          <Talent
-            text="Arcane Focus+Precision"
-            image="images/arcane_focus_precision.webp"
-            max="6"
-            handleChange={handleChange}
-            talentPoints={talentPoints}
-            multiplier="1"
-          />
-        </div>
+        <Talent
+          text="Arcane Focus+Precision"
+          image="images/arcane_focus_precision.webp"
+          max="6"
+          handleChange={handleChange}
+          talentPoints={talentPoints}
+          multiplier="1"
+        />
       );
       //    Mage - Arcane focus (0/3) 1% hit per point (spells)
       //   Precision (0/3) 1% hit per point (spells)
@@ -136,32 +134,28 @@ const TalentPoints = ({
     case "Elemental Shaman":
     case "Restoration Shaman":
       content = (
-        <div>
-          <Talent
-            text="Elemental Precision"
-            image="images/elemental_precision.webp"
-            max="3"
-            handleChange={handleChange}
-            talentPoints={talentPoints}
-            multiplier="1"
-          />
-        </div>
+        <Talent
+          text="Elemental Precision"
+          image="images/elemental_precision.webp"
+          max="3"
+          handleChange={handleChange}
+          talentPoints={talentPoints}
+          multiplier="1"
+        />
       );
       //     Elemental Shaman - Elemental Precision (0/3) 1% hit nature fire and frost spells
       name = "Elemental Precision";
       break;
     case "Enhancement Shaman":
       content = (
-        <div>
-          <Talent
-            text="Dual Wield Specialization"
-            image="images/dual_wield_specialization.webp"
-            max="3"
-            handleChange={handleChange}
-            talentPoints={talentPoints}
-            multiplier="2"
-          />
-        </div>
+        <Talent
+          text="Dual Wield Specialization"
+          image="images/dual_wield_specialization.webp"
+          max="3"
+          handleChange={handleChange}
+          talentPoints={talentPoints}
+          multiplier="2"
+        />
       );
       //     Enhancement - Dual Wield Spec - (0/3) - 2% chance to hit with dual wield
       name = "Dual Wield Specialization";
