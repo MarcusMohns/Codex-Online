@@ -1104,7 +1104,7 @@ export const RaidContentHeader = styled.div`
     justify-self: flex-end;
   }
   #raid-saves-btn {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   .raid-count,
@@ -1831,6 +1831,7 @@ export const ResetIcon = styled(VscDebugRestart)`
   color: white;
   transition: transform 200ms;
   border-radius: 50%;
+  margin-right: 10px;
   &:hover {
     transform: scale(1.2);
   }
