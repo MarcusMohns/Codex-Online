@@ -695,7 +695,6 @@ export const BuffContainer = styled.section`
   grid-area: Buffs;
   box-sizing: border-box;
   background-color: ${COLORS.fadedBackground};
-
   align-items: top;
   justify-content: top;
   width: 100%;
@@ -739,11 +738,10 @@ export const StyledBuffCategories = styled.div`
 
 export const CategoryContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-align: center;
   width: 100%;
-  border: 2px solid grey;
   margin-bottom: 5px;
   img {
     margin-left: 8px;
@@ -773,14 +771,16 @@ export const StyledBuff = styled.a`
   padding: 0.2rem;
   background-color: ${COLORS.highlight};
   border-radius: 5px;
-  margin: 7px;
+  margin: 0px 4px;
   overflow: hidden;
-  max-height: 25px;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.0071428571em;
   text-decoration: none;
+  height: 32px;
+
   @media (min-width: 1300px) {
     margin: 1px;
+    max-height: 25px;
   }
   img {
     width: 25px;
@@ -798,6 +798,11 @@ export const StyledBuff = styled.a`
     animation-duration: 0.5s;
     color: black;
     animation-fill-mode: forwards;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
   }
   @keyframes FadeIn {
     from {
@@ -820,12 +825,16 @@ export const StyledCategory = styled.div`
   background-color: ${(props) => props.color};
   transition: background-color 0.5s;
   color: ${COLORS.darktext};
-  width: 100%;
+  width: 175px;
+  min-width: 175px;
   height: fit-content;
+  padding: 1rem;
   .category-name-text {
-    display: flex;
-    padding: 1rem;
     margin-right: auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
   }
   .category-image {
     display: flex;
@@ -975,16 +984,14 @@ export const StyledCategory = styled.div`
       visibility: visible;
     }
   }
-  @media (min-width: 1300px) {
-    flex-direction: row;
+  @media (min-width: 650px) {
     width: 250px;
+  }
+  @media (min-width: 1300px) {
     min-width: 250px;
     padding: 0.4rem;
     .tooltip {
       display: initial;
-    }
-    .category-name-text {
-      padding: 0rem;
     }
   }
 `;
