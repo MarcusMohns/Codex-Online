@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FaRegTimesCircle } from "@react-icons/all-files/fa/FaRegTimesCircle";
 import { FaRegCheckCircle } from "@react-icons/all-files/fa/FaRegCheckCircle";
-import { FcInfo } from "@react-icons/all-files/fc/FcInfo";
+import { BsInfoSquareFill } from "@react-icons/all-files/bs/BsInfoSquareFill";
 import { GiLoad } from "@react-icons/all-files/gi/GiLoad";
 import { RiSettings3Line } from "@react-icons/all-files/ri/RiSettings3Line";
 import { VscDebugRestart } from "@react-icons/all-files/vsc/VscDebugRestart";
@@ -1128,8 +1128,6 @@ export const RaidContentHeader = styled.div`
     font-size: 1rem;
   }
   .role-count {
-    /* flex-wrap: nowrap; */
-
     p {
       display: flex;
       align-items: center;
@@ -1146,7 +1144,6 @@ export const RaidContentHeader = styled.div`
     .role-count {
       display: flex;
       flex-direction: row;
-      border: 1px solid #fff;
     }
     .raid-count {
       padding: 0 0.5rem;
@@ -1845,8 +1842,7 @@ export const EditIcon = styled(RiEdit2Line)`
   color: black;
   font-size: 1.5em;
 `;
-export const InfoIcon = styled(FcInfo)`
-  color: black;
+export const InfoIcon = styled(BsInfoSquareFill)`
   font-size: 1.6em;
 `;
 export const SettingsIcon = styled(RiSettings3Line)`
