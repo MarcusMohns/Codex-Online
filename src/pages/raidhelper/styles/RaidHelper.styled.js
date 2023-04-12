@@ -102,22 +102,15 @@ export const StyledSpecButton = styled.div`
   &:active {
     box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 1);
   }
-  .class-tooltip-container {
-    #info-image {
-      position: absolute;
-      left: 1px;
-      top: 1px;
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-    &:hover #info-image ~ div {
-      display: flex;
-    }
-    #info-image ~ div {
-      display: none;
+  #info-image {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    &:hover {
+      transform: scale(1.2);
     }
   }
+
   .text-and-image-button-container {
     display: flex;
     flex-direction: row;
@@ -179,100 +172,152 @@ export const StyledSpecButton = styled.div`
 `;
 
 export const StyledClassToolTip = styled.div`
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100%;
+  height: auto;
+  width: 100vw;
+  left: 0;
+  top: 0%;
+  z-index: 3;
+  color: ${COLORS.offWhite};
+
   .tooltip {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    background-color: black;
     position: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    top: 25%;
+    margin: auto;
+    top: 20%;
     left: 0;
     right: 0;
     text-align: center;
-    min-height: 200px;
-    height: auto;
-    min-width: 200px;
-    width: fit-content;
-    padding: 1rem;
-    color: #eee;
-    background: #000;
-    border-radius: 5px;
-    border: 1px solid #777;
-    z-index: 3;
-    pointer-events: none;
-    animation-name: FadeIn;
+    width: 90%;
+    border-radius: 10px;
+    animation-name: revealMenu;
     animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-  }
-  .class-tooltip-spec-image {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 5px;
-  }
-  .tooltip-buff-and-utility-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .utility-tooltip-container,
-  .buffs-tooltip-container {
-    padding: 1rem;
+    overflow-y: scroll;
+    max-height: 500px;
+
+    @media (min-width: 1300px) {
+      width: 600px;
+      max-height: 650px;
+      overflow-y: auto;
+    }
+    @keyframes revealMenu {
+      0% {
+        transform: translateY(-15%);
+        opacity: 0%;
+      }
+      100% {
+      }
+    }
   }
 
-  .class-tooltip-title {
-    font-size: 1.3rem;
-    text-align: center;
-    margin-bottom: 5px;
-    color: ${(props) => props.color};
-  }
   .class-tooltip-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    width: 100%;
+    padding: 1rem 0rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .class-tooltip-header-text {
+    width: 80px;
+    margin-left: 7px;
+  }
+  .class-tooltip-player-info {
+    display: flex;
+    align-items: flex-start;
+  }
+  .class-tooltip-close-window-btn {
+    display: flex;
+    width: 80px;
+    margin-right: 10px;
+    justify-content: flex-end;
+  }
+  .class-tooltip-class-color {
+    color: ${(props) => props.color};
+    margin-left: 5px;
+  }
+  .class-tooltip-class-image {
+    margin-left: 5px;
+    border-radius: 10px;
+  }
+  .class-tooltip-close-window-icn {
+    cursor: pointer;
+  }
+
+  .utility-tooltip-container,
+  .buffs-tooltip-container {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0rem 1rem;
+  }
+
+  .class-tooltip-subheader {
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
     width: 100%;
     font-size: 1.1rem;
-    padding-bottom: 3px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid grey;
-    font-weight: 500;
+    padding: 1rem 0rem;
+    font-weight: 700;
   }
-  .class-tooltip-category-name {
-    display: flex;
-    flex-direction: row;
-    font-size: 0.8rem;
-    padding: 0.1rem;
-    margin-top: 2px;
-    text-decoration: underline;
-  }
-  .class-tooltip-buff {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .class-tooltip-spell-content {
+
+  .class-tooltip-buff-and-category {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: fit-content;
+    margin-bottom: 0.7rem;
+    margin: 5px;
+  }
+
+  .class-tooltip-category-name {
+    display: flex;
+    align-self: center;
     justify-content: center;
+    font-size: 0.8rem;
     width: 100%;
-    height: 100%;
-    font-weight: 500;
-    .class-tooltip-image {
-      display: flex;
-      width: 1.1rem;
-      height: 1.1rem;
-      border-radius: 5px;
-      margin-right: 4px;
+  }
+
+  .class-tooltip-buff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    user-select: none;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    user-select: text;
+    background-color: ${COLORS.fadedGrey};
+    color: ${COLORS.offWhite};
+    border-radius: 5px;
+    margin: 1px;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    img {
+      width: 24px;
+      height: 24px;
+      border-radius: 20%;
+      margin-left: 0.5rem;
     }
-    .class-tooltip-buff-name {
-      font-weight: 400;
-      color: ${COLORS.goldHighlight};
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: inherit;
     }
   }
 `;

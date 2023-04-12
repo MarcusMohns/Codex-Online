@@ -2,19 +2,15 @@ import React from "react";
 import { memo } from "react";
 import SpecButton from "./SpecButton";
 
-const SpecButtons = ({ specs, onClick }) => {
+const SpecButtons = ({ specs, handleSpecTooltip, onClick }) => {
   return (
     <div className={"spec-buttons"}>
       {specs.map((spec) => (
         <SpecButton
-          key={spec.text}
-          text={spec.text}
-          image={spec.image}
-          icon={spec.icon}
+          spec={spec}
+          handleSpecTooltip={handleSpecTooltip}
           onClick={() => onClick(spec)}
-          color={spec.color}
-          buffs={spec.buffs}
-          utility={spec.utility}
+          key={spec.text}
         />
       ))}
     </div>

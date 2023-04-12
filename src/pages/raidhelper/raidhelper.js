@@ -7,6 +7,7 @@ import SaveMenu from "./components/SaveMenu";
 import RaidCooldowns from "./components/RaidCooldowns";
 import PlayersIndex from "./components/PlayersIndex";
 import PlayerOptions from "./components/PlayerOptions";
+import ClassTooltip from "./components/ClassTooltip";
 import Raid from "./components/Raid";
 import {
   intitialRaidState,
@@ -104,6 +105,8 @@ const RaidHelper = () => {
   const [playersIndexOpen, setPlayersIndexOpen] = useState(false);
   const [playerOptionsOpen, setPlayerOptionsOpen] = useState(false);
   const [aPlayer, setAPlayer] = useState(initialPlayerState);
+  const [spec, setSpec] = useState([]);
+  const [classTooltipOpen, setClassTooltipOpen] = useState(false);
 
   const resetRaid = () => {
     setRaid(intitialRaidState);
@@ -317,6 +320,15 @@ const RaidHelper = () => {
     try {
       setAPlayer(player);
       setPlayerOptionsOpen(!playerOptionsOpen);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const handleSpecTooltip = (player) => {
+    try {
+      setSpec(player);
+      setClassTooltipOpen(!classTooltipOpen);
     } catch (e) {
       console.error(e);
     }
@@ -651,9 +663,17 @@ const RaidHelper = () => {
           className="spec-buttons"
           specs={SpecArray}
           onClick={addPlayer}
+          handleSpecTooltip={handleSpecTooltip}
         />
       </SpecContainer>
       <Main>
+        {classTooltipOpen && (
+          <ClassTooltip
+            spec={spec}
+            classTooltipOpen={classTooltipOpen}
+            setClassTooltipOpen={setClassTooltipOpen}
+          />
+        )}
         {saveMenuOpen && (
           <SaveMenu
             saveOnClick={saveOnClick}

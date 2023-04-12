@@ -1,22 +1,12 @@
-import ClassTooltip from "./ClassTooltip";
 import { StyledSpecButton, InfoIcon } from "../styles/RaidHelper.styled";
-const SpecButton = ({ text, image, icon, onClick, color, buffs, utility }) => {
+const SpecButton = ({ spec, handleSpecTooltip, onClick }) => {
   return (
-    <StyledSpecButton color={color} onClick={onClick}>
-      <div className="text-and-image-button-container">
-        <p className="specbutton-text">{text}</p>
-        <img src={icon} alt="spec icon" className="specbutton-image" />
+    <StyledSpecButton color={spec.color}>
+      <div className="text-and-image-button-container" onClick={onClick}>
+        <p className="specbutton-text">{spec.text}</p>
+        <img src={spec.icon} alt="spec icon" className="specbutton-image" />
       </div>
-      <div className="class-tooltip-container">
-        <InfoIcon id="info-image" />
-        <ClassTooltip
-          buffs={buffs}
-          text={text}
-          utility={utility}
-          color={color}
-          image={image}
-        />
-      </div>
+      <InfoIcon id="info-image" onClick={() => handleSpecTooltip(spec)} />
     </StyledSpecButton>
   );
 };
