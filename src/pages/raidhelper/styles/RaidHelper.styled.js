@@ -200,6 +200,7 @@ export const StyledClassToolTip = styled.div`
     animation-duration: 0.3s;
     overflow-y: scroll;
     max-height: 500px;
+    padding-bottom: 1rem;
 
     @media (min-width: 1300px) {
       width: 600px;
