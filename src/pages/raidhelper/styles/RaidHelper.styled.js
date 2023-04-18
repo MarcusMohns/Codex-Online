@@ -417,7 +417,7 @@ export const StyledPlayer = styled.div`
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 1px;
-  .role-img {
+  .role-icon {
     position: absolute;
     right: 2px;
     bottom: 0;
@@ -613,9 +613,10 @@ export const StyledPlayerCheckboxes = styled.div`
       align-items: center;
       justify-content: center;
     }
+
     .role-icon {
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
     }
   }
   .player-checkbox {
@@ -1180,6 +1181,10 @@ export const RaidContentHeader = styled.div`
       border-radius: 2px;
       font-weight: bold;
     }
+    .role-icon {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   @media (min-width: 700px) {
@@ -1199,12 +1204,6 @@ export const RaidContentHeader = styled.div`
     .role-count {
       font-size: 0.9rem;
       padding: 2px;
-      .role-count-img {
-        height: 18px;
-        width: 18px;
-        margin-right: 5px;
-        margin-left: 2px;
-      }
     }
   }
 

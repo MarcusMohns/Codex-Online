@@ -1,17 +1,25 @@
-const healerIcon = <img src="images/Healer_icon.png" alt="plus sign" />;
-const tankIcon = <img src="images/Tank_icon.png" alt="shield" />;
-const dpsIcon = <img src="images/DPS_icon.png" alt="sword" />;
-
 const RaidRole = ({ player }) => {
   switch (player.role) {
     case "tank":
-      return <div className="role-img">{tankIcon}</div>;
+      return (
+        <img className="role-icon" src="images/Tank_icon.png" alt="shield" />
+      );
     case "healer":
-      return <div className="role-img">{healerIcon}</div>;
+      return (
+        <img
+          className="role-icon"
+          src="images/Healer_icon.png"
+          alt="plus sign"
+        />
+      );
     case "dps":
-      return <div className="role-img">{dpsIcon}</div>;
+      return (
+        <img className="role-icon" src="images/DPS_icon.png" alt="sword" />
+      );
     default:
-      return <div className="role-img">{dpsIcon}</div>;
+      return (
+        <img className="role-icon" src="images/DPS_icon.png" alt="sword" />
+      );
   }
 };
 

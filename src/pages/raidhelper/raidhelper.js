@@ -737,15 +737,27 @@ const RaidHelper = () => {
             <div className="role-count">
               <p>
                 {raidCount[1]} Tanks
-                <img src="images/Tank_icon.png" alt="tank" />
+                <img
+                  className="role-icon"
+                  src="images/Tank_icon.png"
+                  alt="tank"
+                />
               </p>
               <p>
                 {raidCount[2]} Healers
-                <img src="images/Healer_icon.png" alt="healer" />
+                <img
+                  className="role-icon"
+                  src="images/Healer_icon.png"
+                  alt="healer"
+                />
               </p>
               <p>
                 {raidCount[3]} DPS
-                <img src="images/DPS_icon.png" alt="dps" />
+                <img
+                  className="role-icon"
+                  src="images/DPS_icon.png"
+                  alt="dps"
+                />
               </p>
             </div>
             <div className="btn-container">
