@@ -28,7 +28,6 @@ const StyledNextPrevButton = styled.button`
     font-size: 1.1rem;
     position: absolute;
     opacity: 0;
-    -webkit-transition: all 0.25s cubic-bezier(0.14, 0.59, 1, 1.01);
     transition: all 0.15s cubic-bezier(0.14, 0.59, 1, 1.01);
     padding-bottom: 1px;
   }

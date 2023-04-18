@@ -88,8 +88,7 @@ export const StyledSpecButton = styled.div`
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
   box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
+
   #info-image {
     visibility: hidden;
   }
@@ -570,9 +569,7 @@ export const StyledPlayerCheckboxes = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     overflow: hidden scroll;
     align-self: center;
@@ -1262,10 +1259,10 @@ export const GroupTitle = styled.div`
   border: none;
   animation-name: reveal;
   animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
-  -moz-animation-fill-mode: forwards; /* FF 5+ */
-  -o-animation-fill-mode: forwards; /* Not implemented yet */
-  -ms-animation-fill-mode: forwards; /* IE 10+ */
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   @keyframes reveal {
     0% {
