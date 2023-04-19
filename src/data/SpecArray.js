@@ -76,8 +76,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -151,8 +153,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -218,8 +222,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -346,6 +352,8 @@ const SpecArray = [
       {
         name: "Tranquility",
         image: "images/groupbuffs/Tranquility.png",
+        srcSet:
+          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranquility_sm.png 20w",
         icon: "images/spellicons/Tranquility.png",
         link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
         spellId: "48447",
@@ -466,6 +474,8 @@ const SpecArray = [
       {
         name: "Tranquility",
         image: "images/groupbuffs/Tranquility.png",
+        srcSet:
+          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranquility_sm.png 20w",
         icon: "images/spellicons/Tranquility.png",
         link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
         spellId: "48447",
@@ -561,6 +571,8 @@ const SpecArray = [
       {
         name: "Tranquility",
         image: "images/groupbuffs/Tranquility.png",
+        srcSet:
+          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranquility_sm.png 20w",
         icon: "images/spellicons/Tranquility.png",
         link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
         spellId: "48447",
@@ -673,8 +685,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -756,8 +770,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -848,8 +864,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -921,8 +939,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -994,8 +1014,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -1075,8 +1097,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -1250,8 +1274,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -1259,6 +1285,8 @@ const SpecArray = [
       {
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
+        srcSet:
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 20w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
@@ -1458,8 +1486,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -1467,6 +1497,8 @@ const SpecArray = [
       {
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
+        srcSet:
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 20w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
@@ -1673,8 +1705,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -1682,6 +1716,8 @@ const SpecArray = [
       {
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
+        srcSet:
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 20w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
@@ -1806,8 +1842,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -1916,8 +1954,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -2028,8 +2068,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -2037,6 +2079,8 @@ const SpecArray = [
       {
         name: "Vampiric Embrace",
         image: "images/groupbuffs/Vampiric_Embrace.png",
+        srcSet:
+          "images/groupbuffs/Vampiric_Embrace.png 28w, images/groupbuffs/Vampiric_Embrace_sm.png 20w",
         icon: "images/spellicons/Vampiric_Embrace.png",
         link: "https://www.wowhead.com/wotlk/spell=15286/vampiric-embrace",
         spellId: "15286",
@@ -2446,8 +2490,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -2455,6 +2501,8 @@ const SpecArray = [
       {
         name: "Healing Stream Totem",
         image: "images/groupbuffs/Healing_Stream_Totem.png",
+        srcSet:
+          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream_Totem_sm.png 20w",
         icon: "images/spellicons/Healing_Stream_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
         spellId: "58757",
@@ -2462,6 +2510,8 @@ const SpecArray = [
       {
         name: "Cleansing Totem",
         image: "images/groupbuffs/Cleansing_Totem.png",
+        srcSet:
+          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing_Totem_sm.png 20w",
         icon: "images/spellicons/Cleansing_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
         spellId: "8170",
@@ -2469,6 +2519,8 @@ const SpecArray = [
       {
         name: "Tremor Totem",
         image: "images/groupbuffs/Tremor_Totem.png",
+        srcSet:
+          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor_Totem_sm.png 20w",
         icon: "images/spellicons/Tremor_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
         spellId: "8143",
@@ -2642,8 +2694,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -2651,6 +2705,8 @@ const SpecArray = [
       {
         name: "Healing Stream Totem",
         image: "images/groupbuffs/Healing_Stream_Totem.png",
+        srcSet:
+          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream_Totem_sm.png 20w",
         icon: "images/spellicons/Healing_Stream_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
         spellId: "58757",
@@ -2658,6 +2714,8 @@ const SpecArray = [
       {
         name: "Cleansing Totem",
         image: "images/groupbuffs/Cleansing_Totem.png",
+        srcSet:
+          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing_Totem_sm.png 20w",
         icon: "images/spellicons/Cleansing_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
         spellId: "8170",
@@ -2665,6 +2723,8 @@ const SpecArray = [
       {
         name: "Tremor Totem",
         image: "images/groupbuffs/Tremor_Totem.png",
+        srcSet:
+          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor_Totem_sm.png 20w",
         icon: "images/spellicons/Tremor_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
         spellId: "8143",
@@ -2852,8 +2912,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -2861,6 +2923,8 @@ const SpecArray = [
       {
         name: "Healing Stream Totem",
         image: "images/groupbuffs/Healing_Stream_Totem.png",
+        srcSet:
+          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream_Totem_sm.png 20w",
         icon: "images/spellicons/Healing_Stream_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
         spellId: "58757",
@@ -2868,6 +2932,8 @@ const SpecArray = [
       {
         name: "Cleansing Totem",
         image: "images/groupbuffs/Cleansing_Totem.png",
+        srcSet:
+          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing_Totem_sm.png 20w",
         icon: "images/spellicons/Cleansing_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
         spellId: "8170",
@@ -2875,6 +2941,8 @@ const SpecArray = [
       {
         name: "Tremor Totem",
         image: "images/groupbuffs/Tremor_Totem.png",
+        srcSet:
+          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor_Totem_sm.png 20w",
         icon: "images/spellicons/Tremor_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
         spellId: "8143",
@@ -2882,6 +2950,8 @@ const SpecArray = [
       {
         name: "Mana Tide Totem",
         image: "images/groupbuffs/Mana_Tide_Totem.png",
+        srcSet:
+          "images/groupbuffs/Mana_Tide_Totem.png 28w, images/groupbuffs/Mana_Tide_Totem_sm.png 20w",
         icon: "images/spellicons/Mana_Tide_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=16190/mana-tide-totem",
         spellId: "16190",
@@ -2996,8 +3066,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -3096,8 +3168,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,
@@ -3196,8 +3270,10 @@ const SpecArray = [
     groupBuffs: [
       {
         name: "Heroic Presence",
-        image: "images/groupbuffs/heroic_presence.webp",
-        icon: "images/spellicons/heroic_presence.webp",
+        image: "images/groupbuffs/heroic_presence.png",
+        srcSet:
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 20w",
+        icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
         draenei: false,

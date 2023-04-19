@@ -12,7 +12,7 @@ const StyledGroupBuff = styled.div`
     height: 20px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 820px) {
     img {
       width: 28px;
       height: 28px;
@@ -39,7 +39,12 @@ const GroupBuff = ({ group }) => {
                 key={`group-buff-${playerInGroup.id}-${groupBuff.name}`}
                 data-wowhead={`item=${groupBuff.spellId}`}
               >
-                <img src={groupBuff.image} alt="group buff" />
+                <img
+                  srcSet={groupBuff.srcSet}
+                  sizes="(min-width:1200px) 28px, 20px"
+                  src={groupBuff.image}
+                  alt="group buff"
+                />
               </a>
             );
           }
@@ -52,7 +57,12 @@ const GroupBuff = ({ group }) => {
                 key={`group-buff-${playerInGroup.id}-${groupBuff.name}`}
                 data-wowhead={`item=${groupBuff.spellId}`}
               >
-                <img src={groupBuff.image} alt="group buff" />
+                <img
+                  srcSet={groupBuff.srcSet}
+                  sizes="(min-width:1200px)  28px, 20px"
+                  src={groupBuff.image}
+                  alt="group buff"
+                />
               </a>
             );
           }
@@ -67,7 +77,12 @@ const GroupBuff = ({ group }) => {
               key={`group-buff-${playerInGroup.id}-${groupBuff.name}`}
               data-wowhead={`item=${groupBuff.spellId}`}
             >
-              <img src={groupBuff.image} alt="group buff" />
+              <img
+                srcSet={groupBuff.srcSet}
+                sizes="(min-width:820px)  28px, 20px"
+                src={groupBuff.image}
+                alt="group buff"
+              />
             </a>
           );
         }
