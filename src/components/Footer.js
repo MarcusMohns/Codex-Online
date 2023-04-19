@@ -41,8 +41,9 @@ const DiscordIcon = styled(RiDiscordFill)`
 const Footer = () => {
   return (
     <StyledFooter>
-      <div>About</div>
-
+      <a href="mailto: warcraftcodex@gmail.com" target="blank">
+        Contact
+      </a>
       <a
         href="https://www.buymeacoffee.com/Wowcodex"
         className="small-coffee-btn"
@@ -52,10 +53,6 @@ const Footer = () => {
           alt="Buy Me A Coffee"
           className="buy-me-a-coffee-btn"
         />
-      </a>
-
-      <a href="mailto: warcraftcodex@gmail.com" target="blank">
-        Contact us
       </a>
       <Link to="/terms" className="link-button">
         Terms
