@@ -126,8 +126,8 @@ export const StyledSpecButton = styled.div`
     .specbutton-image {
       border-radius: 10px;
       border: 1px solid black;
-      width: 1.3rem;
-      height: 1.3rem;
+      width: 22px;
+      height: 22px;
       animation: fadeIn 1s;
     }
   }
@@ -162,8 +162,6 @@ export const StyledSpecButton = styled.div`
       .specbutton-image {
         display: flex;
         margin-left: auto;
-        width: 1.4rem;
-        height: 1.4rem;
         margin-top: 0px;
       }
     }
