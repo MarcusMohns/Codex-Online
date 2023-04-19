@@ -8,8 +8,9 @@ const StyledGroupBuff = styled.div`
   flex-wrap: wrap;
 
   img {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
+    margin: 0 0.5px;
   }
 
   @media (min-width: 820px) {
@@ -41,7 +42,7 @@ const GroupBuff = ({ group }) => {
               >
                 <img
                   srcSet={groupBuff.srcSet}
-                  sizes="(min-width:1200px) 28px, 20px"
+                  sizes="(min-width:1200px) 28px, 22px"
                   src={groupBuff.image}
                   alt="group buff"
                 />
@@ -59,7 +60,7 @@ const GroupBuff = ({ group }) => {
               >
                 <img
                   srcSet={groupBuff.srcSet}
-                  sizes="(min-width:1200px)  28px, 20px"
+                  sizes="(min-width:1200px)  28px, 22px"
                   src={groupBuff.image}
                   alt="group buff"
                 />
@@ -79,7 +80,7 @@ const GroupBuff = ({ group }) => {
             >
               <img
                 srcSet={groupBuff.srcSet}
-                sizes="(min-width:820px)  28px, 20px"
+                sizes="(min-width:820px)  28px, 22px"
                 src={groupBuff.image}
                 alt="group buff"
               />
