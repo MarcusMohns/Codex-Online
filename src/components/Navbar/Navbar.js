@@ -50,7 +50,12 @@ const Navbar = () => {
   return (
     <Nav shrunk={isShrunk}>
       <LogoLink to="/home">
-        <img src={"images/icon.png"} alt="logo" className="logo" />
+        <img
+          src="images/icon.png"
+          srcSet="images/icon.png 1x, images/big-icon.png 2x"
+          alt="logo"
+          className="logo"
+        />
         <div className="logo-text">Codex</div>
       </LogoLink>
 
