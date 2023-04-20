@@ -149,13 +149,13 @@ function Arenapointcalculator() {
         }
         background="#4BB543"
         height={80}
-        color="#3a3a3a"
+        color="#000"
       />
       <AlertDiv
         text="All calculations under 150 rating are inaccurate and will display
         'Unknown'."
         background="#CD5C5C"
-        height="45px"
+        height={45}
         color="white"
       />
       <ArenaSection>
