@@ -46,7 +46,9 @@ const Home = () => {
           </Link>
         </PagePreviewText>
         <img
-          src="images/raid_assembler.png"
+          srcSet="images/page-preview/raid_assembler_sm.png 390w,images/page-preview/raid_assembler.png 700w"
+          sizes="(min-width: 1400px) 700px,390px"
+          src="images/page-preview/raid_assembler.png"
           className="content-preview-image"
           alt="raid-assembler-preview"
         />
@@ -64,7 +66,9 @@ const Home = () => {
           </Link>
         </PagePreviewText>
         <img
-          src="images/gem_finder.png"
+          srcSet="images/page-preview/gem_finder_sm.png 390w,images/page-preview/gem_finder.png 700w"
+          sizes="(min-width: 1400px) 700px,390px"
+          src="images/page-preview/gem_finder.png"
           className="content-preview-image"
           alt="raid-assembler-preview"
         />
@@ -84,7 +88,9 @@ const Home = () => {
           </Link>
         </PagePreviewText>
         <img
-          src="images/arena_point_calculator.png"
+          srcSet="images/page-preview/arena_point_calculator_sm.png 390w,images/page-preview/arena_point_calculator.png 700w"
+          sizes="(min-width: 1400px) 700px,390px"
+          src="images/page-preview/arena_point_calculator.png"
           className="content-preview-image"
           alt="arena-point-calc-preview"
         />
@@ -103,7 +109,9 @@ const Home = () => {
           </Link>
         </PagePreviewText>
         <img
-          src="images/hit_cap_helper.png"
+          srcSet="images/page-preview/hit_cap_helper_sm.png 390w,images/page-preview/hit_cap_helper.png 700w"
+          sizes="(min-width: 1400px) 700px,390px"
+          src="images/page-preview/hit_cap_helper.png"
           className="content-preview-image"
           alt="arena-point-calc-preview"
         />
