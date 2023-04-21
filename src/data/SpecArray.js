@@ -3,8 +3,10 @@ import COLORS from "../colors";
 const SpecArray = [
   {
     text: "Blood Death Knight",
-    image: "images/Blood_Death_Knight.webp",
+    image: "images/classimages/Blood_Death_Knight.webp",
     icon: "images/classicons/Blood_Death_Knight.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.deathKnight,
     role: "tank",
     name: "",
@@ -78,7 +80,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -90,6 +92,8 @@ const SpecArray = [
     text: "Unholy Death Knight",
     image: "images/Unholy_Death_Knight.webp",
     icon: "images/classicons/Unholy_Death_Knight.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.deathKnight,
     role: "dps",
     name: "",
@@ -155,7 +159,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -167,6 +171,8 @@ const SpecArray = [
     text: "Frost Death Knight",
     image: "images/Frost_Death_Knight.webp",
     icon: "images/classicons/Frost_Death_Knight.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.deathKnight,
     role: "dps",
     name: "",
@@ -224,7 +230,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -236,6 +242,8 @@ const SpecArray = [
     text: "Balance Druid",
     image: "images/Balance_Druid.webp",
     icon: "images/classicons/Balance_Druid.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.druid,
     role: "dps",
     name: "",
@@ -353,7 +361,7 @@ const SpecArray = [
         name: "Tranquility",
         image: "images/groupbuffs/Tranquility.png",
         srcSet:
-          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranquility_sm.png 22w",
+          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranqu_smility.png 22w",
         icon: "images/spellicons/Tranquility.png",
         link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
         spellId: "48447",
@@ -364,6 +372,8 @@ const SpecArray = [
     text: "Feral Druid",
     image: "images/Feral_Druid.webp",
     icon: "images/classicons/Feral_Druid.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.druid,
     role: "dps",
     name: "",
@@ -475,7 +485,7 @@ const SpecArray = [
         name: "Tranquility",
         image: "images/groupbuffs/Tranquility.png",
         srcSet:
-          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranquility_sm.png 22w",
+          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranqu_smility.png 22w",
         icon: "images/spellicons/Tranquility.png",
         link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
         spellId: "48447",
@@ -486,6 +496,8 @@ const SpecArray = [
     text: "Restoration Druid",
     image: "images/Restoration_Druid.webp",
     icon: "images/classicons/Restoration_Druid.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.druid,
     role: "healer",
     name: "",
@@ -572,7 +584,7 @@ const SpecArray = [
         name: "Tranquility",
         image: "images/groupbuffs/Tranquility.png",
         srcSet:
-          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranquility_sm.png 22w",
+          "images/groupbuffs/Tranquility.png 28w, images/groupbuffs/Tranqu_smility.png 22w",
         icon: "images/spellicons/Tranquility.png",
         link: "https://www.wowhead.com/wotlk/spell=48447/tranquility",
         spellId: "48447",
@@ -583,6 +595,8 @@ const SpecArray = [
     text: "Beast Mastery Hunter",
     image: "images/Beast_Mastery_Hunter.webp",
     icon: "images/classicons/Beast_Mastery_Hunter.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.hunter,
     role: "dps",
     name: "",
@@ -687,7 +701,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -699,6 +713,8 @@ const SpecArray = [
     text: "Marksman Hunter",
     image: "images/Marksman_Hunter.webp",
     icon: "images/classicons/Marksman_Hunter.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.hunter,
     role: "dps",
     name: "",
@@ -772,7 +788,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -784,6 +800,8 @@ const SpecArray = [
     text: "Survival Hunter",
     image: "images/Survival_Hunter.webp",
     icon: "images/classicons/Survival_Hunter.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.hunter,
     role: "dps",
     name: "",
@@ -866,7 +884,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -878,6 +896,8 @@ const SpecArray = [
     text: "Arcane Mage",
     image: "images/Arcane_Mage.webp",
     icon: "images/classicons/Arcane_Mage.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.mage,
     role: "dps",
     name: "",
@@ -941,7 +961,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -953,6 +973,8 @@ const SpecArray = [
     text: "Fire Mage",
     image: "images/Fire_Mage.webp",
     icon: "images/classicons/Fire_Mage.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.mage,
     role: "dps",
     name: "",
@@ -1016,7 +1038,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -1028,6 +1050,8 @@ const SpecArray = [
     text: "Frost Mage",
     image: "images/Frost_Mage.webp",
     icon: "images/classicons/Frost_Mage.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.mage,
     role: "dps",
     name: "",
@@ -1099,7 +1123,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -1111,6 +1135,8 @@ const SpecArray = [
     text: "Holy Paladin",
     image: "images/Holy_Paladin.webp",
     icon: "images/classicons/Holy_Paladin.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.paladin,
     role: "healer",
     name: "",
@@ -1276,7 +1302,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -1286,7 +1312,7 @@ const SpecArray = [
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
         srcSet:
-          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 22w",
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacr_smifice.png 22w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
@@ -1298,6 +1324,8 @@ const SpecArray = [
     text: "Protection Paladin",
     image: "images/Protection_Paladin.webp",
     icon: "images/classicons/Protection_Paladin.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.paladin,
     role: "tank",
     name: "",
@@ -1488,7 +1516,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -1498,7 +1526,7 @@ const SpecArray = [
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
         srcSet:
-          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 22w",
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacr_smifice.png 22w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
@@ -1510,6 +1538,8 @@ const SpecArray = [
     text: "Retribution Paladin",
     image: "images/Retribution_Paladin.webp",
     icon: "images/classicons/Retribution_Paladin.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.paladin,
     role: "dps",
     name: "",
@@ -1707,7 +1737,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -1717,7 +1747,7 @@ const SpecArray = [
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
         srcSet:
-          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 22w",
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacr_smifice.png 22w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
@@ -1729,6 +1759,8 @@ const SpecArray = [
     text: "Discipline Priest",
     image: "images/Discipline_Priest.webp",
     icon: "images/classicons/Discipline_Priest.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.priest,
     role: "healer",
     name: "",
@@ -1844,7 +1876,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -1856,6 +1888,8 @@ const SpecArray = [
     text: "Holy Priest",
     image: "images/Holy_Priest.webp",
     icon: "images/classicons/Holy_Priest.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.priest,
     role: "healer",
     name: "",
@@ -1956,7 +1990,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -1968,6 +2002,8 @@ const SpecArray = [
     text: "Shadow Priest",
     image: "images/Shadow_Priest.webp",
     icon: "images/classicons/Shadow_Priest.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.priest,
     role: "dps",
     name: "",
@@ -2070,7 +2106,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -2080,7 +2116,7 @@ const SpecArray = [
         name: "Vampiric Embrace",
         image: "images/groupbuffs/Vampiric_Embrace.png",
         srcSet:
-          "images/groupbuffs/Vampiric_Embrace.png 28w, images/groupbuffs/Vampiric_Embrace_sm.png 22w",
+          "images/groupbuffs/Vampiric_Embrace.png 28w, images/groupbuffs/Vampiric_Em_smbrace.png 22w",
         icon: "images/spellicons/Vampiric_Embrace.png",
         link: "https://www.wowhead.com/wotlk/spell=15286/vampiric-embrace",
         spellId: "15286",
@@ -2091,6 +2127,8 @@ const SpecArray = [
     text: "Assassination Rogue",
     image: "images/Assassination_Rogue.webp",
     icon: "images/classicons/Assassination_Rogue.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.rogue,
     role: "dps",
     name: "",
@@ -2169,6 +2207,8 @@ const SpecArray = [
     text: "Combat Rogue",
     image: "images/Combat_Rogue.webp",
     icon: "images/classicons/Combat_Rogue.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.rogue,
     role: "dps",
     name: "",
@@ -2247,6 +2287,8 @@ const SpecArray = [
     text: "Subtlety Rogue",
     image: "images/Subtlety_Rogue.webp",
     icon: "images/classicons/Subtlety_Rogue.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.rogue,
     role: "dps",
     name: "",
@@ -2318,6 +2360,8 @@ const SpecArray = [
     text: "Elemental Shaman",
     image: "images/Elemental_Shaman.webp",
     icon: "images/classicons/Elemental_Shaman.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.shaman,
     role: "dps",
     name: "",
@@ -2492,7 +2536,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -2502,7 +2546,7 @@ const SpecArray = [
         name: "Healing Stream Totem",
         image: "images/groupbuffs/Healing_Stream_Totem.png",
         srcSet:
-          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream_Totem_sm.png 22w",
+          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream__smTotem.png 22w",
         icon: "images/spellicons/Healing_Stream_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
         spellId: "58757",
@@ -2511,7 +2555,7 @@ const SpecArray = [
         name: "Cleansing Totem",
         image: "images/groupbuffs/Cleansing_Totem.png",
         srcSet:
-          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing_Totem_sm.png 22w",
+          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing__smTotem.png 22w",
         icon: "images/spellicons/Cleansing_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
         spellId: "8170",
@@ -2520,7 +2564,7 @@ const SpecArray = [
         name: "Tremor Totem",
         image: "images/groupbuffs/Tremor_Totem.png",
         srcSet:
-          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor_Totem_sm.png 22w",
+          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor__smTotem.png 22w",
         icon: "images/spellicons/Tremor_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
         spellId: "8143",
@@ -2531,6 +2575,8 @@ const SpecArray = [
     text: "Enhancement Shaman",
     image: "images/Enhancement_Shaman.webp",
     icon: "images/classicons/Enhancement_Shaman.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.shaman,
     role: "dps",
     name: "",
@@ -2696,7 +2742,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -2706,7 +2752,7 @@ const SpecArray = [
         name: "Healing Stream Totem",
         image: "images/groupbuffs/Healing_Stream_Totem.png",
         srcSet:
-          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream_Totem_sm.png 22w",
+          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream__smTotem.png 22w",
         icon: "images/spellicons/Healing_Stream_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
         spellId: "58757",
@@ -2715,7 +2761,7 @@ const SpecArray = [
         name: "Cleansing Totem",
         image: "images/groupbuffs/Cleansing_Totem.png",
         srcSet:
-          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing_Totem_sm.png 22w",
+          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing__smTotem.png 22w",
         icon: "images/spellicons/Cleansing_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
         spellId: "8170",
@@ -2724,7 +2770,7 @@ const SpecArray = [
         name: "Tremor Totem",
         image: "images/groupbuffs/Tremor_Totem.png",
         srcSet:
-          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor_Totem_sm.png 22w",
+          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor__smTotem.png 22w",
         icon: "images/spellicons/Tremor_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
         spellId: "8143",
@@ -2735,6 +2781,8 @@ const SpecArray = [
     text: "Restoration Shaman",
     image: "images/Restoration_Shaman.webp",
     icon: "images/classicons/Restoration_Shaman.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.shaman,
     role: "healer",
     name: "",
@@ -2914,7 +2962,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -2924,7 +2972,7 @@ const SpecArray = [
         name: "Healing Stream Totem",
         image: "images/groupbuffs/Healing_Stream_Totem.png",
         srcSet:
-          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream_Totem_sm.png 22w",
+          "images/groupbuffs/Healing_Stream_Totem.png 28w, images/groupbuffs/Healing_Stream__smTotem.png 22w",
         icon: "images/spellicons/Healing_Stream_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=58757/healing-stream-totem",
         spellId: "58757",
@@ -2933,7 +2981,7 @@ const SpecArray = [
         name: "Cleansing Totem",
         image: "images/groupbuffs/Cleansing_Totem.png",
         srcSet:
-          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing_Totem_sm.png 22w",
+          "images/groupbuffs/Cleansing_Totem.png 28w, images/groupbuffs/Cleansing__smTotem.png 22w",
         icon: "images/spellicons/Cleansing_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8170/cleansing-totem",
         spellId: "8170",
@@ -2942,7 +2990,7 @@ const SpecArray = [
         name: "Tremor Totem",
         image: "images/groupbuffs/Tremor_Totem.png",
         srcSet:
-          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor_Totem_sm.png 22w",
+          "images/groupbuffs/Tremor_Totem.png 28w, images/groupbuffs/Tremor__smTotem.png 22w",
         icon: "images/spellicons/Tremor_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=8143/tremor-totem",
         spellId: "8143",
@@ -2951,7 +2999,7 @@ const SpecArray = [
         name: "Mana Tide Totem",
         image: "images/groupbuffs/Mana_Tide_Totem.png",
         srcSet:
-          "images/groupbuffs/Mana_Tide_Totem.png 28w, images/groupbuffs/Mana_Tide_Totem_sm.png 22w",
+          "images/groupbuffs/Mana_Tide_Totem.png 28w, images/groupbuffs/Mana_Tide__smTotem.png 22w",
         icon: "images/spellicons/Mana_Tide_Totem.png",
         link: "https://www.wowhead.com/wotlk/spell=16190/mana-tide-totem",
         spellId: "16190",
@@ -2962,6 +3010,8 @@ const SpecArray = [
     text: "Arms Warrior",
     image: "images/Arms_Warrior.webp",
     icon: "images/classicons/Arms_Warrior.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.warrior,
     role: "dps",
     name: "",
@@ -3068,7 +3118,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -3080,6 +3130,8 @@ const SpecArray = [
     text: "Fury Warrior",
     image: "images/Fury_Warrior.webp",
     icon: "images/classicons/Fury_Warrior.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.warrior,
     role: "dps",
     name: "",
@@ -3170,7 +3222,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -3183,6 +3235,8 @@ const SpecArray = [
     text: "Protection Warrior",
     image: "images/Protection_Warrior.webp",
     icon: "images/classicons/Protection_Warrior.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.warrior,
     role: "tank",
     name: "",
@@ -3272,7 +3326,7 @@ const SpecArray = [
         name: "Heroic Presence",
         image: "images/groupbuffs/heroic_presence.png",
         srcSet:
-          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_presence_sm.png 22w",
+          "images/groupbuffs/heroic_presence.png 28w, images/groupbuffs/heroic_pre_smsence.png 22w",
         icon: "images/spellicons/heroic_presence.png",
         link: "https://www.wowhead.com/wotlk/spell=6562/heroic-presence",
         spellId: "6562",
@@ -3284,6 +3338,8 @@ const SpecArray = [
     text: "Affliction Warlock",
     image: "images/Affliction_Warlock.webp",
     icon: "images/classicons/Affliction_Warlock.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.warlock,
     role: "dps",
     name: "",
@@ -3379,6 +3435,8 @@ const SpecArray = [
     text: "Demonology Warlock",
     image: "images/Demonology_Warlock.webp",
     icon: "images/classicons/Demonology_Warlock.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.warlock,
     role: "dps",
     name: "",
@@ -3475,6 +3533,8 @@ const SpecArray = [
     text: "Destruction Warlock",
     image: "images/Destruction_Warlock.webp",
     icon: "images/classicons/Destruction_Warlock.webp",
+    srcSet:
+      "images/classimages/Blood_Death_Knight_sm.webp 28w, images/classimages/Blood_Death_Knight.webp 40w, images/classimages/Blood_Death_Knight_lg.webp 56w",
     color: COLORS.warlock,
     role: "dps",
     name: "",

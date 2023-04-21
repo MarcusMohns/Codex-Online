@@ -18,6 +18,7 @@ const ClassAndSpec = ({ nextStep, handleChange, values, SpecArray }) => {
       <StyledInputBtn
         text={spec.text}
         image={spec.image}
+        srcSet={spec.srcSet}
         name="classAndSpec"
         handleChange={handleChange}
         key={spec.text}

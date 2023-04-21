@@ -28,7 +28,15 @@ const InputBtn = styled.label`
   }
 `;
 
-const StyledRadioBtn = ({ text, image, name, handleChange, type, checked }) => {
+const StyledRadioBtn = ({
+  text,
+  image,
+  name,
+  handleChange,
+  type,
+  checked,
+  srcSet,
+}) => {
   return (
     <InputBtn htmlFor={text} className="input-radio-and-image">
       <input
@@ -39,7 +47,12 @@ const StyledRadioBtn = ({ text, image, name, handleChange, type, checked }) => {
         value={text}
         checked={checked}
       />
-      <img src={image} alt="spec" />
+      <img
+        src={image}
+        srcSet={srcSet}
+        alt="spec"
+        sizes="(min-width: 1000px) 56px, (min-width: 660px) 40px, 28px"
+      />
     </InputBtn>
   );
 };
