@@ -154,7 +154,7 @@ function Arenapointcalculator() {
       <AlertDiv
         text="All calculations under 150 rating are inaccurate and will display
         'Unknown'."
-        background="#CD5C5C"
+        background="#9C3030"
         height={45}
         color="white"
       />
