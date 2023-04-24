@@ -90,7 +90,7 @@ const SpecArray = [
   },
   {
     text: "Unholy Death Knight",
-    image: "images/Unholy_Death_Knight.webp",
+    image: "images/classimages/Unholy_Death_Knight.webp",
     icon: "images/classicons/Unholy_Death_Knight.webp",
     srcSet:
       "images/classimages/Unholy_Death_Knight_sm.webp 28w, images/classimages/Unholy_Death_Knight.webp 40w, images/classimages/Unholy_Death_Knight_lg.webp 56w",
@@ -169,7 +169,7 @@ const SpecArray = [
   },
   {
     text: "Frost Death Knight",
-    image: "images/Frost_Death_Knight.webp",
+    image: "images/classimages/Frost_Death_Knight.webp",
     icon: "images/classicons/Frost_Death_Knight.webp",
     srcSet:
       "images/classimages/Frost_Death_Knight_sm.webp 28w, images/classimages/Frost_Death_Knight.webp 40w, images/classimages/Frost_Death_Knight_lg.webp 56w",
@@ -240,7 +240,7 @@ const SpecArray = [
   },
   {
     text: "Balance Druid",
-    image: "images/Balance_Druid.webp",
+    image: "images/classimages/Balance_Druid.webp",
     icon: "images/classicons/Balance_Druid.webp",
     srcSet:
       "images/classimages/Balance_Druid_sm.webp 28w, images/classimages/Balance_Druid.webp 40w, images/classimages/Balance_Druid_lg.webp 56w",
@@ -370,7 +370,7 @@ const SpecArray = [
   },
   {
     text: "Feral Druid",
-    image: "images/Feral_Druid.webp",
+    image: "images/classimages/Feral_Druid.webp",
     icon: "images/classicons/Feral_Druid.webp",
     srcSet:
       "images/classimages/Feral_Druid_sm.webp 28w, images/classimages/Feral_Druid.webp 40w, images/classimages/Feral_Druid_lg.webp 56w",
@@ -494,7 +494,7 @@ const SpecArray = [
   },
   {
     text: "Restoration Druid",
-    image: "images/Restoration_Druid.webp",
+    image: "images/classimages/Restoration_Druid.webp",
     icon: "images/classicons/Restoration_Druid.webp",
     srcSet:
       "images/classimages/Restoration_Druid_sm.webp 28w, images/classimages/Restoration_Druid.webp 40w, images/classimages/Restoration_Druid_lg.webp 56w",
@@ -593,7 +593,7 @@ const SpecArray = [
   },
   {
     text: "Beast Mastery Hunter",
-    image: "images/Beast_Mastery_Hunter.webp",
+    image: "images/classimages/Beast_Mastery_Hunter.webp",
     icon: "images/classicons/Beast_Mastery_Hunter.webp",
     srcSet:
       "images/classimages/Beast_Mastery_Hunter_sm.webp 28w, images/classimages/Beast_Mastery_Hunter.webp 40w, images/classimages/Beast_Mastery_Hunter_lg.webp 56w",
@@ -711,7 +711,7 @@ const SpecArray = [
   },
   {
     text: "Marksman Hunter",
-    image: "images/Marksman_Hunter.webp",
+    image: "images/classimages/Marksman_Hunter.webp",
     icon: "images/classicons/Marksman_Hunter.webp",
     srcSet:
       "images/classimages/Marksman_Hunter_sm.webp 28w, images/classimages/Marksman_Hunter.webp 40w, images/classimages/Marksman_Hunter_lg.webp 56w",
@@ -798,7 +798,7 @@ const SpecArray = [
   },
   {
     text: "Survival Hunter",
-    image: "images/Survival_Hunter.webp",
+    image: "images/classimages/Survival_Hunter.webp",
     icon: "images/classicons/Survival_Hunter.webp",
     srcSet:
       "images/classimages/Survival_Hunter_sm.webp 28w, images/classimages/Survival_Hunter.webp 40w, images/classimages/Survival_Hunter_lg.webp 56w",
@@ -894,7 +894,7 @@ const SpecArray = [
   },
   {
     text: "Arcane Mage",
-    image: "images/Arcane_Mage.webp",
+    image: "images/classimages/Arcane_Mage.webp",
     icon: "images/classicons/Arcane_Mage.webp",
     srcSet:
       "images/classimages/Arcane_Mage_sm.webp 28w, images/classimages/Arcane_Mage.webp 40w, images/classimages/Arcane_Mage_lg.webp 56w",
@@ -971,7 +971,7 @@ const SpecArray = [
   },
   {
     text: "Fire Mage",
-    image: "images/Fire_Mage.webp",
+    image: "images/classimages/Fire_Mage.webp",
     icon: "images/classicons/Fire_Mage.webp",
     srcSet:
       "images/classimages/Fire_Mage_sm.webp 28w, images/classimages/Fire_Mage.webp 40w, images/classimages/Fire_Mage_lg.webp 56w",
@@ -1048,7 +1048,7 @@ const SpecArray = [
   },
   {
     text: "Frost Mage",
-    image: "images/Frost_Mage.webp",
+    image: "images/classimages/Frost_Mage.webp",
     icon: "images/classicons/Frost_Mage.webp",
     srcSet:
       "images/classimages/Frost_Mage_sm.webp 28w, images/classimages/Frost_Mage.webp 40w, images/classimages/Frost_Mage_lg.webp 56w",
@@ -1133,7 +1133,7 @@ const SpecArray = [
   },
   {
     text: "Holy Paladin",
-    image: "images/Holy_Paladin.webp",
+    image: "images/classimages/Holy_Paladin.webp",
     icon: "images/classicons/Holy_Paladin.webp",
     srcSet:
       "images/classimages/Holy_Paladin_sm.webp 28w, images/classimages/Holy_Paladin.webp 40w, images/classimages/Holy_Paladin_lg.webp 56w",
@@ -1322,7 +1322,7 @@ const SpecArray = [
   },
   {
     text: "Protection Paladin",
-    image: "images/Protection_Paladin.webp",
+    image: "images/classimages/Protection_Paladin.webp",
     icon: "images/classicons/Protection_Paladin.webp",
     srcSet:
       "images/classimages/Protection_Paladin_sm.webp 28w, images/classimages/Protection_Paladin.webp 40w, images/classimages/Protection_Paladin_lg.webp 56w",
@@ -1536,7 +1536,7 @@ const SpecArray = [
   },
   {
     text: "Retribution Paladin",
-    image: "images/Retribution_Paladin.webp",
+    image: "images/classimages/Retribution_Paladin.webp",
     icon: "images/classicons/Retribution_Paladin.webp",
     srcSet:
       "images/classimages/Retribution_Paladin_sm.webp 28w, images/classimages/Retribution_Paladin.webp 40w, images/classimages/Retribution_Paladin_lg.webp 56w",
@@ -1757,7 +1757,7 @@ const SpecArray = [
   },
   {
     text: "Discipline Priest",
-    image: "images/Discipline_Priest.webp",
+    image: "images/classimages/Discipline_Priest.webp",
     icon: "images/classicons/Discipline_Priest.webp",
     srcSet:
       "images/classimages/Discipline_Priest_sm.webp 28w, images/classimages/Discipline_Priest.webp 40w, images/classimages/Discipline_Priest_lg.webp 56w",
@@ -1886,7 +1886,7 @@ const SpecArray = [
   },
   {
     text: "Holy Priest",
-    image: "images/Holy_Priest.webp",
+    image: "images/classimages/Holy_Priest.webp",
     icon: "images/classicons/Holy_Priest.webp",
     srcSet:
       "images/classimages/Holy_Priest_sm.webp 28w, images/classimages/Holy_Priest.webp 40w, images/classimages/Holy_Priest_lg.webp 56w",
@@ -2000,7 +2000,7 @@ const SpecArray = [
   },
   {
     text: "Shadow Priest",
-    image: "images/Shadow_Priest.webp",
+    image: "images/classimages/Shadow_Priest.webp",
     icon: "images/classicons/Shadow_Priest.webp",
     srcSet:
       "images/classimages/Shadow_Priest_sm.webp 28w, images/classimages/Shadow_Priest.webp 40w, images/classimages/Shadow_Priest_lg.webp 56w",
@@ -2125,7 +2125,7 @@ const SpecArray = [
   },
   {
     text: "Assassination Rogue",
-    image: "images/Assassination_Rogue.webp",
+    image: "images/classimages/Assassination_Rogue.webp",
     icon: "images/classicons/Assassination_Rogue.webp",
     srcSet:
       "images/classimages/Assassination_Rogue_sm.webp 28w, images/classimages/Assassination_Rogue.webp 40w, images/classimages/Assassination_Rogue_lg.webp 56w",
@@ -2205,7 +2205,7 @@ const SpecArray = [
   },
   {
     text: "Combat Rogue",
-    image: "images/Combat_Rogue.webp",
+    image: "images/classimages/Combat_Rogue.webp",
     icon: "images/classicons/Combat_Rogue.webp",
     srcSet:
       "images/classimages/Combat_Rogue_sm.webp 28w, images/classimages/Combat_Rogue.webp 40w, images/classimages/Combat_Rogue_lg.webp 56w",
@@ -2285,7 +2285,7 @@ const SpecArray = [
   },
   {
     text: "Subtlety Rogue",
-    image: "images/Subtlety_Rogue.webp",
+    image: "images/classimages/Subtlety_Rogue.webp",
     icon: "images/classicons/Subtlety_Rogue.webp",
     srcSet:
       "images/classimages/Subtlety_Rogue_sm.webp 28w, images/classimages/Subtlety_Rogue.webp 40w, images/classimages/Subtlety_Rogue_lg.webp 56w",
@@ -2358,7 +2358,7 @@ const SpecArray = [
 
   {
     text: "Elemental Shaman",
-    image: "images/Elemental_Shaman.webp",
+    image: "images/classimages/Elemental_Shaman.webp",
     icon: "images/classicons/Elemental_Shaman.webp",
     srcSet:
       "images/classimages/Elemental_Shaman_sm.webp 28w, images/classimages/Elemental_Shaman.webp 40w, images/classimages/Elemental_Shaman_lg.webp 56w",
@@ -2573,7 +2573,7 @@ const SpecArray = [
   },
   {
     text: "Enhancement Shaman",
-    image: "images/Enhancement_Shaman.webp",
+    image: "images/classimages/Enhancement_Shaman.webp",
     icon: "images/classicons/Enhancement_Shaman.webp",
     srcSet:
       "images/classimages/Enhancement_Shaman_sm.webp 28w, images/classimages/Enhancement_Shaman.webp 40w, images/classimages/Enhancement_Shaman_lg.webp 56w",
@@ -2779,7 +2779,7 @@ const SpecArray = [
   },
   {
     text: "Restoration Shaman",
-    image: "images/Restoration_Shaman.webp",
+    image: "images/classimages/Restoration_Shaman.webp",
     icon: "images/classicons/Restoration_Shaman.webp",
     srcSet:
       "images/classimages/Restoration_Shaman_sm.webp 28w, images/classimages/Restoration_Shaman.webp 40w, images/classimages/Restoration_Shaman_lg.webp 56w",
@@ -3008,7 +3008,7 @@ const SpecArray = [
   },
   {
     text: "Arms Warrior",
-    image: "images/Arms_Warrior.webp",
+    image: "images/classimages/Arms_Warrior.webp",
     icon: "images/classicons/Arms_Warrior.webp",
     srcSet:
       "images/classimages/Arms_Warrior_sm.webp 28w, images/classimages/Arms_Warrior.webp 40w, images/classimages/Arms_Warrior_lg.webp 56w",
@@ -3128,7 +3128,7 @@ const SpecArray = [
   },
   {
     text: "Fury Warrior",
-    image: "images/Fury_Warrior.webp",
+    image: "images/classimages/Fury_Warrior.webp",
     icon: "images/classicons/Fury_Warrior.webp",
     srcSet:
       "images/classimages/Fury_Warrior_sm.webp 28w, images/classimages/Fury_Warrior.webp 40w, images/classimages/Fury_Warrior_lg.webp 56w",
@@ -3233,7 +3233,7 @@ const SpecArray = [
 
   {
     text: "Protection Warrior",
-    image: "images/Protection_Warrior.webp",
+    image: "images/classimages/Protection_Warrior.webp",
     icon: "images/classicons/Protection_Warrior.webp",
     srcSet:
       "images/classimages/Protection_Warrior_sm.webp 28w, images/classimages/Protection_Warrior.webp 40w, images/classimages/Protection_Warrior_lg.webp 56w",
@@ -3336,7 +3336,7 @@ const SpecArray = [
   },
   {
     text: "Affliction Warlock",
-    image: "images/Affliction_Warlock.webp",
+    image: "images/classimages/Affliction_Warlock.webp",
     icon: "images/classicons/Affliction_Warlock.webp",
     srcSet:
       "images/classimages/Affliction_Warlock_sm.webp 28w, images/classimages/Affliction_Warlock.webp 40w, images/classimages/Affliction_Warlock_lg.webp 56w",
@@ -3433,7 +3433,7 @@ const SpecArray = [
   },
   {
     text: "Demonology Warlock",
-    image: "images/Demonology_Warlock.webp",
+    image: "images/classimages/Demonology_Warlock.webp",
     icon: "images/classicons/Demonology_Warlock.webp",
     srcSet:
       "images/classimages/Demonology_Warlock_sm.webp 28w, images/classimages/Demonology_Warlock.webp 40w, images/classimages/Demonology_Warlock_lg.webp 56w",
@@ -3531,7 +3531,7 @@ const SpecArray = [
   },
   {
     text: "Destruction Warlock",
-    image: "images/Destruction_Warlock.webp",
+    image: "images/classimages/Destruction_Warlock.webp",
     icon: "images/classicons/Destruction_Warlock.webp",
     srcSet:
       "images/classimages/Destruction_Warlock_sm.webp 28w, images/classimages/Destruction_Warlock.webp 40w, images/classimages/Destruction_Warlock_lg.webp 56w",
