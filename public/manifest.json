@@ -9,7 +9,7 @@
     },
     {
       "src": "images/big-icon.png",
-      "sizes": "144x144",
+      "sizes": "96x96",
       "type": "image/png",
       "purpose": "any"
     }
