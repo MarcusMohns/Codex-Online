@@ -90,12 +90,12 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
             <span>
               PvE or PvP{" "}
               <img
-                src="images/pve.webp"
+                src="images/pve_sm.webp"
                 className="results-pve-icon"
                 alt="pve"
               />
               <img
-                src="images/pvp.webp"
+                src="images/pvp_sm.webp"
                 className="results-pvp-icon"
                 alt="pvp"
               />
@@ -105,7 +105,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
             <span>
               Draenei{" "}
               <img
-                src="images/heroic_presence.webp"
+                src="images/heroic_presence_sm.webp"
                 className="draenei-icon"
                 alt="draenei"
               />
@@ -118,7 +118,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
             <span>
               Raid Spell Hit Buff{" "}
               <img
-                src="images/raidHitBuff.webp"
+                src="images/raidHitBuff_sm.webp"
                 alt="raid hit buff"
                 className="raid-hit-buff-icon"
               />
@@ -140,7 +140,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               <span>
                 PvE
                 <img
-                  src="images/pve.webp"
+                  src="images/pve_sm.webp"
                   className="results-pve-icon"
                   alt="pve"
                 />
@@ -149,7 +149,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               <span>
                 PvP
                 <img
-                  src="images/pvp.webp"
+                  src="images/pvp_sm.webp"
                   className="results-pvp-icon"
                   alt="pvp"
                 />

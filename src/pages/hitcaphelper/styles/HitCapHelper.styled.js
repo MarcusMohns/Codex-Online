@@ -340,8 +340,8 @@ export const ResultsContainer = styled.div`
     .results-pve-icon,
     .results-pvp-icon {
       margin-left: 5px;
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
     }
   }
 
@@ -356,12 +356,12 @@ export const ResultsContainer = styled.div`
     .draenei-icon,
     .results-pve-icon,
     .results-pvp-icon {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
     }
     .raid-hit-buff-icon {
-      height: 24px;
-      width: 48px;
+      height: 29px;
+      width: 58px;
     }
 
     span {

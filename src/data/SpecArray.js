@@ -1312,7 +1312,7 @@ const SpecArray = [
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
         srcSet:
-          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice.png 22w",
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 22w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
@@ -1526,7 +1526,7 @@ const SpecArray = [
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
         srcSet:
-          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice.png 22w",
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 22w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
@@ -1747,7 +1747,7 @@ const SpecArray = [
         name: "Divine Sacrifice",
         image: "images/groupbuffs/Divine_Sacrifice.png",
         srcSet:
-          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice.png 22w",
+          "images/groupbuffs/Divine_Sacrifice.png 28w, images/groupbuffs/Divine_Sacrifice_sm.png 22w",
         icon: "images/spellicons/Divine_Sacrifice.png",
         link: "https://www.wowhead.com/wotlk/spell=64205/divine-sacrifice",
         spellId: "64205",
