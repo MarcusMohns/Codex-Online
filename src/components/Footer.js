@@ -50,6 +50,7 @@ const Footer = () => {
       >
         <img
           src="images/small-coffee.png"
+          srcSet="images/small-coffee.png 1x, images/coffee.png 2x"
           alt="Buy Me A Coffee"
           className="buy-me-a-coffee-btn"
         />

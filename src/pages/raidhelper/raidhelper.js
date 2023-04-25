@@ -740,6 +740,7 @@ const RaidHelper = () => {
                 <img
                   className="role-icon"
                   src="images/Tank_icon.png"
+                  srcSet="images/Tank_icon.png 1x"
                   alt="tank"
                 />
               </p>
@@ -748,6 +749,7 @@ const RaidHelper = () => {
                 <img
                   className="role-icon"
                   src="images/Healer_icon.png"
+                  srcSet="images/Healer_icon.png 1x"
                   alt="healer"
                 />
               </p>
@@ -756,6 +758,7 @@ const RaidHelper = () => {
                 <img
                   className="role-icon"
                   src="images/DPS_icon.png"
+                  srcSet="images/DPS_icon.png 1x"
                   alt="dps"
                 />
               </p>

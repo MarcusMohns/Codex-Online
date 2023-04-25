@@ -4,7 +4,12 @@ const SpecButton = ({ spec, handleSpecTooltip, onClick }) => {
     <StyledSpecButton color={spec.color}>
       <div className="text-and-image-button-container" onClick={onClick}>
         <p className="specbutton-text">{spec.text}</p>
-        <img src={spec.icon} alt="spec icon" className="specbutton-image" />
+        <img
+          src={spec.icon}
+          srcSet={`${spec.icon} 1x, ${spec.image} 1.82x`}
+          alt="spec icon"
+          className="specbutton-image"
+        />
       </div>
       <InfoIcon id="info-image" onClick={() => handleSpecTooltip(spec)} />
     </StyledSpecButton>
