@@ -3,6 +3,7 @@ import {
   ArenaContainer,
   ArenaSection,
   Main,
+  TextContainer,
 } from "./styles/ArenaPointCalculator.styled";
 import AlertDiv from "./components/AlertDiv";
 
@@ -158,6 +159,12 @@ function Arenapointcalculator() {
         height={45}
         color="white"
       />
+      <TextContainer>
+        Arena Points are rewarded at the start of the new reset every week. 5v5
+        Provides the most points per rating and 2v2 the least. You must
+        participate in at least 10 games in the bracket you want to receive
+        points from to be eligible.
+      </TextContainer>
       <ArenaSection>
         <ArenaContainer>
           <h2>Arena Points Rewarded</h2>

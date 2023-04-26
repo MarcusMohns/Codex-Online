@@ -32,6 +32,20 @@ export const ArenaSection = styled.section`
   }
 `;
 
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: ${COLORS.fadedBackground};
+  padding: 1rem;
+  margin: 1rem auto;
+  color: white;
+  max-width: 70%;
+  font-family: sans-serif;
+`;
+
 export const ArenaContainer = styled.div`
   display: flex;
   flex-direction: column;
