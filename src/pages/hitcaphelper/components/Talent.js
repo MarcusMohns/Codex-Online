@@ -23,8 +23,12 @@ const StyledTalent = styled.div`
     }
   }
 
-  input {
+  .slider {
     cursor: pointer;
+  }
+  .talent-img {
+    width: 56px;
+    height: 56px;
   }
 
   .points-status {
@@ -50,11 +54,12 @@ const Talent = ({
 }) => {
   return (
     <StyledTalent>
-      <img src={image} alt="talent" />
+      <img src={image} alt="talent" className="talent-img" />
       {text}
       <input
         type="range"
         name="talent"
+        className="slider"
         onChange={handleChange("talentPoints", multiplier)}
         min="0"
         max={max}
