@@ -40,6 +40,7 @@ const RaidBuffsPresent = ({
             id="hitbuff"
             text={3}
             image={"images/raidHitBuff.webp"}
+            srcSet={"images/raidHitBuff.webp 1x"}
             name="raidHitBuff"
             handleChange={handleChange}
             type={"checkbox"}

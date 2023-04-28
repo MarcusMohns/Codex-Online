@@ -37,6 +37,7 @@ const TalentPoints = ({
         <Talent
           text="Nerves of Cold Steel"
           image="images/nerves_of_cold_steel.webp"
+          srcSet="images/nerves_of_cold_steel.webp 1x"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -53,6 +54,7 @@ const TalentPoints = ({
         <Talent
           text="Balance of Power"
           image="images/balance_of_power.webp"
+          srcSet="images/balance_of_power.webp 1x"
           max="2"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -71,6 +73,7 @@ const TalentPoints = ({
         <Talent
           text="Focused Aim"
           image="images/focused_aim.webp"
+          srcSet="images/focused_aim.webp 1x"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -88,6 +91,7 @@ const TalentPoints = ({
         <Talent
           text="Arcane Focus+Precision"
           image="images/arcane_focus_precision.webp"
+          srcSet="images/arcane_focus_precision.webp 1x"
           max="6"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -104,6 +108,7 @@ const TalentPoints = ({
         <Talent
           text="Shadow Focus"
           image="images/shadow_focus.webp"
+          srcSet="images/shadow_focus.webp 1x"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -121,6 +126,7 @@ const TalentPoints = ({
         <Talent
           text="Precision"
           image="images/precision.webp"
+          srcSet="images/precision.webp 1x"
           max="5"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -137,6 +143,7 @@ const TalentPoints = ({
         <Talent
           text="Elemental Precision"
           image="images/elemental_precision.webp"
+          srcSet="images/elemental_precision.webp 1x"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -151,6 +158,7 @@ const TalentPoints = ({
         <Talent
           text="Dual Wield Specialization"
           image="images/dual_wield_specialization.webp"
+          srcSet="images/dual_wield_specialization.webp 1x"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -168,6 +176,7 @@ const TalentPoints = ({
         <Talent
           text="Suppression"
           image="images/suppression.webp"
+          srcSet="images/suppression.webp 1x"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}
@@ -185,6 +194,7 @@ const TalentPoints = ({
         <Talent
           text="Precision"
           image="images/precision.webp"
+          srcSet="images/precision.webp 1x"
           max="3"
           handleChange={handleChange}
           talentPoints={talentPoints}

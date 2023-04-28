@@ -48,6 +48,7 @@ const Draenei = ({
             id="draenei"
             text={1}
             image={"images/heroic_presence.webp"}
+            srcSet={"images/heroic_presence.webp 1x"}
             name="draenei"
             handleChange={handleChange}
             type={"checkbox"}

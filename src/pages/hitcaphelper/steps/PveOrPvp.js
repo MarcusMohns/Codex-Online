@@ -29,6 +29,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           <StyledInputBtn
             text={"pvp"}
             image={"images/pvp.webp"}
+            srcSet={`images/pvp.webp 1x`}
             name="pveOrPvp"
             handleChange={handleChange}
             type={"radio"}
@@ -40,6 +41,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           <StyledInputBtn
             text={"pve"}
             image={"images/pve.webp"}
+            srcSet={`images/pve.webp 1x`}
             name="pveOrPvp"
             handleChange={handleChange}
             type={"radio"}
