@@ -555,6 +555,17 @@ export const StyledPlayerCheckboxes = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 1rem;
+
+  textarea {
+    background-color: rgba(169, 169, 169, 0.2);
+    color: rgba(248, 248, 255, 1);
+    resize: none;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
   .totem-element-container {
     display: flex;
     align-items: center;

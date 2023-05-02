@@ -41,4 +41,5 @@ export const initialPlayerState = {
   buffs: [],
   utility: [],
   playerBuffs: [],
+  note: "",
 };

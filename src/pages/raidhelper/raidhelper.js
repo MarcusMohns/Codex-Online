@@ -173,6 +173,10 @@ const RaidHelper = () => {
     }
   };
 
+  const handleNote = () => {
+    console.log("blurred!");
+  };
+
   const focusName = (nameText) => {
     let nameTextObject = document.querySelector(`#${nameText}`);
     nameTextObject.focus();
@@ -695,6 +699,8 @@ const RaidHelper = () => {
             playerRoleEdit={playerRoleEdit}
             handleDraenei={handleDraenei}
             handleUtility={handleUtility}
+            focusName={focusName}
+            handleNote={handleNote}
           />
         )}
         {raidCooldownsOpen && (

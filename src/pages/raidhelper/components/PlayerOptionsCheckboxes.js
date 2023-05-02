@@ -30,6 +30,8 @@ const PlayerOptionsCheckboxes = ({
   playerRoleEdit,
   handleDraenei,
   handleUtility,
+  focusName,
+  handleNote,
 }) => {
   const editBuffState = async (player, buff, e) => {
     if (buff.name === "Totem of Wrath") {
@@ -382,6 +384,21 @@ const PlayerOptionsCheckboxes = ({
           </div>
         </StyledPlayerCheckboxes>
       )}
+
+      <StyledPlayerCheckboxes>
+        <h2 className="player-options-subheader">Draenei Check</h2>
+        <div className="option-container">
+          <textarea
+            id="text-note-area"
+            onClick={() => focusName("text-note-area")}
+            onBlur={() => handleNote()}
+            autoComplete="off"
+            spellCheck="false"
+            defaultValue={player.note}
+            maxLength={200}
+          ></textarea>
+        </div>
+      </StyledPlayerCheckboxes>
     </>
   );
 };
