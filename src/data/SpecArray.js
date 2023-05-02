@@ -2423,8 +2423,8 @@ const SpecArray = [
         name: "Totem of Wrath",
         image: "images/Totem_Of_Wrath.png",
         icon: "images/spellicons/Totem_Of_Wrath.png",
-        link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
-        spellId: "3738",
+        link: "https://www.wowhead.com/wotlk/spell=57722/totem-of-wrath",
+        spellId: "57722",
         checked: true,
       },
       {
@@ -2432,8 +2432,8 @@ const SpecArray = [
         name: "Totem of Wrath",
         image: "images/Totem_Of_Wrath.png",
         icon: "images/spellicons/Totem_Of_Wrath.png",
-        link: "https://www.wowhead.com/wotlk/spell=3738/wrath-of-air-totem",
-        spellId: "3738",
+        link: "https://www.wowhead.com/wotlk/spell=57722/totem-of-wrath",
+        spellId: "57722",
         checked: true,
       },
       {
