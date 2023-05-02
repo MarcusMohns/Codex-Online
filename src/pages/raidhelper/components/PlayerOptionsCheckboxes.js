@@ -396,6 +396,8 @@ const PlayerOptionsCheckboxes = ({
             spellCheck="false"
             defaultValue={player.note}
             placeholder="Player note..."
+            cols={40}
+            rows={5}
             maxLength={200}
           ></textarea>
         </div>
