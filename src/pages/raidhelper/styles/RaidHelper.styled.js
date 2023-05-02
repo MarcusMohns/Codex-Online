@@ -291,9 +291,9 @@ export const StyledClassToolTip = styled.div`
   .class-tooltip-buff {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: fit-content;
+    width: 100%;
     user-select: none;
     font-size: 0.8rem;
     padding: 0.5rem;
