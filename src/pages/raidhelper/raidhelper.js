@@ -173,14 +173,35 @@ const RaidHelper = () => {
     }
   };
 
-  const handleNote = () => {
-    console.log("blurred!");
+  const handleNote = (playerId, textAreaId) => {
+    const textArea = document.querySelector(`#${textAreaId}`);
+    const playerArray = JSON.parse(JSON.stringify(raid.players));
+    const newGroups = JSON.parse(JSON.stringify(raid.groups));
+    const newPlayers = playerArray.map((player) => {
+      if (player.id === playerId) {
+        player.note = textArea.value;
+      }
+      return player;
+    });
+
+    for (let group in newGroups) {
+      for (let ids of newGroups[group].playerIds) {
+        if (ids.id === playerId) {
+          ids.note = textArea.value;
+        }
+      }
+    }
+
+    setRaid({ ...raid, players: newPlayers, groups: newGroups });
   };
 
   const focusName = (nameText) => {
     let nameTextObject = document.querySelector(`#${nameText}`);
     nameTextObject.focus();
-    nameTextObject.value = "";
+
+    if (nameTextObject.type === "text") {
+      nameTextObject.value = "";
+    }
 
     nameTextObject.addEventListener("keydown", function confirmEdit(e) {
       if (e.key === "Enter" || e.key === "Escape") {

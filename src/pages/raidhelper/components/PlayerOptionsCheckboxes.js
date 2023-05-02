@@ -386,15 +386,16 @@ const PlayerOptionsCheckboxes = ({
       )}
 
       <StyledPlayerCheckboxes>
-        <h2 className="player-options-subheader">Draenei Check</h2>
+        <h2 className="player-options-subheader">Player Note</h2>
         <div className="option-container">
           <textarea
-            id="text-note-area"
-            onClick={() => focusName("text-note-area")}
-            onBlur={() => handleNote()}
+            id={`text-area-input-${player.id}`}
+            onClick={() => focusName(`text-area-input-${player.id}`)}
+            onBlur={() => handleNote(player.id, `text-area-input-${player.id}`)}
             autoComplete="off"
             spellCheck="false"
             defaultValue={player.note}
+            placeholder="Player note..."
             maxLength={200}
           ></textarea>
         </div>

@@ -561,7 +561,7 @@ export const StyledPlayerCheckboxes = styled.div`
     color: rgba(248, 248, 255, 1);
     resize: none;
     outline: none;
-
+    font-family: "Raleway", sans-serif;
     &:focus {
       outline: none;
     }
