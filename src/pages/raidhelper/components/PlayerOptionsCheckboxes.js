@@ -178,14 +178,19 @@ const PlayerOptionsCheckboxes = ({
           <h2 className="player-options-subheader">Role Select</h2>
           <div className="option-container">
             <div className="role-toggler-container">
-              <label className="role-select-label">DPS{dpsIcon}</label>
+              <label htmlFor="role-toggle" className="role-select-label">
+                DPS {dpsIcon}
+              </label>
               <input
+                id="role-toggle"
                 type="checkbox"
                 className="toggle-role"
                 defaultChecked={player.role === "tank" ? true : false}
                 onChange={(e) => playerRoleEdit(player, e)}
               />
-              <label className="role-select-label">Tank{tankIcon}</label>
+              <label htmlFor="role-toggle" className="role-select-label">
+                Tank {tankIcon}
+              </label>
             </div>
           </div>
         </StyledPlayerCheckboxes>
