@@ -1433,6 +1433,8 @@ export const StyledPlayerOptions = styled.div`
     margin-left: 5px;
   }
   .options-class-image {
+    width: 22px;
+    height: 22px;
     margin-left: 5px;
   }
   .options-close-window-icn {
