@@ -767,9 +767,9 @@ export const BuffsDiv = styled.div`
     align-items: center;
     box-sizing: border-box;
     color: ${COLORS.offWhite};
+    flex-wrap: 0;
     padding: 1rem;
     padding-left: 0rem;
-    font-weight: bold;
     font-size: 1.2rem;
   }
 
