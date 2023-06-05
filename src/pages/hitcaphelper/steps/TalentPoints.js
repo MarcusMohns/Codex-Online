@@ -96,6 +96,7 @@ const TalentPoints = ({
           handleChange={handleChange}
           talentPoints={talentPoints}
           multiplier="1"
+          imgSize={{ width: "115px", height: "58px" }}
         />
       );
       //    Mage - Arcane focus (0/3) 1% hit per point (spells)

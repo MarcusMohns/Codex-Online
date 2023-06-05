@@ -26,10 +26,6 @@ const StyledTalent = styled.div`
   .slider {
     cursor: pointer;
   }
-  .talent-img {
-    width: 56px;
-    height: 56px;
-  }
 
   .points-status {
     font-family: Sans-serif;
@@ -46,6 +42,7 @@ const StyledTalent = styled.div`
 
 const Talent = ({
   image,
+  imgSize,
   srcSet,
   text,
   max,
@@ -55,7 +52,13 @@ const Talent = ({
 }) => {
   return (
     <StyledTalent>
-      <img src={image} alt="talent" srcSet={srcSet} className="talent-img" />
+      <img
+        src={image}
+        alt="talent"
+        srcSet={srcSet}
+        className="talent-img"
+        style={imgSize}
+      />
       {text}
       <input
         type="range"
