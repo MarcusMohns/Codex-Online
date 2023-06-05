@@ -63,6 +63,7 @@ const Talent = ({
       <input
         type="range"
         name="talent"
+        id="talent-slider"
         className="slider"
         onChange={handleChange("talentPoints", multiplier)}
         min="0"
@@ -71,9 +72,9 @@ const Talent = ({
         defaultValue={talentPoints ? talentPoints : 0}
       ></input>
       <span></span>
-      <span className="points-status">
+      <label for="talent-slider" className="points-status">
         {talentPoints ? `${talentPoints / multiplier} / ${max}` : `0 / ${max}`}
-      </span>
+      </label>
     </StyledTalent>
   );
 };
