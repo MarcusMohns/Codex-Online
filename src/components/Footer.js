@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { RiDiscordFill } from "@react-icons/all-files/ri/RiDiscordFill";
+import { SiBuymeacoffee } from "@react-icons/all-files/si/SiBuymeacoffee";
 import { Link } from "react-router-dom";
 
 const StyledFooter = styled.footer`
@@ -27,15 +28,14 @@ const StyledFooter = styled.footer`
       text-decoration: underline;
     }
   }
-
-  .buy-me-a-coffee-btn {
-    width: 136px;
-    height: 38px;
-  }
 `;
 
 const DiscordIcon = styled(RiDiscordFill)`
   font-size: 2rem;
+`;
+
+const CoffeeIcon = styled(SiBuymeacoffee)`
+  font-size: 1.7rem;
 `;
 
 const Footer = () => {
@@ -48,12 +48,8 @@ const Footer = () => {
         href="https://www.buymeacoffee.com/Wowcodex"
         className="small-coffee-btn"
       >
-        <img
-          src="images/small-coffee.png"
-          srcSet="images/small-coffee.png 1x, images/coffee.png 2x"
-          alt="Buy Me A Coffee"
-          className="buy-me-a-coffee-btn"
-        />
+        <CoffeeIcon />
+        Support
       </a>
       <Link to="/terms" className="link-button">
         Terms
