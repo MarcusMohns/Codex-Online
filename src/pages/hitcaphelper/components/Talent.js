@@ -72,7 +72,7 @@ const Talent = ({
         defaultValue={talentPoints ? talentPoints : 0}
       ></input>
       <span></span>
-      <label for="talent-slider" className="points-status">
+      <label htmlFor="talent-slider" className="points-status">
         {talentPoints ? `${talentPoints / multiplier} / ${max}` : `0 / ${max}`}
       </label>
     </StyledTalent>
