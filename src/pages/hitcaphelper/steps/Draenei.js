@@ -43,7 +43,7 @@ const Draenei = ({
       <StyledCapHeader>Will you have a Draenei in your party?</StyledCapHeader>
       <RadioContainer>
         <div className="draenei-container">
-          <label htmlFor="3"> Heroic Presence </label>
+          <label htmlFor="draenei"> Heroic Presence </label>
           <StyledInputBtn
             id="draenei"
             text={1}

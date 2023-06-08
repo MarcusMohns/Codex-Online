@@ -36,13 +36,14 @@ const StyledRadioBtn = ({
   type,
   checked,
   srcSet,
+  id,
 }) => {
   return (
-    <InputBtn htmlFor={text} className="input-radio-and-image">
+    <InputBtn htmlFor={id} className="input-radio-and-image">
       <input
         type={type}
         onChange={handleChange(name)}
-        id={text}
+        id={id}
         name={name}
         value={text}
         checked={checked}
