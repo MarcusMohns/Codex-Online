@@ -278,6 +278,7 @@ export const ResultsContainer = styled.div`
     font-size: 1.1rem;
     padding: 1rem;
     text-align: center;
+    word-break: break-word;
 
     .sub-text {
       font-size: 1rem;
