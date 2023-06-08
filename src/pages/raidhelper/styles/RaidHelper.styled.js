@@ -1334,11 +1334,19 @@ export const UtilityHeaderButton = styled.div`
   transform: translateY(0);
   transition: transform 150ms;
 
+  .hide-text {
+    display: none;
+  }
   &:hover {
     transform: translateY(-2px);
   }
   @media (min-width: 600px) {
     font-size: 1rem;
+
+    .hide-text {
+      display: flex;
+      margin-left: 5px;
+    }
   }
 `;
 export const RaidGroupContainer = styled.div`
@@ -1938,7 +1946,6 @@ export const CombatResIcon = styled(FiActivity)`
 `;
 export const RaidCooldownIcon = styled(RiFilePaper2Line)`
   font-size: 1.4em;
-  margin-right: 5px;
 `;
 export const MisdirectionCooldownIcon = styled(FiShuffle)`
   font-size: 1.1em;

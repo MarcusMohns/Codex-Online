@@ -836,7 +836,7 @@ const RaidHelper = () => {
               }}
             >
               <RaidCooldownIcon />
-              Cooldowns
+              <span className="hide-text">Cooldowns</span>
             </UtilityHeaderButton>
           </ContentHeader>
           <Utilities utilities={utilities} />
