@@ -1287,14 +1287,14 @@ export const RaidHeaderButton = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   color: ${COLORS.lightText};
   background-color: #1f8421;
   border-radius: 5px;
   margin-right: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
-  padding: 0.2rem 0.6rem;
+  padding: 0.4rem;
+  margin-bottom: 2px;
   text-align: center;
   user-select: none;
   white-space: nowrap;
@@ -1304,6 +1304,10 @@ export const RaidHeaderButton = styled.div`
   transition: transform 150ms;
   &:hover {
     transform: translateY(-2px);
+  }
+
+  @media (min-width: 600px) {
+    font-size: 1rem;
   }
 `;
 
