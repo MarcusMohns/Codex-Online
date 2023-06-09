@@ -1287,7 +1287,7 @@ export const RaidHeaderButton = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: ${COLORS.lightText};
+  color: #fff;
   background-color: #1f8421;
   border-radius: 5px;
   margin-right: 1rem;
@@ -1564,7 +1564,7 @@ export const StyledSaveMenu = styled.div`
         color: grey;
         margin-right: 5px;
         width: 3.5rem;
-      } // heres where we are! =)
+      }
       .save-buttons {
         border: none;
         color: white;
