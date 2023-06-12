@@ -102,6 +102,11 @@ section {
 }
 body {
   line-height: 1;
+  overflow: overlay;
+  background: linear-gradient(#212124, #151517);
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(38, 72, 116, 0.9) transparent;
 }
 ol,
 ul {
@@ -129,35 +134,30 @@ html {
   min-height: 100%;
 }
 
-body {
-  overflow: overlay;
-  background: linear-gradient(#212124, #151517);
-}
-
 /* custom scrollbar */
 
 /*Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(38, 72, 116, 0.9) transparent;
-}
 
 /* Chrome, Edge, and Safari. */
-::-webkit-scrollbar {
+div::-webkit-scrollbar,
+section::-webkit-scrollbar {
   width: 15px;
 }
 
-::-webkit-scrollbar-track {
+div::-webkit-scrollbar-track,
+section::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb {
+div::-webkit-scrollbar-thumb,
+section::-webkit-scrollbar-thumb {
   background-color: rgba(19, 77, 148, 0.9);
   border-radius: 20px;
   border: 3px solid transparent;
   background-clip: content-box;
 }
 
-::-webkit-scrollbar-thumb:hover {
+div::-webkit-scrollbar-thumb:hover,
+section::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
 }
