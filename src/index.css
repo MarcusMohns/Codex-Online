@@ -144,7 +144,7 @@ body {
 
 /* Chrome, Edge, and Safari. */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -154,7 +154,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(19, 77, 148, 0.9);
   border-radius: 20px;
-  border: 6px solid transparent;
+  border: 3px solid transparent;
   background-clip: content-box;
 }
 
