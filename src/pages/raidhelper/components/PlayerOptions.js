@@ -40,7 +40,7 @@ const PlayerOptions = ({
             </div>
           </div>
         </div>
-        <div className="menu-content">
+        <div className="options-menu-content">
           <PlayerOptionsCheckboxes
             className="player-checkboxes-menu"
             player={player}
