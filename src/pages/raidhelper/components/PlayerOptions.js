@@ -40,16 +40,18 @@ const PlayerOptions = ({
             </div>
           </div>
         </div>
-        <PlayerOptionsCheckboxes
-          className="player-checkboxes-menu"
-          player={player}
-          editBuffs={editBuffs}
-          playerRoleEdit={playerRoleEdit}
-          handleDraenei={handleDraenei}
-          handleUtility={handleUtility}
-          focusName={focusName}
-          handleNote={handleNote}
-        />
+        <div className="menu-content">
+          <PlayerOptionsCheckboxes
+            className="player-checkboxes-menu"
+            player={player}
+            editBuffs={editBuffs}
+            playerRoleEdit={playerRoleEdit}
+            handleDraenei={handleDraenei}
+            handleUtility={handleUtility}
+            focusName={focusName}
+            handleNote={handleNote}
+          />
+        </div>
       </div>
     </StyledPlayerOptions>
   );

@@ -1401,10 +1401,20 @@ export const StyledPlayerOptions = styled.div`
     overflow-y: scroll;
     max-height: 500px;
 
+    .menu-content {
+      overflow-y: scroll;
+      max-height: 500px;
+    }
+
     @media (min-width: 1300px) {
       width: 600px;
       max-height: 650px;
       overflow-y: auto;
+
+      .menu-content {
+        overflow-y: auto;
+        max-height: 650px;
+      }
     }
     @keyframes revealMenu {
       0% {
