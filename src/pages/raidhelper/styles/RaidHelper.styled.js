@@ -195,14 +195,21 @@ export const StyledClassToolTip = styled.div`
     border-radius: 10px;
     animation-name: revealMenu;
     animation-duration: 0.3s;
-    overflow-y: scroll;
-    max-height: 500px;
+
     padding-bottom: 1rem;
+
+    .class-tooltip-content {
+      overflow-y: scroll;
+      max-height: 500px;
+    }
 
     @media (min-width: 1300px) {
       width: 600px;
-      max-height: 650px;
-      overflow-y: auto;
+
+      .class-tooltip-content {
+        max-height: 650px;
+        overflow-y: auto;
+      }
     }
     @keyframes revealMenu {
       0% {
@@ -1401,7 +1408,7 @@ export const StyledPlayerOptions = styled.div`
     overflow-y: scroll;
     max-height: 500px;
 
-    .menu-content {
+    .options-menu-content {
       overflow-y: scroll;
       max-height: 500px;
     }
@@ -1411,7 +1418,7 @@ export const StyledPlayerOptions = styled.div`
       max-height: 650px;
       overflow-y: auto;
 
-      .menu-content {
+      .options-menu-content {
         overflow-y: auto;
         max-height: 650px;
       }
