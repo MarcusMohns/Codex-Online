@@ -6,14 +6,13 @@ const StyledGroupBuff = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   img {
     width: 22px;
     height: 22px;
-    margin: 0 0.5px;
   }
 
   @media (min-width: 820px) {
+    padding: 0px;
     img {
       width: 28px;
       height: 28px;
@@ -42,7 +41,7 @@ const GroupBuff = ({ group }) => {
               >
                 <img
                   srcSet={groupBuff.srcSet}
-                  sizes="(min-width:1200px) 28px, 22px"
+                  sizes="(max-width:820px) 22px, 28px"
                   src={groupBuff.image}
                   alt="group buff"
                 />
@@ -60,7 +59,7 @@ const GroupBuff = ({ group }) => {
               >
                 <img
                   srcSet={groupBuff.srcSet}
-                  sizes="(min-width:1200px)  28px, 22px"
+                  sizes="(max-width:820px)  22px, 28px"
                   src={groupBuff.image}
                   alt="group buff"
                 />
@@ -80,7 +79,7 @@ const GroupBuff = ({ group }) => {
             >
               <img
                 srcSet={groupBuff.srcSet}
-                sizes="(min-width:820px)  28px, 22px"
+                sizes="(max-width:820px)  22px, 28px"
                 src={groupBuff.image}
                 alt="group buff"
               />
