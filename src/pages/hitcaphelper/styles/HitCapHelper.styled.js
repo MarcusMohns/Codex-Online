@@ -301,7 +301,7 @@ export const ResultsContainer = styled.div`
     color: pink;
   }
   .additional-hit-night-elf {
-    color: green;
+    color: #00cc00;
   }
   .additional-hit-retribution-paladin {
     color: ${COLORS.paladin};
@@ -310,7 +310,7 @@ export const ResultsContainer = styled.div`
     color: ${COLORS.rogue};
   }
   .additional-hit-undead {
-    color: red;
+    color: #ff3d3d;
   }
 
   @keyframes fade-in {
