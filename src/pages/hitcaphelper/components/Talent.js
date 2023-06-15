@@ -37,6 +37,8 @@ const StyledTalent = styled.div`
 
   img {
     padding-bottom: 0.6rem;
+    height: 56px;
+    width: 56px;
   }
 `;
 
