@@ -28,6 +28,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           <label htmlFor="pvp">PvP</label>
           <StyledInputBtn
             text={"pvp"}
+            id={"pvp"}
             image={"images/pvp.webp"}
             srcSet={`images/pvp.webp 1x`}
             name="pveOrPvp"
@@ -40,6 +41,7 @@ const PveOrPvp = ({ nextStep, prevStep, handleChange, values }) => {
           <label htmlFor="pve">PvE</label>
           <StyledInputBtn
             text={"pve"}
+            id={"pve"}
             image={"images/pve.webp"}
             srcSet={`images/pve.webp 1x`}
             name="pveOrPvp"
