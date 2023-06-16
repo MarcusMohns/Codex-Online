@@ -1345,6 +1345,10 @@ export const UtilityHeaderButton = styled.div`
   transform: translateY(0);
   transition: transform 150ms;
 
+  .utility-btn-text {
+    margin-left: 5px;
+  }
+
   .hide-text {
     display: none;
   }

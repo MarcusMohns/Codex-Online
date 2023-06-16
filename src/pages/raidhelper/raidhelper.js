@@ -757,7 +757,7 @@ const RaidHelper = () => {
               marginRight="none"
             >
               <RaidCooldownIcon />
-              Index
+              <span className="utility-btn-text">Index</span>
             </UtilityHeaderButton>
 
             <div className="raid-count">{raidCount[0]} / 25 </div>
