@@ -252,6 +252,8 @@ export const StyledClassToolTip = styled.div`
   .class-tooltip-class-image {
     margin-left: 5px;
     border-radius: 10px;
+    width: 22px;
+    height: 22px;
   }
   .class-tooltip-close-window-icn {
     cursor: pointer;
