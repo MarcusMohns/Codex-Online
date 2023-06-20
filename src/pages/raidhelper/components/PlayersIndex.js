@@ -43,7 +43,7 @@ const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
       ];
       player.name === ""
         ? (dpsText = [...dpsText, `${player.text}`])
-        : (dpsText = [...dpsText, `${player.name}`]);
+        : (dpsText = [...dpsText, `@${player.name}`]);
     } else if (player.role === "healer") {
       healers = [
         ...healers,
@@ -57,7 +57,7 @@ const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
       ];
       player.name === ""
         ? (healersText = [...healersText, `${player.text}`])
-        : (healersText = [...healersText, `${player.name}`]);
+        : (healersText = [...healersText, `@${player.name}`]);
     } else if (player.role === "tank") {
       tanks = [
         ...tanks,
@@ -71,7 +71,7 @@ const PlayersIndex = ({ playersIndexOpen, setPlayersIndexOpen, players }) => {
       ];
       player.name === ""
         ? (tanksText = [...tanksText, `${player.text}`])
-        : (tanksText = [...tanksText, `${player.name}`]);
+        : (tanksText = [...tanksText, `@${player.name}`]);
     }
   }
   const clipBoardText = `Tanks: ${tanksText}\nHealers: ${healersText}\nDPS: ${dpsText}`;
