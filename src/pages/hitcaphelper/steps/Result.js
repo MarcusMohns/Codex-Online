@@ -353,6 +353,17 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               </div>
             </div>
           )}
+          {casters.includes(classAndSpec) ? (
+            <div className="results-text">
+              For <span className="bold-result">1% spell hit</span> you need{" "}
+              <span className="bold-result">26.23 hit</span>
+            </div>
+          ) : (
+            <div className="results-text">
+              For <span className="bold-result">1% melee hit</span> you need{" "}
+              <span className="bold-result">32.79 hit</span>
+            </div>
+          )}
         </div>
         <img
           src="images/character_sheet.png"
