@@ -6,11 +6,8 @@ import {
   ButtonContainer,
   AdditionalHitContainer,
 } from "../styles/HitCapHelper.styled";
-import {
-  CheckCircle,
-  CrossIcon,
-} from "../../raidhelper/styles/RaidHelper.styled";
 
+import ResultTable from "../components/ResultTable";
 const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
   const previous = (e) => {
     e.preventDefault();
@@ -78,111 +75,6 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
       ? Math.ceil(hit * 26.23)
       : Math.ceil(hit * 32.79);
   };
-
-  const resultTable = (
-    <table>
-      <thead>
-        <tr>
-          <th>
-            <span>Class and Spec</span>
-          </th>
-          <th>
-            <span>
-              PvE or PvP{" "}
-              <img
-                src="images/pve_sm.webp"
-                className="results-pve-icon"
-                alt="pve"
-              />
-              <img
-                src="images/pvp_sm.webp"
-                className="results-pvp-icon"
-                alt="pvp"
-              />
-            </span>
-          </th>
-          <th>
-            <span>
-              Draenei{" "}
-              <img
-                src="images/heroic_presence_sm.webp"
-                className="draenei-icon"
-                alt="draenei"
-              />
-            </span>
-          </th>
-          <th>
-            <span>Talent Points</span>
-          </th>
-          <th>
-            <span>
-              Raid Spell Hit Buff{" "}
-              <img
-                src="images/raidHitBuff_sm.webp"
-                alt="raid hit buff"
-                className="raid-hit-buff-icon"
-              />
-            </span>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td
-            id={classAndSpec
-              .substring(classAndSpec.indexOf(" ") + 1)
-              .toLowerCase()}
-          >
-            {classAndSpec}
-          </td>
-          <td>
-            {pveOrPvp === "pve" ? (
-              <span>
-                PvE
-                <img
-                  src="images/pve_sm.webp"
-                  className="results-pve-icon"
-                  alt="pve"
-                />
-              </span>
-            ) : (
-              <span>
-                PvP
-                <img
-                  src="images/pvp_sm.webp"
-                  className="results-pvp-icon"
-                  alt="pvp"
-                />
-              </span>
-            )}
-          </td>
-          <td>
-            {draenei ? (
-              <span>
-                Yes <CheckCircle />
-              </span>
-            ) : (
-              <span>
-                No <CrossIcon />
-              </span>
-            )}
-          </td>
-          <td>{talentPoints ? `${talentPoints}%` : "0%"}</td>
-          <td>
-            {raidHitBuff ? (
-              <span>
-                Yes <CheckCircle />
-              </span>
-            ) : (
-              <span>
-                No <CrossIcon />
-              </span>
-            )}
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  );
 
   const additionalHitTable = (
     <table className="additional-hit-table">
@@ -333,7 +225,8 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
   return (
     <MainContentContainer>
       <ResultsContainer>
-        {resultTable}
+        <ResultTable values={values} />
+
         <div>
           {hit > 0 ? (
             <div className="results-text">
