@@ -8,14 +8,18 @@ import {
 } from "../styles/HitCapHelper.styled";
 import AdditionalHitTable from "../components/AdditionalHitTable";
 import ResultTable from "../components/ResultTable";
+import HitCapCalculator from "../components/HitCapCalculator";
+
 const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
+  const isCaster = casters.includes(values.classAndSpec) ? true : false;
+
   const previous = (e) => {
     e.preventDefault();
 
     if (hitTalentClasses.includes(values.classAndSpec)) {
       prevStep(1);
     } else {
-      casters.includes(values.classAndSpec) ? prevStep(2) : prevStep(3);
+      isCaster ? prevStep(2) : prevStep(3);
     }
   };
   const {
@@ -25,13 +29,14 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
     raidHitBuff = 0,
     draenei = 0,
   } = values;
+
   const pveSpellCap = 17;
   const pvpSpellCap = 4;
   const pvePhysCap = 8;
   const pvpPhysCap = 5;
 
   const cap = () => {
-    if (casters.includes(classAndSpec)) {
+    if (isCaster) {
       if (pveOrPvp === "pve") {
         // if the selected class is a caster in PvE
         return pveSpellCap;
@@ -42,7 +47,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
         return pvpSpellCap;
       }
     }
-    if (!casters.includes(classAndSpec)) {
+    if (!isCaster) {
       if (pveOrPvp === "pve") {
         // if the selected class is a melee in PvE
 
@@ -62,7 +67,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
       return;
     }
 
-    if (casters.includes(classAndSpec)) {
+    if (isCaster) {
       return target - talentPoints - raidHitBuff - draenei;
     } else {
       return target - talentPoints - draenei;
@@ -71,9 +76,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
   const hit = result();
 
   const hitInInt = () => {
-    return casters.includes(classAndSpec)
-      ? Math.ceil(hit * 26.23)
-      : Math.ceil(hit * 32.79);
+    return isCaster ? Math.ceil(hit * 26.23) : Math.ceil(hit * 32.79);
   };
 
   return (
@@ -100,7 +103,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               </div>
             </div>
           )}
-          {casters.includes(classAndSpec) ? (
+          {isCaster ? (
             <div className="results-text">
               For <span className="bold-result">1% spell hit</span> you need{" "}
               <span className="bold-result">26.23 hit</span>
@@ -127,6 +130,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
           </AdditionalHitContainer>
         )}
       </ResultsContainer>
+      <HitCapCalculator values={values} isCaster={isCaster} />
 
       <ButtonContainer>
         <StyledNextPrevButton onClick={previous}>
