@@ -56,7 +56,6 @@ export const ArenaContainer = styled.div`
   max-width: 100%;
   margin: 1rem;
   padding: 1rem;
-  background-color: ${COLORS.fadedBackground};
 
   @media (min-width: 1200px) {
     padding: 2rem;
@@ -72,7 +71,6 @@ export const ArenaContainer = styled.div`
     width: 100%;
     background-color: ${COLORS.fadedPrimary};
     color: ${COLORS.offWhite};
-    margin-bottom: 1rem;
     box-shadow: 0 2px 6px -1px #000;
     user-select: none;
   }
@@ -80,9 +78,10 @@ export const ArenaContainer = styled.div`
   table {
     letter-spacing: 1px;
     border-spacing: 0.5rem;
-    border-radius: 5px;
-    background-color: ${COLORS.fadedBlack};
+    border-radius: 3px;
     max-width: 100%;
+    box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.6);
+    background-color: #222;
 
     .results {
       color: ${COLORS.goldHighlight};
@@ -94,7 +93,7 @@ export const ArenaContainer = styled.div`
     thead {
       tr {
         th {
-          background-color: ${COLORS.fadedBackground};
+          background-color: ${COLORS.fadedGrey};
           color: ${COLORS.offWhite};
           box-shadow: 0 2px 6px -1px #000;
           border-radius: 5px;
@@ -117,7 +116,7 @@ export const ArenaContainer = styled.div`
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    background-color: ${COLORS.fadedBackground};
+    background-color: ${COLORS.fadedGrey};
     height: 2.5rem;
   }
   input {
@@ -137,7 +136,6 @@ export const ArenaContainer = styled.div`
     }
     table {
       padding: 1rem;
-      box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.6);
 
       thead {
         tr {
