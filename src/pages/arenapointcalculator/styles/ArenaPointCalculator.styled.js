@@ -100,7 +100,8 @@ export const ArenaContainer = styled.div`
           user-select: none;
           text-align: center;
           vertical-align: center;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
+          padding: 1rem;
         }
       }
     }
