@@ -1,11 +1,30 @@
 import React from "react";
+import { useReducer } from "react";
 import { ArenaContainer } from "../../arenapointcalculator/styles/ArenaPointCalculator.styled";
 
-const HitCapCalculator = ({ isCaster }) => {
+const HitCapCalculator = ({ values, isCaster }) => {
+  const formReducer = (state, event) => {
+    return {
+      ...state,
+      [event.name]: event.value,
+    };
+  };
+  const [formData, setFormData] = useReducer(formReducer, {});
+
+  const ratingChange = (event) => {
+    setFormData({
+      name: event.target.name,
+      value: event.target.value,
+    });
+  };
+
+  const missingHitRating = () => {};
+
+  console.log(formData);
   return (
     <ArenaContainer>
       <h2>Hit cap calculator</h2>
-      <form autoComplete="off">
+      <form autoComplete="off" onChange={ratingChange}>
         <table>
           <thead>
             <tr>
@@ -17,31 +36,13 @@ const HitCapCalculator = ({ isCaster }) => {
           <tbody>
             <tr>
               <th className="bracket-col">
-                <input type="number" name="twos" id="twos" />
+                <input type="number" name="hitRating" id="hitRating" />
               </th>
-              <td className="results">Result</td>
-              <td className="results" id="twosResults">
-                Hey
+              <td className="results" id="hitMissing">
+                {formData.hitRating}
               </td>
-            </tr>
-
-            <tr>
-              <th className="bracket-col">
-                <input type="number" name="twos" id="twos" />
-              </th>
-              <td className="results">Result</td>
-              <td className="results" id="threesResults">
-                Hey
-              </td>
-            </tr>
-
-            <tr>
-              <th className="bracket-col">
-                <input type="number" name="twos" id="twos" />
-              </th>
-              <td className="results">Result</td>
-              <td className="results" id="fivesResults">
-                Hey
+              <td className="results" id="hitRatinghitMissing">
+                {formData.hitRating}
               </td>
             </tr>
           </tbody>
