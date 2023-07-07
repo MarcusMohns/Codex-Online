@@ -30,39 +30,41 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
     draenei = 0,
   } = values;
 
-  const pveSpellCap = 17;
-  const pvpSpellCap = 4;
-  const pvePhysCap = 8;
-  const pvpPhysCap = 5;
+  const caps = {
+    pveSpellCap: 17,
+    pvpSpellCap: 4,
+    pvePhysCap: 8,
+    pvpPhysCap: 5,
+  };
 
   const cap = () => {
     if (isCaster) {
       if (pveOrPvp === "pve") {
         // if the selected class is a caster in PvE
-        return pveSpellCap;
+        return caps.pveSpellCap;
       }
       if (pveOrPvp === "pvp") {
         // if the selected class is a caster in PvP
 
-        return pvpSpellCap;
+        return caps.pvpSpellCap;
       }
     }
     if (!isCaster) {
       if (pveOrPvp === "pve") {
         // if the selected class is a melee in PvE
 
-        return pvePhysCap;
+        return caps.pvePhysCap;
       }
       if (pveOrPvp === "pvp") {
         // if the selected class is a melee in PvP
-        return pvpPhysCap;
+        return caps.pvpPhysCap;
       }
     }
     return 0;
   };
-  const result = () => {
-    const target = cap();
+  const target = cap();
 
+  const result = () => {
     if (!pveOrPvp || !classAndSpec) {
       return;
     }
@@ -130,7 +132,13 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
           </AdditionalHitContainer>
         )}
       </ResultsContainer>
-      <HitCapCalculator values={values} isCaster={isCaster} />
+      <HitCapCalculator
+        values={values}
+        isCaster={isCaster}
+        target={target}
+        hit={hit}
+        hitInInt={hitInInt}
+      />
 
       <ButtonContainer>
         <StyledNextPrevButton onClick={previous}>

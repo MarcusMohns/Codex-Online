@@ -1,30 +1,22 @@
 import React from "react";
-import { useReducer } from "react";
+import { useState } from "react";
 import { ArenaContainer } from "../../arenapointcalculator/styles/ArenaPointCalculator.styled";
 
-const HitCapCalculator = ({ values, isCaster }) => {
-  const formReducer = (state, event) => {
-    return {
-      ...state,
-      [event.name]: event.value,
-    };
-  };
-  const [formData, setFormData] = useReducer(formReducer, {});
+const HitCapCalculator = ({ values, isCaster, target }) => {
+  const [hit, setHit] = useState({
+    rating: "0",
+    percent: "0",
+  });
 
-  const ratingChange = (event) => {
-    setFormData({
-      name: event.target.name,
-      value: event.target.value,
-    });
+  const missingHit = (event) => {
+    const input = event.target.value;
+    setHit({ rating: input, percent: input });
   };
 
-  const missingHitRating = () => {};
-
-  console.log(formData);
   return (
     <ArenaContainer>
       <h2>Hit cap calculator</h2>
-      <form autoComplete="off" onChange={ratingChange}>
+      <form autoComplete="off" onChange={missingHit}>
         <table>
           <thead>
             <tr>
@@ -39,10 +31,10 @@ const HitCapCalculator = ({ values, isCaster }) => {
                 <input type="number" name="hitRating" id="hitRating" />
               </th>
               <td className="results" id="hitMissing">
-                {formData.hitRating}
+                {hit.rating}
               </td>
               <td className="results" id="hitRatinghitMissing">
-                {formData.hitRating}
+                {hit.percent}
               </td>
             </tr>
           </tbody>
