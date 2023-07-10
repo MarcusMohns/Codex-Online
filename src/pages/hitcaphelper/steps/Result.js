@@ -136,7 +136,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
         values={values}
         isCaster={isCaster}
         target={target}
-        hit={hit}
+        natHit={hit}
         hitInInt={hitInInt}
       />
 
