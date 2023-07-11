@@ -2,28 +2,28 @@ import React from "react";
 import { useState } from "react";
 import { ArenaContainer } from "../../arenapointcalculator/styles/ArenaPointCalculator.styled";
 
-const HitCapCalculator = ({ values, isCaster, target, natHit }) => {
+const HitCapCalculator = ({ values, multiplier, hitNeeded }) => {
   const [hit, setHit] = useState({
-    rating: "0",
-    percent: "0",
+    rating: Math.ceil(hitNeeded * multiplier),
+    percent: hitNeeded,
   });
 
   const missingHit = (event) => {
-    const input = parseInt(event.target.value);
-    let output = 0;
+    const inputRating = event.target.value ? parseInt(event.target.value) : 0;
+    const inputPercent = inputRating / multiplier;
 
-    if (isCaster) {
-      if (values.pveOrPvp === "pve") {
-        const currentHit = natHit * 26.23;
-        const targetInRating = target * 26.23;
-        console.log(input);
-        console.log(targetInRating - (currentHit + input));
+    let hitRating = hitNeeded * multiplier - inputRating;
+    let hitPercent = hitNeeded - inputPercent;
 
-        output = targetInRating - (currentHit + input);
-        setHit({ rating: Math.floor(output), percent: input });
+    setHit({
+      rating: Math.ceil(hitRating),
+      percent: Math.floor(hitPercent * 100) / 100,
+    });
+  };
 
-        console.log();
-      }
+  const maxLengthHandler = (event) => {
+    if (event.target.value > 4) {
+      event.target.value = event.target.value.substring(0, 4);
     }
   };
 
@@ -42,13 +42,18 @@ const HitCapCalculator = ({ values, isCaster, target, natHit }) => {
           <tbody>
             <tr>
               <th className="bracket-col">
-                <input type="number" name="hitRating" id="hitRating" />
+                <input
+                  type="number"
+                  name="hitRating"
+                  id="hitRating"
+                  onInput={maxLengthHandler}
+                />
               </th>
               <td className="results" id="hitMissing">
-                {hit.rating}
+                {hit.percent}
               </td>
               <td className="results" id="hitRatinghitMissing">
-                {hit.percent}
+                {hit.rating}
               </td>
             </tr>
           </tbody>
