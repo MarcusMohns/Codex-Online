@@ -134,10 +134,8 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
       </ResultsContainer>
       <HitCapCalculator
         values={values}
-        isCaster={isCaster}
-        target={target}
-        natHit={hit}
-        hitInInt={hitInInt}
+        multiplier={isCaster ? 26.23 : 32.79}
+        hitNeeded={hit}
       />
 
       <ButtonContainer>
