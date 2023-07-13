@@ -93,10 +93,8 @@ export const ArenaContainer = styled.div`
     thead {
       tr {
         th {
-          background-color: ${COLORS.fadedGrey};
           color: ${COLORS.offWhite};
           box-shadow: 0 2px 6px -1px #000;
-          border-radius: 5px;
           user-select: none;
           text-align: center;
           vertical-align: center;
@@ -116,8 +114,8 @@ export const ArenaContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 6px -1px #000;
     padding: 1rem;
-    background-color: ${COLORS.fadedGrey};
     height: 2.5rem;
   }
   input {
