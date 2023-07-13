@@ -44,6 +44,13 @@ const HitCapCalculator = ({ values, multiplier, hitNeeded }) => {
                     {values.classAndSpec}
                   </span>
 
+                  {values.raidHitBuff && (
+                    <img
+                      src="images/raidHitBuff_sm.webp"
+                      alt="raid hit buff"
+                      className="raid-hit-buff-icon"
+                    />
+                  )}
                   {values.draenei && (
                     <img
                       src="images/heroic_presence_sm.webp"
@@ -54,14 +61,6 @@ const HitCapCalculator = ({ values, multiplier, hitNeeded }) => {
                   <p>
                     {values.talentPoints ? `${values.talentPoints}%` : "0%"}
                   </p>
-
-                  {values.raidHitBuff && (
-                    <img
-                      src="images/raidHitBuff_sm.webp"
-                      alt="raid hit buff"
-                      className="raid-hit-buff-icon"
-                    />
-                  )}
                   {values.pveOrPvp === "pve" ? (
                     <img
                       src="images/pve_sm.webp"

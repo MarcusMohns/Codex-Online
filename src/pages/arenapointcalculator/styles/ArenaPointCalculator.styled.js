@@ -134,13 +134,12 @@ export const ArenaContainer = styled.div`
       align-items: center;
       justify-content: space-evenly;
     }
-    img {
+    img,
+    p {
       border-radius: 15px;
       margin: 0px 5px;
     }
-    p {
-      margin: 0px 5px;
-    }
+
     span {
       margin-right: auto;
       margin-left: 5px;
