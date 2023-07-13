@@ -34,6 +34,11 @@ const HitCapCalculator = ({ values, multiplier, hitNeeded }) => {
         <table>
           <thead>
             <tr>
+              <th colSpan={3} className="hitcap-th">
+                1
+              </th>
+            </tr>
+            <tr>
               <th>Your current Hit Rating</th>
               <th>Missing Hit %</th>
               <th>Missing Hit Rating</th>

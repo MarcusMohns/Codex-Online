@@ -126,6 +126,11 @@ export const ArenaContainer = styled.div`
     border-radius: 5px;
   }
 
+  .hitcap-th {
+    padding: 5px;
+    border-radius: 0px;
+  }
+
   @media (min-width: 400px) {
     th {
       padding: 0.4rem;
