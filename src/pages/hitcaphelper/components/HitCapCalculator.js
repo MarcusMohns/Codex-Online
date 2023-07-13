@@ -35,7 +35,47 @@ const HitCapCalculator = ({ values, multiplier, hitNeeded }) => {
           <thead>
             <tr>
               <th colSpan={3} className="hitcap-th">
-                1
+                <div className="hitcap-th-div">
+                  <span
+                    id={values.classAndSpec
+                      .substring(values.classAndSpec.indexOf(" ") + 1)
+                      .toLowerCase()}
+                  >
+                    {values.classAndSpec}
+                  </span>
+
+                  {values.draenei && (
+                    <img
+                      src="images/heroic_presence_sm.webp"
+                      className="draenei-icon"
+                      alt="draenei"
+                    />
+                  )}
+                  <p>
+                    {values.talentPoints ? `${values.talentPoints}%` : "0%"}
+                  </p>
+
+                  {values.raidHitBuff && (
+                    <img
+                      src="images/raidHitBuff_sm.webp"
+                      alt="raid hit buff"
+                      className="raid-hit-buff-icon"
+                    />
+                  )}
+                  {values.pveOrPvp === "pve" ? (
+                    <img
+                      src="images/pve_sm.webp"
+                      className="results-pve-icon"
+                      alt="pve"
+                    />
+                  ) : (
+                    <img
+                      src="images/pvp_sm.webp"
+                      className="results-pvp-icon"
+                      alt="pvp"
+                    />
+                  )}
+                </div>
               </th>
             </tr>
             <tr>
@@ -46,12 +86,13 @@ const HitCapCalculator = ({ values, multiplier, hitNeeded }) => {
           </thead>
           <tbody>
             <tr>
-              <th className="bracket-col">
+              <th>
                 <input
                   type="number"
                   name="hitRating"
                   id="hitRating"
                   onInput={maxLengthHandler}
+                  defaultValue="0"
                 />
               </th>
               <td className="results" id="hitMissing">

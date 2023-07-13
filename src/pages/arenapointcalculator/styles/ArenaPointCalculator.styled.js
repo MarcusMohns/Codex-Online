@@ -127,6 +127,24 @@ export const ArenaContainer = styled.div`
   .hitcap-th {
     padding: 5px;
     border-radius: 0px;
+
+    .hitcap-th-div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    img {
+      border-radius: 15px;
+      margin: 0px 5px;
+    }
+    p {
+      margin: 0px 5px;
+    }
+    span {
+      margin-right: auto;
+      margin-left: 5px;
+    }
   }
 
   @media (min-width: 400px) {
