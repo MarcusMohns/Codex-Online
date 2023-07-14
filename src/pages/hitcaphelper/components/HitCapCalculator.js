@@ -95,10 +95,14 @@ const HitCapCalculator = ({ values, multiplier, hitNeeded }) => {
                 />
               </th>
               <td className="results" id="hitMissing">
-                {hit.percent}
+                {hit.percent > 0
+                  ? `${hit.percent}%`
+                  : `${Math.abs(hit.percent)}% over cap`}
               </td>
               <td className="results" id="hitRatinghitMissing">
-                {hit.rating}
+                {hit.rating > 0
+                  ? `${hit.rating}`
+                  : `${Math.abs(hit.rating)} over cap`}
               </td>
             </tr>
           </tbody>
