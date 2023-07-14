@@ -137,9 +137,14 @@ export const ArenaContainer = styled.div`
     img,
     p {
       border-radius: 15px;
-      margin: 0px 5px;
+      margin: 0px 3px;
+      font-family: sans-serif;
+      font-size: 1rem;
+      border: 1px double grey;
     }
-
+    p {
+      padding: 0.4rem;
+    }
     span {
       margin-right: auto;
       margin-left: 5px;
