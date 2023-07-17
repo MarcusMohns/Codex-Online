@@ -151,6 +151,19 @@ export const ArenaContainer = styled.div`
     }
   }
 
+  .raid-hit-buff-icon {
+    height: 29px;
+    width: 58px;
+  }
+
+  .pve-or-pvp-icon,
+  .draenei-icon,
+  .results-pve-icon,
+  .results-pvp-icon {
+    width: 28px;
+    height: 28px;
+  }
+
   @media (min-width: 400px) {
     th {
       padding: 0.4rem;
