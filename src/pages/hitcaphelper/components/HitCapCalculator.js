@@ -78,7 +78,9 @@ const HitCapCalculator = ({ values, multiplier, hitNeeded }) => {
               </th>
             </tr>
             <tr>
-              <th>Your current Hit Rating</th>
+              <th>
+                <label htmlFor="hitRating">Your current Hit Rating</label>{" "}
+              </th>
               <th>Missing Hit %</th>
               <th>Missing Hit Rating</th>
             </tr>
