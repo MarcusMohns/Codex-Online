@@ -289,6 +289,16 @@ export const ResultsContainer = styled.div`
     }
   }
 
+  .hit-text {
+    padding: 1rem;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .hit-result {
+    color: ${COLORS.goldHighlight};
+  }
+
   .specific-hit-rating,
   .amount-of-hit {
     font-weight: 700;

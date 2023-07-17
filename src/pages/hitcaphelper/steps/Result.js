@@ -106,14 +106,14 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
             </div>
           )}
           {isCaster ? (
-            <div className="results-text">
-              For <span className="bold-result">1% spell hit</span> you need{" "}
-              <span className="bold-result">26.23 hit</span>
+            <div className="hit-text">
+              For <span className="hit-result">1% spell hit</span> you need{" "}
+              <span className="hit-result">26.23 hit</span>
             </div>
           ) : (
-            <div className="results-text">
-              For <span className="bold-result">1% melee hit</span> you need{" "}
-              <span className="bold-result">32.79 hit</span>
+            <div className="hit-text">
+              For <span className="hit-result">1% melee hit</span> you need{" "}
+              <span className="hit-result">32.79 hit</span>
             </div>
           )}
         </div>
