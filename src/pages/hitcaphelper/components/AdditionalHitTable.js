@@ -61,17 +61,14 @@ const AdditionalHitTable = () => {
           <td className="additional-hit-blood-elf">Blood Elf</td>
           <td>
             <span className="amount-of-hit">2%</span>{" "}
-            <span className="specific-hit-rating">(53 hit rating)</span>
           </td>
           <td>0%</td>
           <td>0%</td>
           <td>
             <span className="amount-of-hit">2%</span>{" "}
-            <span className="specific-hit-rating">(53 hit rating)</span>
           </td>
           <td>
             <span className="amount-of-hit">2%</span>
-            <span className="specific-hit-rating">(53 hit rating)</span>
           </td>
         </tr>
         <tr>
@@ -79,11 +76,9 @@ const AdditionalHitTable = () => {
           <td>0%</td>
           <td>
             <span className="amount-of-hit">2%</span>{" "}
-            <span className="specific-hit-rating">(66 hit rating)</span>
           </td>
           <td>
             <span className="amount-of-hit">2%</span>{" "}
-            <span className="specific-hit-rating">(66 hit rating)</span>
           </td>
           <td>0%</td>
           <td>0%</td>
@@ -94,40 +89,32 @@ const AdditionalHitTable = () => {
           </td>
           <td>
             <span className="amount-of-hit">4%</span>{" "}
-            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
           <td>0%</td>
           <td>
             <span className="amount-of-hit">4%</span>{" "}
-            <span className="specific-hit-rating">(132 hit rating)</span>
           </td>
           <td>
             <span className="amount-of-hit">4%</span>
-            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
           <td>
             <span className="amount-of-hit">4%</span>{" "}
-            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
         </tr>
         <tr>
           <td className="additional-hit-subtlety-rogue">Sublety Rogue</td>
           <td>
             <span className="amount-of-hit">4%</span>{" "}
-            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
           <td>0%</td>
           <td>
             <span className="amount-of-hit">4%</span>{" "}
-            <span className="specific-hit-rating">(132 hit rating)</span>
           </td>
           <td>
             <span className="amount-of-hit">4%</span>{" "}
-            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
           <td>
             <span className="amount-of-hit">4%</span>{" "}
-            <span className="specific-hit-rating">(105 hit rating)</span>
           </td>
         </tr>
         <tr>
@@ -138,7 +125,6 @@ const AdditionalHitTable = () => {
           <td>0%</td>
           <td>
             <span className="amount-of-hit">2%</span>{" "}
-            <span className="specific-hit-rating">(53 hit rating)</span>
           </td>
         </tr>
       </tbody>
