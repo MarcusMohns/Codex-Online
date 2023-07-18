@@ -272,6 +272,7 @@ export const ResultsContainer = styled.div`
   animation: 0.3s linear 0s fade-in;
   img {
     border-radius: 5px;
+    display: none;
   }
 
   .results-text {
@@ -299,13 +300,17 @@ export const ResultsContainer = styled.div`
     color: ${COLORS.goldHighlight};
   }
 
-  .specific-hit-rating,
   .amount-of-hit {
     font-weight: 700;
   }
 
   .character-sheet-img {
     margin-top: 1rem;
+  }
+  .additional-hit-table {
+    td {
+      box-shadow: inset 0px 1px 0 0 #000;
+    }
   }
   .additional-hit-blood-elf {
     color: pink;
@@ -337,7 +342,7 @@ export const ResultsContainer = styled.div`
     margin-bottom: 2rem;
   }
   td {
-    padding: 0.2rem;
+    padding: 0.4rem;
     svg {
       margin-left: 2px;
     }
@@ -359,7 +364,7 @@ export const ResultsContainer = styled.div`
   th {
     background-color: #222;
     color: ${COLORS.offWhite};
-    padding: 1rem;
+    padding: 0.5rem;
     img {
       margin-left: 2px;
     }
@@ -383,8 +388,8 @@ export const ResultsContainer = styled.div`
       justify-items: center;
     }
 
-    @media screen and (max-width: 992px) {
-      padding: 0.5rem;
+    @media screen and (min-width: 992px) {
+      padding: 1rem;
     }
   }
 
@@ -397,16 +402,10 @@ export const ResultsContainer = styled.div`
     background: #222;
     font-size: 0.9rem;
   }
-  @media screen and (max-width: 1500px) {
-    width: 100%;
-  }
 
-  @media screen and (max-width: 992px) {
-    .specific-hit-rating {
-      display: none;
-    }
+  @media screen and (min-width: 992px) {
     img {
-      display: none;
+      display: initial;
     }
   }
 `;
