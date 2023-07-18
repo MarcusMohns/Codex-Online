@@ -231,9 +231,9 @@ export const AdditionalHitContainer = styled.div`
   align-content: center;
   padding: 0 1rem;
   color: #bfc0c0;
-
+  margin-top: 2rem;
   h2 {
-    padding: 1rem;
+    padding: 0.5rem 0rem;
     font-size: 1.2rem;
     margin-top: 20px;
     text-align: center;
@@ -307,11 +307,7 @@ export const ResultsContainer = styled.div`
   .character-sheet-img {
     margin-top: 1rem;
   }
-  .additional-hit-table {
-    td {
-      box-shadow: inset 0px 1px 0 0 #000;
-    }
-  }
+
   .additional-hit-blood-elf {
     color: pink;
   }
@@ -340,6 +336,7 @@ export const ResultsContainer = styled.div`
   table {
     text-align: center;
     margin-bottom: 2rem;
+    border-spacing: 1px;
   }
   td {
     padding: 0.4rem;
