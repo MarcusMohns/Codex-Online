@@ -93,7 +93,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               <span className="bold-result">
                 {hit}% hit ({hitInInt(hit)} hit rating)
               </span>{" "}
-              on your character sheet
+              on your character sheet to be hit capped
             </div>
           ) : (
             <div className="results-text">
