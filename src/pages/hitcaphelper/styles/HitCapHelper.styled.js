@@ -337,6 +337,7 @@ export const ResultsContainer = styled.div`
     text-align: center;
     margin-bottom: 2rem;
     border-spacing: 1px;
+    width: 90%;
   }
   td {
     padding: 0.4rem;
@@ -401,6 +402,9 @@ export const ResultsContainer = styled.div`
   }
 
   @media screen and (min-width: 992px) {
+    table {
+      width: 100%;
+    }
     .results.text {
       margin: 0px;
     }
