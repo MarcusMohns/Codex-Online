@@ -279,6 +279,7 @@ export const ResultsContainer = styled.div`
     font-size: 1.1rem;
     text-align: center;
     word-break: break-word;
+    margin: 0px 15px;
 
     .sub-text {
       font-size: 1rem;
@@ -400,6 +401,9 @@ export const ResultsContainer = styled.div`
   }
 
   @media screen and (min-width: 992px) {
+    .results.text {
+      margin: 0px;
+    }
     img {
       display: initial;
     }
