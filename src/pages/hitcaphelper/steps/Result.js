@@ -94,6 +94,17 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
                 {hit}% hit ({hitInInt(hit)} hit rating)
               </span>{" "}
               on your character sheet to be hit capped
+              {isCaster ? (
+                <div className="hit-text">
+                  For <span className="hit-result">1% spell hit</span> you need{" "}
+                  <span className="hit-result">26.23 hit</span>
+                </div>
+              ) : (
+                <div className="hit-text">
+                  For <span className="hit-result">1% melee hit</span> you need{" "}
+                  <span className="hit-result">32.79 hit</span>
+                </div>
+              )}
             </div>
           ) : (
             <div className="results-text">
@@ -103,25 +114,27 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
                 The cap is {cap()}% hit. You are {Math.abs(hit)}% (
                 {Math.abs(hitInInt(hit))} hit rating) over hit cap
               </div>
+              {isCaster ? (
+                <div className="hit-text">
+                  For <span className="hit-result">1% spell hit</span> you need{" "}
+                  <span className="hit-result">26.23 hit</span>
+                </div>
+              ) : (
+                <div className="hit-text">
+                  For <span className="hit-result">1% melee hit</span> you need{" "}
+                  <span className="hit-result">32.79 hit</span>
+                </div>
+              )}
             </div>
           )}
-          {isCaster ? (
-            <div className="hit-text">
-              For <span className="hit-result">1% spell hit</span> you need{" "}
-              <span className="hit-result">26.23 hit</span>
-            </div>
-          ) : (
-            <div className="hit-text">
-              For <span className="hit-result">1% melee hit</span> you need{" "}
-              <span className="hit-result">32.79 hit</span>
-            </div>
-          )}
+
+          <img
+            src="images/character_sheet_n.png"
+            className="character-sheet-img"
+            alt="character sheet"
+          />
         </div>
-        <img
-          src="images/character_sheet.png"
-          className="character-sheet-img"
-          alt="character sheet"
-        />
+
         {pveOrPvp === "pvp" && (
           <AdditionalHitContainer>
             <h2>
