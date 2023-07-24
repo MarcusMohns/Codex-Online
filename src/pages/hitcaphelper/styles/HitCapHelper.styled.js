@@ -144,17 +144,8 @@ export const MainContentContainer = styled.div`
   align-content: center;
   height: auto;
 
-  .character-sheet-img {
-    width: 419px;
-    height: 552px;
-  }
-
   .radio-input-container {
     margin-top: 2rem;
-  }
-
-  .character-sheet-img {
-    border-radius: 5px;
   }
 
   #death-knight {
@@ -306,6 +297,8 @@ export const ResultsContainer = styled.div`
 
   .character-sheet-img {
     margin-top: 1rem;
+    border-radius: 10px;
+    opacity: 80%;
   }
 
   .additional-hit-blood-elf {
