@@ -86,7 +86,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
       <ResultsContainer>
         <ResultTable values={values} />
 
-        <div>
+        <div className="results-main-container">
           {hit > 0 ? (
             <div className="results-text">
               You need{" "}
@@ -129,7 +129,7 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
           )}
 
           <img
-            src="images/character_sheet_n.png"
+            src="images/character_sheet.png"
             className="character-sheet-img"
             alt="character sheet"
           />

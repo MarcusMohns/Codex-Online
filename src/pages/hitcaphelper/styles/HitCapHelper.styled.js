@@ -265,13 +265,17 @@ export const ResultsContainer = styled.div`
     border-radius: 5px;
     display: none;
   }
-
+  .results-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .results-text {
     font-size: 1.1rem;
     text-align: center;
     word-break: break-word;
     margin: 0px 15px;
-
+    width: 50%;
     .sub-text {
       font-size: 1rem;
     }
@@ -296,7 +300,7 @@ export const ResultsContainer = styled.div`
   }
 
   .character-sheet-img {
-    margin-top: 1rem;
+    box-shadow: 0px 0px 10px 5px #000;
     border-radius: 10px;
     opacity: 80%;
   }
