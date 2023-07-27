@@ -278,7 +278,6 @@ export const ResultsContainer = styled.div`
     text-align: center;
     word-break: break-word;
     margin: 0px 15px;
-    width: 50%;
     .sub-text {
       font-size: 1rem;
     }
@@ -396,6 +395,9 @@ export const ResultsContainer = styled.div`
   }
 
   @media screen and (min-width: 992px) {
+    .results-text {
+      width: 50%;
+    }
     table {
       width: 100%;
     }
