@@ -261,12 +261,15 @@ export const ResultsContainer = styled.div`
   padding: 1rem;
   font-family: sans-serif;
   animation: 0.3s linear 0s fade-in;
-  img {
-    border-radius: 5px;
-    display: none;
+
+  .character-sheet-img {
+    box-shadow: 0px 0px 10px 5px #000;
+    border-radius: 10px;
+    opacity: 80%;
   }
   .results-main-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -297,12 +300,6 @@ export const ResultsContainer = styled.div`
 
   .amount-of-hit {
     font-weight: 700;
-  }
-
-  .character-sheet-img {
-    box-shadow: 0px 0px 10px 5px #000;
-    border-radius: 10px;
-    opacity: 80%;
   }
 
   .additional-hit-blood-elf {
@@ -405,8 +402,11 @@ export const ResultsContainer = styled.div`
     .results.text {
       margin: 0px;
     }
-    img {
+    .character-sheet-img {
       display: initial;
+    }
+    .results-main-container {
+      flex-direction: row;
     }
   }
 `;
