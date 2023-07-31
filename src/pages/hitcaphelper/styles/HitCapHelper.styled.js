@@ -266,6 +266,8 @@ export const ResultsContainer = styled.div`
     box-shadow: 0px 0px 10px 5px #000;
     border-radius: 10px;
     opacity: 80%;
+    width: 397px;
+    height: 328px;
   }
   .results-main-container {
     display: flex;
