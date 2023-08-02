@@ -263,7 +263,6 @@ export const ResultsContainer = styled.div`
   animation: 0.3s linear 0s fade-in;
 
   .character-sheet-img {
-    box-shadow: 0px 0px 10px 5px #000;
     border-radius: 10px;
     opacity: 80%;
     width: 397px;
