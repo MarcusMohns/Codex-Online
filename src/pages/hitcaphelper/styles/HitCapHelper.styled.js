@@ -334,6 +334,7 @@ export const ResultsContainer = styled.div`
     border-spacing: 1px;
     width: 90%;
   }
+
   td {
     padding: 0.4rem;
     svg {
@@ -360,6 +361,7 @@ export const ResultsContainer = styled.div`
     padding: 0.5rem;
     img {
       margin-left: 2px;
+      display: none;
     }
     .pve-or-pvp-icon,
     .draenei-icon,
@@ -383,6 +385,9 @@ export const ResultsContainer = styled.div`
 
     @media screen and (min-width: 992px) {
       padding: 1rem;
+      img {
+        display: initial;
+      }
     }
   }
 
