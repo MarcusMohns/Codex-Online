@@ -6,11 +6,12 @@ const StyledErrorDiv = styled.div`
   display: flex;
   align-items: center;
   color: ${(props) => props.color};
-  font-size: 1.1rem;
+  font-size: 1rem;
   background: ${(props) => props.background};
   height: ${(props) => `${props.height + 10}px`};
   text-align: center;
-  width: 75%;
+  width: 80%;
+  padding: 10px;
   margin: 10px auto;
 
   a {
@@ -27,6 +28,7 @@ const StyledErrorDiv = styled.div`
 
   @media screen and (min-width: 992px) {
     height: ${(props) => `${props.height}px`};
+    width: 50%;
   }
 `;
 const AlertIcon = styled(FiAlertOctagon)`

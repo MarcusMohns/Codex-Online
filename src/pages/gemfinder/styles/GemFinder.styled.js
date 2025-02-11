@@ -84,8 +84,8 @@ export const CheckBoxContainer = styled.section`
     justify-content: center;
     box-sizing: border-box;
     border-radius: 5px;
-    width: 80%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
 
     @media screen and (max-width: 992px) {
       padding: 0px;
@@ -100,10 +100,9 @@ export const CheckBoxContainer = styled.section`
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    margin: 0.5rem;
+    margin: 1px;
     padding: 0.5rem;
     background-color: ${COLORS.fadedBlack};
-    border-radius: 5px;
     width: 100%;
 
     @media screen and (max-width: 992px) {
@@ -236,7 +235,7 @@ export const GemTableContainer = styled.section`
   box-sizing: border-box;
   font-size: 0.95rem;
   overflow-y: scroll;
-  height: 60vh;
+  height: 70vh;
   display: block;
   margin-left: auto;
   margin-right: auto;

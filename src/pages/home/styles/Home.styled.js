@@ -76,12 +76,11 @@ export const PagePreviewContainer = styled.div`
   background-color: ${COLORS.fadedBlack};
   z-index: 10;
   padding: 4rem 2rem;
-  box-shadow: 3px 5px 10px -2px rgb(0 0 0 / 60%);
   .content-preview-image {
     border-radius: 5px;
     background-color: ${COLORS.fadedBlack};
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 12px 10px 2px rgba(0, 0, 0, 0.6);
     opacity: 80%;
     width: 390px;
     height: 219px;
@@ -175,7 +174,7 @@ export const PagePreviewText = styled.div`
 
   .link-button {
     display: inline-block;
-    background: ${COLORS.fadedGrey};
+    background: ${COLORS.primary};
     border-radius: 5px;
     font-size: 16px;
     color: #fff;
@@ -186,7 +185,7 @@ export const PagePreviewText = styled.div`
     margin-top: 1rem;
     text-decoration: none;
     &:hover {
-      border: 2px solid ${COLORS.primary};
+      background: ${COLORS.darkPrimary};
     }
   }
 `;

@@ -35,6 +35,7 @@ export const Main = styled.main`
     animation-name: FadeIn;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    cursor: pointer;
 
     @media screen and (max-width: 992px) {
       img {

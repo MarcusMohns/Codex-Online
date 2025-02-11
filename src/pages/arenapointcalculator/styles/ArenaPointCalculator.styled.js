@@ -40,6 +40,8 @@ export const TextContainer = styled.div`
   justify-items: center;
   background-color: ${COLORS.fadedBackground};
   padding: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
   margin: 1rem auto;
   color: white;
   max-width: 70%;
@@ -69,10 +71,14 @@ export const ArenaContainer = styled.div`
     justify-content: space-around;
     height: 3rem;
     width: 100%;
-    background-color: ${COLORS.fadedPrimary};
+    background-color: ${COLORS.primary};
     color: ${COLORS.offWhite};
     box-shadow: 0 2px 6px -1px #000;
     user-select: none;
+  }
+
+  form {
+    width: 100%;
   }
 
   table {
@@ -80,11 +86,12 @@ export const ArenaContainer = styled.div`
     border-spacing: 0.5rem;
     border-radius: 3px;
     max-width: 100%;
+    width: 100%;
     box-shadow: 1px 5px 10px -2px rgba(0, 0, 0, 0.6);
     background-color: #222;
 
     .results {
-      color: ${COLORS.goldHighlight};
+      color: ${COLORS.highlight};
       font-size: 1.2rem;
       height: 100%;
       border-radius: 5px;
@@ -94,7 +101,6 @@ export const ArenaContainer = styled.div`
       tr {
         th {
           color: ${COLORS.offWhite};
-          box-shadow: 0 2px 6px -1px #000;
           user-select: none;
           text-align: center;
           vertical-align: center;
@@ -115,8 +121,8 @@ export const ArenaContainer = styled.div`
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 6px -1px #000;
+    background-color: ${COLORS.primary};
     padding: 1rem;
-    height: 2.5rem;
   }
   input {
     padding: 0.5rem;

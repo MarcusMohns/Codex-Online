@@ -100,7 +100,7 @@ const SaveMenu = ({
             className="save-menu-footer-buttons"
             onClick={() => saveOnClickToFile()}
           >
-            Save to Disk... <DownloadIcon />
+            Save to Disk <DownloadIcon />
           </div>
 
           <div
@@ -111,7 +111,7 @@ const SaveMenu = ({
               setSaveMenuOpen(!saveMenuOpen);
             }}
           >
-            Load from Disk... <UploadIcon />
+            Load from Disk <UploadIcon />
           </div>
 
           <div

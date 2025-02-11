@@ -17,8 +17,9 @@ export const Nav = styled.nav`
   position: relative;
 
   .logo {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
   }
 
   @media screen and (min-width: 876px) {
@@ -26,7 +27,7 @@ export const Nav = styled.nav`
     width: 100%;
     top: 0;
     justify-content: space-evenly;
-    height: ${(props) => (props.shrunk ? `60px` : `75px`)};
+    height: ${(props) => (props.shrunk ? `50px` : `75px`)};
 
     .logo-text {
       transition: 0.3s ease;
@@ -77,7 +78,7 @@ export const Nav = styled.nav`
   }
 `;
 export const LogoLink = styled(Link)`
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fff;
   display: flex;
   align-items: center;

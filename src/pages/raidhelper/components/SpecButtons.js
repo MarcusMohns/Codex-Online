@@ -1,11 +1,12 @@
 import React from "react";
 import { memo } from "react";
 import SpecButton from "./SpecButton";
+import SpecArray from "../../../data/SpecArray";
 
-const SpecButtons = ({ specs, handleSpecTooltip, onClick }) => {
+const SpecButtons = ({ handleSpecTooltip, onClick }) => {
   return (
     <div className={"spec-buttons"}>
-      {specs.map((spec) => (
+      {SpecArray.map((spec) => (
         <SpecButton
           spec={spec}
           handleSpecTooltip={handleSpecTooltip}

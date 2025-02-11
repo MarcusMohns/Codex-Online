@@ -7,7 +7,9 @@ const COLORS = {
   fadedOffWhite: "rgba(248, 248, 255, 0.7)",
   background: "rgba(99, 102, 106, 1)",
   fadedBackground: "rgba(99, 102, 106, 0.3)",
-  primary: "rgba(38, 72, 116, 1)",
+  primary: "rgba(55, 91, 129, 1)",
+  darkPrimary: "rgba(31, 60, 97, 1)",
+  lightPrimary: "rgba(50, 94, 151, 1)",
   fadedPrimary: "rgba(38, 72, 116, 0.75)",
   veryFadedPrimary: "rgba(38, 72, 116, 0.25)",
   halfFadedPrimary: "rgba(38, 72, 116, 0.50)",
@@ -17,7 +19,6 @@ const COLORS = {
   goldHighlight: "rgba(255,213,23,1)",
   red: "rgb(196,30,58)",
   fadedRed: "rgba(196,30,58,0.5)",
-
   deathKnight: "rgb(196,30,58)",
   druid: "rgb(255,124,10)",
   hunter: "rgb(170,211,114)",

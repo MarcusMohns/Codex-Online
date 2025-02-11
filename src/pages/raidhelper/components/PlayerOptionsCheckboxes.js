@@ -17,13 +17,6 @@ import {
   PaladinUtility,
 } from "../../../data/PlayersWithOptions";
 
-const tankIcon = (
-  <img src="images/Tank_icon.png" alt="shield" className="role-icon" />
-);
-const dpsIcon = (
-  <img src="images/DPS_icon.png" alt="sword" className="role-icon" />
-);
-
 const PlayerOptionsCheckboxes = ({
   player,
   editBuffs,
@@ -179,7 +172,7 @@ const PlayerOptionsCheckboxes = ({
           <div className="option-container">
             <div className="role-toggler-container">
               <label htmlFor="role-toggle" className="role-select-label">
-                DPS {dpsIcon}
+                DPS ⚔️
               </label>
               <input
                 id="role-toggle"
@@ -189,7 +182,7 @@ const PlayerOptionsCheckboxes = ({
                 onChange={(e) => playerRoleEdit(player, e)}
               />
               <label htmlFor="role-toggle" className="role-select-label">
-                Tank {tankIcon}
+                Tank 🛡️
               </label>
             </div>
           </div>

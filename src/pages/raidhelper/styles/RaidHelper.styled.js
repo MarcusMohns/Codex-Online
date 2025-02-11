@@ -7,14 +7,12 @@ import { RiSettings3Line } from "@react-icons/all-files/ri/RiSettings3Line";
 import { VscDebugRestart } from "@react-icons/all-files/vsc/VscDebugRestart";
 import { RiDeleteBin2Line } from "@react-icons/all-files/ri/RiDeleteBin2Line";
 import { RiEdit2Line } from "@react-icons/all-files/ri/RiEdit2Line";
-import { RiSave3Fill } from "@react-icons/all-files/ri/RiSave3Fill";
 import { RiDownload2Fill } from "@react-icons/all-files/ri/RiDownload2Fill";
 import { RiUpload2Fill } from "@react-icons/all-files/ri/RiUpload2Fill";
 import { CgDrop } from "@react-icons/all-files/cg/CgDrop";
 import { FaRegClock } from "@react-icons/all-files/fa/FaRegClock";
 import { GiElectric } from "@react-icons/all-files/gi/GiElectric";
 import { FiActivity } from "@react-icons/all-files/fi/FiActivity";
-import { RiFilePaper2Line } from "@react-icons/all-files/ri/RiFilePaper2Line";
 import { GiBroadsword } from "@react-icons/all-files/gi/GiBroadsword";
 import { FiShield } from "@react-icons/all-files/fi/FiShield";
 import { TiPlusOutline } from "@react-icons/all-files/ti/TiPlusOutline";
@@ -55,10 +53,11 @@ export const SpecContainer = styled.section`
     grid-auto-flow: column;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-gap: 3px;
     width: 96%;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+
     margin: 2rem 0;
-    background-color: ${COLORS.halfFadedPrimary};
+    background-color: ${COLORS.darkPrimary};
   }
   @media screen and (min-width: 1300px) {
     display: flex;
@@ -81,19 +80,20 @@ export const StyledSpecButton = styled.div`
   position: relative;
   font-size: 0.6rem;
   font-weight: bold;
+  background-color: ${COLORS.primary};
   line-height: 1;
   color: ${(props) => props.color};
   cursor: pointer;
   user-select: none;
   text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
-  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.6);
 
   #info-image {
     visibility: hidden;
   }
   &:hover {
-    background: ${COLORS.fadedBackground};
+    background: ${COLORS.darkPrimary};
     #info-image {
       visibility: visible;
     }
@@ -204,7 +204,7 @@ export const StyledClassToolTip = styled.div`
     }
 
     @media (min-width: 1300px) {
-      width: 600px;
+      width: 800px;
 
       .class-tooltip-content {
         max-height: 650px;
@@ -427,7 +427,7 @@ export const StyledPlayer = styled.div`
   .role-icon {
     position: absolute;
     right: 2px;
-    bottom: 0;
+    bottom: 2px;
   }
   #player-info-icon {
     position: absolute;
@@ -589,7 +589,6 @@ export const StyledPlayerCheckboxes = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    overflow: hidden scroll;
     align-self: center;
   }
   .player-options-subheader {
@@ -630,11 +629,6 @@ export const StyledPlayerCheckboxes = styled.div`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    }
-
-    .role-icon {
-      width: 18px;
-      height: 18px;
     }
   }
   .player-checkbox {
@@ -1088,7 +1082,6 @@ export const StyledUtilities = styled.div`
   min-width: 100%;
   max-width: 100%;
   min-height: 100%;
-  overflow: scroll;
   overflow-x: hidden;
   padding-left: 20px;
   @media (min-width: 1300px) {
@@ -1179,13 +1172,12 @@ export const RaidContentHeader = styled.div`
     margin: auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    font-weight: bold;
     font-size: 0.7rem;
+    letter-spacing: 0.5px;
   }
   .raid-count {
     align-content: center;
     padding: 0.4rem;
-    font-weight: 700;
     margin-right: 5px;
     font-size: 1rem;
   }
@@ -1195,13 +1187,9 @@ export const RaidContentHeader = styled.div`
       align-items: center;
       justify-content: center;
       margin: 0px 3px;
-      padding: 4px;
-      border-radius: 2px;
-      font-weight: bold;
-    }
-    .role-icon {
-      width: 18px;
-      height: 18px;
+      padding: 5px;
+      border-radius: 3px;
+      background: ${COLORS.fadedPrimary};
     }
   }
 
@@ -1297,26 +1285,25 @@ export const RaidHeaderButton = styled.div`
   justify-content: center;
   cursor: pointer;
   color: #fff;
-  background-color: #1f8421;
-  border-radius: 5px;
+  background-color: ${(props) => props.backgroundColor};
+  border-radius: 2px;
   margin-right: 1rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   cursor: pointer;
-  padding: 0.4rem;
-  margin-bottom: 2px;
+  padding: 5px 10px;
   text-align: center;
   user-select: none;
   white-space: nowrap;
-  font-weight: 500;
   letter-spacing: 1px;
   transform: translateY(0);
   transition: transform 150ms;
+  box-shadow: 0 2px 6px -1px #000;
+
+  .utility-btn-text {
+    margin-right: 7px;
+  }
   &:hover {
     transform: translateY(-2px);
-  }
-
-  @media (min-width: 600px) {
-    font-size: 1rem;
   }
 `;
 
@@ -1330,11 +1317,10 @@ export const UtilityHeaderButton = styled.div`
     #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   box-sizing: border-box;
   color: ${COLORS.lightText};
-  background-color: #222;
-  border-radius: 5px;
-  padding: 0.5rem;
+  background-color: #1c2f47;
+  border-radius: 2px;
+  padding: 5px 10px;
   text-align: center;
-  font-weight: 500;
   letter-spacing: 1px;
   user-select: none;
   -webkit-user-select: none;
@@ -1346,24 +1332,17 @@ export const UtilityHeaderButton = styled.div`
   margin-right: ${(props) => props.marginRight};
   transform: translateY(0);
   transition: transform 150ms;
+  box-shadow: 0 2px 6px -1px #000;
 
   .utility-btn-text {
-    margin-left: 5px;
+    margin-right: 7px;
   }
 
-  .hide-text {
-    display: none;
-  }
   &:hover {
     transform: translateY(-2px);
   }
   @media (min-width: 600px) {
     font-size: 1rem;
-
-    .hide-text {
-      display: flex;
-      margin-left: 5px;
-    }
   }
 `;
 export const RaidGroupContainer = styled.div`
@@ -1420,7 +1399,7 @@ export const StyledPlayerOptions = styled.div`
     }
 
     @media (min-width: 1300px) {
-      width: 600px;
+      width: 800px;
       max-height: 650px;
       overflow-y: auto;
 
@@ -1510,7 +1489,7 @@ export const StyledSaveMenu = styled.div`
     animation-name: revealMenu;
     animation-duration: 0.3s;
     @media (min-width: 1300px) {
-      width: 600px;
+      width: 800px;
       height: 450px;
     }
     .save-menu-header {
@@ -1541,7 +1520,7 @@ export const StyledSaveMenu = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5px;
+        padding: 5px 15px;
         margin: 15px 2px;
         border-radius: 2px;
         cursor: pointer;
@@ -1670,7 +1649,7 @@ export const StyledRaidCooldowns = styled.div`
     max-height: 500px;
 
     @media (min-width: 800px) {
-      width: 500px;
+      width: 700px;
       max-height: inherit;
       overflow-y: auto;
     }
@@ -1942,18 +1921,17 @@ export const WhiteSettingsIcon = styled(RiSettings3Line)`
   color: white;
   font-size: 1.6em;
 `;
-export const SaveIcon = styled(RiSave3Fill)`
-  font-size: 1.5em;
-  margin-right: 0.2rem;
-`;
+
 export const LoadIcon = styled(GiLoad)`
   font-size: 1.7em;
 `;
 export const DownloadIcon = styled(RiDownload2Fill)`
   font-size: 1.3em;
+  margin-left: 10px;
 `;
 export const UploadIcon = styled(RiUpload2Fill)`
   font-size: 1.3em;
+  margin-left: 10px;
 `;
 export const ManaIcon = styled(CgDrop)`
   font-size: 1.3em;
@@ -1971,9 +1949,7 @@ export const CombatResIcon = styled(FiActivity)`
   font-size: 1.1em;
   margin-right: 2px;
 `;
-export const RaidCooldownIcon = styled(RiFilePaper2Line)`
-  font-size: 1.4em;
-`;
+
 export const MisdirectionCooldownIcon = styled(FiShuffle)`
   font-size: 1.1em;
   margin-right: 5px;

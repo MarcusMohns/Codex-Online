@@ -1,7 +1,7 @@
 import { StyledSpecButton, InfoIcon } from "../styles/RaidHelper.styled";
 const SpecButton = ({ spec, handleSpecTooltip, onClick }) => {
   return (
-    <StyledSpecButton color={spec.color}>
+    <StyledSpecButton color={spec.color} className="spec-button">
       <div className="text-and-image-button-container" onClick={onClick}>
         <p className="specbutton-text">{spec.text}</p>
         <img

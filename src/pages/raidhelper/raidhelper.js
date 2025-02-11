@@ -1,5 +1,4 @@
 import { useReducer, useState } from "react";
-import SpecArray from "../../data/SpecArray";
 import SpecButtons from "./components/SpecButtons";
 import BuffCategories from "./components/BuffCategories";
 import Utilities from "./components/Utilities";
@@ -24,9 +23,7 @@ import {
   ContentHeader,
   RaidContentHeader,
   NoPlayersText,
-  SaveIcon,
   UtilityHeaderButton,
-  RaidCooldownIcon,
   ContentTitle,
 } from "./styles/RaidHelper.styled";
 import {
@@ -135,11 +132,12 @@ const RaidHelper = () => {
       const newPlayer = { id, ...player };
       const newGroups = groupSort(raid.groups, newPlayer);
 
-      setRaid({
-        ...raid,
-        players: [...raid.players, newPlayer],
+      setRaid((oldRaid) => ({
+        ...oldRaid,
+        players: [...oldRaid.players, newPlayer],
         groups: newGroups,
-      });
+      }));
+
       addBuff(id, player);
       addUtility(id, player);
       handleCount(player, "add");
@@ -570,9 +568,11 @@ const RaidHelper = () => {
       count: savedCount,
     });
 
-    document.querySelector(".saved-tooltip").style.opacity = "100%";
+    const savedTooltip = document.querySelector(".saved-tooltip");
+
+    savedTooltip.style.opacity = "100%";
     setTimeout(function () {
-      document.querySelector(".saved-tooltip").style.opacity = "0%";
+      savedTooltip.style.opacity = "0%";
     }, 1000);
     // Show 'Saved!' for 1 second
 
@@ -686,7 +686,6 @@ const RaidHelper = () => {
       <SpecContainer className="spec-container">
         <SpecButtons
           className="spec-buttons"
-          specs={SpecArray}
           onClick={addPlayer}
           handleSpecTooltip={handleSpecTooltip}
         />
@@ -745,50 +744,29 @@ const RaidHelper = () => {
               onClick={() => {
                 setSaveMenuOpen(!saveMenuOpen);
               }}
+              backgroundColor="#2e7934"
               id="raid-saves-btn"
             >
-              <SaveIcon /> Saves
+              <span className="utility-btn-text">Saves</span>
+              💾
             </RaidHeaderButton>
-            <UtilityHeaderButton
+            <RaidHeaderButton
               onClick={() => {
                 setPlayersIndexOpen(!playersIndexOpen);
               }}
+              backgroundColor="#1c2f47"
               marginLeft="0px"
               marginRight="none"
             >
-              <RaidCooldownIcon />
               <span className="utility-btn-text">Index</span>
-            </UtilityHeaderButton>
+              📜
+            </RaidHeaderButton>
 
-            <div className="raid-count">{raidCount[0]} / 25 </div>
+            <div className="raid-count">{raidCount[0]}/25</div>
             <div className="role-count">
-              <p>
-                {raidCount[1]} Tanks
-                <img
-                  className="role-icon"
-                  src="images/Tank_icon.png"
-                  srcSet="images/Tank_icon.png 1x"
-                  alt="tank"
-                />
-              </p>
-              <p>
-                {raidCount[2]} Healers
-                <img
-                  className="role-icon"
-                  src="images/Healer_icon.png"
-                  srcSet="images/Healer_icon.png 1x"
-                  alt="healer"
-                />
-              </p>
-              <p>
-                {raidCount[3]} DPS
-                <img
-                  className="role-icon"
-                  src="images/DPS_icon.png"
-                  srcSet="images/DPS_icon.png 1x"
-                  alt="dps"
-                />
-              </p>
+              <p>{raidCount[1]} Tanks 🛡️</p>
+              <p>{raidCount[2]} Healers ➕</p>
+              <p>{raidCount[3]} DPS ⚔️</p>
             </div>
             <div className="btn-container">
               <ResetIcon onClick={resetRaid} />
@@ -835,8 +813,8 @@ const RaidHelper = () => {
                 setRaidCooldownsOpen(!raidCooldownsOpen);
               }}
             >
-              <RaidCooldownIcon />
-              <span className="hide-text">Cooldowns</span>
+              <span className="utility-btn-text">Cooldowns</span>
+              📜
             </UtilityHeaderButton>
           </ContentHeader>
           <Utilities utilities={utilities} />

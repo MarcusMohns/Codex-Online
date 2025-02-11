@@ -137,28 +137,6 @@ function Arenapointcalculator() {
 
   return (
     <Main>
-      <AlertDiv
-        text="Calculator updated using formula provided by reddit user Finalbelle and is up to date (v. 3.4.1) - "
-        postLink={
-          <a
-            href="https://www.reddit.com/r/classicwow/comments/us1cg5/tbc_arena_calculator_formula_updated_for_s4/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            the original post
-          </a>
-        }
-        background="#4BB543"
-        height={80}
-        color="#000"
-      />
-      <AlertDiv
-        text="All calculations under 150 rating are inaccurate and will display
-        'Unknown'."
-        background="#9C3030"
-        height={45}
-        color="white"
-      />
       <TextContainer>
         Arena Points are rewarded at the start of the new reset every week. 5v5
         Provides the most points per rating and 2v2 the least. You must
@@ -273,6 +251,28 @@ function Arenapointcalculator() {
           </form>
         </ArenaContainer>
       </ArenaSection>
+      <AlertDiv
+        text="Calculator updated using formula provided by reddit user Finalbelle and is up to date (v. 3.4.1) - "
+        postLink={
+          <a
+            href="https://www.reddit.com/r/classicwow/comments/us1cg5/tbc_arena_calculator_formula_updated_for_s4/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            the original post
+          </a>
+        }
+        background="#4BB543"
+        height={45}
+        color="#000"
+      />
+      <AlertDiv
+        text="All calculations under 150 rating are inaccurate and will display
+        'Unknown'."
+        background="#9C3030"
+        height={45}
+        color="white"
+      />
     </Main>
   );
 }
