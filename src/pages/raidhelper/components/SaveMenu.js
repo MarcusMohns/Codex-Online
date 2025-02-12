@@ -5,6 +5,7 @@ import {
   UploadIcon,
   StyledSaveMenu,
 } from "../styles/RaidHelper.styled";
+import { useState } from "react";
 
 const saves = [
   "saveSlotOne",
@@ -38,7 +39,55 @@ const SaveMenu = ({
   loadOnClickToFile,
   saveMenuOpen,
   setSaveMenuOpen,
+  raid,
+  setRaid,
+  buffs,
+  setBuffs,
+  utilities,
+  setUtilities,
+  raidCount,
+  setCount,
 }) => {
+  const [importText, setImportText] = useState("");
+  const [showSmallAlert, setShowSmallAlert] = useState(false);
+  const handleImportText = (e) => setImportText(e.target.value);
+  const handleImport = async () => {
+    importFromString(importText);
+    setImportText("");
+  };
+
+  const exportImportString = () => {
+    navigator.clipboard
+      .writeText(
+        JSON.stringify({
+          raid,
+          buffs,
+          utilities,
+          raidCount,
+        })
+      )
+      .then(() => {
+        setShowSmallAlert(true);
+        setTimeout(() => setShowSmallAlert(false), 3000);
+      })
+      .catch((err) => {
+        console.error("Error in copying text: ", err);
+      });
+  };
+
+  const importFromString = (string) => {
+    setImportText("");
+    const newRaid = JSON.parse(string);
+    try {
+      setRaid(newRaid.raid);
+      setBuffs({ type: "load", value: newRaid.buffs });
+      setUtilities({ type: "load", value: newRaid.utilities });
+      setCount(newRaid.raidCount);
+    } catch {
+      console.error("could not load");
+    }
+  };
+
   return (
     <StyledSaveMenu onClick={() => setSaveMenuOpen(!saveMenuOpen)}>
       <div className="save-menu" onClick={(e) => e.stopPropagation()}>
@@ -94,6 +143,40 @@ const SaveMenu = ({
             </div>
           </div>
         ))}
+        <div className="save-menu-import-export-container">
+          <h2 className="import-export-header">Import/Export</h2>
+          <div className="import-main-content">
+            <div className="import-small-container">
+              {showSmallAlert ? (
+                <span className="small-alert">Copied!</span>
+              ) : (
+                <span className="small-alert hidden">Copied!</span>
+              )}
+              Export:
+              <div
+                className="copy-import-text-btn"
+                onClick={exportImportString}
+              >
+                Copy to Clipboard✏️
+              </div>
+            </div>
+            <div className="import-small-container">
+              Import:
+              <div className="import-btn-input-container">
+                <input
+                  className="paste-import-text-input"
+                  type="text"
+                  placeholder="Paste Exported Text"
+                  value={importText}
+                  onChange={handleImportText}
+                />
+                <div className="paste-import-text-btn" onClick={handleImport}>
+                  Import!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="save-menu-footer">
           <div
             id="save-to-disk-button"
