@@ -7,7 +7,7 @@ const COLORS = {
   fadedOffWhite: "rgba(248, 248, 255, 0.7)",
   background: "rgba(99, 102, 106, 1)",
   fadedBackground: "rgba(99, 102, 106, 0.3)",
-  primary: "rgba(55, 91, 129, 1)",
+  primary: "rgba(65, 84, 112, 1)",
   darkPrimary: "rgba(31, 60, 97, 1)",
   lightPrimary: "rgba(50, 94, 151, 1)",
   fadedPrimary: "rgba(38, 72, 116, 0.75)",
