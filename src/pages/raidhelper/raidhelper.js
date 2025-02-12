@@ -114,16 +114,18 @@ const RaidHelper = () => {
   };
 
   const groupSort = (groups, player) => {
-    // Sorts the new player into a availible slot in one of the groups.
-    const sortedGroup = JSON.parse(JSON.stringify(groups));
-    for (let group of Object.entries(sortedGroup)) {
-      if (group[1].playerIds.length < 5) {
-        // if group isnt full (5/5) add our player.
-        group[1].playerIds = [...group[1].playerIds, player];
-        return sortedGroup;
+    for (const [groupId, group] of Object.entries(groups)) {
+      if (group.playerIds.length < 5) {
+        return {
+          ...groups,
+          [groupId]: {
+            ...group,
+            playerIds: [...group.playerIds, player],
+          },
+        };
       }
     }
-    return sortedGroup;
+    return groups;
   };
 
   const addPlayer = (player) => {
@@ -131,12 +133,11 @@ const RaidHelper = () => {
       const id = uuidv4();
       const newPlayer = { id, ...player };
       const newGroups = groupSort(raid.groups, newPlayer);
-
-      setRaid((oldRaid) => ({
-        ...oldRaid,
-        players: [...oldRaid.players, newPlayer],
+      setRaid({
+        ...raid,
+        players: [...raid.players, newPlayer],
         groups: newGroups,
-      }));
+      });
 
       addBuff(id, player);
       addUtility(id, player);
@@ -708,6 +709,14 @@ const RaidHelper = () => {
             loadOnClickToFile={loadOnClickToFile}
             saveMenuOpen={saveMenuOpen}
             setSaveMenuOpen={setSaveMenuOpen}
+            raid={raid}
+            setRaid={setRaid}
+            buffs={buffs}
+            setBuffs={setBuffs}
+            utilities={utilities}
+            setUtilities={setUtilities}
+            raidCount={raidCount}
+            setCount={setCount}
           />
         )}
         {playerOptionsOpen && (
@@ -747,7 +756,7 @@ const RaidHelper = () => {
               backgroundColor="#2e7934"
               id="raid-saves-btn"
             >
-              <span className="utility-btn-text">Saves</span>
+              <span className="utility-btn-text">Import/Export & Saves</span>
               💾
             </RaidHeaderButton>
             <RaidHeaderButton
