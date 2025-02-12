@@ -40,7 +40,10 @@ const Draenei = ({
 
   return (
     <MainContentContainer>
-      <StyledCapHeader>Will you have a Draenei in your party?</StyledCapHeader>
+      <StyledCapHeader>
+        Will you have a Draenei in your <span className="underline">party</span>
+        ?
+      </StyledCapHeader>
       <RadioContainer>
         <div className="draenei-container">
           <label htmlFor="draenei"> Heroic Presence </label>

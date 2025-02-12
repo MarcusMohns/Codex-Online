@@ -245,6 +245,10 @@ export const StyledCapHeader = styled.h1`
   font-family: sans-serif;
   padding: 1rem;
 
+  .underline {
+    text-decoration-line: underline;
+    margin-left: 7px;
+  }
   .druid {
     color: ${COLORS.druid};
   }
