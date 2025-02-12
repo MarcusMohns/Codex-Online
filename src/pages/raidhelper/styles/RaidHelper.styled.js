@@ -53,6 +53,7 @@ export const SpecContainer = styled.section`
     grid-auto-flow: column;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    width: 100%;
 
     margin: 2rem 0;
     background-color: ${COLORS.darkPrimary};
