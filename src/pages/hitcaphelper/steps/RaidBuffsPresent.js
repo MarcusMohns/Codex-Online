@@ -31,7 +31,7 @@ const RaidBuffsPresent = ({
   return (
     <MainContentContainer>
       <StyledCapHeader>
-        Will you have a Shadow Priest or Balance Druid in your{" "}
+        Will you have a Shadow Priest or Balance Druid in your
         <span className="underline">raid</span>?
       </StyledCapHeader>
       <RadioContainer>
