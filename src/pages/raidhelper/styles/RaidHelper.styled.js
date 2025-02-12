@@ -53,8 +53,6 @@ export const SpecContainer = styled.section`
     grid-auto-flow: column;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 3px;
-    width: 96%;
 
     margin: 2rem 0;
     background-color: ${COLORS.darkPrimary};
@@ -67,8 +65,9 @@ export const SpecContainer = styled.section`
     box-sizing: border-box;
     padding: 0rem 2rem;
     .spec-buttons {
-      margin: 1rem 0;
+      grid-gap: 3px;
       width: 100%;
+      margin: 1rem 0;
     }
   }
 `;
@@ -409,7 +408,7 @@ export const StyledPlayer = styled.div`
   position: relative;
   box-sizing: border-box;
   color: #fff;
-  background-color: ${(props) => props.background};
+  background-color: ${(props) => props.backgroundColor};
   border: 1px solid black;
   cursor: pointer;
   margin: 2px;
@@ -1128,7 +1127,7 @@ export const ContentHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 3rem;
+  height: 50px;
   width: 100%;
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
@@ -1145,11 +1144,12 @@ export const ContentTitle = styled.h2`
 export const RaidContentHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
   margin-bottom: 2px;
+  height: 100px;
   background-color: ${COLORS.primary};
   color: ${COLORS.offWhite};
   box-shadow: 0 2px 6px -1px #000;
@@ -1167,19 +1167,16 @@ export const RaidContentHeader = styled.div`
     display: flex;
     align-items: center;
     text-align: center;
-    flex-direction: column;
     font-family: sans-serif;
-    margin: auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    font-size: 0.7rem;
     letter-spacing: 0.5px;
   }
   .raid-count {
     align-content: center;
     padding: 0.4rem;
     margin-right: 5px;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .role-count {
     p {
@@ -1201,8 +1198,6 @@ export const RaidContentHeader = styled.div`
     }
     .raid-count {
       padding: 0 0.5rem;
-      margin-right: auto;
-      margin-left: auto;
       justify-self: flex-start;
       font-size: 1.2rem;
       padding: 4px;
@@ -1211,10 +1206,10 @@ export const RaidContentHeader = styled.div`
       font-size: 0.9rem;
       padding: 2px;
     }
-  }
 
-  @media (min-width: 1300px) {
-    height: 3rem;
+    @media (min-width: 1550px) {
+      height: 50px;
+    }
   }
 `;
 
@@ -1484,13 +1479,12 @@ export const StyledSaveMenu = styled.div`
     left: 0;
     right: 0;
     text-align: center;
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
     animation-name: revealMenu;
     animation-duration: 0.3s;
-    @media (min-width: 1300px) {
+    @media (min-width: 800px) {
       width: 800px;
-      height: 450px;
     }
     .save-menu-header {
       display: flex;
@@ -1507,6 +1501,105 @@ export const StyledSaveMenu = styled.div`
         cursor: pointer;
       }
     }
+
+    .save-menu-import-export-container {
+      display: flex;
+      color: white;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      width: 100%;
+      .import-export-header {
+        box-sizing: border-box;
+        width: 100%;
+        font-size: 1rem;
+        text-align: left;
+        padding: 0 1rem;
+      }
+      .import-main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 2rem;
+        margin-right: 2rem;
+
+        .import-small-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          margin: 5px;
+          flex-wrap: wrap;
+
+          .small-alert {
+            font-size: 12px;
+            position: relative;
+            top: -30px;
+            left: 57%;
+          }
+          .hidden {
+            visibility: hidden;
+          }
+        }
+
+        .copy-import-text-btn {
+          font-size: 0.9rem;
+          padding: 0.5rem;
+          margin: 0 10px;
+          border-radius: 4px;
+          border: 1px solid ${COLORS.greyText};
+          cursor: pointer;
+          box-shadow: 0px 1px 5px -1px rgba(133, 127, 127, 0.6);
+
+          &:hover {
+            background-color: ${COLORS.fadedGrey};
+          }
+        }
+
+        .import-btn-input-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          margin: 0 10px;
+
+          .paste-import-text-input {
+            border: none;
+            font-size: 0.9rem;
+            padding: 0.55rem;
+            background-color: ${COLORS.fadedGrey};
+            color: white;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .paste-import-text-btn {
+            border-left: 1px solid ${COLORS.fadedGrey};
+            font-size: 0.9rem;
+            padding: 0.6rem;
+            cursor: pointer;
+            background-color: ${COLORS.fadedGrey};
+
+            &:hover {
+              background-color: ${COLORS.fadedBackground};
+            }
+          }
+        }
+      }
+
+      @media (min-width: 800px) {
+        .import-main-content {
+          flex-direction: row;
+        }
+      }
+    }
+
     .save-menu-footer {
       display: flex;
       flex-direction: row;
@@ -1895,7 +1988,7 @@ export const ResetIcon = styled(VscDebugRestart)`
   color: white;
   transition: transform 200ms;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-left: 20px;
   &:hover {
     transform: scale(1.2);
   }
