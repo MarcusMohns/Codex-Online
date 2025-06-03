@@ -54,9 +54,8 @@ export const SpecContainer = styled.section`
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 100%;
-
     margin: 2rem 0;
-    background-color: ${COLORS.darkPrimary};
+    background-color: ${COLORS.greyBg};
   }
   @media screen and (min-width: 1300px) {
     display: flex;
@@ -80,7 +79,7 @@ export const StyledSpecButton = styled.div`
   position: relative;
   font-size: 0.6rem;
   font-weight: bold;
-  background-color: ${COLORS.primary};
+  background-color: ${COLORS.fadedBackground};
   line-height: 1;
   color: ${(props) => props.color};
   cursor: pointer;
@@ -93,7 +92,7 @@ export const StyledSpecButton = styled.div`
     visibility: hidden;
   }
   &:hover {
-    background: ${COLORS.darkPrimary};
+    background: ${COLORS.fadedBlack};
     #info-image {
       visibility: visible;
     }
@@ -1130,10 +1129,11 @@ export const ContentHeader = styled.div`
   justify-content: space-around;
   height: 50px;
   width: 100%;
-  background-color: ${COLORS.primary};
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: ${COLORS.greyBg};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
-  box-shadow: 0 2px 6px -1px #000;
   user-select: none;
 `;
 export const ContentTitle = styled.h2`
@@ -1141,19 +1141,20 @@ export const ContentTitle = styled.h2`
   align-items: center;
   color: ${COLORS.offWhite};
   margin-left: 47%;
+  font-size: 1.3rem;
+  font-weight: 700;
 `;
 export const RaidContentHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
   margin-bottom: 2px;
   height: 100px;
-  background-color: ${COLORS.primary};
+  background-color: ${COLORS.greyBg};
   color: ${COLORS.offWhite};
-  box-shadow: 0 2px 6px -1px #000;
   user-select: none;
   .btn-container {
     display: flex;
@@ -1187,7 +1188,7 @@ export const RaidContentHeader = styled.div`
       margin: 0px 3px;
       padding: 5px;
       border-radius: 3px;
-      background: ${COLORS.fadedPrimary};
+      background: ${COLORS.fadedBlack};
     }
   }
 
@@ -1293,7 +1294,6 @@ export const RaidHeaderButton = styled.div`
   letter-spacing: 1px;
   transform: translateY(0);
   transition: transform 150ms;
-  box-shadow: 0 2px 6px -1px #000;
 
   .utility-btn-text {
     margin-right: 7px;
@@ -1309,11 +1309,9 @@ export const UtilityHeaderButton = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0rem, #000 0rem 0rem 0rem;
   box-sizing: border-box;
-  color: ${COLORS.lightText};
-  background-color: #1c2f47;
+  color: #fff;
+  background-color: #3b3e44;
   border-radius: 2px;
   padding: 5px 10px;
   text-align: center;
@@ -1328,7 +1326,6 @@ export const UtilityHeaderButton = styled.div`
   margin-right: ${(props) => props.marginRight};
   transform: translateY(0);
   transition: transform 150ms;
-  box-shadow: 0 2px 6px -1px #000;
 
   .utility-btn-text {
     margin-right: 7px;

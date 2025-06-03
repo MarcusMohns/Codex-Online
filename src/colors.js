@@ -2,6 +2,7 @@ const COLORS = {
   fadedBlack: "rgba(0, 0, 0, 0.5)",
   veryFadedBlack: "rgba(0, 0, 0, 0.4)",
   greyText: "rgba(102, 102, 102, 1)",
+  greyBg: "rgba(26, 27, 27, 1)",
   lightText: "#CEDDEC",
   offWhite: "rgba(248, 248, 255, 1)",
   fadedOffWhite: "rgba(248, 248, 255, 0.7)",

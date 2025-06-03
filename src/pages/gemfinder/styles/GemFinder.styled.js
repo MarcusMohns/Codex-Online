@@ -83,9 +83,7 @@ export const CheckBoxContainer = styled.section`
     align-items: flex-start;
     justify-content: center;
     box-sizing: border-box;
-    border-radius: 5px;
     width: 85%;
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
 
     @media screen and (max-width: 992px) {
       padding: 0px;

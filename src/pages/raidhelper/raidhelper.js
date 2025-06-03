@@ -753,7 +753,7 @@ const RaidHelper = () => {
               onClick={() => {
                 setSaveMenuOpen(!saveMenuOpen);
               }}
-              backgroundColor="#2e7934"
+              backgroundColor="#47774b"
               id="raid-saves-btn"
             >
               <span className="utility-btn-text">Import/Export & Saves</span>
@@ -763,7 +763,7 @@ const RaidHelper = () => {
               onClick={() => {
                 setPlayersIndexOpen(!playersIndexOpen);
               }}
-              backgroundColor="#1c2f47"
+              backgroundColor="#3b3e44"
               marginLeft="0px"
               marginRight="none"
             >
