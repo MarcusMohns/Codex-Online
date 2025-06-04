@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
   width: 100%;
   background-color: ${COLORS.greyBg};
   font-size: 0.9rem;
-  margin-top: 10rem;
+  margin-top: 12rem;
   flex-wrap: wrap;
   a {
     display: flex;
