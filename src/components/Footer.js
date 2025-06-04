@@ -2,17 +2,16 @@ import styled from "styled-components";
 import { RiDiscordFill } from "@react-icons/all-files/ri/RiDiscordFill";
 import { SiBuymeacoffee } from "@react-icons/all-files/si/SiBuymeacoffee";
 import { Link } from "react-router-dom";
+import COLORS from "../colors";
 
 const StyledFooter = styled.footer`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  height: 120px;
+  min-height: 70px;
   width: 100%;
-  background-color: #222;
-  border-top: 2px solid #34343a;
-  color: grey;
+  background-color: ${COLORS.greyBg};
   font-size: 0.9rem;
   margin-top: 10rem;
   flex-wrap: wrap;
@@ -31,11 +30,13 @@ const StyledFooter = styled.footer`
 `;
 
 const DiscordIcon = styled(RiDiscordFill)`
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-right: 2px;
 `;
 
 const CoffeeIcon = styled(SiBuymeacoffee)`
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+  margin-right: 2px;
 `;
 
 const Footer = () => {
