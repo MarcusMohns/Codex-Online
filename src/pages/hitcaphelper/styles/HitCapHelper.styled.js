@@ -234,7 +234,7 @@ export const AdditionalHitContainer = styled.div`
 
 export const StyledCapHeader = styled.h1`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   justify-items: center;
   flex-direction: row;
@@ -246,8 +246,9 @@ export const StyledCapHeader = styled.h1`
   padding: 1rem;
 
   .underline {
+    display: inline-block;
     text-decoration-line: underline;
-    margin-left: 7px;
+    margin-left: 5px;
   }
   .druid {
     color: ${COLORS.druid};
