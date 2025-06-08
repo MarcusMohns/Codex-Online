@@ -103,8 +103,7 @@ section {
 body {
   line-height: 1;
   overflow: overlay;
-  background: linear-gradient(#212124, #151517);
-
+  background-color: #161718;
   scrollbar-width: thin;
   scrollbar-color: rgba(38, 72, 116, 0.9) transparent;
 }
