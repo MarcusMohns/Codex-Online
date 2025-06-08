@@ -13,95 +13,182 @@ export const Main = styled.main`
   height: auto;
   background-color: ${COLORS.fadedBackground};
 
-  #raid-assembler-container {
+  .highlight {
+    color: ${COLORS.goldHighlight};
+  }
+
+  #divider {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 300px;
+    background: ${COLORS.fadedBackground};
+    background: linear-gradient(
+      9deg,
+      ${COLORS.fadedBlack} 50%,
+      ${COLORS.fadedBackground} 0%
+    );
+
+    h3 {
+      color: ${COLORS.offWhite};
+      text-align: center;
+      font-size: 2rem;
+      margin-left: 10%;
+      margin-bottom: 3rem;
+    }
+  }
+`;
+
+export const HeroContainer = styled.div`
+  max-width: 100vw;
+  min-width: 100%;
+  color: ${COLORS.offWhite};
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  background-color: ${COLORS.fadedBlack};
+  background-image: url("images/grizzly_hills.webp");
+  background-repeat: no-repeat;
+
+  .hero-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 3px 5px 10px -2px rgba(0, 0, 0, 0.6);
-    background-color: ${COLORS.fadedBlack};
-    background-image: url("images/grizzly_hills.webp");
-    background-repeat: no-repeat;
-    animation-name: FadeIn;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-
-    @keyframes FadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
+    width: 100%;
+    padding: 2rem;
     @media (min-width: 1200px) {
-      margin-top: 0%;
-      padding-top: 10rem;
-      flex-direction: row;
+      width: 50%;
     }
   }
 
-  #gem-finder-container {
-    background-color: #3d3d3d;
-
+  .hero-header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
     @media (min-width: 1200px) {
-      flex-direction: row-reverse;
-      margin: 0px;
-      background-color: ${COLORS.fadedBlack};
+      font-size: 3.5rem;
+      text-align: left;
     }
   }
-  #hit-cap-container {
-    background-color: #3d3d3d;
-    box-shadow: none;
+  .hero-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 
-    @media (min-width: 1200px) {
-      flex-direction: row-reverse;
-      margin: 0px;
-      background-color: ${COLORS.fadedBlack};
+  .hero-overline {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+`;
+
+export const CardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: ${COLORS.fadedBackground};
+  justify-content: space-around;
+  box-sizing: border-box;
+  min-height: 90vh;
+  width: 100%;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+`;
+
+export const PagePreviewCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 80%;
+  background-color: ${COLORS.fadedGrey};
+  box-shadow: 3px 5px 10px -2px rgba(12, 11, 11, 0.6);
+  color: ${COLORS.offWhite};
+  padding: 1rem;
+  margin-top: 2rem;
+  min-height: 500px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+
+  .link-button {
+    display: inline-block;
+    background: ${COLORS.primary};
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
+    border: 2px solid transparent;
+
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      background: ${COLORS.darkPrimary};
     }
   }
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media (min-width: 600px) {
+    width: 20%;
+    margin-top: 0rem;
+  }
+`;
+
+export const CardHeader = styled.h3`
+  color: ${COLORS.offWhite};
+  font-size: 1.4rem;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.375rem;
+  letter-spacing: 0.0071428571em;
+`;
+
+export const CardText = styled.p`
+  color: ${COLORS.offWhite};
+  font-size: 0.9rem;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.375rem;
+  letter-spacing: 0.0071428571em;
+`;
+
+export const CardImage = styled.img`
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 1rem 0;
 `;
 
 export const PagePreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   box-sizing: border-box;
   min-height: 100%;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
-  background-color: ${COLORS.fadedBlack};
   z-index: 10;
-  padding: 4rem 2rem;
-  .content-preview-image {
-    border-radius: 5px;
-    background-color: ${COLORS.fadedBlack};
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 5px 12px 10px 2px rgba(0, 0, 0, 0.6);
-    opacity: 80%;
-    width: 390px;
-    height: 219px;
-
-    @media (min-width: 1400px) {
-      width: 700px;
-      height: 394px;
-      margin: 15px;
-    }
-  }
+  background-color: ${COLORS.fadedBlack};
 
   @media (min-width: 500px) {
-    padding: 2rem 2rem;
   }
   @media (min-width: 760px) {
-    padding: 6rem 2rem;
   }
   @media (min-width: 1200px) {
-    padding: 4% 10rem;
-    padding-bottom: 2rem;
-    flex-direction: row;
   }
 `;
 
@@ -187,20 +274,5 @@ export const PagePreviewText = styled.div`
     &:hover {
       background: ${COLORS.darkPrimary};
     }
-  }
-`;
-
-export const PagePreviewHeader = styled.h2`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  color: ${COLORS.offWhite};
-  margin-bottom: 1rem;
-  font-size: 24px;
-
-  @media (min-width: 900px) {
-    align-items: start;
   }
 `;

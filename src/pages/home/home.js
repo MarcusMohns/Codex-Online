@@ -2,16 +2,72 @@ import {
   Main,
   PagePreviewText,
   PagePreviewContainer,
-  PagePreviewHeader,
+  PagePreviewCard,
+  CardHeader,
+  CardText,
+  CardImage,
+  CardContainer,
+  HeroContainer,
 } from "./styles/Home.styled";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <Main>
-      <PagePreviewContainer id="raid-assembler-container">
+      <HeroContainer>
+        <div className="hero-text">
+          <h2 className="hero-overline">WOW TOOLS</h2>
+          <h1 className="hero-header">Welcome to Codex</h1>
+          <p className="hero-subtitle">
+            Your companion for World of Warcraft: Wrath of the Lich
+          </p>
+        </div>
+      </HeroContainer>
+      <CardContainer>
+        <PagePreviewCard>
+          <CardHeader>🖩 Arena Point Calculator</CardHeader>
+          <CardImage src="images/page-preview/card_arena_point.svg" />
+          <CardText>
+            <span className="highlight">Calculate</span> how many{" "}
+            <span className="highlight">points </span>
+            you will <span className="highlight">receive </span> at the end of
+            the reset or check how much rating you need for that upgrade you're
+            looking at
+          </CardText>
+          <Link to="/gemfinder" className="link-button">
+            Calculate Points
+          </Link>
+        </PagePreviewCard>
+        <PagePreviewCard>
+          <CardHeader> 🔸 Gem Finder</CardHeader>
+          <CardImage src="images/page-preview/card_gem_finder.svg" />
+          <CardText>
+            Find<span className="highlight"> any gem </span>in WotLK with the{" "}
+            <span className="highlight">stats, quality</span> or{" "}
+            <span className="highlight">color</span> that suit your needs
+          </CardText>
+          <Link to="/gemfinder" className="link-button">
+            Find Gems
+          </Link>
+        </PagePreviewCard>
+        <PagePreviewCard>
+          <CardHeader> 🎯 Hit Cap Helper</CardHeader>
+          <CardImage src="images/page-preview/card_hit_calculator.svg" />
+          <CardText>
+            Smoothly <span className="highlight">find out</span> exactly how
+            much <span className="highlight">hit</span> you need on your{" "}
+            <span className="highlight">character sheet</span>
+          </CardText>
+          <Link to="/gemfinder" className="link-button">
+            Find Your Hit
+          </Link>
+        </PagePreviewCard>
+      </CardContainer>
+      <div id="divider">
+        <h3>Raid Helper</h3>
+      </div>
+      <PagePreviewContainer>
         <PagePreviewText>
-          <PagePreviewHeader>Raid Helper</PagePreviewHeader>
           <div>
             Organize WotLK{" "}
             <span className="highlight">Buffs, Debuffs and Utilities</span>. The
@@ -45,76 +101,6 @@ const Home = () => {
             Get started!
           </Link>
         </PagePreviewText>
-        <img
-          srcSet="images/page-preview/raid_assembler_sm.png 390w,images/page-preview/raid_assembler.png 700w"
-          sizes="(min-width: 1400px) 700px,390px"
-          src="images/page-preview/raid_assembler.png"
-          className="content-preview-image"
-          alt="raid-assembler-preview"
-        />
-      </PagePreviewContainer>
-      <PagePreviewContainer id="gem-finder-container">
-        <PagePreviewText>
-          <PagePreviewHeader>Gem Finder</PagePreviewHeader>
-          <div>
-            Find<span className="highlight"> any gem </span>in WotLK with the{" "}
-            <span className="highlight">stats, quality</span> or{" "}
-            <span className="highlight">color</span> that suit your needs
-          </div>
-          <Link to="/gemfinder" className="link-button">
-            Find gems
-          </Link>
-        </PagePreviewText>
-        <img
-          srcSet="images/page-preview/gem_finder_sm.png 390w,images/page-preview/gem_finder.png 700w"
-          sizes="(min-width: 1400px) 700px,390px"
-          src="images/page-preview/gem_finder.png"
-          className="content-preview-image"
-          alt="raid-assembler-preview"
-        />
-      </PagePreviewContainer>
-      <PagePreviewContainer>
-        <PagePreviewText>
-          <PagePreviewHeader>Arena Point Calculator</PagePreviewHeader>
-          <div>
-            <span className="highlight">Calculate</span> how many{" "}
-            <span className="highlight">points </span>
-            you will <span className="highlight">receive </span> at the end of
-            the reset or check how much rating you need for that upgrade you're
-            looking at
-          </div>
-          <Link to="/arenapointcalculator" className="link-button">
-            Calculate points
-          </Link>
-        </PagePreviewText>
-        <img
-          srcSet="images/page-preview/arena_point_calculator_sm.png 390w,images/page-preview/arena_point_calculator.png 700w"
-          sizes="(min-width: 1400px) 700px,390px"
-          src="images/page-preview/arena_point_calculator.png"
-          className="content-preview-image"
-          alt="arena-point-calc-preview"
-        />
-      </PagePreviewContainer>
-      <PagePreviewContainer id="hit-cap-container">
-        <PagePreviewText>
-          <PagePreviewHeader>Hit Cap Helper</PagePreviewHeader>
-          <div>
-            Smoothly <span className="highlight">find out</span> exactly how
-            much <span className="highlight">hit</span> you need on your{" "}
-            <span className="highlight">character sheet</span> by inputting your
-            hit talents and access to raid and draenei buffs
-          </div>
-          <Link to="/hitcaphelper" className="link-button">
-            Find your hit
-          </Link>
-        </PagePreviewText>
-        <img
-          srcSet="images/page-preview/hit_cap_helper_sm.png 390w,images/page-preview/hit_cap_helper.png 700w"
-          sizes="(min-width: 1400px) 700px,390px"
-          src="images/page-preview/hit_cap_helper.png"
-          className="content-preview-image"
-          alt="arena-point-calc-preview"
-        />
       </PagePreviewContainer>
     </Main>
   );
