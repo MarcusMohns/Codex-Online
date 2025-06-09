@@ -76,6 +76,7 @@ export const CheckBoxContainer = styled.section`
   align-items: center;
   justify-content: center;
   min-width: 100%;
+
   .categories-and-checkboxes {
     padding: 0.5rem;
     display: flex;
@@ -83,7 +84,7 @@ export const CheckBoxContainer = styled.section`
     align-items: flex-start;
     justify-content: center;
     box-sizing: border-box;
-    width: 85%;
+    width: 80%;
 
     @media screen and (max-width: 992px) {
       padding: 0px;
@@ -100,7 +101,7 @@ export const CheckBoxContainer = styled.section`
     box-sizing: border-box;
     margin: 1px;
     padding: 0.5rem;
-    background-color: ${COLORS.fadedBlack};
+    background-color: ${COLORS.greyBg};
     width: 100%;
 
     @media screen and (max-width: 992px) {
@@ -166,7 +167,7 @@ export const CheckBoxContainer = styled.section`
       padding: 0;
       border-radius: 5px;
       cursor: pointer;
-      background-color: ${COLORS.fadedBackground};
+      background-color: ${COLORS.fadedGrey};
     }
 
     &:hover input ~ .styled-checkmark {
@@ -214,7 +215,7 @@ export const CheckBoxContainer = styled.section`
       flex-wrap: nowrap;
     }
     .categories-and-checkboxes {
-      width: 100%;
+      width: 70%;
     }
   }
   @media screen and (max-width: 510px) {
@@ -233,7 +234,7 @@ export const GemTableContainer = styled.section`
   box-sizing: border-box;
   font-size: 0.95rem;
   overflow-y: scroll;
-  height: 70vh;
+  height: 100vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -373,7 +374,7 @@ export const GemTableContainer = styled.section`
   }
 
   @media screen and (max-width: 992px) {
-    height: 500px;
+    height: 800px;
 
     // Mobile
     td {
