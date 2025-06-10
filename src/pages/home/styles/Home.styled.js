@@ -16,27 +16,6 @@ export const Main = styled.main`
   .highlight {
     color: ${COLORS.goldHighlight};
   }
-
-  #divider {
-    display: flex;
-    align-items: end;
-    width: 100%;
-    height: 300px;
-    background: ${COLORS.fadedBackground};
-    background: linear-gradient(
-      9deg,
-      ${COLORS.fadedBlack} 50%,
-      ${COLORS.fadedBackground} 0%
-    );
-
-    h3 {
-      color: ${COLORS.offWhite};
-      text-align: center;
-      font-size: 2rem;
-      margin-left: 10%;
-      margin-bottom: 3rem;
-    }
-  }
 `;
 
 export const HeroContainer = styled.div`
@@ -173,6 +152,27 @@ export const CardImage = styled.img`
   margin: 1rem 0;
 `;
 
+export const Divider = styled.div`
+  display: flex;
+  align-items: end;
+  width: 100%;
+  height: 300px;
+  background: ${COLORS.fadedBackground};
+  background: linear-gradient(
+    9deg,
+    ${COLORS.fadedBlack} 50%,
+    ${COLORS.fadedBackground} 0%
+  );
+
+  h3 {
+    color: ${COLORS.offWhite};
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 10%;
+    margin-bottom: 3rem;
+  }
+`;
+
 export const PagePreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -194,13 +194,12 @@ export const PagePreviewContainer = styled.div`
 
 export const PagePreviewText = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
   color: ${COLORS.offWhite};
   flex-grow: 1;
-  margin: 15px;
-  width: 80%;
+  width: 50%;
   text-align: center;
   font-size: 1.1rem;
   font-family: sans-serif;
@@ -213,22 +212,26 @@ export const PagePreviewText = styled.div`
     color: ${COLORS.goldHighlight};
   }
 
+  .page-preview-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+
   .step-container {
-    display: none;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
     color: ${COLORS.goldHighlight};
     background-color: ${COLORS.fadedBlack};
-    margin-top: 1rem;
-    border-radius: 5px;
-    text-align: center;
     letter-spacing: 0;
 
     @media (min-width: 900px) {
       display: flex;
-      flex-direction: row;
       font-size: 1.2rem;
-      width: 100%;
     }
   }
   @media (min-width: 900px) {
@@ -241,6 +244,18 @@ export const PagePreviewText = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
+  }
+
+  .step-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step-description {
+    font-size: 0.9rem;
+    color: ${COLORS.offWhite};
+    font-style: italic;
+    font-weight: 300;
   }
 
   .step-number {
@@ -267,6 +282,7 @@ export const PagePreviewText = styled.div`
     color: #fff;
     padding: 15px 30px;
     border: 2px solid transparent;
+    width: max-content;
 
     cursor: pointer;
     margin-top: 1rem;
