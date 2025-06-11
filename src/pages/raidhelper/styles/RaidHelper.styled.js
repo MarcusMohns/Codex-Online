@@ -1131,7 +1131,7 @@ export const ContentHeader = styled.div`
   width: 100%;
   font-size: 1.3rem;
   font-weight: 700;
-  background-color: ${COLORS.greyBg};
+  background-color: ${COLORS.fadedGrey};
   color: ${COLORS.offWhite};
   margin-bottom: 1rem;
   user-select: none;
@@ -1153,7 +1153,7 @@ export const RaidContentHeader = styled.div`
   max-width: 100%;
   margin-bottom: 2px;
   height: 100px;
-  background-color: ${COLORS.greyBg};
+  background-color: ${COLORS.fadedGrey};
   color: ${COLORS.offWhite};
   user-select: none;
   .btn-container {
@@ -1283,6 +1283,7 @@ export const RaidHeaderButton = styled.div`
   cursor: pointer;
   color: #fff;
   background-color: ${(props) => props.backgroundColor};
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   margin-right: 1rem;
   font-size: 1rem;
@@ -1299,7 +1300,7 @@ export const RaidHeaderButton = styled.div`
     margin-right: 7px;
   }
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 `;
 
@@ -1312,6 +1313,7 @@ export const UtilityHeaderButton = styled.div`
   box-sizing: border-box;
   color: #fff;
   background-color: #3b3e44;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   padding: 5px 10px;
   text-align: center;
@@ -1332,7 +1334,7 @@ export const UtilityHeaderButton = styled.div`
   }
 
   &:hover {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
   @media (min-width: 600px) {
     font-size: 1rem;
