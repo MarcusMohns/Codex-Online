@@ -41,8 +41,10 @@ const Draenei = ({
   return (
     <MainContentContainer>
       <StyledCapHeader>
-        Will you have a Draenei in your <span className="underline">party</span>
-        ?
+        <p>
+          Will you have a Draenei in your{" "}
+          <span className="underline">party</span>?
+        </p>
       </StyledCapHeader>
       <RadioContainer>
         <div className="draenei-container">
