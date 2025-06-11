@@ -79,7 +79,7 @@ export const CardContainer = styled.div`
   min-height: 90vh;
   width: 100%;
 
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     flex-direction: row;
   }
 `;
@@ -107,6 +107,7 @@ export const PagePreviewCard = styled.div`
     font-size: 16px;
     color: #fff;
     padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     border: 2px solid transparent;
 
     cursor: pointer;
@@ -119,7 +120,7 @@ export const PagePreviewCard = styled.div`
     transform: scale(1.05);
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 900px) {
     width: 20%;
     margin-top: 0rem;
   }
@@ -133,6 +134,9 @@ export const CardHeader = styled.h3`
   -webkit-font-smoothing: antialiased;
   line-height: 1.375rem;
   letter-spacing: 0.0071428571em;
+  background-color: ${COLORS.veryFadedBlack};
+  width: 100%;
+  padding: 0.5rem 0;
 `;
 
 export const CardText = styled.p`
@@ -155,6 +159,7 @@ export const CardImage = styled.img`
 export const Divider = styled.div`
   display: flex;
   align-items: end;
+  justify-content: center;
   width: 100%;
   height: 300px;
   background: ${COLORS.fadedBackground};
@@ -168,7 +173,6 @@ export const Divider = styled.div`
     color: ${COLORS.offWhite};
     text-align: center;
     font-size: 2rem;
-    margin-left: 10%;
     margin-bottom: 3rem;
   }
 `;
@@ -177,16 +181,26 @@ export const PagePreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   box-sizing: border-box;
   min-height: 100%;
   width: 100%;
   z-index: 10;
   background-color: ${COLORS.fadedBlack};
 
+  .page-preview-image {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 1rem 0;
+  }
+
   @media (min-width: 500px) {
   }
   @media (min-width: 760px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   @media (min-width: 1200px) {
   }
@@ -197,10 +211,10 @@ export const PagePreviewText = styled.div`
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   color: ${COLORS.offWhite};
-  flex-grow: 1;
-  width: 50%;
-  text-align: center;
+  width: 90%;
+  text-align: start;
   font-size: 1.1rem;
   font-family: sans-serif;
   text-rendering: optimizeLegibility;
@@ -215,7 +229,6 @@ export const PagePreviewText = styled.div`
   .page-preview-text {
     display: flex;
     flex-direction: column;
-    width: 80%;
     line-height: 1.5rem;
     font-size: 1rem;
   }
@@ -236,6 +249,7 @@ export const PagePreviewText = styled.div`
   }
   @media (min-width: 900px) {
     text-align: inherit;
+    width: max-content;
     align-items: start;
   }
   .a-step {
@@ -243,7 +257,7 @@ export const PagePreviewText = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    margin: 0.5rem 0;
   }
 
   .step-text {
@@ -266,7 +280,6 @@ export const PagePreviewText = styled.div`
     min-height: 1.8rem;
     padding: 0.2rem;
     font-size: 1.4rem;
-    margin: 1rem;
     margin-right: 0.5rem;
     border-radius: 50%;
     font-family: sans-serif;

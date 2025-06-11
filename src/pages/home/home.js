@@ -134,6 +134,11 @@ const Home = () => {
             </div>
           </div>
         </PagePreviewText>
+        <img
+          src="images/page-preview/raid_helper.svg"
+          alt="Raid Helper"
+          className="page-preview-image"
+        />
       </PagePreviewContainer>
     </Main>
   );
