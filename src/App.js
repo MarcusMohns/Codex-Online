@@ -18,6 +18,7 @@ const HitCapHelper = lazy(() => import("./pages/hitcaphelper/hitcaphelper"));
 const gemfinder = lazy(() => import("./pages/gemfinder/gemfinder"));
 const Terms = lazy(() => import("./pages/terms"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+const Credits = lazy(() => import("./pages/credits"));
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/gemfinder" component={gemfinder} />
           <Route path="/hitcaphelper" component={HitCapHelper} />
           <Route path="/terms" component={Terms} />
+          <Route path="/credits" component={Credits} />
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>

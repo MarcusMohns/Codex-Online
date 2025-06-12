@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { RiDiscordFill } from "@react-icons/all-files/ri/RiDiscordFill";
-import { SiBuymeacoffee } from "@react-icons/all-files/si/SiBuymeacoffee";
 import { Link } from "react-router-dom";
 import COLORS from "../colors";
 
@@ -34,24 +33,15 @@ const DiscordIcon = styled(RiDiscordFill)`
   margin-right: 2px;
 `;
 
-const CoffeeIcon = styled(SiBuymeacoffee)`
-  font-size: 1.2rem;
-  margin-right: 2px;
-`;
-
 const Footer = () => {
   return (
     <StyledFooter>
-      <a href="mailto: warcraftcodex@gmail.com" target="blank">
+      <a href="mailto: marcus@mohns.se" target="blank">
         Contact
       </a>
-      <a
-        href="https://www.buymeacoffee.com/Wowcodex"
-        className="small-coffee-btn"
-      >
-        <CoffeeIcon />
-        Support
-      </a>
+      <Link to="/credits" className="link-button">
+        Credits
+      </Link>
       <Link to="/terms" className="link-button">
         Terms
       </Link>
