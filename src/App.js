@@ -15,7 +15,7 @@ const Arenapointcalculator = lazy(() =>
   import("./pages/arenapointcalculator/ArenaPointCalculator")
 );
 const HitCapHelper = lazy(() => import("./pages/hitcaphelper/hitcaphelper"));
-const gemfinder = lazy(() => import("./pages/gemfinder/gemfinder"));
+const Gemfinder = lazy(() => import("./pages/gemfinder/gemfinder"));
 const Terms = lazy(() => import("./pages/terms"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 const Credits = lazy(() => import("./pages/credits"));
@@ -32,7 +32,7 @@ const App = () => {
             path="/arenapointcalculator"
             component={Arenapointcalculator}
           />
-          <Route path="/gemfinder" component={gemfinder} />
+          <Route path="/gemfinder" component={Gemfinder} />
           <Route path="/hitcaphelper" component={HitCapHelper} />
           <Route path="/terms" component={Terms} />
           <Route path="/credits" component={Credits} />
