@@ -690,7 +690,7 @@ const SpecArray = [
       },
       {
         name: "Freezing Trap",
-        image: "images/Chains_Of_ice.png",
+        image: "images/Chains_Of_Ice.png",
         icon: "images/spellicons/Chains_Of_ice.png",
         link: "https://www.wowhead.com/wotlk/spell=14311/freezing-trap",
         spellId: "14311",
@@ -777,7 +777,7 @@ const SpecArray = [
       },
       {
         name: "Freezing Trap",
-        image: "images/Chains_Of_ice.png",
+        image: "images/Chains_Of_Ice.png",
         icon: "images/spellicons/Chains_Of_ice.png",
         link: "https://www.wowhead.com/wotlk/spell=14311/freezing-trap",
         spellId: "14311",
@@ -873,7 +873,7 @@ const SpecArray = [
       },
       {
         name: "Freezing Trap",
-        image: "images/Chains_Of_ice.png",
+        image: "images/Chains_Of_Ice.png",
         icon: "images/spellicons/Chains_Of_ice.png",
         link: "https://www.wowhead.com/wotlk/spell=14311/freezing-trap",
         spellId: "14311",
