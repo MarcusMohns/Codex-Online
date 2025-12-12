@@ -27,6 +27,7 @@ export const Main = styled.main`
   align-items: flex-start;
   justify-content: flex-start;
   @media (min-width: 1300px) {
+    margin-top: 8rem;
     display: grid;
     height: 100%;
     width: 100%;
@@ -38,37 +39,59 @@ export const Main = styled.main`
       "Buffs Buffs";
     padding: 2rem;
   }
+  @keyframes revealMenu {
+    0% {
+      transform: translateY(-15%);
+      opacity: 0%;
+    }
+    100% {
+    }
+  }
+  @keyframes FadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const SpecContainer = styled.section`
+  position: fixed;
+  animation: FadeIn 0.1s ease-in-out;
+  top: 10%;
+  width: 100%;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 9%;
   box-sizing: border-box;
-  border-top: 2px black;
+  border-radius: 0.5rem;
+  background-color: ${COLORS.greyText};
+
+  .close-button {
+    align-self: flex-start;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: ${COLORS.veryFadedBlack};
+    color: ${COLORS.offWhite};
+    margin: 0.2rem;
+    outline: none;
+    cursor: pointer;
+  }
+
   .spec-buttons {
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-    margin: 2rem 0;
-    background-color: ${COLORS.greyBg};
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 1px;
+    padding: 1rem;
   }
-  @media screen and (min-width: 1300px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0rem 2rem;
-    .spec-buttons {
-      grid-gap: 3px;
-      width: 100%;
-      margin: 1rem 0;
-    }
+  @media (min-width: 820px) {
+    width: max-content;
+    right: 2%;
   }
 `;
 export const StyledSpecButton = styled.div`
@@ -79,14 +102,11 @@ export const StyledSpecButton = styled.div`
   position: relative;
   font-size: 0.6rem;
   font-weight: bold;
-  background-color: ${COLORS.fadedBackground};
-  line-height: 1;
+  background-color: ${COLORS.fadedBlack};
   color: ${(props) => props.color};
+  line-height: 1;
   cursor: pointer;
   user-select: none;
-  text-shadow: #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem,
-    #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem, #000 0rem 0rem 0.1rem;
-  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.6);
 
   #info-image {
     visibility: hidden;
@@ -97,9 +117,7 @@ export const StyledSpecButton = styled.div`
       visibility: visible;
     }
   }
-  &:active {
-    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 1);
-  }
+
   #info-image {
     position: absolute;
     left: 1px;
@@ -111,35 +129,28 @@ export const StyledSpecButton = styled.div`
 
   .text-and-image-button-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    text-align: center;
-    padding: 0.4rem;
+    height: 100%;
+    padding: 0.7rem;
     font-size: 0.7rem;
-    .specbutton-text {
-      display: none;
-    }
+
     .specbutton-image {
       border-radius: 10px;
       border: 1px solid black;
       width: 22px;
       height: 22px;
-      animation: fadeIn 1s;
     }
   }
   @media (min-width: 820px) {
     .text-and-image-button-container {
-      height: 100%;
-      flex-direction: column;
-      padding: 0.7rem;
       .specbutton-text {
         display: flex;
         text-align: center;
         margin-left: initial;
-        transition: transform 300ms ease;
       }
       .specbutton-image {
         margin-top: 5px;
@@ -151,17 +162,13 @@ export const StyledSpecButton = styled.div`
     font-size: 0.7rem;
     letter-spacing: 1px;
     .text-and-image-button-container {
-      flex-direction: row;
+      flex-direction: column;
       padding: 0.7rem;
       .specbutton-text {
         display: flex;
-        margin-left: auto;
-        transition: transform 300ms ease;
       }
       .specbutton-image {
         display: flex;
-        margin-left: auto;
-        margin-top: 0px;
       }
     }
   }
@@ -208,14 +215,6 @@ export const StyledClassToolTip = styled.div`
       .class-tooltip-content {
         max-height: 650px;
         overflow-y: auto;
-      }
-    }
-    @keyframes revealMenu {
-      0% {
-        transform: translateY(-15%);
-        opacity: 0%;
-      }
-      100% {
       }
     }
   }
@@ -859,14 +858,6 @@ export const StyledBuff = styled.a`
     -webkit-line-clamp: 2;
     overflow: hidden;
   }
-  @keyframes FadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 `;
 
 export const StyledCategory = styled.div`
@@ -1147,22 +1138,31 @@ export const ContentTitle = styled.h2`
 export const RaidContentHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  box-sizing: border-box;
   flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
   margin-bottom: 2px;
-  height: 100px;
+  padding: 0.3rem;
   background-color: ${COLORS.fadedGrey};
   color: ${COLORS.offWhite};
   user-select: none;
-  .btn-container {
-    display: flex;
-    justify-self: flex-end;
-  }
+
   #raid-saves-btn {
     margin-left: 10px;
   }
+`;
+
+export const RaidCountContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: ${COLORS.fadedGrey};
+  color: ${COLORS.offWhite};
+  width: 100%;
+  padding: 0.2rem;
 
   .raid-count,
   .role-count {
@@ -1175,10 +1175,11 @@ export const RaidContentHeader = styled.div`
     letter-spacing: 0.5px;
   }
   .raid-count {
-    align-content: center;
-    padding: 0.4rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
     margin-right: 5px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .role-count {
     p {
@@ -1186,9 +1187,6 @@ export const RaidContentHeader = styled.div`
       align-items: center;
       justify-content: center;
       margin: 0px 3px;
-      padding: 5px;
-      border-radius: 3px;
-      background: ${COLORS.fadedBlack};
     }
   }
 
@@ -1201,16 +1199,11 @@ export const RaidContentHeader = styled.div`
     .raid-count {
       padding: 0 0.5rem;
       justify-self: flex-start;
-      font-size: 1.2rem;
       padding: 4px;
     }
     .role-count {
       font-size: 0.9rem;
       padding: 2px;
-    }
-
-    @media (min-width: 1550px) {
-      height: 50px;
     }
   }
 `;
@@ -1285,7 +1278,7 @@ export const RaidHeaderButton = styled.div`
   background-color: ${(props) => props.backgroundColor};
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
-  margin-right: 1rem;
+  margin-left: ${(props) => props.marginLeft};
   font-size: 1rem;
   cursor: pointer;
   padding: 5px 10px;
@@ -1296,6 +1289,9 @@ export const RaidHeaderButton = styled.div`
   transform: translateY(0);
   transition: transform 150ms;
 
+  .plus-icon {
+    font-weight: 700;
+  }
   .utility-btn-text {
     margin-right: 7px;
   }
@@ -1312,7 +1308,7 @@ export const UtilityHeaderButton = styled.div`
   cursor: pointer;
   box-sizing: border-box;
   color: #fff;
-  background-color: #3b3e44;
+  background-color: #575b61ff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   padding: 5px 10px;
@@ -1401,14 +1397,6 @@ export const StyledPlayerOptions = styled.div`
       .options-menu-content {
         overflow-y: auto;
         max-height: 650px;
-      }
-    }
-    @keyframes revealMenu {
-      0% {
-        transform: translateY(-15%);
-        opacity: 0%;
-      }
-      100% {
       }
     }
   }
@@ -1800,7 +1788,7 @@ export const StyledPlayerIndex = styled.div`
   height: auto;
   width: 100vw;
   left: 0;
-  top: 0%;
+  top: 0;
   z-index: 3;
   .player-index-panel {
     display: flex;
@@ -1982,16 +1970,7 @@ export const CheckCircle = styled(FaRegCheckCircle)`
 `;
 
 export const ResetIcon = styled(VscDebugRestart)`
-  display: flex;
-  font-size: 2rem;
-  cursor: pointer;
   color: white;
-  transition: transform 200ms;
-  border-radius: 50%;
-  margin-left: 20px;
-  &:hover {
-    transform: scale(1.2);
-  }
 `;
 
 export const DeletePlayerIcon = styled(RiDeleteBin2Line)`
@@ -2002,6 +1981,7 @@ export const EditIcon = styled(RiEdit2Line)`
   color: black;
   font-size: 1.5em;
 `;
+
 export const InfoIcon = styled(BsInfoSquareFill)`
   font-size: 1.6em;
 `;
