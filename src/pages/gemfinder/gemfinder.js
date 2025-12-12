@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import GemTable from "./components/GemTable";
 import gemArray from "../../data/Gems";
 import Checkboxes from "./components/Checkboxes";
@@ -11,58 +11,35 @@ import {
   FilterIcon,
   SearchIcon,
 } from "./styles/GemFinder.styled";
-
-let currentFilters = [];
+import useSort from "./hooks/useSort";
+import startViewTransitionWrapper from "../../store";
 
 const Gemfinder = () => {
   const [gems, setGems] = useState(gemArray);
-  const [sort, setSort] = useState({
-    gemStats: false,
-    gemQuality: false,
-    gemColor: false,
-    gemName: false,
-    gemSource: false,
-  });
+  const [currentFilters, setCurrentFilters] = useState([]);
+  const { gemSorter, sortState } = useSort();
+
+  const handleSetGems = (newGems) => {
+    // startViewTransition
+    startViewTransitionWrapper(() => setGems(newGems));
+  };
 
   const handleChange = (e) => {
     if (e.target.checked) {
       // Add a filter
-      currentFilters = [...currentFilters, e.target.value];
+      setCurrentFilters([...currentFilters, e.target.value]);
     } else if (!e.target.checked) {
       // Remove a filter
-      currentFilters = currentFilters.filter(
+      const newCurrentFilters = currentFilters.filter(
         (aFilter) => aFilter !== e.target.value
       );
+      setCurrentFilters(newCurrentFilters);
     } else {
       return console.error("Unexpected checkbox value");
     }
-    gemFilterer();
   };
 
-  const handleClick = (e) => {
-    // Sort arrow is clicked
-    let sortBy = null;
-    let gemsToSort = [].concat(gems);
-    // Check which sort arrow was clicked
-    if (e.target.className === "gemNameHeader") {
-      sortBy = "name";
-    } else if (e.target.className === "gemColorHeader") {
-      sortBy = "color";
-    } else if (e.target.className === "gemQualityHeader") {
-      sortBy = "quality";
-    } else if (e.target.className === "gemSourceHeader") {
-      sortBy = "source";
-    } else if (e.target.className === "gemStatsHeader") {
-      sortBy = "stats";
-    } else {
-      console.error("handleClick recieved unexpected value from onClick");
-    }
-    // send new array to filter through, sort by SortBy
-    gemSorter(gemsToSort, sortBy);
-  };
-
-  // Sets our state depending on which checkboxes are ticked.
-  const gemFilterer = () => {
+  const gemFilterer = useCallback(() => {
     let newArray = [...gemArray];
     currentFilters.forEach((aFilter) => {
       if (filterNames[2].content.includes(aFilter))
@@ -84,8 +61,32 @@ const Gemfinder = () => {
       }
     });
 
-    setGems(newArray);
+    handleSetGems(newArray);
+  }, [currentFilters]);
+
+  const handleClick = (e) => {
+    // Sort arrow is clicked
+    let gemsToSort = [].concat(gems);
+    let sortBy;
+    // Check which sort arrow was clicked
+    if (e.target.className === "gemNameHeader") {
+      sortBy = "name";
+    } else if (e.target.className === "gemColorHeader") {
+      sortBy = "color";
+    } else if (e.target.className === "gemQualityHeader") {
+      sortBy = "quality";
+    } else if (e.target.className === "gemStatsHeader") {
+      sortBy = "stats";
+    } else {
+      console.error("handleClick recieved unexpected value from onClick");
+      return;
+    }
+    // send new array to filter through, sort by SortBy
+    const sorted = gemSorter(gemsToSort, sortBy);
+    handleSetGems(sorted);
   };
+
+  // Sets our state depending on which checkboxes are ticked.
 
   const gemSearch = (search) => {
     if (search) {
@@ -95,103 +96,16 @@ const Gemfinder = () => {
           gem.name.toUpperCase().includes(search.toUpperCase()) ||
           gem.stats.toUpperCase().includes(search.toUpperCase())
       );
-      setGems(newGems);
+      handleSetGems(newGems);
     } else {
-      setGems(gemArray);
+      handleSetGems(gemArray);
     }
   };
 
-  const gemSorter = (gemsToSort, sortBy) => {
-    if (sortBy === "quality" || sortBy === "stats") {
-      //  Sort by quality and stats in the same way we would just quality.
-      gemsToSort.sort(function (a, b) {
-        if (
-          (a.quality === "Perfect" && b.quality === "Rare") ||
-          (b.quality === "Perfect" && a.quality === "Rare")
-          // Sort sorts the gems in order Epic -> Perfect -> Rare -> Uncommon so reverse Perfect and Rare to sort accurately (Epic -> Rare -> Perfect -> Uncommon)
-        ) {
-          if (a.quality < b.quality) {
-            return sort.gemQuality ? -1 : 1;
-          }
-          if (a.quality > b.quality) {
-            return sort.gemQuality ? 1 : -1;
-          }
-          return 0;
-        }
-        // Otherwise sort normally
-        if (a.quality < b.quality) {
-          return sort.gemQuality ? 1 : -1;
-        }
-        if (a.quality > b.quality) {
-          return sort.gemQuality ? -1 : 1;
-        }
-
-        return 0;
-      });
-      setSort((sort) => ({
-        ...sort,
-        gemQuality: !sort.gemQuality,
-      }));
-    }
-
-    if (sortBy === "color") {
-      gemsToSort.sort(function (a, b) {
-        if (a.color < b.color) {
-          return sort.gemColor ? 1 : -1;
-        }
-        if (a.color > b.color) {
-          return sort.gemColor ? -1 : 1;
-        }
-
-        return 0;
-      });
-      setSort((sort) => ({
-        ...sort,
-        gemColor: !sort.gemColor,
-      }));
-    }
-
-    if (sortBy === "name") {
-      gemsToSort.sort(function (a, b) {
-        if (a.name < b.name) {
-          return sort.gemName ? 1 : -1;
-        }
-        if (a.name > b.name) {
-          return sort.gemName ? -1 : 1;
-        }
-
-        return 0;
-      });
-
-      setSort((sort) => ({
-        ...sort,
-        gemName: !sort.gemName,
-      }));
-    }
-
-    if (sortBy === "source") {
-      gemsToSort.sort(function (a, b) {
-        if (a.source < b.source) {
-          return sort.gemSource ? 1 : -1;
-        }
-        if (a.source > b.source) {
-          return sort.gemSource ? -1 : 1;
-        }
-
-        return 0;
-      });
-      setSort((sort) => ({
-        gemSource: !sort.gemSource,
-      }));
-    }
-
-    setGems(gemsToSort);
-  };
-
+  // Filter gems every time currentFilters changes
   useEffect(() => {
-    // Reset currentFilters when the page is rendered
-    currentFilters = [];
-  }, []);
+    gemFilterer();
+  }, [currentFilters, gemFilterer]);
 
   return (
     <>
@@ -223,7 +137,7 @@ const Gemfinder = () => {
         </h2>
         <GemTableContainer>
           {gems.length > 0 ? (
-            <GemTable gems={gems} onClick={handleClick} />
+            <GemTable gems={gems} onClick={handleClick} sortState={sortState} />
           ) : (
             <p className="gemsNotFound">No gems found</p>
           )}
