@@ -132,6 +132,7 @@ html {
   box-sizing: border-box;
   letter-spacing: 0.0071428571em;
   min-height: 100%;
+  overflow-y: scroll;
 }
 
 /* custom scrollbar */
