@@ -72,7 +72,7 @@ const RaidHelper = () => {
 
   const [uiState, setUiState] = useState({
     saveMenuOpen: false,
-    specButtonSideMenu: true,
+    specButtonSideMenu: false,
     raidCooldownsOpen: false,
     playersIndexOpen: false,
     playerOptionsOpen: false,
