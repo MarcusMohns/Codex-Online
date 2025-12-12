@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import COLORS from "../../../colors";
+// Mobile
 export const Main = styled.main`
-  // Mobile
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,12 +68,11 @@ export const ArenaContainer = styled.div`
     font-size: 1.1rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 3rem;
     width: 100%;
-    background-color: ${COLORS.primary};
+    background-color: ${COLORS.fadedBackground};
     color: ${COLORS.offWhite};
-    box-shadow: 0 2px 6px -1px #000;
     user-select: none;
   }
 
@@ -120,8 +119,6 @@ export const ArenaContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 6px -1px #000;
-    background-color: ${COLORS.primary};
     padding: 1rem;
   }
   input {
