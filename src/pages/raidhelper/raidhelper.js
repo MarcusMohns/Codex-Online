@@ -38,6 +38,7 @@ const RaidHelper = () => {
     raidCount,
     setCount,
     reset,
+    onDragEnd,
     setAPlayer,
     aPlayer,
     addPlayer,
@@ -69,98 +70,34 @@ const RaidHelper = () => {
     setCount,
   });
 
-  const [saveMenuOpen, setSaveMenuOpen] = useState(false);
-  const [raidCooldownsOpen, setRaidCooldownsOpen] = useState(false);
-  const [playersIndexOpen, setPlayersIndexOpen] = useState(false);
-  const [playerOptionsOpen, setPlayerOptionsOpen] = useState(false);
+  const [uiState, setUiState] = useState({
+    saveMenuOpen: false,
+    raidCooldownsOpen: false,
+    playersIndexOpen: false,
+    playerOptionsOpen: false,
+    classTooltipOpen: false,
+  });
   const [spec, setSpec] = useState([]);
-  const [classTooltipOpen, setClassTooltipOpen] = useState(false);
+
+  const toggleUi = useCallback((component) => {
+    setUiState((prev) => ({ ...prev, [component]: !prev[component] }));
+  }, []);
 
   const handlePlayerOptions = useCallback(
     (player) => {
-      try {
-        setAPlayer(player);
-        setPlayerOptionsOpen(!playerOptionsOpen);
-      } catch (e) {
-        console.error(e);
-      }
+      setAPlayer(player);
+      toggleUi("playerOptionsOpen");
     },
-    [playerOptionsOpen, setAPlayer]
+    [setAPlayer, toggleUi]
   );
 
   const handleSpecTooltip = useCallback(
     (player) => {
-      try {
-        setSpec(player);
-        setClassTooltipOpen(!classTooltipOpen);
-      } catch (e) {
-        console.error(e);
-      }
+      setSpec(player);
+      toggleUi("classTooltipOpen");
     },
-    [classTooltipOpen]
+    [toggleUi]
   );
-
-  const onDragEnd = (result) => {
-    const { destination, source } = result;
-
-    if (!destination) {
-      return;
-    }
-    if (
-      destination.droppableId === source.droppableId &&
-      destination.index === source.index
-    ) {
-      return;
-    }
-
-    const start = raid.groups[source.droppableId];
-    const finish = raid.groups[destination.droppableId];
-    const newPlayerIds = Array.from(start.playerIds);
-    const newPlayerId = newPlayerIds[source.index];
-
-    if (start === finish) {
-      // if moving inside same group
-      newPlayerIds.splice(source.index, 1);
-      newPlayerIds.splice(destination.index, 0, newPlayerId);
-
-      const newGroup = {
-        ...start,
-        playerIds: newPlayerIds,
-      };
-
-      const newRaid = {
-        ...raid,
-        groups: {
-          ...raid.groups,
-          [newGroup.id]: newGroup,
-        },
-      };
-      setRaid(newRaid);
-      return;
-    }
-    // if moving outside the group
-    const startPlayerIds = Array.from(start.playerIds);
-    startPlayerIds.splice(source.index, 1);
-    const newStart = {
-      ...start,
-      playerIds: startPlayerIds,
-    };
-    const finishPlayerIds = Array.from(finish.playerIds);
-    finishPlayerIds.splice(destination.index, 0, newPlayerId);
-    const newFinish = {
-      ...finish,
-      playerIds: finishPlayerIds,
-    };
-    const newRaid = {
-      ...raid,
-      groups: {
-        ...raid.groups,
-        [newStart.id]: newStart,
-        [newFinish.id]: newFinish,
-      },
-    };
-    setRaid(newRaid);
-  };
 
   return (
     <>
@@ -172,14 +109,14 @@ const RaidHelper = () => {
         />
       </SpecContainer>
       <Main>
-        {classTooltipOpen && (
+        {uiState.classTooltipOpen && (
           <ClassTooltip
             spec={spec}
-            classTooltipOpen={classTooltipOpen}
-            setClassTooltipOpen={setClassTooltipOpen}
+            classTooltipOpen={uiState.classTooltipOpen}
+            setClassTooltipOpen={() => toggleUi("classTooltipOpen")}
           />
         )}
-        {saveMenuOpen && (
+        {uiState.saveMenuOpen && (
           <SaveMenu
             saveOnClick={saveOnClick}
             loadOnClick={loadOnClick}
@@ -187,8 +124,8 @@ const RaidHelper = () => {
             deleteSaveOnClick={deleteSaveOnClick}
             saveOnClickToFile={saveOnClickToFile}
             loadOnClickToFile={loadOnClickToFile}
-            saveMenuOpen={saveMenuOpen}
-            setSaveMenuOpen={setSaveMenuOpen}
+            saveMenuOpen={uiState.saveMenuOpen}
+            setSaveMenuOpen={() => toggleUi("saveMenuOpen")}
             raid={raid}
             setRaid={setRaid}
             buffs={buffs}
@@ -199,10 +136,10 @@ const RaidHelper = () => {
             setCount={setCount}
           />
         )}
-        {playerOptionsOpen && (
+        {uiState.playerOptionsOpen && (
           <PlayerOptions
-            playerOptionsOpen={playerOptionsOpen}
-            setPlayerOptionsOpen={setPlayerOptionsOpen}
+            playerOptionsOpen={uiState.playerOptionsOpen}
+            setPlayerOptionsOpen={() => toggleUi("playerOptionsOpen")}
             player={aPlayer}
             editBuffs={playerBuffsEdit}
             playerRoleEdit={playerRoleEdit}
@@ -212,17 +149,17 @@ const RaidHelper = () => {
             handleNote={handleNote}
           />
         )}
-        {raidCooldownsOpen && (
+        {uiState.raidCooldownsOpen && (
           <RaidCooldowns
-            raidCooldownsOpen={raidCooldownsOpen}
-            setRaidCooldownsOpen={setRaidCooldownsOpen}
+            raidCooldownsOpen={uiState.raidCooldownsOpen}
+            setRaidCooldownsOpen={() => toggleUi("raidCooldownsOpen")}
             utilities={utilities}
           />
         )}
-        {playersIndexOpen && (
+        {uiState.playersIndexOpen && (
           <PlayersIndex
-            playersIndexOpen={playersIndexOpen}
-            setPlayersIndexOpen={setPlayersIndexOpen}
+            playersIndexOpen={uiState.playersIndexOpen}
+            setPlayersIndexOpen={() => toggleUi("playersIndexOpen")}
             players={raid.players}
           />
         )}
@@ -230,9 +167,7 @@ const RaidHelper = () => {
         <RaidContainer className="raid-container">
           <RaidContentHeader>
             <RaidHeaderButton
-              onClick={() => {
-                setSaveMenuOpen(!saveMenuOpen);
-              }}
+              onClick={() => toggleUi("saveMenuOpen")}
               backgroundColor="#47774b"
               id="raid-saves-btn"
             >
@@ -240,9 +175,7 @@ const RaidHelper = () => {
               💾
             </RaidHeaderButton>
             <RaidHeaderButton
-              onClick={() => {
-                setPlayersIndexOpen(!playersIndexOpen);
-              }}
+              onClick={() => toggleUi("playersIndexOpen")}
               backgroundColor="#3b3e44"
               marginLeft="0px"
               marginRight="none"
@@ -298,11 +231,7 @@ const RaidHelper = () => {
         <UtilityContainer>
           <ContentHeader>
             <ContentTitle>Utilities</ContentTitle>
-            <UtilityHeaderButton
-              onClick={() => {
-                setRaidCooldownsOpen(!raidCooldownsOpen);
-              }}
-            >
+            <UtilityHeaderButton onClick={() => toggleUi("raidCooldownsOpen")}>
               <span className="utility-btn-text">Cooldowns</span>
               📜
             </UtilityHeaderButton>

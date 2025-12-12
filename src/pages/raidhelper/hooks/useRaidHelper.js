@@ -190,6 +190,67 @@ const useRaidHelper = () => {
     [raid, handleCount]
   );
 
+  const onDragEnd = useCallback(
+    (result) => {
+      const { destination, source } = result;
+
+      if (!destination) {
+        return;
+      }
+      if (
+        destination.droppableId === source.droppableId &&
+        destination.index === source.index
+      ) {
+        return;
+      }
+
+      const start = raid.groups[source.droppableId];
+      const finish = raid.groups[destination.droppableId];
+      const newPlayerIds = Array.from(start.playerIds);
+      const [newPlayerId] = newPlayerIds.splice(source.index, 1);
+
+      if (start === finish) {
+        // if moving inside same group
+        newPlayerIds.splice(destination.index, 0, newPlayerId);
+
+        const newGroup = {
+          ...start,
+          playerIds: newPlayerIds,
+        };
+
+        setRaid((prevRaid) => ({
+          ...prevRaid,
+          groups: {
+            ...prevRaid.groups,
+            [newGroup.id]: newGroup,
+          },
+        }));
+        return;
+      }
+      // if moving outside the group
+      const newStart = {
+        ...start,
+        playerIds: newPlayerIds,
+      };
+      const finishPlayerIds = Array.from(finish.playerIds);
+      finishPlayerIds.splice(destination.index, 0, newPlayerId);
+      const newFinish = {
+        ...finish,
+        playerIds: finishPlayerIds,
+      };
+
+      setRaid((prevRaid) => ({
+        ...prevRaid,
+        groups: {
+          ...prevRaid.groups,
+          [newStart.id]: newStart,
+          [newFinish.id]: newFinish,
+        },
+      }));
+    },
+    [raid.groups]
+  );
+
   const reset = useCallback(() => {
     setRaid(intitialRaidState);
     setCount([0, 0, 0, 0]);
@@ -464,6 +525,7 @@ const useRaidHelper = () => {
     aPlayer,
     addPlayer,
     deletePlayer,
+    onDragEnd,
     handleUtility,
     playerRoleEdit,
     playerBuffsEdit,
