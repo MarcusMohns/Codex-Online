@@ -343,22 +343,20 @@ const useRaidHelper = () => {
     setRaid({ ...raid, players: newPlayers, groups: newGroups });
   };
 
-  const focusName =
-    ((nameText) => {
-      let nameTextObject = document.querySelector(`#${nameText}`);
-      nameTextObject.focus();
+  const focusName = useCallback((nameText) => {
+    let nameTextObject = document.querySelector(`#${nameText}`);
+    nameTextObject.focus();
 
-      if (nameTextObject.type === "text") {
-        nameTextObject.value = "";
+    if (nameTextObject.type === "text") {
+      nameTextObject.value = "";
+    }
+
+    nameTextObject.addEventListener("keydown", function confirmEdit(e) {
+      if (e.key === "Enter" || e.key === "Escape") {
+        nameTextObject.blur();
       }
-
-      nameTextObject.addEventListener("keydown", function confirmEdit(e) {
-        if (e.key === "Enter" || e.key === "Escape") {
-          nameTextObject.blur();
-        }
-      });
-    },
-    []);
+    });
+  }, []);
 
   const editName = useCallback(
     (playerId, nameText) => {
