@@ -26,6 +26,7 @@ export const Main = styled.main`
   box-sizing: border-box;
   align-items: flex-start;
   justify-content: flex-start;
+  margin-top: 6rem;
   @media (min-width: 1300px) {
     margin-top: 8rem;
     display: grid;
