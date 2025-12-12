@@ -268,13 +268,30 @@ export const ResultsContainer = styled.div`
   font-family: sans-serif;
   animation: 0.3s linear 0s fade-in;
 
-  .character-sheet-img {
-    box-shadow: 0px 0px 10px 5px #000;
-    border-radius: 10px;
-    opacity: 80%;
-    width: 397px;
-    height: 328px;
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 400px;
+
+    img {
+      box-shadow: 0px 0px 10px 5px #000;
+      border-radius: 10px;
+      opacity: 80%;
+      width: 397px;
+      height: 328px;
+    }
+    .img-caption {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #bfc0c0;
+      font-style: italic;
+    }
   }
+
   .results-main-container {
     display: flex;
     flex-direction: column;

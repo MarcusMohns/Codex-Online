@@ -127,12 +127,17 @@ const Result = ({ prevStep, resetStep, values, hitTalentClasses, casters }) => {
               )}
             </div>
           )}
-
-          <img
-            src="images/character_sheet.png"
-            className="character-sheet-img"
-            alt="character sheet"
-          />
+          <div className="img-container">
+            <img
+              src="images/character_sheet.png"
+              className="character-sheet-img"
+              alt="character sheet"
+            />
+            <small className="img-caption">
+              Casters will find their hit under the tab "Spell", Melee under the
+              tab "Melee" and Ranged under the tab "Ranged"
+            </small>
+          </div>
         </div>
 
         {pveOrPvp === "pvp" && (
