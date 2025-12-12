@@ -3,6 +3,7 @@ import { Main } from "./styles/HitCapHelper.styled";
 import SpecArray from "../../data/SpecArray";
 import { Loader } from "../../components/Loader";
 import { casters, hitTalentClasses } from "../../data/PlayersWithOptions";
+import startViewTransitionWrapper from "../../store";
 
 const ClassAndSpec = lazy(() => import("./steps/ClassAndSpec"));
 const PveOrPvp = lazy(() => import("./steps/PveOrPvp"));
@@ -23,23 +24,30 @@ const HitCapHelper = () => {
   };
 
   const [stepState, setStepState] = useState(state);
-  const { step } = stepState;
-  const { pveOrPvp, classAndSpec, draenei, talentPoints, raidHitBuff } =
+  const { pveOrPvp, classAndSpec, draenei, talentPoints, raidHitBuff, step } =
     stepState;
   const values = { pveOrPvp, classAndSpec, draenei, talentPoints, raidHitBuff };
 
   const prevStep = (numOfSteps, stepPage) => {
     if (stepPage) {
-      setStepState({ ...stepState, [stepPage]: "", step: step - numOfSteps });
+      startViewTransitionWrapper(() =>
+        setStepState({ ...stepState, [stepPage]: "", step: step - numOfSteps })
+      );
     } else {
-      setStepState({ ...stepState, step: step - numOfSteps });
+      startViewTransitionWrapper(() =>
+        setStepState({ ...stepState, step: step - numOfSteps })
+      );
     }
   };
 
   const nextStep = (numOfSteps) => {
     numOfSteps
-      ? setStepState({ ...stepState, step: step + numOfSteps })
-      : setStepState({ ...stepState, step: step + 1 });
+      ? startViewTransitionWrapper(() =>
+          setStepState({ ...stepState, step: step + numOfSteps })
+        )
+      : startViewTransitionWrapper(() =>
+          setStepState({ ...stepState, step: step + 1 })
+        );
   };
 
   const resetStep = () => {
