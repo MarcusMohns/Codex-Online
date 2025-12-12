@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer";
@@ -26,7 +21,6 @@ const App = () => {
       <Navbar />
       <Suspense fallback={<Loader />}>
         <Switch>
-          <Route path="/home" exact component={Home} />
           <Route path="/raidhelper" component={RaidHelper} />
           <Route
             path="/arenapointcalculator"
@@ -36,9 +30,7 @@ const App = () => {
           <Route path="/hitcaphelper" component={HitCapHelper} />
           <Route path="/terms" component={Terms} />
           <Route path="/credits" component={Credits} />
-          <Route exact path="/">
-            <Redirect to="/home" />
-          </Route>
+          <Route path="/" component={Home} />
           <Route path="*" component={PageNotFound} />
         </Switch>
         <Footer />
