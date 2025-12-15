@@ -223,12 +223,12 @@ export const AdditionalHitContainer = styled.div`
   align-content: center;
   padding: 0 1rem;
   color: #bfc0c0;
-  margin-top: 2rem;
+  margin-top: 3rem;
   h2 {
     padding: 0.5rem 0rem;
     font-size: 1.2rem;
-    margin-top: 20px;
     text-align: center;
+    margin: 0.5rem 2rem;
   }
 `;
 
@@ -284,7 +284,7 @@ export const ResultsContainer = styled.div`
       height: 328px;
     }
     .img-caption {
-      margin-top: 10px;
+      margin: 20px;
       text-align: center;
       font-size: 0.8rem;
       color: #bfc0c0;
@@ -303,6 +303,7 @@ export const ResultsContainer = styled.div`
     text-align: center;
     word-break: break-word;
     margin: 0px 15px;
+
     .sub-text {
       font-size: 1rem;
     }

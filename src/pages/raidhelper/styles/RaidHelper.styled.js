@@ -1250,28 +1250,23 @@ export const GroupTitle = styled.div`
 `;
 export const RaidContentHeader = styled.div`
   display: flex;
+  flex-direction: row;
   align-items: center;
+  padding: 0.3rem 0rem;
   justify-content: space-between;
-  box-sizing: border-box;
-  flex-wrap: wrap;
   width: 100%;
-  max-width: 100%;
   margin-bottom: 2px;
-  padding: 0.3rem;
   background-color: ${COLORS.fadedGrey};
   color: ${COLORS.offWhite};
   user-select: none;
 
   #reset-btn {
     margin-left: auto;
-    margin-top: 10px;
+    margin-right: 4px;
   }
 
   @media (min-width: 500px) {
-    flex-direction: row;
-
     #reset-btn {
-      margin-right: 0px;
       margin-top: 0px;
     }
   }
@@ -1285,13 +1280,13 @@ export const RaidHeaderButton = styled.div`
   cursor: pointer;
   color: #fff;
   background-color: ${(props) => props.backgroundColor};
+  margin-left: 4px;
+  margin-bottom: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
-  margin-left: 0;
   font-size: 1rem;
   cursor: pointer;
   padding: 5px 10px;
-  text-align: center;
   user-select: none;
   white-space: nowrap;
   letter-spacing: 1px;
@@ -1304,7 +1299,7 @@ export const RaidHeaderButton = styled.div`
   }
 
   @media (min-width: 500px) {
-    margin-left: ${(props) => props.marginLeft};
+    margin-left: 1rem;
   }
 `;
 

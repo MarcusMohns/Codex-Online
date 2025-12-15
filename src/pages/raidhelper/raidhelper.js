@@ -177,7 +177,6 @@ const RaidHelper = () => {
           <RaidHeaderButton
             onClick={() => toggleUi("saveMenuOpen")}
             backgroundColor="#47774b"
-            marginLeft="1rem"
           >
             <span className="utility-btn-text">Saves</span>
             💾
@@ -185,7 +184,6 @@ const RaidHelper = () => {
           <RaidHeaderButton
             onClick={() => toggleUi("playersIndexOpen")}
             backgroundColor="#575b61ff"
-            marginLeft="1rem"
           >
             <span className="utility-btn-text">Index</span>
             📜
