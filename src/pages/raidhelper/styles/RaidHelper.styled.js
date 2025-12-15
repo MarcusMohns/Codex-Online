@@ -747,15 +747,14 @@ export const StyledPlayerCheckboxes = styled.div`
 export const BuffContainer = styled.section`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   grid-area: Buffs;
   box-sizing: border-box;
   background-color: ${COLORS.fadedBackground};
-  align-items: top;
-  justify-content: top;
   width: 100%;
   max-width: 100%;
   border-radius: 0.5rem;
-  padding: 1rem;
   margin-top: 20px;
 `;
 
@@ -1055,11 +1054,9 @@ export const UtilityContainer = styled.section`
   background-color: ${COLORS.fadedBackground};
   min-height: 100%;
   height: auto;
-  padding: 1rem;
   @media (min-width: 1300px) {
     grid-area: Utils;
     margin-bottom: 0px;
-    padding: 0rem;
   }
 `;
 
@@ -1118,7 +1115,6 @@ export const StyledUtility = styled.a`
 export const ContentHeader = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
   height: 50px;
   width: 100%;
   font-size: 1.3rem;
@@ -1132,26 +1128,9 @@ export const ContentTitle = styled.h2`
   display: flex;
   align-items: center;
   color: ${COLORS.offWhite};
-  margin-left: 47%;
   font-size: 1.3rem;
   font-weight: 700;
-`;
-export const RaidContentHeader = styled.div`
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 2px;
-  padding: 0.3rem;
-  background-color: ${COLORS.fadedGrey};
-  color: ${COLORS.offWhite};
-  user-select: none;
-
-  #raid-saves-btn {
-    margin-left: 10px;
-  }
+  margin-left: 1rem;
 `;
 
 export const RaidCountContainer = styled.div`
@@ -1269,6 +1248,35 @@ export const GroupTitle = styled.div`
     }
   }
 `;
+export const RaidContentHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2px;
+  padding: 0.3rem;
+  background-color: ${COLORS.fadedGrey};
+  color: ${COLORS.offWhite};
+  user-select: none;
+
+  #reset-btn {
+    margin-left: auto;
+    margin-top: 10px;
+  }
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+
+    #reset-btn {
+      margin-right: 0px;
+      margin-top: 0px;
+    }
+  }
+`;
+
 export const RaidHeaderButton = styled.div`
   display: flex;
   flex-direction: row;
@@ -1277,9 +1285,9 @@ export const RaidHeaderButton = styled.div`
   cursor: pointer;
   color: #fff;
   background-color: ${(props) => props.backgroundColor};
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
-  margin-left: ${(props) => props.marginLeft};
+  margin-left: 0;
   font-size: 1rem;
   cursor: pointer;
   padding: 5px 10px;
@@ -1287,17 +1295,16 @@ export const RaidHeaderButton = styled.div`
   user-select: none;
   white-space: nowrap;
   letter-spacing: 1px;
-  transform: translateY(0);
-  transition: transform 150ms;
 
   .plus-icon {
     font-weight: 700;
   }
-  .utility-btn-text {
-    margin-right: 7px;
-  }
   &:hover {
-    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  @media (min-width: 500px) {
+    margin-left: ${(props) => props.marginLeft};
   }
 `;
 
@@ -1305,33 +1312,22 @@ export const UtilityHeaderButton = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 100%;
   justify-content: center;
+  text-align: center;
   cursor: pointer;
   box-sizing: border-box;
   color: #fff;
   background-color: #575b61ff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   padding: 5px 10px;
-  text-align: center;
   letter-spacing: 1px;
   user-select: none;
-  -webkit-user-select: none;
-  white-space: nowrap;
-  font-size: 0.8rem;
   margin-left: auto;
-  margin-right: 5px;
-  margin-left: ${(props) => props.marginLeft};
-  margin-right: ${(props) => props.marginRight};
-  transform: translateY(0);
-  transition: transform 150ms;
-
-  .utility-btn-text {
-    margin-right: 7px;
-  }
+  -webkit-user-select: none;
 
   &:hover {
-    transform: translateY(-1px);
+    background-color: #4c4f53ff;
   }
   @media (min-width: 600px) {
     font-size: 1rem;

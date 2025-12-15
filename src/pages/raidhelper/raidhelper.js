@@ -177,12 +177,11 @@ const RaidHelper = () => {
           <RaidHeaderButton
             onClick={() => toggleUi("saveMenuOpen")}
             backgroundColor="#47774b"
-            id="raid-saves-btn"
+            marginLeft="1rem"
           >
             <span className="utility-btn-text">Saves</span>
             💾
           </RaidHeaderButton>
-
           <RaidHeaderButton
             onClick={() => toggleUi("playersIndexOpen")}
             backgroundColor="#575b61ff"
@@ -194,7 +193,7 @@ const RaidHelper = () => {
           <RaidHeaderButton
             onClick={reset}
             backgroundColor="#742c2cff"
-            marginLeft="auto"
+            id="reset-btn"
           >
             <span className="utility-btn-text">Reset</span>
             <ResetIcon />
@@ -251,7 +250,9 @@ const RaidHelper = () => {
         <Utilities utilities={utilities} />
       </UtilityContainer>
       <BuffContainer className="buff-container">
-        <ContentHeader>Buffs & Debuffs</ContentHeader>
+        <ContentHeader>
+          <ContentTitle>Buffs & Debuffs</ContentTitle>
+        </ContentHeader>
         <BuffCategories currentBuffs={buffs}></BuffCategories>
       </BuffContainer>
     </Main>
