@@ -35,7 +35,7 @@ const Home = () => {
             the reset or check how much rating you need for that upgrade you're
             looking at
           </CardText>
-          <Link to="/gemfinder" className="link-button">
+          <Link to="/arenapointcalculator" className="link-button">
             Calculate Points
           </Link>
         </PagePreviewCard>
@@ -59,7 +59,7 @@ const Home = () => {
             much <span className="highlight">hit</span> you need on your{" "}
             <span className="highlight">character sheet</span>
           </CardText>
-          <Link to="/gemfinder" className="link-button">
+          <Link to="/hitcaphelper" className="link-button">
             Find Your Hit
           </Link>
         </PagePreviewCard>
@@ -70,19 +70,6 @@ const Home = () => {
       <PagePreviewContainer>
         <PagePreviewText>
           <div className="page-preview-text">
-            {/* <p>
-              Organize WotLK{" "}
-              <span className="highlight">Buffs, Debuffs and Utilities</span>.
-              The Raid Helper helps you optimize your raids performance by
-              giving you a full <span className="highlight">overview</span> of
-              the <span className="highlight">raid buffs</span>, the{" "}
-              <span className="highlight">players</span> in your raid and their
-              different{" "}
-              <span className="highlight">utilities, cooldowns and roles</span>.
-              Additionally, feel free to <span className="highlight">save</span>{" "}
-              your raid composition in the browser or locally and share it with
-              others!
-            </p> */}
             <Link to="/raidhelper" className="link-button">
               Get started!
             </Link>
