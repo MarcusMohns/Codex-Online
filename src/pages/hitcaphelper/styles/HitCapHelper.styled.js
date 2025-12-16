@@ -302,7 +302,7 @@ export const ResultsContainer = styled.div`
     font-size: 1.1rem;
     text-align: center;
     word-break: break-word;
-    margin: 0px 15px;
+    margin: 0 3rem;
 
     .sub-text {
       font-size: 1rem;
