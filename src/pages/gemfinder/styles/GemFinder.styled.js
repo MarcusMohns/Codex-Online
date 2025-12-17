@@ -80,65 +80,47 @@ export const CheckBoxContainer = styled.section`
   .categories-and-checkboxes {
     padding: 0.5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     box-sizing: border-box;
-    width: 80%;
-
-    @media screen and (max-width: 992px) {
-      padding: 0px;
-    }
-    @media screen and (max-width: 510px) {
-      flex-direction: column;
-      align-items: center;
-      box-shadow: none;
-    }
   }
   .category-container {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    margin: 1px;
-    padding: 0.5rem;
-    background-color: ${COLORS.greyBg};
+    align-items: flex-start;
     width: 100%;
-
-    @media screen and (max-width: 992px) {
-      width: auto;
-    }
-    @media screen and (max-width: 510px) {
-      width: 100%;
-    }
+    margin: 0 0.5rem;
+    padding: 0.3rem;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: ${COLORS.greyBg};
   }
   .category-name {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    text-align: center;
     color: ${COLORS.offWhite};
     margin-bottom: 1rem;
     user-select: none;
-    flex-wrap: wrap;
     letter-spacing: 1px;
   }
   .checkboxes {
-    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    height: min-content;
     flex-wrap: wrap;
-    height: 150px;
-    margin-left: auto;
+    max-height: 250px;
   }
 
   .a-checkbox {
     display: flex;
     position: relative;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     padding: 0.5rem;
+    min-width: 25%;
 
     .label-text {
       user-select: none;
@@ -209,22 +191,28 @@ export const CheckBoxContainer = styled.section`
     }
   }
 
-  @media screen and (max-width: 1500px) {
-    .checkboxes {
-      height: 100%;
-      flex-wrap: nowrap;
-    }
+  @media screen and (min-width: 992px) {
     .categories-and-checkboxes {
-      width: 70%;
+      width: 100%;
+      flex-direction: row;
+    }
+
+    .category-container {
+      width: 100%;
+    }
+    .checkboxes {
+      max-height: 250px;
+      flex-direction: column;
+    }
+    .a-checkbox {
     }
   }
-  @media screen and (max-width: 510px) {
+
+  @media screen and (min-width: 1600px) {
+    .categories-and-checkboxes {
+      width: 80%;
+    }
     .checkboxes {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-wrap: wrap;
       max-height: 200px;
     }
   }
